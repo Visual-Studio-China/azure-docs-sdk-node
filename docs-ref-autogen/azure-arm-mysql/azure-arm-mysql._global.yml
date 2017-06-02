@@ -49,7 +49,7 @@ items:
     fullName: azure-arm-mysql.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-arm-mysql._global.CloudError
@@ -59,7 +59,7 @@ items:
     fullName: azure-arm-mysql.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-arm-mysql._global.ProxyResource
@@ -69,7 +69,7 @@ items:
     fullName: azure-arm-mysql.ProxyResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ProxyResource
   - uid: azure-arm-mysql._global.TrackedResource
@@ -79,7 +79,7 @@ items:
     fullName: azure-arm-mysql.TrackedResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: TrackedResource
   - uid: azure-arm-mysql._global.ServerPropertiesForCreate
@@ -89,7 +89,7 @@ items:
     fullName: azure-arm-mysql.ServerPropertiesForCreate
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerPropertiesForCreate
   - uid: azure-arm-mysql._global.ServerPropertiesForDefaultCreate
@@ -99,7 +99,7 @@ items:
     fullName: azure-arm-mysql.ServerPropertiesForDefaultCreate
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerPropertiesForDefaultCreate
   - uid: azure-arm-mysql._global.ServerPropertiesForRestore
@@ -109,7 +109,7 @@ items:
     fullName: azure-arm-mysql.ServerPropertiesForRestore
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerPropertiesForRestore
   - uid: azure-arm-mysql._global.Sku
@@ -119,7 +119,7 @@ items:
     fullName: azure-arm-mysql.Sku
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Sku
   - uid: azure-arm-mysql._global.Server
@@ -129,7 +129,7 @@ items:
     fullName: azure-arm-mysql.Server
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Server
   - uid: azure-arm-mysql._global.ServerForCreate
@@ -139,7 +139,7 @@ items:
     fullName: azure-arm-mysql.ServerForCreate
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerForCreate
   - uid: azure-arm-mysql._global.ServerUpdateParameters
@@ -149,7 +149,7 @@ items:
     fullName: azure-arm-mysql.ServerUpdateParameters
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerUpdateParameters
   - uid: azure-arm-mysql._global.ServerListResult
@@ -159,7 +159,7 @@ items:
     fullName: azure-arm-mysql.ServerListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerListResult
   - uid: azure-arm-mysql._global.FirewallRule
@@ -169,7 +169,7 @@ items:
     fullName: azure-arm-mysql.FirewallRule
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: FirewallRule
   - uid: azure-arm-mysql._global.FirewallRuleListResult
@@ -179,7 +179,7 @@ items:
     fullName: azure-arm-mysql.FirewallRuleListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: FirewallRuleListResult
   - uid: azure-arm-mysql._global.Database
@@ -189,7 +189,7 @@ items:
     fullName: azure-arm-mysql.Database
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Database
   - uid: azure-arm-mysql._global.DatabaseListResult
@@ -199,7 +199,7 @@ items:
     fullName: azure-arm-mysql.DatabaseListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DatabaseListResult
   - uid: azure-arm-mysql._global.Configuration
@@ -209,7 +209,7 @@ items:
     fullName: azure-arm-mysql.Configuration
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Configuration
   - uid: azure-arm-mysql._global.ConfigurationListResult
@@ -219,7 +219,7 @@ items:
     fullName: azure-arm-mysql.ConfigurationListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ConfigurationListResult
   - uid: azure-arm-mysql._global.OperationDisplay
@@ -229,7 +229,7 @@ items:
     fullName: azure-arm-mysql.OperationDisplay
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationDisplay
   - uid: azure-arm-mysql._global.Operation
@@ -239,7 +239,7 @@ items:
     fullName: azure-arm-mysql.Operation
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Operation
   - uid: azure-arm-mysql._global.OperationListResult
@@ -249,7 +249,7 @@ items:
     fullName: azure-arm-mysql.OperationListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationListResult
   - uid: azure-arm-mysql._global.LogFile
@@ -259,7 +259,7 @@ items:
     fullName: azure-arm-mysql.LogFile
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LogFile
   - uid: azure-arm-mysql._global.LogFileListResult
@@ -269,7 +269,7 @@ items:
     fullName: azure-arm-mysql.LogFileListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LogFileListResult
   - uid: azure-arm-mysql._global.ServerListResult
@@ -279,7 +279,7 @@ items:
     fullName: azure-arm-mysql.ServerListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerListResult
   - uid: azure-arm-mysql._global.FirewallRuleListResult
@@ -289,7 +289,7 @@ items:
     fullName: azure-arm-mysql.FirewallRuleListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: FirewallRuleListResult
   - uid: azure-arm-mysql._global.DatabaseListResult
@@ -299,7 +299,7 @@ items:
     fullName: azure-arm-mysql.DatabaseListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DatabaseListResult
   - uid: azure-arm-mysql._global.ConfigurationListResult
@@ -309,7 +309,7 @@ items:
     fullName: azure-arm-mysql.ConfigurationListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ConfigurationListResult
   - uid: azure-arm-mysql._global.LogFileListResult
@@ -319,7 +319,7 @@ items:
     fullName: azure-arm-mysql.LogFileListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LogFileListResult
   - uid: azure-arm-mysql._global.discriminators
@@ -329,7 +329,7 @@ items:
     fullName: azure-arm-mysql.discriminators
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: discriminators
   - uid: azure-arm-mysql._global.Servers
@@ -339,7 +339,7 @@ items:
     fullName: azure-arm-mysql.Servers
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Servers
   - uid: azure-arm-mysql._global.FirewallRules
@@ -349,7 +349,7 @@ items:
     fullName: azure-arm-mysql.FirewallRules
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: FirewallRules
   - uid: azure-arm-mysql._global.Databases
@@ -359,7 +359,7 @@ items:
     fullName: azure-arm-mysql.Databases
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Databases
   - uid: azure-arm-mysql._global.Configurations
@@ -369,7 +369,7 @@ items:
     fullName: azure-arm-mysql.Configurations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Configurations
   - uid: azure-arm-mysql._global.LogFiles
@@ -379,7 +379,7 @@ items:
     fullName: azure-arm-mysql.LogFiles
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LogFiles
   - uid: azure-arm-mysql._global.Operations
@@ -389,6 +389,6 @@ items:
     fullName: azure-arm-mysql.Operations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Operations

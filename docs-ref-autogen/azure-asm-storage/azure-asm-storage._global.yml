@@ -18,7 +18,7 @@ items:
     fullName: azure-asm-storage.StorageManagementClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: StorageManagementClient
   - uid: azure-asm-storage._global.createStorageManagementClient
@@ -31,7 +31,7 @@ items:
     fullName: 'azure-asm-storage.createStorageManagementClient(baseUri, filters)'
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.subscriptionId
@@ -73,7 +73,7 @@ items:
     fullName: azure-asm-storage.createCertificateCloudCredentials()
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.subscription
@@ -107,7 +107,7 @@ items:
     fullName: azure-asm-storage.StorageManagementClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: StorageManagementClient
 references:

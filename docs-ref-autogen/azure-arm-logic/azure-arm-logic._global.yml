@@ -148,7 +148,7 @@ items:
     fullName: azure-arm-logic.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-arm-logic._global.CloudError
@@ -158,7 +158,7 @@ items:
     fullName: azure-arm-logic.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-arm-logic._global.Resource
@@ -168,7 +168,7 @@ items:
     fullName: azure-arm-logic.Resource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Resource
   - uid: azure-arm-logic._global.SubResource
@@ -178,7 +178,7 @@ items:
     fullName: azure-arm-logic.SubResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SubResource
   - uid: azure-arm-logic._global.ResourceReference
@@ -188,7 +188,7 @@ items:
     fullName: azure-arm-logic.ResourceReference
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResourceReference
   - uid: azure-arm-logic._global.Sku
@@ -198,7 +198,7 @@ items:
     fullName: azure-arm-logic.Sku
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Sku
   - uid: azure-arm-logic._global.WorkflowParameter
@@ -208,7 +208,7 @@ items:
     fullName: azure-arm-logic.WorkflowParameter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowParameter
   - uid: azure-arm-logic._global.Workflow
@@ -218,7 +218,7 @@ items:
     fullName: azure-arm-logic.Workflow
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Workflow
   - uid: azure-arm-logic._global.WorkflowFilter
@@ -228,7 +228,7 @@ items:
     fullName: azure-arm-logic.WorkflowFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowFilter
   - uid: azure-arm-logic._global.WorkflowListResult
@@ -238,7 +238,7 @@ items:
     fullName: azure-arm-logic.WorkflowListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowListResult
   - uid: azure-arm-logic._global.WorkflowVersion
@@ -248,7 +248,7 @@ items:
     fullName: azure-arm-logic.WorkflowVersion
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowVersion
   - uid: azure-arm-logic._global.WorkflowVersionListResult
@@ -258,7 +258,7 @@ items:
     fullName: azure-arm-logic.WorkflowVersionListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowVersionListResult
   - uid: azure-arm-logic._global.RecurrenceScheduleOccurrence
@@ -268,7 +268,7 @@ items:
     fullName: azure-arm-logic.RecurrenceScheduleOccurrence
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RecurrenceScheduleOccurrence
   - uid: azure-arm-logic._global.RecurrenceSchedule
@@ -278,7 +278,7 @@ items:
     fullName: azure-arm-logic.RecurrenceSchedule
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RecurrenceSchedule
   - uid: azure-arm-logic._global.WorkflowTriggerRecurrence
@@ -288,7 +288,7 @@ items:
     fullName: azure-arm-logic.WorkflowTriggerRecurrence
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowTriggerRecurrence
   - uid: azure-arm-logic._global.WorkflowTrigger
@@ -298,7 +298,7 @@ items:
     fullName: azure-arm-logic.WorkflowTrigger
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowTrigger
   - uid: azure-arm-logic._global.WorkflowTriggerFilter
@@ -308,7 +308,7 @@ items:
     fullName: azure-arm-logic.WorkflowTriggerFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowTriggerFilter
   - uid: azure-arm-logic._global.WorkflowTriggerListResult
@@ -318,7 +318,7 @@ items:
     fullName: azure-arm-logic.WorkflowTriggerListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowTriggerListResult
   - uid: azure-arm-logic._global.WorkflowTriggerCallbackUrl
@@ -328,7 +328,7 @@ items:
     fullName: azure-arm-logic.WorkflowTriggerCallbackUrl
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowTriggerCallbackUrl
   - uid: azure-arm-logic._global.Correlation
@@ -338,7 +338,7 @@ items:
     fullName: azure-arm-logic.Correlation
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Correlation
   - uid: azure-arm-logic._global.ContentHash
@@ -348,7 +348,7 @@ items:
     fullName: azure-arm-logic.ContentHash
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ContentHash
   - uid: azure-arm-logic._global.ContentLink
@@ -358,7 +358,7 @@ items:
     fullName: azure-arm-logic.ContentLink
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ContentLink
   - uid: azure-arm-logic._global.WorkflowTriggerHistory
@@ -368,7 +368,7 @@ items:
     fullName: azure-arm-logic.WorkflowTriggerHistory
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowTriggerHistory
   - uid: azure-arm-logic._global.WorkflowTriggerHistoryListResult
@@ -378,7 +378,7 @@ items:
     fullName: azure-arm-logic.WorkflowTriggerHistoryListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowTriggerHistoryListResult
   - uid: azure-arm-logic._global.WorkflowTriggerHistoryFilter
@@ -388,7 +388,7 @@ items:
     fullName: azure-arm-logic.WorkflowTriggerHistoryFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowTriggerHistoryFilter
   - uid: azure-arm-logic._global.WorkflowRunTrigger
@@ -398,7 +398,7 @@ items:
     fullName: azure-arm-logic.WorkflowRunTrigger
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowRunTrigger
   - uid: azure-arm-logic._global.WorkflowOutputParameter
@@ -408,7 +408,7 @@ items:
     fullName: azure-arm-logic.WorkflowOutputParameter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowOutputParameter
   - uid: azure-arm-logic._global.WorkflowRun
@@ -418,7 +418,7 @@ items:
     fullName: azure-arm-logic.WorkflowRun
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowRun
   - uid: azure-arm-logic._global.WorkflowRunFilter
@@ -428,7 +428,7 @@ items:
     fullName: azure-arm-logic.WorkflowRunFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowRunFilter
   - uid: azure-arm-logic._global.WorkflowRunListResult
@@ -438,7 +438,7 @@ items:
     fullName: azure-arm-logic.WorkflowRunListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowRunListResult
   - uid: azure-arm-logic._global.WorkflowRunAction
@@ -448,7 +448,7 @@ items:
     fullName: azure-arm-logic.WorkflowRunAction
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowRunAction
   - uid: azure-arm-logic._global.WorkflowRunActionFilter
@@ -458,7 +458,7 @@ items:
     fullName: azure-arm-logic.WorkflowRunActionFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowRunActionFilter
   - uid: azure-arm-logic._global.WorkflowRunActionListResult
@@ -468,7 +468,7 @@ items:
     fullName: azure-arm-logic.WorkflowRunActionListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowRunActionListResult
   - uid: azure-arm-logic._global.GenerateUpgradedDefinitionParameters
@@ -478,7 +478,7 @@ items:
     fullName: azure-arm-logic.GenerateUpgradedDefinitionParameters
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: GenerateUpgradedDefinitionParameters
   - uid: azure-arm-logic._global.IntegrationAccountSku
@@ -488,7 +488,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountSku
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountSku
   - uid: azure-arm-logic._global.IntegrationAccount
@@ -498,7 +498,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccount
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccount
   - uid: azure-arm-logic._global.IntegrationAccountListResult
@@ -508,7 +508,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountListResult
   - uid: azure-arm-logic._global.GetCallbackUrlParameters
@@ -518,7 +518,7 @@ items:
     fullName: azure-arm-logic.GetCallbackUrlParameters
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: GetCallbackUrlParameters
   - uid: azure-arm-logic._global.CallbackUrl
@@ -528,7 +528,7 @@ items:
     fullName: azure-arm-logic.CallbackUrl
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CallbackUrl
   - uid: azure-arm-logic._global.IntegrationAccountSchema
@@ -538,7 +538,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountSchema
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountSchema
   - uid: azure-arm-logic._global.IntegrationAccountSchemaListResult
@@ -548,7 +548,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountSchemaListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountSchemaListResult
   - uid: azure-arm-logic._global.IntegrationAccountSchemaFilter
@@ -558,7 +558,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountSchemaFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountSchemaFilter
   - uid: azure-arm-logic._global.IntegrationAccountMapPropertiesParametersSchema
@@ -568,7 +568,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountMapPropertiesParametersSchema
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountMapPropertiesParametersSchema
   - uid: azure-arm-logic._global.IntegrationAccountMap
@@ -578,7 +578,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountMap
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountMap
   - uid: azure-arm-logic._global.IntegrationAccountMapListResult
@@ -588,7 +588,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountMapListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountMapListResult
   - uid: azure-arm-logic._global.IntegrationAccountMapFilter
@@ -598,7 +598,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountMapFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountMapFilter
   - uid: azure-arm-logic._global.BusinessIdentity
@@ -608,7 +608,7 @@ items:
     fullName: azure-arm-logic.BusinessIdentity
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BusinessIdentity
   - uid: azure-arm-logic._global.B2BPartnerContent
@@ -618,7 +618,7 @@ items:
     fullName: azure-arm-logic.B2BPartnerContent
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: B2BPartnerContent
   - uid: azure-arm-logic._global.PartnerContent
@@ -628,7 +628,7 @@ items:
     fullName: azure-arm-logic.PartnerContent
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: PartnerContent
   - uid: azure-arm-logic._global.IntegrationAccountPartner
@@ -638,7 +638,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountPartner
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountPartner
   - uid: azure-arm-logic._global.IntegrationAccountPartnerListResult
@@ -648,7 +648,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountPartnerListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountPartnerListResult
   - uid: azure-arm-logic._global.IntegrationAccountPartnerFilter
@@ -658,7 +658,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountPartnerFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountPartnerFilter
   - uid: azure-arm-logic._global.AS2MessageConnectionSettings
@@ -668,7 +668,7 @@ items:
     fullName: azure-arm-logic.AS2MessageConnectionSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AS2MessageConnectionSettings
   - uid: azure-arm-logic._global.AS2AcknowledgementConnectionSettings
@@ -678,7 +678,7 @@ items:
     fullName: azure-arm-logic.AS2AcknowledgementConnectionSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AS2AcknowledgementConnectionSettings
   - uid: azure-arm-logic._global.AS2MdnSettings
@@ -688,7 +688,7 @@ items:
     fullName: azure-arm-logic.AS2MdnSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AS2MdnSettings
   - uid: azure-arm-logic._global.AS2SecuritySettings
@@ -698,7 +698,7 @@ items:
     fullName: azure-arm-logic.AS2SecuritySettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AS2SecuritySettings
   - uid: azure-arm-logic._global.AS2ValidationSettings
@@ -708,7 +708,7 @@ items:
     fullName: azure-arm-logic.AS2ValidationSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AS2ValidationSettings
   - uid: azure-arm-logic._global.AS2EnvelopeSettings
@@ -718,7 +718,7 @@ items:
     fullName: azure-arm-logic.AS2EnvelopeSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AS2EnvelopeSettings
   - uid: azure-arm-logic._global.AS2ErrorSettings
@@ -728,7 +728,7 @@ items:
     fullName: azure-arm-logic.AS2ErrorSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AS2ErrorSettings
   - uid: azure-arm-logic._global.AS2ProtocolSettings
@@ -738,7 +738,7 @@ items:
     fullName: azure-arm-logic.AS2ProtocolSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AS2ProtocolSettings
   - uid: azure-arm-logic._global.AS2OneWayAgreement
@@ -748,7 +748,7 @@ items:
     fullName: azure-arm-logic.AS2OneWayAgreement
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AS2OneWayAgreement
   - uid: azure-arm-logic._global.AS2AgreementContent
@@ -758,7 +758,7 @@ items:
     fullName: azure-arm-logic.AS2AgreementContent
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AS2AgreementContent
   - uid: azure-arm-logic._global.X12ValidationSettings
@@ -768,7 +768,7 @@ items:
     fullName: azure-arm-logic.X12ValidationSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12ValidationSettings
   - uid: azure-arm-logic._global.X12FramingSettings
@@ -778,7 +778,7 @@ items:
     fullName: azure-arm-logic.X12FramingSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12FramingSettings
   - uid: azure-arm-logic._global.X12EnvelopeSettings
@@ -788,7 +788,7 @@ items:
     fullName: azure-arm-logic.X12EnvelopeSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12EnvelopeSettings
   - uid: azure-arm-logic._global.X12AcknowledgementSettings
@@ -798,7 +798,7 @@ items:
     fullName: azure-arm-logic.X12AcknowledgementSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12AcknowledgementSettings
   - uid: azure-arm-logic._global.X12MessageFilter
@@ -808,7 +808,7 @@ items:
     fullName: azure-arm-logic.X12MessageFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12MessageFilter
   - uid: azure-arm-logic._global.X12SecuritySettings
@@ -818,7 +818,7 @@ items:
     fullName: azure-arm-logic.X12SecuritySettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12SecuritySettings
   - uid: azure-arm-logic._global.X12ProcessingSettings
@@ -828,7 +828,7 @@ items:
     fullName: azure-arm-logic.X12ProcessingSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12ProcessingSettings
   - uid: azure-arm-logic._global.X12EnvelopeOverride
@@ -838,7 +838,7 @@ items:
     fullName: azure-arm-logic.X12EnvelopeOverride
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12EnvelopeOverride
   - uid: azure-arm-logic._global.X12ValidationOverride
@@ -848,7 +848,7 @@ items:
     fullName: azure-arm-logic.X12ValidationOverride
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12ValidationOverride
   - uid: azure-arm-logic._global.X12MessageIdentifier
@@ -858,7 +858,7 @@ items:
     fullName: azure-arm-logic.X12MessageIdentifier
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12MessageIdentifier
   - uid: azure-arm-logic._global.X12SchemaReference
@@ -868,7 +868,7 @@ items:
     fullName: azure-arm-logic.X12SchemaReference
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12SchemaReference
   - uid: azure-arm-logic._global.X12DelimiterOverrides
@@ -878,7 +878,7 @@ items:
     fullName: azure-arm-logic.X12DelimiterOverrides
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12DelimiterOverrides
   - uid: azure-arm-logic._global.X12ProtocolSettings
@@ -888,7 +888,7 @@ items:
     fullName: azure-arm-logic.X12ProtocolSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12ProtocolSettings
   - uid: azure-arm-logic._global.X12OneWayAgreement
@@ -898,7 +898,7 @@ items:
     fullName: azure-arm-logic.X12OneWayAgreement
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12OneWayAgreement
   - uid: azure-arm-logic._global.X12AgreementContent
@@ -908,7 +908,7 @@ items:
     fullName: azure-arm-logic.X12AgreementContent
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: X12AgreementContent
   - uid: azure-arm-logic._global.EdifactValidationSettings
@@ -918,7 +918,7 @@ items:
     fullName: azure-arm-logic.EdifactValidationSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactValidationSettings
   - uid: azure-arm-logic._global.EdifactFramingSettings
@@ -928,7 +928,7 @@ items:
     fullName: azure-arm-logic.EdifactFramingSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactFramingSettings
   - uid: azure-arm-logic._global.EdifactEnvelopeSettings
@@ -938,7 +938,7 @@ items:
     fullName: azure-arm-logic.EdifactEnvelopeSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactEnvelopeSettings
   - uid: azure-arm-logic._global.EdifactAcknowledgementSettings
@@ -948,7 +948,7 @@ items:
     fullName: azure-arm-logic.EdifactAcknowledgementSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactAcknowledgementSettings
   - uid: azure-arm-logic._global.EdifactMessageFilter
@@ -958,7 +958,7 @@ items:
     fullName: azure-arm-logic.EdifactMessageFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactMessageFilter
   - uid: azure-arm-logic._global.EdifactProcessingSettings
@@ -968,7 +968,7 @@ items:
     fullName: azure-arm-logic.EdifactProcessingSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactProcessingSettings
   - uid: azure-arm-logic._global.EdifactEnvelopeOverride
@@ -978,7 +978,7 @@ items:
     fullName: azure-arm-logic.EdifactEnvelopeOverride
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactEnvelopeOverride
   - uid: azure-arm-logic._global.EdifactMessageIdentifier
@@ -988,7 +988,7 @@ items:
     fullName: azure-arm-logic.EdifactMessageIdentifier
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactMessageIdentifier
   - uid: azure-arm-logic._global.EdifactSchemaReference
@@ -998,7 +998,7 @@ items:
     fullName: azure-arm-logic.EdifactSchemaReference
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactSchemaReference
   - uid: azure-arm-logic._global.EdifactValidationOverride
@@ -1008,7 +1008,7 @@ items:
     fullName: azure-arm-logic.EdifactValidationOverride
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactValidationOverride
   - uid: azure-arm-logic._global.EdifactDelimiterOverride
@@ -1018,7 +1018,7 @@ items:
     fullName: azure-arm-logic.EdifactDelimiterOverride
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactDelimiterOverride
   - uid: azure-arm-logic._global.EdifactProtocolSettings
@@ -1028,7 +1028,7 @@ items:
     fullName: azure-arm-logic.EdifactProtocolSettings
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactProtocolSettings
   - uid: azure-arm-logic._global.EdifactOneWayAgreement
@@ -1038,7 +1038,7 @@ items:
     fullName: azure-arm-logic.EdifactOneWayAgreement
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactOneWayAgreement
   - uid: azure-arm-logic._global.EdifactAgreementContent
@@ -1048,7 +1048,7 @@ items:
     fullName: azure-arm-logic.EdifactAgreementContent
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EdifactAgreementContent
   - uid: azure-arm-logic._global.AgreementContent
@@ -1058,7 +1058,7 @@ items:
     fullName: azure-arm-logic.AgreementContent
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AgreementContent
   - uid: azure-arm-logic._global.IntegrationAccountAgreement
@@ -1068,7 +1068,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountAgreement
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountAgreement
   - uid: azure-arm-logic._global.IntegrationAccountAgreementListResult
@@ -1078,7 +1078,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountAgreementListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountAgreementListResult
   - uid: azure-arm-logic._global.IntegrationAccountAgreementFilter
@@ -1088,7 +1088,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountAgreementFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountAgreementFilter
   - uid: azure-arm-logic._global.KeyVaultKeyReferenceKeyVault
@@ -1098,7 +1098,7 @@ items:
     fullName: azure-arm-logic.KeyVaultKeyReferenceKeyVault
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: KeyVaultKeyReferenceKeyVault
   - uid: azure-arm-logic._global.KeyVaultKeyReference
@@ -1108,7 +1108,7 @@ items:
     fullName: azure-arm-logic.KeyVaultKeyReference
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: KeyVaultKeyReference
   - uid: azure-arm-logic._global.IntegrationAccountCertificate
@@ -1118,7 +1118,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountCertificate
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountCertificate
   - uid: azure-arm-logic._global.IntegrationAccountCertificateListResult
@@ -1128,7 +1128,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountCertificateListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountCertificateListResult
   - uid: azure-arm-logic._global.IntegrationAccountSessionFilter
@@ -1138,7 +1138,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountSessionFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountSessionFilter
   - uid: azure-arm-logic._global.IntegrationAccountSession
@@ -1148,7 +1148,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountSession
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountSession
   - uid: azure-arm-logic._global.IntegrationAccountSessionListResult
@@ -1158,7 +1158,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountSessionListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountSessionListResult
   - uid: azure-arm-logic._global.OperationDisplay
@@ -1168,7 +1168,7 @@ items:
     fullName: azure-arm-logic.OperationDisplay
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationDisplay
   - uid: azure-arm-logic._global.Operation
@@ -1178,7 +1178,7 @@ items:
     fullName: azure-arm-logic.Operation
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Operation
   - uid: azure-arm-logic._global.OperationListResult
@@ -1188,7 +1188,7 @@ items:
     fullName: azure-arm-logic.OperationListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationListResult
   - uid: azure-arm-logic._global.ErrorProperties
@@ -1198,7 +1198,7 @@ items:
     fullName: azure-arm-logic.ErrorProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ErrorProperties
   - uid: azure-arm-logic._global.ErrorResponse
@@ -1208,7 +1208,7 @@ items:
     fullName: azure-arm-logic.ErrorResponse
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ErrorResponse
   - uid: azure-arm-logic._global.WorkflowListResult
@@ -1218,7 +1218,7 @@ items:
     fullName: azure-arm-logic.WorkflowListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowListResult
   - uid: azure-arm-logic._global.WorkflowVersionListResult
@@ -1228,7 +1228,7 @@ items:
     fullName: azure-arm-logic.WorkflowVersionListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowVersionListResult
   - uid: azure-arm-logic._global.WorkflowTriggerListResult
@@ -1238,7 +1238,7 @@ items:
     fullName: azure-arm-logic.WorkflowTriggerListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowTriggerListResult
   - uid: azure-arm-logic._global.WorkflowTriggerHistoryListResult
@@ -1248,7 +1248,7 @@ items:
     fullName: azure-arm-logic.WorkflowTriggerHistoryListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowTriggerHistoryListResult
   - uid: azure-arm-logic._global.WorkflowRunListResult
@@ -1258,7 +1258,7 @@ items:
     fullName: azure-arm-logic.WorkflowRunListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowRunListResult
   - uid: azure-arm-logic._global.WorkflowRunActionListResult
@@ -1268,7 +1268,7 @@ items:
     fullName: azure-arm-logic.WorkflowRunActionListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowRunActionListResult
   - uid: azure-arm-logic._global.IntegrationAccountListResult
@@ -1278,7 +1278,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountListResult
   - uid: azure-arm-logic._global.IntegrationAccountSchemaListResult
@@ -1288,7 +1288,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountSchemaListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountSchemaListResult
   - uid: azure-arm-logic._global.IntegrationAccountMapListResult
@@ -1298,7 +1298,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountMapListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountMapListResult
   - uid: azure-arm-logic._global.IntegrationAccountPartnerListResult
@@ -1308,7 +1308,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountPartnerListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountPartnerListResult
   - uid: azure-arm-logic._global.IntegrationAccountAgreementListResult
@@ -1318,7 +1318,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountAgreementListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountAgreementListResult
   - uid: azure-arm-logic._global.IntegrationAccountCertificateListResult
@@ -1328,7 +1328,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountCertificateListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountCertificateListResult
   - uid: azure-arm-logic._global.IntegrationAccountSessionListResult
@@ -1338,7 +1338,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccountSessionListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccountSessionListResult
   - uid: azure-arm-logic._global.OperationListResult
@@ -1348,7 +1348,7 @@ items:
     fullName: azure-arm-logic.OperationListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationListResult
   - uid: azure-arm-logic._global.Workflows
@@ -1358,7 +1358,7 @@ items:
     fullName: azure-arm-logic.Workflows
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Workflows
   - uid: azure-arm-logic._global.WorkflowVersions
@@ -1368,7 +1368,7 @@ items:
     fullName: azure-arm-logic.WorkflowVersions
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowVersions
   - uid: azure-arm-logic._global.WorkflowTriggers
@@ -1378,7 +1378,7 @@ items:
     fullName: azure-arm-logic.WorkflowTriggers
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowTriggers
   - uid: azure-arm-logic._global.WorkflowTriggerHistories
@@ -1388,7 +1388,7 @@ items:
     fullName: azure-arm-logic.WorkflowTriggerHistories
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowTriggerHistories
   - uid: azure-arm-logic._global.WorkflowRuns
@@ -1398,7 +1398,7 @@ items:
     fullName: azure-arm-logic.WorkflowRuns
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowRuns
   - uid: azure-arm-logic._global.WorkflowRunActions
@@ -1408,7 +1408,7 @@ items:
     fullName: azure-arm-logic.WorkflowRunActions
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkflowRunActions
   - uid: azure-arm-logic._global.IntegrationAccounts
@@ -1418,7 +1418,7 @@ items:
     fullName: azure-arm-logic.IntegrationAccounts
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntegrationAccounts
   - uid: azure-arm-logic._global.Schemas
@@ -1428,7 +1428,7 @@ items:
     fullName: azure-arm-logic.Schemas
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Schemas
   - uid: azure-arm-logic._global.Maps
@@ -1438,7 +1438,7 @@ items:
     fullName: azure-arm-logic.Maps
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Maps
   - uid: azure-arm-logic._global.Partners
@@ -1448,7 +1448,7 @@ items:
     fullName: azure-arm-logic.Partners
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Partners
   - uid: azure-arm-logic._global.Agreements
@@ -1458,7 +1458,7 @@ items:
     fullName: azure-arm-logic.Agreements
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Agreements
   - uid: azure-arm-logic._global.Certificates
@@ -1468,7 +1468,7 @@ items:
     fullName: azure-arm-logic.Certificates
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Certificates
   - uid: azure-arm-logic._global.Sessions
@@ -1478,6 +1478,6 @@ items:
     fullName: azure-arm-logic.Sessions
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Sessions

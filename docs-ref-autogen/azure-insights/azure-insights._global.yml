@@ -41,7 +41,7 @@ items:
     fullName: azure-insights.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-insights._global.CloudError
@@ -51,7 +51,7 @@ items:
     fullName: azure-insights.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-insights._global.LocalizableString
@@ -61,7 +61,7 @@ items:
     fullName: azure-insights.LocalizableString
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LocalizableString
   - uid: azure-insights._global.UsageMetric
@@ -71,7 +71,7 @@ items:
     fullName: azure-insights.UsageMetric
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: UsageMetric
   - uid: azure-insights._global.UsageMetricCollection
@@ -81,7 +81,7 @@ items:
     fullName: azure-insights.UsageMetricCollection
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: UsageMetricCollection
   - uid: azure-insights._global.EventCategoryCollection
@@ -91,7 +91,7 @@ items:
     fullName: azure-insights.EventCategoryCollection
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EventCategoryCollection
   - uid: azure-insights._global.SenderAuthorization
@@ -101,7 +101,7 @@ items:
     fullName: azure-insights.SenderAuthorization
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SenderAuthorization
   - uid: azure-insights._global.HttpRequestInfo
@@ -111,7 +111,7 @@ items:
     fullName: azure-insights.HttpRequestInfo
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: HttpRequestInfo
   - uid: azure-insights._global.EventData
@@ -121,7 +121,7 @@ items:
     fullName: azure-insights.EventData
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EventData
   - uid: azure-insights._global.EventDataCollection
@@ -131,7 +131,7 @@ items:
     fullName: azure-insights.EventDataCollection
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EventDataCollection
   - uid: azure-insights._global.MetricAvailability
@@ -141,7 +141,7 @@ items:
     fullName: azure-insights.MetricAvailability
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: MetricAvailability
   - uid: azure-insights._global.MetricDefinition
@@ -151,7 +151,7 @@ items:
     fullName: azure-insights.MetricDefinition
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: MetricDefinition
   - uid: azure-insights._global.MetricDefinitionCollection
@@ -161,7 +161,7 @@ items:
     fullName: azure-insights.MetricDefinitionCollection
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: MetricDefinitionCollection
   - uid: azure-insights._global.MetricValue
@@ -171,7 +171,7 @@ items:
     fullName: azure-insights.MetricValue
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: MetricValue
   - uid: azure-insights._global.Metric
@@ -181,7 +181,7 @@ items:
     fullName: azure-insights.Metric
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Metric
   - uid: azure-insights._global.MetricCollection
@@ -191,7 +191,7 @@ items:
     fullName: azure-insights.MetricCollection
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: MetricCollection
   - uid: azure-insights._global.UsageMetricCollection
@@ -201,7 +201,7 @@ items:
     fullName: azure-insights.UsageMetricCollection
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: UsageMetricCollection
   - uid: azure-insights._global.EventCategoryCollection
@@ -211,7 +211,7 @@ items:
     fullName: azure-insights.EventCategoryCollection
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EventCategoryCollection
   - uid: azure-insights._global.EventDataCollection
@@ -221,7 +221,7 @@ items:
     fullName: azure-insights.EventDataCollection
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EventDataCollection
   - uid: azure-insights._global.MetricDefinitionCollection
@@ -231,7 +231,7 @@ items:
     fullName: azure-insights.MetricDefinitionCollection
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: MetricDefinitionCollection
   - uid: azure-insights._global.MetricCollection
@@ -241,7 +241,7 @@ items:
     fullName: azure-insights.MetricCollection
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: MetricCollection
   - uid: azure-insights._global.UsageMetrics
@@ -251,7 +251,7 @@ items:
     fullName: azure-insights.UsageMetrics
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: UsageMetrics
   - uid: azure-insights._global.EventCategories
@@ -261,7 +261,7 @@ items:
     fullName: azure-insights.EventCategories
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EventCategories
   - uid: azure-insights._global.Events
@@ -271,7 +271,7 @@ items:
     fullName: azure-insights.Events
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Events
   - uid: azure-insights._global.TenantEvents
@@ -281,7 +281,7 @@ items:
     fullName: azure-insights.TenantEvents
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: TenantEvents
   - uid: azure-insights._global.MetricDefinitions
@@ -291,7 +291,7 @@ items:
     fullName: azure-insights.MetricDefinitions
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: MetricDefinitions
   - uid: azure-insights._global.Metrics
@@ -301,6 +301,6 @@ items:
     fullName: azure-insights.Metrics
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Metrics

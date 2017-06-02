@@ -18,7 +18,7 @@ items:
     fullName: azure-asm-mgmt.ManagementClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ManagementClient
   - uid: azure-asm-mgmt._global.createManagementClient
@@ -28,7 +28,7 @@ items:
     fullName: 'azure-asm-mgmt.createManagementClient(baseUri, filters)'
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.subscriptionId
@@ -70,7 +70,7 @@ items:
     fullName: azure-asm-mgmt.createCertificateCloudCredentials()
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.subscription
@@ -104,7 +104,7 @@ items:
     fullName: azure-asm-mgmt.ManagementClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ManagementClient
 references:

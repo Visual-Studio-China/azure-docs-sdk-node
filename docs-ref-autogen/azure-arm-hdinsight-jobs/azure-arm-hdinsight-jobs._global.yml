@@ -16,7 +16,7 @@ items:
     fullName: azure-arm-hdinsight-jobs.HDInsightJobManagementClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: HDInsightJobManagementClient
   - uid: azure-arm-hdinsight-jobs._global.HDInsightJobManagementClient
@@ -26,6 +26,6 @@ items:
     fullName: azure-arm-hdinsight-jobs.HDInsightJobManagementClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: HDInsightJobManagementClient

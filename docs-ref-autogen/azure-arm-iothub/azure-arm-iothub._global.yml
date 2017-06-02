@@ -61,7 +61,7 @@ items:
     fullName: azure-arm-iothub.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-arm-iothub._global.CloudError
@@ -71,7 +71,7 @@ items:
     fullName: azure-arm-iothub.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-arm-iothub._global.SharedAccessSignatureAuthorizationRule
@@ -81,7 +81,7 @@ items:
     fullName: azure-arm-iothub.SharedAccessSignatureAuthorizationRule
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SharedAccessSignatureAuthorizationRule
   - uid: azure-arm-iothub._global.IpFilterRule
@@ -91,7 +91,7 @@ items:
     fullName: azure-arm-iothub.IpFilterRule
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IpFilterRule
   - uid: azure-arm-iothub._global.EventHubProperties
@@ -101,7 +101,7 @@ items:
     fullName: azure-arm-iothub.EventHubProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EventHubProperties
   - uid: azure-arm-iothub._global.RoutingServiceBusQueueEndpointProperties
@@ -111,7 +111,7 @@ items:
     fullName: azure-arm-iothub.RoutingServiceBusQueueEndpointProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RoutingServiceBusQueueEndpointProperties
   - uid: azure-arm-iothub._global.RoutingServiceBusTopicEndpointProperties
@@ -121,7 +121,7 @@ items:
     fullName: azure-arm-iothub.RoutingServiceBusTopicEndpointProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RoutingServiceBusTopicEndpointProperties
   - uid: azure-arm-iothub._global.RoutingEventHubProperties
@@ -131,7 +131,7 @@ items:
     fullName: azure-arm-iothub.RoutingEventHubProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RoutingEventHubProperties
   - uid: azure-arm-iothub._global.RoutingEndpoints
@@ -141,7 +141,7 @@ items:
     fullName: azure-arm-iothub.RoutingEndpoints
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RoutingEndpoints
   - uid: azure-arm-iothub._global.RouteProperties
@@ -151,7 +151,7 @@ items:
     fullName: azure-arm-iothub.RouteProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RouteProperties
   - uid: azure-arm-iothub._global.FallbackRouteProperties
@@ -161,7 +161,7 @@ items:
     fullName: azure-arm-iothub.FallbackRouteProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: FallbackRouteProperties
   - uid: azure-arm-iothub._global.RoutingProperties
@@ -171,7 +171,7 @@ items:
     fullName: azure-arm-iothub.RoutingProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RoutingProperties
   - uid: azure-arm-iothub._global.StorageEndpointProperties
@@ -181,7 +181,7 @@ items:
     fullName: azure-arm-iothub.StorageEndpointProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: StorageEndpointProperties
   - uid: azure-arm-iothub._global.MessagingEndpointProperties
@@ -191,7 +191,7 @@ items:
     fullName: azure-arm-iothub.MessagingEndpointProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: MessagingEndpointProperties
   - uid: azure-arm-iothub._global.FeedbackProperties
@@ -201,7 +201,7 @@ items:
     fullName: azure-arm-iothub.FeedbackProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: FeedbackProperties
   - uid: azure-arm-iothub._global.CloudToDeviceProperties
@@ -211,7 +211,7 @@ items:
     fullName: azure-arm-iothub.CloudToDeviceProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudToDeviceProperties
   - uid: azure-arm-iothub._global.OperationsMonitoringProperties
@@ -221,7 +221,7 @@ items:
     fullName: azure-arm-iothub.OperationsMonitoringProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationsMonitoringProperties
   - uid: azure-arm-iothub._global.IotHubProperties
@@ -231,7 +231,7 @@ items:
     fullName: azure-arm-iothub.IotHubProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubProperties
   - uid: azure-arm-iothub._global.IotHubSkuInfo
@@ -241,7 +241,7 @@ items:
     fullName: azure-arm-iothub.IotHubSkuInfo
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubSkuInfo
   - uid: azure-arm-iothub._global.Resource
@@ -251,7 +251,7 @@ items:
     fullName: azure-arm-iothub.Resource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Resource
   - uid: azure-arm-iothub._global.IotHubDescription
@@ -261,7 +261,7 @@ items:
     fullName: azure-arm-iothub.IotHubDescription
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubDescription
   - uid: azure-arm-iothub._global.SharedAccessSignatureAuthorizationRuleListResult
@@ -271,7 +271,7 @@ items:
     fullName: azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SharedAccessSignatureAuthorizationRuleListResult
   - uid: azure-arm-iothub._global.ErrorDetails
@@ -281,7 +281,7 @@ items:
     fullName: azure-arm-iothub.ErrorDetails
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ErrorDetails
   - uid: azure-arm-iothub._global.IotHubQuotaMetricInfo
@@ -291,7 +291,7 @@ items:
     fullName: azure-arm-iothub.IotHubQuotaMetricInfo
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubQuotaMetricInfo
   - uid: azure-arm-iothub._global.IotHubQuotaMetricInfoListResult
@@ -301,7 +301,7 @@ items:
     fullName: azure-arm-iothub.IotHubQuotaMetricInfoListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubQuotaMetricInfoListResult
   - uid: azure-arm-iothub._global.RegistryStatistics
@@ -311,7 +311,7 @@ items:
     fullName: azure-arm-iothub.RegistryStatistics
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RegistryStatistics
   - uid: azure-arm-iothub._global.JobResponse
@@ -321,7 +321,7 @@ items:
     fullName: azure-arm-iothub.JobResponse
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobResponse
   - uid: azure-arm-iothub._global.JobResponseListResult
@@ -331,7 +331,7 @@ items:
     fullName: azure-arm-iothub.JobResponseListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobResponseListResult
   - uid: azure-arm-iothub._global.IotHubCapacity
@@ -341,7 +341,7 @@ items:
     fullName: azure-arm-iothub.IotHubCapacity
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubCapacity
   - uid: azure-arm-iothub._global.IotHubSkuDescription
@@ -351,7 +351,7 @@ items:
     fullName: azure-arm-iothub.IotHubSkuDescription
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubSkuDescription
   - uid: azure-arm-iothub._global.EventHubConsumerGroupsListResult
@@ -361,7 +361,7 @@ items:
     fullName: azure-arm-iothub.EventHubConsumerGroupsListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EventHubConsumerGroupsListResult
   - uid: azure-arm-iothub._global.EventHubConsumerGroupInfo
@@ -371,7 +371,7 @@ items:
     fullName: azure-arm-iothub.EventHubConsumerGroupInfo
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EventHubConsumerGroupInfo
   - uid: azure-arm-iothub._global.IotHubSkuDescriptionListResult
@@ -381,7 +381,7 @@ items:
     fullName: azure-arm-iothub.IotHubSkuDescriptionListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubSkuDescriptionListResult
   - uid: azure-arm-iothub._global.IotHubDescriptionListResult
@@ -391,7 +391,7 @@ items:
     fullName: azure-arm-iothub.IotHubDescriptionListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubDescriptionListResult
   - uid: azure-arm-iothub._global.OperationInputs
@@ -401,7 +401,7 @@ items:
     fullName: azure-arm-iothub.OperationInputs
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationInputs
   - uid: azure-arm-iothub._global.IotHubNameAvailabilityInfo
@@ -411,7 +411,7 @@ items:
     fullName: azure-arm-iothub.IotHubNameAvailabilityInfo
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubNameAvailabilityInfo
   - uid: azure-arm-iothub._global.ExportDevicesRequest
@@ -421,7 +421,7 @@ items:
     fullName: azure-arm-iothub.ExportDevicesRequest
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ExportDevicesRequest
   - uid: azure-arm-iothub._global.ImportDevicesRequest
@@ -431,7 +431,7 @@ items:
     fullName: azure-arm-iothub.ImportDevicesRequest
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ImportDevicesRequest
   - uid: azure-arm-iothub._global.IotHubDescriptionListResult
@@ -441,7 +441,7 @@ items:
     fullName: azure-arm-iothub.IotHubDescriptionListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubDescriptionListResult
   - uid: azure-arm-iothub._global.IotHubSkuDescriptionListResult
@@ -451,7 +451,7 @@ items:
     fullName: azure-arm-iothub.IotHubSkuDescriptionListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubSkuDescriptionListResult
   - uid: azure-arm-iothub._global.EventHubConsumerGroupsListResult
@@ -461,7 +461,7 @@ items:
     fullName: azure-arm-iothub.EventHubConsumerGroupsListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EventHubConsumerGroupsListResult
   - uid: azure-arm-iothub._global.JobResponseListResult
@@ -471,7 +471,7 @@ items:
     fullName: azure-arm-iothub.JobResponseListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobResponseListResult
   - uid: azure-arm-iothub._global.IotHubQuotaMetricInfoListResult
@@ -481,7 +481,7 @@ items:
     fullName: azure-arm-iothub.IotHubQuotaMetricInfoListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubQuotaMetricInfoListResult
   - uid: azure-arm-iothub._global.SharedAccessSignatureAuthorizationRuleListResult
@@ -491,7 +491,7 @@ items:
     fullName: azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SharedAccessSignatureAuthorizationRuleListResult
   - uid: azure-arm-iothub._global.IotHubResource
@@ -501,6 +501,6 @@ items:
     fullName: azure-arm-iothub.IotHubResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IotHubResource

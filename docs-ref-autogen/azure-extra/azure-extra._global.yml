@@ -17,7 +17,7 @@ items:
     fullName: azure-extra.GraphRbacManagementClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: GraphRbacManagementClient
   - uid: azure-extra._global.createGraphRbacManagementClient
@@ -30,7 +30,7 @@ items:
     fullName: 'azure-extra.createGraphRbacManagementClient(baseUri, filters)'
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.subscriptionId
@@ -70,7 +70,7 @@ items:
     fullName: azure-extra.GraphRbacManagementClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: GraphRbacManagementClient
 references:

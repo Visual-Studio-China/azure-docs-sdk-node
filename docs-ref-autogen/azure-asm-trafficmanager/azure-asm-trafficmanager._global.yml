@@ -17,7 +17,7 @@ items:
     fullName: azure-asm-trafficmanager.TrafficManagerManagementClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: TrafficManagerManagementClient
   - uid: azure-asm-trafficmanager._global.createTrafficManagerManagementClient
@@ -32,7 +32,7 @@ items:
       filters)
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.subscriptionId
@@ -67,7 +67,7 @@ items:
     fullName: azure-asm-trafficmanager.TrafficManagerManagementClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: TrafficManagerManagementClient
 references:

@@ -26,7 +26,7 @@ items:
     fullName: azure-asm-website.WebSiteManagementClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WebSiteManagementClient
   - uid: azure-asm-website._global.createWebSiteManagementClient
@@ -36,7 +36,7 @@ items:
     fullName: 'azure-asm-website.createWebSiteManagementClient(filters, baseUri)'
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.subscriptionId
@@ -76,7 +76,7 @@ items:
     fullName: azure-asm-website.WebsiteManagementService
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WebsiteManagementService
   - uid: azure-asm-website._global.WebSiteExtensionsClient
@@ -86,7 +86,7 @@ items:
     fullName: azure-asm-website.WebSiteExtensionsClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WebSiteExtensionsClient
   - uid: azure-asm-website._global.createWebSiteExtensionsClient
@@ -98,7 +98,7 @@ items:
       filters)
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: siteName
@@ -139,7 +139,7 @@ items:
       authentication, hostOptions)
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: subscriptionId
@@ -203,7 +203,7 @@ items:
     fullName: azure-asm-website.ScmService
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ScmService
   - uid: azure-asm-website._global.createScmService
@@ -213,7 +213,7 @@ items:
     fullName: 'azure-asm-website.createScmService(authentication, hostOptions)'
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: authentication
@@ -256,7 +256,7 @@ items:
     fullName: azure-asm-website.createCertificateCloudCredentials()
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.subscription
@@ -292,7 +292,7 @@ items:
     fullName: azure-asm-website.createBasicAuthenticationCloudCredentials()
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.username
@@ -315,7 +315,7 @@ items:
     fullName: azure-asm-website.WebSiteExtensionsClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WebSiteExtensionsClient
   - uid: azure-asm-website._global.WebSiteManagementClient
@@ -325,7 +325,7 @@ items:
     fullName: azure-asm-website.WebSiteManagementClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WebSiteManagementClient
 references:

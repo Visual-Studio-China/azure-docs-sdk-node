@@ -45,7 +45,7 @@ items:
     fullName: azure-arm-servicefabric.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-arm-servicefabric._global.CloudError
@@ -55,7 +55,7 @@ items:
     fullName: azure-arm-servicefabric.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-arm-servicefabric._global.CertificateDescription
@@ -65,7 +65,7 @@ items:
     fullName: azure-arm-servicefabric.CertificateDescription
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CertificateDescription
   - uid: azure-arm-servicefabric._global.SettingsParameterDescription
@@ -75,7 +75,7 @@ items:
     fullName: azure-arm-servicefabric.SettingsParameterDescription
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SettingsParameterDescription
   - uid: azure-arm-servicefabric._global.SettingsSectionDescription
@@ -85,7 +85,7 @@ items:
     fullName: azure-arm-servicefabric.SettingsSectionDescription
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SettingsSectionDescription
   - uid: azure-arm-servicefabric._global.EndpointRangeDescription
@@ -95,7 +95,7 @@ items:
     fullName: azure-arm-servicefabric.EndpointRangeDescription
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EndpointRangeDescription
   - uid: azure-arm-servicefabric._global.NodeTypeDescription
@@ -105,7 +105,7 @@ items:
     fullName: azure-arm-servicefabric.NodeTypeDescription
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: NodeTypeDescription
   - uid: azure-arm-servicefabric._global.ClientCertificateThumbprint
@@ -115,7 +115,7 @@ items:
     fullName: azure-arm-servicefabric.ClientCertificateThumbprint
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ClientCertificateThumbprint
   - uid: azure-arm-servicefabric._global.ClientCertificateCommonName
@@ -125,7 +125,7 @@ items:
     fullName: azure-arm-servicefabric.ClientCertificateCommonName
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ClientCertificateCommonName
   - uid: azure-arm-servicefabric._global.ClusterVersionDetails
@@ -135,7 +135,7 @@ items:
     fullName: azure-arm-servicefabric.ClusterVersionDetails
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ClusterVersionDetails
   - uid: azure-arm-servicefabric._global.PaasServiceTypeHealthPolicy
@@ -145,7 +145,7 @@ items:
     fullName: azure-arm-servicefabric.PaasServiceTypeHealthPolicy
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: PaasServiceTypeHealthPolicy
   - uid: azure-arm-servicefabric._global.PaasApplicationHealthPolicy
@@ -155,7 +155,7 @@ items:
     fullName: azure-arm-servicefabric.PaasApplicationHealthPolicy
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: PaasApplicationHealthPolicy
   - uid: azure-arm-servicefabric._global.PaasClusterUpgradeHealthPolicy
@@ -165,7 +165,7 @@ items:
     fullName: azure-arm-servicefabric.PaasClusterUpgradeHealthPolicy
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: PaasClusterUpgradeHealthPolicy
   - uid: azure-arm-servicefabric._global.PaasServiceTypeDeltaHealthPolicy
@@ -175,7 +175,7 @@ items:
     fullName: azure-arm-servicefabric.PaasServiceTypeDeltaHealthPolicy
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: PaasServiceTypeDeltaHealthPolicy
   - uid: azure-arm-servicefabric._global.PaasApplicationDeltaHealthPolicy
@@ -185,7 +185,7 @@ items:
     fullName: azure-arm-servicefabric.PaasApplicationDeltaHealthPolicy
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: PaasApplicationDeltaHealthPolicy
   - uid: azure-arm-servicefabric._global.PaasClusterUpgradeDeltaHealthPolicy
@@ -195,7 +195,7 @@ items:
     fullName: azure-arm-servicefabric.PaasClusterUpgradeDeltaHealthPolicy
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: PaasClusterUpgradeDeltaHealthPolicy
   - uid: azure-arm-servicefabric._global.PaasClusterUpgradePolicy
@@ -205,7 +205,7 @@ items:
     fullName: azure-arm-servicefabric.PaasClusterUpgradePolicy
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: PaasClusterUpgradePolicy
   - uid: azure-arm-servicefabric._global.DiagnosticsStorageAccountConfig
@@ -215,7 +215,7 @@ items:
     fullName: azure-arm-servicefabric.DiagnosticsStorageAccountConfig
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DiagnosticsStorageAccountConfig
   - uid: azure-arm-servicefabric._global.ClusterUpdateParameters
@@ -225,7 +225,7 @@ items:
     fullName: azure-arm-servicefabric.ClusterUpdateParameters
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ClusterUpdateParameters
   - uid: azure-arm-servicefabric._global.Resource
@@ -235,7 +235,7 @@ items:
     fullName: azure-arm-servicefabric.Resource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Resource
   - uid: azure-arm-servicefabric._global.Cluster
@@ -245,7 +245,7 @@ items:
     fullName: azure-arm-servicefabric.Cluster
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Cluster
   - uid: azure-arm-servicefabric._global.ClusterListResult
@@ -255,7 +255,7 @@ items:
     fullName: azure-arm-servicefabric.ClusterListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ClusterListResult
   - uid: azure-arm-servicefabric._global.AvailableOperationDisplay
@@ -265,7 +265,7 @@ items:
     fullName: azure-arm-servicefabric.AvailableOperationDisplay
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AvailableOperationDisplay
   - uid: azure-arm-servicefabric._global.OperationResult
@@ -275,7 +275,7 @@ items:
     fullName: azure-arm-servicefabric.OperationResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationResult
   - uid: azure-arm-servicefabric._global.OperationListResult
@@ -285,7 +285,7 @@ items:
     fullName: azure-arm-servicefabric.OperationListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationListResult
   - uid: azure-arm-servicefabric._global.ErrorModelError
@@ -295,7 +295,7 @@ items:
     fullName: azure-arm-servicefabric.ErrorModelError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ErrorModelError
   - uid: azure-arm-servicefabric._global.ErrorModel
@@ -305,7 +305,7 @@ items:
     fullName: azure-arm-servicefabric.ErrorModel
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ErrorModel
   - uid: azure-arm-servicefabric._global.ClusterListResult
@@ -315,7 +315,7 @@ items:
     fullName: azure-arm-servicefabric.ClusterListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ClusterListResult
   - uid: azure-arm-servicefabric._global.OperationListResult
@@ -325,7 +325,7 @@ items:
     fullName: azure-arm-servicefabric.OperationListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationListResult
   - uid: azure-arm-servicefabric._global.Clusters
@@ -335,7 +335,7 @@ items:
     fullName: azure-arm-servicefabric.Clusters
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Clusters
   - uid: azure-arm-servicefabric._global.Operations
@@ -345,6 +345,6 @@ items:
     fullName: azure-arm-servicefabric.Operations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Operations

@@ -89,7 +89,7 @@ items:
     fullName: azure-arm-sql.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-arm-sql._global.CloudError
@@ -99,7 +99,7 @@ items:
     fullName: azure-arm-sql.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-arm-sql._global.MaxSizeCapability
@@ -109,7 +109,7 @@ items:
     fullName: azure-arm-sql.MaxSizeCapability
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: MaxSizeCapability
   - uid: azure-arm-sql._global.ServiceObjectiveCapability
@@ -119,7 +119,7 @@ items:
     fullName: azure-arm-sql.ServiceObjectiveCapability
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServiceObjectiveCapability
   - uid: azure-arm-sql._global.EditionCapability
@@ -129,7 +129,7 @@ items:
     fullName: azure-arm-sql.EditionCapability
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EditionCapability
   - uid: azure-arm-sql._global.ServerVersionCapability
@@ -139,7 +139,7 @@ items:
     fullName: azure-arm-sql.ServerVersionCapability
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerVersionCapability
   - uid: azure-arm-sql._global.LocationCapabilities
@@ -149,7 +149,7 @@ items:
     fullName: azure-arm-sql.LocationCapabilities
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LocationCapabilities
   - uid: azure-arm-sql._global.SubResource
@@ -159,7 +159,7 @@ items:
     fullName: azure-arm-sql.SubResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SubResource
   - uid: azure-arm-sql._global.FirewallRule
@@ -169,7 +169,7 @@ items:
     fullName: azure-arm-sql.FirewallRule
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: FirewallRule
   - uid: azure-arm-sql._global.FirewallRuleListResult
@@ -179,7 +179,7 @@ items:
     fullName: azure-arm-sql.FirewallRuleListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: FirewallRuleListResult
   - uid: azure-arm-sql._global.Resource
@@ -189,7 +189,7 @@ items:
     fullName: azure-arm-sql.Resource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Resource
   - uid: azure-arm-sql._global.TrackedResource
@@ -199,7 +199,7 @@ items:
     fullName: azure-arm-sql.TrackedResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: TrackedResource
   - uid: azure-arm-sql._global.ProxyResource
@@ -209,7 +209,7 @@ items:
     fullName: azure-arm-sql.ProxyResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ProxyResource
   - uid: azure-arm-sql._global.ImportExtensionRequest
@@ -219,7 +219,7 @@ items:
     fullName: azure-arm-sql.ImportExtensionRequest
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ImportExtensionRequest
   - uid: azure-arm-sql._global.ImportExportResponse
@@ -229,7 +229,7 @@ items:
     fullName: azure-arm-sql.ImportExportResponse
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ImportExportResponse
   - uid: azure-arm-sql._global.ExportRequest
@@ -239,7 +239,7 @@ items:
     fullName: azure-arm-sql.ExportRequest
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ExportRequest
   - uid: azure-arm-sql._global.ImportRequest
@@ -249,7 +249,7 @@ items:
     fullName: azure-arm-sql.ImportRequest
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ImportRequest
   - uid: azure-arm-sql._global.ReplicationLink
@@ -259,7 +259,7 @@ items:
     fullName: azure-arm-sql.ReplicationLink
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ReplicationLink
   - uid: azure-arm-sql._global.ReplicationLinkListResult
@@ -269,7 +269,7 @@ items:
     fullName: azure-arm-sql.ReplicationLinkListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ReplicationLinkListResult
   - uid: azure-arm-sql._global.RecommendedElasticPoolMetric
@@ -279,7 +279,7 @@ items:
     fullName: azure-arm-sql.RecommendedElasticPoolMetric
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RecommendedElasticPoolMetric
   - uid: azure-arm-sql._global.SloUsageMetric
@@ -289,7 +289,7 @@ items:
     fullName: azure-arm-sql.SloUsageMetric
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SloUsageMetric
   - uid: azure-arm-sql._global.ServiceTierAdvisor
@@ -299,7 +299,7 @@ items:
     fullName: azure-arm-sql.ServiceTierAdvisor
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServiceTierAdvisor
   - uid: azure-arm-sql._global.TransparentDataEncryption
@@ -309,7 +309,7 @@ items:
     fullName: azure-arm-sql.TransparentDataEncryption
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: TransparentDataEncryption
   - uid: azure-arm-sql._global.OperationImpact
@@ -319,7 +319,7 @@ items:
     fullName: azure-arm-sql.OperationImpact
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationImpact
   - uid: azure-arm-sql._global.RecommendedIndex
@@ -329,7 +329,7 @@ items:
     fullName: azure-arm-sql.RecommendedIndex
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RecommendedIndex
   - uid: azure-arm-sql._global.Database
@@ -339,7 +339,7 @@ items:
     fullName: azure-arm-sql.Database
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Database
   - uid: azure-arm-sql._global.RecommendedElasticPool
@@ -349,7 +349,7 @@ items:
     fullName: azure-arm-sql.RecommendedElasticPool
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RecommendedElasticPool
   - uid: azure-arm-sql._global.RecommendedElasticPoolListResult
@@ -359,7 +359,7 @@ items:
     fullName: azure-arm-sql.RecommendedElasticPoolListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RecommendedElasticPoolListResult
   - uid: azure-arm-sql._global.RecommendedElasticPoolListMetricsResult
@@ -369,7 +369,7 @@ items:
     fullName: azure-arm-sql.RecommendedElasticPoolListMetricsResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RecommendedElasticPoolListMetricsResult
   - uid: azure-arm-sql._global.ElasticPool
@@ -379,7 +379,7 @@ items:
     fullName: azure-arm-sql.ElasticPool
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ElasticPool
   - uid: azure-arm-sql._global.ElasticPoolListResult
@@ -389,7 +389,7 @@ items:
     fullName: azure-arm-sql.ElasticPoolListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ElasticPoolListResult
   - uid: azure-arm-sql._global.ElasticPoolActivity
@@ -399,7 +399,7 @@ items:
     fullName: azure-arm-sql.ElasticPoolActivity
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ElasticPoolActivity
   - uid: azure-arm-sql._global.ElasticPoolActivityListResult
@@ -409,7 +409,7 @@ items:
     fullName: azure-arm-sql.ElasticPoolActivityListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ElasticPoolActivityListResult
   - uid: azure-arm-sql._global.ElasticPoolDatabaseActivity
@@ -419,7 +419,7 @@ items:
     fullName: azure-arm-sql.ElasticPoolDatabaseActivity
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ElasticPoolDatabaseActivity
   - uid: azure-arm-sql._global.ElasticPoolDatabaseActivityListResult
@@ -429,7 +429,7 @@ items:
     fullName: azure-arm-sql.ElasticPoolDatabaseActivityListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ElasticPoolDatabaseActivityListResult
   - uid: azure-arm-sql._global.Server
@@ -439,7 +439,7 @@ items:
     fullName: azure-arm-sql.Server
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Server
   - uid: azure-arm-sql._global.ServerListResult
@@ -449,7 +449,7 @@ items:
     fullName: azure-arm-sql.ServerListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerListResult
   - uid: azure-arm-sql._global.DatabaseListResult
@@ -459,7 +459,7 @@ items:
     fullName: azure-arm-sql.DatabaseListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DatabaseListResult
   - uid: azure-arm-sql._global.RestorePoint
@@ -469,7 +469,7 @@ items:
     fullName: azure-arm-sql.RestorePoint
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RestorePoint
   - uid: azure-arm-sql._global.RestorePointListResult
@@ -479,7 +479,7 @@ items:
     fullName: azure-arm-sql.RestorePointListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RestorePointListResult
   - uid: azure-arm-sql._global.DatabaseMetric
@@ -489,7 +489,7 @@ items:
     fullName: azure-arm-sql.DatabaseMetric
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DatabaseMetric
   - uid: azure-arm-sql._global.DatabaseMetricListResult
@@ -499,7 +499,7 @@ items:
     fullName: azure-arm-sql.DatabaseMetricListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DatabaseMetricListResult
   - uid: azure-arm-sql._global.ServerMetric
@@ -509,7 +509,7 @@ items:
     fullName: azure-arm-sql.ServerMetric
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerMetric
   - uid: azure-arm-sql._global.ServerMetricListResult
@@ -519,7 +519,7 @@ items:
     fullName: azure-arm-sql.ServerMetricListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerMetricListResult
   - uid: azure-arm-sql._global.ServiceTierAdvisorListResult
@@ -529,7 +529,7 @@ items:
     fullName: azure-arm-sql.ServiceTierAdvisorListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServiceTierAdvisorListResult
   - uid: azure-arm-sql._global.ServiceObjective
@@ -539,7 +539,7 @@ items:
     fullName: azure-arm-sql.ServiceObjective
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServiceObjective
   - uid: azure-arm-sql._global.ServiceObjectiveListResult
@@ -549,7 +549,7 @@ items:
     fullName: azure-arm-sql.ServiceObjectiveListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServiceObjectiveListResult
   - uid: azure-arm-sql._global.TransparentDataEncryptionActivity
@@ -559,7 +559,7 @@ items:
     fullName: azure-arm-sql.TransparentDataEncryptionActivity
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: TransparentDataEncryptionActivity
   - uid: azure-arm-sql._global.TransparentDataEncryptionActivityListResult
@@ -569,7 +569,7 @@ items:
     fullName: azure-arm-sql.TransparentDataEncryptionActivityListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: TransparentDataEncryptionActivityListResult
   - uid: azure-arm-sql._global.OperationDisplay
@@ -579,7 +579,7 @@ items:
     fullName: azure-arm-sql.OperationDisplay
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationDisplay
   - uid: azure-arm-sql._global.Operation
@@ -589,7 +589,7 @@ items:
     fullName: azure-arm-sql.Operation
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Operation
   - uid: azure-arm-sql._global.OperationListResult
@@ -599,7 +599,7 @@ items:
     fullName: azure-arm-sql.OperationListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationListResult
   - uid: azure-arm-sql._global.DatabaseSecurityAlertPolicy
@@ -609,7 +609,7 @@ items:
     fullName: azure-arm-sql.DatabaseSecurityAlertPolicy
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DatabaseSecurityAlertPolicy
   - uid: azure-arm-sql._global.DatabaseBlobAuditingPolicy
@@ -619,7 +619,7 @@ items:
     fullName: azure-arm-sql.DatabaseBlobAuditingPolicy
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DatabaseBlobAuditingPolicy
   - uid: azure-arm-sql._global.FirewallRuleListResult
@@ -629,7 +629,7 @@ items:
     fullName: azure-arm-sql.FirewallRuleListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: FirewallRuleListResult
   - uid: azure-arm-sql._global.ReplicationLinkListResult
@@ -639,7 +639,7 @@ items:
     fullName: azure-arm-sql.ReplicationLinkListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ReplicationLinkListResult
   - uid: azure-arm-sql._global.RestorePointListResult
@@ -649,7 +649,7 @@ items:
     fullName: azure-arm-sql.RestorePointListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RestorePointListResult
   - uid: azure-arm-sql._global.DatabaseListResult
@@ -659,7 +659,7 @@ items:
     fullName: azure-arm-sql.DatabaseListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DatabaseListResult
   - uid: azure-arm-sql._global.DatabaseMetricListResult
@@ -669,7 +669,7 @@ items:
     fullName: azure-arm-sql.DatabaseMetricListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DatabaseMetricListResult
   - uid: azure-arm-sql._global.ServiceTierAdvisorListResult
@@ -679,7 +679,7 @@ items:
     fullName: azure-arm-sql.ServiceTierAdvisorListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServiceTierAdvisorListResult
   - uid: azure-arm-sql._global.TransparentDataEncryptionActivityListResult
@@ -689,7 +689,7 @@ items:
     fullName: azure-arm-sql.TransparentDataEncryptionActivityListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: TransparentDataEncryptionActivityListResult
   - uid: azure-arm-sql._global.ServerListResult
@@ -699,7 +699,7 @@ items:
     fullName: azure-arm-sql.ServerListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerListResult
   - uid: azure-arm-sql._global.ServerMetricListResult
@@ -709,7 +709,7 @@ items:
     fullName: azure-arm-sql.ServerMetricListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerMetricListResult
   - uid: azure-arm-sql._global.ServiceObjectiveListResult
@@ -719,7 +719,7 @@ items:
     fullName: azure-arm-sql.ServiceObjectiveListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServiceObjectiveListResult
   - uid: azure-arm-sql._global.ElasticPoolListResult
@@ -729,7 +729,7 @@ items:
     fullName: azure-arm-sql.ElasticPoolListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ElasticPoolListResult
   - uid: azure-arm-sql._global.ElasticPoolActivityListResult
@@ -739,7 +739,7 @@ items:
     fullName: azure-arm-sql.ElasticPoolActivityListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ElasticPoolActivityListResult
   - uid: azure-arm-sql._global.ElasticPoolDatabaseActivityListResult
@@ -749,7 +749,7 @@ items:
     fullName: azure-arm-sql.ElasticPoolDatabaseActivityListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ElasticPoolDatabaseActivityListResult
   - uid: azure-arm-sql._global.RecommendedElasticPoolListResult
@@ -759,7 +759,7 @@ items:
     fullName: azure-arm-sql.RecommendedElasticPoolListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RecommendedElasticPoolListResult
   - uid: azure-arm-sql._global.RecommendedElasticPoolListMetricsResult
@@ -769,7 +769,7 @@ items:
     fullName: azure-arm-sql.RecommendedElasticPoolListMetricsResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RecommendedElasticPoolListMetricsResult
   - uid: azure-arm-sql._global.Capabilities
@@ -779,7 +779,7 @@ items:
     fullName: azure-arm-sql.Capabilities
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Capabilities
   - uid: azure-arm-sql._global.FirewallRules
@@ -789,7 +789,7 @@ items:
     fullName: azure-arm-sql.FirewallRules
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: FirewallRules
   - uid: azure-arm-sql._global.Databases
@@ -799,7 +799,7 @@ items:
     fullName: azure-arm-sql.Databases
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Databases
   - uid: azure-arm-sql._global.Servers
@@ -809,7 +809,7 @@ items:
     fullName: azure-arm-sql.Servers
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Servers
   - uid: azure-arm-sql._global.ElasticPools
@@ -819,7 +819,7 @@ items:
     fullName: azure-arm-sql.ElasticPools
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ElasticPools
   - uid: azure-arm-sql._global.RecommendedElasticPools
@@ -829,6 +829,6 @@ items:
     fullName: azure-arm-sql.RecommendedElasticPools
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RecommendedElasticPools

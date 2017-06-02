@@ -26,7 +26,7 @@ items:
     fullName: azure-arm-analysisservices.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-arm-analysisservices._global.CloudError
@@ -36,7 +36,7 @@ items:
     fullName: azure-arm-analysisservices.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-arm-analysisservices._global.ResourceSku
@@ -46,7 +46,7 @@ items:
     fullName: azure-arm-analysisservices.ResourceSku
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResourceSku
   - uid: azure-arm-analysisservices._global.Resource
@@ -56,7 +56,7 @@ items:
     fullName: azure-arm-analysisservices.Resource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Resource
   - uid: azure-arm-analysisservices._global.AnalysisServicesServer
@@ -66,7 +66,7 @@ items:
     fullName: azure-arm-analysisservices.AnalysisServicesServer
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AnalysisServicesServer
   - uid: azure-arm-analysisservices._global.AnalysisServicesServers
@@ -76,7 +76,7 @@ items:
     fullName: azure-arm-analysisservices.AnalysisServicesServers
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AnalysisServicesServers
   - uid: azure-arm-analysisservices._global.ServerAdministrators
@@ -86,7 +86,7 @@ items:
     fullName: azure-arm-analysisservices.ServerAdministrators
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServerAdministrators
   - uid: azure-arm-analysisservices._global.BackupConfiguration
@@ -96,7 +96,7 @@ items:
     fullName: azure-arm-analysisservices.BackupConfiguration
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BackupConfiguration
   - uid: azure-arm-analysisservices._global.AnalysisServicesServerUpdateParameters
@@ -106,7 +106,7 @@ items:
     fullName: azure-arm-analysisservices.AnalysisServicesServerUpdateParameters
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AnalysisServicesServerUpdateParameters
   - uid: azure-arm-analysisservices._global.AnalysisServicesServers
@@ -116,7 +116,7 @@ items:
     fullName: azure-arm-analysisservices.AnalysisServicesServers
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AnalysisServicesServers
   - uid: azure-arm-analysisservices._global.Servers
@@ -126,6 +126,6 @@ items:
     fullName: azure-arm-analysisservices.Servers
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Servers

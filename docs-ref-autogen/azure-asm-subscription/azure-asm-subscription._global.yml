@@ -17,7 +17,7 @@ items:
     fullName: azure-asm-subscription.SubscriptionClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SubscriptionClient
   - uid: azure-asm-subscription._global.createSubscriptionClient
@@ -29,7 +29,7 @@ items:
       filters)
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials
@@ -60,7 +60,7 @@ items:
     fullName: azure-asm-subscription.SubscriptionClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SubscriptionClient
 references:

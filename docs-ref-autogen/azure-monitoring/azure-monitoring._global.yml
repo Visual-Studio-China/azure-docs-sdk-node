@@ -27,7 +27,7 @@ items:
     fullName: azure-monitoring.AlertsClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AlertsClient
   - uid: azure-monitoring._global.AutoscaleClient
@@ -37,7 +37,7 @@ items:
     fullName: azure-monitoring.AutoscaleClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AutoscaleClient
   - uid: azure-monitoring._global.EventsClient
@@ -47,7 +47,7 @@ items:
     fullName: azure-monitoring.EventsClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EventsClient
   - uid: azure-monitoring._global.MetricsClient
@@ -57,7 +57,7 @@ items:
     fullName: azure-monitoring.MetricsClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: MetricsClient
   - uid: azure-monitoring._global.AlertsClient
@@ -67,7 +67,7 @@ items:
     fullName: azure-monitoring.AlertsClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AlertsClient
   - uid: azure-monitoring._global.createAlertsClient
@@ -80,7 +80,7 @@ items:
     fullName: 'azure-monitoring.createAlertsClient(baseUri, filters)'
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.subscriptionId
@@ -120,7 +120,7 @@ items:
     fullName: azure-monitoring.AutoScaleClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AutoScaleClient
   - uid: azure-monitoring._global.createAutoScaleClient
@@ -133,7 +133,7 @@ items:
     fullName: 'azure-monitoring.createAutoScaleClient(baseUri, filters)'
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.subscriptionId
@@ -173,7 +173,7 @@ items:
     fullName: azure-monitoring.MetricsClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: MetricsClient
   - uid: azure-monitoring._global.createMetricsClient
@@ -186,7 +186,7 @@ items:
     fullName: 'azure-monitoring.createMetricsClient(baseUri, filters)'
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.subscriptionId
@@ -226,7 +226,7 @@ items:
     fullName: azure-monitoring.EventsClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EventsClient
   - uid: azure-monitoring._global.createEventsClient
@@ -236,7 +236,7 @@ items:
     fullName: 'azure-monitoring.createEventsClient(credentials, baseUri, filters)'
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials
@@ -267,7 +267,7 @@ items:
     fullName: azure-monitoring.createCertificateCloudCredentials()
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.subscription

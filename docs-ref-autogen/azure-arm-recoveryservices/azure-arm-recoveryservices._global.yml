@@ -23,7 +23,7 @@ items:
     fullName: azure-arm-recoveryservices.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-arm-recoveryservices._global.CloudError
@@ -33,7 +33,7 @@ items:
     fullName: azure-arm-recoveryservices.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-arm-recoveryservices._global.VaultProperties
@@ -43,7 +43,7 @@ items:
     fullName: azure-arm-recoveryservices.VaultProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: VaultProperties
   - uid: azure-arm-recoveryservices._global.Resource
@@ -53,7 +53,7 @@ items:
     fullName: azure-arm-recoveryservices.Resource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Resource
   - uid: azure-arm-recoveryservices._global.Vault
@@ -63,7 +63,7 @@ items:
     fullName: azure-arm-recoveryservices.Vault
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Vault
   - uid: azure-arm-recoveryservices._global.VaultList
@@ -73,7 +73,7 @@ items:
     fullName: azure-arm-recoveryservices.VaultList
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: VaultList
   - uid: azure-arm-recoveryservices._global.Sku
@@ -83,7 +83,7 @@ items:
     fullName: azure-arm-recoveryservices.Sku
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Sku
   - uid: azure-arm-recoveryservices._global.VaultList
@@ -93,7 +93,7 @@ items:
     fullName: azure-arm-recoveryservices.VaultList
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: VaultList
   - uid: azure-arm-recoveryservices._global.Vaults
@@ -103,6 +103,6 @@ items:
     fullName: azure-arm-recoveryservices.Vaults
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Vaults

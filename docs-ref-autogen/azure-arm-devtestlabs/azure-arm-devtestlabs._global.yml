@@ -91,7 +91,7 @@ items:
     fullName: azure-arm-devtestlabs.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-arm-devtestlabs._global.CloudError
@@ -101,7 +101,7 @@ items:
     fullName: azure-arm-devtestlabs.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-arm-devtestlabs._global.ArtifactParameterProperties
@@ -111,7 +111,7 @@ items:
     fullName: azure-arm-devtestlabs.ArtifactParameterProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ArtifactParameterProperties
   - uid: azure-arm-devtestlabs._global.ArtifactInstallProperties
@@ -121,7 +121,7 @@ items:
     fullName: azure-arm-devtestlabs.ArtifactInstallProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ArtifactInstallProperties
   - uid: azure-arm-devtestlabs._global.ApplyArtifactsRequest
@@ -131,7 +131,7 @@ items:
     fullName: azure-arm-devtestlabs.ApplyArtifactsRequest
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ApplyArtifactsRequest
   - uid: azure-arm-devtestlabs._global.ArmTemplateInfo
@@ -141,7 +141,7 @@ items:
     fullName: azure-arm-devtestlabs.ArmTemplateInfo
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ArmTemplateInfo
   - uid: azure-arm-devtestlabs._global.Artifact
@@ -151,7 +151,7 @@ items:
     fullName: azure-arm-devtestlabs.Artifact
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Artifact
   - uid: azure-arm-devtestlabs._global.ArtifactDeploymentStatusProperties
@@ -161,7 +161,7 @@ items:
     fullName: azure-arm-devtestlabs.ArtifactDeploymentStatusProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ArtifactDeploymentStatusProperties
   - uid: azure-arm-devtestlabs._global.ArtifactSource
@@ -171,7 +171,7 @@ items:
     fullName: azure-arm-devtestlabs.ArtifactSource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ArtifactSource
   - uid: azure-arm-devtestlabs._global.CostPerDayProperties
@@ -181,7 +181,7 @@ items:
     fullName: azure-arm-devtestlabs.CostPerDayProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CostPerDayProperties
   - uid: azure-arm-devtestlabs._global.ResourceCostProperties
@@ -191,7 +191,7 @@ items:
     fullName: azure-arm-devtestlabs.ResourceCostProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResourceCostProperties
   - uid: azure-arm-devtestlabs._global.Cost
@@ -201,7 +201,7 @@ items:
     fullName: azure-arm-devtestlabs.Cost
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Cost
   - uid: azure-arm-devtestlabs._global.WindowsOsInfo
@@ -211,7 +211,7 @@ items:
     fullName: azure-arm-devtestlabs.WindowsOsInfo
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WindowsOsInfo
   - uid: azure-arm-devtestlabs._global.LinuxOsInfo
@@ -221,7 +221,7 @@ items:
     fullName: azure-arm-devtestlabs.LinuxOsInfo
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LinuxOsInfo
   - uid: azure-arm-devtestlabs._global.CustomImagePropertiesFromVm
@@ -231,7 +231,7 @@ items:
     fullName: azure-arm-devtestlabs.CustomImagePropertiesFromVm
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CustomImagePropertiesFromVm
   - uid: azure-arm-devtestlabs._global.CustomImagePropertiesCustom
@@ -241,7 +241,7 @@ items:
     fullName: azure-arm-devtestlabs.CustomImagePropertiesCustom
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CustomImagePropertiesCustom
   - uid: azure-arm-devtestlabs._global.CustomImage
@@ -251,7 +251,7 @@ items:
     fullName: azure-arm-devtestlabs.CustomImage
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CustomImage
   - uid: azure-arm-devtestlabs._global.DayDetails
@@ -261,7 +261,7 @@ items:
     fullName: azure-arm-devtestlabs.DayDetails
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DayDetails
   - uid: azure-arm-devtestlabs._global.EvaluatePoliciesProperties
@@ -271,7 +271,7 @@ items:
     fullName: azure-arm-devtestlabs.EvaluatePoliciesProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EvaluatePoliciesProperties
   - uid: azure-arm-devtestlabs._global.EvaluatePoliciesRequest
@@ -281,7 +281,7 @@ items:
     fullName: azure-arm-devtestlabs.EvaluatePoliciesRequest
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EvaluatePoliciesRequest
   - uid: azure-arm-devtestlabs._global.PolicyViolation
@@ -291,7 +291,7 @@ items:
     fullName: azure-arm-devtestlabs.PolicyViolation
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: PolicyViolation
   - uid: azure-arm-devtestlabs._global.PolicySetResult
@@ -301,7 +301,7 @@ items:
     fullName: azure-arm-devtestlabs.PolicySetResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: PolicySetResult
   - uid: azure-arm-devtestlabs._global.EvaluatePoliciesResponse
@@ -311,7 +311,7 @@ items:
     fullName: azure-arm-devtestlabs.EvaluatePoliciesResponse
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: EvaluatePoliciesResponse
   - uid: azure-arm-devtestlabs._global.GalleryImageReference
@@ -321,7 +321,7 @@ items:
     fullName: azure-arm-devtestlabs.GalleryImageReference
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: GalleryImageReference
   - uid: azure-arm-devtestlabs._global.LabVirtualMachine
@@ -331,7 +331,7 @@ items:
     fullName: azure-arm-devtestlabs.LabVirtualMachine
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LabVirtualMachine
   - uid: azure-arm-devtestlabs._global.FormulaPropertiesFromVm
@@ -341,7 +341,7 @@ items:
     fullName: azure-arm-devtestlabs.FormulaPropertiesFromVm
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: FormulaPropertiesFromVm
   - uid: azure-arm-devtestlabs._global.Formula
@@ -351,7 +351,7 @@ items:
     fullName: azure-arm-devtestlabs.Formula
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Formula
   - uid: azure-arm-devtestlabs._global.GalleryImage
@@ -361,7 +361,7 @@ items:
     fullName: azure-arm-devtestlabs.GalleryImage
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: GalleryImage
   - uid: azure-arm-devtestlabs._global.ParameterInfo
@@ -371,7 +371,7 @@ items:
     fullName: azure-arm-devtestlabs.ParameterInfo
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ParameterInfo
   - uid: azure-arm-devtestlabs._global.GenerateArmTemplateRequest
@@ -381,7 +381,7 @@ items:
     fullName: azure-arm-devtestlabs.GenerateArmTemplateRequest
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: GenerateArmTemplateRequest
   - uid: azure-arm-devtestlabs._global.GenerateUploadUriParameter
@@ -391,7 +391,7 @@ items:
     fullName: azure-arm-devtestlabs.GenerateUploadUriParameter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: GenerateUploadUriParameter
   - uid: azure-arm-devtestlabs._global.GenerateUploadUriResponse
@@ -401,7 +401,7 @@ items:
     fullName: azure-arm-devtestlabs.GenerateUploadUriResponse
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: GenerateUploadUriResponse
   - uid: azure-arm-devtestlabs._global.HourDetails
@@ -411,7 +411,7 @@ items:
     fullName: azure-arm-devtestlabs.HourDetails
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: HourDetails
   - uid: azure-arm-devtestlabs._global.Lab
@@ -421,7 +421,7 @@ items:
     fullName: azure-arm-devtestlabs.Lab
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Lab
   - uid: azure-arm-devtestlabs._global.LabVhd
@@ -431,7 +431,7 @@ items:
     fullName: azure-arm-devtestlabs.LabVhd
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LabVhd
   - uid: azure-arm-devtestlabs._global.Policy
@@ -441,7 +441,7 @@ items:
     fullName: azure-arm-devtestlabs.Policy
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Policy
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationArtifact
@@ -451,7 +451,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationArtifact
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationArtifact
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationArtifactSource
@@ -461,7 +461,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationArtifactSource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationArtifactSource
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationCustomImage
@@ -471,7 +471,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationCustomImage
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationCustomImage
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationFormula
@@ -481,7 +481,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationFormula
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationFormula
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationGalleryImage
@@ -491,7 +491,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationGalleryImage
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationGalleryImage
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationLab
@@ -501,7 +501,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationLab
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationLab
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationLabVhd
@@ -511,7 +511,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationLabVhd
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationLabVhd
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationLabVirtualMachine
@@ -521,7 +521,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationLabVirtualMachine
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationLabVirtualMachine
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationPolicy
@@ -531,7 +531,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationPolicy
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationPolicy
   - uid: azure-arm-devtestlabs._global.WeekDetails
@@ -541,7 +541,7 @@ items:
     fullName: azure-arm-devtestlabs.WeekDetails
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WeekDetails
   - uid: azure-arm-devtestlabs._global.Schedule
@@ -551,7 +551,7 @@ items:
     fullName: azure-arm-devtestlabs.Schedule
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Schedule
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationSchedule
@@ -561,7 +561,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationSchedule
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationSchedule
   - uid: azure-arm-devtestlabs._global.Subnet
@@ -571,7 +571,7 @@ items:
     fullName: azure-arm-devtestlabs.Subnet
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Subnet
   - uid: azure-arm-devtestlabs._global.SubnetOverride
@@ -581,7 +581,7 @@ items:
     fullName: azure-arm-devtestlabs.SubnetOverride
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SubnetOverride
   - uid: azure-arm-devtestlabs._global.VirtualNetwork
@@ -591,7 +591,7 @@ items:
     fullName: azure-arm-devtestlabs.VirtualNetwork
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: VirtualNetwork
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationVirtualNetwork
@@ -601,7 +601,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationVirtualNetwork
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationVirtualNetwork
   - uid: azure-arm-devtestlabs._global.SubscriptionNotificationProperties
@@ -611,7 +611,7 @@ items:
     fullName: azure-arm-devtestlabs.SubscriptionNotificationProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SubscriptionNotificationProperties
   - uid: azure-arm-devtestlabs._global.SubscriptionNotification
@@ -621,7 +621,7 @@ items:
     fullName: azure-arm-devtestlabs.SubscriptionNotification
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SubscriptionNotification
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationLab
@@ -631,7 +631,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationLab
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationLab
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationLabVhd
@@ -641,7 +641,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationLabVhd
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationLabVhd
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationArtifactSource
@@ -651,7 +651,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationArtifactSource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationArtifactSource
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationArtifact
@@ -661,7 +661,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationArtifact
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationArtifact
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationCustomImage
@@ -671,7 +671,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationCustomImage
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationCustomImage
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationFormula
@@ -681,7 +681,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationFormula
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationFormula
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationGalleryImage
@@ -691,7 +691,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationGalleryImage
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationGalleryImage
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationPolicy
@@ -701,7 +701,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationPolicy
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationPolicy
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationSchedule
@@ -711,7 +711,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationSchedule
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationSchedule
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationLabVirtualMachine
@@ -721,7 +721,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationLabVirtualMachine
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationLabVirtualMachine
   - uid: azure-arm-devtestlabs._global.ResponseWithContinuationVirtualNetwork
@@ -731,7 +731,7 @@ items:
     fullName: azure-arm-devtestlabs.ResponseWithContinuationVirtualNetwork
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResponseWithContinuationVirtualNetwork
   - uid: azure-arm-devtestlabs._global.LabOperations
@@ -741,7 +741,7 @@ items:
     fullName: azure-arm-devtestlabs.LabOperations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LabOperations
   - uid: azure-arm-devtestlabs._global.ArtifactSourceOperations
@@ -751,7 +751,7 @@ items:
     fullName: azure-arm-devtestlabs.ArtifactSourceOperations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ArtifactSourceOperations
   - uid: azure-arm-devtestlabs._global.ArtifactOperations
@@ -761,7 +761,7 @@ items:
     fullName: azure-arm-devtestlabs.ArtifactOperations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ArtifactOperations
   - uid: azure-arm-devtestlabs._global.CostOperations
@@ -771,7 +771,7 @@ items:
     fullName: azure-arm-devtestlabs.CostOperations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CostOperations
   - uid: azure-arm-devtestlabs._global.CustomImageOperations
@@ -781,7 +781,7 @@ items:
     fullName: azure-arm-devtestlabs.CustomImageOperations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CustomImageOperations
   - uid: azure-arm-devtestlabs._global.FormulaOperations
@@ -791,7 +791,7 @@ items:
     fullName: azure-arm-devtestlabs.FormulaOperations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: FormulaOperations
   - uid: azure-arm-devtestlabs._global.GalleryImageOperations
@@ -801,7 +801,7 @@ items:
     fullName: azure-arm-devtestlabs.GalleryImageOperations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: GalleryImageOperations
   - uid: azure-arm-devtestlabs._global.PolicySet
@@ -811,7 +811,7 @@ items:
     fullName: azure-arm-devtestlabs.PolicySet
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: PolicySet
   - uid: azure-arm-devtestlabs._global.PolicyOperations
@@ -821,7 +821,7 @@ items:
     fullName: azure-arm-devtestlabs.PolicyOperations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: PolicyOperations
   - uid: azure-arm-devtestlabs._global.ScheduleOperations
@@ -831,7 +831,7 @@ items:
     fullName: azure-arm-devtestlabs.ScheduleOperations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ScheduleOperations
   - uid: azure-arm-devtestlabs._global.VirtualMachine
@@ -841,7 +841,7 @@ items:
     fullName: azure-arm-devtestlabs.VirtualMachine
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: VirtualMachine
   - uid: azure-arm-devtestlabs._global.VirtualNetworkOperations
@@ -851,6 +851,6 @@ items:
     fullName: azure-arm-devtestlabs.VirtualNetworkOperations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: VirtualNetworkOperations

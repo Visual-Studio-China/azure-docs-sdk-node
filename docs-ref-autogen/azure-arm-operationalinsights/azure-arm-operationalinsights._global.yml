@@ -64,7 +64,7 @@ items:
     fullName: azure-arm-operationalinsights.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-arm-operationalinsights._global.CloudError
@@ -74,7 +74,7 @@ items:
     fullName: azure-arm-operationalinsights.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-arm-operationalinsights._global.ProxyResource
@@ -84,7 +84,7 @@ items:
     fullName: azure-arm-operationalinsights.ProxyResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ProxyResource
   - uid: azure-arm-operationalinsights._global.LinkedService
@@ -94,7 +94,7 @@ items:
     fullName: azure-arm-operationalinsights.LinkedService
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LinkedService
   - uid: azure-arm-operationalinsights._global.LinkedServiceListResult
@@ -104,7 +104,7 @@ items:
     fullName: azure-arm-operationalinsights.LinkedServiceListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LinkedServiceListResult
   - uid: azure-arm-operationalinsights._global.DataSource
@@ -114,7 +114,7 @@ items:
     fullName: azure-arm-operationalinsights.DataSource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DataSource
   - uid: azure-arm-operationalinsights._global.DataSourceFilter
@@ -124,7 +124,7 @@ items:
     fullName: azure-arm-operationalinsights.DataSourceFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DataSourceFilter
   - uid: azure-arm-operationalinsights._global.DataSourceListResult
@@ -134,7 +134,7 @@ items:
     fullName: azure-arm-operationalinsights.DataSourceListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DataSourceListResult
   - uid: azure-arm-operationalinsights._global.IntelligencePack
@@ -144,7 +144,7 @@ items:
     fullName: azure-arm-operationalinsights.IntelligencePack
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: IntelligencePack
   - uid: azure-arm-operationalinsights._global.SharedKeys
@@ -154,7 +154,7 @@ items:
     fullName: azure-arm-operationalinsights.SharedKeys
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SharedKeys
   - uid: azure-arm-operationalinsights._global.MetricName
@@ -164,7 +164,7 @@ items:
     fullName: azure-arm-operationalinsights.MetricName
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: MetricName
   - uid: azure-arm-operationalinsights._global.UsageMetric
@@ -174,7 +174,7 @@ items:
     fullName: azure-arm-operationalinsights.UsageMetric
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: UsageMetric
   - uid: azure-arm-operationalinsights._global.WorkspaceListUsagesResult
@@ -184,7 +184,7 @@ items:
     fullName: azure-arm-operationalinsights.WorkspaceListUsagesResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkspaceListUsagesResult
   - uid: azure-arm-operationalinsights._global.ManagementGroup
@@ -194,7 +194,7 @@ items:
     fullName: azure-arm-operationalinsights.ManagementGroup
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ManagementGroup
   - uid: azure-arm-operationalinsights._global.WorkspaceListManagementGroupsResult
@@ -204,7 +204,7 @@ items:
     fullName: azure-arm-operationalinsights.WorkspaceListManagementGroupsResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkspaceListManagementGroupsResult
   - uid: azure-arm-operationalinsights._global.Sku
@@ -214,7 +214,7 @@ items:
     fullName: azure-arm-operationalinsights.Sku
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Sku
   - uid: azure-arm-operationalinsights._global.Resource
@@ -224,7 +224,7 @@ items:
     fullName: azure-arm-operationalinsights.Resource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Resource
   - uid: azure-arm-operationalinsights._global.Workspace
@@ -234,7 +234,7 @@ items:
     fullName: azure-arm-operationalinsights.Workspace
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Workspace
   - uid: azure-arm-operationalinsights._global.WorkspaceListResult
@@ -244,7 +244,7 @@ items:
     fullName: azure-arm-operationalinsights.WorkspaceListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkspaceListResult
   - uid: azure-arm-operationalinsights._global.LinkTarget
@@ -254,7 +254,7 @@ items:
     fullName: azure-arm-operationalinsights.LinkTarget
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LinkTarget
   - uid: azure-arm-operationalinsights._global.Tag
@@ -264,7 +264,7 @@ items:
     fullName: azure-arm-operationalinsights.Tag
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Tag
   - uid: azure-arm-operationalinsights._global.CoreSummary
@@ -274,7 +274,7 @@ items:
     fullName: azure-arm-operationalinsights.CoreSummary
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CoreSummary
   - uid: azure-arm-operationalinsights._global.SearchSort
@@ -284,7 +284,7 @@ items:
     fullName: azure-arm-operationalinsights.SearchSort
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SearchSort
   - uid: azure-arm-operationalinsights._global.SearchMetadataSchema
@@ -294,7 +294,7 @@ items:
     fullName: azure-arm-operationalinsights.SearchMetadataSchema
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SearchMetadataSchema
   - uid: azure-arm-operationalinsights._global.SearchMetadata
@@ -304,7 +304,7 @@ items:
     fullName: azure-arm-operationalinsights.SearchMetadata
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SearchMetadata
   - uid: azure-arm-operationalinsights._global.SavedSearch
@@ -314,7 +314,7 @@ items:
     fullName: azure-arm-operationalinsights.SavedSearch
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SavedSearch
   - uid: azure-arm-operationalinsights._global.SavedSearchesListResult
@@ -324,7 +324,7 @@ items:
     fullName: azure-arm-operationalinsights.SavedSearchesListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SavedSearchesListResult
   - uid: azure-arm-operationalinsights._global.SearchError
@@ -334,7 +334,7 @@ items:
     fullName: azure-arm-operationalinsights.SearchError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SearchError
   - uid: azure-arm-operationalinsights._global.SearchResultsResponse
@@ -344,7 +344,7 @@ items:
     fullName: azure-arm-operationalinsights.SearchResultsResponse
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SearchResultsResponse
   - uid: azure-arm-operationalinsights._global.SearchSchemaValue
@@ -354,7 +354,7 @@ items:
     fullName: azure-arm-operationalinsights.SearchSchemaValue
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SearchSchemaValue
   - uid: azure-arm-operationalinsights._global.SearchGetSchemaResponse
@@ -364,7 +364,7 @@ items:
     fullName: azure-arm-operationalinsights.SearchGetSchemaResponse
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SearchGetSchemaResponse
   - uid: azure-arm-operationalinsights._global.SearchHighlight
@@ -374,7 +374,7 @@ items:
     fullName: azure-arm-operationalinsights.SearchHighlight
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SearchHighlight
   - uid: azure-arm-operationalinsights._global.SearchParameters
@@ -384,7 +384,7 @@ items:
     fullName: azure-arm-operationalinsights.SearchParameters
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SearchParameters
   - uid: azure-arm-operationalinsights._global.StorageAccount
@@ -394,7 +394,7 @@ items:
     fullName: azure-arm-operationalinsights.StorageAccount
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: StorageAccount
   - uid: azure-arm-operationalinsights._global.StorageInsightStatus
@@ -404,7 +404,7 @@ items:
     fullName: azure-arm-operationalinsights.StorageInsightStatus
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: StorageInsightStatus
   - uid: azure-arm-operationalinsights._global.StorageInsight
@@ -414,7 +414,7 @@ items:
     fullName: azure-arm-operationalinsights.StorageInsight
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: StorageInsight
   - uid: azure-arm-operationalinsights._global.StorageInsightListResult
@@ -424,7 +424,7 @@ items:
     fullName: azure-arm-operationalinsights.StorageInsightListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: StorageInsightListResult
   - uid: azure-arm-operationalinsights._global.LinkedServiceListResult
@@ -434,7 +434,7 @@ items:
     fullName: azure-arm-operationalinsights.LinkedServiceListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LinkedServiceListResult
   - uid: azure-arm-operationalinsights._global.DataSourceListResult
@@ -444,7 +444,7 @@ items:
     fullName: azure-arm-operationalinsights.DataSourceListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DataSourceListResult
   - uid: azure-arm-operationalinsights._global.WorkspaceListUsagesResult
@@ -454,7 +454,7 @@ items:
     fullName: azure-arm-operationalinsights.WorkspaceListUsagesResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkspaceListUsagesResult
   - uid: azure-arm-operationalinsights._global.WorkspaceListManagementGroupsResult
@@ -464,7 +464,7 @@ items:
     fullName: azure-arm-operationalinsights.WorkspaceListManagementGroupsResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkspaceListManagementGroupsResult
   - uid: azure-arm-operationalinsights._global.WorkspaceListResult
@@ -474,7 +474,7 @@ items:
     fullName: azure-arm-operationalinsights.WorkspaceListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: WorkspaceListResult
   - uid: azure-arm-operationalinsights._global.StorageInsightListResult
@@ -484,7 +484,7 @@ items:
     fullName: azure-arm-operationalinsights.StorageInsightListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: StorageInsightListResult
   - uid: azure-arm-operationalinsights._global.LinkedServices
@@ -494,7 +494,7 @@ items:
     fullName: azure-arm-operationalinsights.LinkedServices
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: LinkedServices
   - uid: azure-arm-operationalinsights._global.DataSources
@@ -504,7 +504,7 @@ items:
     fullName: azure-arm-operationalinsights.DataSources
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DataSources
   - uid: azure-arm-operationalinsights._global.Workspaces
@@ -514,7 +514,7 @@ items:
     fullName: azure-arm-operationalinsights.Workspaces
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Workspaces
   - uid: azure-arm-operationalinsights._global.StorageInsights
@@ -524,7 +524,7 @@ items:
     fullName: azure-arm-operationalinsights.StorageInsights
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: StorageInsights
   - uid: azure-arm-operationalinsights._global.SavedSearches
@@ -534,6 +534,6 @@ items:
     fullName: azure-arm-operationalinsights.SavedSearches
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SavedSearches

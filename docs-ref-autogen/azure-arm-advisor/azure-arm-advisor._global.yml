@@ -29,7 +29,7 @@ items:
     fullName: azure-arm-advisor.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-arm-advisor._global.CloudError
@@ -39,7 +39,7 @@ items:
     fullName: azure-arm-advisor.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-arm-advisor._global.ShortDescription
@@ -49,7 +49,7 @@ items:
     fullName: azure-arm-advisor.ShortDescription
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ShortDescription
   - uid: azure-arm-advisor._global.Resource
@@ -59,7 +59,7 @@ items:
     fullName: azure-arm-advisor.Resource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Resource
   - uid: azure-arm-advisor._global.ResourceRecommendationBase
@@ -69,7 +69,7 @@ items:
     fullName: azure-arm-advisor.ResourceRecommendationBase
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResourceRecommendationBase
   - uid: azure-arm-advisor._global.ResourceRecommendationBaseListResult
@@ -79,7 +79,7 @@ items:
     fullName: azure-arm-advisor.ResourceRecommendationBaseListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResourceRecommendationBaseListResult
   - uid: azure-arm-advisor._global.OperationDisplayInfo
@@ -89,7 +89,7 @@ items:
     fullName: azure-arm-advisor.OperationDisplayInfo
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationDisplayInfo
   - uid: azure-arm-advisor._global.OperationEntity
@@ -99,7 +99,7 @@ items:
     fullName: azure-arm-advisor.OperationEntity
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationEntity
   - uid: azure-arm-advisor._global.OperationEntityListResult
@@ -109,7 +109,7 @@ items:
     fullName: azure-arm-advisor.OperationEntityListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationEntityListResult
   - uid: azure-arm-advisor._global.SuppressionContract
@@ -119,7 +119,7 @@ items:
     fullName: azure-arm-advisor.SuppressionContract
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SuppressionContract
   - uid: azure-arm-advisor._global.ResourceRecommendationBaseListResult
@@ -129,7 +129,7 @@ items:
     fullName: azure-arm-advisor.ResourceRecommendationBaseListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResourceRecommendationBaseListResult
   - uid: azure-arm-advisor._global.OperationEntityListResult
@@ -139,7 +139,7 @@ items:
     fullName: azure-arm-advisor.OperationEntityListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationEntityListResult
   - uid: azure-arm-advisor._global.Recommendations
@@ -149,7 +149,7 @@ items:
     fullName: azure-arm-advisor.Recommendations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Recommendations
   - uid: azure-arm-advisor._global.Operations
@@ -159,7 +159,7 @@ items:
     fullName: azure-arm-advisor.Operations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Operations
   - uid: azure-arm-advisor._global.Suppressions
@@ -169,6 +169,6 @@ items:
     fullName: azure-arm-advisor.Suppressions
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Suppressions

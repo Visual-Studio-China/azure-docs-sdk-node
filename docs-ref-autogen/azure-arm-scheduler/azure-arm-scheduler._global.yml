@@ -53,7 +53,7 @@ items:
     fullName: azure-arm-scheduler.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-arm-scheduler._global.CloudError
@@ -63,7 +63,7 @@ items:
     fullName: azure-arm-scheduler.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-arm-scheduler._global.Sku
@@ -73,7 +73,7 @@ items:
     fullName: azure-arm-scheduler.Sku
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Sku
   - uid: azure-arm-scheduler._global.JobMaxRecurrence
@@ -83,7 +83,7 @@ items:
     fullName: azure-arm-scheduler.JobMaxRecurrence
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobMaxRecurrence
   - uid: azure-arm-scheduler._global.JobCollectionQuota
@@ -93,7 +93,7 @@ items:
     fullName: azure-arm-scheduler.JobCollectionQuota
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobCollectionQuota
   - uid: azure-arm-scheduler._global.JobCollectionProperties
@@ -103,7 +103,7 @@ items:
     fullName: azure-arm-scheduler.JobCollectionProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobCollectionProperties
   - uid: azure-arm-scheduler._global.JobCollectionDefinition
@@ -113,7 +113,7 @@ items:
     fullName: azure-arm-scheduler.JobCollectionDefinition
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobCollectionDefinition
   - uid: azure-arm-scheduler._global.JobCollectionListResult
@@ -123,7 +123,7 @@ items:
     fullName: azure-arm-scheduler.JobCollectionListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobCollectionListResult
   - uid: azure-arm-scheduler._global.HttpAuthentication
@@ -133,7 +133,7 @@ items:
     fullName: azure-arm-scheduler.HttpAuthentication
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: HttpAuthentication
   - uid: azure-arm-scheduler._global.HttpRequest
@@ -143,7 +143,7 @@ items:
     fullName: azure-arm-scheduler.HttpRequest
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: HttpRequest
   - uid: azure-arm-scheduler._global.StorageQueueMessage
@@ -153,7 +153,7 @@ items:
     fullName: azure-arm-scheduler.StorageQueueMessage
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: StorageQueueMessage
   - uid: azure-arm-scheduler._global.ServiceBusMessage
@@ -163,7 +163,7 @@ items:
     fullName: azure-arm-scheduler.ServiceBusMessage
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServiceBusMessage
   - uid: azure-arm-scheduler._global.ServiceBusQueueMessage
@@ -173,7 +173,7 @@ items:
     fullName: azure-arm-scheduler.ServiceBusQueueMessage
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServiceBusQueueMessage
   - uid: azure-arm-scheduler._global.ServiceBusTopicMessage
@@ -183,7 +183,7 @@ items:
     fullName: azure-arm-scheduler.ServiceBusTopicMessage
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServiceBusTopicMessage
   - uid: azure-arm-scheduler._global.RetryPolicy
@@ -193,7 +193,7 @@ items:
     fullName: azure-arm-scheduler.RetryPolicy
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: RetryPolicy
   - uid: azure-arm-scheduler._global.JobErrorAction
@@ -203,7 +203,7 @@ items:
     fullName: azure-arm-scheduler.JobErrorAction
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobErrorAction
   - uid: azure-arm-scheduler._global.JobAction
@@ -213,7 +213,7 @@ items:
     fullName: azure-arm-scheduler.JobAction
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobAction
   - uid: azure-arm-scheduler._global.JobRecurrenceScheduleMonthlyOccurrence
@@ -223,7 +223,7 @@ items:
     fullName: azure-arm-scheduler.JobRecurrenceScheduleMonthlyOccurrence
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobRecurrenceScheduleMonthlyOccurrence
   - uid: azure-arm-scheduler._global.JobRecurrenceSchedule
@@ -233,7 +233,7 @@ items:
     fullName: azure-arm-scheduler.JobRecurrenceSchedule
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobRecurrenceSchedule
   - uid: azure-arm-scheduler._global.JobRecurrence
@@ -243,7 +243,7 @@ items:
     fullName: azure-arm-scheduler.JobRecurrence
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobRecurrence
   - uid: azure-arm-scheduler._global.JobStatus
@@ -253,7 +253,7 @@ items:
     fullName: azure-arm-scheduler.JobStatus
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobStatus
   - uid: azure-arm-scheduler._global.JobProperties
@@ -263,7 +263,7 @@ items:
     fullName: azure-arm-scheduler.JobProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobProperties
   - uid: azure-arm-scheduler._global.JobDefinition
@@ -273,7 +273,7 @@ items:
     fullName: azure-arm-scheduler.JobDefinition
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobDefinition
   - uid: azure-arm-scheduler._global.JobListResult
@@ -283,7 +283,7 @@ items:
     fullName: azure-arm-scheduler.JobListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobListResult
   - uid: azure-arm-scheduler._global.JobHistoryDefinitionProperties
@@ -293,7 +293,7 @@ items:
     fullName: azure-arm-scheduler.JobHistoryDefinitionProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobHistoryDefinitionProperties
   - uid: azure-arm-scheduler._global.JobHistoryDefinition
@@ -303,7 +303,7 @@ items:
     fullName: azure-arm-scheduler.JobHistoryDefinition
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobHistoryDefinition
   - uid: azure-arm-scheduler._global.JobHistoryListResult
@@ -313,7 +313,7 @@ items:
     fullName: azure-arm-scheduler.JobHistoryListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobHistoryListResult
   - uid: azure-arm-scheduler._global.ClientCertAuthentication
@@ -323,7 +323,7 @@ items:
     fullName: azure-arm-scheduler.ClientCertAuthentication
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ClientCertAuthentication
   - uid: azure-arm-scheduler._global.BasicAuthentication
@@ -333,7 +333,7 @@ items:
     fullName: azure-arm-scheduler.BasicAuthentication
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BasicAuthentication
   - uid: azure-arm-scheduler._global.OAuthAuthentication
@@ -343,7 +343,7 @@ items:
     fullName: azure-arm-scheduler.OAuthAuthentication
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OAuthAuthentication
   - uid: azure-arm-scheduler._global.ServiceBusAuthentication
@@ -353,7 +353,7 @@ items:
     fullName: azure-arm-scheduler.ServiceBusAuthentication
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServiceBusAuthentication
   - uid: azure-arm-scheduler._global.ServiceBusBrokeredMessageProperties
@@ -363,7 +363,7 @@ items:
     fullName: azure-arm-scheduler.ServiceBusBrokeredMessageProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ServiceBusBrokeredMessageProperties
   - uid: azure-arm-scheduler._global.JobStateFilter
@@ -373,7 +373,7 @@ items:
     fullName: azure-arm-scheduler.JobStateFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobStateFilter
   - uid: azure-arm-scheduler._global.JobHistoryFilter
@@ -383,7 +383,7 @@ items:
     fullName: azure-arm-scheduler.JobHistoryFilter
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobHistoryFilter
   - uid: azure-arm-scheduler._global.JobCollectionListResult
@@ -393,7 +393,7 @@ items:
     fullName: azure-arm-scheduler.JobCollectionListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobCollectionListResult
   - uid: azure-arm-scheduler._global.JobListResult
@@ -403,7 +403,7 @@ items:
     fullName: azure-arm-scheduler.JobListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobListResult
   - uid: azure-arm-scheduler._global.JobHistoryListResult
@@ -413,7 +413,7 @@ items:
     fullName: azure-arm-scheduler.JobHistoryListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobHistoryListResult
   - uid: azure-arm-scheduler._global.JobCollections
@@ -423,7 +423,7 @@ items:
     fullName: azure-arm-scheduler.JobCollections
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: JobCollections
   - uid: azure-arm-scheduler._global.Jobs
@@ -433,6 +433,6 @@ items:
     fullName: azure-arm-scheduler.Jobs
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Jobs

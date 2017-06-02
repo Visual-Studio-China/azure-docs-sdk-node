@@ -28,7 +28,7 @@ items:
     fullName: azure-arm-keyvault.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-arm-keyvault._global.CloudError
@@ -38,7 +38,7 @@ items:
     fullName: azure-arm-keyvault.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-arm-keyvault._global.Sku
@@ -48,7 +48,7 @@ items:
     fullName: azure-arm-keyvault.Sku
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Sku
   - uid: azure-arm-keyvault._global.Permissions
@@ -58,7 +58,7 @@ items:
     fullName: azure-arm-keyvault.Permissions
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Permissions
   - uid: azure-arm-keyvault._global.AccessPolicyEntry
@@ -68,7 +68,7 @@ items:
     fullName: azure-arm-keyvault.AccessPolicyEntry
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: AccessPolicyEntry
   - uid: azure-arm-keyvault._global.VaultProperties
@@ -78,7 +78,7 @@ items:
     fullName: azure-arm-keyvault.VaultProperties
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: VaultProperties
   - uid: azure-arm-keyvault._global.VaultCreateOrUpdateParameters
@@ -88,7 +88,7 @@ items:
     fullName: azure-arm-keyvault.VaultCreateOrUpdateParameters
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: VaultCreateOrUpdateParameters
   - uid: azure-arm-keyvault._global.Resource
@@ -98,7 +98,7 @@ items:
     fullName: azure-arm-keyvault.Resource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Resource
   - uid: azure-arm-keyvault._global.Vault
@@ -108,7 +108,7 @@ items:
     fullName: azure-arm-keyvault.Vault
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Vault
   - uid: azure-arm-keyvault._global.VaultListResult
@@ -118,7 +118,7 @@ items:
     fullName: azure-arm-keyvault.VaultListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: VaultListResult
   - uid: azure-arm-keyvault._global.ResourceListResult
@@ -128,7 +128,7 @@ items:
     fullName: azure-arm-keyvault.ResourceListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResourceListResult
   - uid: azure-arm-keyvault._global.VaultListResult
@@ -138,7 +138,7 @@ items:
     fullName: azure-arm-keyvault.VaultListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: VaultListResult
   - uid: azure-arm-keyvault._global.ResourceListResult
@@ -148,7 +148,7 @@ items:
     fullName: azure-arm-keyvault.ResourceListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ResourceListResult
   - uid: azure-arm-keyvault._global.Vaults
@@ -158,6 +158,6 @@ items:
     fullName: azure-arm-keyvault.Vaults
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Vaults

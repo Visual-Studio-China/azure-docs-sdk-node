@@ -29,7 +29,7 @@ items:
     fullName: azure-arm-billing.BaseResource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: BaseResource
   - uid: azure-arm-billing._global.CloudError
@@ -39,7 +39,7 @@ items:
     fullName: azure-arm-billing.CloudError
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: CloudError
   - uid: azure-arm-billing._global.DownloadUrl
@@ -49,7 +49,7 @@ items:
     fullName: azure-arm-billing.DownloadUrl
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: DownloadUrl
   - uid: azure-arm-billing._global.ErrorDetails
@@ -59,7 +59,7 @@ items:
     fullName: azure-arm-billing.ErrorDetails
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ErrorDetails
   - uid: azure-arm-billing._global.ErrorResponse
@@ -69,7 +69,7 @@ items:
     fullName: azure-arm-billing.ErrorResponse
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: ErrorResponse
   - uid: azure-arm-billing._global.Resource
@@ -79,7 +79,7 @@ items:
     fullName: azure-arm-billing.Resource
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Resource
   - uid: azure-arm-billing._global.Invoice
@@ -89,7 +89,7 @@ items:
     fullName: azure-arm-billing.Invoice
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Invoice
   - uid: azure-arm-billing._global.InvoicesListResult
@@ -99,7 +99,7 @@ items:
     fullName: azure-arm-billing.InvoicesListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: InvoicesListResult
   - uid: azure-arm-billing._global.OperationDisplay
@@ -109,7 +109,7 @@ items:
     fullName: azure-arm-billing.OperationDisplay
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationDisplay
   - uid: azure-arm-billing._global.Operation
@@ -119,7 +119,7 @@ items:
     fullName: azure-arm-billing.Operation
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Operation
   - uid: azure-arm-billing._global.OperationListResult
@@ -129,7 +129,7 @@ items:
     fullName: azure-arm-billing.OperationListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationListResult
   - uid: azure-arm-billing._global.InvoicesListResult
@@ -139,7 +139,7 @@ items:
     fullName: azure-arm-billing.InvoicesListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: InvoicesListResult
   - uid: azure-arm-billing._global.OperationListResult
@@ -149,7 +149,7 @@ items:
     fullName: azure-arm-billing.OperationListResult
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: OperationListResult
   - uid: azure-arm-billing._global.Invoices
@@ -159,7 +159,7 @@ items:
     fullName: azure-arm-billing.Invoices
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Invoices
   - uid: azure-arm-billing._global.Operations
@@ -169,6 +169,6 @@ items:
     fullName: azure-arm-billing.Operations
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: Operations

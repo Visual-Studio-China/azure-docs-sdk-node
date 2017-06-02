@@ -18,7 +18,7 @@ items:
     fullName: azure-scheduler.SchedulerClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SchedulerClient
   - uid: azure-scheduler._global.createSchedulerClient
@@ -35,7 +35,7 @@ items:
       baseUri, filters)
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: cloudServiceName
@@ -87,7 +87,7 @@ items:
     fullName: azure-scheduler.createCertificateCloudCredentials()
     langs:
       - js
-    type: Method
+    type: Function
     syntax:
       parameters:
         - id: credentials.subscriptionId
@@ -121,7 +121,7 @@ items:
     fullName: azure-scheduler.SchedulerClient
     langs:
       - js
-    type: Field
+    type: Member
     syntax:
       content: SchedulerClient
 references:
