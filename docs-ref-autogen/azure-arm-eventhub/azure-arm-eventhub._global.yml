@@ -6,6 +6,8 @@ items:
     fullName: GLOBAL
     type: Class
     summary: global object
+    langs:
+      - js
     children:
       - azure-arm-eventhub._global.BaseResource
       - azure-arm-eventhub._global.CloudError

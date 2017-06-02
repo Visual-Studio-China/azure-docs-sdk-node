@@ -6,6 +6,8 @@ items:
     fullName: GLOBAL
     type: Class
     summary: global object
+    langs:
+      - js
     children:
       - azure-arm-customerinsights._global.BaseResource
       - azure-arm-customerinsights._global.CloudError

@@ -6,6 +6,8 @@ items:
     fullName: GLOBAL
     type: Class
     summary: global object
+    langs:
+      - js
     children:
       - azure-arm-website._global.BaseResource
       - azure-arm-website._global.CloudError
