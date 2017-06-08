@@ -9,20 +9,8 @@ items:
     langs:
       - js
     children:
-      - azure-asm-mgmt._global.ManagementClient
       - azure-asm-mgmt._global.createManagementClient
       - azure-asm-mgmt._global.createCertificateCloudCredentials
-      - azure-asm-mgmt._global.ManagementClient
-  - uid: azure-asm-mgmt._global.ManagementClient
-    id: azure-asm-mgmt._global.ManagementClient
-    name: ManagementClient
-    summary: ''
-    fullName: azure-asm-mgmt.ManagementClient
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: ManagementClient
   - uid: azure-asm-mgmt._global.createManagementClient
     id: azure-asm-mgmt._global.createManagementClient
     name: 'createManagementClient(baseUri, filters)'
@@ -99,30 +87,3 @@ items:
           - azure-asm-mgmt.CertificateCloudCredentials
         description: ''
       content: function createCertificateCloudCredentials()
-  - uid: azure-asm-mgmt._global.ManagementClient
-    id: azure-asm-mgmt._global.ManagementClient
-    name: ManagementClient
-    summary: ''
-    fullName: azure-asm-mgmt.ManagementClient
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: ManagementClient
-references:
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: array
-    name: array
-    fullName: array
-    isExternal: true
-  - uid: azure-asm-mgmt.ManagementClient
-    name: ManagementClient
-    fullName: azure-asm-mgmt.ManagementClient
-    isExternal: true
-  - uid: azure-asm-mgmt.CertificateCloudCredentials
-    name: CertificateCloudCredentials
-    fullName: azure-asm-mgmt.CertificateCloudCredentials
-    isExternal: true

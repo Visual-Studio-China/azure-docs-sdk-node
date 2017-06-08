@@ -25,7 +25,6 @@ items:
     type: Class
     children:
       - 'azure-arm-hdinsight-jobs.JobOperations~JobOperations.#ctor'
-      - 'azure-arm-hdinsight-jobs.JobOperations~JobOperations#client'
       - 'azure-arm-hdinsight-jobs.JobOperations~JobOperations#getJob'
       - 'azure-arm-hdinsight-jobs.JobOperations~JobOperations#killJob'
       - 'azure-arm-hdinsight-jobs.JobOperations~JobOperations#listJobs'
@@ -52,17 +51,6 @@ items:
       content: new JobOperations(client)
     langs:
       - js
-  - uid: 'azure-arm-hdinsight-jobs.JobOperations~JobOperations#client'
-    id: 'azure-arm-hdinsight-jobs.JobOperations~JobOperations#client'
-    parent: azure-arm-hdinsight-jobs.JobOperations~JobOperations
-    name: client
-    summary: ''
-    fullName: azure-arm-hdinsight-jobs.JobOperations~JobOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: 'azure-arm-hdinsight-jobs.JobOperations~JobOperations#getJob'
     id: 'azure-arm-hdinsight-jobs.JobOperations~JobOperations#getJob'
     parent: azure-arm-hdinsight-jobs.JobOperations~JobOperations
@@ -420,36 +408,3 @@ items:
           - azure-arm-hdinsight-jobs.Stream
         description: The response stream.
       content: 'function submitPigJob(parameters, callback)'
-references:
-  - uid: azure-arm-hdinsight-jobs.HDInsightJobManagementClient
-    name: HDInsightJobManagementClient
-    fullName: azure-arm-hdinsight-jobs.HDInsightJobManagementClient
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-arm-hdinsight-jobs.Stream
-    name: Stream
-    fullName: azure-arm-hdinsight-jobs.Stream
-    isExternal: true
-  - uid: azure-arm-hdinsight-jobs.HiveJobSubmissionParameters
-    name: HiveJobSubmissionParameters
-    fullName: azure-arm-hdinsight-jobs.HiveJobSubmissionParameters
-    isExternal: true
-  - uid: azure-arm-hdinsight-jobs.MapReduceJobSubmissionParameters
-    name: MapReduceJobSubmissionParameters
-    fullName: azure-arm-hdinsight-jobs.MapReduceJobSubmissionParameters
-    isExternal: true
-  - uid: azure-arm-hdinsight-jobs.MapReduceStreamingJobSubmissionParameters
-    name: MapReduceStreamingJobSubmissionParameters
-    fullName: azure-arm-hdinsight-jobs.MapReduceStreamingJobSubmissionParameters
-    isExternal: true
-  - uid: azure-arm-hdinsight-jobs.PigJobSubmissionParameters
-    name: PigJobSubmissionParameters
-    fullName: azure-arm-hdinsight-jobs.PigJobSubmissionParameters
-    isExternal: true

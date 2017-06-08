@@ -27,7 +27,6 @@ items:
     type: Class
     children:
       - 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations.#ctor'
-      - 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#client'
       - 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#create'
       - >-
         azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#deleteMethod
@@ -50,17 +49,6 @@ items:
       content: new AffinityGroupOperations(client)
     langs:
       - js
-  - uid: 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#client'
-    id: 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#client'
-    parent: azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations
-    name: client
-    summary: ''
-    fullName: azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#create'
     id: 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#create'
     parent: azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations
@@ -268,28 +256,3 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: 'function update(affinityGroupName, parameters, callback)'
-references:
-  - uid: azure-asm-mgmt.ManagementClient
-    name: ManagementClient
-    fullName: azure-asm-mgmt.ManagementClient
-    isExternal: true
-  - uid: azure-asm-mgmt.AffinityGroupCreateParameters
-    name: AffinityGroupCreateParameters
-    fullName: azure-asm-mgmt.AffinityGroupCreateParameters
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-mgmt.Stream
-    name: Stream
-    fullName: azure-asm-mgmt.Stream
-    isExternal: true
-  - uid: azure-asm-mgmt.AffinityGroupUpdateParameters
-    name: AffinityGroupUpdateParameters
-    fullName: azure-asm-mgmt.AffinityGroupUpdateParameters
-    isExternal: true

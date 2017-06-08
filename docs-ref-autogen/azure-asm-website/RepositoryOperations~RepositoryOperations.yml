@@ -25,7 +25,6 @@ items:
     type: Class
     children:
       - 'azure-asm-website.RepositoryOperations~RepositoryOperations.#ctor'
-      - 'azure-asm-website.RepositoryOperations~RepositoryOperations#client'
       - 'azure-asm-website.RepositoryOperations~RepositoryOperations#deleteMethod'
   - id: 'azure-asm-website.RepositoryOperations~RepositoryOperations.#ctor'
     uid: 'azure-asm-website.RepositoryOperations~RepositoryOperations.#ctor'
@@ -43,17 +42,6 @@ items:
       content: new RepositoryOperations(client)
     langs:
       - js
-  - uid: 'azure-asm-website.RepositoryOperations~RepositoryOperations#client'
-    id: 'azure-asm-website.RepositoryOperations~RepositoryOperations#client'
-    parent: azure-asm-website.RepositoryOperations~RepositoryOperations
-    name: client
-    summary: ''
-    fullName: azure-asm-website.RepositoryOperations~RepositoryOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: 'azure-asm-website.RepositoryOperations~RepositoryOperations#deleteMethod'
     id: 'azure-asm-website.RepositoryOperations~RepositoryOperations#deleteMethod'
     parent: azure-asm-website.RepositoryOperations~RepositoryOperations
@@ -75,16 +63,3 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: function deleteMethod(callback)
-references:
-  - uid: azure-asm-website.WebSiteExtensionsClient
-    name: WebSiteExtensionsClient
-    fullName: azure-asm-website.WebSiteExtensionsClient
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-website.Stream
-    name: Stream
-    fullName: azure-asm-website.Stream
-    isExternal: true

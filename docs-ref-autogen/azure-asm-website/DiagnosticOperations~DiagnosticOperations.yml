@@ -25,7 +25,6 @@ items:
     type: Class
     children:
       - 'azure-asm-website.DiagnosticOperations~DiagnosticOperations.#ctor'
-      - 'azure-asm-website.DiagnosticOperations~DiagnosticOperations#client'
       - 'azure-asm-website.DiagnosticOperations~DiagnosticOperations#getSettings'
       - >-
         azure-asm-website.DiagnosticOperations~DiagnosticOperations#updateSettings
@@ -45,17 +44,6 @@ items:
       content: new DiagnosticOperations(client)
     langs:
       - js
-  - uid: 'azure-asm-website.DiagnosticOperations~DiagnosticOperations#client'
-    id: 'azure-asm-website.DiagnosticOperations~DiagnosticOperations#client'
-    parent: azure-asm-website.DiagnosticOperations~DiagnosticOperations
-    name: client
-    summary: ''
-    fullName: azure-asm-website.DiagnosticOperations~DiagnosticOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: 'azure-asm-website.DiagnosticOperations~DiagnosticOperations#getSettings'
     id: 'azure-asm-website.DiagnosticOperations~DiagnosticOperations#getSettings'
     parent: azure-asm-website.DiagnosticOperations~DiagnosticOperations
@@ -110,24 +98,3 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function updateSettings(parameters, callback)'
-references:
-  - uid: azure-asm-website.WebSiteExtensionsClient
-    name: WebSiteExtensionsClient
-    fullName: azure-asm-website.WebSiteExtensionsClient
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-website.Stream
-    name: Stream
-    fullName: azure-asm-website.Stream
-    isExternal: true
-  - uid: azure-asm-website.DiagnosticUpdateParameters
-    name: DiagnosticUpdateParameters
-    fullName: azure-asm-website.DiagnosticUpdateParameters
-    isExternal: true
-  - uid: object
-    name: object
-    fullName: object
-    isExternal: true

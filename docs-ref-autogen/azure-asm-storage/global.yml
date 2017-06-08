@@ -9,20 +9,8 @@ items:
     langs:
       - js
     children:
-      - azure-asm-storage._global.StorageManagementClient
       - azure-asm-storage._global.createStorageManagementClient
       - azure-asm-storage._global.createCertificateCloudCredentials
-      - azure-asm-storage._global.StorageManagementClient
-  - uid: azure-asm-storage._global.StorageManagementClient
-    id: azure-asm-storage._global.StorageManagementClient
-    name: StorageManagementClient
-    summary: ''
-    fullName: azure-asm-storage.StorageManagementClient
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: StorageManagementClient
   - uid: azure-asm-storage._global.createStorageManagementClient
     id: azure-asm-storage._global.createStorageManagementClient
     name: 'createStorageManagementClient(baseUri, filters)'
@@ -102,30 +90,3 @@ items:
           - azure-asm-storage.CertificateCloudCredentials
         description: ''
       content: function createCertificateCloudCredentials()
-  - uid: azure-asm-storage._global.StorageManagementClient
-    id: azure-asm-storage._global.StorageManagementClient
-    name: StorageManagementClient
-    summary: ''
-    fullName: azure-asm-storage.StorageManagementClient
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: StorageManagementClient
-references:
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: array
-    name: array
-    fullName: array
-    isExternal: true
-  - uid: azure-asm-storage.StorageManagementClient
-    name: StorageManagementClient
-    fullName: azure-asm-storage.StorageManagementClient
-    isExternal: true
-  - uid: azure-asm-storage.CertificateCloudCredentials
-    name: CertificateCloudCredentials
-    fullName: azure-asm-storage.CertificateCloudCredentials
-    isExternal: true

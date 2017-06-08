@@ -25,7 +25,6 @@ items:
     type: Class
     children:
       - 'azure-asm-website.WebSpaceOperations~WebSpaceOperations.#ctor'
-      - 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#client'
       - >-
         azure-asm-website.WebSpaceOperations~WebSpaceOperations#createPublishingUser
       - 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#get'
@@ -51,17 +50,6 @@ items:
       content: new WebSpaceOperations(client)
     langs:
       - js
-  - uid: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#client'
-    id: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#client'
-    parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
-    name: client
-    summary: ''
-    fullName: azure-asm-website.WebSpaceOperations~WebSpaceOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: >-
       azure-asm-website.WebSpaceOperations~WebSpaceOperations#createPublishingUser
     id: >-
@@ -285,32 +273,3 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function listWebSites(webSpaceName, parametersOrCallback, callback)'
-references:
-  - uid: azure-asm-website.WebSiteManagementClient
-    name: WebSiteManagementClient
-    fullName: azure-asm-website.WebSiteManagementClient
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: azure-asm-website.WebSpacesCreatePublishingUserParameters
-    name: WebSpacesCreatePublishingUserParameters
-    fullName: azure-asm-website.WebSpacesCreatePublishingUserParameters
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-website.Stream
-    name: Stream
-    fullName: azure-asm-website.Stream
-    isExternal: true
-  - uid: azure-asm-website.WebSiteListParameters
-    name: WebSiteListParameters
-    fullName: azure-asm-website.WebSiteListParameters
-    isExternal: true
-  - uid: array
-    name: array
-    fullName: array
-    isExternal: true

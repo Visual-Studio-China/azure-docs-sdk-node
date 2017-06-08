@@ -26,7 +26,6 @@ items:
     type: Class
     children:
       - 'azure-asm-compute.DNSServerOperations~DNSServerOperations.#ctor'
-      - 'azure-asm-compute.DNSServerOperations~DNSServerOperations#client'
       - 'azure-asm-compute.DNSServerOperations~DNSServerOperations#addDNSServer'
       - >-
         azure-asm-compute.DNSServerOperations~DNSServerOperations#beginAddingDNSServer
@@ -54,17 +53,6 @@ items:
       content: new DNSServerOperations(client)
     langs:
       - js
-  - uid: 'azure-asm-compute.DNSServerOperations~DNSServerOperations#client'
-    id: 'azure-asm-compute.DNSServerOperations~DNSServerOperations#client'
-    parent: azure-asm-compute.DNSServerOperations~DNSServerOperations
-    name: client
-    summary: ''
-    fullName: azure-asm-compute.DNSServerOperations~DNSServerOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: 'azure-asm-compute.DNSServerOperations~DNSServerOperations#addDNSServer'
     id: 'azure-asm-compute.DNSServerOperations~DNSServerOperations#addDNSServer'
     parent: azure-asm-compute.DNSServerOperations~DNSServerOperations
@@ -357,28 +345,3 @@ items:
       content: >-
         function updateDNSServer(serviceName, deploymentName, dnsServerName,
         parameters, callback)
-references:
-  - uid: azure-asm-compute.ComputeManagementClient
-    name: ComputeManagementClient
-    fullName: azure-asm-compute.ComputeManagementClient
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: azure-asm-compute.DNSAddParameters
-    name: DNSAddParameters
-    fullName: azure-asm-compute.DNSAddParameters
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-compute.Stream
-    name: Stream
-    fullName: azure-asm-compute.Stream
-    isExternal: true
-  - uid: azure-asm-compute.DNSUpdateParameters
-    name: DNSUpdateParameters
-    fullName: azure-asm-compute.DNSUpdateParameters
-    isExternal: true

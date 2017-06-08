@@ -20,7 +20,6 @@ items:
     type: Class
     children:
       - 'azure-asm-sql.SqlManagementService.#ctor'
-      - 'azure-asm-sql.SqlManagementService#subscriptionId'
       - 'azure-asm-sql.SqlManagementService#listServers'
       - 'azure-asm-sql.SqlManagementService#deleteServer'
       - 'azure-asm-sql.SqlManagementService#createServer'
@@ -29,7 +28,6 @@ items:
       - 'azure-asm-sql.SqlManagementService#createServerFirewallRule'
       - 'azure-asm-sql.SqlManagementService#updateServerFirewallRule'
       - 'azure-asm-sql.SqlManagementService#createDatabase'
-      - 'azure-asm-sql.SqlManagementService#_makePath'
   - id: 'azure-asm-sql.SqlManagementService.#ctor'
     uid: 'azure-asm-sql.SqlManagementService.#ctor'
     parent: azure-asm-sql.SqlManagementService
@@ -95,17 +93,6 @@ items:
         hostOptions)
     langs:
       - js
-  - uid: 'azure-asm-sql.SqlManagementService#subscriptionId'
-    id: 'azure-asm-sql.SqlManagementService#subscriptionId'
-    parent: azure-asm-sql.SqlManagementService
-    name: subscriptionId
-    summary: ''
-    fullName: azure-asm-sql.SqlManagementService.subscriptionId
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: subscriptionId
   - uid: 'azure-asm-sql.SqlManagementService#listServers'
     id: 'azure-asm-sql.SqlManagementService#listServers'
     parent: azure-asm-sql.SqlManagementService
@@ -376,31 +363,3 @@ items:
                                                                                            the new database information.
                                                                                            `response` will contain information related to this operation.
       content: 'function createDatabase(serverName, databaseName, options, callback)'
-  - uid: 'azure-asm-sql.SqlManagementService#_makePath'
-    id: 'azure-asm-sql.SqlManagementService#_makePath'
-    parent: azure-asm-sql.SqlManagementService
-    name: _makePath()
-    summary: ''
-    fullName: azure-asm-sql.SqlManagementService._makePath()
-    langs:
-      - js
-    type: Function
-    syntax:
-      content: function _makePath()
-references:
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: object
-    name: object
-    fullName: object
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: number
-    name: number
-    fullName: number
-    isExternal: true

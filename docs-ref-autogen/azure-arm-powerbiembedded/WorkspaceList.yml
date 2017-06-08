@@ -3,12 +3,12 @@ items:
   - uid: azure-arm-powerbiembedded.WorkspaceList
     id: azure-arm-powerbiembedded.WorkspaceList
     name: WorkspaceList
-    summary: ''
+    summary: Initializes a new instance of the WorkspaceList class.
     fullName: azure-arm-powerbiembedded.WorkspaceList
     source:
       id: azure-arm-powerbiembedded.WorkspaceList
       path: lib\services\powerbiembedded\lib\models\workspaceList.js
-      startLine: 19
+      startLine: 18
       remote:
         branch: master
         path: lib\services\powerbiembedded\lib\models\workspaceList.js
@@ -45,8 +45,3 @@ items:
           - object
         description: metadata of WorkspaceList
       content: function mapper()
-references:
-  - uid: object
-    name: object
-    fullName: object
-    isExternal: true

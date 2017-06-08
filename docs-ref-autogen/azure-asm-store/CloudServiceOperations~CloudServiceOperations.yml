@@ -26,7 +26,6 @@ items:
     type: Class
     children:
       - 'azure-asm-store.CloudServiceOperations~CloudServiceOperations.#ctor'
-      - 'azure-asm-store.CloudServiceOperations~CloudServiceOperations#client'
       - >-
         azure-asm-store.CloudServiceOperations~CloudServiceOperations#beginCreating
       - 'azure-asm-store.CloudServiceOperations~CloudServiceOperations#create'
@@ -47,17 +46,6 @@ items:
       content: new CloudServiceOperations(client)
     langs:
       - js
-  - uid: 'azure-asm-store.CloudServiceOperations~CloudServiceOperations#client'
-    id: 'azure-asm-store.CloudServiceOperations~CloudServiceOperations#client'
-    parent: azure-asm-store.CloudServiceOperations~CloudServiceOperations
-    name: client
-    summary: ''
-    fullName: azure-asm-store.CloudServiceOperations~CloudServiceOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: >-
       azure-asm-store.CloudServiceOperations~CloudServiceOperations#beginCreating
     id: >-
@@ -191,24 +179,3 @@ items:
           - azure-asm-store.Stream
         description: The response stream.
       content: function list(callback)
-references:
-  - uid: azure-asm-store.StoreManagementClient
-    name: StoreManagementClient
-    fullName: azure-asm-store.StoreManagementClient
-    isExternal: true
-  - uid: azure-asm-store.CloudServiceCreateParameters
-    name: CloudServiceCreateParameters
-    fullName: azure-asm-store.CloudServiceCreateParameters
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-store.Stream
-    name: Stream
-    fullName: azure-asm-store.Stream
-    isExternal: true

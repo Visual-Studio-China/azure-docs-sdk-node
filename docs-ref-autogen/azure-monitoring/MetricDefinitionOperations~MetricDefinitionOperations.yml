@@ -25,8 +25,6 @@ items:
       - >-
         azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations.#ctor
       - >-
-        azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations#client
-      - >-
         azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations#list
   - id: >-
       azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations.#ctor
@@ -47,20 +45,6 @@ items:
       content: new MetricDefinitionOperations(client)
     langs:
       - js
-  - uid: >-
-      azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations#client
-    id: >-
-      azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations#client
-    parent: azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations
-    name: client
-    summary: ''
-    fullName: >-
-      azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: >-
       azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations#list
     id: >-
@@ -109,24 +93,3 @@ items:
           - azure-monitoring.Stream
         description: The response stream.
       content: 'function list(resourceId, metricNames, metricNamespace, callback)'
-references:
-  - uid: azure-monitoring.MetricsClient
-    name: MetricsClient
-    fullName: azure-monitoring.MetricsClient
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: Array
-    name: Array
-    fullName: Array
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-monitoring.Stream
-    name: Stream
-    fullName: azure-monitoring.Stream
-    isExternal: true

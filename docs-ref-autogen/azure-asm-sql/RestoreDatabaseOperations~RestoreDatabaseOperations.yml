@@ -25,7 +25,6 @@ items:
     type: Class
     children:
       - 'azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations.#ctor'
-      - 'azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations#client'
       - 'azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations#create'
   - id: 'azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations.#ctor'
     uid: 'azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations.#ctor'
@@ -43,17 +42,6 @@ items:
       content: new RestoreDatabaseOperations(client)
     langs:
       - js
-  - uid: 'azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations#client'
-    id: 'azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations#client'
-    parent: azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations
-    name: client
-    summary: ''
-    fullName: azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: 'azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations#create'
     id: 'azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations#create'
     parent: azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations
@@ -121,28 +109,3 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function create(sourceServerName, parameters, callback)'
-references:
-  - uid: azure-asm-sql.SqlManagementClient
-    name: SqlManagementClient
-    fullName: azure-asm-sql.SqlManagementClient
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: azure-asm-sql.RestoreDatabaseOperationCreateParameters
-    name: RestoreDatabaseOperationCreateParameters
-    fullName: azure-asm-sql.RestoreDatabaseOperationCreateParameters
-    isExternal: true
-  - uid: date
-    name: date
-    fullName: date
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-sql.Stream
-    name: Stream
-    fullName: azure-asm-sql.Stream
-    isExternal: true

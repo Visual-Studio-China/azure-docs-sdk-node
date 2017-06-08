@@ -24,7 +24,6 @@ items:
     type: Class
     children:
       - 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations.#ctor'
-      - 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#client'
       - >-
         azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#beginCreating
       - >-
@@ -51,17 +50,6 @@ items:
       content: new CloudServiceOperations(client)
     langs:
       - js
-  - uid: 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#client'
-    id: 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#client'
-    parent: azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations
-    name: client
-    summary: ''
-    fullName: azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: >-
       azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#beginCreating
     id: >-
@@ -273,24 +261,3 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: function list(callback)
-references:
-  - uid: azure-asm-scheduler.CloudServiceManagementClient
-    name: CloudServiceManagementClient
-    fullName: azure-asm-scheduler.CloudServiceManagementClient
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: azure-asm-scheduler.CloudServiceCreateParameters
-    name: CloudServiceCreateParameters
-    fullName: azure-asm-scheduler.CloudServiceCreateParameters
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-scheduler.Stream
-    name: Stream
-    fullName: azure-asm-scheduler.Stream
-    isExternal: true

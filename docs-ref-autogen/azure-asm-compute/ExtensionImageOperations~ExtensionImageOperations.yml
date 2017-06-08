@@ -28,8 +28,6 @@ items:
       - >-
         azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations.#ctor
       - >-
-        azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations#client
-      - >-
         azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations#beginRegistering
       - >-
         azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations#beginUnregistering
@@ -58,17 +56,6 @@ items:
       content: new ExtensionImageOperations(client)
     langs:
       - js
-  - uid: 'azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations#client'
-    id: 'azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations#client'
-    parent: azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations
-    name: client
-    summary: ''
-    fullName: azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: >-
       azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations#beginRegistering
     id: >-
@@ -1949,48 +1936,3 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function update(parameters, callback)'
-references:
-  - uid: azure-asm-compute.ComputeManagementClient
-    name: ComputeManagementClient
-    fullName: azure-asm-compute.ComputeManagementClient
-    isExternal: true
-  - uid: azure-asm-compute.ExtensionImageRegisterParameters
-    name: ExtensionImageRegisterParameters
-    fullName: azure-asm-compute.ExtensionImageRegisterParameters
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: azure-asm-compute.ExtensionCertificateConfiguration
-    name: ExtensionCertificateConfiguration
-    fullName: azure-asm-compute.ExtensionCertificateConfiguration
-    isExternal: true
-  - uid: boolean
-    name: boolean
-    fullName: boolean
-    isExternal: true
-  - uid: azure-asm-compute.ExtensionEndpointConfiguration
-    name: ExtensionEndpointConfiguration
-    fullName: azure-asm-compute.ExtensionEndpointConfiguration
-    isExternal: true
-  - uid: array
-    name: array
-    fullName: array
-    isExternal: true
-  - uid: date
-    name: date
-    fullName: date
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-compute.Stream
-    name: Stream
-    fullName: azure-asm-compute.Stream
-    isExternal: true
-  - uid: azure-asm-compute.ExtensionImageUpdateParameters
-    name: ExtensionImageUpdateParameters
-    fullName: azure-asm-compute.ExtensionImageUpdateParameters
-    isExternal: true

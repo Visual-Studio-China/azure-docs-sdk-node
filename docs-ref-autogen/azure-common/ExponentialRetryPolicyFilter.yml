@@ -18,7 +18,6 @@ items:
     type: Class
     children:
       - 'azure-common.ExponentialRetryPolicyFilter.#ctor'
-      - azure-common.ExponentialRetryPolicyFilter~newFilter
       - azure-common.ExponentialRetryPolicyFilter.DEFAULT_CLIENT_RETRY_INTERVAL
       - azure-common.ExponentialRetryPolicyFilter.DEFAULT_CLIENT_RETRY_COUNT
       - >-
@@ -59,19 +58,6 @@ items:
         minRetryInterval, maxRetryInterval)
     langs:
       - js
-  - uid: azure-common.ExponentialRetryPolicyFilter~newFilter
-    id: azure-common.ExponentialRetryPolicyFilter~newFilter
-    parent: azure-common.ExponentialRetryPolicyFilter
-    name: newFilter()
-    summary: ''
-    fullName: azure-common.ExponentialRetryPolicyFilter.newFilter()
-    langs:
-      - js
-    type: Function
-    syntax:
-      content: function newFilter()
-    children:
-      - azure-common.ExponentialRetryPolicyFilter~newFilter~retryCallback
   - uid: azure-common.ExponentialRetryPolicyFilter.DEFAULT_CLIENT_RETRY_INTERVAL
     id: azure-common.ExponentialRetryPolicyFilter.DEFAULT_CLIENT_RETRY_INTERVAL
     parent: azure-common.ExponentialRetryPolicyFilter
@@ -122,8 +108,3 @@ items:
     type: Member
     syntax:
       content: DEFAULT_CLIENT_MIN_RETRY_INTERVAL
-references:
-  - uid: number
-    name: number
-    fullName: number
-    isExternal: true

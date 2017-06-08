@@ -26,7 +26,6 @@ items:
     type: Class
     children:
       - 'azure-asm-network.ReservedIPOperations~ReservedIPOperations.#ctor'
-      - 'azure-asm-network.ReservedIPOperations~ReservedIPOperations#client'
       - >-
         azure-asm-network.ReservedIPOperations~ReservedIPOperations#abortMigration
       - 'azure-asm-network.ReservedIPOperations~ReservedIPOperations#associate'
@@ -71,17 +70,6 @@ items:
       content: new ReservedIPOperations(client)
     langs:
       - js
-  - uid: 'azure-asm-network.ReservedIPOperations~ReservedIPOperations#client'
-    id: 'azure-asm-network.ReservedIPOperations~ReservedIPOperations#client'
-    parent: azure-asm-network.ReservedIPOperations~ReservedIPOperations
-    name: client
-    summary: ''
-    fullName: azure-asm-network.ReservedIPOperations~ReservedIPOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: 'azure-asm-network.ReservedIPOperations~ReservedIPOperations#abortMigration'
     id: 'azure-asm-network.ReservedIPOperations~ReservedIPOperations#abortMigration'
     parent: azure-asm-network.ReservedIPOperations~ReservedIPOperations
@@ -752,28 +740,3 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function validateMigration(ipName, callback)'
-references:
-  - uid: azure-asm-network.NetworkManagementClient
-    name: NetworkManagementClient
-    fullName: azure-asm-network.NetworkManagementClient
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-network.Stream
-    name: Stream
-    fullName: azure-asm-network.Stream
-    isExternal: true
-  - uid: azure-asm-network.NetworkReservedIPMobilityParameters
-    name: NetworkReservedIPMobilityParameters
-    fullName: azure-asm-network.NetworkReservedIPMobilityParameters
-    isExternal: true
-  - uid: azure-asm-network.NetworkReservedIPCreateParameters
-    name: NetworkReservedIPCreateParameters
-    fullName: azure-asm-network.NetworkReservedIPCreateParameters
-    isExternal: true

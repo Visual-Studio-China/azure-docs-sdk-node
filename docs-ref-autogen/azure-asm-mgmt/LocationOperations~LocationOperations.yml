@@ -27,7 +27,6 @@ items:
     type: Class
     children:
       - 'azure-asm-mgmt.LocationOperations~LocationOperations.#ctor'
-      - 'azure-asm-mgmt.LocationOperations~LocationOperations#client'
       - 'azure-asm-mgmt.LocationOperations~LocationOperations#list'
   - id: 'azure-asm-mgmt.LocationOperations~LocationOperations.#ctor'
     uid: 'azure-asm-mgmt.LocationOperations~LocationOperations.#ctor'
@@ -45,17 +44,6 @@ items:
       content: new LocationOperations(client)
     langs:
       - js
-  - uid: 'azure-asm-mgmt.LocationOperations~LocationOperations#client'
-    id: 'azure-asm-mgmt.LocationOperations~LocationOperations#client'
-    parent: azure-asm-mgmt.LocationOperations~LocationOperations
-    name: client
-    summary: ''
-    fullName: azure-asm-mgmt.LocationOperations~LocationOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: 'azure-asm-mgmt.LocationOperations~LocationOperations#list'
     id: 'azure-asm-mgmt.LocationOperations~LocationOperations#list'
     parent: azure-asm-mgmt.LocationOperations~LocationOperations
@@ -80,16 +68,3 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: function list(callback)
-references:
-  - uid: azure-asm-mgmt.ManagementClient
-    name: ManagementClient
-    fullName: azure-asm-mgmt.ManagementClient
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-mgmt.Stream
-    name: Stream
-    fullName: azure-asm-mgmt.Stream
-    isExternal: true

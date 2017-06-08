@@ -28,8 +28,6 @@ items:
       - >-
         azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations.#ctor
       - >-
-        azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations#client
-      - >-
         azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations#get
       - >-
         azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations#list
@@ -52,20 +50,6 @@ items:
       content: new RecoverableDatabaseOperations(client)
     langs:
       - js
-  - uid: >-
-      azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations#client
-    id: >-
-      azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations#client
-    parent: azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations
-    name: client
-    summary: ''
-    fullName: >-
-      azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: >-
       azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations#get
     id: >-
@@ -134,20 +118,3 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function list(serverName, callback)'
-references:
-  - uid: azure-asm-sql.SqlManagementClient
-    name: SqlManagementClient
-    fullName: azure-asm-sql.SqlManagementClient
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-sql.Stream
-    name: Stream
-    fullName: azure-asm-sql.Stream
-    isExternal: true

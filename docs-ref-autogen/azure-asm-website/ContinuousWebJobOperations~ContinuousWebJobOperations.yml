@@ -27,8 +27,6 @@ items:
       - >-
         azure-asm-website.ContinuousWebJobOperations~ContinuousWebJobOperations.#ctor
       - >-
-        azure-asm-website.ContinuousWebJobOperations~ContinuousWebJobOperations#client
-      - >-
         azure-asm-website.ContinuousWebJobOperations~ContinuousWebJobOperations#deleteMethod
       - >-
         azure-asm-website.ContinuousWebJobOperations~ContinuousWebJobOperations#get
@@ -65,20 +63,6 @@ items:
       content: new ContinuousWebJobOperations(client)
     langs:
       - js
-  - uid: >-
-      azure-asm-website.ContinuousWebJobOperations~ContinuousWebJobOperations#client
-    id: >-
-      azure-asm-website.ContinuousWebJobOperations~ContinuousWebJobOperations#client
-    parent: azure-asm-website.ContinuousWebJobOperations~ContinuousWebJobOperations
-    name: client
-    summary: ''
-    fullName: >-
-      azure-asm-website.ContinuousWebJobOperations~ContinuousWebJobOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: >-
       azure-asm-website.ContinuousWebJobOperations~ContinuousWebJobOperations#deleteMethod
     id: >-
@@ -372,32 +356,3 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function uploadZip(jobName, fileName, jobContent, callback)'
-references:
-  - uid: azure-asm-website.WebSiteExtensionsClient
-    name: WebSiteExtensionsClient
-    fullName: azure-asm-website.WebSiteExtensionsClient
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-website.Stream
-    name: Stream
-    fullName: azure-asm-website.Stream
-    isExternal: true
-  - uid: azure-asm-website.ContinuousWebJobSettingsUpdateParameters
-    name: ContinuousWebJobSettingsUpdateParameters
-    fullName: azure-asm-website.ContinuousWebJobSettingsUpdateParameters
-    isExternal: true
-  - uid: boolean
-    name: boolean
-    fullName: boolean
-    isExternal: true
-  - uid: number
-    name: number
-    fullName: number
-    isExternal: true

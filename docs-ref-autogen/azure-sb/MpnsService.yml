@@ -21,9 +21,6 @@ items:
     type: Class
     children:
       - 'azure-sb.MpnsService.#ctor'
-      - 'azure-sb.MpnsService#notificationHubService'
-      - azure-sb.MpnsService~addSendMethod
-      - azure-sb.MpnsService~addCreateAndUpdateRegistrationMethod
       - 'azure-sb.MpnsService#createNativeRegistration'
       - 'azure-sb.MpnsService#createOrUpdateNativeRegistration'
       - 'azure-sb.MpnsService#createFlipTileRegistration'
@@ -65,42 +62,6 @@ items:
       content: new MpnsService(notificationHubService)
     langs:
       - js
-  - uid: 'azure-sb.MpnsService#notificationHubService'
-    id: 'azure-sb.MpnsService#notificationHubService'
-    parent: azure-sb.MpnsService
-    name: notificationHubService
-    summary: ''
-    fullName: azure-sb.MpnsService.notificationHubService
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: notificationHubService
-  - uid: azure-sb.MpnsService~addSendMethod
-    id: azure-sb.MpnsService~addSendMethod
-    parent: azure-sb.MpnsService
-    name: addSendMethod()
-    summary: ''
-    fullName: azure-sb.MpnsService.addSendMethod()
-    langs:
-      - js
-    type: Function
-    syntax:
-      content: function addSendMethod()
-  - uid: azure-sb.MpnsService~addCreateAndUpdateRegistrationMethod
-    id: azure-sb.MpnsService~addCreateAndUpdateRegistrationMethod
-    parent: azure-sb.MpnsService
-    name: addCreateAndUpdateRegistrationMethod()
-    summary: ''
-    fullName: azure-sb.MpnsService.addCreateAndUpdateRegistrationMethod()
-    langs:
-      - js
-    type: Function
-    syntax:
-      content: function addCreateAndUpdateRegistrationMethod()
-    children:
-      - >-
-        azure-sb.MpnsService~addCreateAndUpdateRegistrationMethod~createRegistrationXml
   - uid: 'azure-sb.MpnsService#createNativeRegistration'
     id: 'azure-sb.MpnsService#createNativeRegistration'
     parent: azure-sb.MpnsService
@@ -1249,27 +1210,3 @@ references:
     name: NotificationHubService
     fullName: azure-sb.NotificationHubService
     isExternal: false
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: array
-    name: array
-    fullName: array
-    isExternal: true
-  - uid: object
-    name: object
-    fullName: object
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: undefined
-    name: undefined
-    fullName: undefined
-    isExternal: true
-  - uid: json
-    name: json
-    fullName: json
-    isExternal: true

@@ -18,7 +18,6 @@ items:
     type: Class
     children:
       - 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations.#ctor'
-      - 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#client'
       - 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#create'
       - >-
         azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#deleteMethod
@@ -44,17 +43,6 @@ items:
       content: new ServicePrincipalOperations(client)
     langs:
       - js
-  - uid: 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#client'
-    id: 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#client'
-    parent: azure-extra.ServicePrincipalOperations~ServicePrincipalOperations
-    name: client
-    summary: ''
-    fullName: azure-extra.ServicePrincipalOperations~ServicePrincipalOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#create'
     id: 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#create'
     parent: azure-extra.ServicePrincipalOperations~ServicePrincipalOperations
@@ -224,28 +212,3 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function listNext(nextLink, callback)'
-references:
-  - uid: azure-extra.GraphRbacManagementClient
-    name: GraphRbacManagementClient
-    fullName: azure-extra.GraphRbacManagementClient
-    isExternal: true
-  - uid: azure-extra.ServicePrincipalCreateParameters
-    name: ServicePrincipalCreateParameters
-    fullName: azure-extra.ServicePrincipalCreateParameters
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: boolean
-    name: boolean
-    fullName: boolean
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-extra.Stream
-    name: Stream
-    fullName: azure-extra.Stream
-    isExternal: true

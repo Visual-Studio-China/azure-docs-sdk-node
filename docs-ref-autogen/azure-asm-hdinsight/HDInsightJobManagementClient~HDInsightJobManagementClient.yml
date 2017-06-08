@@ -25,10 +25,6 @@ items:
       - >-
         azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient.#ctor
       - >-
-        azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient#clusterDnsName
-      - >-
-        azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient#credentials
-      - >-
         azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient#jobManagement
   - id: >-
       azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient.#ctor
@@ -74,36 +70,6 @@ items:
     langs:
       - js
   - uid: >-
-      azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient#clusterDnsName
-    id: >-
-      azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient#clusterDnsName
-    parent: >-
-      azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient
-    name: clusterDnsName
-    summary: ''
-    fullName: >-
-      azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient.clusterDnsName
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: clusterDnsName
-  - uid: >-
-      azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient#credentials
-    id: >-
-      azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient#credentials
-    parent: >-
-      azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient
-    name: credentials
-    summary: ''
-    fullName: >-
-      azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient.credentials
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: credentials
-  - uid: >-
       azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient#jobManagement
     id: >-
       azure-asm-hdinsight.HDInsightJobManagementClient~HDInsightJobManagementClient#jobManagement
@@ -121,20 +87,3 @@ items:
         type:
           - object
       content: jobManagement
-references:
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: azure-asm-hdinsight.BasicAuthenticationCloudCredentials
-    name: BasicAuthenticationCloudCredentials
-    fullName: azure-asm-hdinsight.BasicAuthenticationCloudCredentials
-    isExternal: true
-  - uid: Array
-    name: Array
-    fullName: Array
-    isExternal: true
-  - uid: object
-    name: object
-    fullName: object
-    isExternal: true

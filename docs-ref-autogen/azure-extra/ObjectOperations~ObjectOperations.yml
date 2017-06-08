@@ -18,7 +18,6 @@ items:
     type: Class
     children:
       - 'azure-extra.ObjectOperations~ObjectOperations.#ctor'
-      - 'azure-extra.ObjectOperations~ObjectOperations#client'
       - 'azure-extra.ObjectOperations~ObjectOperations#getCurrentUser'
       - 'azure-extra.ObjectOperations~ObjectOperations#getObjectsByObjectIds'
   - id: 'azure-extra.ObjectOperations~ObjectOperations.#ctor'
@@ -37,17 +36,6 @@ items:
       content: new ObjectOperations(client)
     langs:
       - js
-  - uid: 'azure-extra.ObjectOperations~ObjectOperations#client'
-    id: 'azure-extra.ObjectOperations~ObjectOperations#client'
-    parent: azure-extra.ObjectOperations~ObjectOperations
-    name: client
-    summary: ''
-    fullName: azure-extra.ObjectOperations~ObjectOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: 'azure-extra.ObjectOperations~ObjectOperations#getCurrentUser'
     id: 'azure-extra.ObjectOperations~ObjectOperations#getCurrentUser'
     parent: azure-extra.ObjectOperations~ObjectOperations
@@ -108,28 +96,3 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function getObjectsByObjectIds(parameters, callback)'
-references:
-  - uid: azure-extra.GraphRbacManagementClient
-    name: GraphRbacManagementClient
-    fullName: azure-extra.GraphRbacManagementClient
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-extra.Stream
-    name: Stream
-    fullName: azure-extra.Stream
-    isExternal: true
-  - uid: azure-extra.GetObjectsParameters
-    name: GetObjectsParameters
-    fullName: azure-extra.GetObjectsParameters
-    isExternal: true
-  - uid: array
-    name: array
-    fullName: array
-    isExternal: true
-  - uid: boolean
-    name: boolean
-    fullName: boolean
-    isExternal: true

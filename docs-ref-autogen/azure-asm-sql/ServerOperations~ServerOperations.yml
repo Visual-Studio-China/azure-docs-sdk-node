@@ -30,7 +30,6 @@ items:
     type: Class
     children:
       - 'azure-asm-sql.ServerOperations~ServerOperations.#ctor'
-      - 'azure-asm-sql.ServerOperations~ServerOperations#client'
       - >-
         azure-asm-sql.ServerOperations~ServerOperations#changeAdministratorPassword
       - 'azure-asm-sql.ServerOperations~ServerOperations#create'
@@ -52,17 +51,6 @@ items:
       content: new ServerOperations(client)
     langs:
       - js
-  - uid: 'azure-asm-sql.ServerOperations~ServerOperations#client'
-    id: 'azure-asm-sql.ServerOperations~ServerOperations#client'
-    parent: azure-asm-sql.ServerOperations~ServerOperations
-    name: client
-    summary: ''
-    fullName: azure-asm-sql.ServerOperations~ServerOperations.client
-    langs:
-      - js
-    type: Member
-    syntax:
-      content: client
   - uid: >-
       azure-asm-sql.ServerOperations~ServerOperations#changeAdministratorPassword
     id: >-
@@ -216,28 +204,3 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: function list(callback)
-references:
-  - uid: azure-asm-sql.SqlManagementClient
-    name: SqlManagementClient
-    fullName: azure-asm-sql.SqlManagementClient
-    isExternal: true
-  - uid: string
-    name: string
-    fullName: string
-    isExternal: true
-  - uid: azure-asm-sql.ServerChangeAdministratorPasswordParameters
-    name: ServerChangeAdministratorPasswordParameters
-    fullName: azure-asm-sql.ServerChangeAdministratorPasswordParameters
-    isExternal: true
-  - uid: function
-    name: function
-    fullName: function
-    isExternal: true
-  - uid: azure-asm-sql.Stream
-    name: Stream
-    fullName: azure-asm-sql.Stream
-    isExternal: true
-  - uid: azure-asm-sql.ServerCreateParameters
-    name: ServerCreateParameters
-    fullName: azure-asm-sql.ServerCreateParameters
-    isExternal: true
