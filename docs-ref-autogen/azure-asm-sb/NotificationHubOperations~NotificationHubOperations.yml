@@ -21,8 +21,6 @@ items:
         branch: master
         path: lib\services\serviceBusManagement\lib\serviceBusManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-sb.NotificationHubOperations~NotificationHubOperations.#ctor'
@@ -32,6 +30,8 @@ items:
       - >-
         azure-asm-sb.NotificationHubOperations~NotificationHubOperations#getConnectionDetails
       - 'azure-asm-sb.NotificationHubOperations~NotificationHubOperations#list'
+    langs:
+      - js
   - id: 'azure-asm-sb.NotificationHubOperations~NotificationHubOperations.#ctor'
     uid: 'azure-asm-sb.NotificationHubOperations~NotificationHubOperations.#ctor'
     parent: azure-asm-sb.NotificationHubOperations~NotificationHubOperations
@@ -58,8 +58,6 @@ items:
     fullName: >-
       azure-asm-sb.NotificationHubOperations~NotificationHubOperations.deleteMethod(namespaceName,
       notificationHubName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -80,6 +78,8 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function deleteMethod(namespaceName, notificationHubName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-sb.NotificationHubOperations~NotificationHubOperations#get'
     id: 'azure-asm-sb.NotificationHubOperations~NotificationHubOperations#get'
     parent: azure-asm-sb.NotificationHubOperations~NotificationHubOperations
@@ -88,8 +88,6 @@ items:
     fullName: >-
       azure-asm-sb.NotificationHubOperations~NotificationHubOperations.get(namespaceName,
       notificationHubName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -110,6 +108,8 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function get(namespaceName, notificationHubName, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-sb.NotificationHubOperations~NotificationHubOperations#getConnectionDetails
     id: >-
@@ -120,8 +120,6 @@ items:
     fullName: >-
       azure-asm-sb.NotificationHubOperations~NotificationHubOperations.getConnectionDetails(namespaceName,
       notificationHubName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -144,6 +142,8 @@ items:
       content: >-
         function getConnectionDetails(namespaceName, notificationHubName,
         callback)
+    langs:
+      - js
   - uid: 'azure-asm-sb.NotificationHubOperations~NotificationHubOperations#list'
     id: 'azure-asm-sb.NotificationHubOperations~NotificationHubOperations#list'
     parent: azure-asm-sb.NotificationHubOperations~NotificationHubOperations
@@ -152,8 +152,6 @@ items:
     fullName: >-
       azure-asm-sb.NotificationHubOperations~NotificationHubOperations.list(namespaceName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -170,3 +168,5 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function list(namespaceName, callback)'
+    langs:
+      - js

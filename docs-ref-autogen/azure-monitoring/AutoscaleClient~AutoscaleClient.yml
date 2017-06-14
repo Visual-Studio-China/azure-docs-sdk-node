@@ -13,12 +13,12 @@ items:
         branch: master
         path: lib\services\monitoring\lib\autoscaleClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-monitoring.AutoscaleClient~AutoscaleClient.#ctor'
       - 'azure-monitoring.AutoscaleClient~AutoscaleClient#settings'
+    langs:
+      - js
   - id: 'azure-monitoring.AutoscaleClient~AutoscaleClient.#ctor'
     uid: 'azure-monitoring.AutoscaleClient~AutoscaleClient.#ctor'
     parent: azure-monitoring.AutoscaleClient~AutoscaleClient
@@ -67,11 +67,11 @@ items:
       Provides an instance of the [SettingOperations](-SettingOperations.html)
       object.
     fullName: azure-monitoring.AutoscaleClient~AutoscaleClient.settings
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: settings
+    langs:
+      - js

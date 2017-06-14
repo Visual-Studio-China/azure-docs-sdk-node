@@ -13,8 +13,6 @@ items:
         branch: master
         path: lib\services\serviceBus\lib\wnsservice.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-sb.WnsService.#ctor'
@@ -35,6 +33,8 @@ items:
       - 'azure-sb.WnsService#listRegistrationsByChannel'
       - 'azure-sb.WnsService#_createBody'
       - 'azure-sb.WnsService#_createTemplateBody'
+    langs:
+      - js
   - id: 'azure-sb.WnsService.#ctor'
     uid: 'azure-sb.WnsService.#ctor'
     parent: azure-sb.WnsService
@@ -57,8 +57,6 @@ items:
     name: 'sendBadge(tags, value, optionsOrCallback, callback)'
     summary: Sends a wns/badge WNS notification.
     fullName: 'azure-sb.WnsService.sendBadge(tags, value, optionsOrCallback, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -98,6 +96,8 @@ items:
           - undefined
         description: ''
       content: 'function sendBadge(tags, value, optionsOrCallback, callback)'
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#sendTile*'
     id: 'azure-sb.WnsService#sendTile*'
     parent: azure-sb.WnsService
@@ -108,8 +108,6 @@ items:
 
       (e.g. sendTileSquarePeekImageAndText01).
     fullName: 'azure-sb.WnsService.sendTile*(tags, payload, options, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -168,6 +166,8 @@ items:
           - undefined
         description: ''
       content: 'function sendTile*(tags, payload, options, callback)'
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#sendToast*'
     id: 'azure-sb.WnsService#sendToast*'
     parent: azure-sb.WnsService
@@ -178,8 +178,6 @@ items:
 
       (e.g. sendToastText01).
     fullName: 'azure-sb.WnsService.sendToast*(tags, payload, options, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -234,14 +232,14 @@ items:
           - undefined
         description: ''
       content: 'function sendToast*(tags, payload, options, callback)'
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#sendRaw'
     id: 'azure-sb.WnsService#sendRaw'
     parent: azure-sb.WnsService
     name: 'sendRaw(tags, payload, optionsOrCallback, callback)'
     summary: Sends a wns/raw WNS notification.
     fullName: 'azure-sb.WnsService.sendRaw(tags, payload, optionsOrCallback, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -276,6 +274,8 @@ items:
           - undefined
         description: ''
       content: 'function sendRaw(tags, payload, optionsOrCallback, callback)'
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#send'
     id: 'azure-sb.WnsService#send'
     parent: azure-sb.WnsService
@@ -284,8 +284,6 @@ items:
       Sends a custom WNS notification. Use this method if you want to have full
       control on the payload.
     fullName: 'azure-sb.WnsService.send(tags, payload, type, optionsOrCallback, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -325,6 +323,8 @@ items:
           - undefined
         description: ''
       content: 'function send(tags, payload, type, optionsOrCallback, callback)'
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#createNativeRegistration'
     id: 'azure-sb.WnsService#createNativeRegistration'
     parent: azure-sb.WnsService
@@ -333,8 +333,6 @@ items:
     fullName: >-
       azure-sb.WnsService.createNativeRegistration(channel, tags,
       optionsOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -364,6 +362,8 @@ items:
       content: >-
         function createNativeRegistration(channel, tags, optionsOrCallback,
         callback)
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#createOrUpdateNativeRegistration'
     id: 'azure-sb.WnsService#createOrUpdateNativeRegistration'
     parent: azure-sb.WnsService
@@ -374,8 +374,6 @@ items:
     fullName: >-
       azure-sb.WnsService.createOrUpdateNativeRegistration(registrationId,
       channel, tags, optionsOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -409,6 +407,8 @@ items:
       content: >-
         function createOrUpdateNativeRegistration(registrationId, channel, tags,
         optionsOrCallback, callback)
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#createTile*Registration'
     id: 'azure-sb.WnsService#createTile*Registration'
     parent: azure-sb.WnsService
@@ -422,8 +422,6 @@ items:
     fullName: >-
       azure-sb.WnsService.createTile*Registration(channel, tags, template,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -485,6 +483,8 @@ items:
       content: >-
         function createTile*Registration(channel, tags, template, options,
         callback)
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#createToast*Registration'
     id: 'azure-sb.WnsService#createToast*Registration'
     parent: azure-sb.WnsService
@@ -498,8 +498,6 @@ items:
     fullName: >-
       azure-sb.WnsService.createToast*Registration(channel, tags, template,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -561,6 +559,8 @@ items:
       content: >-
         function createToast*Registration(channel, tags, template, options,
         callback)
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#createRawTemplateRegistration'
     id: 'azure-sb.WnsService#createRawTemplateRegistration'
     parent: azure-sb.WnsService
@@ -576,8 +576,6 @@ items:
     fullName: >-
       azure-sb.WnsService.createRawTemplateRegistration(channel, tags, template,
       optionsOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -623,6 +621,8 @@ items:
       content: >-
         function createRawTemplateRegistration(channel, tags, template,
         optionsOrCallback, callback)
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#createOrUpdateRawTemplateRegistration'
     id: 'azure-sb.WnsService#createOrUpdateRawTemplateRegistration'
     parent: azure-sb.WnsService
@@ -638,8 +638,6 @@ items:
     fullName: >-
       azure-sb.WnsService.createOrUpdateRawTemplateRegistration(registrationId,
       channel, tags, template, optionsOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -689,6 +687,8 @@ items:
       content: >-
         function createOrUpdateRawTemplateRegistration(registrationId, channel,
         tags, template, optionsOrCallback, callback)
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#updateTile*Registration'
     id: 'azure-sb.WnsService#updateTile*Registration'
     parent: azure-sb.WnsService
@@ -704,8 +704,6 @@ items:
     fullName: >-
       azure-sb.WnsService.updateTile*Registration(registrationId, channel, tags,
       template, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -771,6 +769,8 @@ items:
       content: >-
         function updateTile*Registration(registrationId, channel, tags,
         template, options, callback)
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#updateToast*Registration'
     id: 'azure-sb.WnsService#updateToast*Registration'
     parent: azure-sb.WnsService
@@ -786,8 +786,6 @@ items:
     fullName: >-
       azure-sb.WnsService.updateToast*Registration(registrationId, channel,
       tags, template, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -853,6 +851,8 @@ items:
       content: >-
         function updateToast*Registration(registrationId, channel, tags,
         template, options, callback)
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#updatesRawTemplateRegistration'
     id: 'azure-sb.WnsService#updatesRawTemplateRegistration'
     parent: azure-sb.WnsService
@@ -863,8 +863,6 @@ items:
     fullName: >-
       azure-sb.WnsService.updatesRawTemplateRegistration(registrationId,
       channel, tags, template, optionsOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -920,6 +918,8 @@ items:
       content: >-
         function updatesRawTemplateRegistration(registrationId, channel, tags,
         template, optionsOrCallback, callback)
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#listRegistrationsByChannel'
     id: 'azure-sb.WnsService#listRegistrationsByChannel'
     parent: azure-sb.WnsService
@@ -928,8 +928,6 @@ items:
     fullName: >-
       azure-sb.WnsService.listRegistrationsByChannel(channel, optionsOrCallback,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -970,6 +968,8 @@ items:
       content: >-
         function listRegistrationsByChannel(channel, optionsOrCallback,
         callback)
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#_createBody'
     id: 'azure-sb.WnsService#_createBody'
     parent: azure-sb.WnsService
@@ -978,8 +978,6 @@ items:
     fullName: >-
       azure-sb.WnsService._createBody(elementName, channel, tags, template,
       options)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1023,14 +1021,14 @@ items:
           - undefined
         description: ''
       content: 'function _createBody(elementName, channel, tags, template, options)'
+    langs:
+      - js
   - uid: 'azure-sb.WnsService#_createTemplateBody'
     id: 'azure-sb.WnsService#_createTemplateBody'
     parent: azure-sb.WnsService
     name: '_createTemplateBody(channel, tags, template, options)'
     summary: Creates a template registration body.
     fullName: 'azure-sb.WnsService._createTemplateBody(channel, tags, template, options)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1070,6 +1068,8 @@ items:
           - undefined
         description: ''
       content: 'function _createTemplateBody(channel, tags, template, options)'
+    langs:
+      - js
 references:
   - uid: azure-sb.NotificationHubService
     name: NotificationHubService

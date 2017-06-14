@@ -30,8 +30,6 @@ items:
         path: >-
           lib\services\trafficManagerManagement\lib\trafficManagerManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations.#ctor'
@@ -39,6 +37,8 @@ items:
         azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#create
       - 'azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#get'
       - 'azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#list'
+    langs:
+      - js
   - id: 'azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations.#ctor'
     uid: 'azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations.#ctor'
     parent: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations
@@ -68,8 +68,6 @@ items:
     fullName: >-
       azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations.create(profileName,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -136,6 +134,8 @@ items:
           - azure-asm-trafficmanager.Stream
         description: The response stream.
       content: 'function create(profileName, parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#get'
     id: 'azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#get'
     parent: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations
@@ -147,8 +147,6 @@ items:
     fullName: >-
       azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations.get(profileName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -165,6 +163,8 @@ items:
           - azure-asm-trafficmanager.Stream
         description: The response stream.
       content: 'function get(profileName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#list'
     id: 'azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations#list'
     parent: azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations
@@ -176,8 +176,6 @@ items:
     fullName: >-
       azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations.list(profileName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -196,3 +194,5 @@ items:
           - azure-asm-trafficmanager.Stream
         description: The response stream.
       content: 'function list(profileName, callback)'
+    langs:
+      - js

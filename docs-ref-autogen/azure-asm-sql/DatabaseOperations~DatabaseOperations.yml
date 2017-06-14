@@ -29,8 +29,6 @@ items:
         branch: master
         path: lib\services\sqlManagement\lib\sqlManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-sql.DatabaseOperations~DatabaseOperations.#ctor'
@@ -40,6 +38,8 @@ items:
       - 'azure-asm-sql.DatabaseOperations~DatabaseOperations#getEventLogs'
       - 'azure-asm-sql.DatabaseOperations~DatabaseOperations#list'
       - 'azure-asm-sql.DatabaseOperations~DatabaseOperations#update'
+    langs:
+      - js
   - id: 'azure-asm-sql.DatabaseOperations~DatabaseOperations.#ctor'
     uid: 'azure-asm-sql.DatabaseOperations~DatabaseOperations.#ctor'
     parent: azure-asm-sql.DatabaseOperations~DatabaseOperations
@@ -64,8 +64,6 @@ items:
     fullName: >-
       azure-asm-sql.DatabaseOperations~DatabaseOperations.create(serverName,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -141,6 +139,8 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function create(serverName, parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-sql.DatabaseOperations~DatabaseOperations#deleteMethod'
     id: 'azure-asm-sql.DatabaseOperations~DatabaseOperations#deleteMethod'
     parent: azure-asm-sql.DatabaseOperations~DatabaseOperations
@@ -149,8 +149,6 @@ items:
     fullName: >-
       azure-asm-sql.DatabaseOperations~DatabaseOperations.deleteMethod(serverName,
       databaseName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -175,6 +173,8 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function deleteMethod(serverName, databaseName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-sql.DatabaseOperations~DatabaseOperations#get'
     id: 'azure-asm-sql.DatabaseOperations~DatabaseOperations#get'
     parent: azure-asm-sql.DatabaseOperations~DatabaseOperations
@@ -183,8 +183,6 @@ items:
     fullName: >-
       azure-asm-sql.DatabaseOperations~DatabaseOperations.get(serverName,
       databaseName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -209,6 +207,8 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function get(serverName, databaseName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-sql.DatabaseOperations~DatabaseOperations#getEventLogs'
     id: 'azure-asm-sql.DatabaseOperations~DatabaseOperations#getEventLogs'
     parent: azure-asm-sql.DatabaseOperations~DatabaseOperations
@@ -217,8 +217,6 @@ items:
     fullName: >-
       azure-asm-sql.DatabaseOperations~DatabaseOperations.getEventLogs(serverName,
       databaseName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -267,6 +265,8 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function getEventLogs(serverName, databaseName, parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-sql.DatabaseOperations~DatabaseOperations#list'
     id: 'azure-asm-sql.DatabaseOperations~DatabaseOperations#list'
     parent: azure-asm-sql.DatabaseOperations~DatabaseOperations
@@ -275,8 +275,6 @@ items:
     fullName: >-
       azure-asm-sql.DatabaseOperations~DatabaseOperations.list(serverName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -295,6 +293,8 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function list(serverName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-sql.DatabaseOperations~DatabaseOperations#update'
     id: 'azure-asm-sql.DatabaseOperations~DatabaseOperations#update'
     parent: azure-asm-sql.DatabaseOperations~DatabaseOperations
@@ -303,8 +303,6 @@ items:
     fullName: >-
       azure-asm-sql.DatabaseOperations~DatabaseOperations.update(serverName,
       databaseName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -377,3 +375,5 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function update(serverName, databaseName, parameters, callback)'
+    langs:
+      - js

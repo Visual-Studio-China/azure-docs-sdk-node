@@ -13,13 +13,13 @@ items:
         branch: master
         path: lib\services\extra\lib\graphRbacManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-extra.ObjectOperations~ObjectOperations.#ctor'
       - 'azure-extra.ObjectOperations~ObjectOperations#getCurrentUser'
       - 'azure-extra.ObjectOperations~ObjectOperations#getObjectsByObjectIds'
+    langs:
+      - js
   - id: 'azure-extra.ObjectOperations~ObjectOperations.#ctor'
     uid: 'azure-extra.ObjectOperations~ObjectOperations.#ctor'
     parent: azure-extra.ObjectOperations~ObjectOperations
@@ -42,8 +42,6 @@ items:
     name: getCurrentUser(callback)
     summary: Gets the details for current logged in user
     fullName: azure-extra.ObjectOperations~ObjectOperations.getCurrentUser(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -56,6 +54,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: function getCurrentUser(callback)
+    langs:
+      - js
   - uid: 'azure-extra.ObjectOperations~ObjectOperations#getObjectsByObjectIds'
     id: 'azure-extra.ObjectOperations~ObjectOperations#getObjectsByObjectIds'
     parent: azure-extra.ObjectOperations~ObjectOperations
@@ -64,8 +64,6 @@ items:
     fullName: >-
       azure-extra.ObjectOperations~ObjectOperations.getObjectsByObjectIds(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -96,3 +94,5 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function getObjectsByObjectIds(parameters, callback)'
+    langs:
+      - js

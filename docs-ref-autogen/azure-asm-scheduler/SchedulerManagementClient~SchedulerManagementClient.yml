@@ -13,8 +13,6 @@ items:
         branch: master
         path: lib\services\schedulerManagement\lib\schedulerManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - >-
@@ -29,6 +27,8 @@ items:
         azure-asm-scheduler.SchedulerManagementClient~SchedulerManagementClient#registerResourceProvider
       - >-
         azure-asm-scheduler.SchedulerManagementClient~SchedulerManagementClient#unregisterResourceProvider
+    langs:
+      - js
   - id: >-
       azure-asm-scheduler.SchedulerManagementClient~SchedulerManagementClient.#ctor
     uid: >-
@@ -82,14 +82,14 @@ items:
       [JobCollectionOperations](-JobCollectionOperations.html) object.
     fullName: >-
       azure-asm-scheduler.SchedulerManagementClient~SchedulerManagementClient.jobCollections
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: jobCollections
+    langs:
+      - js
   - uid: >-
       azure-asm-scheduler.SchedulerManagementClient~SchedulerManagementClient#getOperationStatus
     id: >-
@@ -106,8 +106,6 @@ items:
     fullName: >-
       azure-asm-scheduler.SchedulerManagementClient~SchedulerManagementClient.getOperationStatus(requestId,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -130,6 +128,8 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: 'function getOperationStatus(requestId, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-scheduler.SchedulerManagementClient~SchedulerManagementClient#getResourceProviderProperties
     id: >-
@@ -141,8 +141,6 @@ items:
       regions and plans.
     fullName: >-
       azure-asm-scheduler.SchedulerManagementClient~SchedulerManagementClient.getResourceProviderProperties(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -155,6 +153,8 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: function getResourceProviderProperties(callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-scheduler.SchedulerManagementClient~SchedulerManagementClient#registerResourceProvider
     id: >-
@@ -164,8 +164,6 @@ items:
     summary: Register the Scheduler resource provider with your subscription.
     fullName: >-
       azure-asm-scheduler.SchedulerManagementClient~SchedulerManagementClient.registerResourceProvider(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -178,6 +176,8 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: function registerResourceProvider(callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-scheduler.SchedulerManagementClient~SchedulerManagementClient#unregisterResourceProvider
     id: >-
@@ -187,8 +187,6 @@ items:
     summary: Unregister the Scheduler resource provider with your subscription.
     fullName: >-
       azure-asm-scheduler.SchedulerManagementClient~SchedulerManagementClient.unregisterResourceProvider(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -201,3 +199,5 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: function unregisterResourceProvider(callback)
+    langs:
+      - js

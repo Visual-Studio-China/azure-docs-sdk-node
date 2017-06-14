@@ -19,8 +19,6 @@ items:
 
       NOTE: These APIs are still in development and should not be used.
     fullName: 'azure-asm-scheduler.createSchedulerManagementClient(baseUri, filters)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -54,6 +52,8 @@ items:
           - azure-asm-scheduler.SchedulerManagementClient
         description: A new SchedulerManagementClient object.
       content: 'function createSchedulerManagementClient(baseUri, filters)'
+    langs:
+      - js
   - uid: azure-asm-scheduler._global.createCloudServiceManagementClient
     id: azure-asm-scheduler._global.createCloudServiceManagementClient
     name: createCloudServiceManagementClient(baseUri)
@@ -61,8 +61,6 @@ items:
       Creates a new <xref:azure-asm-scheduler.CloudServiceManagementClient>
       object.
     fullName: azure-asm-scheduler.createCloudServiceManagementClient(baseUri)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -81,6 +79,8 @@ items:
           - azure-asm-scheduler.CloudServiceManagementClient
         description: A new CloudServiceManagementClient object.
       content: function createCloudServiceManagementClient(baseUri)
+    langs:
+      - js
   - uid: azure-asm-scheduler._global.createCertificateCloudCredentials
     id: azure-asm-scheduler._global.createCertificateCloudCredentials
     name: createCertificateCloudCredentials()
@@ -88,8 +88,6 @@ items:
       Creates a new CertificateCloudCredentials object.
       Either a pair of cert / key values need to be pass or a pem file location.
     fullName: azure-asm-scheduler.createCertificateCloudCredentials()
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -117,3 +115,5 @@ items:
           - azure-asm-scheduler.CertificateCloudCredentials
         description: ''
       content: function createCertificateCloudCredentials()
+    langs:
+      - js

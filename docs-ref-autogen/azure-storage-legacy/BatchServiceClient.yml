@@ -13,8 +13,6 @@ items:
         branch: master
         path: lib\services\legacyStorage\lib\table\batchserviceclient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-storage-legacy.BatchServiceClient.#ctor'
@@ -26,6 +24,8 @@ items:
       - 'azure-storage-legacy.BatchServiceClient#commitBatch'
       - 'azure-storage-legacy.BatchServiceClient#processResponse'
       - 'azure-storage-legacy.BatchServiceClient#processOperation'
+    langs:
+      - js
   - id: 'azure-storage-legacy.BatchServiceClient.#ctor'
     uid: 'azure-storage-legacy.BatchServiceClient.#ctor'
     parent: azure-storage-legacy.BatchServiceClient
@@ -51,8 +51,6 @@ items:
     name: beginBatch()
     summary: Begins a new batch scope.
     fullName: azure-storage-legacy.BatchServiceClient.beginBatch()
-    langs:
-      - js
     type: Function
     syntax:
       return:
@@ -60,14 +58,14 @@ items:
           - undefined
         description: ''
       content: function beginBatch()
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BatchServiceClient#isInBatch'
     id: 'azure-storage-legacy.BatchServiceClient#isInBatch'
     parent: azure-storage-legacy.BatchServiceClient
     name: isInBatch()
     summary: Determines if there is a current batch.
     fullName: azure-storage-legacy.BatchServiceClient.isInBatch()
-    langs:
-      - js
     type: Function
     syntax:
       return:
@@ -75,14 +73,14 @@ items:
           - boolean
         description: Boolean value indicating if service is in a batch context or not.
       content: function isInBatch()
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BatchServiceClient#rollback'
     id: 'azure-storage-legacy.BatchServiceClient#rollback'
     parent: azure-storage-legacy.BatchServiceClient
     name: rollback()
     summary: Terminates the current batch scope by clearing current operations.
     fullName: azure-storage-legacy.BatchServiceClient.rollback()
-    langs:
-      - js
     type: Function
     syntax:
       return:
@@ -90,6 +88,8 @@ items:
           - undefined
         description: ''
       content: function rollback()
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BatchServiceClient#hasOperations'
     id: 'azure-storage-legacy.BatchServiceClient#hasOperations'
     parent: azure-storage-legacy.BatchServiceClient
@@ -98,8 +98,6 @@ items:
       Returns a boolean value indicating weather there are operations queued up
       for execution in a batch or not.
     fullName: azure-storage-legacy.BatchServiceClient.hasOperations()
-    langs:
-      - js
     type: Function
     syntax:
       return:
@@ -107,6 +105,8 @@ items:
           - Boolean
         description: True if there are operations queued up; false otherwise.
       content: function hasOperations()
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BatchServiceClient#addOperation'
     id: 'azure-storage-legacy.BatchServiceClient#addOperation'
     parent: azure-storage-legacy.BatchServiceClient
@@ -115,8 +115,6 @@ items:
     fullName: >-
       azure-storage-legacy.BatchServiceClient.addOperation(webResource,
       outputData)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -133,14 +131,14 @@ items:
           - undefined
         description: ''
       content: 'function addOperation(webResource, outputData)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BatchServiceClient#commitBatch'
     id: 'azure-storage-legacy.BatchServiceClient#commitBatch'
     parent: azure-storage-legacy.BatchServiceClient
     name: 'commitBatch(options, callback)'
     summary: Commits the operations within the batch scope.
     fullName: 'azure-storage-legacy.BatchServiceClient.commitBatch(options, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -163,14 +161,14 @@ items:
           - undefined
         description: ''
       content: 'function commitBatch(options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BatchServiceClient#processResponse'
     id: 'azure-storage-legacy.BatchServiceClient#processResponse'
     parent: azure-storage-legacy.BatchServiceClient
     name: processResponse(responseObject)
     summary: Processes a batch response.
     fullName: azure-storage-legacy.BatchServiceClient.processResponse(responseObject)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -183,6 +181,8 @@ items:
           - array
         description: An array with the processed / parsed responses.
       content: function processResponse(responseObject)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BatchServiceClient#processOperation'
     id: 'azure-storage-legacy.BatchServiceClient#processOperation'
     parent: azure-storage-legacy.BatchServiceClient
@@ -191,8 +191,6 @@ items:
     fullName: >-
       azure-storage-legacy.BatchServiceClient.processOperation(webResource,
       rawResponse)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -211,3 +209,5 @@ items:
           - object
         description: A response object.
       content: 'function processOperation(webResource, rawResponse)'
+    langs:
+      - js

@@ -20,8 +20,6 @@ items:
         branch: master
         path: lib\services\webSiteManagement\lib\webSiteManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-website.WebSpaceOperations~WebSpaceOperations.#ctor'
@@ -34,6 +32,8 @@ items:
       - >-
         azure-asm-website.WebSpaceOperations~WebSpaceOperations#listPublishingUsers
       - 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#listWebSites'
+    langs:
+      - js
   - id: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations.#ctor'
     uid: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations.#ctor'
     parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
@@ -62,8 +62,6 @@ items:
     fullName: >-
       azure-asm-website.WebSpaceOperations~WebSpaceOperations.createPublishingUser(username,
       password, parametersOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -110,6 +108,8 @@ items:
       content: >-
         function createPublishingUser(username, password, parametersOrCallback,
         callback)
+    langs:
+      - js
   - uid: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#get'
     id: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#get'
     parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
@@ -122,8 +122,6 @@ items:
     fullName: >-
       azure-asm-website.WebSpaceOperations~WebSpaceOperations.get(webSpaceName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -140,6 +138,8 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function get(webSpaceName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#getDnsSuffix'
     id: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#getDnsSuffix'
     parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
@@ -147,8 +147,6 @@ items:
     summary: Get the DNS Suffix for this subscription.
     fullName: >-
       azure-asm-website.WebSpaceOperations~WebSpaceOperations.getDnsSuffix(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -161,6 +159,8 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: function getDnsSuffix(callback)
+    langs:
+      - js
   - uid: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#list'
     id: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#list'
     parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
@@ -171,8 +171,6 @@ items:
       http://msdn.microsoft.com/en-us/library/windowsazure/dn166961.aspx for
       more information)
     fullName: azure-asm-website.WebSpaceOperations~WebSpaceOperations.list(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -185,6 +183,8 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: function list(callback)
+    langs:
+      - js
   - uid: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#listGeoRegions'
     id: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#listGeoRegions'
     parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
@@ -192,8 +192,6 @@ items:
     summary: Get the available geo regions for this web space.
     fullName: >-
       azure-asm-website.WebSpaceOperations~WebSpaceOperations.listGeoRegions(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -206,6 +204,8 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: function listGeoRegions(callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-website.WebSpaceOperations~WebSpaceOperations#listPublishingUsers
     id: >-
@@ -215,8 +215,6 @@ items:
     summary: Get the source control users allowed to publish to this web space.
     fullName: >-
       azure-asm-website.WebSpaceOperations~WebSpaceOperations.listPublishingUsers(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -229,6 +227,8 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: function listPublishingUsers(callback)
+    langs:
+      - js
   - uid: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#listWebSites'
     id: 'azure-asm-website.WebSpaceOperations~WebSpaceOperations#listWebSites'
     parent: azure-asm-website.WebSpaceOperations~WebSpaceOperations
@@ -241,8 +241,6 @@ items:
     fullName: >-
       azure-asm-website.WebSpaceOperations~WebSpaceOperations.listWebSites(webSpaceName,
       parametersOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -273,3 +271,5 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function listWebSites(webSpaceName, parametersOrCallback, callback)'
+    langs:
+      - js

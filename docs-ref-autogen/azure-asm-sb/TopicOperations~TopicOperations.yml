@@ -21,8 +21,6 @@ items:
         branch: master
         path: lib\services\serviceBusManagement\lib\serviceBusManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-sb.TopicOperations~TopicOperations.#ctor'
@@ -32,6 +30,8 @@ items:
       - 'azure-asm-sb.TopicOperations~TopicOperations#getConnectionDetails'
       - 'azure-asm-sb.TopicOperations~TopicOperations#list'
       - 'azure-asm-sb.TopicOperations~TopicOperations#update'
+    langs:
+      - js
   - id: 'azure-asm-sb.TopicOperations~TopicOperations.#ctor'
     uid: 'azure-asm-sb.TopicOperations~TopicOperations.#ctor'
     parent: azure-asm-sb.TopicOperations~TopicOperations
@@ -62,8 +62,6 @@ items:
     fullName: >-
       azure-asm-sb.TopicOperations~TopicOperations.create(namespaceName, topic,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -301,6 +299,8 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function create(namespaceName, topic, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-sb.TopicOperations~TopicOperations#deleteMethod'
     id: 'azure-asm-sb.TopicOperations~TopicOperations#deleteMethod'
     parent: azure-asm-sb.TopicOperations~TopicOperations
@@ -313,8 +313,6 @@ items:
     fullName: >-
       azure-asm-sb.TopicOperations~TopicOperations.deleteMethod(namespaceName,
       topicName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -335,6 +333,8 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function deleteMethod(namespaceName, topicName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-sb.TopicOperations~TopicOperations#get'
     id: 'azure-asm-sb.TopicOperations~TopicOperations#get'
     parent: azure-asm-sb.TopicOperations~TopicOperations
@@ -349,8 +349,6 @@ items:
     fullName: >-
       azure-asm-sb.TopicOperations~TopicOperations.get(namespaceName, topicName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -371,6 +369,8 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function get(namespaceName, topicName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-sb.TopicOperations~TopicOperations#getConnectionDetails'
     id: 'azure-asm-sb.TopicOperations~TopicOperations#getConnectionDetails'
     parent: azure-asm-sb.TopicOperations~TopicOperations
@@ -379,8 +379,6 @@ items:
     fullName: >-
       azure-asm-sb.TopicOperations~TopicOperations.getConnectionDetails(namespaceName,
       topicName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -401,6 +399,8 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function getConnectionDetails(namespaceName, topicName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-sb.TopicOperations~TopicOperations#list'
     id: 'azure-asm-sb.TopicOperations~TopicOperations#list'
     parent: azure-asm-sb.TopicOperations~TopicOperations
@@ -411,8 +411,6 @@ items:
       http://msdn.microsoft.com/en-us/library/windowsazure/hh780744.aspx for
       more information)
     fullName: 'azure-asm-sb.TopicOperations~TopicOperations.list(namespaceName, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -429,6 +427,8 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function list(namespaceName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-sb.TopicOperations~TopicOperations#update'
     id: 'azure-asm-sb.TopicOperations~TopicOperations#update'
     parent: azure-asm-sb.TopicOperations~TopicOperations
@@ -440,8 +440,6 @@ items:
     fullName: >-
       azure-asm-sb.TopicOperations~TopicOperations.update(namespaceName, topic,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -679,3 +677,5 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function update(namespaceName, topic, callback)'
+    langs:
+      - js

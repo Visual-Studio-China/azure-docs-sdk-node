@@ -13,8 +13,6 @@ items:
         branch: master
         path: lib\services\extra\lib\graphRbacManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-extra.GroupOperations~GroupOperations.#ctor'
@@ -28,6 +26,8 @@ items:
       - 'azure-extra.GroupOperations~GroupOperations#list'
       - 'azure-extra.GroupOperations~GroupOperations#listNext'
       - 'azure-extra.GroupOperations~GroupOperations#removeMember'
+    langs:
+      - js
   - id: 'azure-extra.GroupOperations~GroupOperations.#ctor'
     uid: 'azure-extra.GroupOperations~GroupOperations.#ctor'
     parent: azure-extra.GroupOperations~GroupOperations
@@ -52,8 +52,6 @@ items:
     fullName: >-
       azure-extra.GroupOperations~GroupOperations.addMember(groupObjectId,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -78,14 +76,14 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function addMember(groupObjectId, parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.GroupOperations~GroupOperations#create'
     id: 'azure-extra.GroupOperations~GroupOperations#create'
     parent: azure-extra.GroupOperations~GroupOperations
     name: 'create(parameters, callback)'
     summary: "Create a group in the directory.  (see\rhttp://msdn.microsoft.com/en-us/library/azure/dn151614.aspx for more\rinformation)"
     fullName: 'azure-extra.GroupOperations~GroupOperations.create(parameters, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -118,6 +116,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function create(parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.GroupOperations~GroupOperations#deleteMethod'
     id: 'azure-extra.GroupOperations~GroupOperations#deleteMethod'
     parent: azure-extra.GroupOperations~GroupOperations
@@ -126,8 +126,6 @@ items:
     fullName: >-
       azure-extra.GroupOperations~GroupOperations.deleteMethod(groupObjectId,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -144,14 +142,14 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function deleteMethod(groupObjectId, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.GroupOperations~GroupOperations#get'
     id: 'azure-extra.GroupOperations~GroupOperations#get'
     parent: azure-extra.GroupOperations~GroupOperations
     name: 'get(objectId, callback)'
     summary: Gets group information from the directory.
     fullName: 'azure-extra.GroupOperations~GroupOperations.get(objectId, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -168,6 +166,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function get(objectId, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.GroupOperations~GroupOperations#getGroupMembers'
     id: 'azure-extra.GroupOperations~GroupOperations#getGroupMembers'
     parent: azure-extra.GroupOperations~GroupOperations
@@ -176,8 +176,6 @@ items:
     fullName: >-
       azure-extra.GroupOperations~GroupOperations.getGroupMembers(objectId,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -194,6 +192,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function getGroupMembers(objectId, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.GroupOperations~GroupOperations#getGroupMembersNext'
     id: 'azure-extra.GroupOperations~GroupOperations#getGroupMembersNext'
     parent: azure-extra.GroupOperations~GroupOperations
@@ -202,8 +202,6 @@ items:
     fullName: >-
       azure-extra.GroupOperations~GroupOperations.getGroupMembersNext(nextLink,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -220,6 +218,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function getGroupMembersNext(nextLink, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.GroupOperations~GroupOperations#getMemberGroups'
     id: 'azure-extra.GroupOperations~GroupOperations#getMemberGroups'
     parent: azure-extra.GroupOperations~GroupOperations
@@ -228,8 +228,6 @@ items:
     fullName: >-
       azure-extra.GroupOperations~GroupOperations.getMemberGroups(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -254,6 +252,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function getMemberGroups(parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.GroupOperations~GroupOperations#list'
     id: 'azure-extra.GroupOperations~GroupOperations#list'
     parent: azure-extra.GroupOperations~GroupOperations
@@ -262,8 +262,6 @@ items:
     fullName: >-
       azure-extra.GroupOperations~GroupOperations.list(mail,
       displayNameStartsWith, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -286,14 +284,14 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function list(mail, displayNameStartsWith, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.GroupOperations~GroupOperations#listNext'
     id: 'azure-extra.GroupOperations~GroupOperations#listNext'
     parent: azure-extra.GroupOperations~GroupOperations
     name: 'listNext(nextLink, callback)'
     summary: Gets list of groups for the current tenant.
     fullName: 'azure-extra.GroupOperations~GroupOperations.listNext(nextLink, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -310,6 +308,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function listNext(nextLink, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.GroupOperations~GroupOperations#removeMember'
     id: 'azure-extra.GroupOperations~GroupOperations#removeMember'
     parent: azure-extra.GroupOperations~GroupOperations
@@ -318,8 +318,6 @@ items:
     fullName: >-
       azure-extra.GroupOperations~GroupOperations.removeMember(groupObjectId,
       memberObjectId, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -340,3 +338,5 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function removeMember(groupObjectId, memberObjectId, callback)'
+    langs:
+      - js

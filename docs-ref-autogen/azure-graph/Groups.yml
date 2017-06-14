@@ -17,8 +17,6 @@ items:
         branch: master
         path: lib\services\graphManagement\lib\operations\groups.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-graph.Groups.#ctor'
@@ -44,6 +42,8 @@ items:
       - 'azure-graph.Groups#listNext'
       - 'azure-graph.Groups#getGroupMembersNextWithHttpOperationResponse'
       - 'azure-graph.Groups#getGroupMembersNext'
+    langs:
+      - js
   - id: 'azure-graph.Groups.#ctor'
     uid: 'azure-graph.Groups.#ctor'
     parent: azure-graph.Groups
@@ -72,8 +72,19 @@ items:
     fullName: >-
       azure-graph.Groups.isMemberOfWithHttpOperationResponse(parameters,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<CheckGroupMembershipResult>} - The deserialized
+          result object.
+        value: >-
+          {HttpOperationResponse<CheckGroupMembershipResult>} - The deserialized
+          result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -110,6 +121,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function isMemberOfWithHttpOperationResponse(parameters, options)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#isMemberOf'
     id: 'azure-graph.Groups#isMemberOf'
     parent: azure-graph.Groups
@@ -120,8 +133,41 @@ items:
 
       direct or transitive member of the specified group.
     fullName: 'azure-graph.Groups.isMemberOf(parameters, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{CheckGroupMembershipResult} - The deserialized result object.'
+        value: '{CheckGroupMembershipResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CheckGroupMembershipResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CheckGroupMembershipResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -168,6 +214,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function isMemberOf(parameters, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#removeMemberWithHttpOperationResponse'
     id: 'azure-graph.Groups#removeMemberWithHttpOperationResponse'
     parent: azure-graph.Groups
@@ -178,8 +226,15 @@ items:
     fullName: >-
       azure-graph.Groups.removeMemberWithHttpOperationResponse(groupObjectId,
       memberObjectId, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -212,6 +267,8 @@ items:
       content: >-
         function removeMemberWithHttpOperationResponse(groupObjectId,
         memberObjectId, options)
+    langs:
+      - js
   - uid: 'azure-graph.Groups#removeMember'
     id: 'azure-graph.Groups#removeMember'
     parent: azure-graph.Groups
@@ -220,8 +277,37 @@ items:
     fullName: >-
       azure-graph.Groups.removeMember(groupObjectId, memberObjectId, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -264,6 +350,8 @@ items:
       content: >-
         function removeMember(groupObjectId, memberObjectId, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-graph.Groups#addMemberWithHttpOperationResponse'
     id: 'azure-graph.Groups#addMemberWithHttpOperationResponse'
     parent: azure-graph.Groups
@@ -272,8 +360,15 @@ items:
     fullName: >-
       azure-graph.Groups.addMemberWithHttpOperationResponse(groupObjectId, url,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -314,6 +409,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function addMemberWithHttpOperationResponse(groupObjectId, url, options)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#addMember'
     id: 'azure-graph.Groups#addMember'
     parent: azure-graph.Groups
@@ -322,8 +419,37 @@ items:
     fullName: >-
       azure-graph.Groups.addMember(groupObjectId, url, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -374,6 +500,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function addMember(groupObjectId, url, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#deleteMethodWithHttpOperationResponse'
     id: 'azure-graph.Groups#deleteMethodWithHttpOperationResponse'
     parent: azure-graph.Groups
@@ -382,8 +510,15 @@ items:
     fullName: >-
       azure-graph.Groups.deleteMethodWithHttpOperationResponse(groupObjectId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -408,14 +543,45 @@ items:
           - Promise
         description: A promise is returned
       content: 'function deleteMethodWithHttpOperationResponse(groupObjectId, options)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#deleteMethod'
     id: 'azure-graph.Groups#deleteMethod'
     parent: azure-graph.Groups
     name: 'deleteMethod(groupObjectId, options, optionalCallback)'
     summary: Delete a group from the directory.
     fullName: 'azure-graph.Groups.deleteMethod(groupObjectId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -450,14 +616,23 @@ items:
 
           {Promise} A promise is returned
       content: 'function deleteMethod(groupObjectId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#createWithHttpOperationResponse'
     id: 'azure-graph.Groups#createWithHttpOperationResponse'
     parent: azure-graph.Groups
     name: 'createWithHttpOperationResponse(parameters, options)'
     summary: Create a group in the directory.
     fullName: 'azure-graph.Groups.createWithHttpOperationResponse(parameters, options)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<ADGroup>} - The deserialized result object.'
+        value: '{HttpOperationResponse<ADGroup>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -490,14 +665,47 @@ items:
           - Promise
         description: A promise is returned
       content: 'function createWithHttpOperationResponse(parameters, options)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#create'
     id: 'azure-graph.Groups#create'
     parent: azure-graph.Groups
     name: 'create(parameters, options, optionalCallback)'
     summary: Create a group in the directory.
     fullName: 'azure-graph.Groups.create(parameters, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{ADGroup} - The deserialized result object.'
+        value: '{ADGroup} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ADGroup} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ADGroup} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -540,14 +748,27 @@ items:
 
           {Promise} A promise is returned
       content: 'function create(parameters, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#listWithHttpOperationResponse'
     id: 'azure-graph.Groups#listWithHttpOperationResponse'
     parent: azure-graph.Groups
     name: listWithHttpOperationResponse(options)
     summary: Gets list of groups for the current tenant.
     fullName: azure-graph.Groups.listWithHttpOperationResponse(options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<GroupListResult>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<GroupListResult>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -573,14 +794,47 @@ items:
           - Promise
         description: A promise is returned
       content: function listWithHttpOperationResponse(options)
+    langs:
+      - js
   - uid: 'azure-graph.Groups#list'
     id: 'azure-graph.Groups#list'
     parent: azure-graph.Groups
     name: 'list(options, optionalCallback)'
     summary: Gets list of groups for the current tenant.
     fullName: 'azure-graph.Groups.list(options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{GroupListResult} - The deserialized result object.'
+        value: '{GroupListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link GroupListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link GroupListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -616,6 +870,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#getGroupMembersWithHttpOperationResponse'
     id: 'azure-graph.Groups#getGroupMembersWithHttpOperationResponse'
     parent: azure-graph.Groups
@@ -624,8 +880,19 @@ items:
     fullName: >-
       azure-graph.Groups.getGroupMembersWithHttpOperationResponse(objectId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<GetObjectsResult>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<GetObjectsResult>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -652,14 +919,47 @@ items:
           - Promise
         description: A promise is returned
       content: 'function getGroupMembersWithHttpOperationResponse(objectId, options)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#getGroupMembers'
     id: 'azure-graph.Groups#getGroupMembers'
     parent: azure-graph.Groups
     name: 'getGroupMembers(objectId, options, optionalCallback)'
     summary: Gets the members of a group.
     fullName: 'azure-graph.Groups.getGroupMembers(objectId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{GetObjectsResult} - The deserialized result object.'
+        value: '{GetObjectsResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link GetObjectsResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link GetObjectsResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -696,14 +996,23 @@ items:
 
           {Promise} A promise is returned
       content: 'function getGroupMembers(objectId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#getWithHttpOperationResponse'
     id: 'azure-graph.Groups#getWithHttpOperationResponse'
     parent: azure-graph.Groups
     name: 'getWithHttpOperationResponse(objectId, options)'
     summary: Gets group information from the directory.
     fullName: 'azure-graph.Groups.getWithHttpOperationResponse(objectId, options)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<ADGroup>} - The deserialized result object.'
+        value: '{HttpOperationResponse<ADGroup>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -730,14 +1039,47 @@ items:
           - Promise
         description: A promise is returned
       content: 'function getWithHttpOperationResponse(objectId, options)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#get'
     id: 'azure-graph.Groups#get'
     parent: azure-graph.Groups
     name: 'get(objectId, options, optionalCallback)'
     summary: Gets group information from the directory.
     fullName: 'azure-graph.Groups.get(objectId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{ADGroup} - The deserialized result object.'
+        value: '{ADGroup} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ADGroup} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ADGroup} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -774,6 +1116,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function get(objectId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#getMemberGroupsWithHttpOperationResponse'
     id: 'azure-graph.Groups#getMemberGroupsWithHttpOperationResponse'
     parent: azure-graph.Groups
@@ -788,8 +1132,19 @@ items:
     fullName: >-
       azure-graph.Groups.getMemberGroupsWithHttpOperationResponse(objectId,
       securityEnabledOnly, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<GroupGetMemberGroupsResult>} - The deserialized
+          result object.
+        value: >-
+          {HttpOperationResponse<GroupGetMemberGroupsResult>} - The deserialized
+          result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -828,6 +1183,8 @@ items:
       content: >-
         function getMemberGroupsWithHttpOperationResponse(objectId,
         securityEnabledOnly, options)
+    langs:
+      - js
   - uid: 'azure-graph.Groups#getMemberGroups'
     id: 'azure-graph.Groups#getMemberGroups'
     parent: azure-graph.Groups
@@ -840,8 +1197,41 @@ items:
     fullName: >-
       azure-graph.Groups.getMemberGroups(objectId, securityEnabledOnly, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{GroupGetMemberGroupsResult} - The deserialized result object.'
+        value: '{GroupGetMemberGroupsResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link GroupGetMemberGroupsResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link GroupGetMemberGroupsResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -890,14 +1280,27 @@ items:
       content: >-
         function getMemberGroups(objectId, securityEnabledOnly, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-graph.Groups#listNextWithHttpOperationResponse'
     id: 'azure-graph.Groups#listNextWithHttpOperationResponse'
     parent: azure-graph.Groups
     name: 'listNextWithHttpOperationResponse(nextLink, options)'
     summary: Gets a list of groups for the current tenant.
     fullName: 'azure-graph.Groups.listNextWithHttpOperationResponse(nextLink, options)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<GroupListResult>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<GroupListResult>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -922,14 +1325,47 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listNextWithHttpOperationResponse(nextLink, options)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#listNext'
     id: 'azure-graph.Groups#listNext'
     parent: azure-graph.Groups
     name: 'listNext(nextLink, options, optionalCallback)'
     summary: Gets a list of groups for the current tenant.
     fullName: 'azure-graph.Groups.listNext(nextLink, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{GroupListResult} - The deserialized result object.'
+        value: '{GroupListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link GroupListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link GroupListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -964,6 +1400,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function listNext(nextLink, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#getGroupMembersNextWithHttpOperationResponse'
     id: 'azure-graph.Groups#getGroupMembersNextWithHttpOperationResponse'
     parent: azure-graph.Groups
@@ -972,8 +1410,19 @@ items:
     fullName: >-
       azure-graph.Groups.getGroupMembersNextWithHttpOperationResponse(nextLink,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<GetObjectsResult>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<GetObjectsResult>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -998,6 +1447,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function getGroupMembersNextWithHttpOperationResponse(nextLink, options)'
+    langs:
+      - js
   - uid: 'azure-graph.Groups#getGroupMembersNext'
     id: 'azure-graph.Groups#getGroupMembersNext'
     parent: azure-graph.Groups
@@ -1006,8 +1457,39 @@ items:
     fullName: >-
       azure-graph.Groups.getGroupMembersNext(nextLink, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{GetObjectsResult} - The deserialized result object.'
+        value: '{GetObjectsResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link GetObjectsResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link GetObjectsResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1042,6 +1524,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function getGroupMembersNext(nextLink, options, optionalCallback)'
+    langs:
+      - js
 references:
   - uid: azure-graph.GraphRbacManagementClient
     name: GraphRbacManagementClient

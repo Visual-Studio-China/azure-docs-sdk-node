@@ -17,13 +17,13 @@ items:
         branch: master
         path: lib\services\serviceFabric\lib\operations\deployedServicePackages.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-servicefabric.DeployedServicePackages.#ctor'
       - 'azure-servicefabric.DeployedServicePackages#getWithHttpOperationResponse'
       - 'azure-servicefabric.DeployedServicePackages#get'
+    langs:
+      - js
   - id: 'azure-servicefabric.DeployedServicePackages.#ctor'
     uid: 'azure-servicefabric.DeployedServicePackages.#ctor'
     parent: azure-servicefabric.DeployedServicePackages
@@ -49,8 +49,15 @@ items:
     fullName: >-
       azure-servicefabric.DeployedServicePackages.getWithHttpOperationResponse(nodeName,
       applicationName, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<Array>} - The deserialized result object.'
+        value: '{HttpOperationResponse<Array>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -81,6 +88,8 @@ items:
       content: >-
         function getWithHttpOperationResponse(nodeName, applicationName,
         options)
+    langs:
+      - js
   - uid: 'azure-servicefabric.DeployedServicePackages#get'
     id: 'azure-servicefabric.DeployedServicePackages#get'
     parent: azure-servicefabric.DeployedServicePackages
@@ -89,8 +98,37 @@ items:
     fullName: >-
       azure-servicefabric.DeployedServicePackages.get(nodeName, applicationName,
       options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{Array} - The deserialized result object.'
+        value: '{Array} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {array} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {array} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -129,6 +167,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function get(nodeName, applicationName, options, optionalCallback)'
+    langs:
+      - js
 references:
   - uid: azure-servicefabric.ServiceFabricClient
     name: ServiceFabricClient

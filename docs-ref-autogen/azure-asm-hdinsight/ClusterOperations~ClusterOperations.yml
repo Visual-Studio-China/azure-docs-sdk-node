@@ -8,26 +8,24 @@ items:
 
       __NOTE__: An instance of this class is automatically created for an
 
-      instance of the [HDInsightClusterManagementClient] {@link
+      instance of the [HDInsightCluster2ManagementClient] {@link
 
-      HDInsightClusterManagementClient~HDInsightClusterManagementClient}.
+      HDInsightCluster2ManagementClient~HDInsightCluster2ManagementClient}.
 
       See [clusterManagement] {@link
 
-      HDInsightClusterManagementClient~HDInsightClusterManagementClient#clusterManagement}.
+      HDInsightCluster2ManagementClient~HDInsightCluster2ManagementClient#clusterManagement}.
 
       Initializes a new instance of the ClusterOperations class.
     fullName: azure-asm-hdinsight.ClusterOperations
     source:
       id: azure-asm-hdinsight.ClusterOperations~ClusterOperations
-      path: lib\services\hdinsight\lib\hDInsightClusterManagementClient.js
-      startLine: 232
+      path: lib\services\hdinsight\lib\hDInsightCluster2ManagementClient.js
+      startLine: 231
       remote:
         branch: master
-        path: lib\services\hdinsight\lib\hDInsightClusterManagementClient.js
+        path: lib\services\hdinsight\lib\hDInsightCluster2ManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-hdinsight.ClusterOperations~ClusterOperations.#ctor'
@@ -37,6 +35,8 @@ items:
       - 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#deleteMethod'
       - 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#get'
       - 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#list'
+    langs:
+      - js
   - id: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations.#ctor'
     uid: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations.#ctor'
     parent: azure-asm-hdinsight.ClusterOperations~ClusterOperations
@@ -48,7 +48,7 @@ items:
       parameters:
         - id: client
           type:
-            - azure-asm-hdinsight.HDInsightClusterManagementClient
+            - azure-asm-hdinsight.HDInsightCluster2ManagementClient
           description: |-
             Reference to the service
             client.
@@ -63,8 +63,6 @@ items:
     fullName: >-
       azure-asm-hdinsight.ClusterOperations~ClusterOperations.beginCreating(clusterName,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -91,6 +89,8 @@ items:
           - azure-asm-hdinsight.Stream
         description: The response stream.
       content: 'function beginCreating(clusterName, parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#beginDeleting'
     id: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#beginDeleting'
     parent: azure-asm-hdinsight.ClusterOperations~ClusterOperations
@@ -99,8 +99,6 @@ items:
     fullName: >-
       azure-asm-hdinsight.ClusterOperations~ClusterOperations.beginDeleting(clusterName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -119,6 +117,8 @@ items:
           - azure-asm-hdinsight.Stream
         description: The response stream.
       content: 'function beginDeleting(clusterName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#create'
     id: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#create'
     parent: azure-asm-hdinsight.ClusterOperations~ClusterOperations
@@ -127,8 +127,6 @@ items:
     fullName: >-
       azure-asm-hdinsight.ClusterOperations~ClusterOperations.create(clusterName,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -155,6 +153,8 @@ items:
           - azure-asm-hdinsight.Stream
         description: The response stream.
       content: 'function create(clusterName, parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#deleteMethod'
     id: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#deleteMethod'
     parent: azure-asm-hdinsight.ClusterOperations~ClusterOperations
@@ -163,8 +163,6 @@ items:
     fullName: >-
       azure-asm-hdinsight.ClusterOperations~ClusterOperations.deleteMethod(clusterName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -183,6 +181,8 @@ items:
           - azure-asm-hdinsight.Stream
         description: The response stream.
       content: 'function deleteMethod(clusterName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#get'
     id: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#get'
     parent: azure-asm-hdinsight.ClusterOperations~ClusterOperations
@@ -194,8 +194,6 @@ items:
     fullName: >-
       azure-asm-hdinsight.ClusterOperations~ClusterOperations.get(clusterName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -214,6 +212,8 @@ items:
           - azure-asm-hdinsight.Stream
         description: The response stream.
       content: 'function get(clusterName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#list'
     id: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#list'
     parent: azure-asm-hdinsight.ClusterOperations~ClusterOperations
@@ -224,8 +224,6 @@ items:
       http://msdn.microsoft.com/en-us/library/windowsazure/ee460787.aspx for
       more information)
     fullName: azure-asm-hdinsight.ClusterOperations~ClusterOperations.list(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -238,3 +236,188 @@ items:
           - azure-asm-hdinsight.Stream
         description: The response stream.
       content: function list(callback)
+    langs:
+      - js
+  - uid: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#beginCreating'
+    id: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#beginCreating'
+    parent: azure-asm-hdinsight.ClusterOperations~ClusterOperations
+    name: 'beginCreating(clusterName, parameters, callback)'
+    summary: Creates an HDInsight cluster.
+    fullName: >-
+      azure-asm-hdinsight.ClusterOperations~ClusterOperations.beginCreating(clusterName,
+      parameters, callback)
+    type: Function
+    syntax:
+      parameters:
+        - id: clusterName
+          type:
+            - string
+          description: Cluster name to create.
+        - id: parameters
+          type:
+            - azure-asm-hdinsight.ClusterCreationParameters
+          description: |-
+            Parameters supplied to the
+            Create Cluster operation.
+        - id: parameters.payload
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - function
+          description: ''
+      return:
+        type:
+          - azure-asm-hdinsight.Stream
+        description: The response stream.
+      content: 'function beginCreating(clusterName, parameters, callback)'
+    langs:
+      - js
+  - uid: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#beginDeleting'
+    id: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#beginDeleting'
+    parent: azure-asm-hdinsight.ClusterOperations~ClusterOperations
+    name: 'beginDeleting(clusterName, callback)'
+    summary: Deletes an HDInsight cluster.
+    fullName: >-
+      azure-asm-hdinsight.ClusterOperations~ClusterOperations.beginDeleting(clusterName,
+      callback)
+    type: Function
+    syntax:
+      parameters:
+        - id: clusterName
+          type:
+            - string
+          description: |-
+            Parameters supplied to the Delete Cluster
+            operation.
+        - id: callback
+          type:
+            - function
+          description: ''
+      return:
+        type:
+          - azure-asm-hdinsight.Stream
+        description: The response stream.
+      content: 'function beginDeleting(clusterName, callback)'
+    langs:
+      - js
+  - uid: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#create'
+    id: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#create'
+    parent: azure-asm-hdinsight.ClusterOperations~ClusterOperations
+    name: 'create(clusterName, parameters, callback)'
+    summary: Creates an HDInsight cluster.
+    fullName: >-
+      azure-asm-hdinsight.ClusterOperations~ClusterOperations.create(clusterName,
+      parameters, callback)
+    type: Function
+    syntax:
+      parameters:
+        - id: clusterName
+          type:
+            - string
+          description: Cluster name to create.
+        - id: parameters
+          type:
+            - azure-asm-hdinsight.ClusterCreationParameters
+          description: |-
+            Parameters supplied to the
+            Create Cluster operation.
+        - id: parameters.payload
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - function
+          description: ''
+      return:
+        type:
+          - azure-asm-hdinsight.Stream
+        description: The response stream.
+      content: 'function create(clusterName, parameters, callback)'
+    langs:
+      - js
+  - uid: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#deleteMethod'
+    id: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#deleteMethod'
+    parent: azure-asm-hdinsight.ClusterOperations~ClusterOperations
+    name: 'deleteMethod(clusterName, callback)'
+    summary: Deletes an HDInsight cluster.
+    fullName: >-
+      azure-asm-hdinsight.ClusterOperations~ClusterOperations.deleteMethod(clusterName,
+      callback)
+    type: Function
+    syntax:
+      parameters:
+        - id: clusterName
+          type:
+            - string
+          description: |-
+            Parameters supplied to the Delete Cluster
+            operation.
+        - id: callback
+          type:
+            - function
+          description: ''
+      return:
+        type:
+          - azure-asm-hdinsight.Stream
+        description: The response stream.
+      content: 'function deleteMethod(clusterName, callback)'
+    langs:
+      - js
+  - uid: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#get'
+    id: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#get'
+    parent: azure-asm-hdinsight.ClusterOperations~ClusterOperations
+    name: 'get(clusterName, callback)'
+    summary: |-
+      The Get Clusters operation gets the details of the specified cluster.
+      (see http://msdn.microsoft.com/en-us/library/windowsazure/ee460787.aspx
+      for more information)
+    fullName: >-
+      azure-asm-hdinsight.ClusterOperations~ClusterOperations.get(clusterName,
+      callback)
+    type: Function
+    syntax:
+      parameters:
+        - id: clusterName
+          type:
+            - string
+          description: |-
+            Name of the clusters for which details are to
+            be retrieved.
+        - id: callback
+          type:
+            - function
+          description: ''
+      return:
+        type:
+          - azure-asm-hdinsight.Stream
+        description: The response stream.
+      content: 'function get(clusterName, callback)'
+    langs:
+      - js
+  - uid: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#list'
+    id: 'azure-asm-hdinsight.ClusterOperations~ClusterOperations#list'
+    parent: azure-asm-hdinsight.ClusterOperations~ClusterOperations
+    name: list(callback)
+    summary: |-
+      The List Clusters operation lists the storage accounts available under the
+      current subscription.  (see
+      http://msdn.microsoft.com/en-us/library/windowsazure/ee460787.aspx for
+      more information)
+    fullName: azure-asm-hdinsight.ClusterOperations~ClusterOperations.list(callback)
+    type: Function
+    syntax:
+      parameters:
+        - id: callback
+          type:
+            - function
+          description: ''
+      return:
+        type:
+          - azure-asm-hdinsight.Stream
+        description: The response stream.
+      content: function list(callback)
+    langs:
+      - js

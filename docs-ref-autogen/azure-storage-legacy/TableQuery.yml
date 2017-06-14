@@ -13,8 +13,6 @@ items:
         branch: master
         path: lib\services\legacyStorage\lib\table\tablequery.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-storage-legacy.TableQuery.#ctor'
@@ -29,6 +27,8 @@ items:
       - 'azure-storage-legacy.TableQuery#toQueryObject'
       - 'azure-storage-legacy.TableQuery#toPath'
       - 'azure-storage-legacy.TableQuery#_replaceOperators'
+    langs:
+      - js
   - id: 'azure-storage-legacy.TableQuery.#ctor'
     uid: 'azure-storage-legacy.TableQuery.#ctor'
     parent: azure-storage-legacy.TableQuery
@@ -46,8 +46,6 @@ items:
     name: select(fields)
     summary: Constructs a TableQuery specifying the select clause.
     fullName: azure-storage-legacy.TableQuery.select(fields)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -60,14 +58,14 @@ items:
           - azure-storage-legacy.TableQuery
         description: A table query object with the select clause.
       content: function select(fields)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.TableQuery#from'
     id: 'azure-storage-legacy.TableQuery#from'
     parent: azure-storage-legacy.TableQuery
     name: from(name)
     summary: Specifies the from clause.
     fullName: azure-storage-legacy.TableQuery.from(name)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -80,14 +78,14 @@ items:
           - azure-storage-legacy.TableQuery
         description: A table query object with the from clause.
       content: function from(name)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.TableQuery#whereKeys'
     id: 'azure-storage-legacy.TableQuery#whereKeys'
     parent: azure-storage-legacy.TableQuery
     name: 'whereKeys(partitionKey, rowKey)'
     summary: Specifies the partition and row keys.
     fullName: 'azure-storage-legacy.TableQuery.whereKeys(partitionKey, rowKey)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -104,6 +102,8 @@ items:
           - azure-storage-legacy.TableQuery
         description: A table query object with the where clause.
       content: 'function whereKeys(partitionKey, rowKey)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.TableQuery#whereNextKeys'
     id: 'azure-storage-legacy.TableQuery#whereNextKeys'
     parent: azure-storage-legacy.TableQuery
@@ -112,8 +112,6 @@ items:
     fullName: >-
       azure-storage-legacy.TableQuery.whereNextKeys(nextPartitionKey,
       nextRowKey)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -130,14 +128,14 @@ items:
           - azure-storage-legacy.TableQuery
         description: A table query object with the where clause.
       content: 'function whereNextKeys(nextPartitionKey, nextRowKey)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.TableQuery#where'
     id: 'azure-storage-legacy.TableQuery#where'
     parent: azure-storage-legacy.TableQuery
     name: 'where(condition, value)'
     summary: Specifies the where clause.
     fullName: 'azure-storage-legacy.TableQuery.where(condition, value)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -155,14 +153,14 @@ items:
           - azure-storage-legacy.TableQuery
         description: A table query object with the where clause.
       content: 'function where(condition, value)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.TableQuery#and'
     id: 'azure-storage-legacy.TableQuery#and'
     parent: azure-storage-legacy.TableQuery
     name: 'and(condition, arguments)'
     summary: Specifies an AND where condition.
     fullName: 'azure-storage-legacy.TableQuery.and(condition, arguments)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -181,14 +179,14 @@ items:
           - azure-storage-legacy.TableQuery
         description: A table query object with the and clause.
       content: 'function and(condition, arguments)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.TableQuery#or'
     id: 'azure-storage-legacy.TableQuery#or'
     parent: azure-storage-legacy.TableQuery
     name: 'or(condition, arguments)'
     summary: Specifies an OR where condition.
     fullName: 'azure-storage-legacy.TableQuery.or(condition, arguments)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -207,14 +205,14 @@ items:
           - azure-storage-legacy.TableQuery
         description: A table query object with the or clause.
       content: 'function or(condition, arguments)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.TableQuery#top'
     id: 'azure-storage-legacy.TableQuery#top'
     parent: azure-storage-legacy.TableQuery
     name: top(top)
     summary: Specifies the top clause.
     fullName: azure-storage-legacy.TableQuery.top(top)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -227,14 +225,14 @@ items:
           - azure-storage-legacy.TableQuery
         description: A table query object with the top clause.
       content: function top(top)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.TableQuery#toQueryObject'
     id: 'azure-storage-legacy.TableQuery#toQueryObject'
     parent: azure-storage-legacy.TableQuery
     name: toQueryObject()
     summary: Returns the query string object for the query.
     fullName: azure-storage-legacy.TableQuery.toQueryObject()
-    langs:
-      - js
     type: Function
     syntax:
       return:
@@ -242,14 +240,14 @@ items:
           - object
         description: JSON object representing the query string arguments for the query.
       content: function toQueryObject()
+    langs:
+      - js
   - uid: 'azure-storage-legacy.TableQuery#toPath'
     id: 'azure-storage-legacy.TableQuery#toPath'
     parent: azure-storage-legacy.TableQuery
     name: toPath()
     summary: Returns the URL path.
     fullName: azure-storage-legacy.TableQuery.toPath()
-    langs:
-      - js
     type: Function
     syntax:
       return:
@@ -257,14 +255,14 @@ items:
           - string
         description: The path string.
       content: function toPath()
+    langs:
+      - js
   - uid: 'azure-storage-legacy.TableQuery#_replaceOperators'
     id: 'azure-storage-legacy.TableQuery#_replaceOperators'
     parent: azure-storage-legacy.TableQuery
     name: _replaceOperators(whereClause)
     summary: Replace operators.
     fullName: azure-storage-legacy.TableQuery._replaceOperators(whereClause)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -277,3 +275,5 @@ items:
           - string
         description: The string with the replaced operators.
       content: function _replaceOperators(whereClause)
+    langs:
+      - js

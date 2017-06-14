@@ -13,12 +13,12 @@ items:
         branch: master
         path: lib\common\lib\services\hmacsha256sign.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-common.HmacSha256Sign.#ctor'
       - 'azure-common.HmacSha256Sign#sign'
+    langs:
+      - js
   - id: 'azure-common.HmacSha256Sign.#ctor'
     uid: 'azure-common.HmacSha256Sign.#ctor'
     parent: azure-common.HmacSha256Sign
@@ -38,8 +38,6 @@ items:
       Computes a signature for the specified string using the HMAC-SHA256
       algorithm.
     fullName: azure-common.HmacSha256Sign.sign(stringToSign)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -50,3 +48,5 @@ items:
       return:
         description: A String that contains the HMAC-SHA256-encoded signature.
       content: function sign(stringToSign)
+    langs:
+      - js

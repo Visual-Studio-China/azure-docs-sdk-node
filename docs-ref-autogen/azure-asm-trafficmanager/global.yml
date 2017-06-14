@@ -21,8 +21,6 @@ items:
     fullName: >-
       azure-asm-trafficmanager.createTrafficManagerManagementClient(baseUri,
       filters)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -51,3 +49,5 @@ items:
           - azure-asm-trafficmanager.TrafficManagerManagementClient
         description: A new TrafficManagerManagementClient object.
       content: 'function createTrafficManagerManagementClient(baseUri, filters)'
+    langs:
+      - js

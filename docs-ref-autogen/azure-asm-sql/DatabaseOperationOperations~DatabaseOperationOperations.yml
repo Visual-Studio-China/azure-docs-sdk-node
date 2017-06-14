@@ -23,8 +23,6 @@ items:
         branch: master
         path: lib\services\sqlManagement\lib\sqlManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - >-
@@ -35,6 +33,8 @@ items:
         azure-asm-sql.DatabaseOperationOperations~DatabaseOperationOperations#listByDatabase
       - >-
         azure-asm-sql.DatabaseOperationOperations~DatabaseOperationOperations#listByServer
+    langs:
+      - js
   - id: >-
       azure-asm-sql.DatabaseOperationOperations~DatabaseOperationOperations.#ctor
     uid: >-
@@ -64,8 +64,6 @@ items:
     fullName: >-
       azure-asm-sql.DatabaseOperationOperations~DatabaseOperationOperations.get(serverName,
       operationGuid, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -90,6 +88,8 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function get(serverName, operationGuid, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-sql.DatabaseOperationOperations~DatabaseOperationOperations#listByDatabase
     id: >-
@@ -100,8 +100,6 @@ items:
     fullName: >-
       azure-asm-sql.DatabaseOperationOperations~DatabaseOperationOperations.listByDatabase(serverName,
       databaseName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -126,6 +124,8 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function listByDatabase(serverName, databaseName, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-sql.DatabaseOperationOperations~DatabaseOperationOperations#listByServer
     id: >-
@@ -138,8 +138,6 @@ items:
     fullName: >-
       azure-asm-sql.DatabaseOperationOperations~DatabaseOperationOperations.listByServer(serverName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -158,3 +156,5 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function listByServer(serverName, callback)'
+    langs:
+      - js

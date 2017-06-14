@@ -19,8 +19,6 @@ items:
     name: 'createWebSiteManagementClient(filters, baseUri)'
     summary: 'Creates a new <xref:azure-asm-website.WebSiteManagementClient> object.'
     fullName: 'azure-asm-website.createWebSiteManagementClient(filters, baseUri)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -54,6 +52,8 @@ items:
           - azure-asm-website.WebSiteManagementClient
         description: A new WebSiteManagementClient object.
       content: 'function createWebSiteManagementClient(filters, baseUri)'
+    langs:
+      - js
   - uid: azure-asm-website._global.createWebSiteExtensionsClient
     id: azure-asm-website._global.createWebSiteExtensionsClient
     name: 'createWebSiteExtensionsClient(siteName, baseUri, filters)'
@@ -61,8 +61,6 @@ items:
     fullName: >-
       azure-asm-website.createWebSiteExtensionsClient(siteName, baseUri,
       filters)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -93,6 +91,8 @@ items:
           - azure-asm-website.WebSiteManagementClient
         description: A new WebSiteManagementClient object.
       content: 'function createWebSiteExtensionsClient(siteName, baseUri, filters)'
+    langs:
+      - js
   - uid: azure-asm-website._global.createWebsiteManagementService
     id: azure-asm-website._global.createWebsiteManagementService
     name: >-
@@ -102,8 +102,6 @@ items:
     fullName: >-
       azure-asm-website.createWebsiteManagementService(subscriptionId,
       authentication, hostOptions)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -161,13 +159,13 @@ items:
       content: >-
         function createWebsiteManagementService(subscriptionId, authentication,
         hostOptions)
+    langs:
+      - js
   - uid: azure-asm-website._global.createScmService
     id: azure-asm-website._global.createScmService
     name: 'createScmService(authentication, hostOptions)'
     summary: 'Creates a new <xref:azure-asm-website.ScmService> object.'
     fullName: 'azure-asm-website.createScmService(authentication, hostOptions)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -202,6 +200,8 @@ items:
           - azure-asm-website.ScmService
         description: A new WebsitemanagementService object.
       content: 'function createScmService(authentication, hostOptions)'
+    langs:
+      - js
   - uid: azure-asm-website._global.createCertificateCloudCredentials
     id: azure-asm-website._global.createCertificateCloudCredentials
     name: createCertificateCloudCredentials()
@@ -209,8 +209,6 @@ items:
       Creates a new CertificateCloudCredentials object.
       Either a pair of cert / key values need to be pass or a pem file location.
     fullName: azure-asm-website.createCertificateCloudCredentials()
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -238,6 +236,8 @@ items:
           - azure-asm-website.CertificateCloudCredentials
         description: ''
       content: function createCertificateCloudCredentials()
+    langs:
+      - js
   - uid: azure-asm-website._global.createBasicAuthenticationCloudCredentials
     id: azure-asm-website._global.createBasicAuthenticationCloudCredentials
     name: createBasicAuthenticationCloudCredentials()
@@ -245,8 +245,6 @@ items:
       Creates a new BasicAuthenticationCloudCredentials object.
       Either a pair of cert / key values need to be pass or a pem file location.
     fullName: azure-asm-website.createBasicAuthenticationCloudCredentials()
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -263,6 +261,8 @@ items:
           - azure-asm-website.BasicAuthenticationCloudCredentials
         description: ''
       content: function createBasicAuthenticationCloudCredentials()
+    langs:
+      - js
 references:
   - uid: azure-asm-website.WebsiteManagementService
     name: WebsiteManagementService

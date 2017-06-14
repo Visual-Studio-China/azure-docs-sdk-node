@@ -13,12 +13,12 @@ items:
         branch: master
         path: lib\services\gallery\lib\galleryClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-gallery.GalleryClient~GalleryClient.#ctor'
       - 'azure-gallery.GalleryClient~GalleryClient#items'
+    langs:
+      - js
   - id: 'azure-gallery.GalleryClient~GalleryClient.#ctor'
     uid: 'azure-gallery.GalleryClient~GalleryClient.#ctor'
     parent: azure-gallery.GalleryClient~GalleryClient
@@ -65,11 +65,11 @@ items:
       Provides an instance of the [ItemOperations](-ItemOperations.html)
       object.
     fullName: azure-gallery.GalleryClient~GalleryClient.items
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: items
+    langs:
+      - js

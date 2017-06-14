@@ -14,8 +14,6 @@ items:
     name: 'createGalleryClient(credentials, baseUri, filters)'
     summary: 'Creates a new <xref:azure-gallery.GalleryClient> object.'
     fullName: 'azure-gallery.createGalleryClient(credentials, baseUri, filters)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -38,3 +36,5 @@ items:
           - azure-gallery.GalleryClient
         description: A new GalleryClient object.
       content: 'function createGalleryClient(credentials, baseUri, filters)'
+    langs:
+      - js

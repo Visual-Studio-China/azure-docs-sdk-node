@@ -17,13 +17,13 @@ items:
         branch: master
         path: lib\services\insights\lib\operations\metricDefinitions.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-insights.MetricDefinitions.#ctor'
       - 'azure-insights.MetricDefinitions#listWithHttpOperationResponse'
       - 'azure-insights.MetricDefinitions#list'
+    langs:
+      - js
   - id: 'azure-insights.MetricDefinitions.#ctor'
     uid: 'azure-insights.MetricDefinitions.#ctor'
     parent: azure-insights.MetricDefinitions
@@ -62,8 +62,19 @@ items:
     fullName: >-
       azure-insights.MetricDefinitions.listWithHttpOperationResponse(resourceUri,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<MetricDefinitionCollection>} - The deserialized
+          result object.
+        value: >-
+          {HttpOperationResponse<MetricDefinitionCollection>} - The deserialized
+          result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -99,6 +110,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listWithHttpOperationResponse(resourceUri, options)'
+    langs:
+      - js
   - uid: 'azure-insights.MetricDefinitions#list'
     id: 'azure-insights.MetricDefinitions#list'
     parent: azure-insights.MetricDefinitions
@@ -121,8 +134,41 @@ items:
     fullName: >-
       azure-insights.MetricDefinitions.list(resourceUri, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{MetricDefinitionCollection} - The deserialized result object.'
+        value: '{MetricDefinitionCollection} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link MetricDefinitionCollection} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link MetricDefinitionCollection} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -168,6 +214,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(resourceUri, options, optionalCallback)'
+    langs:
+      - js
 references:
   - uid: azure-insights.InsightsClient
     name: InsightsClient

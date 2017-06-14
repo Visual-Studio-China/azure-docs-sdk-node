@@ -26,8 +26,6 @@ items:
         branch: master
         path: lib\services\computeManagement\lib\computeManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - >-
@@ -58,6 +56,8 @@ items:
         azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#updateDisk
       - >-
         azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#updateDiskSize
+    langs:
+      - js
   - id: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.#ctor
     uid: >-
@@ -109,8 +109,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.beginCreatingDataDisk(serviceName,
       deploymentName, roleName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -233,6 +231,8 @@ items:
       content: >-
         function beginCreatingDataDisk(serviceName, deploymentName, roleName,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#beginDeletingDataDisk
     id: >-
@@ -250,8 +250,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.beginDeletingDataDisk(serviceName,
       deploymentName, roleName, logicalUnitNumber, deleteFromStorage, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -289,6 +287,8 @@ items:
       content: >-
         function beginDeletingDataDisk(serviceName, deploymentName, roleName,
         logicalUnitNumber, deleteFromStorage, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#beginUpdatingDisk
     id: >-
@@ -304,8 +304,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.beginUpdatingDisk(name,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -383,6 +381,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function beginUpdatingDisk(name, parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#createDataDisk
     id: >-
@@ -414,8 +414,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.createDataDisk(serviceName,
       deploymentName, roleName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -538,6 +536,8 @@ items:
       content: >-
         function createDataDisk(serviceName, deploymentName, roleName,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#createDisk
     id: >-
@@ -553,8 +553,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.createDisk(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -608,6 +606,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function createDisk(parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#deleteDataDisk
     id: >-
@@ -625,8 +625,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.deleteDataDisk(serviceName,
       deploymentName, roleName, logicalUnitNumber, deleteFromStorage, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -664,6 +662,8 @@ items:
       content: >-
         function deleteDataDisk(serviceName, deploymentName, roleName,
         logicalUnitNumber, deleteFromStorage, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#deleteDisk
     id: >-
@@ -679,8 +679,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.deleteDisk(name,
       deleteFromStorage, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -704,6 +702,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function deleteDisk(name, deleteFromStorage, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#getDataDisk
     id: >-
@@ -721,8 +721,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.getDataDisk(serviceName,
       deploymentName, roleName, logicalUnitNumber, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -753,6 +751,8 @@ items:
       content: >-
         function getDataDisk(serviceName, deploymentName, roleName,
         logicalUnitNumber, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#getDisk
     id: >-
@@ -768,8 +768,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.getDisk(name,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -786,6 +784,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function getDisk(name, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#listDisks
     id: >-
@@ -800,8 +800,6 @@ items:
       more information)
     fullName: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.listDisks(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -814,6 +812,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: function listDisks(callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#updateDataDisk
     id: >-
@@ -831,8 +831,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.updateDataDisk(serviceName,
       deploymentName, roleName, logicalUnitNumber, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -952,6 +950,8 @@ items:
       content: >-
         function updateDataDisk(serviceName, deploymentName, roleName,
         logicalUnitNumber, parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#updateDisk
     id: >-
@@ -967,8 +967,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.updateDisk(name,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1046,6 +1044,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function updateDisk(name, parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations#updateDiskSize
     id: >-
@@ -1061,8 +1061,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations.updateDiskSize(name,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1140,3 +1138,5 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function updateDiskSize(name, parameters, callback)'
+    langs:
+      - js

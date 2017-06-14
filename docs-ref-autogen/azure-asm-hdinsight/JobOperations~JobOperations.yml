@@ -20,8 +20,6 @@ items:
         branch: master
         path: lib\services\hdinsight\lib\hDInsightJobManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-hdinsight.JobOperations~JobOperations.#ctor'
@@ -32,6 +30,8 @@ items:
       - >-
         azure-asm-hdinsight.JobOperations~JobOperations#submitMapReduceStreamingJob
       - 'azure-asm-hdinsight.JobOperations~JobOperations#submitPigJob'
+    langs:
+      - js
   - id: 'azure-asm-hdinsight.JobOperations~JobOperations.#ctor'
     uid: 'azure-asm-hdinsight.JobOperations~JobOperations.#ctor'
     parent: azure-asm-hdinsight.JobOperations~JobOperations
@@ -56,8 +56,6 @@ items:
     name: 'getJob(jobId, callback)'
     summary: Gets the list of jobs from the specified HDInsight cluster.
     fullName: 'azure-asm-hdinsight.JobOperations~JobOperations.getJob(jobId, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -75,14 +73,14 @@ items:
           - azure-asm-hdinsight.Stream
         description: The response stream.
       content: 'function getJob(jobId, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-hdinsight.JobOperations~JobOperations#listJobs'
     id: 'azure-asm-hdinsight.JobOperations~JobOperations#listJobs'
     parent: azure-asm-hdinsight.JobOperations~JobOperations
     name: listJobs(callback)
     summary: Gets the list of jobs from the specified HDInsight cluster.
     fullName: azure-asm-hdinsight.JobOperations~JobOperations.listJobs(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -95,6 +93,8 @@ items:
           - azure-asm-hdinsight.Stream
         description: The response stream.
       content: function listJobs(callback)
+    langs:
+      - js
   - uid: 'azure-asm-hdinsight.JobOperations~JobOperations#submitHiveJob'
     id: 'azure-asm-hdinsight.JobOperations~JobOperations#submitHiveJob'
     parent: azure-asm-hdinsight.JobOperations~JobOperations
@@ -103,8 +103,6 @@ items:
     fullName: >-
       azure-asm-hdinsight.JobOperations~JobOperations.submitHiveJob(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -161,6 +159,8 @@ items:
           - azure-asm-hdinsight.Stream
         description: The response stream.
       content: 'function submitHiveJob(parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-hdinsight.JobOperations~JobOperations#submitMapReduceJob'
     id: 'azure-asm-hdinsight.JobOperations~JobOperations#submitMapReduceJob'
     parent: azure-asm-hdinsight.JobOperations~JobOperations
@@ -169,8 +169,6 @@ items:
     fullName: >-
       azure-asm-hdinsight.JobOperations~JobOperations.submitMapReduceJob(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -234,6 +232,8 @@ items:
           - azure-asm-hdinsight.Stream
         description: The response stream.
       content: 'function submitMapReduceJob(parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-hdinsight.JobOperations~JobOperations#submitMapReduceStreamingJob
     id: >-
@@ -244,8 +244,6 @@ items:
     fullName: >-
       azure-asm-hdinsight.JobOperations~JobOperations.submitMapReduceStreamingJob(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -319,6 +317,8 @@ items:
           - azure-asm-hdinsight.Stream
         description: The response stream.
       content: 'function submitMapReduceStreamingJob(parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-hdinsight.JobOperations~JobOperations#submitPigJob'
     id: 'azure-asm-hdinsight.JobOperations~JobOperations#submitPigJob'
     parent: azure-asm-hdinsight.JobOperations~JobOperations
@@ -327,8 +327,6 @@ items:
     fullName: >-
       azure-asm-hdinsight.JobOperations~JobOperations.submitPigJob(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -380,3 +378,5 @@ items:
           - azure-asm-hdinsight.Stream
         description: The response stream.
       content: 'function submitPigJob(parameters, callback)'
+    langs:
+      - js

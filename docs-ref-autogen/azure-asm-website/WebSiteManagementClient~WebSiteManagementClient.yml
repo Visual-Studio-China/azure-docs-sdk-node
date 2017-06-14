@@ -20,8 +20,6 @@ items:
         branch: master
         path: lib\services\webSiteManagement\lib\webSiteManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-website.WebSiteManagementClient~WebSiteManagementClient.#ctor'
@@ -37,6 +35,8 @@ items:
         azure-asm-website.WebSiteManagementClient~WebSiteManagementClient#registerSubscription
       - >-
         azure-asm-website.WebSiteManagementClient~WebSiteManagementClient#unregisterSubscription
+    langs:
+      - js
   - id: 'azure-asm-website.WebSiteManagementClient~WebSiteManagementClient.#ctor'
     uid: 'azure-asm-website.WebSiteManagementClient~WebSiteManagementClient.#ctor'
     parent: azure-asm-website.WebSiteManagementClient~WebSiteManagementClient
@@ -88,14 +88,14 @@ items:
       [WebHostingPlanOperations](-WebHostingPlanOperations.html) object.
     fullName: >-
       azure-asm-website.WebSiteManagementClient~WebSiteManagementClient.webHostingPlans
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: webHostingPlans
+    langs:
+      - js
   - uid: 'azure-asm-website.WebSiteManagementClient~WebSiteManagementClient#webSites'
     id: 'azure-asm-website.WebSiteManagementClient~WebSiteManagementClient#webSites'
     parent: azure-asm-website.WebSiteManagementClient~WebSiteManagementClient
@@ -104,14 +104,14 @@ items:
       Provides an instance of the [WebSiteOperations](-WebSiteOperations.html)
       object.
     fullName: azure-asm-website.WebSiteManagementClient~WebSiteManagementClient.webSites
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: webSites
+    langs:
+      - js
   - uid: >-
       azure-asm-website.WebSiteManagementClient~WebSiteManagementClient#webSpaces
     id: >-
@@ -123,14 +123,14 @@ items:
       [WebSpaceOperations](-WebSpaceOperations.html) object.
     fullName: >-
       azure-asm-website.WebSiteManagementClient~WebSiteManagementClient.webSpaces
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: webSpaces
+    langs:
+      - js
   - uid: >-
       azure-asm-website.WebSiteManagementClient~WebSiteManagementClient#getOperationStatus
     id: >-
@@ -147,8 +147,6 @@ items:
     fullName: >-
       azure-asm-website.WebSiteManagementClient~WebSiteManagementClient.getOperationStatus(webSpaceName,
       siteName, operationId, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -185,6 +183,8 @@ items:
       content: >-
         function getOperationStatus(webSpaceName, siteName, operationId,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-website.WebSiteManagementClient~WebSiteManagementClient#registerSubscription
     id: >-
@@ -194,8 +194,6 @@ items:
     summary: Register your subscription to use Azure Web Sites.
     fullName: >-
       azure-asm-website.WebSiteManagementClient~WebSiteManagementClient.registerSubscription(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -208,6 +206,8 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: function registerSubscription(callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-website.WebSiteManagementClient~WebSiteManagementClient#unregisterSubscription
     id: >-
@@ -217,8 +217,6 @@ items:
     summary: Unregister your subscription to use Azure Web Sites.
     fullName: >-
       azure-asm-website.WebSiteManagementClient~WebSiteManagementClient.unregisterSubscription(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -231,3 +229,5 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: function unregisterSubscription(callback)
+    langs:
+      - js

@@ -17,8 +17,6 @@ items:
         branch: master
         path: lib\services\customerInsightsManagement\lib\operations\widgetTypes.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-arm-customerinsights.WidgetTypes.#ctor'
@@ -30,6 +28,8 @@ items:
       - >-
         azure-arm-customerinsights.WidgetTypes#listByHubNextWithHttpOperationResponse
       - 'azure-arm-customerinsights.WidgetTypes#listByHubNext'
+    langs:
+      - js
   - id: 'azure-arm-customerinsights.WidgetTypes.#ctor'
     uid: 'azure-arm-customerinsights.WidgetTypes.#ctor'
     parent: azure-arm-customerinsights.WidgetTypes
@@ -54,8 +54,19 @@ items:
     fullName: >-
       azure-arm-customerinsights.WidgetTypes.listByHubWithHttpOperationResponse(resourceGroupName,
       hubName, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<WidgetTypeListResult>} - The deserialized
+          result object.
+        value: >-
+          {HttpOperationResponse<WidgetTypeListResult>} - The deserialized
+          result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -86,6 +97,8 @@ items:
       content: >-
         function listByHubWithHttpOperationResponse(resourceGroupName, hubName,
         options)
+    langs:
+      - js
   - uid: 'azure-arm-customerinsights.WidgetTypes#listByHub'
     id: 'azure-arm-customerinsights.WidgetTypes#listByHub'
     parent: azure-arm-customerinsights.WidgetTypes
@@ -94,8 +107,39 @@ items:
     fullName: >-
       azure-arm-customerinsights.WidgetTypes.listByHub(resourceGroupName,
       hubName, options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{WidgetTypeListResult} - The deserialized result object.'
+        value: '{WidgetTypeListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WidgetTypeListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WidgetTypeListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -136,6 +180,8 @@ items:
       content: >-
         function listByHub(resourceGroupName, hubName, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-arm-customerinsights.WidgetTypes#getWithHttpOperationResponse'
     id: 'azure-arm-customerinsights.WidgetTypes#getWithHttpOperationResponse'
     parent: azure-arm-customerinsights.WidgetTypes
@@ -146,8 +192,19 @@ items:
     fullName: >-
       azure-arm-customerinsights.WidgetTypes.getWithHttpOperationResponse(resourceGroupName,
       hubName, widgetTypeName, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<WidgetTypeResourceFormat>} - The deserialized
+          result object.
+        value: >-
+          {HttpOperationResponse<WidgetTypeResourceFormat>} - The deserialized
+          result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -182,6 +239,8 @@ items:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName, hubName,
         widgetTypeName, options)
+    langs:
+      - js
   - uid: 'azure-arm-customerinsights.WidgetTypes#get'
     id: 'azure-arm-customerinsights.WidgetTypes#get'
     parent: azure-arm-customerinsights.WidgetTypes
@@ -190,8 +249,41 @@ items:
     fullName: >-
       azure-arm-customerinsights.WidgetTypes.get(resourceGroupName, hubName,
       widgetTypeName, options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{WidgetTypeResourceFormat} - The deserialized result object.'
+        value: '{WidgetTypeResourceFormat} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WidgetTypeResourceFormat} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WidgetTypeResourceFormat} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -236,6 +328,8 @@ items:
       content: >-
         function get(resourceGroupName, hubName, widgetTypeName, options,
         optionalCallback)
+    langs:
+      - js
   - uid: >-
       azure-arm-customerinsights.WidgetTypes#listByHubNextWithHttpOperationResponse
     id: >-
@@ -246,8 +340,19 @@ items:
     fullName: >-
       azure-arm-customerinsights.WidgetTypes.listByHubNextWithHttpOperationResponse(nextPageLink,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<WidgetTypeListResult>} - The deserialized
+          result object.
+        value: >-
+          {HttpOperationResponse<WidgetTypeListResult>} - The deserialized
+          result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -274,6 +379,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listByHubNextWithHttpOperationResponse(nextPageLink, options)'
+    langs:
+      - js
   - uid: 'azure-arm-customerinsights.WidgetTypes#listByHubNext'
     id: 'azure-arm-customerinsights.WidgetTypes#listByHubNext'
     parent: azure-arm-customerinsights.WidgetTypes
@@ -282,8 +389,39 @@ items:
     fullName: >-
       azure-arm-customerinsights.WidgetTypes.listByHubNext(nextPageLink,
       options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{WidgetTypeListResult} - The deserialized result object.'
+        value: '{WidgetTypeListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WidgetTypeListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WidgetTypeListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -320,6 +458,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function listByHubNext(nextPageLink, options, optionalCallback)'
+    langs:
+      - js
 references:
   - uid: azure-arm-customerinsights.CustomerInsightsManagementClient
     name: CustomerInsightsManagementClient
