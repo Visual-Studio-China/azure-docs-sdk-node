@@ -13,8 +13,6 @@ items:
         branch: master
         path: lib\services\extra\lib\graphRbacManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-extra.UserOperations~UserOperations.#ctor'
@@ -25,6 +23,8 @@ items:
       - 'azure-extra.UserOperations~UserOperations#getMemberGroups'
       - 'azure-extra.UserOperations~UserOperations#list'
       - 'azure-extra.UserOperations~UserOperations#listNext'
+    langs:
+      - js
   - id: 'azure-extra.UserOperations~UserOperations.#ctor'
     uid: 'azure-extra.UserOperations~UserOperations.#ctor'
     parent: azure-extra.UserOperations~UserOperations
@@ -47,8 +47,6 @@ items:
     name: 'create(parameters, callback)'
     summary: "Create a new user.  (see\rhttp://msdn.microsoft.com/en-us/library/azure/dn130117.aspx for more\rinformation)"
     fullName: 'azure-extra.UserOperations~UserOperations.create(parameters, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -94,14 +92,14 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function create(parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.UserOperations~UserOperations#deleteMethod'
     id: 'azure-extra.UserOperations~UserOperations#deleteMethod'
     parent: azure-extra.UserOperations~UserOperations
     name: 'deleteMethod(user, callback)'
     summary: "Delete a user.  (see\rhttp://msdn.microsoft.com/en-us/library/azure/dn151676.aspx for more\rinformation)"
     fullName: 'azure-extra.UserOperations~UserOperations.deleteMethod(user, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -118,14 +116,14 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function deleteMethod(user, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.UserOperations~UserOperations#get'
     id: 'azure-extra.UserOperations~UserOperations#get'
     parent: azure-extra.UserOperations~UserOperations
     name: 'get(upnOrObjectId, callback)'
     summary: "Gets user information from the directory.  (see\rhttp://msdn.microsoft.com/en-us/library/azure/dn151678.aspx for more\rinformation)"
     fullName: 'azure-extra.UserOperations~UserOperations.get(upnOrObjectId, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -142,6 +140,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function get(upnOrObjectId, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.UserOperations~UserOperations#getBySignInName'
     id: 'azure-extra.UserOperations~UserOperations#getBySignInName'
     parent: azure-extra.UserOperations~UserOperations
@@ -150,8 +150,6 @@ items:
     fullName: >-
       azure-extra.UserOperations~UserOperations.getBySignInName(signInName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -168,6 +166,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function getBySignInName(signInName, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.UserOperations~UserOperations#getMemberGroups'
     id: 'azure-extra.UserOperations~UserOperations#getMemberGroups'
     parent: azure-extra.UserOperations~UserOperations
@@ -176,8 +176,6 @@ items:
     fullName: >-
       azure-extra.UserOperations~UserOperations.getMemberGroups(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -202,6 +200,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function getMemberGroups(parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.UserOperations~UserOperations#list'
     id: 'azure-extra.UserOperations~UserOperations#list'
     parent: azure-extra.UserOperations~UserOperations
@@ -210,8 +210,6 @@ items:
     fullName: >-
       azure-extra.UserOperations~UserOperations.list(mail,
       displayNameStartsWith, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -234,14 +232,14 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function list(mail, displayNameStartsWith, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.UserOperations~UserOperations#listNext'
     id: 'azure-extra.UserOperations~UserOperations#listNext'
     parent: azure-extra.UserOperations~UserOperations
     name: 'listNext(nextLink, callback)'
     summary: Gets list of users for the current tenant.
     fullName: 'azure-extra.UserOperations~UserOperations.listNext(nextLink, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -258,3 +256,5 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function listNext(nextLink, callback)'
+    langs:
+      - js

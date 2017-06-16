@@ -23,8 +23,6 @@ items:
         branch: master
         path: lib\services\computeManagement\lib\computeManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-compute.DeploymentOperations~DeploymentOperations.#ctor'
@@ -135,6 +133,8 @@ items:
         azure-asm-compute.DeploymentOperations~DeploymentOperations#walkUpgradeDomainByDeploymentName
       - >-
         azure-asm-compute.DeploymentOperations~DeploymentOperations#walkUpgradeDomainByDeploymentSlot
+    langs:
+      - js
   - id: 'azure-asm-compute.DeploymentOperations~DeploymentOperations.#ctor'
     uid: 'azure-asm-compute.DeploymentOperations~DeploymentOperations.#ctor'
     parent: azure-asm-compute.DeploymentOperations~DeploymentOperations
@@ -161,8 +161,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.abortMigration(serviceName,
       deploymentName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -183,6 +181,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function abortMigration(serviceName, deploymentName, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginAbortMigration
     id: >-
@@ -195,8 +195,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginAbortMigration(serviceName,
       deploymentName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -217,6 +215,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function beginAbortMigration(serviceName, deploymentName, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginChangingConfigurationByName
     id: >-
@@ -238,8 +238,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginChangingConfigurationByName(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -368,6 +366,8 @@ items:
       content: >-
         function beginChangingConfigurationByName(serviceName, deploymentName,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginChangingConfigurationBySlot
     id: >-
@@ -389,8 +389,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginChangingConfigurationBySlot(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -521,6 +519,8 @@ items:
       content: >-
         function beginChangingConfigurationBySlot(serviceName, deploymentSlot,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginCommitMigration
     id: >-
@@ -533,8 +533,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginCommitMigration(serviceName,
       deploymentName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -555,6 +553,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function beginCommitMigration(serviceName, deploymentName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#beginCreating'
     id: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#beginCreating'
     parent: azure-asm-compute.DeploymentOperations~DeploymentOperations
@@ -572,8 +572,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginCreating(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -743,6 +741,8 @@ items:
       content: >-
         function beginCreating(serviceName, deploymentSlot, parameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginDeletingByName
     id: >-
@@ -763,8 +763,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginDeletingByName(serviceName,
       deploymentName, deleteFromStorage, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -794,6 +792,8 @@ items:
       content: >-
         function beginDeletingByName(serviceName, deploymentName,
         deleteFromStorage, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginDeletingBySlot
     id: >-
@@ -812,8 +812,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginDeletingBySlot(serviceName,
       deploymentSlot, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -834,6 +832,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function beginDeletingBySlot(serviceName, deploymentSlot, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginDeletingRoleInstanceByBeploymentSlot
     id: >-
@@ -850,8 +850,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginDeletingRoleInstanceByBeploymentSlot(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -887,6 +885,8 @@ items:
       content: >-
         function beginDeletingRoleInstanceByBeploymentSlot(serviceName,
         deploymentSlot, parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginDeletingRoleInstanceByDeploymentName
     id: >-
@@ -903,8 +903,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginDeletingRoleInstanceByDeploymentName(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -940,6 +938,8 @@ items:
       content: >-
         function beginDeletingRoleInstanceByDeploymentName(serviceName,
         deploymentName, parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginGettingPackageByName
     id: >-
@@ -961,8 +961,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginGettingPackageByName(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1004,6 +1002,8 @@ items:
       content: >-
         function beginGettingPackageByName(serviceName, deploymentName,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginGettingPackageBySlot
     id: >-
@@ -1025,8 +1025,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginGettingPackageBySlot(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1068,6 +1066,8 @@ items:
       content: >-
         function beginGettingPackageBySlot(serviceName, deploymentSlot,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginPrepareMigration
     id: >-
@@ -1080,8 +1080,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginPrepareMigration(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1134,6 +1132,8 @@ items:
       content: >-
         function beginPrepareMigration(serviceName, deploymentName, parameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginRebootingRoleInstanceByDeploymentName
     id: >-
@@ -1155,8 +1155,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginRebootingRoleInstanceByDeploymentName(serviceName,
       deploymentName, roleInstanceName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1183,6 +1181,8 @@ items:
       content: >-
         function beginRebootingRoleInstanceByDeploymentName(serviceName,
         deploymentName, roleInstanceName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginRebootingRoleInstanceByDeploymentSlot
     id: >-
@@ -1204,8 +1204,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginRebootingRoleInstanceByDeploymentSlot(serviceName,
       deploymentSlot, roleInstanceName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1232,6 +1230,8 @@ items:
       content: >-
         function beginRebootingRoleInstanceByDeploymentSlot(serviceName,
         deploymentSlot, roleInstanceName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginRebuildingRoleInstanceByDeploymentName
     id: >-
@@ -1254,8 +1254,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginRebuildingRoleInstanceByDeploymentName(serviceName,
       deploymentName, roleInstanceName, resources, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1288,6 +1286,8 @@ items:
       content: >-
         function beginRebuildingRoleInstanceByDeploymentName(serviceName,
         deploymentName, roleInstanceName, resources, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginRebuildingRoleInstanceByDeploymentSlot
     id: >-
@@ -1310,8 +1310,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginRebuildingRoleInstanceByDeploymentSlot(serviceName,
       deploymentSlot, roleInstanceName, resources, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1344,6 +1342,8 @@ items:
       content: >-
         function beginRebuildingRoleInstanceByDeploymentSlot(serviceName,
         deploymentSlot, roleInstanceName, resources, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginReimagingRoleInstanceByDeploymentName
     id: >-
@@ -1365,8 +1365,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginReimagingRoleInstanceByDeploymentName(serviceName,
       deploymentName, roleInstanceName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1393,6 +1391,8 @@ items:
       content: >-
         function beginReimagingRoleInstanceByDeploymentName(serviceName,
         deploymentName, roleInstanceName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginReimagingRoleInstanceByDeploymentSlot
     id: >-
@@ -1414,8 +1414,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginReimagingRoleInstanceByDeploymentSlot(serviceName,
       deploymentSlot, roleInstanceName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1442,6 +1440,8 @@ items:
       content: >-
         function beginReimagingRoleInstanceByDeploymentSlot(serviceName,
         deploymentSlot, roleInstanceName, callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#beginSwapping'
     id: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#beginSwapping'
     parent: azure-asm-compute.DeploymentOperations~DeploymentOperations
@@ -1460,8 +1460,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginSwapping(serviceName,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1497,6 +1495,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function beginSwapping(serviceName, parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginUpdatingStatusByDeploymentName
     id: >-
@@ -1519,8 +1519,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginUpdatingStatusByDeploymentName(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1557,6 +1555,8 @@ items:
       content: >-
         function beginUpdatingStatusByDeploymentName(serviceName,
         deploymentName, parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginUpdatingStatusByDeploymentSlot
     id: >-
@@ -1579,8 +1579,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginUpdatingStatusByDeploymentSlot(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1617,6 +1615,8 @@ items:
       content: >-
         function beginUpdatingStatusByDeploymentSlot(serviceName,
         deploymentSlot, parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginUpgradingByName
     id: >-
@@ -1660,8 +1660,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginUpgradingByName(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1827,6 +1825,8 @@ items:
       content: >-
         function beginUpgradingByName(serviceName, deploymentName, parameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginUpgradingBySlot
     id: >-
@@ -1870,8 +1870,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginUpgradingBySlot(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2037,6 +2035,8 @@ items:
       content: >-
         function beginUpgradingBySlot(serviceName, deploymentSlot, parameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginWalkingUpgradeDomainByDeploymentName
     id: >-
@@ -2079,8 +2079,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginWalkingUpgradeDomainByDeploymentName(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2123,6 +2121,8 @@ items:
       content: >-
         function beginWalkingUpgradeDomainByDeploymentName(serviceName,
         deploymentName, parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#beginWalkingUpgradeDomainByDeploymentSlot
     id: >-
@@ -2165,8 +2165,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.beginWalkingUpgradeDomainByDeploymentSlot(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2209,6 +2207,8 @@ items:
       content: >-
         function beginWalkingUpgradeDomainByDeploymentSlot(serviceName,
         deploymentSlot, parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#changeConfigurationByName
     id: >-
@@ -2230,8 +2230,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.changeConfigurationByName(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2358,6 +2356,8 @@ items:
       content: >-
         function changeConfigurationByName(serviceName, deploymentName,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#changeConfigurationBySlot
     id: >-
@@ -2379,8 +2379,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.changeConfigurationBySlot(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2509,6 +2507,8 @@ items:
       content: >-
         function changeConfigurationBySlot(serviceName, deploymentSlot,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#commitMigration
     id: >-
@@ -2521,8 +2521,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.commitMigration(serviceName,
       deploymentName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2543,6 +2541,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function commitMigration(serviceName, deploymentName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#create'
     id: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#create'
     parent: azure-asm-compute.DeploymentOperations~DeploymentOperations
@@ -2560,8 +2560,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.create(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2729,6 +2727,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function create(serviceName, deploymentSlot, parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#deleteByName'
     id: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#deleteByName'
     parent: azure-asm-compute.DeploymentOperations~DeploymentOperations
@@ -2745,8 +2745,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.deleteByName(serviceName,
       deploymentName, deleteFromStorage, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2776,6 +2774,8 @@ items:
       content: >-
         function deleteByName(serviceName, deploymentName, deleteFromStorage,
         callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#deleteBySlot'
     id: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#deleteBySlot'
     parent: azure-asm-compute.DeploymentOperations~DeploymentOperations
@@ -2791,8 +2791,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.deleteBySlot(serviceName,
       deploymentSlot, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2813,6 +2811,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function deleteBySlot(serviceName, deploymentSlot, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#deleteRoleInstanceByDeploymentName
     id: >-
@@ -2829,8 +2829,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.deleteRoleInstanceByDeploymentName(serviceName,
       deploymentName, roleInstanceName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2866,6 +2864,8 @@ items:
       content: >-
         function deleteRoleInstanceByDeploymentName(serviceName, deploymentName,
         roleInstanceName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#deleteRoleInstanceByDeploymentSlot
     id: >-
@@ -2882,8 +2882,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.deleteRoleInstanceByDeploymentSlot(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2919,6 +2917,8 @@ items:
       content: >-
         function deleteRoleInstanceByDeploymentSlot(serviceName, deploymentSlot,
         parameters, callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#getByName'
     id: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#getByName'
     parent: azure-asm-compute.DeploymentOperations~DeploymentOperations
@@ -2931,8 +2931,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.getByName(serviceName,
       deploymentName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2953,6 +2951,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function getByName(serviceName, deploymentName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#getBySlot'
     id: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#getBySlot'
     parent: azure-asm-compute.DeploymentOperations~DeploymentOperations
@@ -2965,8 +2965,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.getBySlot(serviceName,
       deploymentSlot, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2987,6 +2985,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function getBySlot(serviceName, deploymentSlot, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#getPackageByName
     id: >-
@@ -3006,8 +3006,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.getPackageByName(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3049,6 +3047,8 @@ items:
       content: >-
         function getPackageByName(serviceName, deploymentName, parameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#getPackageBySlot
     id: >-
@@ -3068,8 +3068,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.getPackageBySlot(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3111,6 +3109,8 @@ items:
       content: >-
         function getPackageBySlot(serviceName, deploymentSlot, parameters,
         callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#listEvents'
     id: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#listEvents'
     parent: azure-asm-compute.DeploymentOperations~DeploymentOperations
@@ -3121,8 +3121,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.listEvents(serviceName,
       deploymentName, startTime, endTime, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3157,6 +3155,8 @@ items:
       content: >-
         function listEvents(serviceName, deploymentName, startTime, endTime,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#listEventsBySlot
     id: >-
@@ -3171,8 +3171,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.listEventsBySlot(serviceName,
       deploymentSlot, startTime, endTime, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3207,6 +3205,8 @@ items:
       content: >-
         function listEventsBySlot(serviceName, deploymentSlot, startTime,
         endTime, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#prepareMigration
     id: >-
@@ -3219,8 +3219,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.prepareMigration(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3273,6 +3271,8 @@ items:
       content: >-
         function prepareMigration(serviceName, deploymentName, parameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#rebootRoleInstanceByDeploymentName
     id: >-
@@ -3294,8 +3294,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.rebootRoleInstanceByDeploymentName(serviceName,
       deploymentName, roleInstanceName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3322,6 +3320,8 @@ items:
       content: >-
         function rebootRoleInstanceByDeploymentName(serviceName, deploymentName,
         roleInstanceName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#rebootRoleInstanceByDeploymentSlot
     id: >-
@@ -3343,8 +3343,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.rebootRoleInstanceByDeploymentSlot(serviceName,
       deploymentSlot, roleInstanceName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3371,6 +3369,8 @@ items:
       content: >-
         function rebootRoleInstanceByDeploymentSlot(serviceName, deploymentSlot,
         roleInstanceName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#rebuildRoleInstanceByDeploymentName
     id: >-
@@ -3393,8 +3393,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.rebuildRoleInstanceByDeploymentName(serviceName,
       deploymentName, roleInstanceName, resources, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3427,6 +3425,8 @@ items:
       content: >-
         function rebuildRoleInstanceByDeploymentName(serviceName,
         deploymentName, roleInstanceName, resources, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#rebuildRoleInstanceByDeploymentSlot
     id: >-
@@ -3449,8 +3449,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.rebuildRoleInstanceByDeploymentSlot(serviceName,
       deploymentSlot, roleInstanceName, resources, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3483,6 +3481,8 @@ items:
       content: >-
         function rebuildRoleInstanceByDeploymentSlot(serviceName,
         deploymentSlot, roleInstanceName, resources, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#reimageRoleInstanceByDeploymentName
     id: >-
@@ -3504,8 +3504,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.reimageRoleInstanceByDeploymentName(serviceName,
       deploymentName, roleInstanceName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3532,6 +3530,8 @@ items:
       content: >-
         function reimageRoleInstanceByDeploymentName(serviceName,
         deploymentName, roleInstanceName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#reimageRoleInstanceByDeploymentSlot
     id: >-
@@ -3553,8 +3553,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.reimageRoleInstanceByDeploymentSlot(serviceName,
       deploymentSlot, roleInstanceName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3581,6 +3579,8 @@ items:
       content: >-
         function reimageRoleInstanceByDeploymentSlot(serviceName,
         deploymentSlot, roleInstanceName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#rollbackUpdateOrUpgradeByDeploymentName
     id: >-
@@ -3602,8 +3602,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.rollbackUpdateOrUpgradeByDeploymentName(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3648,6 +3646,8 @@ items:
       content: >-
         function rollbackUpdateOrUpgradeByDeploymentName(serviceName,
         deploymentName, parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#rollbackUpdateOrUpgradeByDeploymentSlot
     id: >-
@@ -3669,8 +3669,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.rollbackUpdateOrUpgradeByDeploymentSlot(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3715,6 +3713,8 @@ items:
       content: >-
         function rollbackUpdateOrUpgradeByDeploymentSlot(serviceName,
         deploymentSlot, parameters, callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#swap'
     id: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#swap'
     parent: azure-asm-compute.DeploymentOperations~DeploymentOperations
@@ -3732,8 +3732,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.swap(serviceName,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3769,6 +3767,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function swap(serviceName, parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#updateStatusByDeploymentName
     id: >-
@@ -3790,8 +3790,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.updateStatusByDeploymentName(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3826,6 +3824,8 @@ items:
       content: >-
         function updateStatusByDeploymentName(serviceName, deploymentName,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#updateStatusByDeploymentSlot
     id: >-
@@ -3847,8 +3847,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.updateStatusByDeploymentSlot(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3883,6 +3881,8 @@ items:
       content: >-
         function updateStatusByDeploymentSlot(serviceName, deploymentSlot,
         parameters, callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#upgradeByName'
     id: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#upgradeByName'
     parent: azure-asm-compute.DeploymentOperations~DeploymentOperations
@@ -3924,8 +3924,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.upgradeByName(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -4091,6 +4089,8 @@ items:
       content: >-
         function upgradeByName(serviceName, deploymentName, parameters,
         callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#upgradeBySlot'
     id: 'azure-asm-compute.DeploymentOperations~DeploymentOperations#upgradeBySlot'
     parent: azure-asm-compute.DeploymentOperations~DeploymentOperations
@@ -4132,8 +4132,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.upgradeBySlot(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -4299,6 +4297,8 @@ items:
       content: >-
         function upgradeBySlot(serviceName, deploymentSlot, parameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#validateMigration
     id: >-
@@ -4311,8 +4311,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.validateMigration(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -4365,6 +4363,8 @@ items:
       content: >-
         function validateMigration(serviceName, deploymentName, parameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#walkUpgradeDomainByDeploymentName
     id: >-
@@ -4407,8 +4407,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.walkUpgradeDomainByDeploymentName(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -4449,6 +4447,8 @@ items:
       content: >-
         function walkUpgradeDomainByDeploymentName(serviceName, deploymentName,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations#walkUpgradeDomainByDeploymentSlot
     id: >-
@@ -4491,8 +4491,6 @@ items:
     fullName: >-
       azure-asm-compute.DeploymentOperations~DeploymentOperations.walkUpgradeDomainByDeploymentSlot(serviceName,
       deploymentSlot, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -4533,3 +4531,5 @@ items:
       content: >-
         function walkUpgradeDomainByDeploymentSlot(serviceName, deploymentSlot,
         parameters, callback)
+    langs:
+      - js

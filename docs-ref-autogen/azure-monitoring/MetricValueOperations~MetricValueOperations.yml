@@ -22,12 +22,12 @@ items:
         branch: master
         path: lib\services\monitoring\lib\metricsClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-monitoring.MetricValueOperations~MetricValueOperations.#ctor'
       - 'azure-monitoring.MetricValueOperations~MetricValueOperations#list'
+    langs:
+      - js
   - id: 'azure-monitoring.MetricValueOperations~MetricValueOperations.#ctor'
     uid: 'azure-monitoring.MetricValueOperations~MetricValueOperations.#ctor'
     parent: azure-monitoring.MetricValueOperations~MetricValueOperations
@@ -56,8 +56,6 @@ items:
     fullName: >-
       azure-monitoring.MetricValueOperations~MetricValueOperations.list(resourceId,
       metricNames, metricNamespace, timeGrain, startTime, endTime, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -97,3 +95,5 @@ items:
       content: >-
         function list(resourceId, metricNames, metricNamespace, timeGrain,
         startTime, endTime, callback)
+    langs:
+      - js

@@ -20,8 +20,6 @@ items:
         branch: master
         path: lib\services\webSiteManagement\lib\webSiteManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - >-
@@ -36,6 +34,8 @@ items:
       - 'azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations#list'
       - >-
         azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations#update
+    langs:
+      - js
   - id: 'azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations.#ctor'
     uid: 'azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations.#ctor'
     parent: azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations
@@ -66,8 +66,6 @@ items:
     fullName: >-
       azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations.create(webSpaceName,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -128,6 +126,8 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function create(webSpaceName, parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations#deleteMethod
     id: >-
@@ -143,8 +143,6 @@ items:
     fullName: >-
       azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations.deleteMethod(webSpaceName,
       webHostingPlanName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -165,6 +163,8 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function deleteMethod(webSpaceName, webHostingPlanName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations#get'
     id: 'azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations#get'
     parent: azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations
@@ -178,8 +178,6 @@ items:
     fullName: >-
       azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations.get(webSpaceName,
       webHostingPlanName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -200,6 +198,8 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function get(webSpaceName, webHostingPlanName, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations#getHistoricalUsageMetrics
     id: >-
@@ -216,8 +216,6 @@ items:
     fullName: >-
       azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations.getHistoricalUsageMetrics(webSpaceName,
       webHostingPlanName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -299,6 +297,8 @@ items:
       content: >-
         function getHistoricalUsageMetrics(webSpaceName, webHostingPlanName,
         parameters, callback)
+    langs:
+      - js
   - uid: 'azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations#list'
     id: 'azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations#list'
     parent: azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations
@@ -311,8 +311,6 @@ items:
     fullName: >-
       azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations.list(webSpaceName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -329,6 +327,8 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function list(webSpaceName, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations#update'
     id: 'azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations#update'
     parent: azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations
@@ -342,8 +342,6 @@ items:
     fullName: >-
       azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations.update(webSpaceName,
       webHostingPlanName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -404,3 +402,5 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function update(webSpaceName, webHostingPlanName, parameters, callback)'
+    langs:
+      - js

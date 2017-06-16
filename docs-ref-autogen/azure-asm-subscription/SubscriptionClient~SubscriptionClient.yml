@@ -13,13 +13,13 @@ items:
         branch: master
         path: lib\services\subscriptionManagement\lib\subscriptionClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-subscription.SubscriptionClient~SubscriptionClient.#ctor'
       - >-
         azure-asm-subscription.SubscriptionClient~SubscriptionClient#subscriptions
+    langs:
+      - js
   - id: 'azure-asm-subscription.SubscriptionClient~SubscriptionClient.#ctor'
     uid: 'azure-asm-subscription.SubscriptionClient~SubscriptionClient.#ctor'
     parent: azure-asm-subscription.SubscriptionClient~SubscriptionClient
@@ -59,11 +59,11 @@ items:
       Provides an instance of the
       [SubscriptionOperations](-SubscriptionOperations.html) object.
     fullName: azure-asm-subscription.SubscriptionClient~SubscriptionClient.subscriptions
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: subscriptions
+    langs:
+      - js

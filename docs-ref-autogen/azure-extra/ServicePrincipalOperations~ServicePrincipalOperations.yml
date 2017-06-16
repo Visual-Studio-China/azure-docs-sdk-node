@@ -13,8 +13,6 @@ items:
         branch: master
         path: lib\services\extra\lib\graphRbacManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations.#ctor'
@@ -27,6 +25,8 @@ items:
       - 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#list'
       - >-
         azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#listNext
+    langs:
+      - js
   - id: 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations.#ctor'
     uid: 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations.#ctor'
     parent: azure-extra.ServicePrincipalOperations~ServicePrincipalOperations
@@ -51,8 +51,6 @@ items:
     fullName: >-
       azure-extra.ServicePrincipalOperations~ServicePrincipalOperations.create(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -77,6 +75,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function create(parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#deleteMethod
     id: >-
@@ -87,8 +87,6 @@ items:
     fullName: >-
       azure-extra.ServicePrincipalOperations~ServicePrincipalOperations.deleteMethod(objectId,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -105,6 +103,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function deleteMethod(objectId, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#get'
     id: 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#get'
     parent: azure-extra.ServicePrincipalOperations~ServicePrincipalOperations
@@ -113,8 +113,6 @@ items:
     fullName: >-
       azure-extra.ServicePrincipalOperations~ServicePrincipalOperations.get(objectId,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -131,6 +129,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function get(objectId, callback)'
+    langs:
+      - js
   - uid: >-
       azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#getByServicePrincipalName
     id: >-
@@ -141,8 +141,6 @@ items:
     fullName: >-
       azure-extra.ServicePrincipalOperations~ServicePrincipalOperations.getByServicePrincipalName(servicePrincipalName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -159,6 +157,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function getByServicePrincipalName(servicePrincipalName, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#list'
     id: 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#list'
     parent: azure-extra.ServicePrincipalOperations~ServicePrincipalOperations
@@ -167,8 +167,6 @@ items:
     fullName: >-
       azure-extra.ServicePrincipalOperations~ServicePrincipalOperations.list(displayNameStartsWith,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -186,6 +184,8 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function list(displayNameStartsWith, callback)'
+    langs:
+      - js
   - uid: 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#listNext'
     id: 'azure-extra.ServicePrincipalOperations~ServicePrincipalOperations#listNext'
     parent: azure-extra.ServicePrincipalOperations~ServicePrincipalOperations
@@ -194,8 +194,6 @@ items:
     fullName: >-
       azure-extra.ServicePrincipalOperations~ServicePrincipalOperations.listNext(nextLink,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -212,3 +210,5 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function listNext(nextLink, callback)'
+    langs:
+      - js

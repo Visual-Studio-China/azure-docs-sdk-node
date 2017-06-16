@@ -17,8 +17,6 @@ items:
         branch: master
         path: lib\services\batch\lib\operations\task.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-batch.Task.#ctor'
@@ -42,6 +40,8 @@ items:
       - 'azure-batch.Task#reactivate'
       - 'azure-batch.Task#listNextWithHttpOperationResponse'
       - 'azure-batch.Task#listNext'
+    langs:
+      - js
   - id: 'azure-batch.Task.#ctor'
     uid: 'azure-batch.Task.#ctor'
     parent: azure-batch.Task
@@ -64,8 +64,15 @@ items:
     name: 'addWithHttpOperationResponse(jobId, task, options)'
     summary: Adds a task to the specified job.
     fullName: 'azure-batch.Task.addWithHttpOperationResponse(jobId, task, options)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -664,14 +671,45 @@ items:
           - Promise
         description: A promise is returned
       content: 'function addWithHttpOperationResponse(jobId, task, options)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#add'
     id: 'azure-batch.Task#add'
     parent: azure-batch.Task
     name: 'add(jobId, task, options, optionalCallback)'
     summary: Adds a task to the specified job.
     fullName: 'azure-batch.Task.add(jobId, task, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1280,6 +1318,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function add(jobId, task, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#listWithHttpOperationResponse'
     id: 'azure-batch.Task#listWithHttpOperationResponse'
     parent: azure-batch.Task
@@ -1295,8 +1335,19 @@ items:
 
       information about subtasks.
     fullName: 'azure-batch.Task.listWithHttpOperationResponse(jobId, options)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<CloudTaskListResult>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<CloudTaskListResult>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -1392,6 +1443,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listWithHttpOperationResponse(jobId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#list'
     id: 'azure-batch.Task#list'
     parent: azure-batch.Task
@@ -1407,8 +1460,39 @@ items:
 
       information about subtasks.
     fullName: 'azure-batch.Task.list(jobId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{CloudTaskListResult} - The deserialized result object.'
+        value: '{CloudTaskListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudTaskListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudTaskListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1514,6 +1598,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(jobId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#addCollectionWithHttpOperationResponse'
     id: 'azure-batch.Task#addCollectionWithHttpOperationResponse'
     parent: azure-batch.Task
@@ -1545,8 +1631,19 @@ items:
     fullName: >-
       azure-batch.Task.addCollectionWithHttpOperationResponse(jobId, value,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<TaskAddCollectionResult>} - The deserialized
+          result object.
+        value: >-
+          {HttpOperationResponse<TaskAddCollectionResult>} - The deserialized
+          result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -1626,6 +1723,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function addCollectionWithHttpOperationResponse(jobId, value, options)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#addCollection'
     id: 'azure-batch.Task#addCollection'
     parent: azure-batch.Task
@@ -1655,8 +1754,41 @@ items:
 
       unexpectedly.
     fullName: 'azure-batch.Task.addCollection(jobId, value, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{TaskAddCollectionResult} - The deserialized result object.'
+        value: '{TaskAddCollectionResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TaskAddCollectionResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TaskAddCollectionResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1746,6 +1878,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function addCollection(jobId, value, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#deleteMethodWithHttpOperationResponse'
     id: 'azure-batch.Task#deleteMethodWithHttpOperationResponse'
     parent: azure-batch.Task
@@ -1767,8 +1901,15 @@ items:
     fullName: >-
       azure-batch.Task.deleteMethodWithHttpOperationResponse(jobId, taskId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -1898,6 +2039,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function deleteMethodWithHttpOperationResponse(jobId, taskId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#deleteMethod'
     id: 'azure-batch.Task#deleteMethod'
     parent: azure-batch.Task
@@ -1917,8 +2060,37 @@ items:
 
       the background.
     fullName: 'azure-batch.Task.deleteMethod(jobId, taskId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -2058,6 +2230,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function deleteMethod(jobId, taskId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#getWithHttpOperationResponse'
     id: 'azure-batch.Task#getWithHttpOperationResponse'
     parent: azure-batch.Task
@@ -2073,8 +2247,15 @@ items:
 
       information about subtasks.
     fullName: 'azure-batch.Task.getWithHttpOperationResponse(jobId, taskId, options)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<CloudTask>} - The deserialized result object.'
+        value: '{HttpOperationResponse<CloudTask>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -2215,6 +2396,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function getWithHttpOperationResponse(jobId, taskId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#get'
     id: 'azure-batch.Task#get'
     parent: azure-batch.Task
@@ -2230,8 +2413,39 @@ items:
 
       information about subtasks.
     fullName: 'azure-batch.Task.get(jobId, taskId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{CloudTask} - The deserialized result object.'
+        value: '{CloudTask} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudTask} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudTask} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -2382,14 +2596,23 @@ items:
 
           {Promise} A promise is returned
       content: 'function get(jobId, taskId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#updateWithHttpOperationResponse'
     id: 'azure-batch.Task#updateWithHttpOperationResponse'
     parent: azure-batch.Task
     name: 'updateWithHttpOperationResponse(jobId, taskId, options)'
     summary: Updates the properties of the specified task.
     fullName: 'azure-batch.Task.updateWithHttpOperationResponse(jobId, taskId, options)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -2589,14 +2812,45 @@ items:
           - Promise
         description: A promise is returned
       content: 'function updateWithHttpOperationResponse(jobId, taskId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#update'
     id: 'azure-batch.Task#update'
     parent: azure-batch.Task
     name: 'update(jobId, taskId, options, optionalCallback)'
     summary: Updates the properties of the specified task.
     fullName: 'azure-batch.Task.update(jobId, taskId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -2806,6 +3060,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function update(jobId, taskId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#listSubtasksWithHttpOperationResponse'
     id: 'azure-batch.Task#listSubtasksWithHttpOperationResponse'
     parent: azure-batch.Task
@@ -2819,8 +3075,19 @@ items:
     fullName: >-
       azure-batch.Task.listSubtasksWithHttpOperationResponse(jobId, taskId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<CloudTaskListSubtasksResult>} - The
+          deserialized result object.
+        value: >-
+          {HttpOperationResponse<CloudTaskListSubtasksResult>} - The
+          deserialized result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -2903,6 +3170,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listSubtasksWithHttpOperationResponse(jobId, taskId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#listSubtasks'
     id: 'azure-batch.Task#listSubtasks'
     parent: azure-batch.Task
@@ -2914,8 +3183,41 @@ items:
       If the task is not a multi-instance task then this returns an empty
       collection.
     fullName: 'azure-batch.Task.listSubtasks(jobId, taskId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{CloudTaskListSubtasksResult} - The deserialized result object.'
+        value: '{CloudTaskListSubtasksResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudTaskListSubtasksResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudTaskListSubtasksResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -3008,6 +3310,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function listSubtasks(jobId, taskId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#terminateWithHttpOperationResponse'
     id: 'azure-batch.Task#terminateWithHttpOperationResponse'
     parent: azure-batch.Task
@@ -3027,8 +3331,15 @@ items:
     fullName: >-
       azure-batch.Task.terminateWithHttpOperationResponse(jobId, taskId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -3158,6 +3469,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function terminateWithHttpOperationResponse(jobId, taskId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#terminate'
     id: 'azure-batch.Task#terminate'
     parent: azure-batch.Task
@@ -3175,8 +3488,37 @@ items:
 
       background.
     fullName: 'azure-batch.Task.terminate(jobId, taskId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -3316,6 +3658,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function terminate(jobId, taskId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#reactivateWithHttpOperationResponse'
     id: 'azure-batch.Task#reactivateWithHttpOperationResponse'
     parent: azure-batch.Task
@@ -3342,8 +3686,15 @@ items:
     fullName: >-
       azure-batch.Task.reactivateWithHttpOperationResponse(jobId, taskId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -3473,6 +3824,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function reactivateWithHttpOperationResponse(jobId, taskId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#reactivate'
     id: 'azure-batch.Task#reactivate'
     parent: azure-batch.Task
@@ -3497,8 +3850,37 @@ items:
 
       or deleting).
     fullName: 'azure-batch.Task.reactivate(jobId, taskId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -3638,6 +4020,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function reactivate(jobId, taskId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#listNextWithHttpOperationResponse'
     id: 'azure-batch.Task#listNextWithHttpOperationResponse'
     parent: azure-batch.Task
@@ -3653,8 +4037,19 @@ items:
 
       information about subtasks.
     fullName: 'azure-batch.Task.listNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<CloudTaskListResult>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<CloudTaskListResult>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -3717,6 +4112,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listNextWithHttpOperationResponse(nextPageLink, options)'
+    langs:
+      - js
   - uid: 'azure-batch.Task#listNext'
     id: 'azure-batch.Task#listNext'
     parent: azure-batch.Task
@@ -3732,8 +4129,39 @@ items:
 
       information about subtasks.
     fullName: 'azure-batch.Task.listNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{CloudTaskListResult} - The deserialized result object.'
+        value: '{CloudTaskListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudTaskListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudTaskListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -3806,6 +4234,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function listNext(nextPageLink, options, optionalCallback)'
+    langs:
+      - js
 references:
   - uid: azure-batch.BatchServiceClient
     name: BatchServiceClient

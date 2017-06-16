@@ -26,8 +26,6 @@ items:
         branch: master
         path: lib\services\computeManagement\lib\computeManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - >-
@@ -36,6 +34,8 @@ items:
         azure-asm-compute.VirtualMachineExtensionOperations~VirtualMachineExtensionOperations#list
       - >-
         azure-asm-compute.VirtualMachineExtensionOperations~VirtualMachineExtensionOperations#listVersions
+    langs:
+      - js
   - id: >-
       azure-asm-compute.VirtualMachineExtensionOperations~VirtualMachineExtensionOperations.#ctor
     uid: >-
@@ -73,8 +73,6 @@ items:
       more information)
     fullName: >-
       azure-asm-compute.VirtualMachineExtensionOperations~VirtualMachineExtensionOperations.list(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -87,6 +85,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: function list(callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineExtensionOperations~VirtualMachineExtensionOperations#listVersions
     id: >-
@@ -105,8 +105,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineExtensionOperations~VirtualMachineExtensionOperations.listVersions(publisherName,
       extensionName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -127,3 +125,5 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function listVersions(publisherName, extensionName, callback)'
+    langs:
+      - js

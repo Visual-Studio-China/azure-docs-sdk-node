@@ -26,8 +26,6 @@ items:
         branch: master
         path: lib\services\networkManagement\lib\networkManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - >-
@@ -72,6 +70,8 @@ items:
         azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#setConfig
       - >-
         azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#update
+    langs:
+      - js
   - id: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.#ctor
     uid: >-
@@ -107,8 +107,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.addCertificate(gatewayName,
       certificateName, certificate, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -162,6 +160,8 @@ items:
       content: >-
         function addCertificate(gatewayName, certificateName, certificate,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginAddCertificate
     id: >-
@@ -177,8 +177,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.beginAddCertificate(gatewayName,
       certificateName, certificate, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -232,6 +230,8 @@ items:
       content: >-
         function beginAddCertificate(gatewayName, certificateName, certificate,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginCreateApplicationGateway
     id: >-
@@ -247,8 +247,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.beginCreateApplicationGateway(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -303,6 +301,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginCreateApplicationGateway(parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginDeleteApplicationGateway
     id: >-
@@ -318,8 +318,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.beginDeleteApplicationGateway(gatewayName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -336,6 +334,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginDeleteApplicationGateway(gatewayName, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginDeleteApplicationGatewayCertificate
     id: >-
@@ -352,8 +352,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.beginDeleteApplicationGatewayCertificate(gatewayName,
       certificateName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -376,6 +374,8 @@ items:
       content: >-
         function beginDeleteApplicationGatewayCertificate(gatewayName,
         certificateName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginExecuteOperation
     id: >-
@@ -391,8 +391,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.beginExecuteOperation(gatewayName,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -420,6 +418,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginExecuteOperation(gatewayName, parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginSetConfig
     id: >-
@@ -435,8 +435,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.beginSetConfig(gatewayName,
       config, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -512,6 +510,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginSetConfig(gatewayName, config, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#beginUpdateApplicationGateway
     id: >-
@@ -527,8 +527,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.beginUpdateApplicationGateway(gatewayName,
       updateParameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -586,6 +584,8 @@ items:
       content: >-
         function beginUpdateApplicationGateway(gatewayName, updateParameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#create
     id: >-
@@ -601,8 +601,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.create(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -657,6 +655,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function create(parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#deleteMethod
     id: >-
@@ -672,8 +672,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.deleteMethod(gatewayName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -690,6 +688,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function deleteMethod(gatewayName, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#deleteCertificate
     id: >-
@@ -704,8 +704,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.deleteCertificate(gatewayName,
       certificateName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -726,6 +724,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function deleteCertificate(gatewayName, certificateName, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#executeOperation
     id: >-
@@ -741,8 +741,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.executeOperation(gatewayName,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -770,6 +768,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function executeOperation(gatewayName, parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#get
     id: >-
@@ -785,8 +785,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.get(gatewayName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -803,6 +801,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function get(gatewayName, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#getCertificate
     id: >-
@@ -818,8 +818,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.getCertificate(gatewayName,
       certificateName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -840,6 +838,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getCertificate(gatewayName, certificateName, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#getConfig
     id: >-
@@ -855,8 +855,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.getConfig(gatewayName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -873,6 +871,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getConfig(gatewayName, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#getOperationStatus
     id: >-
@@ -890,8 +890,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.getOperationStatus(requestId,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -914,6 +912,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getOperationStatus(requestId, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#list
     id: >-
@@ -928,8 +928,6 @@ items:
       more information)
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.list(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -942,6 +940,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: function list(callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#listCertificate
     id: >-
@@ -956,8 +956,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.listCertificate(gatewayName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -974,6 +972,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function listCertificate(gatewayName, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#setConfig
     id: >-
@@ -989,8 +989,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.setConfig(gatewayName,
       config, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1062,6 +1060,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function setConfig(gatewayName, config, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations#update
     id: >-
@@ -1077,8 +1077,6 @@ items:
     fullName: >-
       azure-asm-network.ApplicationGatewayOperations~ApplicationGatewayOperations.update(gatewayName,
       updateParameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1134,3 +1132,5 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function update(gatewayName, updateParameters, callback)'
+    langs:
+      - js

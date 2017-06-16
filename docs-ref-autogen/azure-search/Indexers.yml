@@ -17,8 +17,6 @@ items:
         branch: master
         path: lib\services\search\lib\service\operations\indexers.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-search.Indexers.#ctor'
@@ -38,6 +36,8 @@ items:
       - 'azure-search.Indexers#create'
       - 'azure-search.Indexers#getStatusWithHttpOperationResponse'
       - 'azure-search.Indexers#getStatus'
+    langs:
+      - js
   - id: 'azure-search.Indexers.#ctor'
     uid: 'azure-search.Indexers.#ctor'
     parent: azure-search.Indexers
@@ -60,8 +60,15 @@ items:
     name: 'resetWithHttpOperationResponse(indexerName, options)'
     summary: Resets the change tracking state associated with an Azure Search indexer.
     fullName: 'azure-search.Indexers.resetWithHttpOperationResponse(indexerName, options)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -100,14 +107,45 @@ items:
           - Promise
         description: A promise is returned
       content: 'function resetWithHttpOperationResponse(indexerName, options)'
+    langs:
+      - js
   - uid: 'azure-search.Indexers#reset'
     id: 'azure-search.Indexers#reset'
     parent: azure-search.Indexers
     name: 'reset(indexerName, options, optionalCallback)'
     summary: Resets the change tracking state associated with an Azure Search indexer.
     fullName: 'azure-search.Indexers.reset(indexerName, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -156,14 +194,23 @@ items:
 
           {Promise} A promise is returned
       content: 'function reset(indexerName, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-search.Indexers#runWithHttpOperationResponse'
     id: 'azure-search.Indexers#runWithHttpOperationResponse'
     parent: azure-search.Indexers
     name: 'runWithHttpOperationResponse(indexerName, options)'
     summary: Runs an Azure Search indexer on-demand.
     fullName: 'azure-search.Indexers.runWithHttpOperationResponse(indexerName, options)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -202,14 +249,45 @@ items:
           - Promise
         description: A promise is returned
       content: 'function runWithHttpOperationResponse(indexerName, options)'
+    langs:
+      - js
   - uid: 'azure-search.Indexers#run'
     id: 'azure-search.Indexers#run'
     parent: azure-search.Indexers
     name: 'run(indexerName, options, optionalCallback)'
     summary: Runs an Azure Search indexer on-demand.
     fullName: 'azure-search.Indexers.run(indexerName, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -258,6 +336,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function run(indexerName, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-search.Indexers#createOrUpdateWithHttpOperationResponse'
     id: 'azure-search.Indexers#createOrUpdateWithHttpOperationResponse'
     parent: azure-search.Indexers
@@ -268,8 +348,15 @@ items:
     fullName: >-
       azure-search.Indexers.createOrUpdateWithHttpOperationResponse(indexerName,
       indexer, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<Indexer>} - The deserialized result object.'
+        value: '{HttpOperationResponse<Indexer>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -464,6 +551,8 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(indexerName, indexer,
         options)
+    langs:
+      - js
   - uid: 'azure-search.Indexers#createOrUpdate'
     id: 'azure-search.Indexers#createOrUpdate'
     parent: azure-search.Indexers
@@ -474,8 +563,39 @@ items:
     fullName: >-
       azure-search.Indexers.createOrUpdate(indexerName, indexer, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{Indexer} - The deserialized result object.'
+        value: '{Indexer} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Indexer} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Indexer} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -678,6 +798,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function createOrUpdate(indexerName, indexer, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-search.Indexers#deleteMethodWithHttpOperationResponse'
     id: 'azure-search.Indexers#deleteMethodWithHttpOperationResponse'
     parent: azure-search.Indexers
@@ -686,8 +808,15 @@ items:
     fullName: >-
       azure-search.Indexers.deleteMethodWithHttpOperationResponse(indexerName,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -755,14 +884,45 @@ items:
           - Promise
         description: A promise is returned
       content: 'function deleteMethodWithHttpOperationResponse(indexerName, options)'
+    langs:
+      - js
   - uid: 'azure-search.Indexers#deleteMethod'
     id: 'azure-search.Indexers#deleteMethod'
     parent: azure-search.Indexers
     name: 'deleteMethod(indexerName, options, optionalCallback)'
     summary: Deletes an Azure Search indexer.
     fullName: 'azure-search.Indexers.deleteMethod(indexerName, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -840,14 +1000,23 @@ items:
 
           {Promise} A promise is returned
       content: 'function deleteMethod(indexerName, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-search.Indexers#getWithHttpOperationResponse'
     id: 'azure-search.Indexers#getWithHttpOperationResponse'
     parent: azure-search.Indexers
     name: 'getWithHttpOperationResponse(indexerName, options)'
     summary: Retrieves an indexer definition from Azure Search.
     fullName: 'azure-search.Indexers.getWithHttpOperationResponse(indexerName, options)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<Indexer>} - The deserialized result object.'
+        value: '{HttpOperationResponse<Indexer>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -886,14 +1055,47 @@ items:
           - Promise
         description: A promise is returned
       content: 'function getWithHttpOperationResponse(indexerName, options)'
+    langs:
+      - js
   - uid: 'azure-search.Indexers#get'
     id: 'azure-search.Indexers#get'
     parent: azure-search.Indexers
     name: 'get(indexerName, options, optionalCallback)'
     summary: Retrieves an indexer definition from Azure Search.
     fullName: 'azure-search.Indexers.get(indexerName, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{Indexer} - The deserialized result object.'
+        value: '{Indexer} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Indexer} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Indexer} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -942,14 +1144,27 @@ items:
 
           {Promise} A promise is returned
       content: 'function get(indexerName, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-search.Indexers#listWithHttpOperationResponse'
     id: 'azure-search.Indexers#listWithHttpOperationResponse'
     parent: azure-search.Indexers
     name: listWithHttpOperationResponse(options)
     summary: Lists all indexers available for an Azure Search service.
     fullName: azure-search.Indexers.listWithHttpOperationResponse(options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<IndexerListResult>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<IndexerListResult>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -984,14 +1199,47 @@ items:
           - Promise
         description: A promise is returned
       content: function listWithHttpOperationResponse(options)
+    langs:
+      - js
   - uid: 'azure-search.Indexers#list'
     id: 'azure-search.Indexers#list'
     parent: azure-search.Indexers
     name: 'list(options, optionalCallback)'
     summary: Lists all indexers available for an Azure Search service.
     fullName: 'azure-search.Indexers.list(options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{IndexerListResult} - The deserialized result object.'
+        value: '{IndexerListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link IndexerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link IndexerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1036,14 +1284,23 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-search.Indexers#createWithHttpOperationResponse'
     id: 'azure-search.Indexers#createWithHttpOperationResponse'
     parent: azure-search.Indexers
     name: 'createWithHttpOperationResponse(indexer, options)'
     summary: Creates a new Azure Search indexer.
     fullName: 'azure-search.Indexers.createWithHttpOperationResponse(indexer, options)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<Indexer>} - The deserialized result object.'
+        value: '{HttpOperationResponse<Indexer>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -1203,14 +1460,47 @@ items:
           - Promise
         description: A promise is returned
       content: 'function createWithHttpOperationResponse(indexer, options)'
+    langs:
+      - js
   - uid: 'azure-search.Indexers#create'
     id: 'azure-search.Indexers#create'
     parent: azure-search.Indexers
     name: 'create(indexer, options, optionalCallback)'
     summary: Creates a new Azure Search indexer.
     fullName: 'azure-search.Indexers.create(indexer, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{Indexer} - The deserialized result object.'
+        value: '{Indexer} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Indexer} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Indexer} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1380,6 +1670,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function create(indexer, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-search.Indexers#getStatusWithHttpOperationResponse'
     id: 'azure-search.Indexers#getStatusWithHttpOperationResponse'
     parent: azure-search.Indexers
@@ -1388,8 +1680,19 @@ items:
     fullName: >-
       azure-search.Indexers.getStatusWithHttpOperationResponse(indexerName,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<IndexerExecutionInfo>} - The deserialized
+          result object.
+        value: >-
+          {HttpOperationResponse<IndexerExecutionInfo>} - The deserialized
+          result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -1430,14 +1733,47 @@ items:
           - Promise
         description: A promise is returned
       content: 'function getStatusWithHttpOperationResponse(indexerName, options)'
+    langs:
+      - js
   - uid: 'azure-search.Indexers#getStatus'
     id: 'azure-search.Indexers#getStatus'
     parent: azure-search.Indexers
     name: 'getStatus(indexerName, options, optionalCallback)'
     summary: Returns the current status and execution history of an indexer.
     fullName: 'azure-search.Indexers.getStatus(indexerName, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{IndexerExecutionInfo} - The deserialized result object.'
+        value: '{IndexerExecutionInfo} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link IndexerExecutionInfo} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link IndexerExecutionInfo} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1488,6 +1824,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function getStatus(indexerName, options, optionalCallback)'
+    langs:
+      - js
 references:
   - uid: azure-search.SearchServiceClient
     name: SearchServiceClient

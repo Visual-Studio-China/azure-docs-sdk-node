@@ -22,11 +22,11 @@ items:
     name: AlertsClient
     summary: Generated AlertsClient client exports.
     fullName: azure-monitoring.AlertsClient
-    langs:
-      - js
     type: Member
     syntax:
       content: AlertsClient
+    langs:
+      - js
   - uid: azure-monitoring._global.createAlertsClient
     id: azure-monitoring._global.createAlertsClient
     name: 'createAlertsClient(baseUri, filters)'
@@ -35,8 +35,6 @@ items:
 
       NOTE: These APIs are still in development and should not be used.
     fullName: 'azure-monitoring.createAlertsClient(baseUri, filters)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -70,16 +68,18 @@ items:
           - azure-monitoring.AlertsClient
         description: A new AlertsClient object.
       content: 'function createAlertsClient(baseUri, filters)'
+    langs:
+      - js
   - uid: azure-monitoring._global.AutoScaleClient
     id: azure-monitoring._global.AutoScaleClient
     name: AutoScaleClient
     summary: Generated AutoScaleClient client exports.
     fullName: azure-monitoring.AutoScaleClient
-    langs:
-      - js
     type: Member
     syntax:
       content: AutoScaleClient
+    langs:
+      - js
   - uid: azure-monitoring._global.createAutoScaleClient
     id: azure-monitoring._global.createAutoScaleClient
     name: 'createAutoScaleClient(baseUri, filters)'
@@ -88,8 +88,6 @@ items:
 
       NOTE: These APIs are still in development and should not be used.
     fullName: 'azure-monitoring.createAutoScaleClient(baseUri, filters)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -123,16 +121,18 @@ items:
           - azure-monitoring.AutoScaleClient
         description: A new AutoScaleClient object.
       content: 'function createAutoScaleClient(baseUri, filters)'
+    langs:
+      - js
   - uid: azure-monitoring._global.MetricsClient
     id: azure-monitoring._global.MetricsClient
     name: MetricsClient
     summary: Generated MetricsClient client exports.
     fullName: azure-monitoring.MetricsClient
-    langs:
-      - js
     type: Member
     syntax:
       content: MetricsClient
+    langs:
+      - js
   - uid: azure-monitoring._global.createMetricsClient
     id: azure-monitoring._global.createMetricsClient
     name: 'createMetricsClient(baseUri, filters)'
@@ -141,8 +141,6 @@ items:
 
       NOTE: These APIs are still in development and should not be used.
     fullName: 'azure-monitoring.createMetricsClient(baseUri, filters)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -176,23 +174,23 @@ items:
           - azure-monitoring.MetricsClient
         description: A new MetricsClient object.
       content: 'function createMetricsClient(baseUri, filters)'
+    langs:
+      - js
   - uid: azure-monitoring._global.EventsClient
     id: azure-monitoring._global.EventsClient
     name: EventsClient
     summary: Generated EventsClient client exports.
     fullName: azure-monitoring.EventsClient
-    langs:
-      - js
     type: Member
     syntax:
       content: EventsClient
+    langs:
+      - js
   - uid: azure-monitoring._global.createEventsClient
     id: azure-monitoring._global.createEventsClient
     name: 'createEventsClient(credentials, baseUri, filters)'
     summary: 'Creates a new <xref:azure-monitoring.EventsClient> object.'
     fullName: 'azure-monitoring.createEventsClient(credentials, baseUri, filters)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -215,6 +213,8 @@ items:
           - azure-monitoring.EventsClient
         description: A new EventsClient object.
       content: 'function createEventsClient(credentials, baseUri, filters)'
+    langs:
+      - js
   - uid: azure-monitoring._global.createCertificateCloudCredentials
     id: azure-monitoring._global.createCertificateCloudCredentials
     name: createCertificateCloudCredentials()
@@ -222,8 +222,6 @@ items:
       Creates a new CertificateCloudCredentials object.
       Either a pair of cert / key values need to be pass or a pem file location.
     fullName: azure-monitoring.createCertificateCloudCredentials()
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -251,3 +249,5 @@ items:
           - azure-monitoring.CertificateCloudCredentials
         description: ''
       content: function createCertificateCloudCredentials()
+    langs:
+      - js

@@ -24,8 +24,6 @@ items:
         branch: master
         path: lib\services\monitoring\lib\eventsClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-monitoring.EventDataOperations~EventDataOperations.#ctor'
@@ -40,6 +38,8 @@ items:
         azure-monitoring.EventDataOperations~EventDataOperations#listEventsForResourceGroup
       - >-
         azure-monitoring.EventDataOperations~EventDataOperations#listEventsForResourceProvider
+    langs:
+      - js
   - id: 'azure-monitoring.EventDataOperations~EventDataOperations.#ctor'
     uid: 'azure-monitoring.EventDataOperations~EventDataOperations.#ctor'
     parent: azure-monitoring.EventDataOperations~EventDataOperations
@@ -64,8 +64,6 @@ items:
     fullName: >-
       azure-monitoring.EventDataOperations~EventDataOperations.listEvents(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -101,6 +99,8 @@ items:
           - azure-monitoring.Stream
         description: The response stream.
       content: 'function listEvents(parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-monitoring.EventDataOperations~EventDataOperations#listEventsForCorrelationId
     id: >-
@@ -111,8 +111,6 @@ items:
     fullName: >-
       azure-monitoring.EventDataOperations~EventDataOperations.listEventsForCorrelationId(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -152,6 +150,8 @@ items:
           - azure-monitoring.Stream
         description: The response stream.
       content: 'function listEventsForCorrelationId(parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-monitoring.EventDataOperations~EventDataOperations#listEventsForEventSource
     id: >-
@@ -162,8 +162,6 @@ items:
     fullName: >-
       azure-monitoring.EventDataOperations~EventDataOperations.listEventsForEventSource(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -203,6 +201,8 @@ items:
           - azure-monitoring.Stream
         description: The response stream.
       content: 'function listEventsForEventSource(parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-monitoring.EventDataOperations~EventDataOperations#listEventsForResource
     id: >-
@@ -213,8 +213,6 @@ items:
     fullName: >-
       azure-monitoring.EventDataOperations~EventDataOperations.listEventsForResource(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -254,6 +252,8 @@ items:
           - azure-monitoring.Stream
         description: The response stream.
       content: 'function listEventsForResource(parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-monitoring.EventDataOperations~EventDataOperations#listEventsForResourceGroup
     id: >-
@@ -264,8 +264,6 @@ items:
     fullName: >-
       azure-monitoring.EventDataOperations~EventDataOperations.listEventsForResourceGroup(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -305,6 +303,8 @@ items:
           - azure-monitoring.Stream
         description: The response stream.
       content: 'function listEventsForResourceGroup(parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-monitoring.EventDataOperations~EventDataOperations#listEventsForResourceProvider
     id: >-
@@ -315,8 +315,6 @@ items:
     fullName: >-
       azure-monitoring.EventDataOperations~EventDataOperations.listEventsForResourceProvider(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -356,3 +354,5 @@ items:
           - azure-monitoring.Stream
         description: The response stream.
       content: 'function listEventsForResourceProvider(parameters, callback)'
+    langs:
+      - js

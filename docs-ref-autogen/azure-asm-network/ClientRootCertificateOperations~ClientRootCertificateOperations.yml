@@ -26,8 +26,6 @@ items:
         branch: master
         path: lib\services\networkManagement\lib\networkManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - >-
@@ -40,6 +38,8 @@ items:
         azure-asm-network.ClientRootCertificateOperations~ClientRootCertificateOperations#get
       - >-
         azure-asm-network.ClientRootCertificateOperations~ClientRootCertificateOperations#list
+    langs:
+      - js
   - id: >-
       azure-asm-network.ClientRootCertificateOperations~ClientRootCertificateOperations.#ctor
     uid: >-
@@ -75,8 +75,6 @@ items:
     fullName: >-
       azure-asm-network.ClientRootCertificateOperations~ClientRootCertificateOperations.create(networkName,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -111,6 +109,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function create(networkName, parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ClientRootCertificateOperations~ClientRootCertificateOperations#deleteMethod
     id: >-
@@ -126,8 +126,6 @@ items:
     fullName: >-
       azure-asm-network.ClientRootCertificateOperations~ClientRootCertificateOperations.deleteMethod(networkName,
       certificateThumbprint, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -150,6 +148,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function deleteMethod(networkName, certificateThumbprint, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ClientRootCertificateOperations~ClientRootCertificateOperations#get
     id: >-
@@ -166,8 +166,6 @@ items:
     fullName: >-
       azure-asm-network.ClientRootCertificateOperations~ClientRootCertificateOperations.get(networkName,
       certificateThumbprint, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -190,6 +188,8 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function get(networkName, certificateThumbprint, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-network.ClientRootCertificateOperations~ClientRootCertificateOperations#list
     id: >-
@@ -206,8 +206,6 @@ items:
     fullName: >-
       azure-asm-network.ClientRootCertificateOperations~ClientRootCertificateOperations.list(networkName,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -226,3 +224,5 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function list(networkName, callback)'
+    langs:
+      - js

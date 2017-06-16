@@ -17,8 +17,6 @@ items:
         branch: master
         path: lib\services\batch\lib\operations\jobSchedule.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-batch.JobSchedule.#ctor'
@@ -44,6 +42,8 @@ items:
       - 'azure-batch.JobSchedule#list'
       - 'azure-batch.JobSchedule#listNextWithHttpOperationResponse'
       - 'azure-batch.JobSchedule#listNext'
+    langs:
+      - js
   - id: 'azure-batch.JobSchedule.#ctor'
     uid: 'azure-batch.JobSchedule.#ctor'
     parent: azure-batch.JobSchedule
@@ -68,8 +68,15 @@ items:
     fullName: >-
       azure-batch.JobSchedule.existsWithHttpOperationResponse(jobScheduleId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<Boolean>} - The deserialized result object.'
+        value: '{HttpOperationResponse<Boolean>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -199,14 +206,45 @@ items:
           - Promise
         description: A promise is returned
       content: 'function existsWithHttpOperationResponse(jobScheduleId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#exists'
     id: 'azure-batch.JobSchedule#exists'
     parent: azure-batch.JobSchedule
     name: 'exists(jobScheduleId, options, optionalCallback)'
     summary: Checks the specified job schedule exists.
     fullName: 'azure-batch.JobSchedule.exists(jobScheduleId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{Boolean} - The deserialized result object.'
+        value: '{Boolean} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {boolean} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {boolean} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -346,6 +384,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function exists(jobScheduleId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#deleteMethodWithHttpOperationResponse'
     id: 'azure-batch.JobSchedule#deleteMethodWithHttpOperationResponse'
     parent: azure-batch.JobSchedule
@@ -370,8 +410,15 @@ items:
     fullName: >-
       azure-batch.JobSchedule.deleteMethodWithHttpOperationResponse(jobScheduleId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -501,6 +548,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function deleteMethodWithHttpOperationResponse(jobScheduleId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#deleteMethod'
     id: 'azure-batch.JobSchedule#deleteMethod'
     parent: azure-batch.JobSchedule
@@ -525,8 +574,37 @@ items:
     fullName: >-
       azure-batch.JobSchedule.deleteMethod(jobScheduleId, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -666,6 +744,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function deleteMethod(jobScheduleId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#getWithHttpOperationResponse'
     id: 'azure-batch.JobSchedule#getWithHttpOperationResponse'
     parent: azure-batch.JobSchedule
@@ -674,8 +754,19 @@ items:
     fullName: >-
       azure-batch.JobSchedule.getWithHttpOperationResponse(jobScheduleId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<CloudJobSchedule>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<CloudJobSchedule>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -815,14 +906,47 @@ items:
           - Promise
         description: A promise is returned
       content: 'function getWithHttpOperationResponse(jobScheduleId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#get'
     id: 'azure-batch.JobSchedule#get'
     parent: azure-batch.JobSchedule
     name: 'get(jobScheduleId, options, optionalCallback)'
     summary: Gets information about the specified job schedule.
     fullName: 'azure-batch.JobSchedule.get(jobScheduleId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{CloudJobSchedule} - The deserialized result object.'
+        value: '{CloudJobSchedule} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudJobSchedule} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudJobSchedule} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -972,6 +1096,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function get(jobScheduleId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#patchWithHttpOperationResponse'
     id: 'azure-batch.JobSchedule#patchWithHttpOperationResponse'
     parent: azure-batch.JobSchedule
@@ -996,8 +1122,15 @@ items:
     fullName: >-
       azure-batch.JobSchedule.patchWithHttpOperationResponse(jobScheduleId,
       jobSchedulePatchParameter, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -3017,6 +3150,8 @@ items:
       content: >-
         function patchWithHttpOperationResponse(jobScheduleId,
         jobSchedulePatchParameter, options)
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#patch'
     id: 'azure-batch.JobSchedule#patch'
     parent: azure-batch.JobSchedule
@@ -3039,8 +3174,37 @@ items:
     fullName: >-
       azure-batch.JobSchedule.patch(jobScheduleId, jobSchedulePatchParameter,
       options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -5070,6 +5234,8 @@ items:
       content: >-
         function patch(jobScheduleId, jobSchedulePatchParameter, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#updateWithHttpOperationResponse'
     id: 'azure-batch.JobSchedule#updateWithHttpOperationResponse'
     parent: azure-batch.JobSchedule
@@ -5093,8 +5259,15 @@ items:
     fullName: >-
       azure-batch.JobSchedule.updateWithHttpOperationResponse(jobScheduleId,
       jobScheduleUpdateParameter, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -7122,6 +7295,8 @@ items:
       content: >-
         function updateWithHttpOperationResponse(jobScheduleId,
         jobScheduleUpdateParameter, options)
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#update'
     id: 'azure-batch.JobSchedule#update'
     parent: azure-batch.JobSchedule
@@ -7145,8 +7320,37 @@ items:
     fullName: >-
       azure-batch.JobSchedule.update(jobScheduleId, jobScheduleUpdateParameter,
       options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -9184,6 +9388,8 @@ items:
       content: >-
         function update(jobScheduleId, jobScheduleUpdateParameter, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#disableWithHttpOperationResponse'
     id: 'azure-batch.JobSchedule#disableWithHttpOperationResponse'
     parent: azure-batch.JobSchedule
@@ -9195,8 +9401,15 @@ items:
     fullName: >-
       azure-batch.JobSchedule.disableWithHttpOperationResponse(jobScheduleId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -9325,6 +9538,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function disableWithHttpOperationResponse(jobScheduleId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#disable'
     id: 'azure-batch.JobSchedule#disable'
     parent: azure-batch.JobSchedule
@@ -9334,8 +9549,37 @@ items:
 
       No new jobs will be created until the job schedule is enabled again.
     fullName: 'azure-batch.JobSchedule.disable(jobScheduleId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -9474,6 +9718,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function disable(jobScheduleId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#enableWithHttpOperationResponse'
     id: 'azure-batch.JobSchedule#enableWithHttpOperationResponse'
     parent: azure-batch.JobSchedule
@@ -9482,8 +9728,15 @@ items:
     fullName: >-
       azure-batch.JobSchedule.enableWithHttpOperationResponse(jobScheduleId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -9611,14 +9864,45 @@ items:
           - Promise
         description: A promise is returned
       content: 'function enableWithHttpOperationResponse(jobScheduleId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#enable'
     id: 'azure-batch.JobSchedule#enable'
     parent: azure-batch.JobSchedule
     name: 'enable(jobScheduleId, options, optionalCallback)'
     summary: Enables a job schedule.
     fullName: 'azure-batch.JobSchedule.enable(jobScheduleId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -9756,6 +10040,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function enable(jobScheduleId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#terminateWithHttpOperationResponse'
     id: 'azure-batch.JobSchedule#terminateWithHttpOperationResponse'
     parent: azure-batch.JobSchedule
@@ -9764,8 +10050,15 @@ items:
     fullName: >-
       azure-batch.JobSchedule.terminateWithHttpOperationResponse(jobScheduleId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -9894,6 +10187,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function terminateWithHttpOperationResponse(jobScheduleId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#terminate'
     id: 'azure-batch.JobSchedule#terminate'
     parent: azure-batch.JobSchedule
@@ -9902,8 +10197,37 @@ items:
     fullName: >-
       azure-batch.JobSchedule.terminate(jobScheduleId, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -10042,6 +10366,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function terminate(jobScheduleId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#addWithHttpOperationResponse'
     id: 'azure-batch.JobSchedule#addWithHttpOperationResponse'
     parent: azure-batch.JobSchedule
@@ -10050,8 +10376,15 @@ items:
     fullName: >-
       azure-batch.JobSchedule.addWithHttpOperationResponse(cloudJobSchedule,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -12027,14 +12360,45 @@ items:
           - Promise
         description: A promise is returned
       content: 'function addWithHttpOperationResponse(cloudJobSchedule, options)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#add'
     id: 'azure-batch.JobSchedule#add'
     parent: azure-batch.JobSchedule
     name: 'add(cloudJobSchedule, options, optionalCallback)'
     summary: Adds a job schedule to the specified account.
     fullName: 'azure-batch.JobSchedule.add(cloudJobSchedule, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -14020,14 +14384,27 @@ items:
 
           {Promise} A promise is returned
       content: 'function add(cloudJobSchedule, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#listWithHttpOperationResponse'
     id: 'azure-batch.JobSchedule#listWithHttpOperationResponse'
     parent: azure-batch.JobSchedule
     name: listWithHttpOperationResponse(options)
     summary: Lists all of the job schedules in the specified account.
     fullName: azure-batch.JobSchedule.listWithHttpOperationResponse(options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<CloudJobScheduleListResult>} - The deserialized
+          result object.
+        value: >-
+          {HttpOperationResponse<CloudJobScheduleListResult>} - The deserialized
+          result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -14127,14 +14504,49 @@ items:
           - Promise
         description: A promise is returned
       content: function listWithHttpOperationResponse(options)
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#list'
     id: 'azure-batch.JobSchedule#list'
     parent: azure-batch.JobSchedule
     name: 'list(options, optionalCallback)'
     summary: Lists all of the job schedules in the specified account.
     fullName: 'azure-batch.JobSchedule.list(options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{CloudJobScheduleListResult} - The deserialized result object.'
+        value: '{CloudJobScheduleListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudJobScheduleListResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudJobScheduleListResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -14244,6 +14656,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#listNextWithHttpOperationResponse'
     id: 'azure-batch.JobSchedule#listNextWithHttpOperationResponse'
     parent: azure-batch.JobSchedule
@@ -14252,8 +14666,19 @@ items:
     fullName: >-
       azure-batch.JobSchedule.listNextWithHttpOperationResponse(nextPageLink,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<CloudJobScheduleListResult>} - The deserialized
+          result object.
+        value: >-
+          {HttpOperationResponse<CloudJobScheduleListResult>} - The deserialized
+          result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -14318,14 +14743,49 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listNextWithHttpOperationResponse(nextPageLink, options)'
+    langs:
+      - js
   - uid: 'azure-batch.JobSchedule#listNext'
     id: 'azure-batch.JobSchedule#listNext'
     parent: azure-batch.JobSchedule
     name: 'listNext(nextPageLink, options, optionalCallback)'
     summary: Lists all of the job schedules in the specified account.
     fullName: 'azure-batch.JobSchedule.listNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{CloudJobScheduleListResult} - The deserialized result object.'
+        value: '{CloudJobScheduleListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudJobScheduleListResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CloudJobScheduleListResult} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -14400,6 +14860,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function listNext(nextPageLink, options, optionalCallback)'
+    langs:
+      - js
 references:
   - uid: azure-batch.BatchServiceClient
     name: BatchServiceClient

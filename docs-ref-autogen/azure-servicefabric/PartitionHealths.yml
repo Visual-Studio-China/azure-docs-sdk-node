@@ -17,8 +17,6 @@ items:
         branch: master
         path: lib\services\serviceFabric\lib\operations\partitionHealths.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-servicefabric.PartitionHealths.#ctor'
@@ -26,6 +24,8 @@ items:
       - 'azure-servicefabric.PartitionHealths#get'
       - 'azure-servicefabric.PartitionHealths#sendWithHttpOperationResponse'
       - 'azure-servicefabric.PartitionHealths#send'
+    langs:
+      - js
   - id: 'azure-servicefabric.PartitionHealths.#ctor'
     uid: 'azure-servicefabric.PartitionHealths.#ctor'
     parent: azure-servicefabric.PartitionHealths
@@ -50,8 +50,19 @@ items:
     fullName: >-
       azure-servicefabric.PartitionHealths.getWithHttpOperationResponse(partitionId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<PartitionHealth>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<PartitionHealth>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -90,6 +101,8 @@ items:
           - Promise
         description: A promise is returned
       content: 'function getWithHttpOperationResponse(partitionId, options)'
+    langs:
+      - js
   - uid: 'azure-servicefabric.PartitionHealths#get'
     id: 'azure-servicefabric.PartitionHealths#get'
     parent: azure-servicefabric.PartitionHealths
@@ -98,8 +111,39 @@ items:
     fullName: >-
       azure-servicefabric.PartitionHealths.get(partitionId, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{PartitionHealth} - The deserialized result object.'
+        value: '{PartitionHealth} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PartitionHealth} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PartitionHealth} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -148,6 +192,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function get(partitionId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-servicefabric.PartitionHealths#sendWithHttpOperationResponse'
     id: 'azure-servicefabric.PartitionHealths#sendWithHttpOperationResponse'
     parent: azure-servicefabric.PartitionHealths
@@ -156,8 +202,15 @@ items:
     fullName: >-
       azure-servicefabric.PartitionHealths.sendWithHttpOperationResponse(partitionId,
       partitionHealthReport, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<String>} - The deserialized result object.'
+        value: '{HttpOperationResponse<String>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -225,6 +278,8 @@ items:
       content: >-
         function sendWithHttpOperationResponse(partitionId,
         partitionHealthReport, options)
+    langs:
+      - js
   - uid: 'azure-servicefabric.PartitionHealths#send'
     id: 'azure-servicefabric.PartitionHealths#send'
     parent: azure-servicefabric.PartitionHealths
@@ -233,8 +288,37 @@ items:
     fullName: >-
       azure-servicefabric.PartitionHealths.send(partitionId,
       partitionHealthReport, options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{String} - The deserialized result object.'
+        value: '{String} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {string} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {string} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -312,6 +396,8 @@ items:
       content: >-
         function send(partitionId, partitionHealthReport, options,
         optionalCallback)
+    langs:
+      - js
 references:
   - uid: azure-servicefabric.ServiceFabricClient
     name: ServiceFabricClient

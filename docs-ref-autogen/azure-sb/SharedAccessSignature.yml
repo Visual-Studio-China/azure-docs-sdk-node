@@ -13,12 +13,12 @@ items:
         branch: master
         path: lib\services\serviceBus\lib\internal\sharedaccesssignature.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-sb.SharedAccessSignature.#ctor'
       - 'azure-sb.SharedAccessSignature#signRequest'
+    langs:
+      - js
   - id: 'azure-sb.SharedAccessSignature.#ctor'
     uid: 'azure-sb.SharedAccessSignature.#ctor'
     parent: azure-sb.SharedAccessSignature
@@ -45,8 +45,6 @@ items:
     name: 'signRequest(The, callback)'
     summary: Signs a request with the signature header.
     fullName: 'azure-sb.SharedAccessSignature.signRequest(The, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -63,3 +61,5 @@ items:
           - undefined
         description: ''
       content: 'function signRequest(The, callback)'
+    langs:
+      - js

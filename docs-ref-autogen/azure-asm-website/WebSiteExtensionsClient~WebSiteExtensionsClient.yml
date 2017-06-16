@@ -16,8 +16,6 @@ items:
         branch: master
         path: lib\services\webSiteManagement\lib\webSiteExtensionsClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient.#ctor'
@@ -35,6 +33,8 @@ items:
         azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient#settings
       - >-
         azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient#triggeredWebJobs
+    langs:
+      - js
   - id: 'azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient.#ctor'
     uid: 'azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient.#ctor'
     parent: azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient
@@ -91,14 +91,14 @@ items:
       Provides an instance of the
       [CommandsOperations](-CommandsOperations.html) object.
     fullName: azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient.commands
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: commands
+    langs:
+      - js
   - uid: >-
       azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient#continuousWebJobs
     id: >-
@@ -110,14 +110,14 @@ items:
       [ContinuousWebJobOperations](-ContinuousWebJobOperations.html) object.
     fullName: >-
       azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient.continuousWebJobs
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: continuousWebJobs
+    langs:
+      - js
   - uid: >-
       azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient#deployments
     id: >-
@@ -129,14 +129,14 @@ items:
       [DeploymentOperations](-DeploymentOperations.html) object.
     fullName: >-
       azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient.deployments
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: deployments
+    langs:
+      - js
   - uid: >-
       azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient#diagnostics
     id: >-
@@ -148,14 +148,14 @@ items:
       [DiagnosticOperations](-DiagnosticOperations.html) object.
     fullName: >-
       azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient.diagnostics
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: diagnostics
+    langs:
+      - js
   - uid: >-
       azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient#repository
     id: >-
@@ -167,14 +167,14 @@ items:
       [RepositoryOperations](-RepositoryOperations.html) object.
     fullName: >-
       azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient.repository
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: repository
+    langs:
+      - js
   - uid: 'azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient#settings'
     id: 'azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient#settings'
     parent: azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient
@@ -183,14 +183,14 @@ items:
       Provides an instance of the
       [SettingsOperations](-SettingsOperations.html) object.
     fullName: azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient.settings
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: settings
+    langs:
+      - js
   - uid: >-
       azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient#triggeredWebJobs
     id: >-
@@ -202,14 +202,14 @@ items:
       [TriggeredWebJobOperations](-TriggeredWebJobOperations.html) object.
     fullName: >-
       azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient.triggeredWebJobs
-    langs:
-      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: triggeredWebJobs
+    langs:
+      - js
 references:
   - uid: azure-asm-website.BasicAuthenticationCloudCredentials
     name: BasicAuthenticationCloudCredentials

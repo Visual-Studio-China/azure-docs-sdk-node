@@ -19,8 +19,6 @@ items:
     fullName: >-
       azure-asm-sql.createSqlManagementService(subscriptionId, authentication,
       hostOptions)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -78,16 +76,18 @@ items:
       content: >-
         function createSqlManagementService(subscriptionId, authentication,
         hostOptions)
+    langs:
+      - js
   - uid: azure-asm-sql._global.SqlManagementClient
     id: azure-asm-sql._global.SqlManagementClient
     name: SqlManagementClient
     summary: Generated SqlManagementClient client exports.
     fullName: azure-asm-sql.SqlManagementClient
-    langs:
-      - js
     type: Member
     syntax:
       content: SqlManagementClient
+    langs:
+      - js
   - uid: azure-asm-sql._global.createSqlManagementClient
     id: azure-asm-sql._global.createSqlManagementClient
     name: 'createSqlManagementClient(baseUri, filters)'
@@ -96,8 +96,6 @@ items:
 
       NOTE: These APIs are still in development and should not be used.
     fullName: 'azure-asm-sql.createSqlManagementClient(baseUri, filters)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -131,6 +129,8 @@ items:
           - azure-asm-sql.SqlManagementClient
         description: A new SqlManagementClient object.
       content: 'function createSqlManagementClient(baseUri, filters)'
+    langs:
+      - js
   - uid: azure-asm-sql._global.createCertificateCloudCredentials
     id: azure-asm-sql._global.createCertificateCloudCredentials
     name: createCertificateCloudCredentials()
@@ -138,8 +138,6 @@ items:
       Creates a new CertificateCloudCredentials object.
       Either a pair of cert / key values need to be pass or a pem file location.
     fullName: azure-asm-sql.createCertificateCloudCredentials()
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -167,6 +165,8 @@ items:
           - azure-asm-sql.CertificateCloudCredentials
         description: ''
       content: function createCertificateCloudCredentials()
+    langs:
+      - js
 references:
   - uid: azure-asm-sql.SqlManagementService
     name: SqlManagementService

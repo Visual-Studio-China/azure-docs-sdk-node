@@ -23,8 +23,6 @@ items:
         branch: master
         path: lib\services\computeManagement\lib\computeManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - >-
@@ -88,6 +86,8 @@ items:
         azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#update
       - >-
         azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#updateLoadBalancedEndpointSet
+    langs:
+      - js
   - id: 'azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.#ctor'
     uid: 'azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.#ctor'
     parent: azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations
@@ -144,8 +144,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginCapturingOSImage(serviceName,
       deploymentName, virtualMachineName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -584,6 +582,8 @@ items:
       content: >-
         function beginCapturingOSImage(serviceName, deploymentName,
         virtualMachineName, parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#beginCapturingVMImage
     id: >-
@@ -596,8 +596,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginCapturingVMImage(serviceName,
       deploymentName, virtualMachineName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -666,6 +664,8 @@ items:
       content: >-
         function beginCapturingVMImage(serviceName, deploymentName,
         virtualMachineName, parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#beginCreating
     id: >-
@@ -689,8 +689,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginCreating(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1001,6 +999,8 @@ items:
       content: >-
         function beginCreating(serviceName, deploymentName, parameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#beginCreatingDeployment
     id: >-
@@ -1020,8 +1020,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginCreatingDeployment(serviceName,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1122,6 +1120,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function beginCreatingDeployment(serviceName, parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#beginDeleting
     id: >-
@@ -1137,8 +1137,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginDeleting(serviceName,
       deploymentName, virtualMachineName, deleteFromStorage, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1174,6 +1172,8 @@ items:
       content: >-
         function beginDeleting(serviceName, deploymentName, virtualMachineName,
         deleteFromStorage, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#beginInitiatingMaintenance
     id: >-
@@ -1190,8 +1190,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginInitiatingMaintenance(serviceName,
       deploymentName, virtualMachineName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1220,6 +1218,8 @@ items:
       content: >-
         function beginInitiatingMaintenance(serviceName, deploymentName,
         virtualMachineName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#beginRedeploying
     id: >-
@@ -1236,8 +1236,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginRedeploying(serviceName,
       deploymentName, virtualMachineName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1266,6 +1264,8 @@ items:
       content: >-
         function beginRedeploying(serviceName, deploymentName,
         virtualMachineName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#beginRestarting
     id: >-
@@ -1280,8 +1280,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginRestarting(serviceName,
       deploymentName, virtualMachineName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1310,6 +1308,8 @@ items:
       content: >-
         function beginRestarting(serviceName, deploymentName,
         virtualMachineName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#beginShutdown
     id: >-
@@ -1325,8 +1325,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginShutdown(serviceName,
       deploymentName, virtualMachineName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1368,6 +1366,8 @@ items:
       content: >-
         function beginShutdown(serviceName, deploymentName, virtualMachineName,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#beginShuttingDownRoles
     id: >-
@@ -1382,8 +1382,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginShuttingDownRoles(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1425,6 +1423,8 @@ items:
       content: >-
         function beginShuttingDownRoles(serviceName, deploymentName, parameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#beginStarting
     id: >-
@@ -1438,8 +1438,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginStarting(serviceName,
       deploymentName, virtualMachineName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1468,6 +1466,8 @@ items:
       content: >-
         function beginStarting(serviceName, deploymentName, virtualMachineName,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#beginStartingRoles
     id: >-
@@ -1482,8 +1482,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginStartingRoles(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1517,6 +1515,8 @@ items:
       content: >-
         function beginStartingRoles(serviceName, deploymentName, parameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#beginUpdating
     id: >-
@@ -1533,8 +1533,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginUpdating(serviceName,
       deploymentName, virtualMachineName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1761,6 +1759,8 @@ items:
       content: >-
         function beginUpdating(serviceName, deploymentName, virtualMachineName,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#beginUpdatingLoadBalancedEndpointSet
     id: >-
@@ -1779,8 +1779,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.beginUpdatingLoadBalancedEndpointSet(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1816,6 +1814,8 @@ items:
       content: >-
         function beginUpdatingLoadBalancedEndpointSet(serviceName,
         deploymentName, parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#captureOSImage
     id: >-
@@ -1855,8 +1855,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.captureOSImage(serviceName,
       deploymentName, virtualMachineName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2295,6 +2293,8 @@ items:
       content: >-
         function captureOSImage(serviceName, deploymentName, virtualMachineName,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#captureVMImage
     id: >-
@@ -2307,8 +2307,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.captureVMImage(serviceName,
       deploymentName, virtualMachineName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2377,6 +2375,8 @@ items:
       content: >-
         function captureVMImage(serviceName, deploymentName, virtualMachineName,
         parameters, callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#create'
     id: 'azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#create'
     parent: azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations
@@ -2398,8 +2398,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.create(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2708,6 +2706,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function create(serviceName, deploymentName, parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#createDeployment
     id: >-
@@ -2727,8 +2727,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.createDeployment(serviceName,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2829,6 +2827,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function createDeployment(serviceName, parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#deleteMethod
     id: >-
@@ -2844,8 +2844,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.deleteMethod(serviceName,
       deploymentName, virtualMachineName, deleteFromStorage, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2881,6 +2879,8 @@ items:
       content: >-
         function deleteMethod(serviceName, deploymentName, virtualMachineName,
         deleteFromStorage, callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#get'
     id: 'azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#get'
     parent: azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations
@@ -2893,8 +2893,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.get(serviceName,
       deploymentName, virtualMachineName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2919,6 +2917,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function get(serviceName, deploymentName, virtualMachineName, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#getRemoteDesktopFile
     id: >-
@@ -2935,8 +2935,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.getRemoteDesktopFile(serviceName,
       deploymentName, virtualMachineName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2963,6 +2961,8 @@ items:
       content: >-
         function getRemoteDesktopFile(serviceName, deploymentName,
         virtualMachineName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#initiateMaintenance
     id: >-
@@ -2979,8 +2979,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.initiateMaintenance(serviceName,
       deploymentName, virtualMachineName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3009,6 +3007,8 @@ items:
       content: >-
         function initiateMaintenance(serviceName, deploymentName,
         virtualMachineName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#redeploy
     id: >-
@@ -3022,8 +3022,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.redeploy(serviceName,
       deploymentName, virtualMachineName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3052,6 +3050,8 @@ items:
       content: >-
         function redeploy(serviceName, deploymentName, virtualMachineName,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#restart
     id: >-
@@ -3065,8 +3065,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.restart(serviceName,
       deploymentName, virtualMachineName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3095,6 +3093,8 @@ items:
       content: >-
         function restart(serviceName, deploymentName, virtualMachineName,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#shutdown
     id: >-
@@ -3110,8 +3110,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.shutdown(serviceName,
       deploymentName, virtualMachineName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3153,6 +3151,8 @@ items:
       content: >-
         function shutdown(serviceName, deploymentName, virtualMachineName,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#shutdownRoles
     id: >-
@@ -3163,8 +3163,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.shutdownRoles(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3206,6 +3204,8 @@ items:
       content: >-
         function shutdownRoles(serviceName, deploymentName, parameters,
         callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#start'
     id: 'azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#start'
     parent: azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations
@@ -3217,8 +3217,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.start(serviceName,
       deploymentName, virtualMachineName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3247,6 +3245,8 @@ items:
       content: >-
         function start(serviceName, deploymentName, virtualMachineName,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#startRoles
     id: >-
@@ -3257,8 +3257,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.startRoles(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3290,6 +3288,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function startRoles(serviceName, deploymentName, parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#update'
     id: 'azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#update'
     parent: azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations
@@ -3304,8 +3304,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.update(serviceName,
       deploymentName, virtualMachineName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3532,6 +3530,8 @@ items:
       content: >-
         function update(serviceName, deploymentName, virtualMachineName,
         parameters, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations#updateLoadBalancedEndpointSet
     id: >-
@@ -3548,8 +3548,6 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations.updateLoadBalancedEndpointSet(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3585,3 +3583,5 @@ items:
       content: >-
         function updateLoadBalancedEndpointSet(serviceName, deploymentName,
         parameters, callback)
+    langs:
+      - js

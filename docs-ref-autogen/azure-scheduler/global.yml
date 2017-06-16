@@ -22,8 +22,6 @@ items:
     fullName: >-
       azure-scheduler.createSchedulerClient(cloudServiceName, jobCollectionName,
       baseUri, filters)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -67,6 +65,8 @@ items:
       content: >-
         function createSchedulerClient(cloudServiceName, jobCollectionName,
         baseUri, filters)
+    langs:
+      - js
   - uid: azure-scheduler._global.createCertificateCloudCredentials
     id: azure-scheduler._global.createCertificateCloudCredentials
     name: createCertificateCloudCredentials()
@@ -74,8 +74,6 @@ items:
       Creates a new CertificateCloudCredentials object.
       Either a pair of cert / key values need to be pass or a pem file location.
     fullName: azure-scheduler.createCertificateCloudCredentials()
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -103,3 +101,5 @@ items:
           - azure-scheduler.CertificateCloudCredentials
         description: ''
       content: function createCertificateCloudCredentials()
+    langs:
+      - js

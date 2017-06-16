@@ -13,8 +13,6 @@ items:
         branch: master
         path: lib\common\lib\services\servicemanagementclient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-common.ServiceManagementClient.#ctor'
@@ -23,6 +21,8 @@ items:
       - 'azure-common.ServiceManagementClient#_setAuthenticationFromSettings'
       - 'azure-common.ServiceManagementClient#_setServiceHost'
       - 'azure-common.ServiceManagementClient#_buildRequestOptions'
+    langs:
+      - js
   - id: 'azure-common.ServiceManagementClient.#ctor'
     uid: 'azure-common.ServiceManagementClient.#ctor'
     parent: azure-common.ServiceManagementClient
@@ -59,11 +59,11 @@ items:
     name: missingKeyValue
     summary: Error messages.
     fullName: azure-common.ServiceManagementClient.missingKeyValue
-    langs:
-      - js
     type: Member
     syntax:
       content: missingKeyValue
+    langs:
+      - js
   - uid: 'azure-common.ServiceManagementClient#_setAuthentication'
     id: 'azure-common.ServiceManagementClient#_setAuthentication'
     parent: azure-common.ServiceManagementClient
@@ -74,8 +74,6 @@ items:
       private key and public certificate values may be passed as strings, or
       will be read from files
     fullName: azure-common.ServiceManagementClient._setAuthentication()
-    langs:
-      - js
     type: Function
     syntax:
       return:
@@ -83,6 +81,8 @@ items:
           - azure-common.Void
         description: ''
       content: function _setAuthentication()
+    langs:
+      - js
   - uid: 'azure-common.ServiceManagementClient#_setAuthenticationFromSettings'
     id: 'azure-common.ServiceManagementClient#_setAuthenticationFromSettings'
     parent: azure-common.ServiceManagementClient
@@ -91,11 +91,11 @@ items:
       Sets the client authentication credentials using the
       values provided in the settings object.
     fullName: azure-common.ServiceManagementClient._setAuthenticationFromSettings()
-    langs:
-      - js
     type: Function
     syntax:
       content: function _setAuthenticationFromSettings()
+    langs:
+      - js
   - uid: 'azure-common.ServiceManagementClient#_setServiceHost'
     id: 'azure-common.ServiceManagementClient#_setServiceHost'
     parent: azure-common.ServiceManagementClient
@@ -105,8 +105,6 @@ items:
       Options are host name, serialization type, and API version string
       If not specified, then the defaults are used
     fullName: azure-common.ServiceManagementClient._setServiceHost()
-    langs:
-      - js
     type: Function
     syntax:
       return:
@@ -114,6 +112,8 @@ items:
           - azure-common.Void
         description: ''
       content: function _setServiceHost()
+    langs:
+      - js
   - uid: 'azure-common.ServiceManagementClient#_buildRequestOptions'
     id: 'azure-common.ServiceManagementClient#_buildRequestOptions'
     parent: azure-common.ServiceManagementClient
@@ -122,8 +122,6 @@ items:
     fullName: >-
       azure-common.ServiceManagementClient._buildRequestOptions(webResource,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -144,6 +142,8 @@ items:
           - undefined
         description: ''
       content: 'function _buildRequestOptions(webResource, options, callback)'
+    langs:
+      - js
 references:
   - uid: azure-common.WebResource
     name: WebResource

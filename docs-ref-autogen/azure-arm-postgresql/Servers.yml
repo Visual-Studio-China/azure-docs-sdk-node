@@ -17,8 +17,6 @@ items:
         branch: master
         path: lib\services\postgresqlManagement\lib\operations\servers.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-arm-postgresql.Servers.#ctor'
@@ -42,6 +40,8 @@ items:
       - 'azure-arm-postgresql.Servers#beginUpdate'
       - 'azure-arm-postgresql.Servers#beginDeleteMethodWithHttpOperationResponse'
       - 'azure-arm-postgresql.Servers#beginDeleteMethod'
+    langs:
+      - js
   - id: 'azure-arm-postgresql.Servers.#ctor'
     uid: 'azure-arm-postgresql.Servers.#ctor'
     parent: azure-arm-postgresql.Servers
@@ -70,8 +70,15 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.createOrUpdateWithHttpOperationResponse(resourceGroupName,
       serverName, parameters, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<Server>} - The deserialized result object.'
+        value: '{HttpOperationResponse<Server>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -193,6 +200,8 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(resourceGroupName,
         serverName, parameters, options)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#createOrUpdate'
     id: 'azure-arm-postgresql.Servers#createOrUpdate'
     parent: azure-arm-postgresql.Servers
@@ -205,8 +214,39 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.createOrUpdate(resourceGroupName, serverName,
       parameters, options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{Server} - The deserialized result object.'
+        value: '{Server} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -338,6 +378,8 @@ items:
       content: >-
         function createOrUpdate(resourceGroupName, serverName, parameters,
         options, optionalCallback)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#updateWithHttpOperationResponse'
     id: 'azure-arm-postgresql.Servers#updateWithHttpOperationResponse'
     parent: azure-arm-postgresql.Servers
@@ -352,8 +394,15 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.updateWithHttpOperationResponse(resourceGroupName,
       serverName, parameters, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<Server>} - The deserialized result object.'
+        value: '{HttpOperationResponse<Server>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -467,6 +516,8 @@ items:
       content: >-
         function updateWithHttpOperationResponse(resourceGroupName, serverName,
         parameters, options)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#update'
     id: 'azure-arm-postgresql.Servers#update'
     parent: azure-arm-postgresql.Servers
@@ -481,8 +532,39 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.update(resourceGroupName, serverName,
       parameters, options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{Server} - The deserialized result object.'
+        value: '{Server} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -606,6 +688,8 @@ items:
       content: >-
         function update(resourceGroupName, serverName, parameters, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#deleteMethodWithHttpOperationResponse'
     id: 'azure-arm-postgresql.Servers#deleteMethodWithHttpOperationResponse'
     parent: azure-arm-postgresql.Servers
@@ -616,8 +700,15 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.deleteMethodWithHttpOperationResponse(resourceGroupName,
       serverName, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -654,6 +745,8 @@ items:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceGroupName,
         serverName, options)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#deleteMethod'
     id: 'azure-arm-postgresql.Servers#deleteMethod'
     parent: azure-arm-postgresql.Servers
@@ -662,8 +755,37 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.deleteMethod(resourceGroupName, serverName,
       options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -710,6 +832,8 @@ items:
       content: >-
         function deleteMethod(resourceGroupName, serverName, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#getWithHttpOperationResponse'
     id: 'azure-arm-postgresql.Servers#getWithHttpOperationResponse'
     parent: azure-arm-postgresql.Servers
@@ -718,8 +842,15 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.getWithHttpOperationResponse(resourceGroupName,
       serverName, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<Server>} - The deserialized result object.'
+        value: '{HttpOperationResponse<Server>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -756,6 +887,8 @@ items:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName, serverName,
         options)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#get'
     id: 'azure-arm-postgresql.Servers#get'
     parent: azure-arm-postgresql.Servers
@@ -764,8 +897,39 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.get(resourceGroupName, serverName, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{Server} - The deserialized result object.'
+        value: '{Server} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -810,6 +974,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function get(resourceGroupName, serverName, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#listByResourceGroupWithHttpOperationResponse'
     id: 'azure-arm-postgresql.Servers#listByResourceGroupWithHttpOperationResponse'
     parent: azure-arm-postgresql.Servers
@@ -818,8 +984,19 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.listByResourceGroupWithHttpOperationResponse(resourceGroupName,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<ServerListResult>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<ServerListResult>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -852,6 +1029,8 @@ items:
       content: >-
         function listByResourceGroupWithHttpOperationResponse(resourceGroupName,
         options)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#listByResourceGroup'
     id: 'azure-arm-postgresql.Servers#listByResourceGroup'
     parent: azure-arm-postgresql.Servers
@@ -860,8 +1039,39 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.listByResourceGroup(resourceGroupName,
       options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{ServerListResult} - The deserialized result object.'
+        value: '{ServerListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -904,14 +1114,27 @@ items:
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#listWithHttpOperationResponse'
     id: 'azure-arm-postgresql.Servers#listWithHttpOperationResponse'
     parent: azure-arm-postgresql.Servers
     name: listWithHttpOperationResponse(options)
     summary: List all the servers in a given subscription.
     fullName: azure-arm-postgresql.Servers.listWithHttpOperationResponse(options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<ServerListResult>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<ServerListResult>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -932,14 +1155,47 @@ items:
           - Promise
         description: A promise is returned
       content: function listWithHttpOperationResponse(options)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#list'
     id: 'azure-arm-postgresql.Servers#list'
     parent: azure-arm-postgresql.Servers
     name: 'list(options, optionalCallback)'
     summary: List all the servers in a given subscription.
     fullName: 'azure-arm-postgresql.Servers.list(options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{ServerListResult} - The deserialized result object.'
+        value: '{ServerListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServerListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -970,6 +1226,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#beginCreateOrUpdateWithHttpOperationResponse'
     id: 'azure-arm-postgresql.Servers#beginCreateOrUpdateWithHttpOperationResponse'
     parent: azure-arm-postgresql.Servers
@@ -982,8 +1240,15 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
       serverName, parameters, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<Server>} - The deserialized result object.'
+        value: '{HttpOperationResponse<Server>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -1105,6 +1370,8 @@ items:
       content: >-
         function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
         serverName, parameters, options)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#beginCreateOrUpdate'
     id: 'azure-arm-postgresql.Servers#beginCreateOrUpdate'
     parent: azure-arm-postgresql.Servers
@@ -1117,8 +1384,39 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.beginCreateOrUpdate(resourceGroupName,
       serverName, parameters, options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{Server} - The deserialized result object.'
+        value: '{Server} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1250,6 +1548,8 @@ items:
       content: >-
         function beginCreateOrUpdate(resourceGroupName, serverName, parameters,
         options, optionalCallback)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#beginUpdateWithHttpOperationResponse'
     id: 'azure-arm-postgresql.Servers#beginUpdateWithHttpOperationResponse'
     parent: azure-arm-postgresql.Servers
@@ -1264,8 +1564,15 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.beginUpdateWithHttpOperationResponse(resourceGroupName,
       serverName, parameters, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<Server>} - The deserialized result object.'
+        value: '{HttpOperationResponse<Server>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -1379,6 +1686,8 @@ items:
       content: >-
         function beginUpdateWithHttpOperationResponse(resourceGroupName,
         serverName, parameters, options)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#beginUpdate'
     id: 'azure-arm-postgresql.Servers#beginUpdate'
     parent: azure-arm-postgresql.Servers
@@ -1393,8 +1702,39 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.beginUpdate(resourceGroupName, serverName,
       parameters, options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{Server} - The deserialized result object.'
+        value: '{Server} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Server} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1518,6 +1858,8 @@ items:
       content: >-
         function beginUpdate(resourceGroupName, serverName, parameters, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#beginDeleteMethodWithHttpOperationResponse'
     id: 'azure-arm-postgresql.Servers#beginDeleteMethodWithHttpOperationResponse'
     parent: azure-arm-postgresql.Servers
@@ -1528,8 +1870,15 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.beginDeleteMethodWithHttpOperationResponse(resourceGroupName,
       serverName, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -1566,6 +1915,8 @@ items:
       content: >-
         function beginDeleteMethodWithHttpOperationResponse(resourceGroupName,
         serverName, options)
+    langs:
+      - js
   - uid: 'azure-arm-postgresql.Servers#beginDeleteMethod'
     id: 'azure-arm-postgresql.Servers#beginDeleteMethod'
     parent: azure-arm-postgresql.Servers
@@ -1576,8 +1927,37 @@ items:
     fullName: >-
       azure-arm-postgresql.Servers.beginDeleteMethod(resourceGroupName,
       serverName, options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1624,6 +2004,8 @@ items:
       content: >-
         function beginDeleteMethod(resourceGroupName, serverName, options,
         optionalCallback)
+    langs:
+      - js
 references:
   - uid: azure-arm-postgresql.PostgreSQLManagementClient
     name: PostgreSQLManagementClient

@@ -21,8 +21,6 @@ items:
         branch: master
         path: lib\services\scheduler\lib\schedulerClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-scheduler.JobOperations~JobOperations.#ctor'
@@ -36,6 +34,8 @@ items:
       - 'azure-scheduler.JobOperations~JobOperations#listWithFilter'
       - 'azure-scheduler.JobOperations~JobOperations#updateJobCollectionState'
       - 'azure-scheduler.JobOperations~JobOperations#updateState'
+    langs:
+      - js
   - id: 'azure-scheduler.JobOperations~JobOperations.#ctor'
     uid: 'azure-scheduler.JobOperations~JobOperations.#ctor'
     parent: azure-scheduler.JobOperations~JobOperations
@@ -60,8 +60,6 @@ items:
       Creates a new Job, allowing the service to generate a job id. Use
       CreateOrUpdate if a user-chosen job id is required.
     fullName: 'azure-scheduler.JobOperations~JobOperations.create(parameters, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -381,6 +379,8 @@ items:
           - azure-scheduler.Stream
         description: The response stream.
       content: 'function create(parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-scheduler.JobOperations~JobOperations#createOrUpdate'
     id: 'azure-scheduler.JobOperations~JobOperations#createOrUpdate'
     parent: azure-scheduler.JobOperations~JobOperations
@@ -391,8 +391,6 @@ items:
     fullName: >-
       azure-scheduler.JobOperations~JobOperations.createOrUpdate(jobId,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -716,14 +714,14 @@ items:
           - azure-scheduler.Stream
         description: The response stream.
       content: 'function createOrUpdate(jobId, parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-scheduler.JobOperations~JobOperations#deleteMethod'
     id: 'azure-scheduler.JobOperations~JobOperations#deleteMethod'
     parent: azure-scheduler.JobOperations~JobOperations
     name: 'deleteMethod(jobId, callback)'
     summary: Deletes a job.
     fullName: 'azure-scheduler.JobOperations~JobOperations.deleteMethod(jobId, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -740,14 +738,14 @@ items:
           - azure-scheduler.Stream
         description: The response stream.
       content: 'function deleteMethod(jobId, callback)'
+    langs:
+      - js
   - uid: 'azure-scheduler.JobOperations~JobOperations#get'
     id: 'azure-scheduler.JobOperations~JobOperations#get'
     parent: azure-scheduler.JobOperations~JobOperations
     name: 'get(jobId, callback)'
     summary: Get the definition and status of a job.
     fullName: 'azure-scheduler.JobOperations~JobOperations.get(jobId, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -764,6 +762,8 @@ items:
           - azure-scheduler.Stream
         description: The response stream.
       content: 'function get(jobId, callback)'
+    langs:
+      - js
   - uid: 'azure-scheduler.JobOperations~JobOperations#getHistory'
     id: 'azure-scheduler.JobOperations~JobOperations#getHistory'
     parent: azure-scheduler.JobOperations~JobOperations
@@ -772,8 +772,6 @@ items:
     fullName: >-
       azure-scheduler.JobOperations~JobOperations.getHistory(jobId, parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -810,6 +808,8 @@ items:
           - azure-scheduler.Stream
         description: The response stream.
       content: 'function getHistory(jobId, parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-scheduler.JobOperations~JobOperations#getHistoryWithFilter'
     id: 'azure-scheduler.JobOperations~JobOperations#getHistoryWithFilter'
     parent: azure-scheduler.JobOperations~JobOperations
@@ -818,8 +818,6 @@ items:
     fullName: >-
       azure-scheduler.JobOperations~JobOperations.getHistoryWithFilter(jobId,
       parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -863,14 +861,14 @@ items:
           - azure-scheduler.Stream
         description: The response stream.
       content: 'function getHistoryWithFilter(jobId, parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-scheduler.JobOperations~JobOperations#list'
     id: 'azure-scheduler.JobOperations~JobOperations#list'
     parent: azure-scheduler.JobOperations~JobOperations
     name: 'list(parameters, callback)'
     summary: Get the list of all jobs in a job collection.
     fullName: 'azure-scheduler.JobOperations~JobOperations.list(parameters, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -903,6 +901,8 @@ items:
           - azure-scheduler.Stream
         description: The response stream.
       content: 'function list(parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-scheduler.JobOperations~JobOperations#listWithFilter'
     id: 'azure-scheduler.JobOperations~JobOperations#listWithFilter'
     parent: azure-scheduler.JobOperations~JobOperations
@@ -911,8 +911,6 @@ items:
     fullName: >-
       azure-scheduler.JobOperations~JobOperations.listWithFilter(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -952,6 +950,8 @@ items:
           - azure-scheduler.Stream
         description: The response stream.
       content: 'function listWithFilter(parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-scheduler.JobOperations~JobOperations#updateJobCollectionState'
     id: 'azure-scheduler.JobOperations~JobOperations#updateJobCollectionState'
     parent: azure-scheduler.JobOperations~JobOperations
@@ -960,8 +960,6 @@ items:
     fullName: >-
       azure-scheduler.JobOperations~JobOperations.updateJobCollectionState(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -986,6 +984,8 @@ items:
           - azure-scheduler.Stream
         description: The response stream.
       content: 'function updateJobCollectionState(parameters, callback)'
+    langs:
+      - js
   - uid: 'azure-scheduler.JobOperations~JobOperations#updateState'
     id: 'azure-scheduler.JobOperations~JobOperations#updateState'
     parent: azure-scheduler.JobOperations~JobOperations
@@ -994,8 +994,6 @@ items:
     fullName: >-
       azure-scheduler.JobOperations~JobOperations.updateState(jobId, parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1031,3 +1029,5 @@ items:
           - azure-scheduler.Stream
         description: The response stream.
       content: 'function updateState(jobId, parameters, callback)'
+    langs:
+      - js

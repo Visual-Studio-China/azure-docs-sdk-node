@@ -27,8 +27,6 @@ items:
         branch: master
         path: lib\services\management\lib\managementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - >-
@@ -41,6 +39,8 @@ items:
         azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#get
       - >-
         azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#list
+    langs:
+      - js
   - id: >-
       azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations.#ctor
     uid: >-
@@ -78,8 +78,6 @@ items:
     fullName: >-
       azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations.create(parameters,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -119,6 +117,8 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: 'function create(parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#deleteMethod
     id: >-
@@ -136,8 +136,6 @@ items:
     fullName: >-
       azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations.deleteMethod(thumbprint,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -156,6 +154,8 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: 'function deleteMethod(thumbprint, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#get
     id: >-
@@ -174,8 +174,6 @@ items:
     fullName: >-
       azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations.get(thumbprint,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -194,6 +192,8 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: 'function get(thumbprint, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations#list
     id: >-
@@ -211,8 +211,6 @@ items:
       more information)
     fullName: >-
       azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations.list(callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -225,3 +223,5 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: function list(callback)
+    langs:
+      - js

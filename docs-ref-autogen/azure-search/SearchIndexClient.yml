@@ -13,11 +13,11 @@ items:
         branch: master
         path: lib\services\search\lib\index\searchIndexClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-search.SearchIndexClient.#ctor'
+    langs:
+      - js
   - id: 'azure-search.SearchIndexClient.#ctor'
     uid: 'azure-search.SearchIndexClient.#ctor'
     parent: azure-search.SearchIndexClient

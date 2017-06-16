@@ -27,8 +27,6 @@ items:
         branch: master
         path: lib\services\legacyStorage\lib\blob\blobservice.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-storage-legacy.BlobService.#ctor'
@@ -86,6 +84,8 @@ items:
       - 'azure-storage-legacy.BlobService#createPageBlobFromStream'
       - 'azure-storage-legacy.BlobService#_createBlobFromStream'
       - 'azure-storage-legacy.BlobService#_createBlobFromChunkStream'
+    langs:
+      - js
   - id: 'azure-storage-legacy.BlobService.#ctor'
     uid: 'azure-storage-legacy.BlobService.#ctor'
     parent: azure-storage-legacy.BlobService
@@ -138,8 +138,6 @@ items:
       Gets the properties of a storage account’s Blob service, including
       Microsoft Azure Storage Analytics.
     fullName: 'azure-storage-legacy.BlobService.getServiceProperties(options, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -162,6 +160,8 @@ items:
                                                                                  will contain the properties and `response`
                                                                                  will contain information related to this operation.
       content: 'function getServiceProperties(options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#setServiceProperties'
     id: 'azure-storage-legacy.BlobService#setServiceProperties'
     parent: azure-storage-legacy.BlobService
@@ -175,8 +175,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.setServiceProperties(serviceProperties,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -204,14 +202,14 @@ items:
                                                                                  if an error occurs; otherwise, `response`
                                                                                  will contain information related to this operation.
       content: 'function setServiceProperties(serviceProperties, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#listContainers'
     id: 'azure-storage-legacy.BlobService#listContainers'
     parent: azure-storage-legacy.BlobService
     name: 'listContainers(options, callback)'
     summary: Returns a list of the containers under the specified account.
     fullName: 'azure-storage-legacy.BlobService.listContainers(options, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -266,6 +264,8 @@ items:
                                                                                     `nextMarker` will contain a value that can be used
                                                                                     to retrieve the next section of the containers list.
       content: 'function listContainers(options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createContainer'
     id: 'azure-storage-legacy.BlobService#createContainer'
     parent: azure-storage-legacy.BlobService
@@ -276,8 +276,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createContainer(container, options,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -316,6 +314,8 @@ items:
                                                                           the <xref:azure-storage-legacy.BlobService~containerResult> for the container.
                                                                           `response` will contain information related to this operation.
       content: 'function createContainer(container, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createContainerIfNotExists'
     id: 'azure-storage-legacy.BlobService#createContainerIfNotExists'
     parent: azure-storage-legacy.BlobService
@@ -326,8 +326,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createContainerIfNotExists(container,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -367,6 +365,8 @@ items:
                                                                           already exists.
                                                                           `response` will contain information related to this operation.
       content: 'function createContainerIfNotExists(container, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#getContainerProperties'
     id: 'azure-storage-legacy.BlobService#getContainerProperties'
     parent: azure-storage-legacy.BlobService
@@ -375,8 +375,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.getContainerProperties(container,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -408,6 +406,8 @@ items:
                                                                           the <xref:azure-storage-legacy.BlobService~containerResult> information for the container.
                                                                           `response` will contain information related to this operation.
       content: 'function getContainerProperties(container, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#getContainerMetadata'
     id: 'azure-storage-legacy.BlobService#getContainerMetadata'
     parent: azure-storage-legacy.BlobService
@@ -416,8 +416,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.getContainerMetadata(container, options,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -449,6 +447,8 @@ items:
                                                                                     the <xref:azure-storage-legacy.BlobService~containerResult> information for the container.
                                                                                     `response` will contain information related to this operation.
       content: 'function getContainerMetadata(container, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#setContainerMetadata'
     id: 'azure-storage-legacy.BlobService#setContainerMetadata'
     parent: azure-storage-legacy.BlobService
@@ -464,8 +464,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.setContainerMetadata(container, metadata,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -507,6 +505,8 @@ items:
                                                                           if an error occurs; otherwise 
                                                                           `response` will contain information related to this operation.
       content: 'function setContainerMetadata(container, metadata, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#getContainerAcl'
     id: 'azure-storage-legacy.BlobService#getContainerAcl'
     parent: azure-storage-legacy.BlobService
@@ -515,8 +515,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.getContainerAcl(container, options,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -548,6 +546,8 @@ items:
                                                                           the <xref:azure-storage-legacy.BlobService~containerResult> information for the container.
                                                                           `response` will contain information related to this operation.
       content: 'function getContainerAcl(container, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#setContainerAcl'
     id: 'azure-storage-legacy.BlobService#setContainerAcl'
     parent: azure-storage-legacy.BlobService
@@ -556,8 +556,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.setContainerAcl(container,
       publicAccessLevel, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -602,6 +600,8 @@ items:
       content: >-
         function setContainerAcl(container, publicAccessLevel, options,
         callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#deleteContainer'
     id: 'azure-storage-legacy.BlobService#deleteContainer'
     parent: azure-storage-legacy.BlobService
@@ -614,8 +614,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.deleteContainer(container, options,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -646,14 +644,14 @@ items:
                                                                           if an error occurs; otherwise
                                                                           `response` will contain information related to this operation.
       content: 'function deleteContainer(container, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#listBlobs'
     id: 'azure-storage-legacy.BlobService#listBlobs'
     parent: azure-storage-legacy.BlobService
     name: 'listBlobs(container, options, callback)'
     summary: Lists all of the blobs in the given container.
     fullName: 'azure-storage-legacy.BlobService.listBlobs(container, options, callback)'
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -713,6 +711,8 @@ items:
                                                                           the blobs within the container.
                                                                           `response` will contain information related to this operation.
       content: 'function listBlobs(container, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createPageBlob'
     id: 'azure-storage-legacy.BlobService#createPageBlob'
     parent: azure-storage-legacy.BlobService
@@ -721,8 +721,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createPageBlob(container, blob, length,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -774,6 +772,8 @@ items:
                                                                           if an error occurs; otherwise 
                                                                           `response` will contain information related to this operation.
       content: 'function createPageBlob(container, blob, length, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#putBlockBlobFromFile'
     id: 'azure-storage-legacy.BlobService#putBlockBlobFromFile'
     parent: azure-storage-legacy.BlobService
@@ -793,8 +793,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.putBlockBlobFromFile(container, blob,
       localFilename, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -913,6 +911,8 @@ items:
       content: >-
         function putBlockBlobFromFile(container, blob, localFilename, options,
         callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#putBlockBlobFromStream'
     id: 'azure-storage-legacy.BlobService#putBlockBlobFromStream'
     parent: azure-storage-legacy.BlobService
@@ -923,8 +923,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.putBlockBlobFromStream(container, blob,
       (Stream), streamLength, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1047,6 +1045,8 @@ items:
       content: >-
         function putBlockBlobFromStream(container, blob, (Stream), streamLength,
         options, callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createBlockBlobFromText'
     id: 'azure-storage-legacy.BlobService#createBlockBlobFromText'
     parent: azure-storage-legacy.BlobService
@@ -1055,8 +1055,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createBlockBlobFromText(container, blob,
       text, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1175,6 +1173,8 @@ items:
       content: >-
         function createBlockBlobFromText(container, blob, text, options,
         callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#getBlobProperties'
     id: 'azure-storage-legacy.BlobService#getBlobProperties'
     parent: azure-storage-legacy.BlobService
@@ -1187,8 +1187,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.getBlobProperties(container, blob,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1237,6 +1235,8 @@ items:
                                                                                     information about the blob.
                                                                                     `response` will contain information related to this operation.
       content: 'function getBlobProperties(container, blob, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#getBlobMetadata'
     id: 'azure-storage-legacy.BlobService#getBlobMetadata'
     parent: azure-storage-legacy.BlobService
@@ -1245,8 +1245,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.getBlobMetadata(container, blob, options,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1295,6 +1293,8 @@ items:
                                                                                     information about the blob.
                                                                                     `response` will contain information related to this operation.
       content: 'function getBlobMetadata(container, blob, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#setBlobProperties'
     id: 'azure-storage-legacy.BlobService#setBlobProperties'
     parent: azure-storage-legacy.BlobService
@@ -1307,8 +1307,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.setBlobProperties(container, blob,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1377,6 +1375,8 @@ items:
                                                                                     information about the blob.
                                                                                     `response` will contain information related to this operation.
       content: 'function setBlobProperties(container, blob, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#setBlobMetadata'
     id: 'azure-storage-legacy.BlobService#setBlobMetadata'
     parent: azure-storage-legacy.BlobService
@@ -1387,8 +1387,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.setBlobMetadata(container, blob,
       metadata, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1441,6 +1439,8 @@ items:
                                                                                     information on the blob.
                                                                                     `response` will contain information related to this operation.
       content: 'function setBlobMetadata(container, blob, metadata, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#getBlob'
     id: 'azure-storage-legacy.BlobService#getBlob'
     parent: azure-storage-legacy.BlobService
@@ -1449,8 +1449,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.getBlob(container, blob, options,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1590,6 +1588,8 @@ items:
                                                                                     the blob information.
                                                                                     `response` will contain information related to this operation.
       content: 'function getBlob(container, blob, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#getBlobToFile'
     id: 'azure-storage-legacy.BlobService#getBlobToFile'
     parent: azure-storage-legacy.BlobService
@@ -1598,8 +1598,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.getBlobToFile(container, blob,
       localFileName, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1749,6 +1747,8 @@ items:
       content: >-
         function getBlobToFile(container, blob, localFileName, options,
         callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#getBlobToStream'
     id: 'azure-storage-legacy.BlobService#getBlobToStream'
     parent: azure-storage-legacy.BlobService
@@ -1757,8 +1757,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.getBlobToStream(container, blob,
       writeStream, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -1904,6 +1902,8 @@ items:
       content: >-
         function getBlobToStream(container, blob, writeStream, options,
         callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#getBlobToText'
     id: 'azure-storage-legacy.BlobService#getBlobToText'
     parent: azure-storage-legacy.BlobService
@@ -1912,8 +1912,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.getBlobToText(container, blob, options,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2054,6 +2052,8 @@ items:
                                                                                     the blob information.
                                                                                     `response` will contain information related to this operation.
       content: 'function getBlobToText(container, blob, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#deleteBlob'
     id: 'azure-storage-legacy.BlobService#deleteBlob'
     parent: azure-storage-legacy.BlobService
@@ -2067,8 +2067,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.deleteBlob(container, blob, options,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2117,6 +2115,8 @@ items:
                                                                           `true` if the operation was successful.
                                                                           `response` will contain information related to this operation.
       content: 'function deleteBlob(container, blob, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createBlobSnapshot'
     id: 'azure-storage-legacy.BlobService#createBlobSnapshot'
     parent: azure-storage-legacy.BlobService
@@ -2125,8 +2125,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createBlobSnapshot(container, blob,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2180,6 +2178,8 @@ items:
                                                                           the ID of the snapshot.
                                                                           `response` will contain information related to this operation.
       content: 'function createBlobSnapshot(container, blob, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#copyBlob'
     id: 'azure-storage-legacy.BlobService#copyBlob'
     parent: azure-storage-legacy.BlobService
@@ -2190,8 +2190,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.copyBlob(sourceUri, targetContainer,
       targetBlob, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2264,6 +2262,8 @@ items:
       content: >-
         function copyBlob(sourceUri, targetContainer, targetBlob, options,
         callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#abortCopyBlob'
     id: 'azure-storage-legacy.BlobService#abortCopyBlob'
     parent: azure-storage-legacy.BlobService
@@ -2272,8 +2272,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.abortCopyBlob(container, blob, copyId,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2313,6 +2311,8 @@ items:
                                                                                     the blob information.
                                                                                     `response` will contain information related to this operation.
       content: 'function abortCopyBlob(container, blob, copyId, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#statusOfCopyBlob'
     id: 'azure-storage-legacy.BlobService#statusOfCopyBlob'
     parent: azure-storage-legacy.BlobService
@@ -2321,8 +2321,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.statusOfCopyBlob(targetContainer,
       targetBlob, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2373,6 +2371,8 @@ items:
       content: >-
         function statusOfCopyBlob(targetContainer, targetBlob, options,
         callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#acquireLease'
     id: 'azure-storage-legacy.BlobService#acquireLease'
     parent: azure-storage-legacy.BlobService
@@ -2381,8 +2381,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.acquireLease(container, blob, options,
       callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2431,6 +2429,8 @@ items:
                                                                                     the lease information.
                                                                                     `response` will contain information related to this operation.
       content: 'function acquireLease(container, blob, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#renewLease'
     id: 'azure-storage-legacy.BlobService#renewLease'
     parent: azure-storage-legacy.BlobService
@@ -2439,8 +2439,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.renewLease(container, blob, leaseId,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2483,6 +2481,8 @@ items:
                                                                           the lease information.
                                                                           `response` will contain information related to this operation.
       content: 'function renewLease(container, blob, leaseId, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#releaseLease'
     id: 'azure-storage-legacy.BlobService#releaseLease'
     parent: azure-storage-legacy.BlobService
@@ -2491,8 +2491,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.releaseLease(container, blob, leaseId,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2535,6 +2533,8 @@ items:
                                                                           the lease information.
                                                                           `response` will contain information related to this operation.
       content: 'function releaseLease(container, blob, leaseId, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#breakLease'
     id: 'azure-storage-legacy.BlobService#breakLease'
     parent: azure-storage-legacy.BlobService
@@ -2545,8 +2545,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.breakLease(container, blob, leaseId,
       options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2594,6 +2592,8 @@ items:
                                                                                     the lease information.
                                                                                     `response` will contain information related to this operation.
       content: 'function breakLease(container, blob, leaseId, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#clearBlobPages'
     id: 'azure-storage-legacy.BlobService#clearBlobPages'
     parent: azure-storage-legacy.BlobService
@@ -2602,8 +2602,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.clearBlobPages(container, blob,
       rangeStart, rangeEnd, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2656,6 +2654,8 @@ items:
       content: >-
         function clearBlobPages(container, blob, rangeStart, rangeEnd, options,
         callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createBlobPagesFromStream'
     id: 'azure-storage-legacy.BlobService#createBlobPagesFromStream'
     parent: azure-storage-legacy.BlobService
@@ -2666,8 +2666,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createBlobPagesFromStream(container,
       blob, readStream, rangeStart, rangeEnd, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2725,6 +2723,8 @@ items:
       content: >-
         function createBlobPagesFromStream(container, blob, readStream,
         rangeStart, rangeEnd, options, callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createBlobPagesFromText'
     id: 'azure-storage-legacy.BlobService#createBlobPagesFromText'
     parent: azure-storage-legacy.BlobService
@@ -2735,8 +2735,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createBlobPagesFromText(container, blob,
       text, rangeStart, rangeEnd, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2794,6 +2792,8 @@ items:
       content: >-
         function createBlobPagesFromText(container, blob, text, rangeStart,
         rangeEnd, options, callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#listBlobRegions'
     id: 'azure-storage-legacy.BlobService#listBlobRegions'
     parent: azure-storage-legacy.BlobService
@@ -2802,8 +2802,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.listBlobRegions(container, blob,
       rangeStart, rangeEnd, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2854,6 +2852,8 @@ items:
       content: >-
         function listBlobRegions(container, blob, rangeStart, rangeEnd, options,
         callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createBlobBlockFromText'
     id: 'azure-storage-legacy.BlobService#createBlobBlockFromText'
     parent: azure-storage-legacy.BlobService
@@ -2864,8 +2864,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createBlobBlockFromText(blockId,
       container, blob, content, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -2928,6 +2926,8 @@ items:
       content: >-
         function createBlobBlockFromText(blockId, container, blob, content,
         options, callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createBlobBlockFromStream'
     id: 'azure-storage-legacy.BlobService#createBlobBlockFromStream'
     parent: azure-storage-legacy.BlobService
@@ -2938,8 +2938,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createBlobBlockFromStream(blockId,
       container, blob, readStream, streamLength, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3001,6 +2999,8 @@ items:
       content: >-
         function createBlobBlockFromStream(blockId, container, blob, readStream,
         streamLength, options, callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#commitBlobBlocks'
     id: 'azure-storage-legacy.BlobService#commitBlobBlocks'
     parent: azure-storage-legacy.BlobService
@@ -3015,8 +3015,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.commitBlobBlocks(container, blob,
       blockList, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3121,6 +3119,8 @@ items:
                                                                           the blocklist information.
                                                                           `response` will contain information related to this operation.
       content: 'function commitBlobBlocks(container, blob, blockList, options, callback)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#listBlobBlocks'
     id: 'azure-storage-legacy.BlobService#listBlobBlocks'
     parent: azure-storage-legacy.BlobService
@@ -3131,8 +3131,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.listBlobBlocks(container, blob,
       blocklisttype, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3179,6 +3177,8 @@ items:
       content: >-
         function listBlobBlocks(container, blob, blocklisttype, options,
         callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#generateSharedAccessSignature'
     id: 'azure-storage-legacy.BlobService#generateSharedAccessSignature'
     parent: azure-storage-legacy.BlobService
@@ -3187,8 +3187,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.generateSharedAccessSignature(container,
       blob, sharedAccessPolicy)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3237,6 +3235,8 @@ items:
       content: >-
         function generateSharedAccessSignature(container, blob,
         sharedAccessPolicy)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#getBlobUrl'
     id: 'azure-storage-legacy.BlobService#getBlobUrl'
     parent: azure-storage-legacy.BlobService
@@ -3245,8 +3245,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.getBlobUrl(container, blob,
       sharedAccessPolicy)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3294,6 +3292,8 @@ items:
           - object
         description: An object with the blob URL.
       content: 'function getBlobUrl(container, blob, sharedAccessPolicy)'
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#_leaseBlobImpl'
     id: 'azure-storage-legacy.BlobService#_leaseBlobImpl'
     parent: azure-storage-legacy.BlobService
@@ -3302,8 +3302,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService._leaseBlobImpl(container, blob, leaseId,
       leaseAction, options, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3367,6 +3365,8 @@ items:
       content: >-
         function _leaseBlobImpl(container, blob, leaseId, leaseAction, options,
         callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createBlob'
     id: 'azure-storage-legacy.BlobService#createBlob'
     parent: azure-storage-legacy.BlobService
@@ -3375,8 +3375,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createBlob(container, blob, blobType,
       optionsOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3507,6 +3505,8 @@ items:
       content: >-
         function createBlob(container, blob, blobType, optionsOrCallback,
         callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createBlockBlobFromFile'
     id: 'azure-storage-legacy.BlobService#createBlockBlobFromFile'
     parent: azure-storage-legacy.BlobService
@@ -3527,8 +3527,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createBlockBlobFromFile(container, blob,
       localFilename, optionsOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3649,6 +3647,8 @@ items:
       content: >-
         function createBlockBlobFromFile(container, blob, localFilename,
         optionsOrCallback, callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createBlockBlobFromStream'
     id: 'azure-storage-legacy.BlobService#createBlockBlobFromStream'
     parent: azure-storage-legacy.BlobService
@@ -3659,8 +3659,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createBlockBlobFromStream(container,
       blob, (Stream), streamLength, optionsOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3800,28 +3798,30 @@ items:
       content: >-
         function createBlockBlobFromStream(container, blob, (Stream),
         streamLength, optionsOrCallback, callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#generateBlockIdPrefix'
     id: 'azure-storage-legacy.BlobService#generateBlockIdPrefix'
     parent: azure-storage-legacy.BlobService
     name: generateBlockIdPrefix()
     summary: Generate an random block id prefix
     fullName: azure-storage-legacy.BlobService.generateBlockIdPrefix()
-    langs:
-      - js
     type: Function
     syntax:
       content: function generateBlockIdPrefix()
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#getBlockId'
     id: 'azure-storage-legacy.BlobService#getBlockId'
     parent: azure-storage-legacy.BlobService
     name: getBlockId()
     summary: Get an block id according to prefix and block number
     fullName: azure-storage-legacy.BlobService.getBlockId()
-    langs:
-      - js
     type: Function
     syntax:
       content: function getBlockId()
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#_getBlobToFile'
     id: 'azure-storage-legacy.BlobService#_getBlobToFile'
     parent: azure-storage-legacy.BlobService
@@ -3832,8 +3832,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService._getBlobToFile(container, blob,
       localFileName, optionsOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -3997,6 +3995,8 @@ items:
       content: >-
         function _getBlobToFile(container, blob, localFileName,
         optionsOrCallback, callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createPageBlobFromFile'
     id: 'azure-storage-legacy.BlobService#createPageBlobFromFile'
     parent: azure-storage-legacy.BlobService
@@ -4007,8 +4007,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createPageBlobFromFile(container, blob,
       (string), optionsOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -4139,6 +4137,8 @@ items:
       content: >-
         function createPageBlobFromFile(container, blob, (string),
         optionsOrCallback, callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#createPageBlobFromStream'
     id: 'azure-storage-legacy.BlobService#createPageBlobFromStream'
     parent: azure-storage-legacy.BlobService
@@ -4149,8 +4149,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService.createPageBlobFromStream(container, blob,
       (Stream), streamLength, optionsOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -4285,6 +4283,8 @@ items:
       content: >-
         function createPageBlobFromStream(container, blob, (Stream),
         streamLength, optionsOrCallback, callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#_createBlobFromStream'
     id: 'azure-storage-legacy.BlobService#_createBlobFromStream'
     parent: azure-storage-legacy.BlobService
@@ -4295,8 +4295,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService._createBlobFromStream(container, blob,
       blobType, (Stream), streamLength, optionsOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -4439,6 +4437,8 @@ items:
       content: >-
         function _createBlobFromStream(container, blob, blobType, (Stream),
         streamLength, optionsOrCallback, callback)
+    langs:
+      - js
   - uid: 'azure-storage-legacy.BlobService#_createBlobFromChunkStream'
     id: 'azure-storage-legacy.BlobService#_createBlobFromChunkStream'
     parent: azure-storage-legacy.BlobService
@@ -4449,8 +4449,6 @@ items:
     fullName: >-
       azure-storage-legacy.BlobService._createBlobFromChunkStream(container,
       blob, blobType, (Stream), streamLength, optionsOrCallback, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -4593,3 +4591,5 @@ items:
       content: >-
         function _createBlobFromChunkStream(container, blob, blobType, (Stream),
         streamLength, optionsOrCallback, callback)
+    langs:
+      - js

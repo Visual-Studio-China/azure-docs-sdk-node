@@ -21,12 +21,12 @@ items:
         branch: master
         path: lib\services\serviceBusManagement\lib\serviceBusManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-sb.RelayOperations~RelayOperations.#ctor'
       - 'azure-asm-sb.RelayOperations~RelayOperations#getConnectionDetails'
+    langs:
+      - js
   - id: 'azure-asm-sb.RelayOperations~RelayOperations.#ctor'
     uid: 'azure-asm-sb.RelayOperations~RelayOperations.#ctor'
     parent: azure-asm-sb.RelayOperations~RelayOperations
@@ -51,8 +51,6 @@ items:
     fullName: >-
       azure-asm-sb.RelayOperations~RelayOperations.getConnectionDetails(namespaceName,
       relayName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -73,3 +71,5 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function getConnectionDetails(namespaceName, relayName, callback)'
+    langs:
+      - js

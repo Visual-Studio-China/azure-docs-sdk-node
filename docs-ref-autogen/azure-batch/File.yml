@@ -17,8 +17,6 @@ items:
         branch: master
         path: lib\services\batch\lib\operations\file.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-batch.File.#ctor'
@@ -42,6 +40,8 @@ items:
       - 'azure-batch.File#listFromTaskNext'
       - 'azure-batch.File#listFromComputeNodeNextWithHttpOperationResponse'
       - 'azure-batch.File#listFromComputeNodeNext'
+    langs:
+      - js
   - id: 'azure-batch.File.#ctor'
     uid: 'azure-batch.File.#ctor'
     parent: azure-batch.File
@@ -68,8 +68,15 @@ items:
     fullName: >-
       azure-batch.File.deleteFromTaskWithHttpOperationResponse(jobId, taskId,
       filePath, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -170,6 +177,8 @@ items:
       content: >-
         function deleteFromTaskWithHttpOperationResponse(jobId, taskId,
         filePath, options)
+    langs:
+      - js
   - uid: 'azure-batch.File#deleteFromTask'
     id: 'azure-batch.File#deleteFromTask'
     parent: azure-batch.File
@@ -180,8 +189,37 @@ items:
     fullName: >-
       azure-batch.File.deleteFromTask(jobId, taskId, filePath, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -292,6 +330,8 @@ items:
       content: >-
         function deleteFromTask(jobId, taskId, filePath, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-batch.File#getFromTaskWithHttpOperationResponse'
     id: 'azure-batch.File#getFromTaskWithHttpOperationResponse'
     parent: azure-batch.File
@@ -300,8 +340,15 @@ items:
     fullName: >-
       azure-batch.File.getFromTaskWithHttpOperationResponse(jobId, taskId,
       filePath, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<Object>} - The deserialized result object.'
+        value: '{HttpOperationResponse<Object>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -424,6 +471,8 @@ items:
       content: >-
         function getFromTaskWithHttpOperationResponse(jobId, taskId, filePath,
         options)
+    langs:
+      - js
   - uid: 'azure-batch.File#getFromTask'
     id: 'azure-batch.File#getFromTask'
     parent: azure-batch.File
@@ -432,8 +481,37 @@ items:
     fullName: >-
       azure-batch.File.getFromTask(jobId, taskId, filePath, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{Object} - The deserialized result object.'
+        value: '{Object} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -564,6 +642,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function getFromTask(jobId, taskId, filePath, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.File#getPropertiesFromTaskWithHttpOperationResponse'
     id: 'azure-batch.File#getPropertiesFromTaskWithHttpOperationResponse'
     parent: azure-batch.File
@@ -574,8 +654,15 @@ items:
     fullName: >-
       azure-batch.File.getPropertiesFromTaskWithHttpOperationResponse(jobId,
       taskId, filePath, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -691,6 +778,8 @@ items:
       content: >-
         function getPropertiesFromTaskWithHttpOperationResponse(jobId, taskId,
         filePath, options)
+    langs:
+      - js
   - uid: 'azure-batch.File#getPropertiesFromTask'
     id: 'azure-batch.File#getPropertiesFromTask'
     parent: azure-batch.File
@@ -699,8 +788,37 @@ items:
     fullName: >-
       azure-batch.File.getPropertiesFromTask(jobId, taskId, filePath, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -826,6 +944,8 @@ items:
       content: >-
         function getPropertiesFromTask(jobId, taskId, filePath, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-batch.File#deleteFromComputeNodeWithHttpOperationResponse'
     id: 'azure-batch.File#deleteFromComputeNodeWithHttpOperationResponse'
     parent: azure-batch.File
@@ -836,8 +956,15 @@ items:
     fullName: >-
       azure-batch.File.deleteFromComputeNodeWithHttpOperationResponse(poolId,
       nodeId, filePath, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -940,6 +1067,8 @@ items:
       content: >-
         function deleteFromComputeNodeWithHttpOperationResponse(poolId, nodeId,
         filePath, options)
+    langs:
+      - js
   - uid: 'azure-batch.File#deleteFromComputeNode'
     id: 'azure-batch.File#deleteFromComputeNode'
     parent: azure-batch.File
@@ -948,8 +1077,37 @@ items:
     fullName: >-
       azure-batch.File.deleteFromComputeNode(poolId, nodeId, filePath, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1062,6 +1220,8 @@ items:
       content: >-
         function deleteFromComputeNode(poolId, nodeId, filePath, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-batch.File#getFromComputeNodeWithHttpOperationResponse'
     id: 'azure-batch.File#getFromComputeNodeWithHttpOperationResponse'
     parent: azure-batch.File
@@ -1072,8 +1232,15 @@ items:
     fullName: >-
       azure-batch.File.getFromComputeNodeWithHttpOperationResponse(poolId,
       nodeId, filePath, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<Object>} - The deserialized result object.'
+        value: '{HttpOperationResponse<Object>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -1198,6 +1365,8 @@ items:
       content: >-
         function getFromComputeNodeWithHttpOperationResponse(poolId, nodeId,
         filePath, options)
+    langs:
+      - js
   - uid: 'azure-batch.File#getFromComputeNode'
     id: 'azure-batch.File#getFromComputeNode'
     parent: azure-batch.File
@@ -1206,8 +1375,37 @@ items:
     fullName: >-
       azure-batch.File.getFromComputeNode(poolId, nodeId, filePath, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{Object} - The deserialized result object.'
+        value: '{Object} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1342,6 +1540,8 @@ items:
       content: >-
         function getFromComputeNode(poolId, nodeId, filePath, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-batch.File#getPropertiesFromComputeNodeWithHttpOperationResponse'
     id: 'azure-batch.File#getPropertiesFromComputeNodeWithHttpOperationResponse'
     parent: azure-batch.File
@@ -1352,8 +1552,15 @@ items:
     fullName: >-
       azure-batch.File.getPropertiesFromComputeNodeWithHttpOperationResponse(poolId,
       nodeId, filePath, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -1467,6 +1674,8 @@ items:
       content: >-
         function getPropertiesFromComputeNodeWithHttpOperationResponse(poolId,
         nodeId, filePath, options)
+    langs:
+      - js
   - uid: 'azure-batch.File#getPropertiesFromComputeNode'
     id: 'azure-batch.File#getPropertiesFromComputeNode'
     parent: azure-batch.File
@@ -1477,8 +1686,37 @@ items:
     fullName: >-
       azure-batch.File.getPropertiesFromComputeNode(poolId, nodeId, filePath,
       options, optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1602,6 +1840,8 @@ items:
       content: >-
         function getPropertiesFromComputeNode(poolId, nodeId, filePath, options,
         optionalCallback)
+    langs:
+      - js
   - uid: 'azure-batch.File#listFromTaskWithHttpOperationResponse'
     id: 'azure-batch.File#listFromTaskWithHttpOperationResponse'
     parent: azure-batch.File
@@ -1610,8 +1850,19 @@ items:
     fullName: >-
       azure-batch.File.listFromTaskWithHttpOperationResponse(jobId, taskId,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<NodeFileListResult>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<NodeFileListResult>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -1713,14 +1964,47 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listFromTaskWithHttpOperationResponse(jobId, taskId, options)'
+    langs:
+      - js
   - uid: 'azure-batch.File#listFromTask'
     id: 'azure-batch.File#listFromTask'
     parent: azure-batch.File
     name: 'listFromTask(jobId, taskId, options, optionalCallback)'
     summary: Lists the files in a task's directory on its compute node.
     fullName: 'azure-batch.File.listFromTask(jobId, taskId, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{NodeFileListResult} - The deserialized result object.'
+        value: '{NodeFileListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NodeFileListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NodeFileListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -1832,6 +2116,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function listFromTask(jobId, taskId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.File#listFromComputeNodeWithHttpOperationResponse'
     id: 'azure-batch.File#listFromComputeNodeWithHttpOperationResponse'
     parent: azure-batch.File
@@ -1842,8 +2128,19 @@ items:
     fullName: >-
       azure-batch.File.listFromComputeNodeWithHttpOperationResponse(poolId,
       nodeId, options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<NodeFileListResult>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<NodeFileListResult>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -1950,6 +2247,8 @@ items:
       content: >-
         function listFromComputeNodeWithHttpOperationResponse(poolId, nodeId,
         options)
+    langs:
+      - js
   - uid: 'azure-batch.File#listFromComputeNode'
     id: 'azure-batch.File#listFromComputeNode'
     parent: azure-batch.File
@@ -1960,8 +2259,39 @@ items:
     fullName: >-
       azure-batch.File.listFromComputeNode(poolId, nodeId, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{NodeFileListResult} - The deserialized result object.'
+        value: '{NodeFileListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NodeFileListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NodeFileListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -2076,6 +2406,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function listFromComputeNode(poolId, nodeId, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.File#listFromTaskNextWithHttpOperationResponse'
     id: 'azure-batch.File#listFromTaskNextWithHttpOperationResponse'
     parent: azure-batch.File
@@ -2084,8 +2416,19 @@ items:
     fullName: >-
       azure-batch.File.listFromTaskNextWithHttpOperationResponse(nextPageLink,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<NodeFileListResult>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<NodeFileListResult>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -2152,14 +2495,47 @@ items:
       content: >-
         function listFromTaskNextWithHttpOperationResponse(nextPageLink,
         options)
+    langs:
+      - js
   - uid: 'azure-batch.File#listFromTaskNext'
     id: 'azure-batch.File#listFromTaskNext'
     parent: azure-batch.File
     name: 'listFromTaskNext(nextPageLink, options, optionalCallback)'
     summary: Lists the files in a task's directory on its compute node.
     fullName: 'azure-batch.File.listFromTaskNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{NodeFileListResult} - The deserialized result object.'
+        value: '{NodeFileListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NodeFileListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NodeFileListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -2234,6 +2610,8 @@ items:
 
           {Promise} A promise is returned
       content: 'function listFromTaskNext(nextPageLink, options, optionalCallback)'
+    langs:
+      - js
   - uid: 'azure-batch.File#listFromComputeNodeNextWithHttpOperationResponse'
     id: 'azure-batch.File#listFromComputeNodeNextWithHttpOperationResponse'
     parent: azure-batch.File
@@ -2244,8 +2622,19 @@ items:
     fullName: >-
       azure-batch.File.listFromComputeNodeNextWithHttpOperationResponse(nextPageLink,
       options)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<NodeFileListResult>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<NodeFileListResult>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -2310,6 +2699,8 @@ items:
       content: >-
         function listFromComputeNodeNextWithHttpOperationResponse(nextPageLink,
         options)
+    langs:
+      - js
   - uid: 'azure-batch.File#listFromComputeNodeNext'
     id: 'azure-batch.File#listFromComputeNodeNext'
     parent: azure-batch.File
@@ -2320,8 +2711,39 @@ items:
     fullName: >-
       azure-batch.File.listFromComputeNodeNext(nextPageLink, options,
       optionalCallback)
-    langs:
-      - js
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{NodeFileListResult} - The deserialized result object.'
+        value: '{NodeFileListResult} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NodeFileListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NodeFileListResult} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -2396,6 +2818,8 @@ items:
       content: >-
         function listFromComputeNodeNext(nextPageLink, options,
         optionalCallback)
+    langs:
+      - js
 references:
   - uid: azure-batch.BatchServiceClient
     name: BatchServiceClient

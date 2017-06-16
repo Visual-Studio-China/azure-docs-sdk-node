@@ -21,8 +21,6 @@ items:
         branch: master
         path: lib\services\computeManagement\lib\computeManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.#ctor'
@@ -36,6 +34,8 @@ items:
       - >-
         azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#deleteMethod
       - 'azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#update'
+    langs:
+      - js
   - id: 'azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.#ctor'
     uid: 'azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.#ctor'
     parent: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations
@@ -66,8 +66,6 @@ items:
     fullName: >-
       azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.beginCreating(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -161,6 +159,8 @@ items:
       content: >-
         function beginCreating(serviceName, deploymentName, parameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#beginDeleting
     id: >-
@@ -171,8 +171,6 @@ items:
     fullName: >-
       azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.beginDeleting(serviceName,
       deploymentName, loadBalancerName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -199,6 +197,8 @@ items:
       content: >-
         function beginDeleting(serviceName, deploymentName, loadBalancerName,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#beginUpdating
     id: >-
@@ -211,8 +211,6 @@ items:
     fullName: >-
       azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.beginUpdating(serviceName,
       deploymentName, loadBalancerName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -310,6 +308,8 @@ items:
       content: >-
         function beginUpdating(serviceName, deploymentName, loadBalancerName,
         parameters, callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#create'
     id: 'azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#create'
     parent: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations
@@ -322,8 +322,6 @@ items:
     fullName: >-
       azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.create(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -415,6 +413,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function create(serviceName, deploymentName, parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#deleteMethod
     id: >-
@@ -425,8 +425,6 @@ items:
     fullName: >-
       azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.deleteMethod(serviceName,
       deploymentName, loadBalancerName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -453,6 +451,8 @@ items:
       content: >-
         function deleteMethod(serviceName, deploymentName, loadBalancerName,
         callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#update'
     id: 'azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations#update'
     parent: azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations
@@ -463,8 +463,6 @@ items:
     fullName: >-
       azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations.update(serviceName,
       deploymentName, loadBalancerName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -562,3 +560,5 @@ items:
       content: >-
         function update(serviceName, deploymentName, loadBalancerName,
         parameters, callback)
+    langs:
+      - js

@@ -21,8 +21,6 @@ items:
         branch: master
         path: lib\services\computeManagement\lib\computeManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
-    langs:
-      - js
     type: Class
     children:
       - 'azure-asm-compute.DNSServerOperations~DNSServerOperations.#ctor'
@@ -37,6 +35,8 @@ items:
         azure-asm-compute.DNSServerOperations~DNSServerOperations#deleteDNSServer
       - >-
         azure-asm-compute.DNSServerOperations~DNSServerOperations#updateDNSServer
+    langs:
+      - js
   - id: 'azure-asm-compute.DNSServerOperations~DNSServerOperations.#ctor'
     uid: 'azure-asm-compute.DNSServerOperations~DNSServerOperations.#ctor'
     parent: azure-asm-compute.DNSServerOperations~DNSServerOperations
@@ -64,8 +64,6 @@ items:
     fullName: >-
       azure-asm-compute.DNSServerOperations~DNSServerOperations.addDNSServer(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -102,6 +100,8 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function addDNSServer(serviceName, deploymentName, parameters, callback)'
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DNSServerOperations~DNSServerOperations#beginAddingDNSServer
     id: >-
@@ -115,8 +115,6 @@ items:
     fullName: >-
       azure-asm-compute.DNSServerOperations~DNSServerOperations.beginAddingDNSServer(serviceName,
       deploymentName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -155,6 +153,8 @@ items:
       content: >-
         function beginAddingDNSServer(serviceName, deploymentName, parameters,
         callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DNSServerOperations~DNSServerOperations#beginDeletingDNSServer
     id: >-
@@ -167,8 +167,6 @@ items:
     fullName: >-
       azure-asm-compute.DNSServerOperations~DNSServerOperations.beginDeletingDNSServer(serviceName,
       deploymentName, dnsServerName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -195,6 +193,8 @@ items:
       content: >-
         function beginDeletingDNSServer(serviceName, deploymentName,
         dnsServerName, callback)
+    langs:
+      - js
   - uid: >-
       azure-asm-compute.DNSServerOperations~DNSServerOperations#beginUpdatingDNSServer
     id: >-
@@ -209,8 +209,6 @@ items:
     fullName: >-
       azure-asm-compute.DNSServerOperations~DNSServerOperations.beginUpdatingDNSServer(serviceName,
       deploymentName, dnsServerName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -253,6 +251,8 @@ items:
       content: >-
         function beginUpdatingDNSServer(serviceName, deploymentName,
         dnsServerName, parameters, callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.DNSServerOperations~DNSServerOperations#deleteDNSServer'
     id: 'azure-asm-compute.DNSServerOperations~DNSServerOperations#deleteDNSServer'
     parent: azure-asm-compute.DNSServerOperations~DNSServerOperations
@@ -261,8 +261,6 @@ items:
     fullName: >-
       azure-asm-compute.DNSServerOperations~DNSServerOperations.deleteDNSServer(serviceName,
       deploymentName, dnsServerName, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -289,6 +287,8 @@ items:
       content: >-
         function deleteDNSServer(serviceName, deploymentName, dnsServerName,
         callback)
+    langs:
+      - js
   - uid: 'azure-asm-compute.DNSServerOperations~DNSServerOperations#updateDNSServer'
     id: 'azure-asm-compute.DNSServerOperations~DNSServerOperations#updateDNSServer'
     parent: azure-asm-compute.DNSServerOperations~DNSServerOperations
@@ -301,8 +301,6 @@ items:
     fullName: >-
       azure-asm-compute.DNSServerOperations~DNSServerOperations.updateDNSServer(serviceName,
       deploymentName, dnsServerName, parameters, callback)
-    langs:
-      - js
     type: Function
     syntax:
       parameters:
@@ -345,3 +343,5 @@ items:
       content: >-
         function updateDNSServer(serviceName, deploymentName, dnsServerName,
         parameters, callback)
+    langs:
+      - js
