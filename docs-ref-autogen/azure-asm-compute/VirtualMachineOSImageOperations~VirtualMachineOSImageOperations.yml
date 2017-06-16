@@ -26,6 +26,8 @@ items:
         branch: master
         path: lib\services\computeManagement\lib\computeManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - >-
@@ -52,8 +54,6 @@ items:
         azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations#unreplicate
       - >-
         azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations#update
-    langs:
-      - js
   - id: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations.#ctor
     uid: >-
@@ -88,6 +88,8 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations.beginSharing(imageName,
       permission, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -110,8 +112,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function beginSharing(imageName, permission, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations#beginUnreplicating
     id: >-
@@ -129,6 +129,8 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations.beginUnreplicating(imageName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -151,8 +153,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function beginUnreplicating(imageName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations#create
     id: >-
@@ -168,6 +168,8 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations.create(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -305,8 +307,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function create(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations#deleteMethod
     id: >-
@@ -322,6 +322,8 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations.deleteMethod(imageName,
       deleteFromStorage, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -345,8 +347,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function deleteMethod(imageName, deleteFromStorage, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations#get
     id: >-
@@ -362,6 +362,8 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations.get(imageName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -378,8 +380,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function get(imageName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations#getDetails
     id: >-
@@ -394,6 +394,8 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations.getDetails(imageName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -412,8 +414,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function getDetails(imageName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations#list
     id: >-
@@ -428,6 +428,8 @@ items:
       more information)
     fullName: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations.list(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -440,8 +442,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: function list(callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations#replicate
     id: >-
@@ -456,6 +456,8 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations.replicate(imageName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -603,8 +605,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function replicate(imageName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations#share
     id: >-
@@ -619,6 +619,8 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations.share(imageName,
       permission, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -641,8 +643,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function share(imageName, permission, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations#unreplicate
     id: >-
@@ -660,6 +660,8 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations.unreplicate(imageName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -682,8 +684,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function unreplicate(imageName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations#update
     id: >-
@@ -699,6 +699,8 @@ items:
     fullName: >-
       azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations.update(imageName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -824,5 +826,3 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function update(imageName, parameters, callback)'
-    langs:
-      - js

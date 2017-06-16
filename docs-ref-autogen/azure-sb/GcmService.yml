@@ -15,6 +15,8 @@ items:
         branch: master
         path: lib\services\serviceBus\lib\gcmservice.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-sb.GcmService.#ctor'
@@ -27,8 +29,6 @@ items:
       - 'azure-sb.GcmService#listRegistrationsByGcmRegistrationId'
       - 'azure-sb.GcmService#_createBody'
       - 'azure-sb.GcmService#_createTemplateBody'
-    langs:
-      - js
   - id: 'azure-sb.GcmService.#ctor'
     uid: 'azure-sb.GcmService.#ctor'
     parent: azure-sb.GcmService
@@ -59,6 +59,8 @@ items:
     name: 'send(tags, payload, callback)'
     summary: Sends a GCM notification.
     fullName: 'azure-sb.GcmService.send(tags, payload, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -83,8 +85,6 @@ items:
           - undefined
         description: ''
       content: 'function send(tags, payload, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.GcmService#createNativeRegistration'
     id: 'azure-sb.GcmService#createNativeRegistration'
     parent: azure-sb.GcmService
@@ -93,6 +93,8 @@ items:
     fullName: >-
       azure-sb.GcmService.createNativeRegistration(gcmRegistrationId, tags,
       options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -124,8 +126,6 @@ items:
       content: >-
         function createNativeRegistration(gcmRegistrationId, tags, options,
         callback)
-    langs:
-      - js
   - uid: 'azure-sb.GcmService#createOrUpdateNativeRegistration'
     id: 'azure-sb.GcmService#createOrUpdateNativeRegistration'
     parent: azure-sb.GcmService
@@ -136,6 +136,8 @@ items:
     fullName: >-
       azure-sb.GcmService.createOrUpdateNativeRegistration(registrationId,
       gcmRegistrationId, tags, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -171,8 +173,6 @@ items:
       content: >-
         function createOrUpdateNativeRegistration(registrationId,
         gcmRegistrationId, tags, options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.GcmService#createTemplateRegistration'
     id: 'azure-sb.GcmService#createTemplateRegistration'
     parent: azure-sb.GcmService
@@ -183,6 +183,8 @@ items:
     fullName: >-
       azure-sb.GcmService.createTemplateRegistration(gcmRegistrationId, tags,
       template, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -219,8 +221,6 @@ items:
       content: >-
         function createTemplateRegistration(gcmRegistrationId, tags, template,
         options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.GcmService#createOrUpdateTemplateRegistration'
     id: 'azure-sb.GcmService#createOrUpdateTemplateRegistration'
     parent: azure-sb.GcmService
@@ -231,6 +231,8 @@ items:
     fullName: >-
       azure-sb.GcmService.createOrUpdateTemplateRegistration(registrationId,
       gcmRegistrationId, tags, template, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -271,8 +273,6 @@ items:
       content: >-
         function createOrUpdateTemplateRegistration(registrationId,
         gcmRegistrationId, tags, template, options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.GcmService#updateTemplateRegistration'
     id: 'azure-sb.GcmService#updateTemplateRegistration'
     parent: azure-sb.GcmService
@@ -283,6 +283,8 @@ items:
     fullName: >-
       azure-sb.GcmService.updateTemplateRegistration(registrationId,
       gcmRegistrationId, template, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -318,8 +320,6 @@ items:
       content: >-
         function updateTemplateRegistration(registrationId, gcmRegistrationId,
         template, options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.GcmService#listRegistrationsByGcmRegistrationId'
     id: 'azure-sb.GcmService#listRegistrationsByGcmRegistrationId'
     parent: azure-sb.GcmService
@@ -328,6 +328,8 @@ items:
     fullName: >-
       azure-sb.GcmService.listRegistrationsByGcmRegistrationId(gcmRegistrationId,
       options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -368,8 +370,6 @@ items:
       content: >-
         function listRegistrationsByGcmRegistrationId(gcmRegistrationId,
         options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.GcmService#_createBody'
     id: 'azure-sb.GcmService#_createBody'
     parent: azure-sb.GcmService
@@ -378,6 +378,8 @@ items:
     fullName: >-
       azure-sb.GcmService._createBody(elementName, gcmRegistrationId, tags,
       template, options)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -417,8 +419,6 @@ items:
       content: >-
         function _createBody(elementName, gcmRegistrationId, tags, template,
         options)
-    langs:
-      - js
   - uid: 'azure-sb.GcmService#_createTemplateBody'
     id: 'azure-sb.GcmService#_createTemplateBody'
     parent: azure-sb.GcmService
@@ -427,6 +427,8 @@ items:
     fullName: >-
       azure-sb.GcmService._createTemplateBody(gcmRegistrationId, tags, template,
       options)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -454,8 +456,6 @@ items:
           - string
         description: The template body.
       content: 'function _createTemplateBody(gcmRegistrationId, tags, template, options)'
-    langs:
-      - js
 references:
   - uid: azure-sb.NotificationHubService
     name: NotificationHubService

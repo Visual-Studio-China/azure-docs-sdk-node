@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\logicManagement\lib\operations\agreements.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-logic.Agreements.#ctor'
@@ -32,8 +34,6 @@ items:
       - >-
         azure-arm-logic.Agreements#listByIntegrationAccountsNextWithHttpOperationResponse
       - 'azure-arm-logic.Agreements#listByIntegrationAccountsNext'
-    langs:
-      - js
   - id: 'azure-arm-logic.Agreements.#ctor'
     uid: 'azure-arm-logic.Agreements.#ctor'
     parent: azure-arm-logic.Agreements
@@ -62,19 +62,8 @@ items:
     fullName: >-
       azure-arm-logic.Agreements.listByIntegrationAccountsWithHttpOperationResponse(resourceGroupName,
       integrationAccountName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<IntegrationAccountAgreementListResult>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<IntegrationAccountAgreementListResult>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -118,8 +107,6 @@ items:
         function
         listByIntegrationAccountsWithHttpOperationResponse(resourceGroupName,
         integrationAccountName, options)
-    langs:
-      - js
   - uid: 'azure-arm-logic.Agreements#listByIntegrationAccounts'
     id: 'azure-arm-logic.Agreements#listByIntegrationAccounts'
     parent: azure-arm-logic.Agreements
@@ -130,45 +117,8 @@ items:
     fullName: >-
       azure-arm-logic.Agreements.listByIntegrationAccounts(resourceGroupName,
       integrationAccountName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {IntegrationAccountAgreementListResult} - The deserialized result
-          object.
-        value: >-
-          {IntegrationAccountAgreementListResult} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IntegrationAccountAgreementListResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IntegrationAccountAgreementListResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -221,8 +171,6 @@ items:
       content: >-
         function listByIntegrationAccounts(resourceGroupName,
         integrationAccountName, options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-logic.Agreements#getWithHttpOperationResponse'
     id: 'azure-arm-logic.Agreements#getWithHttpOperationResponse'
     parent: azure-arm-logic.Agreements
@@ -233,19 +181,8 @@ items:
     fullName: >-
       azure-arm-logic.Agreements.getWithHttpOperationResponse(resourceGroupName,
       integrationAccountName, agreementName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<IntegrationAccountAgreement>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<IntegrationAccountAgreement>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -280,8 +217,6 @@ items:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName,
         integrationAccountName, agreementName, options)
-    langs:
-      - js
   - uid: 'azure-arm-logic.Agreements#get'
     id: 'azure-arm-logic.Agreements#get'
     parent: azure-arm-logic.Agreements
@@ -292,41 +227,8 @@ items:
     fullName: >-
       azure-arm-logic.Agreements.get(resourceGroupName, integrationAccountName,
       agreementName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{IntegrationAccountAgreement} - The deserialized result object.'
-        value: '{IntegrationAccountAgreement} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IntegrationAccountAgreement} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IntegrationAccountAgreement} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -371,8 +273,6 @@ items:
       content: >-
         function get(resourceGroupName, integrationAccountName, agreementName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-logic.Agreements#createOrUpdateWithHttpOperationResponse'
     id: 'azure-arm-logic.Agreements#createOrUpdateWithHttpOperationResponse'
     parent: azure-arm-logic.Agreements
@@ -383,19 +283,8 @@ items:
     fullName: >-
       azure-arm-logic.Agreements.createOrUpdateWithHttpOperationResponse(resourceGroupName,
       integrationAccountName, agreementName, agreement, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<IntegrationAccountAgreement>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<IntegrationAccountAgreement>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1919,8 +1808,6 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(resourceGroupName,
         integrationAccountName, agreementName, agreement, options)
-    langs:
-      - js
   - uid: 'azure-arm-logic.Agreements#createOrUpdate'
     id: 'azure-arm-logic.Agreements#createOrUpdate'
     parent: azure-arm-logic.Agreements
@@ -1932,41 +1819,8 @@ items:
       azure-arm-logic.Agreements.createOrUpdate(resourceGroupName,
       integrationAccountName, agreementName, agreement, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{IntegrationAccountAgreement} - The deserialized result object.'
-        value: '{IntegrationAccountAgreement} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IntegrationAccountAgreement} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IntegrationAccountAgreement} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3500,8 +3354,6 @@ items:
       content: >-
         function createOrUpdate(resourceGroupName, integrationAccountName,
         agreementName, agreement, options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-logic.Agreements#deleteMethodWithHttpOperationResponse'
     id: 'azure-arm-logic.Agreements#deleteMethodWithHttpOperationResponse'
     parent: azure-arm-logic.Agreements
@@ -3512,15 +3364,8 @@ items:
     fullName: >-
       azure-arm-logic.Agreements.deleteMethodWithHttpOperationResponse(resourceGroupName,
       integrationAccountName, agreementName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3555,8 +3400,6 @@ items:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceGroupName,
         integrationAccountName, agreementName, options)
-    langs:
-      - js
   - uid: 'azure-arm-logic.Agreements#deleteMethod'
     id: 'azure-arm-logic.Agreements#deleteMethod'
     parent: azure-arm-logic.Agreements
@@ -3567,37 +3410,8 @@ items:
     fullName: >-
       azure-arm-logic.Agreements.deleteMethod(resourceGroupName,
       integrationAccountName, agreementName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3642,8 +3456,6 @@ items:
       content: >-
         function deleteMethod(resourceGroupName, integrationAccountName,
         agreementName, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-logic.Agreements#listByIntegrationAccountsNextWithHttpOperationResponse
     id: >-
@@ -3656,19 +3468,8 @@ items:
     fullName: >-
       azure-arm-logic.Agreements.listByIntegrationAccountsNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<IntegrationAccountAgreementListResult>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<IntegrationAccountAgreementListResult>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3698,8 +3499,6 @@ items:
         function
         listByIntegrationAccountsNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-logic.Agreements#listByIntegrationAccountsNext'
     id: 'azure-arm-logic.Agreements#listByIntegrationAccountsNext'
     parent: azure-arm-logic.Agreements
@@ -3708,45 +3507,8 @@ items:
     fullName: >-
       azure-arm-logic.Agreements.listByIntegrationAccountsNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {IntegrationAccountAgreementListResult} - The deserialized result
-          object.
-        value: >-
-          {IntegrationAccountAgreementListResult} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IntegrationAccountAgreementListResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link IntegrationAccountAgreementListResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3785,8 +3547,6 @@ items:
       content: >-
         function listByIntegrationAccountsNext(nextPageLink, options,
         optionalCallback)
-    langs:
-      - js
 references:
   - uid: azure-arm-logic.LogicManagementClient
     name: LogicManagementClient

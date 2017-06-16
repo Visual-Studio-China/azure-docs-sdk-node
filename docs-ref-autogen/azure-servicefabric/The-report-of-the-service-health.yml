@@ -13,11 +13,11 @@ items:
         branch: master
         path: lib\services\serviceFabric\lib\models\serviceHealthReport.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-servicefabric.The report of the service health.#ctor'
-    langs:
-      - js
   - id: 'azure-servicefabric.The report of the service health.#ctor'
     uid: 'azure-servicefabric.The report of the service health.#ctor'
     parent: azure-servicefabric.The report of the service health

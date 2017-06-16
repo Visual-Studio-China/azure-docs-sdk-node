@@ -16,6 +16,8 @@ items:
     fullName: >-
       azure-asm-subscription.createSubscriptionClient(credentials, baseUri,
       filters)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -40,5 +42,3 @@ items:
           - azure-asm-subscription.SubscriptionClient
         description: A new SubscriptionClient object.
       content: 'function createSubscriptionClient(credentials, baseUri, filters)'
-    langs:
-      - js

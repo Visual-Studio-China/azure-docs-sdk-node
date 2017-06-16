@@ -18,6 +18,8 @@ items:
         path: >-
           lib\services\operationalInsightsManagement\lib\operations\workspaces.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-operationalinsights.Workspaces.#ctor'
@@ -70,8 +72,6 @@ items:
       - >-
         azure-arm-operationalinsights.Workspaces#beginGetSearchResultsWithHttpOperationResponse
       - 'azure-arm-operationalinsights.Workspaces#beginGetSearchResults'
-    langs:
-      - js
   - id: 'azure-arm-operationalinsights.Workspaces.#ctor'
     uid: 'azure-arm-operationalinsights.Workspaces.#ctor'
     parent: azure-arm-operationalinsights.Workspaces
@@ -100,15 +100,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.disableIntelligencePackWithHttpOperationResponse(resourceGroupName,
       workspaceName, intelligencePackName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -148,8 +141,6 @@ items:
         function
         disableIntelligencePackWithHttpOperationResponse(resourceGroupName,
         workspaceName, intelligencePackName, options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#disableIntelligencePack'
     id: 'azure-arm-operationalinsights.Workspaces#disableIntelligencePack'
     parent: azure-arm-operationalinsights.Workspaces
@@ -160,37 +151,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.disableIntelligencePack(resourceGroupName,
       workspaceName, intelligencePackName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -239,8 +201,6 @@ items:
       content: >-
         function disableIntelligencePack(resourceGroupName, workspaceName,
         intelligencePackName, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#enableIntelligencePackWithHttpOperationResponse
     id: >-
@@ -253,15 +213,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.enableIntelligencePackWithHttpOperationResponse(resourceGroupName,
       workspaceName, intelligencePackName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -301,8 +254,6 @@ items:
         function
         enableIntelligencePackWithHttpOperationResponse(resourceGroupName,
         workspaceName, intelligencePackName, options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#enableIntelligencePack'
     id: 'azure-arm-operationalinsights.Workspaces#enableIntelligencePack'
     parent: azure-arm-operationalinsights.Workspaces
@@ -313,37 +264,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.enableIntelligencePack(resourceGroupName,
       workspaceName, intelligencePackName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -392,8 +314,6 @@ items:
       content: >-
         function enableIntelligencePack(resourceGroupName, workspaceName,
         intelligencePackName, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#listIntelligencePacksWithHttpOperationResponse
     id: >-
@@ -408,15 +328,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listIntelligencePacksWithHttpOperationResponse(resourceGroupName,
       workspaceName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Array>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Array>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -450,8 +363,6 @@ items:
         function
         listIntelligencePacksWithHttpOperationResponse(resourceGroupName,
         workspaceName, options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#listIntelligencePacks'
     id: 'azure-arm-operationalinsights.Workspaces#listIntelligencePacks'
     parent: azure-arm-operationalinsights.Workspaces
@@ -464,37 +375,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listIntelligencePacks(resourceGroupName,
       workspaceName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Array} - The deserialized result object.'
-        value: '{Array} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -537,8 +419,6 @@ items:
       content: >-
         function listIntelligencePacks(resourceGroupName, workspaceName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#getSharedKeysWithHttpOperationResponse
     id: >-
@@ -551,15 +431,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.getSharedKeysWithHttpOperationResponse(resourceGroupName,
       workspaceName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<SharedKeys>} - The deserialized result object.'
-        value: '{HttpOperationResponse<SharedKeys>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -592,8 +465,6 @@ items:
       content: >-
         function getSharedKeysWithHttpOperationResponse(resourceGroupName,
         workspaceName, options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#getSharedKeys'
     id: 'azure-arm-operationalinsights.Workspaces#getSharedKeys'
     parent: azure-arm-operationalinsights.Workspaces
@@ -602,39 +473,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.getSharedKeys(resourceGroupName,
       workspaceName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{SharedKeys} - The deserialized result object.'
-        value: '{SharedKeys} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SharedKeys} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SharedKeys} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -677,8 +517,6 @@ items:
       content: >-
         function getSharedKeys(resourceGroupName, workspaceName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#listUsagesWithHttpOperationResponse
     id: >-
@@ -691,19 +529,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listUsagesWithHttpOperationResponse(resourceGroupName,
       workspaceName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<WorkspaceListUsagesResult>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<WorkspaceListUsagesResult>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -736,8 +563,6 @@ items:
       content: >-
         function listUsagesWithHttpOperationResponse(resourceGroupName,
         workspaceName, options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#listUsages'
     id: 'azure-arm-operationalinsights.Workspaces#listUsages'
     parent: azure-arm-operationalinsights.Workspaces
@@ -746,41 +571,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listUsages(resourceGroupName,
       workspaceName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{WorkspaceListUsagesResult} - The deserialized result object.'
-        value: '{WorkspaceListUsagesResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListUsagesResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListUsagesResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -823,8 +615,6 @@ items:
       content: >-
         function listUsages(resourceGroupName, workspaceName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#listManagementGroupsWithHttpOperationResponse
     id: >-
@@ -837,19 +627,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listManagementGroupsWithHttpOperationResponse(resourceGroupName,
       workspaceName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<WorkspaceListManagementGroupsResult>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<WorkspaceListManagementGroupsResult>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -883,8 +662,6 @@ items:
         function
         listManagementGroupsWithHttpOperationResponse(resourceGroupName,
         workspaceName, options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#listManagementGroups'
     id: 'azure-arm-operationalinsights.Workspaces#listManagementGroups'
     parent: azure-arm-operationalinsights.Workspaces
@@ -895,45 +672,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listManagementGroups(resourceGroupName,
       workspaceName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {WorkspaceListManagementGroupsResult} - The deserialized result
-          object.
-        value: >-
-          {WorkspaceListManagementGroupsResult} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListManagementGroupsResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListManagementGroupsResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -976,8 +716,6 @@ items:
       content: >-
         function listManagementGroups(resourceGroupName, workspaceName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#listByResourceGroupWithHttpOperationResponse
     id: >-
@@ -988,19 +726,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listByResourceGroupWithHttpOperationResponse(resourceGroupName,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<WorkspaceListResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<WorkspaceListResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1029,8 +756,6 @@ items:
       content: >-
         function listByResourceGroupWithHttpOperationResponse(resourceGroupName,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#listByResourceGroup'
     id: 'azure-arm-operationalinsights.Workspaces#listByResourceGroup'
     parent: azure-arm-operationalinsights.Workspaces
@@ -1039,39 +764,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listByResourceGroup(resourceGroupName,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{WorkspaceListResult} - The deserialized result object.'
-        value: '{WorkspaceListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1110,8 +804,6 @@ items:
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#listWithHttpOperationResponse'
     id: 'azure-arm-operationalinsights.Workspaces#listWithHttpOperationResponse'
     parent: azure-arm-operationalinsights.Workspaces
@@ -1119,19 +811,8 @@ items:
     summary: Gets the workspaces in a subscription.
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<WorkspaceListResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<WorkspaceListResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1152,47 +833,14 @@ items:
           - Promise
         description: A promise is returned
       content: function listWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#list'
     id: 'azure-arm-operationalinsights.Workspaces#list'
     parent: azure-arm-operationalinsights.Workspaces
     name: 'list(options, optionalCallback)'
     summary: Gets the workspaces in a subscription.
     fullName: 'azure-arm-operationalinsights.Workspaces.list(options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{WorkspaceListResult} - The deserialized result object.'
-        value: '{WorkspaceListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WorkspaceListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1223,8 +871,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#createOrUpdateWithHttpOperationResponse
     id: >-
@@ -1237,15 +883,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.createOrUpdateWithHttpOperationResponse(resourceGroupName,
       workspaceName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Workspace>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Workspace>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1370,8 +1009,6 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(resourceGroupName,
         workspaceName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#createOrUpdate'
     id: 'azure-arm-operationalinsights.Workspaces#createOrUpdate'
     parent: azure-arm-operationalinsights.Workspaces
@@ -1382,39 +1019,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.createOrUpdate(resourceGroupName,
       workspaceName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Workspace} - The deserialized result object.'
-        value: '{Workspace} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Workspace} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Workspace} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1549,8 +1155,6 @@ items:
       content: >-
         function createOrUpdate(resourceGroupName, workspaceName, parameters,
         options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#deleteMethodWithHttpOperationResponse
     id: >-
@@ -1563,15 +1167,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.deleteMethodWithHttpOperationResponse(resourceGroupName,
       workspaceName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1602,8 +1199,6 @@ items:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceGroupName,
         workspaceName, options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#deleteMethod'
     id: 'azure-arm-operationalinsights.Workspaces#deleteMethod'
     parent: azure-arm-operationalinsights.Workspaces
@@ -1612,37 +1207,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.deleteMethod(resourceGroupName,
       workspaceName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1683,8 +1249,6 @@ items:
       content: >-
         function deleteMethod(resourceGroupName, workspaceName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#getWithHttpOperationResponse'
     id: 'azure-arm-operationalinsights.Workspaces#getWithHttpOperationResponse'
     parent: azure-arm-operationalinsights.Workspaces
@@ -1693,15 +1257,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.getWithHttpOperationResponse(resourceGroupName,
       workspaceName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Workspace>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Workspace>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1732,8 +1289,6 @@ items:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName, workspaceName,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#get'
     id: 'azure-arm-operationalinsights.Workspaces#get'
     parent: azure-arm-operationalinsights.Workspaces
@@ -1742,39 +1297,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.get(resourceGroupName,
       workspaceName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Workspace} - The deserialized result object.'
-        value: '{Workspace} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Workspace} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Workspace} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1815,8 +1339,6 @@ items:
       content: >-
         function get(resourceGroupName, workspaceName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#listLinkTargetsWithHttpOperationResponse
     id: >-
@@ -1832,15 +1354,8 @@ items:
       parameter in the Url is ignored.
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listLinkTargetsWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Array>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Array>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1861,8 +1376,6 @@ items:
           - Promise
         description: A promise is returned
       content: function listLinkTargetsWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#listLinkTargets'
     id: 'azure-arm-operationalinsights.Workspaces#listLinkTargets'
     parent: azure-arm-operationalinsights.Workspaces
@@ -1877,37 +1390,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.listLinkTargets(options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Array} - The deserialized result object.'
-        value: '{Array} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1938,8 +1422,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listLinkTargets(options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#getSchemaWithHttpOperationResponse
     id: >-
@@ -1952,19 +1434,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.getSchemaWithHttpOperationResponse(resourceGroupName,
       workspaceName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<SearchGetSchemaResponse>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<SearchGetSchemaResponse>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1997,8 +1468,6 @@ items:
       content: >-
         function getSchemaWithHttpOperationResponse(resourceGroupName,
         workspaceName, options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#getSchema'
     id: 'azure-arm-operationalinsights.Workspaces#getSchema'
     parent: azure-arm-operationalinsights.Workspaces
@@ -2007,41 +1476,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.getSchema(resourceGroupName,
       workspaceName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{SearchGetSchemaResponse} - The deserialized result object.'
-        value: '{SearchGetSchemaResponse} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchGetSchemaResponse} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchGetSchemaResponse} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2084,8 +1520,6 @@ items:
       content: >-
         function getSchema(resourceGroupName, workspaceName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#getSearchResultsWithHttpOperationResponse
     id: >-
@@ -2104,19 +1538,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.getSearchResultsWithHttpOperationResponse(resourceGroupName,
       workspaceName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<SearchResultsResponse>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<SearchResultsResponse>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2199,8 +1622,6 @@ items:
       content: >-
         function getSearchResultsWithHttpOperationResponse(resourceGroupName,
         workspaceName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#getSearchResults'
     id: 'azure-arm-operationalinsights.Workspaces#getSearchResults'
     parent: azure-arm-operationalinsights.Workspaces
@@ -2217,39 +1638,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.getSearchResults(resourceGroupName,
       workspaceName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{SearchResultsResponse} - The deserialized result object.'
-        value: '{SearchResultsResponse} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchResultsResponse} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchResultsResponse} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2342,8 +1732,6 @@ items:
       content: >-
         function getSearchResults(resourceGroupName, workspaceName, parameters,
         options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#updateSearchResultsWithHttpOperationResponse
     id: >-
@@ -2356,19 +1744,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.updateSearchResultsWithHttpOperationResponse(resourceGroupName,
       workspaceName, id, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<SearchResultsResponse>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<SearchResultsResponse>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2407,8 +1784,6 @@ items:
       content: >-
         function updateSearchResultsWithHttpOperationResponse(resourceGroupName,
         workspaceName, id, options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#updateSearchResults'
     id: 'azure-arm-operationalinsights.Workspaces#updateSearchResults'
     parent: azure-arm-operationalinsights.Workspaces
@@ -2419,39 +1794,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.updateSearchResults(resourceGroupName,
       workspaceName, id, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{SearchResultsResponse} - The deserialized result object.'
-        value: '{SearchResultsResponse} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchResultsResponse} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchResultsResponse} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2500,8 +1844,6 @@ items:
       content: >-
         function updateSearchResults(resourceGroupName, workspaceName, id,
         options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#beginCreateOrUpdateWithHttpOperationResponse
     id: >-
@@ -2514,15 +1856,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
       workspaceName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Workspace>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Workspace>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2647,8 +1982,6 @@ items:
       content: >-
         function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
         workspaceName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#beginCreateOrUpdate'
     id: 'azure-arm-operationalinsights.Workspaces#beginCreateOrUpdate'
     parent: azure-arm-operationalinsights.Workspaces
@@ -2659,39 +1992,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.beginCreateOrUpdate(resourceGroupName,
       workspaceName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Workspace} - The deserialized result object.'
-        value: '{Workspace} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Workspace} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Workspace} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2826,8 +2128,6 @@ items:
       content: >-
         function beginCreateOrUpdate(resourceGroupName, workspaceName,
         parameters, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-operationalinsights.Workspaces#beginGetSearchResultsWithHttpOperationResponse
     id: >-
@@ -2846,19 +2146,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.beginGetSearchResultsWithHttpOperationResponse(resourceGroupName,
       workspaceName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<SearchResultsResponse>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<SearchResultsResponse>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2942,8 +2231,6 @@ items:
         function
         beginGetSearchResultsWithHttpOperationResponse(resourceGroupName,
         workspaceName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-operationalinsights.Workspaces#beginGetSearchResults'
     id: 'azure-arm-operationalinsights.Workspaces#beginGetSearchResults'
     parent: azure-arm-operationalinsights.Workspaces
@@ -2960,39 +2247,8 @@ items:
     fullName: >-
       azure-arm-operationalinsights.Workspaces.beginGetSearchResults(resourceGroupName,
       workspaceName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{SearchResultsResponse} - The deserialized result object.'
-        value: '{SearchResultsResponse} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchResultsResponse} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SearchResultsResponse} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3085,8 +2341,6 @@ items:
       content: >-
         function beginGetSearchResults(resourceGroupName, workspaceName,
         parameters, options, optionalCallback)
-    langs:
-      - js
 references:
   - uid: azure-arm-operationalinsights.OperationalInsightsManagementClient
     name: OperationalInsightsManagementClient

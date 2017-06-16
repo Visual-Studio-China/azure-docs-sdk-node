@@ -23,13 +23,13 @@ items:
         branch: master
         path: lib\services\gallery\lib\galleryClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-gallery.ItemOperations~ItemOperations.#ctor'
       - 'azure-gallery.ItemOperations~ItemOperations#get'
       - 'azure-gallery.ItemOperations~ItemOperations#list'
-    langs:
-      - js
   - id: 'azure-gallery.ItemOperations~ItemOperations.#ctor'
     uid: 'azure-gallery.ItemOperations~ItemOperations.#ctor'
     parent: azure-gallery.ItemOperations~ItemOperations
@@ -52,6 +52,8 @@ items:
     name: 'get(itemIdentity, callback)'
     summary: Gets a gallery items.
     fullName: 'azure-gallery.ItemOperations~ItemOperations.get(itemIdentity, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -69,8 +71,6 @@ items:
           - azure-gallery.Stream
         description: The response stream.
       content: 'function get(itemIdentity, callback)'
-    langs:
-      - js
   - uid: 'azure-gallery.ItemOperations~ItemOperations#list'
     id: 'azure-gallery.ItemOperations~ItemOperations#list'
     parent: azure-gallery.ItemOperations~ItemOperations
@@ -79,6 +79,8 @@ items:
     fullName: >-
       azure-gallery.ItemOperations~ItemOperations.list(parametersOrCallback,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -112,5 +114,3 @@ items:
           - azure-gallery.Stream
         description: The response stream.
       content: 'function list(parametersOrCallback, callback)'
-    langs:
-      - js

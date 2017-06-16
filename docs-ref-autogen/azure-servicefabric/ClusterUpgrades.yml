@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\serviceFabric\lib\operations\clusterUpgrades.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-servicefabric.ClusterUpgrades.#ctor'
@@ -28,8 +30,6 @@ items:
       - 'azure-servicefabric.ClusterUpgrades#resume'
       - 'azure-servicefabric.ClusterUpgrades#rollbackWithHttpOperationResponse'
       - 'azure-servicefabric.ClusterUpgrades#rollback'
-    langs:
-      - js
   - id: 'azure-servicefabric.ClusterUpgrades.#ctor'
     uid: 'azure-servicefabric.ClusterUpgrades.#ctor'
     parent: azure-servicefabric.ClusterUpgrades
@@ -54,15 +54,8 @@ items:
     fullName: >-
       azure-servicefabric.ClusterUpgrades.startWithHttpOperationResponse(startClusterUpgrade,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<String>} - The deserialized result object.'
-        value: '{HttpOperationResponse<String>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -211,8 +204,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function startWithHttpOperationResponse(startClusterUpgrade, options)'
-    langs:
-      - js
   - uid: 'azure-servicefabric.ClusterUpgrades#start'
     id: 'azure-servicefabric.ClusterUpgrades#start'
     parent: azure-servicefabric.ClusterUpgrades
@@ -221,37 +212,8 @@ items:
     fullName: >-
       azure-servicefabric.ClusterUpgrades.start(startClusterUpgrade, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{String} - The deserialized result object.'
-        value: '{String} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -410,8 +372,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function start(startClusterUpgrade, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-servicefabric.ClusterUpgrades#updateWithHttpOperationResponse'
     id: 'azure-servicefabric.ClusterUpgrades#updateWithHttpOperationResponse'
     parent: azure-servicefabric.ClusterUpgrades
@@ -420,15 +380,8 @@ items:
     fullName: >-
       azure-servicefabric.ClusterUpgrades.updateWithHttpOperationResponse(updateClusterUpgrade,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<String>} - The deserialized result object.'
-        value: '{HttpOperationResponse<String>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -602,8 +555,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function updateWithHttpOperationResponse(updateClusterUpgrade, options)'
-    langs:
-      - js
   - uid: 'azure-servicefabric.ClusterUpgrades#update'
     id: 'azure-servicefabric.ClusterUpgrades#update'
     parent: azure-servicefabric.ClusterUpgrades
@@ -612,37 +563,8 @@ items:
     fullName: >-
       azure-servicefabric.ClusterUpgrades.update(updateClusterUpgrade, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{String} - The deserialized result object.'
-        value: '{String} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -826,8 +748,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function update(updateClusterUpgrade, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-servicefabric.ClusterUpgrades#resumeWithHttpOperationResponse'
     id: 'azure-servicefabric.ClusterUpgrades#resumeWithHttpOperationResponse'
     parent: azure-servicefabric.ClusterUpgrades
@@ -836,15 +756,8 @@ items:
     fullName: >-
       azure-servicefabric.ClusterUpgrades.resumeWithHttpOperationResponse(resumeClusterUpgrade,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<String>} - The deserialized result object.'
-        value: '{HttpOperationResponse<String>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -874,8 +787,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function resumeWithHttpOperationResponse(resumeClusterUpgrade, options)'
-    langs:
-      - js
   - uid: 'azure-servicefabric.ClusterUpgrades#resume'
     id: 'azure-servicefabric.ClusterUpgrades#resume'
     parent: azure-servicefabric.ClusterUpgrades
@@ -884,37 +795,8 @@ items:
     fullName: >-
       azure-servicefabric.ClusterUpgrades.resume(resumeClusterUpgrade, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{String} - The deserialized result object.'
-        value: '{String} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -954,8 +836,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function resume(resumeClusterUpgrade, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-servicefabric.ClusterUpgrades#rollbackWithHttpOperationResponse'
     id: 'azure-servicefabric.ClusterUpgrades#rollbackWithHttpOperationResponse'
     parent: azure-servicefabric.ClusterUpgrades
@@ -963,15 +843,8 @@ items:
     summary: Rollback cluster upgrades
     fullName: >-
       azure-servicefabric.ClusterUpgrades.rollbackWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<String>} - The deserialized result object.'
-        value: '{HttpOperationResponse<String>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -992,45 +865,14 @@ items:
           - Promise
         description: A promise is returned
       content: function rollbackWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-servicefabric.ClusterUpgrades#rollback'
     id: 'azure-servicefabric.ClusterUpgrades#rollback'
     parent: azure-servicefabric.ClusterUpgrades
     name: 'rollback(options, optionalCallback)'
     summary: Rollback cluster upgrades
     fullName: 'azure-servicefabric.ClusterUpgrades.rollback(options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{String} - The deserialized result object.'
-        value: '{String} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1061,8 +903,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function rollback(options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-servicefabric.ServiceFabricClient
     name: ServiceFabricClient

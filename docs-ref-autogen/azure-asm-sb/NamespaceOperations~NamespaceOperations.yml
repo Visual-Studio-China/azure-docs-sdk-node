@@ -21,6 +21,8 @@ items:
         branch: master
         path: lib\services\serviceBusManagement\lib\serviceBusManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-sb.NamespaceOperations~NamespaceOperations.#ctor'
@@ -42,8 +44,6 @@ items:
         azure-asm-sb.NamespaceOperations~NamespaceOperations#listAuthorizationRules
       - >-
         azure-asm-sb.NamespaceOperations~NamespaceOperations#updateAuthorizationRule
-    langs:
-      - js
   - id: 'azure-asm-sb.NamespaceOperations~NamespaceOperations.#ctor'
     uid: 'azure-asm-sb.NamespaceOperations~NamespaceOperations.#ctor'
     parent: azure-asm-sb.NamespaceOperations~NamespaceOperations
@@ -73,6 +73,8 @@ items:
     fullName: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations.checkAvailability(namespaceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -89,8 +91,6 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function checkAvailability(namespaceName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-sb.NamespaceOperations~NamespaceOperations#create'
     id: 'azure-asm-sb.NamespaceOperations~NamespaceOperations#create'
     parent: azure-asm-sb.NamespaceOperations~NamespaceOperations
@@ -103,6 +103,8 @@ items:
     fullName: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations.create(namespaceName,
       region, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -124,8 +126,6 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function create(namespaceName, region, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations#createAuthorizationRule
     id: >-
@@ -138,6 +138,8 @@ items:
     fullName: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations.createAuthorizationRule(namespaceName,
       rule, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -209,8 +211,6 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function createAuthorizationRule(namespaceName, rule, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-sb.NamespaceOperations~NamespaceOperations#createNamespace'
     id: 'azure-asm-sb.NamespaceOperations~NamespaceOperations#createNamespace'
     parent: azure-asm-sb.NamespaceOperations~NamespaceOperations
@@ -223,6 +223,8 @@ items:
     fullName: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations.createNamespace(namespaceName,
       namespaceEntity, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -262,8 +264,6 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function createNamespace(namespaceName, namespaceEntity, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-sb.NamespaceOperations~NamespaceOperations#deleteMethod'
     id: 'azure-asm-sb.NamespaceOperations~NamespaceOperations#deleteMethod'
     parent: azure-asm-sb.NamespaceOperations~NamespaceOperations
@@ -277,6 +277,8 @@ items:
     fullName: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations.deleteMethod(namespaceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -293,8 +295,6 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function deleteMethod(namespaceName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations#deleteAuthorizationRule
     id: >-
@@ -307,6 +307,8 @@ items:
     fullName: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations.deleteAuthorizationRule(namespaceName,
       ruleName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -327,8 +329,6 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function deleteAuthorizationRule(namespaceName, ruleName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-sb.NamespaceOperations~NamespaceOperations#get'
     id: 'azure-asm-sb.NamespaceOperations~NamespaceOperations#get'
     parent: azure-asm-sb.NamespaceOperations~NamespaceOperations
@@ -340,6 +340,8 @@ items:
     fullName: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations.get(namespaceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -356,8 +358,6 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function get(namespaceName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-sb.NamespaceOperations~NamespaceOperations#getAuthorizationRule'
     id: 'azure-asm-sb.NamespaceOperations~NamespaceOperations#getAuthorizationRule'
     parent: azure-asm-sb.NamespaceOperations~NamespaceOperations
@@ -368,6 +368,8 @@ items:
     fullName: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations.getAuthorizationRule(namespaceName,
       entityName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -392,8 +394,6 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function getAuthorizationRule(namespaceName, entityName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations#getNamespaceDescription
     id: >-
@@ -409,6 +409,8 @@ items:
     fullName: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations.getNamespaceDescription(namespaceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -425,8 +427,6 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function getNamespaceDescription(namespaceName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-sb.NamespaceOperations~NamespaceOperations#list'
     id: 'azure-asm-sb.NamespaceOperations~NamespaceOperations#list'
     parent: azure-asm-sb.NamespaceOperations~NamespaceOperations
@@ -436,6 +436,8 @@ items:
       http://msdn.microsoft.com/en-us/library/azure/hh780759.aspx for more
       information)
     fullName: azure-asm-sb.NamespaceOperations~NamespaceOperations.list(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -448,8 +450,6 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: function list(callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations#listAuthorizationRules
     id: >-
@@ -462,6 +462,8 @@ items:
     fullName: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations.listAuthorizationRules(namespaceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -480,8 +482,6 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function listAuthorizationRules(namespaceName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations#updateAuthorizationRule
     id: >-
@@ -494,6 +494,8 @@ items:
     fullName: >-
       azure-asm-sb.NamespaceOperations~NamespaceOperations.updateAuthorizationRule(namespaceName,
       rule, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -566,5 +568,3 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function updateAuthorizationRule(namespaceName, rule, callback)'
-    langs:
-      - js

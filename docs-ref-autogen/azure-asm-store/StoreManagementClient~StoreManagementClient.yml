@@ -16,6 +16,8 @@ items:
         branch: master
         path: lib\services\storeManagement\lib\storeManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-store.StoreManagementClient~StoreManagementClient.#ctor'
@@ -24,8 +26,6 @@ items:
         azure-asm-store.StoreManagementClient~StoreManagementClient#cloudServices
       - >-
         azure-asm-store.StoreManagementClient~StoreManagementClient#getOperationStatus
-    langs:
-      - js
   - id: 'azure-asm-store.StoreManagementClient~StoreManagementClient.#ctor'
     uid: 'azure-asm-store.StoreManagementClient~StoreManagementClient.#ctor'
     parent: azure-asm-store.StoreManagementClient~StoreManagementClient
@@ -74,14 +74,14 @@ items:
       Provides an instance of the [AddOnOperations](-AddOnOperations.html)
       object.
     fullName: azure-asm-store.StoreManagementClient~StoreManagementClient.addOns
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: addOns
-    langs:
-      - js
   - uid: 'azure-asm-store.StoreManagementClient~StoreManagementClient#cloudServices'
     id: 'azure-asm-store.StoreManagementClient~StoreManagementClient#cloudServices'
     parent: azure-asm-store.StoreManagementClient~StoreManagementClient
@@ -90,14 +90,14 @@ items:
       Provides an instance of the
       [CloudServiceOperations](-CloudServiceOperations.html) object.
     fullName: azure-asm-store.StoreManagementClient~StoreManagementClient.cloudServices
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: cloudServices
-    langs:
-      - js
   - uid: >-
       azure-asm-store.StoreManagementClient~StoreManagementClient#getOperationStatus
     id: >-
@@ -114,6 +114,8 @@ items:
     fullName: >-
       azure-asm-store.StoreManagementClient~StoreManagementClient.getOperationStatus(requestId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -136,5 +138,3 @@ items:
           - azure-asm-store.Stream
         description: The response stream.
       content: 'function getOperationStatus(requestId, callback)'
-    langs:
-      - js

@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\networkManagement2\lib\operations\loadBalancers.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-network.LoadBalancers.#ctor'
@@ -40,8 +42,6 @@ items:
       - 'azure-arm-network.LoadBalancers#listAllNext'
       - 'azure-arm-network.LoadBalancers#listNextWithHttpOperationResponse'
       - 'azure-arm-network.LoadBalancers#listNext'
-    langs:
-      - js
   - id: 'azure-arm-network.LoadBalancers.#ctor'
     uid: 'azure-arm-network.LoadBalancers.#ctor'
     parent: azure-arm-network.LoadBalancers
@@ -68,15 +68,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.deleteMethodWithHttpOperationResponse(resourceGroupName,
       loadBalancerName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -107,8 +100,6 @@ items:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceGroupName,
         loadBalancerName, options)
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#deleteMethod'
     id: 'azure-arm-network.LoadBalancers#deleteMethod'
     parent: azure-arm-network.LoadBalancers
@@ -119,37 +110,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.deleteMethod(resourceGroupName,
       loadBalancerName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -190,8 +152,6 @@ items:
       content: >-
         function deleteMethod(resourceGroupName, loadBalancerName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#getWithHttpOperationResponse'
     id: 'azure-arm-network.LoadBalancers#getWithHttpOperationResponse'
     parent: azure-arm-network.LoadBalancers
@@ -200,19 +160,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.getWithHttpOperationResponse(resourceGroupName,
       loadBalancerName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<LoadBalancer>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<LoadBalancer>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -248,8 +197,6 @@ items:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName,
         loadBalancerName, options)
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#get'
     id: 'azure-arm-network.LoadBalancers#get'
     parent: azure-arm-network.LoadBalancers
@@ -258,39 +205,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.get(resourceGroupName, loadBalancerName,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{LoadBalancer} - The deserialized result object.'
-        value: '{LoadBalancer} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancer} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancer} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -336,8 +252,6 @@ items:
       content: >-
         function get(resourceGroupName, loadBalancerName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#createOrUpdateWithHttpOperationResponse'
     id: 'azure-arm-network.LoadBalancers#createOrUpdateWithHttpOperationResponse'
     parent: azure-arm-network.LoadBalancers
@@ -348,19 +262,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.createOrUpdateWithHttpOperationResponse(resourceGroupName,
       loadBalancerName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<LoadBalancer>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<LoadBalancer>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -518,8 +421,6 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(resourceGroupName,
         loadBalancerName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#createOrUpdate'
     id: 'azure-arm-network.LoadBalancers#createOrUpdate'
     parent: azure-arm-network.LoadBalancers
@@ -530,39 +431,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.createOrUpdate(resourceGroupName,
       loadBalancerName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{LoadBalancer} - The deserialized result object.'
-        value: '{LoadBalancer} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancer} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancer} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -730,27 +600,14 @@ items:
       content: >-
         function createOrUpdate(resourceGroupName, loadBalancerName, parameters,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#listAllWithHttpOperationResponse'
     id: 'azure-arm-network.LoadBalancers#listAllWithHttpOperationResponse'
     parent: azure-arm-network.LoadBalancers
     name: listAllWithHttpOperationResponse(options)
     summary: Gets all the load balancers in a subscription.
     fullName: azure-arm-network.LoadBalancers.listAllWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<LoadBalancerListResult>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<LoadBalancerListResult>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -771,49 +628,14 @@ items:
           - Promise
         description: A promise is returned
       content: function listAllWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#listAll'
     id: 'azure-arm-network.LoadBalancers#listAll'
     parent: azure-arm-network.LoadBalancers
     name: 'listAll(options, optionalCallback)'
     summary: Gets all the load balancers in a subscription.
     fullName: 'azure-arm-network.LoadBalancers.listAll(options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{LoadBalancerListResult} - The deserialized result object.'
-        value: '{LoadBalancerListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancerListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancerListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -844,8 +666,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listAll(options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#listWithHttpOperationResponse'
     id: 'azure-arm-network.LoadBalancers#listWithHttpOperationResponse'
     parent: azure-arm-network.LoadBalancers
@@ -854,19 +674,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.listWithHttpOperationResponse(resourceGroupName,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<LoadBalancerListResult>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<LoadBalancerListResult>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -891,8 +700,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listWithHttpOperationResponse(resourceGroupName, options)'
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#list'
     id: 'azure-arm-network.LoadBalancers#list'
     parent: azure-arm-network.LoadBalancers
@@ -901,41 +708,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.list(resourceGroupName, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{LoadBalancerListResult} - The deserialized result object.'
-        value: '{LoadBalancerListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancerListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancerListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -970,8 +744,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(resourceGroupName, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#beginDeleteMethodWithHttpOperationResponse'
     id: 'azure-arm-network.LoadBalancers#beginDeleteMethodWithHttpOperationResponse'
     parent: azure-arm-network.LoadBalancers
@@ -982,15 +754,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.beginDeleteMethodWithHttpOperationResponse(resourceGroupName,
       loadBalancerName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1021,8 +786,6 @@ items:
       content: >-
         function beginDeleteMethodWithHttpOperationResponse(resourceGroupName,
         loadBalancerName, options)
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#beginDeleteMethod'
     id: 'azure-arm-network.LoadBalancers#beginDeleteMethod'
     parent: azure-arm-network.LoadBalancers
@@ -1033,37 +796,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.beginDeleteMethod(resourceGroupName,
       loadBalancerName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1104,8 +838,6 @@ items:
       content: >-
         function beginDeleteMethod(resourceGroupName, loadBalancerName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-network.LoadBalancers#beginCreateOrUpdateWithHttpOperationResponse
     id: >-
@@ -1118,19 +850,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
       loadBalancerName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<LoadBalancer>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<LoadBalancer>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1288,8 +1009,6 @@ items:
       content: >-
         function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
         loadBalancerName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#beginCreateOrUpdate'
     id: 'azure-arm-network.LoadBalancers#beginCreateOrUpdate'
     parent: azure-arm-network.LoadBalancers
@@ -1300,39 +1019,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.beginCreateOrUpdate(resourceGroupName,
       loadBalancerName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{LoadBalancer} - The deserialized result object.'
-        value: '{LoadBalancer} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancer} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancer} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1500,8 +1188,6 @@ items:
       content: >-
         function beginCreateOrUpdate(resourceGroupName, loadBalancerName,
         parameters, options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#listAllNextWithHttpOperationResponse'
     id: 'azure-arm-network.LoadBalancers#listAllNextWithHttpOperationResponse'
     parent: azure-arm-network.LoadBalancers
@@ -1510,19 +1196,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.listAllNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<LoadBalancerListResult>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<LoadBalancerListResult>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1549,8 +1224,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listAllNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#listAllNext'
     id: 'azure-arm-network.LoadBalancers#listAllNext'
     parent: azure-arm-network.LoadBalancers
@@ -1559,41 +1232,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.listAllNext(nextPageLink, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{LoadBalancerListResult} - The deserialized result object.'
-        value: '{LoadBalancerListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancerListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancerListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1630,8 +1270,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listAllNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#listNextWithHttpOperationResponse'
     id: 'azure-arm-network.LoadBalancers#listNextWithHttpOperationResponse'
     parent: azure-arm-network.LoadBalancers
@@ -1640,19 +1278,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.listNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<LoadBalancerListResult>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<LoadBalancerListResult>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1679,8 +1306,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
   - uid: 'azure-arm-network.LoadBalancers#listNext'
     id: 'azure-arm-network.LoadBalancers#listNext'
     parent: azure-arm-network.LoadBalancers
@@ -1689,41 +1314,8 @@ items:
     fullName: >-
       azure-arm-network.LoadBalancers.listNext(nextPageLink, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{LoadBalancerListResult} - The deserialized result object.'
-        value: '{LoadBalancerListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancerListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link LoadBalancerListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1760,8 +1352,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-arm-network.NetworkManagementClient
     name: NetworkManagementClient

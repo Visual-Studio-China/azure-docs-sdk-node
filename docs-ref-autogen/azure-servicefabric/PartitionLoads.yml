@@ -17,13 +17,13 @@ items:
         branch: master
         path: lib\services\serviceFabric\lib\operations\partitionLoads.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-servicefabric.PartitionLoads.#ctor'
       - 'azure-servicefabric.PartitionLoads#resetWithHttpOperationResponse'
       - 'azure-servicefabric.PartitionLoads#reset'
-    langs:
-      - js
   - id: 'azure-servicefabric.PartitionLoads.#ctor'
     uid: 'azure-servicefabric.PartitionLoads.#ctor'
     parent: azure-servicefabric.PartitionLoads
@@ -48,15 +48,8 @@ items:
     fullName: >-
       azure-servicefabric.PartitionLoads.resetWithHttpOperationResponse(partitionId,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<String>} - The deserialized result object.'
-        value: '{HttpOperationResponse<String>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -81,8 +74,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function resetWithHttpOperationResponse(partitionId, options)'
-    langs:
-      - js
   - uid: 'azure-servicefabric.PartitionLoads#reset'
     id: 'azure-servicefabric.PartitionLoads#reset'
     parent: azure-servicefabric.PartitionLoads
@@ -91,37 +82,8 @@ items:
     fullName: >-
       azure-servicefabric.PartitionLoads.reset(partitionId, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{String} - The deserialized result object.'
-        value: '{String} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -156,8 +118,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function reset(partitionId, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-servicefabric.ServiceFabricClient
     name: ServiceFabricClient

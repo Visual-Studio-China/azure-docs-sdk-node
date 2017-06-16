@@ -16,8 +16,8 @@ items:
       Identifier of the resource on which Key Vault users and service principals
       must authenticate.
     fullName: azure-keyvault.RESOURCE_ID
+    langs:
+      - js
     type: Member
     syntax:
       content: RESOURCE_ID
-    langs:
-      - js

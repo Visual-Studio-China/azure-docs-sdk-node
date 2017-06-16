@@ -23,6 +23,8 @@ items:
         branch: master
         path: lib\services\storageManagement\lib\storageManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - >-
@@ -57,8 +59,6 @@ items:
         azure-asm-storage.StorageAccountOperations~StorageAccountOperations#update
       - >-
         azure-asm-storage.StorageAccountOperations~StorageAccountOperations#validateMigration
-    langs:
-      - js
   - id: 'azure-asm-storage.StorageAccountOperations~StorageAccountOperations.#ctor'
     uid: 'azure-asm-storage.StorageAccountOperations~StorageAccountOperations.#ctor'
     parent: azure-asm-storage.StorageAccountOperations~StorageAccountOperations
@@ -88,6 +88,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.abortMigration(storageAccountName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -104,8 +106,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function abortMigration(storageAccountName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations#beginAbortMigration
     id: >-
@@ -118,6 +118,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.beginAbortMigration(storageAccountName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -134,8 +136,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function beginAbortMigration(storageAccountName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations#beginCommitMigration
     id: >-
@@ -148,6 +148,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.beginCommitMigration(storageAccountName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -164,8 +166,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function beginCommitMigration(storageAccountName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations#beginCreating
     id: >-
@@ -180,6 +180,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.beginCreating(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -309,8 +311,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function beginCreating(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations#beginPrepareMigration
     id: >-
@@ -323,6 +323,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.beginPrepareMigration(storageAccountName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -339,8 +341,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function beginPrepareMigration(storageAccountName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations#checkNameAvailability
     id: >-
@@ -355,6 +355,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.checkNameAvailability(accountName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -373,8 +375,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function checkNameAvailability(accountName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations#commitMigration
     id: >-
@@ -387,6 +387,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.commitMigration(storageAccountName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -403,8 +405,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function commitMigration(storageAccountName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-storage.StorageAccountOperations~StorageAccountOperations#create'
     id: 'azure-asm-storage.StorageAccountOperations~StorageAccountOperations#create'
     parent: azure-asm-storage.StorageAccountOperations~StorageAccountOperations
@@ -417,6 +417,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.create(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -546,8 +548,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function create(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations#deleteMethod
     id: >-
@@ -562,6 +562,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.deleteMethod(accountName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -578,8 +580,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function deleteMethod(accountName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-storage.StorageAccountOperations~StorageAccountOperations#get'
     id: 'azure-asm-storage.StorageAccountOperations~StorageAccountOperations#get'
     parent: azure-asm-storage.StorageAccountOperations~StorageAccountOperations
@@ -592,6 +592,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.get(accountName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -610,8 +612,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function get(accountName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations#getKeys
     id: >-
@@ -626,6 +626,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.getKeys(accountName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -642,8 +644,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function getKeys(accountName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-storage.StorageAccountOperations~StorageAccountOperations#list'
     id: 'azure-asm-storage.StorageAccountOperations~StorageAccountOperations#list'
     parent: azure-asm-storage.StorageAccountOperations~StorageAccountOperations
@@ -655,6 +655,8 @@ items:
       more information)
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.list(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -667,8 +669,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: function list(callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations#prepareMigration
     id: >-
@@ -681,6 +681,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.prepareMigration(storageAccountName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -697,8 +699,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function prepareMigration(storageAccountName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations#regenerateKeys
     id: >-
@@ -713,6 +713,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.regenerateKeys(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -741,8 +743,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function regenerateKeys(parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-storage.StorageAccountOperations~StorageAccountOperations#update'
     id: 'azure-asm-storage.StorageAccountOperations~StorageAccountOperations#update'
     parent: azure-asm-storage.StorageAccountOperations~StorageAccountOperations
@@ -756,6 +756,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.update(accountName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -842,8 +844,6 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function update(accountName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations#validateMigration
     id: >-
@@ -856,6 +856,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageAccountOperations~StorageAccountOperations.validateMigration(storageAccountName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -872,5 +874,3 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function validateMigration(storageAccountName, callback)'
-    langs:
-      - js

@@ -23,6 +23,8 @@ items:
         branch: master
         path: lib\services\computeManagement\lib\computeManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - >-
@@ -31,8 +33,6 @@ items:
         azure-asm-compute.OperatingSystemOperations~OperatingSystemOperations#list
       - >-
         azure-asm-compute.OperatingSystemOperations~OperatingSystemOperations#listFamilies
-    langs:
-      - js
   - id: >-
       azure-asm-compute.OperatingSystemOperations~OperatingSystemOperations.#ctor
     uid: >-
@@ -69,6 +69,8 @@ items:
       more information)
     fullName: >-
       azure-asm-compute.OperatingSystemOperations~OperatingSystemOperations.list(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -81,8 +83,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: function list(callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.OperatingSystemOperations~OperatingSystemOperations#listFamilies
     id: >-
@@ -100,6 +100,8 @@ items:
       for more information)
     fullName: >-
       azure-asm-compute.OperatingSystemOperations~OperatingSystemOperations.listFamilies(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -112,5 +114,3 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: function listFamilies(callback)
-    langs:
-      - js

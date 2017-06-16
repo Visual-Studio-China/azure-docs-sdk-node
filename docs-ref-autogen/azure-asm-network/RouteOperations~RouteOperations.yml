@@ -21,6 +21,8 @@ items:
         branch: master
         path: lib\services\networkManagement\lib\networkManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-network.RouteOperations~RouteOperations.#ctor'
@@ -55,8 +57,6 @@ items:
         azure-asm-network.RouteOperations~RouteOperations#removeRouteTableFromSubnet
       - 'azure-asm-network.RouteOperations~RouteOperations#setRoute'
       - 'azure-asm-network.RouteOperations~RouteOperations#validateMigration'
-    langs:
-      - js
   - id: 'azure-asm-network.RouteOperations~RouteOperations.#ctor'
     uid: 'azure-asm-network.RouteOperations~RouteOperations.#ctor'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -83,6 +83,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.abortMigration(routeTableName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -99,8 +101,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function abortMigration(routeTableName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#addRouteTableToSubnet'
     id: 'azure-asm-network.RouteOperations~RouteOperations#addRouteTableToSubnet'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -111,6 +111,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.addRouteTableToSubnet(vnetName,
       subnetName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -148,8 +150,6 @@ items:
       content: >-
         function addRouteTableToSubnet(vnetName, subnetName, parameters,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#beginAbortMigration'
     id: 'azure-asm-network.RouteOperations~RouteOperations#beginAbortMigration'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -160,6 +160,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.beginAbortMigration(routeTableName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -176,8 +178,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginAbortMigration(routeTableName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.RouteOperations~RouteOperations#beginAddRouteTableToSubnet
     id: >-
@@ -190,6 +190,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.beginAddRouteTableToSubnet(vnetName,
       subnetName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -227,8 +229,6 @@ items:
       content: >-
         function beginAddRouteTableToSubnet(vnetName, subnetName, parameters,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#beginCommitMigration'
     id: 'azure-asm-network.RouteOperations~RouteOperations#beginCommitMigration'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -239,6 +239,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.beginCommitMigration(routeTableName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -255,8 +257,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginCommitMigration(routeTableName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#beginCreateRouteTable'
     id: 'azure-asm-network.RouteOperations~RouteOperations#beginCreateRouteTable'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -265,6 +265,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.beginCreateRouteTable(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -298,8 +300,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginCreateRouteTable(parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#beginDeleteRoute'
     id: 'azure-asm-network.RouteOperations~RouteOperations#beginDeleteRoute'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -308,6 +308,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.beginDeleteRoute(routeTableName,
       routeName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -332,8 +334,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginDeleteRoute(routeTableName, routeName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#beginDeleteRouteTable'
     id: 'azure-asm-network.RouteOperations~RouteOperations#beginDeleteRouteTable'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -342,6 +342,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.beginDeleteRouteTable(routeTableName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -358,8 +360,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginDeleteRouteTable(routeTableName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#beginPrepareMigration'
     id: 'azure-asm-network.RouteOperations~RouteOperations#beginPrepareMigration'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -370,6 +370,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.beginPrepareMigration(routeTableName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -386,8 +388,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginPrepareMigration(routeTableName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.RouteOperations~RouteOperations#beginRemoveRouteTableFromSubnet
     id: >-
@@ -400,6 +400,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.beginRemoveRouteTableFromSubnet(vnetName,
       subnetName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -424,8 +426,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginRemoveRouteTableFromSubnet(vnetName, subnetName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#beginSetRoute'
     id: 'azure-asm-network.RouteOperations~RouteOperations#beginSetRoute'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -434,6 +434,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.beginSetRoute(routeTableName,
       routeName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -493,8 +495,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginSetRoute(routeTableName, routeName, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#commitMigration'
     id: 'azure-asm-network.RouteOperations~RouteOperations#commitMigration'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -505,6 +505,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.commitMigration(routeTableName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -521,8 +523,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function commitMigration(routeTableName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#createRouteTable'
     id: 'azure-asm-network.RouteOperations~RouteOperations#createRouteTable'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -531,6 +531,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.createRouteTable(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -564,8 +566,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function createRouteTable(parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#deleteRoute'
     id: 'azure-asm-network.RouteOperations~RouteOperations#deleteRoute'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -574,6 +574,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.deleteRoute(routeTableName,
       routeName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -598,8 +600,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function deleteRoute(routeTableName, routeName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#deleteRouteTable'
     id: 'azure-asm-network.RouteOperations~RouteOperations#deleteRouteTable'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -608,6 +608,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.deleteRouteTable(routeTableName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -624,8 +626,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function deleteRouteTable(routeTableName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.RouteOperations~RouteOperations#getEffectiveRouteTableForNetworkInterface
     id: >-
@@ -640,6 +640,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.getEffectiveRouteTableForNetworkInterface(serviceName,
       deploymentName, roleinstanceName, networkInterfaceName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -670,8 +672,6 @@ items:
       content: >-
         function getEffectiveRouteTableForNetworkInterface(serviceName,
         deploymentName, roleinstanceName, networkInterfaceName, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.RouteOperations~RouteOperations#getEffectiveRouteTableForRoleInstance
     id: >-
@@ -686,6 +686,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.getEffectiveRouteTableForRoleInstance(serviceName,
       deploymentName, roleinstanceName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -712,8 +714,6 @@ items:
       content: >-
         function getEffectiveRouteTableForRoleInstance(serviceName,
         deploymentName, roleinstanceName, callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#getRouteTable'
     id: 'azure-asm-network.RouteOperations~RouteOperations#getRouteTable'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -722,6 +722,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.getRouteTable(routeTableName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -740,8 +742,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getRouteTable(routeTableName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#getRouteTableForSubnet'
     id: 'azure-asm-network.RouteOperations~RouteOperations#getRouteTableForSubnet'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -752,6 +752,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.getRouteTableForSubnet(vnetName,
       subnetName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -774,8 +776,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getRouteTableForSubnet(vnetName, subnetName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#getRouteTableWithDetails'
     id: 'azure-asm-network.RouteOperations~RouteOperations#getRouteTableWithDetails'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -784,6 +784,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.getRouteTableWithDetails(routeTableName,
       detailLevel, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -808,8 +810,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getRouteTableWithDetails(routeTableName, detailLevel, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#listRouteTables'
     id: 'azure-asm-network.RouteOperations~RouteOperations#listRouteTables'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -817,6 +817,8 @@ items:
     summary: List the existing route tables for this subscription.
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.listRouteTables(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -829,8 +831,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: function listRouteTables(callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#prepareMigration'
     id: 'azure-asm-network.RouteOperations~RouteOperations#prepareMigration'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -841,6 +841,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.prepareMigration(routeTableName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -857,8 +859,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function prepareMigration(routeTableName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.RouteOperations~RouteOperations#removeRouteTableFromSubnet
     id: >-
@@ -871,6 +871,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.removeRouteTableFromSubnet(vnetName,
       subnetName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -895,8 +897,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function removeRouteTableFromSubnet(vnetName, subnetName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#setRoute'
     id: 'azure-asm-network.RouteOperations~RouteOperations#setRoute'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -905,6 +905,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.setRoute(routeTableName,
       routeName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -964,8 +966,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function setRoute(routeTableName, routeName, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.RouteOperations~RouteOperations#validateMigration'
     id: 'azure-asm-network.RouteOperations~RouteOperations#validateMigration'
     parent: azure-asm-network.RouteOperations~RouteOperations
@@ -976,6 +976,8 @@ items:
     fullName: >-
       azure-asm-network.RouteOperations~RouteOperations.validateMigration(routeTableName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -992,5 +994,3 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function validateMigration(routeTableName, callback)'
-    langs:
-      - js

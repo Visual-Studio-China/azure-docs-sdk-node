@@ -22,14 +22,14 @@ items:
         branch: master
         path: lib\services\monitoring\lib\metricsClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-monitoring.MetricSettingOperations~MetricSettingOperations.#ctor'
       - >-
         azure-monitoring.MetricSettingOperations~MetricSettingOperations#createOrUpdate
       - 'azure-monitoring.MetricSettingOperations~MetricSettingOperations#list'
-    langs:
-      - js
   - id: 'azure-monitoring.MetricSettingOperations~MetricSettingOperations.#ctor'
     uid: 'azure-monitoring.MetricSettingOperations~MetricSettingOperations.#ctor'
     parent: azure-monitoring.MetricSettingOperations~MetricSettingOperations
@@ -58,6 +58,8 @@ items:
     fullName: >-
       azure-monitoring.MetricSettingOperations~MetricSettingOperations.createOrUpdate(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -100,8 +102,6 @@ items:
           - azure-monitoring.Stream
         description: The response stream.
       content: 'function createOrUpdate(parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-monitoring.MetricSettingOperations~MetricSettingOperations#list'
     id: 'azure-monitoring.MetricSettingOperations~MetricSettingOperations#list'
     parent: azure-monitoring.MetricSettingOperations~MetricSettingOperations
@@ -112,6 +112,8 @@ items:
     fullName: >-
       azure-monitoring.MetricSettingOperations~MetricSettingOperations.list(resourceId,
       metricNamespace, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -132,5 +134,3 @@ items:
           - azure-monitoring.Stream
         description: The response stream.
       content: 'function list(resourceId, metricNamespace, callback)'
-    langs:
-      - js

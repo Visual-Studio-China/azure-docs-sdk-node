@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\customerInsightsManagement\lib\operations\profiles.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-customerinsights.Profiles.#ctor'
@@ -39,8 +41,6 @@ items:
       - >-
         azure-arm-customerinsights.Profiles#listByHubNextWithHttpOperationResponse
       - 'azure-arm-customerinsights.Profiles#listByHubNext'
-    langs:
-      - js
   - id: 'azure-arm-customerinsights.Profiles.#ctor'
     uid: 'azure-arm-customerinsights.Profiles.#ctor'
     parent: azure-arm-customerinsights.Profiles
@@ -69,19 +69,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.createOrUpdateWithHttpOperationResponse(resourceGroupName,
       hubName, profileName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ProfileResourceFormat>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<ProfileResourceFormat>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -221,8 +210,6 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(resourceGroupName,
         hubName, profileName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-customerinsights.Profiles#createOrUpdate'
     id: 'azure-arm-customerinsights.Profiles#createOrUpdate'
     parent: azure-arm-customerinsights.Profiles
@@ -233,39 +220,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.createOrUpdate(resourceGroupName,
       hubName, profileName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ProfileResourceFormat} - The deserialized result object.'
-        value: '{ProfileResourceFormat} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileResourceFormat} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileResourceFormat} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -415,8 +371,6 @@ items:
       content: >-
         function createOrUpdate(resourceGroupName, hubName, profileName,
         parameters, options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-customerinsights.Profiles#getWithHttpOperationResponse'
     id: 'azure-arm-customerinsights.Profiles#getWithHttpOperationResponse'
     parent: azure-arm-customerinsights.Profiles
@@ -427,19 +381,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.getWithHttpOperationResponse(resourceGroupName,
       hubName, profileName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ProfileResourceFormat>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<ProfileResourceFormat>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -481,8 +424,6 @@ items:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName, hubName,
         profileName, options)
-    langs:
-      - js
   - uid: 'azure-arm-customerinsights.Profiles#get'
     id: 'azure-arm-customerinsights.Profiles#get'
     parent: azure-arm-customerinsights.Profiles
@@ -491,39 +432,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.get(resourceGroupName, hubName,
       profileName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ProfileResourceFormat} - The deserialized result object.'
-        value: '{ProfileResourceFormat} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileResourceFormat} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileResourceFormat} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -575,8 +485,6 @@ items:
       content: >-
         function get(resourceGroupName, hubName, profileName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-customerinsights.Profiles#deleteMethodWithHttpOperationResponse'
     id: 'azure-arm-customerinsights.Profiles#deleteMethodWithHttpOperationResponse'
     parent: azure-arm-customerinsights.Profiles
@@ -587,15 +495,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.deleteMethodWithHttpOperationResponse(resourceGroupName,
       hubName, profileName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -637,8 +538,6 @@ items:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceGroupName,
         hubName, profileName, options)
-    langs:
-      - js
   - uid: 'azure-arm-customerinsights.Profiles#deleteMethod'
     id: 'azure-arm-customerinsights.Profiles#deleteMethod'
     parent: azure-arm-customerinsights.Profiles
@@ -649,37 +548,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.deleteMethod(resourceGroupName,
       hubName, profileName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -731,8 +601,6 @@ items:
       content: >-
         function deleteMethod(resourceGroupName, hubName, profileName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-customerinsights.Profiles#listByHubWithHttpOperationResponse'
     id: 'azure-arm-customerinsights.Profiles#listByHubWithHttpOperationResponse'
     parent: azure-arm-customerinsights.Profiles
@@ -741,19 +609,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.listByHubWithHttpOperationResponse(resourceGroupName,
       hubName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ProfileListResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<ProfileListResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -791,8 +648,6 @@ items:
       content: >-
         function listByHubWithHttpOperationResponse(resourceGroupName, hubName,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-customerinsights.Profiles#listByHub'
     id: 'azure-arm-customerinsights.Profiles#listByHub'
     parent: azure-arm-customerinsights.Profiles
@@ -801,39 +656,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.listByHub(resourceGroupName, hubName,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ProfileListResult} - The deserialized result object.'
-        value: '{ProfileListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -881,8 +705,6 @@ items:
       content: >-
         function listByHub(resourceGroupName, hubName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-customerinsights.Profiles#beginCreateOrUpdateWithHttpOperationResponse
     id: >-
@@ -895,19 +717,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
       hubName, profileName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ProfileResourceFormat>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<ProfileResourceFormat>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1047,8 +858,6 @@ items:
       content: >-
         function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
         hubName, profileName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-customerinsights.Profiles#beginCreateOrUpdate'
     id: 'azure-arm-customerinsights.Profiles#beginCreateOrUpdate'
     parent: azure-arm-customerinsights.Profiles
@@ -1059,39 +868,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.beginCreateOrUpdate(resourceGroupName,
       hubName, profileName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ProfileResourceFormat} - The deserialized result object.'
-        value: '{ProfileResourceFormat} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileResourceFormat} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileResourceFormat} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1241,8 +1019,6 @@ items:
       content: >-
         function beginCreateOrUpdate(resourceGroupName, hubName, profileName,
         parameters, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-customerinsights.Profiles#beginDeleteMethodWithHttpOperationResponse
     id: >-
@@ -1255,15 +1031,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.beginDeleteMethodWithHttpOperationResponse(resourceGroupName,
       hubName, profileName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1305,8 +1074,6 @@ items:
       content: >-
         function beginDeleteMethodWithHttpOperationResponse(resourceGroupName,
         hubName, profileName, options)
-    langs:
-      - js
   - uid: 'azure-arm-customerinsights.Profiles#beginDeleteMethod'
     id: 'azure-arm-customerinsights.Profiles#beginDeleteMethod'
     parent: azure-arm-customerinsights.Profiles
@@ -1317,37 +1084,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.beginDeleteMethod(resourceGroupName,
       hubName, profileName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1399,8 +1137,6 @@ items:
       content: >-
         function beginDeleteMethod(resourceGroupName, hubName, profileName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-customerinsights.Profiles#listByHubNextWithHttpOperationResponse'
     id: 'azure-arm-customerinsights.Profiles#listByHubNextWithHttpOperationResponse'
     parent: azure-arm-customerinsights.Profiles
@@ -1409,19 +1145,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.listByHubNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ProfileListResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<ProfileListResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1448,8 +1173,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listByHubNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
   - uid: 'azure-arm-customerinsights.Profiles#listByHubNext'
     id: 'azure-arm-customerinsights.Profiles#listByHubNext'
     parent: azure-arm-customerinsights.Profiles
@@ -1458,39 +1181,8 @@ items:
     fullName: >-
       azure-arm-customerinsights.Profiles.listByHubNext(nextPageLink, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ProfileListResult} - The deserialized result object.'
-        value: '{ProfileListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProfileListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1527,8 +1219,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listByHubNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-arm-customerinsights.CustomerInsightsManagementClient
     name: CustomerInsightsManagementClient

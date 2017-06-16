@@ -15,6 +15,8 @@ items:
         branch: master
         path: lib\services\webSiteManagement\lib\websitemanagementservice.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-website.WebsiteManagementService.#ctor'
@@ -36,8 +38,6 @@ items:
       - 'azure-asm-website.WebsiteManagementService#createSiteRepository'
       - 'azure-asm-website.WebsiteManagementService#deleteSiteRepository'
       - 'azure-asm-website.WebsiteManagementService#syncSiteRepository'
-    langs:
-      - js
   - id: 'azure-asm-website.WebsiteManagementService.#ctor'
     uid: 'azure-asm-website.WebsiteManagementService.#ctor'
     parent: azure-asm-website.WebsiteManagementService
@@ -111,6 +111,8 @@ items:
     name: listWebspaces(callback)
     summary: Lists the available webspaces.
     fullName: azure-asm-website.WebsiteManagementService.listWebspaces(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -123,8 +125,6 @@ items:
                                                                   the list of webspaces.
                                                                   `response` will contain information related to this operation.
       content: function listWebspaces(callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#listGeoRegions'
     id: 'azure-asm-website.WebsiteManagementService#listGeoRegions'
     parent: azure-asm-website.WebsiteManagementService
@@ -133,6 +133,8 @@ items:
       Lists the available geographic regions that are available for hosting web
       sites.
     fullName: azure-asm-website.WebsiteManagementService.listGeoRegions(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -145,14 +147,14 @@ items:
                                                                   the list of regions.
                                                                   `response` will contain information related to this operation.
       content: function listGeoRegions(callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#listPublishingUsers'
     id: 'azure-asm-website.WebsiteManagementService#listPublishingUsers'
     parent: azure-asm-website.WebsiteManagementService
     name: listPublishingUsers(callback)
     summary: Lists the available publishing users.
     fullName: azure-asm-website.WebsiteManagementService.listPublishingUsers(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -165,14 +167,14 @@ items:
                                                                   the list of users.
                                                                   `response` will contain information related to this operation.
       content: function listPublishingUsers(callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#listDNSSuffix'
     id: 'azure-asm-website.WebsiteManagementService#listDNSSuffix'
     parent: azure-asm-website.WebsiteManagementService
     name: listDNSSuffix(callback)
     summary: lists the DNS suffix.
     fullName: azure-asm-website.WebsiteManagementService.listDNSSuffix(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -185,8 +187,6 @@ items:
                                                                   the DNS suffix information.
                                                                   `response` will contain information related to this operation.
       content: function listDNSSuffix(callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#createPublishingUser'
     id: 'azure-asm-website.WebsiteManagementService#createPublishingUser'
     parent: azure-asm-website.WebsiteManagementService
@@ -195,6 +195,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.createPublishingUser(username,
       password, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -223,8 +225,6 @@ items:
             `error` will contain information
                                                                   if an error occurs; otherwise `response` will contain information related to this operation.
       content: 'function createPublishingUser(username, password, options, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#listSites'
     id: 'azure-asm-website.WebsiteManagementService#listSites'
     parent: azure-asm-website.WebsiteManagementService
@@ -233,6 +233,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.listSites(webspaceName,
       options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -259,8 +261,6 @@ items:
                                                                         the list of web sites.
                                                                         `response` will contain information related to this operation.
       content: 'function listSites(webspaceName, options, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#getSite'
     id: 'azure-asm-website.WebsiteManagementService#getSite'
     parent: azure-asm-website.WebsiteManagementService
@@ -269,6 +269,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.getSite(webspaceName, siteName,
       options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -299,8 +301,6 @@ items:
                                                                                   the the web site information.
                                                                                   `response` will contain information related to this operation.
       content: 'function getSite(webspaceName, siteName, options, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#createSite'
     id: 'azure-asm-website.WebsiteManagementService#createSite'
     parent: azure-asm-website.WebsiteManagementService
@@ -309,6 +309,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.createSite(webspaceName,
       siteName, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -339,8 +341,6 @@ items:
                                                                         the new site information.
                                                                         `response` will contain information related to this operation.
       content: 'function createSite(webspaceName, siteName, options, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#deleteSite'
     id: 'azure-asm-website.WebsiteManagementService#deleteSite'
     parent: azure-asm-website.WebsiteManagementService
@@ -349,6 +349,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.deleteSite(webspaceName,
       siteName, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -372,8 +374,6 @@ items:
             `error` will contain information
                                                            if an error occurs; otherwise `response` will contain information related to this operation.
       content: 'function deleteSite(webspaceName, siteName, options, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#updateSite'
     id: 'azure-asm-website.WebsiteManagementService#updateSite'
     parent: azure-asm-website.WebsiteManagementService
@@ -382,6 +382,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.updateSite(webspaceName,
       siteName, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -412,8 +414,6 @@ items:
                                                                         the updated web site information.
                                                                         `response` will contain information related to this operation.
       content: 'function updateSite(webspaceName, siteName, options, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#getSiteConfiguration'
     id: 'azure-asm-website.WebsiteManagementService#getSiteConfiguration'
     parent: azure-asm-website.WebsiteManagementService
@@ -422,6 +422,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.getSiteConfiguration(webspaceName,
       siteName, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -447,8 +449,6 @@ items:
                                                                   the site configuration.
                                                                   `response` will contain information related to this operation.
       content: 'function getSiteConfiguration(webspaceName, siteName, options, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#updateSiteConfiguration'
     id: 'azure-asm-website.WebsiteManagementService#updateSiteConfiguration'
     parent: azure-asm-website.WebsiteManagementService
@@ -457,6 +457,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.updateSiteConfiguration(webspaceName,
       siteName, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -482,8 +484,6 @@ items:
       content: >-
         function updateSiteConfiguration(webspaceName, siteName, options,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#createServerFarm'
     id: 'azure-asm-website.WebsiteManagementService#createServerFarm'
     parent: azure-asm-website.WebsiteManagementService
@@ -494,6 +494,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.createServerFarm(webspaceName,
       serverFarmName, numberOfWorkers, workerSize, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -527,8 +529,6 @@ items:
       content: >-
         function createServerFarm(webspaceName, serverFarmName, numberOfWorkers,
         workerSize, options, callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#updateServerFarm'
     id: 'azure-asm-website.WebsiteManagementService#updateServerFarm'
     parent: azure-asm-website.WebsiteManagementService
@@ -539,6 +539,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.updateServerFarm(webspaceName,
       serverFarmName, numberOfWorkers, workerSize, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -572,8 +574,6 @@ items:
       content: >-
         function updateServerFarm(webspaceName, serverFarmName, numberOfWorkers,
         workerSize, options, callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#getServerFarm'
     id: 'azure-asm-website.WebsiteManagementService#getServerFarm'
     parent: azure-asm-website.WebsiteManagementService
@@ -582,6 +582,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.getServerFarm(webspaceName,
       serverFarmName, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -605,8 +607,6 @@ items:
             `error` will contain information
                                                                   if an error occurs; otherwise `response` will contain information related to this operation.
       content: 'function getServerFarm(webspaceName, serverFarmName, options, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#createSiteRepository'
     id: 'azure-asm-website.WebsiteManagementService#createSiteRepository'
     parent: azure-asm-website.WebsiteManagementService
@@ -615,6 +615,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.createSiteRepository(webspaceName,
       siteName, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -638,8 +640,6 @@ items:
             `error` will contain information
                                                                   if an error occurs; otherwise `response` will contain information related to this operation.
       content: 'function createSiteRepository(webspaceName, siteName, options, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#deleteSiteRepository'
     id: 'azure-asm-website.WebsiteManagementService#deleteSiteRepository'
     parent: azure-asm-website.WebsiteManagementService
@@ -648,6 +648,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.deleteSiteRepository(webspaceName,
       siteName, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -671,8 +673,6 @@ items:
             `error` will contain information
                                                                   if an error occurs; otherwise `response` will contain information related to this operation.
       content: 'function deleteSiteRepository(webspaceName, siteName, options, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebsiteManagementService#syncSiteRepository'
     id: 'azure-asm-website.WebsiteManagementService#syncSiteRepository'
     parent: azure-asm-website.WebsiteManagementService
@@ -681,6 +681,8 @@ items:
     fullName: >-
       azure-asm-website.WebsiteManagementService.syncSiteRepository(webspaceName,
       siteName, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -704,5 +706,3 @@ items:
             `error` will contain information
                                                                   if an error occurs; otherwise `response` will contain information related to this operation.
       content: 'function syncSiteRepository(webspaceName, siteName, options, callback)'
-    langs:
-      - js

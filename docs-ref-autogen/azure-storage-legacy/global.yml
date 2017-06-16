@@ -25,6 +25,8 @@ items:
     fullName: >-
       azure-storage-legacy.createTableService(storageAccountOrConnectionString,
       storageAccessKey, host, authenticationProvider)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -55,8 +57,6 @@ items:
       content: >-
         function createTableService(storageAccountOrConnectionString,
         storageAccessKey, host, authenticationProvider)
-    langs:
-      - js
   - uid: azure-storage-legacy._global.createBlobService
     id: azure-storage-legacy._global.createBlobService
     name: >-
@@ -71,6 +71,8 @@ items:
     fullName: >-
       azure-storage-legacy.createBlobService(storageAccountOrConnectionString,
       storageAccessKey, host, authenticationProvider)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -101,8 +103,6 @@ items:
       content: >-
         function createBlobService(storageAccountOrConnectionString,
         storageAccessKey, host, authenticationProvider)
-    langs:
-      - js
   - uid: azure-storage-legacy._global.createQueueService
     id: azure-storage-legacy._global.createQueueService
     name: >-
@@ -118,6 +118,8 @@ items:
     fullName: >-
       azure-storage-legacy.createQueueService(storageAccountOrConnectionString,
       storageAccessKey, host, authenticationProvider)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -148,8 +150,6 @@ items:
       content: >-
         function createQueueService(storageAccountOrConnectionString,
         storageAccessKey, host, authenticationProvider)
-    langs:
-      - js
 references:
   - uid: azure-storage-legacy.TableService
     name: TableService

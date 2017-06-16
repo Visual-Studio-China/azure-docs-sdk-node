@@ -25,6 +25,8 @@ items:
         branch: master
         path: lib\services\computeManagement\lib\computeManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - >-
@@ -41,8 +43,6 @@ items:
         azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations#get
       - >-
         azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations#list
-    langs:
-      - js
   - id: >-
       azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations.#ctor
     uid: >-
@@ -80,6 +80,8 @@ items:
     fullName: >-
       azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations.beginCreating(serviceName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -119,8 +121,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function beginCreating(serviceName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations#beginDeleting
     id: >-
@@ -139,6 +139,8 @@ items:
     fullName: >-
       azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations.beginDeleting(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -173,8 +175,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function beginDeleting(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations#create
     id: >-
@@ -192,6 +192,8 @@ items:
     fullName: >-
       azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations.create(serviceName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -231,8 +233,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function create(serviceName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations#deleteMethod
     id: >-
@@ -250,6 +250,8 @@ items:
     fullName: >-
       azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations.deleteMethod(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -284,8 +286,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function deleteMethod(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations#get
     id: >-
@@ -301,6 +301,8 @@ items:
     fullName: >-
       azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations.get(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -335,8 +337,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function get(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations#list
     id: >-
@@ -352,6 +352,8 @@ items:
     fullName: >-
       azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations.list(serviceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -368,5 +370,3 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function list(serviceName, callback)'
-    langs:
-      - js

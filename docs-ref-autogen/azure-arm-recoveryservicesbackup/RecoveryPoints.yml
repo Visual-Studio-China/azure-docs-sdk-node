@@ -19,6 +19,8 @@ items:
         path: >-
           lib\services\recoveryServicesBackupManagement\lib\operations\recoveryPoints.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-recoveryservicesbackup.RecoveryPoints.#ctor'
@@ -31,8 +33,6 @@ items:
       - >-
         azure-arm-recoveryservicesbackup.RecoveryPoints#listNextWithHttpOperationResponse
       - 'azure-arm-recoveryservicesbackup.RecoveryPoints#listNext'
-    langs:
-      - js
   - id: 'azure-arm-recoveryservicesbackup.RecoveryPoints.#ctor'
     uid: 'azure-arm-recoveryservicesbackup.RecoveryPoints.#ctor'
     parent: azure-arm-recoveryservicesbackup.RecoveryPoints
@@ -65,19 +65,8 @@ items:
       azure-arm-recoveryservicesbackup.RecoveryPoints.getWithHttpOperationResponse(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName,
       recoveryPointId, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<RecoveryPointResource>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<RecoveryPointResource>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -132,8 +121,6 @@ items:
       content: >-
         function getWithHttpOperationResponse(vaultName, resourceGroupName,
         fabricName, containerName, protectedItemName, recoveryPointId, options)
-    langs:
-      - js
   - uid: 'azure-arm-recoveryservicesbackup.RecoveryPoints#get'
     id: 'azure-arm-recoveryservicesbackup.RecoveryPoints#get'
     parent: azure-arm-recoveryservicesbackup.RecoveryPoints
@@ -148,39 +135,8 @@ items:
       azure-arm-recoveryservicesbackup.RecoveryPoints.get(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName,
       recoveryPointId, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{RecoveryPointResource} - The deserialized result object.'
-        value: '{RecoveryPointResource} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RecoveryPointResource} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RecoveryPointResource} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -245,8 +201,6 @@ items:
       content: >-
         function get(vaultName, resourceGroupName, fabricName, containerName,
         protectedItemName, recoveryPointId, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-recoveryservicesbackup.RecoveryPoints#listWithHttpOperationResponse
     id: >-
@@ -261,19 +215,8 @@ items:
     fullName: >-
       azure-arm-recoveryservicesbackup.RecoveryPoints.listWithHttpOperationResponse(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<RecoveryPointResourceList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<RecoveryPointResourceList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -329,8 +272,6 @@ items:
       content: >-
         function listWithHttpOperationResponse(vaultName, resourceGroupName,
         fabricName, containerName, protectedItemName, options)
-    langs:
-      - js
   - uid: 'azure-arm-recoveryservicesbackup.RecoveryPoints#list'
     id: 'azure-arm-recoveryservicesbackup.RecoveryPoints#list'
     parent: azure-arm-recoveryservicesbackup.RecoveryPoints
@@ -344,41 +285,8 @@ items:
       azure-arm-recoveryservicesbackup.RecoveryPoints.list(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{RecoveryPointResourceList} - The deserialized result object.'
-        value: '{RecoveryPointResourceList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RecoveryPointResourceList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RecoveryPointResourceList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -444,8 +352,6 @@ items:
       content: >-
         function list(vaultName, resourceGroupName, fabricName, containerName,
         protectedItemName, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-recoveryservicesbackup.RecoveryPoints#listNextWithHttpOperationResponse
     id: >-
@@ -458,19 +364,8 @@ items:
     fullName: >-
       azure-arm-recoveryservicesbackup.RecoveryPoints.listNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<RecoveryPointResourceList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<RecoveryPointResourceList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -497,8 +392,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
   - uid: 'azure-arm-recoveryservicesbackup.RecoveryPoints#listNext'
     id: 'azure-arm-recoveryservicesbackup.RecoveryPoints#listNext'
     parent: azure-arm-recoveryservicesbackup.RecoveryPoints
@@ -509,41 +402,8 @@ items:
     fullName: >-
       azure-arm-recoveryservicesbackup.RecoveryPoints.listNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{RecoveryPointResourceList} - The deserialized result object.'
-        value: '{RecoveryPointResourceList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RecoveryPointResourceList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RecoveryPointResourceList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -580,8 +440,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-arm-recoveryservicesbackup.RecoveryServicesBackupClient
     name: RecoveryServicesBackupClient

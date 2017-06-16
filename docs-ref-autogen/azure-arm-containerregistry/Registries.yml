@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\containerRegistryManagement\lib\operations\registries.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-containerregistry.Registries.#ctor'
@@ -51,8 +53,6 @@ items:
       - 'azure-arm-containerregistry.Registries#listByResourceGroupNext'
       - 'azure-arm-containerregistry.Registries#listNextWithHttpOperationResponse'
       - 'azure-arm-containerregistry.Registries#listNext'
-    langs:
-      - js
   - id: 'azure-arm-containerregistry.Registries.#ctor'
     uid: 'azure-arm-containerregistry.Registries.#ctor'
     parent: azure-arm-containerregistry.Registries
@@ -87,19 +87,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.checkNameAvailabilityWithHttpOperationResponse(registryNameCheckRequest,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<RegistryNameStatus>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<RegistryNameStatus>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -135,8 +124,6 @@ items:
         function
         checkNameAvailabilityWithHttpOperationResponse(registryNameCheckRequest,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#checkNameAvailability'
     id: 'azure-arm-containerregistry.Registries#checkNameAvailability'
     parent: azure-arm-containerregistry.Registries
@@ -151,39 +138,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.checkNameAvailability(registryNameCheckRequest,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{RegistryNameStatus} - The deserialized result object.'
-        value: '{RegistryNameStatus} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryNameStatus} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryNameStatus} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -228,8 +184,6 @@ items:
       content: >-
         function checkNameAvailability(registryNameCheckRequest, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#getWithHttpOperationResponse'
     id: 'azure-arm-containerregistry.Registries#getWithHttpOperationResponse'
     parent: azure-arm-containerregistry.Registries
@@ -238,15 +192,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.getWithHttpOperationResponse(resourceGroupName,
       registryName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Registry>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Registry>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -279,8 +226,6 @@ items:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName, registryName,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#get'
     id: 'azure-arm-containerregistry.Registries#get'
     parent: azure-arm-containerregistry.Registries
@@ -289,39 +234,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.get(resourceGroupName,
       registryName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Registry} - The deserialized result object.'
-        value: '{Registry} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Registry} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Registry} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -362,8 +276,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function get(resourceGroupName, registryName, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#createWithHttpOperationResponse'
     id: 'azure-arm-containerregistry.Registries#createWithHttpOperationResponse'
     parent: azure-arm-containerregistry.Registries
@@ -374,15 +286,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.createWithHttpOperationResponse(resourceGroupName,
       registryName, registryCreateParameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Registry>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Registry>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -482,8 +387,6 @@ items:
       content: >-
         function createWithHttpOperationResponse(resourceGroupName,
         registryName, registryCreateParameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#create'
     id: 'azure-arm-containerregistry.Registries#create'
     parent: azure-arm-containerregistry.Registries
@@ -494,39 +397,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.create(resourceGroupName,
       registryName, registryCreateParameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Registry} - The deserialized result object.'
-        value: '{Registry} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Registry} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Registry} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -636,8 +508,6 @@ items:
       content: >-
         function create(resourceGroupName, registryName,
         registryCreateParameters, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-containerregistry.Registries#deleteMethodWithHttpOperationResponse
     id: >-
@@ -650,15 +520,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.deleteMethodWithHttpOperationResponse(resourceGroupName,
       registryName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -691,8 +554,6 @@ items:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceGroupName,
         registryName, options)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#deleteMethod'
     id: 'azure-arm-containerregistry.Registries#deleteMethod'
     parent: azure-arm-containerregistry.Registries
@@ -701,37 +562,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.deleteMethod(resourceGroupName,
       registryName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -774,8 +606,6 @@ items:
       content: >-
         function deleteMethod(resourceGroupName, registryName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#updateWithHttpOperationResponse'
     id: 'azure-arm-containerregistry.Registries#updateWithHttpOperationResponse'
     parent: azure-arm-containerregistry.Registries
@@ -786,15 +616,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.updateWithHttpOperationResponse(resourceGroupName,
       registryName, registryUpdateParameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Registry>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Registry>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -873,8 +696,6 @@ items:
       content: >-
         function updateWithHttpOperationResponse(resourceGroupName,
         registryName, registryUpdateParameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#update'
     id: 'azure-arm-containerregistry.Registries#update'
     parent: azure-arm-containerregistry.Registries
@@ -885,39 +706,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.update(resourceGroupName,
       registryName, registryUpdateParameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Registry} - The deserialized result object.'
-        value: '{Registry} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Registry} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Registry} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1006,8 +796,6 @@ items:
       content: >-
         function update(resourceGroupName, registryName,
         registryUpdateParameters, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-containerregistry.Registries#listByResourceGroupWithHttpOperationResponse
     id: >-
@@ -1018,19 +806,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.listByResourceGroupWithHttpOperationResponse(resourceGroupName,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<RegistryListResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<RegistryListResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1059,8 +836,6 @@ items:
       content: >-
         function listByResourceGroupWithHttpOperationResponse(resourceGroupName,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#listByResourceGroup'
     id: 'azure-arm-containerregistry.Registries#listByResourceGroup'
     parent: azure-arm-containerregistry.Registries
@@ -1069,39 +844,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.listByResourceGroup(resourceGroupName,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{RegistryListResult} - The deserialized result object.'
-        value: '{RegistryListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1140,8 +884,6 @@ items:
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#listWithHttpOperationResponse'
     id: 'azure-arm-containerregistry.Registries#listWithHttpOperationResponse'
     parent: azure-arm-containerregistry.Registries
@@ -1149,19 +891,8 @@ items:
     summary: Lists all the container registries under the specified subscription.
     fullName: >-
       azure-arm-containerregistry.Registries.listWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<RegistryListResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<RegistryListResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1182,47 +913,14 @@ items:
           - Promise
         description: A promise is returned
       content: function listWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#list'
     id: 'azure-arm-containerregistry.Registries#list'
     parent: azure-arm-containerregistry.Registries
     name: 'list(options, optionalCallback)'
     summary: Lists all the container registries under the specified subscription.
     fullName: 'azure-arm-containerregistry.Registries.list(options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{RegistryListResult} - The deserialized result object.'
-        value: '{RegistryListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1253,8 +951,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-containerregistry.Registries#listCredentialsWithHttpOperationResponse
     id: >-
@@ -1267,19 +963,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.listCredentialsWithHttpOperationResponse(resourceGroupName,
       registryName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<RegistryListCredentialsResult>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<RegistryListCredentialsResult>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1312,8 +997,6 @@ items:
       content: >-
         function listCredentialsWithHttpOperationResponse(resourceGroupName,
         registryName, options)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#listCredentials'
     id: 'azure-arm-containerregistry.Registries#listCredentials'
     parent: azure-arm-containerregistry.Registries
@@ -1324,41 +1007,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.listCredentials(resourceGroupName,
       registryName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{RegistryListCredentialsResult} - The deserialized result object.'
-        value: '{RegistryListCredentialsResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryListCredentialsResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryListCredentialsResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1401,8 +1051,6 @@ items:
       content: >-
         function listCredentials(resourceGroupName, registryName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-containerregistry.Registries#regenerateCredentialWithHttpOperationResponse
     id: >-
@@ -1417,19 +1065,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.regenerateCredentialWithHttpOperationResponse(resourceGroupName,
       registryName, regenerateCredentialParameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<RegistryListCredentialsResult>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<RegistryListCredentialsResult>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1479,8 +1116,6 @@ items:
         function
         regenerateCredentialWithHttpOperationResponse(resourceGroupName,
         registryName, regenerateCredentialParameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#regenerateCredential'
     id: 'azure-arm-containerregistry.Registries#regenerateCredential'
     parent: azure-arm-containerregistry.Registries
@@ -1493,41 +1128,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.regenerateCredential(resourceGroupName,
       registryName, regenerateCredentialParameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{RegistryListCredentialsResult} - The deserialized result object.'
-        value: '{RegistryListCredentialsResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryListCredentialsResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryListCredentialsResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1586,8 +1188,6 @@ items:
       content: >-
         function regenerateCredential(resourceGroupName, registryName,
         regenerateCredentialParameters, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-containerregistry.Registries#beginCreateWithHttpOperationResponse
     id: >-
@@ -1600,15 +1200,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.beginCreateWithHttpOperationResponse(resourceGroupName,
       registryName, registryCreateParameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Registry>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Registry>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1708,8 +1301,6 @@ items:
       content: >-
         function beginCreateWithHttpOperationResponse(resourceGroupName,
         registryName, registryCreateParameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#beginCreate'
     id: 'azure-arm-containerregistry.Registries#beginCreate'
     parent: azure-arm-containerregistry.Registries
@@ -1720,39 +1311,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.beginCreate(resourceGroupName,
       registryName, registryCreateParameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Registry} - The deserialized result object.'
-        value: '{Registry} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Registry} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Registry} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1862,8 +1422,6 @@ items:
       content: >-
         function beginCreate(resourceGroupName, registryName,
         registryCreateParameters, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-containerregistry.Registries#listByResourceGroupNextWithHttpOperationResponse
     id: >-
@@ -1874,19 +1432,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.listByResourceGroupNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<RegistryListResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<RegistryListResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1915,8 +1462,6 @@ items:
       content: >-
         function listByResourceGroupNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#listByResourceGroupNext'
     id: 'azure-arm-containerregistry.Registries#listByResourceGroupNext'
     parent: azure-arm-containerregistry.Registries
@@ -1925,39 +1470,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.listByResourceGroupNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{RegistryListResult} - The deserialized result object.'
-        value: '{RegistryListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1996,8 +1510,6 @@ items:
       content: >-
         function listByResourceGroupNext(nextPageLink, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#listNextWithHttpOperationResponse'
     id: 'azure-arm-containerregistry.Registries#listNextWithHttpOperationResponse'
     parent: azure-arm-containerregistry.Registries
@@ -2006,19 +1518,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.listNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<RegistryListResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<RegistryListResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2045,8 +1546,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
   - uid: 'azure-arm-containerregistry.Registries#listNext'
     id: 'azure-arm-containerregistry.Registries#listNext'
     parent: azure-arm-containerregistry.Registries
@@ -2055,39 +1554,8 @@ items:
     fullName: >-
       azure-arm-containerregistry.Registries.listNext(nextPageLink, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{RegistryListResult} - The deserialized result object.'
-        value: '{RegistryListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RegistryListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2124,8 +1592,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-arm-containerregistry.ContainerRegistryManagementClient
     name: ContainerRegistryManagementClient

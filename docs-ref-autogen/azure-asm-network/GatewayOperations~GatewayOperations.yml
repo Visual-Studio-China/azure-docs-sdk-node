@@ -23,6 +23,8 @@ items:
         branch: master
         path: lib\services\networkManagement\lib\networkManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-network.GatewayOperations~GatewayOperations.#ctor'
@@ -136,8 +138,6 @@ items:
         azure-asm-network.GatewayOperations~GatewayOperations#updateGatewayConnection
       - >-
         azure-asm-network.GatewayOperations~GatewayOperations#updateLocalNetworkGateway
-    langs:
-      - js
   - id: 'azure-asm-network.GatewayOperations~GatewayOperations.#ctor'
     uid: 'azure-asm-network.GatewayOperations~GatewayOperations.#ctor'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -171,6 +171,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginConnectDisconnectOrTesting(networkName,
       localNetworkSiteName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -226,8 +228,6 @@ items:
       content: >-
         function beginConnectDisconnectOrTesting(networkName,
         localNetworkSiteName, parameters, callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#beginCreating'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#beginCreating'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -240,6 +240,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginCreating(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -278,8 +280,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginCreating(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginCreatingGatewayConnection
     id: >-
@@ -292,6 +292,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginCreatingGatewayConnection(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -355,8 +357,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginCreatingGatewayConnection(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginCreatingVirtualNetworkGateway
     id: >-
@@ -369,6 +369,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginCreatingVirtualNetworkGateway(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -454,8 +456,6 @@ items:
       content: >-
         function beginCreatingVirtualNetworkGateway(networkName, parameters,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#beginDeleting'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#beginDeleting'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -468,6 +468,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginDeleting(networkName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -484,8 +486,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginDeleting(networkName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginDeletingGatewayConnection
     id: >-
@@ -498,6 +498,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginDeletingGatewayConnection(gatewayId,
       connectedentityId, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -520,8 +522,6 @@ items:
       content: >-
         function beginDeletingGatewayConnection(gatewayId, connectedentityId,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginDeletingVirtualNetworkGateway
     id: >-
@@ -534,6 +534,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginDeletingVirtualNetworkGateway(gatewayId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -550,8 +552,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginDeletingVirtualNetworkGateway(gatewayId, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#beginFailover'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#beginFailover'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -564,6 +564,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginFailover(networkName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -580,8 +582,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginFailover(networkName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginGenerateVpnClientPackage
     id: >-
@@ -596,6 +596,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginGenerateVpnClientPackage(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -628,8 +630,6 @@ items:
       content: >-
         function beginGenerateVpnClientPackage(networkName, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginRemoveDefaultSites
     id: >-
@@ -643,6 +643,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginRemoveDefaultSites(networkName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -661,8 +663,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginRemoveDefaultSites(networkName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#beginReset'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#beginReset'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -673,6 +673,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginReset(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -702,8 +704,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginReset(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#beginResetSharedKey'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#beginResetSharedKey'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -717,6 +717,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginResetSharedKey(networkName,
       localNetworkName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -754,8 +756,6 @@ items:
       content: >-
         function beginResetSharedKey(networkName, localNetworkName, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginResetSharedKeyV2
     id: >-
@@ -768,6 +768,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginResetSharedKeyV2(gatewayId,
       connectedentityId, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -803,8 +805,6 @@ items:
       content: >-
         function beginResetSharedKeyV2(gatewayId, connectedentityId, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginResetVirtualNetworkGateway
     id: >-
@@ -817,6 +817,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginResetVirtualNetworkGateway(gatewayId,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -846,8 +848,6 @@ items:
       content: >-
         function beginResetVirtualNetworkGateway(gatewayId, parameters,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#beginResize'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#beginResize'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -858,6 +858,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginResize(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -892,8 +894,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginResize(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginResizeVirtualNetworkGateway
     id: >-
@@ -906,6 +906,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginResizeVirtualNetworkGateway(gatewayId,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -940,8 +942,6 @@ items:
       content: >-
         function beginResizeVirtualNetworkGateway(gatewayId, parameters,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#beginSetDefaultSites'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#beginSetDefaultSites'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -953,6 +953,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginSetDefaultSites(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -984,8 +986,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginSetDefaultSites(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginSetIPsecParameters
     id: >-
@@ -1001,6 +1001,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginSetIPsecParameters(networkName,
       localNetworkName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1066,8 +1068,6 @@ items:
       content: >-
         function beginSetIPsecParameters(networkName, localNetworkName,
         parameters, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginSetIPsecParametersV2
     id: >-
@@ -1082,6 +1082,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginSetIPsecParametersV2(gatewayId,
       connectedentityId, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1148,8 +1150,6 @@ items:
       content: >-
         function beginSetIPsecParametersV2(gatewayId, connectedentityId,
         parameters, callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#beginSetSharedKey'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#beginSetSharedKey'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -1163,6 +1163,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginSetSharedKey(networkName,
       localNetworkName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1200,8 +1202,6 @@ items:
       content: >-
         function beginSetSharedKey(networkName, localNetworkName, parameters,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#beginSetSharedKeyV2'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#beginSetSharedKeyV2'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -1213,6 +1213,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginSetSharedKeyV2(gatewayId,
       connectedentityId, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1248,8 +1250,6 @@ items:
       content: >-
         function beginSetSharedKeyV2(gatewayId, connectedentityId, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginStartDiagnostics
     id: >-
@@ -1265,6 +1265,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginStartDiagnostics(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1324,8 +1326,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginStartDiagnostics(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginStartDiagnosticsV2
     id: >-
@@ -1338,6 +1338,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginStartDiagnosticsV2(gatewayId,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1395,8 +1397,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginStartDiagnosticsV2(gatewayId, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#beginUpdateGatewayConnection
     id: >-
@@ -1409,6 +1409,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.beginUpdateGatewayConnection(gatewayId,
       connectedentityId, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1453,8 +1455,6 @@ items:
       content: >-
         function beginUpdateGatewayConnection(gatewayId, connectedentityId,
         parameters, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#connectDisconnectOrTest
     id: >-
@@ -1472,6 +1472,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.connectDisconnectOrTest(networkName,
       localNetworkSiteName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1525,8 +1527,6 @@ items:
       content: >-
         function connectDisconnectOrTest(networkName, localNetworkSiteName,
         parameters, callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#create'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#create'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -1539,6 +1539,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.create(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1577,8 +1579,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function create(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#createGatewayConnection
     id: >-
@@ -1591,6 +1591,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.createGatewayConnection(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1654,8 +1656,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function createGatewayConnection(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#createLocalNetworkGateway
     id: >-
@@ -1668,6 +1668,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.createLocalNetworkGateway(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1733,8 +1735,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function createLocalNetworkGateway(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#createVirtualNetworkGateway
     id: >-
@@ -1747,6 +1747,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.createVirtualNetworkGateway(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1830,8 +1832,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function createVirtualNetworkGateway(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#deleteMethod'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#deleteMethod'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -1844,6 +1844,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.deleteMethod(networkName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1860,8 +1862,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function deleteMethod(networkName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#deleteGatewayConnection
     id: >-
@@ -1874,6 +1874,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.deleteGatewayConnection(gatewayId,
       connectedentityId, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1894,8 +1896,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function deleteGatewayConnection(gatewayId, connectedentityId, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#deleteLocalNetworkGateway
     id: >-
@@ -1906,6 +1906,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.deleteLocalNetworkGateway(gatewayId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1922,8 +1924,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function deleteLocalNetworkGateway(gatewayId, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#deleteVirtualNetworkGateway
     id: >-
@@ -1934,6 +1934,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.deleteVirtualNetworkGateway(gatewayId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1950,8 +1952,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function deleteVirtualNetworkGateway(gatewayId, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#failover'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#failover'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -1964,6 +1964,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.failover(networkName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1980,8 +1982,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function failover(networkName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#generateVpnClientPackage
     id: >-
@@ -1996,6 +1996,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.generateVpnClientPackage(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2026,8 +2028,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function generateVpnClientPackage(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#get'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#get'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2040,6 +2040,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.get(networkName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2058,8 +2060,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function get(networkName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#getDeviceConfigurationScript
     id: >-
@@ -2074,6 +2074,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.getDeviceConfigurationScript(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2113,8 +2115,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getDeviceConfigurationScript(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#getDiagnostics'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#getDiagnostics'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2127,6 +2127,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.getDiagnostics(networkName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2145,8 +2147,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getDiagnostics(networkName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#getDiagnosticsV2'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#getDiagnosticsV2'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2157,6 +2157,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.getDiagnosticsV2(gatewayId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2173,8 +2175,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getDiagnosticsV2(gatewayId, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#getGatewayConnection'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#getGatewayConnection'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2185,6 +2185,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.getGatewayConnection(gatewayId,
       connectedentityId, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2207,8 +2209,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getGatewayConnection(gatewayId, connectedentityId, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#getIPsecParameters'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#getIPsecParameters'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2220,6 +2220,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.getIPsecParameters(networkName,
       localNetworkName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2242,8 +2244,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getIPsecParameters(networkName, localNetworkName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#getIPsecParametersV2'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#getIPsecParametersV2'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2254,6 +2254,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.getIPsecParametersV2(gatewayId,
       connectedentityId, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2274,8 +2276,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getIPsecParametersV2(gatewayId, connectedentityId, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#getLocalNetworkGateway
     id: >-
@@ -2288,6 +2288,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.getLocalNetworkGateway(gatewayId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2304,8 +2306,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getLocalNetworkGateway(gatewayId, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#getOperationStatus'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#getOperationStatus'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2318,6 +2318,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.getOperationStatus(operationId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2334,8 +2336,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getOperationStatus(operationId, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#getSharedKey'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#getSharedKey'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2349,6 +2349,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.getSharedKey(networkName,
       localNetworkName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2371,8 +2373,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getSharedKey(networkName, localNetworkName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#getSharedKeyV2'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#getSharedKeyV2'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2383,6 +2383,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.getSharedKeyV2(gatewayId,
       connectedentityId, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2403,8 +2405,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getSharedKeyV2(gatewayId, connectedentityId, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#getVirtualNetworkGateway
     id: >-
@@ -2417,6 +2417,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.getVirtualNetworkGateway(gatewayId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2433,8 +2435,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getVirtualNetworkGateway(gatewayId, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#listConnections'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#listConnections'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2447,6 +2447,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.listConnections(networkName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2465,8 +2467,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function listConnections(networkName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#listGatewayConnections
     id: >-
@@ -2476,6 +2476,8 @@ items:
     summary: The List Connections operation Lists all GatewayConnections.
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.listGatewayConnections(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2488,8 +2490,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: function listGatewayConnections(callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#listLocalNetworkGateways
     id: >-
@@ -2501,6 +2501,8 @@ items:
       network gateways.
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.listLocalNetworkGateways(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2513,8 +2515,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: function listLocalNetworkGateways(callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#listSupportedDevices'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#listSupportedDevices'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2526,6 +2526,8 @@ items:
       for more information)
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.listSupportedDevices(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2538,8 +2540,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: function listSupportedDevices(callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#listVirtualNetworkGateways
     id: >-
@@ -2551,6 +2551,8 @@ items:
       network gateways.
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.listVirtualNetworkGateways(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2563,8 +2565,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: function listVirtualNetworkGateways(callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#removeDefaultSites'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#removeDefaultSites'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2575,6 +2575,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.removeDefaultSites(networkName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2593,8 +2595,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function removeDefaultSites(networkName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#reset'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#reset'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2605,6 +2605,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.reset(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2634,8 +2636,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function reset(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#resetSharedKey'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#resetSharedKey'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2649,6 +2649,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.resetSharedKey(networkName,
       localNetworkName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2686,8 +2688,6 @@ items:
       content: >-
         function resetSharedKey(networkName, localNetworkName, parameters,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#resetSharedKeyV2'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#resetSharedKeyV2'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2698,6 +2698,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.resetSharedKeyV2(gatewayId,
       connectedentityId, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2733,8 +2735,6 @@ items:
       content: >-
         function resetSharedKeyV2(gatewayId, connectedentityId, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#resetVirtualNetworkGateway
     id: >-
@@ -2747,6 +2747,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.resetVirtualNetworkGateway(gatewayId,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2774,8 +2776,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function resetVirtualNetworkGateway(gatewayId, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#resize'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#resize'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2786,6 +2786,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.resize(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2820,8 +2822,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function resize(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#resizeVirtualNetworkGateway
     id: >-
@@ -2834,6 +2834,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.resizeVirtualNetworkGateway(gatewayId,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2866,8 +2868,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function resizeVirtualNetworkGateway(gatewayId, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#setDefaultSites'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#setDefaultSites'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2878,6 +2878,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.setDefaultSites(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2909,8 +2911,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function setDefaultSites(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#setIPsecParameters'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#setIPsecParameters'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2922,6 +2922,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.setIPsecParameters(networkName,
       localNetworkName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2987,8 +2989,6 @@ items:
       content: >-
         function setIPsecParameters(networkName, localNetworkName, parameters,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#setIPsecParametersV2'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#setIPsecParametersV2'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -2999,6 +2999,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.setIPsecParametersV2(gatewayId,
       connectedentityId, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3065,8 +3067,6 @@ items:
       content: >-
         function setIPsecParametersV2(gatewayId, connectedentityId, parameters,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#setSharedKey'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#setSharedKey'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -3080,6 +3080,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.setSharedKey(networkName,
       localNetworkName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3117,8 +3119,6 @@ items:
       content: >-
         function setSharedKey(networkName, localNetworkName, parameters,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#setSharedKeyV2'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#setSharedKeyV2'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -3129,6 +3129,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.setSharedKeyV2(gatewayId,
       connectedentityId, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3164,8 +3166,6 @@ items:
       content: >-
         function setSharedKeyV2(gatewayId, connectedentityId, parameters,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#startDiagnostics'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#startDiagnostics'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -3178,6 +3178,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.startDiagnostics(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3237,8 +3239,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function startDiagnostics(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#startDiagnosticsV2'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#startDiagnosticsV2'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -3249,6 +3249,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.startDiagnosticsV2(gatewayId,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3306,8 +3308,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function startDiagnosticsV2(gatewayId, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#stopDiagnostics'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#stopDiagnostics'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -3320,6 +3320,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.stopDiagnostics(networkName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3351,8 +3353,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function stopDiagnostics(networkName, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-network.GatewayOperations~GatewayOperations#stopDiagnosticsV2'
     id: 'azure-asm-network.GatewayOperations~GatewayOperations#stopDiagnosticsV2'
     parent: azure-asm-network.GatewayOperations~GatewayOperations
@@ -3363,6 +3363,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.stopDiagnosticsV2(gatewayId,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3392,8 +3394,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function stopDiagnosticsV2(gatewayId, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#updateGatewayConnection
     id: >-
@@ -3406,6 +3406,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.updateGatewayConnection(gatewayId,
       connectedentityId, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3450,8 +3452,6 @@ items:
       content: >-
         function updateGatewayConnection(gatewayId, connectedentityId,
         parameters, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.GatewayOperations~GatewayOperations#updateLocalNetworkGateway
     id: >-
@@ -3462,6 +3462,8 @@ items:
     fullName: >-
       azure-asm-network.GatewayOperations~GatewayOperations.updateLocalNetworkGateway(gatewayId,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3517,5 +3519,3 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function updateLocalNetworkGateway(gatewayId, parameters, callback)'
-    langs:
-      - js

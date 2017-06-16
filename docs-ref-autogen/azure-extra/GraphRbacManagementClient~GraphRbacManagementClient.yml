@@ -13,6 +13,8 @@ items:
         branch: master
         path: lib\services\extra\lib\graphRbacManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-extra.GraphRbacManagementClient~GraphRbacManagementClient.#ctor'
@@ -23,8 +25,6 @@ items:
       - >-
         azure-extra.GraphRbacManagementClient~GraphRbacManagementClient#servicePrincipal
       - 'azure-extra.GraphRbacManagementClient~GraphRbacManagementClient#user'
-    langs:
-      - js
   - id: 'azure-extra.GraphRbacManagementClient~GraphRbacManagementClient.#ctor'
     uid: 'azure-extra.GraphRbacManagementClient~GraphRbacManagementClient.#ctor'
     parent: azure-extra.GraphRbacManagementClient~GraphRbacManagementClient
@@ -70,42 +70,42 @@ items:
     summary: "Provides an instance of the\r[ApplicationOperations](-ApplicationOperations.html) object."
     fullName: >-
       azure-extra.GraphRbacManagementClient~GraphRbacManagementClient.application
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: application
-    langs:
-      - js
   - uid: 'azure-extra.GraphRbacManagementClient~GraphRbacManagementClient#group'
     id: 'azure-extra.GraphRbacManagementClient~GraphRbacManagementClient#group'
     parent: azure-extra.GraphRbacManagementClient~GraphRbacManagementClient
     name: group
     summary: "Provides an instance of the [GroupOperations](-GroupOperations.html)\robject."
     fullName: azure-extra.GraphRbacManagementClient~GraphRbacManagementClient.group
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: group
-    langs:
-      - js
   - uid: 'azure-extra.GraphRbacManagementClient~GraphRbacManagementClient#objects'
     id: 'azure-extra.GraphRbacManagementClient~GraphRbacManagementClient#objects'
     parent: azure-extra.GraphRbacManagementClient~GraphRbacManagementClient
     name: objects
     summary: "Provides an instance of the [ObjectOperations](-ObjectOperations.html)\robject."
     fullName: azure-extra.GraphRbacManagementClient~GraphRbacManagementClient.objects
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: objects
-    langs:
-      - js
   - uid: >-
       azure-extra.GraphRbacManagementClient~GraphRbacManagementClient#servicePrincipal
     id: >-
@@ -115,25 +115,25 @@ items:
     summary: "Provides an instance of the\r[ServicePrincipalOperations](-ServicePrincipalOperations.html) object."
     fullName: >-
       azure-extra.GraphRbacManagementClient~GraphRbacManagementClient.servicePrincipal
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: servicePrincipal
-    langs:
-      - js
   - uid: 'azure-extra.GraphRbacManagementClient~GraphRbacManagementClient#user'
     id: 'azure-extra.GraphRbacManagementClient~GraphRbacManagementClient#user'
     parent: azure-extra.GraphRbacManagementClient~GraphRbacManagementClient
     name: user
     summary: "Provides an instance of the [UserOperations](-UserOperations.html)\robject."
     fullName: azure-extra.GraphRbacManagementClient~GraphRbacManagementClient.user
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: user
-    langs:
-      - js

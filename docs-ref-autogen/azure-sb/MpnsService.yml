@@ -16,6 +16,8 @@ items:
         branch: master
         path: lib\services\serviceBus\lib\mpnsservice.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-sb.MpnsService.#ctor'
@@ -37,8 +39,6 @@ items:
       - 'azure-sb.MpnsService#send'
       - 'azure-sb.MpnsService#_createBody'
       - 'azure-sb.MpnsService#_createTemplateBody'
-    langs:
-      - js
   - id: 'azure-sb.MpnsService.#ctor'
     uid: 'azure-sb.MpnsService.#ctor'
     parent: azure-sb.MpnsService
@@ -70,6 +70,8 @@ items:
     fullName: >-
       azure-sb.MpnsService.createNativeRegistration(channel, tags, options,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -96,8 +98,6 @@ items:
           - undefined
         description: ''
       content: 'function createNativeRegistration(channel, tags, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#createOrUpdateNativeRegistration'
     id: 'azure-sb.MpnsService#createOrUpdateNativeRegistration'
     parent: azure-sb.MpnsService
@@ -108,6 +108,8 @@ items:
     fullName: >-
       azure-sb.MpnsService.createOrUpdateNativeRegistration(registrationId,
       channel, tags, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -140,8 +142,6 @@ items:
       content: >-
         function createOrUpdateNativeRegistration(registrationId, channel, tags,
         options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#createFlipTileRegistration'
     id: 'azure-sb.MpnsService#createFlipTileRegistration'
     parent: azure-sb.MpnsService
@@ -153,6 +153,8 @@ items:
     fullName: >-
       azure-sb.MpnsService.createFlipTileRegistration(channel, tags, template,
       options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -242,8 +244,6 @@ items:
       content: >-
         function createFlipTileRegistration(channel, tags, template, options,
         callback)
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#createTileRegistration'
     id: 'azure-sb.MpnsService#createTileRegistration'
     parent: azure-sb.MpnsService
@@ -254,6 +254,8 @@ items:
     fullName: >-
       azure-sb.MpnsService.createTileRegistration(channel, tags, template,
       options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -319,8 +321,6 @@ items:
       content: >-
         function createTileRegistration(channel, tags, template, options,
         callback)
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#createToastRegistration'
     id: 'azure-sb.MpnsService#createToastRegistration'
     parent: azure-sb.MpnsService
@@ -331,6 +331,8 @@ items:
     fullName: >-
       azure-sb.MpnsService.createToastRegistration(channel, tags, template,
       options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -380,8 +382,6 @@ items:
       content: >-
         function createToastRegistration(channel, tags, template, options,
         callback)
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#createRawTemplateRegistration'
     id: 'azure-sb.MpnsService#createRawTemplateRegistration'
     parent: azure-sb.MpnsService
@@ -390,6 +390,8 @@ items:
     fullName: >-
       azure-sb.MpnsService.createRawTemplateRegistration(channel, tags,
       template, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -427,8 +429,6 @@ items:
       content: >-
         function createRawTemplateRegistration(channel, tags, template, options,
         callback)
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#createOrUpdateRawTemplateRegistration'
     id: 'azure-sb.MpnsService#createOrUpdateRawTemplateRegistration'
     parent: azure-sb.MpnsService
@@ -439,6 +439,8 @@ items:
     fullName: >-
       azure-sb.MpnsService.createOrUpdateRawTemplateRegistration(registrationId,
       channel, tags, template, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -480,8 +482,6 @@ items:
       content: >-
         function createOrUpdateRawTemplateRegistration(registrationId, channel,
         tags, template, options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#updateFlipTileRegistration'
     id: 'azure-sb.MpnsService#updateFlipTileRegistration'
     parent: azure-sb.MpnsService
@@ -495,6 +495,8 @@ items:
     fullName: >-
       azure-sb.MpnsService.updateFlipTileRegistration(registrationId, channel,
       tags, template, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -588,8 +590,6 @@ items:
       content: >-
         function updateFlipTileRegistration(registrationId, channel, tags,
         template, options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#updateTileRegistration'
     id: 'azure-sb.MpnsService#updateTileRegistration'
     parent: azure-sb.MpnsService
@@ -605,6 +605,8 @@ items:
     fullName: >-
       azure-sb.MpnsService.updateTileRegistration(registrationId, channel, tags,
       template, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -674,8 +676,6 @@ items:
       content: >-
         function updateTileRegistration(registrationId, channel, tags, template,
         options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#updatesToastRegistration'
     id: 'azure-sb.MpnsService#updatesToastRegistration'
     parent: azure-sb.MpnsService
@@ -688,6 +688,8 @@ items:
     fullName: >-
       azure-sb.MpnsService.updatesToastRegistration(registrationId, channel,
       tags, template, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -741,8 +743,6 @@ items:
       content: >-
         function updatesToastRegistration(registrationId, channel, tags,
         template, options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#updatesRawTemplateRegistration'
     id: 'azure-sb.MpnsService#updatesRawTemplateRegistration'
     parent: azure-sb.MpnsService
@@ -753,6 +753,8 @@ items:
     fullName: >-
       azure-sb.MpnsService.updatesRawTemplateRegistration(registrationId,
       channel, tags, template, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -799,8 +801,6 @@ items:
       content: >-
         function updatesRawTemplateRegistration(registrationId, channel, tags,
         template, options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#listRegistrationsByChannel'
     id: 'azure-sb.MpnsService#listRegistrationsByChannel'
     parent: azure-sb.MpnsService
@@ -809,6 +809,8 @@ items:
     fullName: >-
       azure-sb.MpnsService.listRegistrationsByChannel(channel, options,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -844,8 +846,6 @@ items:
           - undefined
         description: ''
       content: 'function listRegistrationsByChannel(channel, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#sendFlipTile'
     id: 'azure-sb.MpnsService#sendFlipTile'
     parent: azure-sb.MpnsService
@@ -855,6 +855,8 @@ items:
       For more information see
       http://msdn.microsoft.com/en-us/library/windowsazure/jj206971.aspx.
     fullName: 'azure-sb.MpnsService.sendFlipTile(tags, payload, options, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -937,8 +939,6 @@ items:
           - undefined
         description: ''
       content: 'function sendFlipTile(tags, payload, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#sendTile'
     id: 'azure-sb.MpnsService#sendTile'
     parent: azure-sb.MpnsService
@@ -947,6 +947,8 @@ items:
       Sends a Tile notification. For more information see
       http://msdn.microsoft.com/en-us/library/windowsazure/jj553779.aspx.
     fullName: 'azure-sb.MpnsService.sendTile(tags, payload, options, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1005,8 +1007,6 @@ items:
           - undefined
         description: ''
       content: 'function sendTile(tags, payload, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#sendToast'
     id: 'azure-sb.MpnsService#sendToast'
     parent: azure-sb.MpnsService
@@ -1015,6 +1015,8 @@ items:
       Sends a Toast notification. For more information see
       http://msdn.microsoft.com/en-us/library/windowsazure/jj553779.aspx.
     fullName: 'azure-sb.MpnsService.sendToast(tags, payload, options, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1057,8 +1059,6 @@ items:
           - undefined
         description: ''
       content: 'function sendToast(tags, payload, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#send'
     id: 'azure-sb.MpnsService#send'
     parent: azure-sb.MpnsService
@@ -1069,6 +1069,8 @@ items:
     fullName: >-
       azure-sb.MpnsService.send(tags, payload, targetName, notificationClass,
       options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1109,8 +1111,6 @@ items:
       content: >-
         function send(tags, payload, targetName, notificationClass, options,
         callback)
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#_createBody'
     id: 'azure-sb.MpnsService#_createBody'
     parent: azure-sb.MpnsService
@@ -1119,6 +1119,8 @@ items:
     fullName: >-
       azure-sb.MpnsService._createBody(elementName, channel, tags, template,
       options)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1159,14 +1161,14 @@ items:
           - undefined
         description: ''
       content: 'function _createBody(elementName, channel, tags, template, options)'
-    langs:
-      - js
   - uid: 'azure-sb.MpnsService#_createTemplateBody'
     id: 'azure-sb.MpnsService#_createTemplateBody'
     parent: azure-sb.MpnsService
     name: '_createTemplateBody(channel, tags, template, options)'
     summary: Creates a template registration body.
     fullName: 'azure-sb.MpnsService._createTemplateBody(channel, tags, template, options)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1203,8 +1205,6 @@ items:
           - undefined
         description: ''
       content: 'function _createTemplateBody(channel, tags, template, options)'
-    langs:
-      - js
 references:
   - uid: azure-sb.NotificationHubService
     name: NotificationHubService

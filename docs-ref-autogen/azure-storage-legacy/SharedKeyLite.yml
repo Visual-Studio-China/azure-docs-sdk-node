@@ -13,12 +13,12 @@ items:
         branch: master
         path: lib\services\legacyStorage\lib\blob\internal\sharedkeylite.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-storage-legacy.SharedKeyLite.#ctor'
       - 'azure-storage-legacy.SharedKeyLite#signRequest'
-    langs:
-      - js
   - id: 'azure-storage-legacy.SharedKeyLite.#ctor'
     uid: 'azure-storage-legacy.SharedKeyLite.#ctor'
     parent: azure-storage-legacy.SharedKeyLite
@@ -53,6 +53,8 @@ items:
     name: 'signRequest(The, callback)'
     summary: Signs a request with the Authentication header.
     fullName: 'azure-storage-legacy.SharedKeyLite.signRequest(The, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -69,5 +71,3 @@ items:
           - undefined
         description: ''
       content: 'function signRequest(The, callback)'
-    langs:
-      - js

@@ -25,6 +25,8 @@ items:
         branch: master
         path: lib\services\sqlManagement\lib\sqlManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - >-
@@ -33,8 +35,6 @@ items:
         azure-asm-sql.RestorableDroppedDatabaseOperations~RestorableDroppedDatabaseOperations#get
       - >-
         azure-asm-sql.RestorableDroppedDatabaseOperations~RestorableDroppedDatabaseOperations#list
-    langs:
-      - js
   - id: >-
       azure-asm-sql.RestorableDroppedDatabaseOperations~RestorableDroppedDatabaseOperations.#ctor
     uid: >-
@@ -68,6 +68,8 @@ items:
     fullName: >-
       azure-asm-sql.RestorableDroppedDatabaseOperations~RestorableDroppedDatabaseOperations.get(serverName,
       entityId, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -92,8 +94,6 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function get(serverName, entityId, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-sql.RestorableDroppedDatabaseOperations~RestorableDroppedDatabaseOperations#list
     id: >-
@@ -107,6 +107,8 @@ items:
     fullName: >-
       azure-asm-sql.RestorableDroppedDatabaseOperations~RestorableDroppedDatabaseOperations.list(serverName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -125,5 +127,3 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function list(serverName, callback)'
-    langs:
-      - js

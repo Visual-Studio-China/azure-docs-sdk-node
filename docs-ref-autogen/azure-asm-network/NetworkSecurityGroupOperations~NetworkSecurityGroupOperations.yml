@@ -24,6 +24,8 @@ items:
         branch: master
         path: lib\services\networkManagement\lib\networkManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - >-
@@ -92,8 +94,6 @@ items:
         azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#setRule
       - >-
         azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#validateMigration
-    langs:
-      - js
   - id: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.#ctor
     uid: >-
@@ -127,6 +127,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.abortMigration(networkSecurityGroupName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -145,8 +147,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function abortMigration(networkSecurityGroupName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#addToNetworkInterface
     id: >-
@@ -160,6 +160,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.addToNetworkInterface(serviceName,
       deploymentName, roleName, networkInterfaceName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -202,8 +204,6 @@ items:
       content: >-
         function addToNetworkInterface(serviceName, deploymentName, roleName,
         networkInterfaceName, parameters, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#addToRole
     id: >-
@@ -215,6 +215,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.addToRole(serviceName,
       deploymentName, roleName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -253,8 +255,6 @@ items:
       content: >-
         function addToRole(serviceName, deploymentName, roleName, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#addToSubnet
     id: >-
@@ -266,6 +266,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.addToSubnet(virtualNetworkName,
       subnetName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -300,8 +302,6 @@ items:
       content: >-
         function addToSubnet(virtualNetworkName, subnetName, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#beginAbortMigration
     id: >-
@@ -315,6 +315,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.beginAbortMigration(networkSecurityGroupName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -333,8 +335,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginAbortMigration(networkSecurityGroupName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#beginAddingToNetworkInterface
     id: >-
@@ -348,6 +348,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.beginAddingToNetworkInterface(serviceName,
       deploymentName, roleName, networkInterfaceName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -390,8 +392,6 @@ items:
       content: >-
         function beginAddingToNetworkInterface(serviceName, deploymentName,
         roleName, networkInterfaceName, parameters, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#beginAddingToRole
     id: >-
@@ -405,6 +405,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.beginAddingToRole(serviceName,
       deploymentName, roleName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -443,8 +445,6 @@ items:
       content: >-
         function beginAddingToRole(serviceName, deploymentName, roleName,
         parameters, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#beginAddingToSubnet
     id: >-
@@ -456,6 +456,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.beginAddingToSubnet(virtualNetworkName,
       subnetName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -490,8 +492,6 @@ items:
       content: >-
         function beginAddingToSubnet(virtualNetworkName, subnetName, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#beginCommitMigration
     id: >-
@@ -505,6 +505,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.beginCommitMigration(networkSecurityGroupName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -523,8 +525,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginCommitMigration(networkSecurityGroupName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#beginCreating
     id: >-
@@ -536,6 +536,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.beginCreating(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -577,8 +579,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginCreating(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#beginDeleting
     id: >-
@@ -594,6 +594,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.beginDeleting(networkSecurityGroupName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -612,8 +614,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginDeleting(networkSecurityGroupName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#beginDeletingRule
     id: >-
@@ -625,6 +625,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.beginDeletingRule(networkSecurityGroupName,
       ruleName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -647,8 +649,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginDeletingRule(networkSecurityGroupName, ruleName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#beginPrepareMigration
     id: >-
@@ -662,6 +662,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.beginPrepareMigration(networkSecurityGroupName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -680,8 +682,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function beginPrepareMigration(networkSecurityGroupName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#beginRemovingFromNetworkInterface
     id: >-
@@ -696,6 +696,8 @@ items:
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.beginRemovingFromNetworkInterface(serviceName,
       deploymentName, roleName, networkInterfaceName, networkSecurityGroupName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -730,8 +732,6 @@ items:
       content: >-
         function beginRemovingFromNetworkInterface(serviceName, deploymentName,
         roleName, networkInterfaceName, networkSecurityGroupName, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#beginRemovingFromRole
     id: >-
@@ -745,6 +745,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.beginRemovingFromRole(serviceName,
       deploymentName, roleName, networkSecurityGroupName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -775,8 +777,6 @@ items:
       content: >-
         function beginRemovingFromRole(serviceName, deploymentName, roleName,
         networkSecurityGroupName, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#beginRemovingFromSubnet
     id: >-
@@ -790,6 +790,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.beginRemovingFromSubnet(virtualNetworkName,
       subnetName, networkSecurityGroupName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -816,8 +818,6 @@ items:
       content: >-
         function beginRemovingFromSubnet(virtualNetworkName, subnetName,
         networkSecurityGroupName, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#beginSettingRule
     id: >-
@@ -829,6 +829,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.beginSettingRule(networkSecurityGroupName,
       ruleName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -930,8 +932,6 @@ items:
       content: >-
         function beginSettingRule(networkSecurityGroupName, ruleName,
         parameters, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#commitMigration
     id: >-
@@ -945,6 +945,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.commitMigration(networkSecurityGroupName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -963,8 +965,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function commitMigration(networkSecurityGroupName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#create
     id: >-
@@ -976,6 +976,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.create(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1017,8 +1019,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function create(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#deleteMethod
     id: >-
@@ -1035,6 +1035,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.deleteMethod(networkSecurityGroupName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1053,8 +1055,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function deleteMethod(networkSecurityGroupName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#deleteRule
     id: >-
@@ -1068,6 +1068,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.deleteRule(networkSecurityGroupName,
       ruleName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1090,8 +1092,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function deleteRule(networkSecurityGroupName, ruleName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#get
     id: >-
@@ -1105,6 +1105,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.get(networkSecurityGroupName,
       detailLevel, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1128,8 +1130,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function get(networkSecurityGroupName, detailLevel, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#getForNetworkInterface
     id: >-
@@ -1143,6 +1143,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.getForNetworkInterface(serviceName,
       deploymentName, roleName, networkInterfaceName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1173,8 +1175,6 @@ items:
       content: >-
         function getForNetworkInterface(serviceName, deploymentName, roleName,
         networkInterfaceName, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#getForRole
     id: >-
@@ -1186,6 +1186,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.getForRole(serviceName,
       deploymentName, roleName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1210,8 +1212,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getForRole(serviceName, deploymentName, roleName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#getForSubnet
     id: >-
@@ -1223,6 +1223,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.getForSubnet(virtualNetworkName,
       subnetName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1243,8 +1245,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function getForSubnet(virtualNetworkName, subnetName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#list
     id: >-
@@ -1255,6 +1255,8 @@ items:
     summary: Lists all of the Network Security Groups for the subscription.
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.list(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1267,8 +1269,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: function list(callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#prepareMigration
     id: >-
@@ -1282,6 +1282,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.prepareMigration(networkSecurityGroupName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1300,8 +1302,6 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function prepareMigration(networkSecurityGroupName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#removeFromNetworkInterface
     id: >-
@@ -1316,6 +1316,8 @@ items:
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.removeFromNetworkInterface(serviceName,
       deploymentName, roleName, networkInterfaceName, networkSecurityGroupName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1350,8 +1352,6 @@ items:
       content: >-
         function removeFromNetworkInterface(serviceName, deploymentName,
         roleName, networkInterfaceName, networkSecurityGroupName, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#removeFromRole
     id: >-
@@ -1365,6 +1365,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.removeFromRole(serviceName,
       deploymentName, roleName, networkSecurityGroupName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1395,8 +1397,6 @@ items:
       content: >-
         function removeFromRole(serviceName, deploymentName, roleName,
         networkSecurityGroupName, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#removeFromSubnet
     id: >-
@@ -1410,6 +1410,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.removeFromSubnet(virtualNetworkName,
       subnetName, networkSecurityGroupName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1436,8 +1438,6 @@ items:
       content: >-
         function removeFromSubnet(virtualNetworkName, subnetName,
         networkSecurityGroupName, callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#setRule
     id: >-
@@ -1449,6 +1449,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.setRule(networkSecurityGroupName,
       ruleName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1550,8 +1552,6 @@ items:
       content: >-
         function setRule(networkSecurityGroupName, ruleName, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations#validateMigration
     id: >-
@@ -1565,6 +1565,8 @@ items:
     fullName: >-
       azure-asm-network.NetworkSecurityGroupOperations~NetworkSecurityGroupOperations.validateMigration(networkSecurityGroupName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1583,5 +1585,3 @@ items:
           - azure-asm-network.Stream
         description: The response stream.
       content: 'function validateMigration(networkSecurityGroupName, callback)'
-    langs:
-      - js

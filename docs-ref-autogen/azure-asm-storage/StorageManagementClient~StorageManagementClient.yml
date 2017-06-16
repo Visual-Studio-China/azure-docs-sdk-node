@@ -20,6 +20,8 @@ items:
         branch: master
         path: lib\services\storageManagement\lib\storageManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-storage.StorageManagementClient~StorageManagementClient.#ctor'
@@ -27,8 +29,6 @@ items:
         azure-asm-storage.StorageManagementClient~StorageManagementClient#storageAccounts
       - >-
         azure-asm-storage.StorageManagementClient~StorageManagementClient#getOperationStatus
-    langs:
-      - js
   - id: 'azure-asm-storage.StorageManagementClient~StorageManagementClient.#ctor'
     uid: 'azure-asm-storage.StorageManagementClient~StorageManagementClient.#ctor'
     parent: azure-asm-storage.StorageManagementClient~StorageManagementClient
@@ -80,14 +80,14 @@ items:
       [StorageAccountOperations](-StorageAccountOperations.html) object.
     fullName: >-
       azure-asm-storage.StorageManagementClient~StorageManagementClient.storageAccounts
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: storageAccounts
-    langs:
-      - js
   - uid: >-
       azure-asm-storage.StorageManagementClient~StorageManagementClient#getOperationStatus
     id: >-
@@ -104,6 +104,8 @@ items:
     fullName: >-
       azure-asm-storage.StorageManagementClient~StorageManagementClient.getOperationStatus(requestId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -126,5 +128,3 @@ items:
           - azure-asm-storage.Stream
         description: The response stream.
       content: 'function getOperationStatus(requestId, callback)'
-    langs:
-      - js

@@ -20,6 +20,8 @@ items:
     fullName: >-
       azure-sb.createServiceBusService(configOrNamespaceOrConnectionString,
       accessKey, issuer, acsNamespace, host, authenticationProvider)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -62,8 +64,6 @@ items:
       content: >-
         function createServiceBusService(configOrNamespaceOrConnectionString,
         accessKey, issuer, acsNamespace, host, authenticationProvider)
-    langs:
-      - js
   - uid: azure-sb._global.createNotificationHubService
     id: azure-sb._global.createNotificationHubService
     name: >-
@@ -73,6 +73,8 @@ items:
     fullName: >-
       azure-sb.createNotificationHubService(hubName, endpointOrConnectionString,
       sharedAccessKeyName, sharedAccessKeyValue)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -102,13 +104,13 @@ items:
       content: >-
         function createNotificationHubService(hubName,
         endpointOrConnectionString, sharedAccessKeyName, sharedAccessKeyValue)
-    langs:
-      - js
   - uid: azure-sb._global.createWrapService
     id: azure-sb._global.createWrapService
     name: 'createWrapService(acsHost, issuer, accessKey)'
     summary: Creates a new WrapService object.
     fullName: 'azure-sb.createWrapService(acsHost, issuer, accessKey)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -127,8 +129,6 @@ items:
           description: The service bus issuer password.
           optional: true
       content: 'function createWrapService(acsHost, issuer, accessKey)'
-    langs:
-      - js
 references:
   - uid: azure-sb.ServiceBusService
     name: ServiceBusService

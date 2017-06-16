@@ -26,6 +26,8 @@ items:
         branch: master
         path: lib\services\sqlManagement\lib\sqlManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-sql.ServerOperations~ServerOperations.#ctor'
@@ -34,8 +36,6 @@ items:
       - 'azure-asm-sql.ServerOperations~ServerOperations#create'
       - 'azure-asm-sql.ServerOperations~ServerOperations#deleteMethod'
       - 'azure-asm-sql.ServerOperations~ServerOperations#list'
-    langs:
-      - js
   - id: 'azure-asm-sql.ServerOperations~ServerOperations.#ctor'
     uid: 'azure-asm-sql.ServerOperations~ServerOperations.#ctor'
     parent: azure-asm-sql.ServerOperations~ServerOperations
@@ -64,6 +64,8 @@ items:
     fullName: >-
       azure-asm-sql.ServerOperations~ServerOperations.changeAdministratorPassword(serverName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -96,8 +98,6 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function changeAdministratorPassword(serverName, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-sql.ServerOperations~ServerOperations#create'
     id: 'azure-asm-sql.ServerOperations~ServerOperations#create'
     parent: azure-asm-sql.ServerOperations~ServerOperations
@@ -106,6 +106,8 @@ items:
     fullName: >-
       azure-asm-sql.ServerOperations~ServerOperations.create(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -155,8 +157,6 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function create(parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-sql.ServerOperations~ServerOperations#deleteMethod'
     id: 'azure-asm-sql.ServerOperations~ServerOperations#deleteMethod'
     parent: azure-asm-sql.ServerOperations~ServerOperations
@@ -165,6 +165,8 @@ items:
     fullName: >-
       azure-asm-sql.ServerOperations~ServerOperations.deleteMethod(serverName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -183,14 +185,14 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function deleteMethod(serverName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-sql.ServerOperations~ServerOperations#list'
     id: 'azure-asm-sql.ServerOperations~ServerOperations#list'
     parent: azure-asm-sql.ServerOperations~ServerOperations
     name: list(callback)
     summary: Returns all SQL Database Servers that are provisioned for a subscription.
     fullName: azure-asm-sql.ServerOperations~ServerOperations.list(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -203,5 +205,3 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: function list(callback)
-    langs:
-      - js

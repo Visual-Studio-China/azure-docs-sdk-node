@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\dataLake.Analytics\lib\catalog\operations\catalog.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-datalake-analytics.Catalog.#ctor'
@@ -192,8 +194,6 @@ items:
       - >-
         azure-arm-datalake-analytics.Catalog#listDatabasesNextWithHttpOperationResponse
       - 'azure-arm-datalake-analytics.Catalog#listDatabasesNext'
-    langs:
-      - js
   - id: 'azure-arm-datalake-analytics.Catalog.#ctor'
     uid: 'azure-arm-datalake-analytics.Catalog.#ctor'
     parent: azure-arm-datalake-analytics.Catalog
@@ -224,15 +224,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.createSecretWithHttpOperationResponse(accountName,
       databaseName, secretName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -288,8 +281,6 @@ items:
       content: >-
         function createSecretWithHttpOperationResponse(accountName,
         databaseName, secretName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#createSecret'
     id: 'azure-arm-datalake-analytics.Catalog#createSecret'
     parent: azure-arm-datalake-analytics.Catalog
@@ -303,37 +294,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.createSecret(accountName,
       databaseName, secretName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -399,8 +361,6 @@ items:
       content: >-
         function createSecret(accountName, databaseName, secretName, parameters,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#updateSecretWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#updateSecretWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -414,15 +374,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.updateSecretWithHttpOperationResponse(accountName,
       databaseName, secretName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -476,8 +429,6 @@ items:
       content: >-
         function updateSecretWithHttpOperationResponse(accountName,
         databaseName, secretName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#updateSecret'
     id: 'azure-arm-datalake-analytics.Catalog#updateSecret'
     parent: azure-arm-datalake-analytics.Catalog
@@ -491,37 +442,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.updateSecret(accountName,
       databaseName, secretName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -585,8 +507,6 @@ items:
       content: >-
         function updateSecret(accountName, databaseName, secretName, parameters,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getSecretWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#getSecretWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -601,15 +521,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getSecretWithHttpOperationResponse(accountName,
       databaseName, secretName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<USqlSecret>} - The deserialized result object.'
-        value: '{HttpOperationResponse<USqlSecret>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -646,8 +559,6 @@ items:
       content: >-
         function getSecretWithHttpOperationResponse(accountName, databaseName,
         secretName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getSecret'
     id: 'azure-arm-datalake-analytics.Catalog#getSecret'
     parent: azure-arm-datalake-analytics.Catalog
@@ -662,39 +573,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getSecret(accountName, databaseName,
       secretName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlSecret} - The deserialized result object.'
-        value: '{USqlSecret} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlSecret} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlSecret} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -741,8 +621,6 @@ items:
       content: >-
         function getSecret(accountName, databaseName, secretName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#deleteSecretWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#deleteSecretWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -756,15 +634,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.deleteSecretWithHttpOperationResponse(accountName,
       databaseName, secretName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -801,8 +672,6 @@ items:
       content: >-
         function deleteSecretWithHttpOperationResponse(accountName,
         databaseName, secretName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#deleteSecret'
     id: 'azure-arm-datalake-analytics.Catalog#deleteSecret'
     parent: azure-arm-datalake-analytics.Catalog
@@ -816,37 +685,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.deleteSecret(accountName,
       databaseName, secretName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -893,8 +733,6 @@ items:
       content: >-
         function deleteSecret(accountName, databaseName, secretName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#deleteAllSecretsWithHttpOperationResponse
     id: >-
@@ -910,15 +748,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.deleteAllSecretsWithHttpOperationResponse(accountName,
       databaseName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -951,8 +782,6 @@ items:
       content: >-
         function deleteAllSecretsWithHttpOperationResponse(accountName,
         databaseName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#deleteAllSecrets'
     id: 'azure-arm-datalake-analytics.Catalog#deleteAllSecrets'
     parent: azure-arm-datalake-analytics.Catalog
@@ -964,37 +793,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.deleteAllSecrets(accountName,
       databaseName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1037,8 +837,6 @@ items:
       content: >-
         function deleteAllSecrets(accountName, databaseName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#createCredentialWithHttpOperationResponse
     id: >-
@@ -1053,15 +851,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.createCredentialWithHttpOperationResponse(accountName,
       databaseName, credentialName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1129,8 +920,6 @@ items:
       content: >-
         function createCredentialWithHttpOperationResponse(accountName,
         databaseName, credentialName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#createCredential'
     id: 'azure-arm-datalake-analytics.Catalog#createCredential'
     parent: azure-arm-datalake-analytics.Catalog
@@ -1143,37 +932,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.createCredential(accountName,
       databaseName, credentialName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1251,8 +1011,6 @@ items:
       content: >-
         function createCredential(accountName, databaseName, credentialName,
         parameters, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#updateCredentialWithHttpOperationResponse
     id: >-
@@ -1269,15 +1027,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.updateCredentialWithHttpOperationResponse(accountName,
       databaseName, credentialName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1354,8 +1105,6 @@ items:
       content: >-
         function updateCredentialWithHttpOperationResponse(accountName,
         databaseName, credentialName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#updateCredential'
     id: 'azure-arm-datalake-analytics.Catalog#updateCredential'
     parent: azure-arm-datalake-analytics.Catalog
@@ -1370,37 +1119,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.updateCredential(accountName,
       databaseName, credentialName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1487,8 +1207,6 @@ items:
       content: >-
         function updateCredential(accountName, databaseName, credentialName,
         parameters, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#getCredentialWithHttpOperationResponse
     id: >-
@@ -1501,19 +1219,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getCredentialWithHttpOperationResponse(accountName,
       databaseName, credentialName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlCredential>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlCredential>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1550,8 +1257,6 @@ items:
       content: >-
         function getCredentialWithHttpOperationResponse(accountName,
         databaseName, credentialName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getCredential'
     id: 'azure-arm-datalake-analytics.Catalog#getCredential'
     parent: azure-arm-datalake-analytics.Catalog
@@ -1562,39 +1267,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getCredential(accountName,
       databaseName, credentialName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlCredential} - The deserialized result object.'
-        value: '{USqlCredential} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlCredential} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlCredential} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1641,8 +1315,6 @@ items:
       content: >-
         function getCredential(accountName, databaseName, credentialName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#deleteCredentialWithHttpOperationResponse
     id: >-
@@ -1655,15 +1327,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.deleteCredentialWithHttpOperationResponse(accountName,
       databaseName, credentialName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1733,8 +1398,6 @@ items:
       content: >-
         function deleteCredentialWithHttpOperationResponse(accountName,
         databaseName, credentialName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#deleteCredential'
     id: 'azure-arm-datalake-analytics.Catalog#deleteCredential'
     parent: azure-arm-datalake-analytics.Catalog
@@ -1745,37 +1408,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.deleteCredential(accountName,
       databaseName, credentialName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1855,8 +1489,6 @@ items:
       content: >-
         function deleteCredential(accountName, databaseName, credentialName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listCredentialsWithHttpOperationResponse
     id: >-
@@ -1869,19 +1501,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listCredentialsWithHttpOperationResponse(accountName,
       databaseName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlCredentialList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlCredentialList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1963,8 +1584,6 @@ items:
       content: >-
         function listCredentialsWithHttpOperationResponse(accountName,
         databaseName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listCredentials'
     id: 'azure-arm-datalake-analytics.Catalog#listCredentials'
     parent: azure-arm-datalake-analytics.Catalog
@@ -1973,39 +1592,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listCredentials(accountName,
       databaseName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlCredentialList} - The deserialized result object.'
-        value: '{USqlCredentialList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlCredentialList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlCredentialList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2097,8 +1685,6 @@ items:
       content: >-
         function listCredentials(accountName, databaseName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#getExternalDataSourceWithHttpOperationResponse
     id: >-
@@ -2113,19 +1699,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getExternalDataSourceWithHttpOperationResponse(accountName,
       databaseName, externalDataSourceName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlExternalDataSource>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<USqlExternalDataSource>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2164,8 +1739,6 @@ items:
       content: >-
         function getExternalDataSourceWithHttpOperationResponse(accountName,
         databaseName, externalDataSourceName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getExternalDataSource'
     id: 'azure-arm-datalake-analytics.Catalog#getExternalDataSource'
     parent: azure-arm-datalake-analytics.Catalog
@@ -2178,41 +1751,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getExternalDataSource(accountName,
       databaseName, externalDataSourceName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlExternalDataSource} - The deserialized result object.'
-        value: '{USqlExternalDataSource} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlExternalDataSource} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlExternalDataSource} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2261,8 +1801,6 @@ items:
       content: >-
         function getExternalDataSource(accountName, databaseName,
         externalDataSourceName, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listExternalDataSourcesWithHttpOperationResponse
     id: >-
@@ -2277,19 +1815,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listExternalDataSourcesWithHttpOperationResponse(accountName,
       databaseName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlExternalDataSourceList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<USqlExternalDataSourceList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2373,8 +1900,6 @@ items:
       content: >-
         function listExternalDataSourcesWithHttpOperationResponse(accountName,
         databaseName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listExternalDataSources'
     id: 'azure-arm-datalake-analytics.Catalog#listExternalDataSources'
     parent: azure-arm-datalake-analytics.Catalog
@@ -2387,41 +1912,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listExternalDataSources(accountName,
       databaseName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlExternalDataSourceList} - The deserialized result object.'
-        value: '{USqlExternalDataSourceList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlExternalDataSourceList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlExternalDataSourceList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2515,8 +2007,6 @@ items:
       content: >-
         function listExternalDataSources(accountName, databaseName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getProcedureWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#getProcedureWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -2527,19 +2017,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getProcedureWithHttpOperationResponse(accountName,
       databaseName, schemaName, procedureName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlProcedure>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlProcedure>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2582,8 +2061,6 @@ items:
       content: >-
         function getProcedureWithHttpOperationResponse(accountName,
         databaseName, schemaName, procedureName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getProcedure'
     id: 'azure-arm-datalake-analytics.Catalog#getProcedure'
     parent: azure-arm-datalake-analytics.Catalog
@@ -2594,39 +2071,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getProcedure(accountName,
       databaseName, schemaName, procedureName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlProcedure} - The deserialized result object.'
-        value: '{USqlProcedure} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlProcedure} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlProcedure} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2679,8 +2125,6 @@ items:
       content: >-
         function getProcedure(accountName, databaseName, schemaName,
         procedureName, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listProceduresWithHttpOperationResponse
     id: >-
@@ -2693,19 +2137,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listProceduresWithHttpOperationResponse(accountName,
       databaseName, schemaName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlProcedureList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlProcedureList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2793,8 +2226,6 @@ items:
       content: >-
         function listProceduresWithHttpOperationResponse(accountName,
         databaseName, schemaName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listProcedures'
     id: 'azure-arm-datalake-analytics.Catalog#listProcedures'
     parent: azure-arm-datalake-analytics.Catalog
@@ -2805,39 +2236,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listProcedures(accountName,
       databaseName, schemaName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlProcedureList} - The deserialized result object.'
-        value: '{USqlProcedureList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlProcedureList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlProcedureList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2935,8 +2335,6 @@ items:
       content: >-
         function listProcedures(accountName, databaseName, schemaName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getTableWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#getTableWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -2947,15 +2345,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getTableWithHttpOperationResponse(accountName,
       databaseName, schemaName, tableName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<USqlTable>} - The deserialized result object.'
-        value: '{HttpOperationResponse<USqlTable>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2996,8 +2387,6 @@ items:
       content: >-
         function getTableWithHttpOperationResponse(accountName, databaseName,
         schemaName, tableName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getTable'
     id: 'azure-arm-datalake-analytics.Catalog#getTable'
     parent: azure-arm-datalake-analytics.Catalog
@@ -3008,39 +2397,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getTable(accountName, databaseName,
       schemaName, tableName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTable} - The deserialized result object.'
-        value: '{USqlTable} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTable} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTable} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3091,8 +2449,6 @@ items:
       content: >-
         function getTable(accountName, databaseName, schemaName, tableName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTablesWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#listTablesWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -3103,19 +2459,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTablesWithHttpOperationResponse(accountName,
       databaseName, schemaName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlTableList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3201,8 +2546,6 @@ items:
       content: >-
         function listTablesWithHttpOperationResponse(accountName, databaseName,
         schemaName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTables'
     id: 'azure-arm-datalake-analytics.Catalog#listTables'
     parent: azure-arm-datalake-analytics.Catalog
@@ -3213,39 +2556,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTables(accountName, databaseName,
       schemaName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableList} - The deserialized result object.'
-        value: '{USqlTableList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3341,8 +2653,6 @@ items:
       content: >-
         function listTables(accountName, databaseName, schemaName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableStatisticsByDatabaseAndSchemaWithHttpOperationResponse
     id: >-
@@ -3359,19 +2669,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableStatisticsByDatabaseAndSchemaWithHttpOperationResponse(accountName,
       databaseName, schemaName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableStatisticsList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<USqlTableStatisticsList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3460,8 +2759,6 @@ items:
         function
         listTableStatisticsByDatabaseAndSchemaWithHttpOperationResponse(accountName,
         databaseName, schemaName, options)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableStatisticsByDatabaseAndSchema
     id: >-
@@ -3478,41 +2775,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableStatisticsByDatabaseAndSchema(accountName,
       databaseName, schemaName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableStatisticsList} - The deserialized result object.'
-        value: '{USqlTableStatisticsList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatisticsList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatisticsList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3610,8 +2874,6 @@ items:
       content: >-
         function listTableStatisticsByDatabaseAndSchema(accountName,
         databaseName, schemaName, options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getTableTypeWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#getTableTypeWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -3622,19 +2884,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getTableTypeWithHttpOperationResponse(accountName,
       databaseName, schemaName, tableTypeName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableType>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlTableType>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3677,8 +2928,6 @@ items:
       content: >-
         function getTableTypeWithHttpOperationResponse(accountName,
         databaseName, schemaName, tableTypeName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getTableType'
     id: 'azure-arm-datalake-analytics.Catalog#getTableType'
     parent: azure-arm-datalake-analytics.Catalog
@@ -3689,39 +2938,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getTableType(accountName,
       databaseName, schemaName, tableTypeName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableType} - The deserialized result object.'
-        value: '{USqlTableType} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableType} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableType} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3774,8 +2992,6 @@ items:
       content: >-
         function getTableType(accountName, databaseName, schemaName,
         tableTypeName, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableTypesWithHttpOperationResponse
     id: >-
@@ -3788,19 +3004,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableTypesWithHttpOperationResponse(accountName,
       databaseName, schemaName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableTypeList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlTableTypeList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3890,8 +3095,6 @@ items:
       content: >-
         function listTableTypesWithHttpOperationResponse(accountName,
         databaseName, schemaName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTableTypes'
     id: 'azure-arm-datalake-analytics.Catalog#listTableTypes'
     parent: azure-arm-datalake-analytics.Catalog
@@ -3902,39 +3105,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableTypes(accountName,
       databaseName, schemaName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableTypeList} - The deserialized result object.'
-        value: '{USqlTableTypeList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableTypeList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableTypeList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4034,8 +3206,6 @@ items:
       content: >-
         function listTableTypes(accountName, databaseName, schemaName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getPackageWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#getPackageWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -4046,15 +3216,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getPackageWithHttpOperationResponse(accountName,
       databaseName, schemaName, packageName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<USqlPackage>} - The deserialized result object.'
-        value: '{HttpOperationResponse<USqlPackage>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4097,8 +3260,6 @@ items:
       content: >-
         function getPackageWithHttpOperationResponse(accountName, databaseName,
         schemaName, packageName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getPackage'
     id: 'azure-arm-datalake-analytics.Catalog#getPackage'
     parent: azure-arm-datalake-analytics.Catalog
@@ -4109,39 +3270,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getPackage(accountName, databaseName,
       schemaName, packageName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlPackage} - The deserialized result object.'
-        value: '{USqlPackage} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlPackage} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlPackage} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4194,8 +3324,6 @@ items:
       content: >-
         function getPackage(accountName, databaseName, schemaName, packageName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listPackagesWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#listPackagesWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -4206,19 +3334,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listPackagesWithHttpOperationResponse(accountName,
       databaseName, schemaName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlPackageList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlPackageList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4306,8 +3423,6 @@ items:
       content: >-
         function listPackagesWithHttpOperationResponse(accountName,
         databaseName, schemaName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listPackages'
     id: 'azure-arm-datalake-analytics.Catalog#listPackages'
     parent: azure-arm-datalake-analytics.Catalog
@@ -4318,39 +3433,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listPackages(accountName,
       databaseName, schemaName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlPackageList} - The deserialized result object.'
-        value: '{USqlPackageList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlPackageList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlPackageList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4448,8 +3532,6 @@ items:
       content: >-
         function listPackages(accountName, databaseName, schemaName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getViewWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#getViewWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -4460,15 +3542,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getViewWithHttpOperationResponse(accountName,
       databaseName, schemaName, viewName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<USqlView>} - The deserialized result object.'
-        value: '{HttpOperationResponse<USqlView>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4509,8 +3584,6 @@ items:
       content: >-
         function getViewWithHttpOperationResponse(accountName, databaseName,
         schemaName, viewName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getView'
     id: 'azure-arm-datalake-analytics.Catalog#getView'
     parent: azure-arm-datalake-analytics.Catalog
@@ -4521,39 +3594,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getView(accountName, databaseName,
       schemaName, viewName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlView} - The deserialized result object.'
-        value: '{USqlView} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlView} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlView} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4604,8 +3646,6 @@ items:
       content: >-
         function getView(accountName, databaseName, schemaName, viewName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listViewsWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#listViewsWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -4616,19 +3656,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listViewsWithHttpOperationResponse(accountName,
       databaseName, schemaName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlViewList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlViewList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4714,8 +3743,6 @@ items:
       content: >-
         function listViewsWithHttpOperationResponse(accountName, databaseName,
         schemaName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listViews'
     id: 'azure-arm-datalake-analytics.Catalog#listViews'
     parent: azure-arm-datalake-analytics.Catalog
@@ -4726,39 +3753,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listViews(accountName, databaseName,
       schemaName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlViewList} - The deserialized result object.'
-        value: '{USqlViewList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlViewList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlViewList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4854,8 +3850,6 @@ items:
       content: >-
         function listViews(accountName, databaseName, schemaName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#getTableStatisticWithHttpOperationResponse
     id: >-
@@ -4870,19 +3864,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getTableStatisticWithHttpOperationResponse(accountName,
       databaseName, schemaName, tableName, statisticsName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableStatistics>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlTableStatistics>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4929,8 +3912,6 @@ items:
       content: >-
         function getTableStatisticWithHttpOperationResponse(accountName,
         databaseName, schemaName, tableName, statisticsName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getTableStatistic'
     id: 'azure-arm-datalake-analytics.Catalog#getTableStatistic'
     parent: azure-arm-datalake-analytics.Catalog
@@ -4944,39 +3925,8 @@ items:
       azure-arm-datalake-analytics.Catalog.getTableStatistic(accountName,
       databaseName, schemaName, tableName, statisticsName, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableStatistics} - The deserialized result object.'
-        value: '{USqlTableStatistics} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatistics} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatistics} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -5033,8 +3983,6 @@ items:
       content: >-
         function getTableStatistic(accountName, databaseName, schemaName,
         tableName, statisticsName, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableStatisticsWithHttpOperationResponse
     id: >-
@@ -5049,19 +3997,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableStatisticsWithHttpOperationResponse(accountName,
       databaseName, schemaName, tableName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableStatisticsList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<USqlTableStatisticsList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -5153,8 +4090,6 @@ items:
       content: >-
         function listTableStatisticsWithHttpOperationResponse(accountName,
         databaseName, schemaName, tableName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTableStatistics'
     id: 'azure-arm-datalake-analytics.Catalog#listTableStatistics'
     parent: azure-arm-datalake-analytics.Catalog
@@ -5167,41 +4102,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableStatistics(accountName,
       databaseName, schemaName, tableName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableStatisticsList} - The deserialized result object.'
-        value: '{USqlTableStatisticsList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatisticsList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatisticsList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -5303,8 +4205,6 @@ items:
       content: >-
         function listTableStatistics(accountName, databaseName, schemaName,
         tableName, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#getTablePartitionWithHttpOperationResponse
     id: >-
@@ -5319,19 +4219,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getTablePartitionWithHttpOperationResponse(accountName,
       databaseName, schemaName, tableName, partitionName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTablePartition>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlTablePartition>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -5378,8 +4267,6 @@ items:
       content: >-
         function getTablePartitionWithHttpOperationResponse(accountName,
         databaseName, schemaName, tableName, partitionName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getTablePartition'
     id: 'azure-arm-datalake-analytics.Catalog#getTablePartition'
     parent: azure-arm-datalake-analytics.Catalog
@@ -5393,39 +4280,8 @@ items:
       azure-arm-datalake-analytics.Catalog.getTablePartition(accountName,
       databaseName, schemaName, tableName, partitionName, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTablePartition} - The deserialized result object.'
-        value: '{USqlTablePartition} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTablePartition} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTablePartition} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -5482,8 +4338,6 @@ items:
       content: >-
         function getTablePartition(accountName, databaseName, schemaName,
         tableName, partitionName, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTablePartitionsWithHttpOperationResponse
     id: >-
@@ -5498,19 +4352,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTablePartitionsWithHttpOperationResponse(accountName,
       databaseName, schemaName, tableName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTablePartitionList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<USqlTablePartitionList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -5602,8 +4445,6 @@ items:
       content: >-
         function listTablePartitionsWithHttpOperationResponse(accountName,
         databaseName, schemaName, tableName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTablePartitions'
     id: 'azure-arm-datalake-analytics.Catalog#listTablePartitions'
     parent: azure-arm-datalake-analytics.Catalog
@@ -5616,41 +4457,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTablePartitions(accountName,
       databaseName, schemaName, tableName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTablePartitionList} - The deserialized result object.'
-        value: '{USqlTablePartitionList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTablePartitionList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTablePartitionList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -5752,8 +4560,6 @@ items:
       content: >-
         function listTablePartitions(accountName, databaseName, schemaName,
         tableName, options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTypesWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#listTypesWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -5766,19 +4572,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTypesWithHttpOperationResponse(accountName,
       databaseName, schemaName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTypeList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlTypeList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -5864,8 +4659,6 @@ items:
       content: >-
         function listTypesWithHttpOperationResponse(accountName, databaseName,
         schemaName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTypes'
     id: 'azure-arm-datalake-analytics.Catalog#listTypes'
     parent: azure-arm-datalake-analytics.Catalog
@@ -5878,39 +4671,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTypes(accountName, databaseName,
       schemaName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTypeList} - The deserialized result object.'
-        value: '{USqlTypeList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTypeList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTypeList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6006,8 +4768,6 @@ items:
       content: >-
         function listTypes(accountName, databaseName, schemaName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#getTableValuedFunctionWithHttpOperationResponse
     id: >-
@@ -6022,19 +4782,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getTableValuedFunctionWithHttpOperationResponse(accountName,
       databaseName, schemaName, tableValuedFunctionName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableValuedFunction>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<USqlTableValuedFunction>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6079,8 +4828,6 @@ items:
       content: >-
         function getTableValuedFunctionWithHttpOperationResponse(accountName,
         databaseName, schemaName, tableValuedFunctionName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getTableValuedFunction'
     id: 'azure-arm-datalake-analytics.Catalog#getTableValuedFunction'
     parent: azure-arm-datalake-analytics.Catalog
@@ -6094,41 +4841,8 @@ items:
       azure-arm-datalake-analytics.Catalog.getTableValuedFunction(accountName,
       databaseName, schemaName, tableValuedFunctionName, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableValuedFunction} - The deserialized result object.'
-        value: '{USqlTableValuedFunction} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableValuedFunction} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableValuedFunction} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6183,8 +4897,6 @@ items:
       content: >-
         function getTableValuedFunction(accountName, databaseName, schemaName,
         tableValuedFunctionName, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableValuedFunctionsWithHttpOperationResponse
     id: >-
@@ -6199,19 +4911,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableValuedFunctionsWithHttpOperationResponse(accountName,
       databaseName, schemaName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableValuedFunctionList>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<USqlTableValuedFunctionList>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6301,8 +5002,6 @@ items:
       content: >-
         function listTableValuedFunctionsWithHttpOperationResponse(accountName,
         databaseName, schemaName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTableValuedFunctions'
     id: 'azure-arm-datalake-analytics.Catalog#listTableValuedFunctions'
     parent: azure-arm-datalake-analytics.Catalog
@@ -6315,41 +5014,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableValuedFunctions(accountName,
       databaseName, schemaName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableValuedFunctionList} - The deserialized result object.'
-        value: '{USqlTableValuedFunctionList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableValuedFunctionList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableValuedFunctionList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6449,8 +5115,6 @@ items:
       content: >-
         function listTableValuedFunctions(accountName, databaseName, schemaName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getAssemblyWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#getAssemblyWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -6461,19 +5125,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getAssemblyWithHttpOperationResponse(accountName,
       databaseName, assemblyName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlAssembly>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlAssembly>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6512,8 +5165,6 @@ items:
       content: >-
         function getAssemblyWithHttpOperationResponse(accountName, databaseName,
         assemblyName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getAssembly'
     id: 'azure-arm-datalake-analytics.Catalog#getAssembly'
     parent: azure-arm-datalake-analytics.Catalog
@@ -6524,39 +5175,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getAssembly(accountName,
       databaseName, assemblyName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlAssembly} - The deserialized result object.'
-        value: '{USqlAssembly} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlAssembly} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlAssembly} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6605,8 +5225,6 @@ items:
       content: >-
         function getAssembly(accountName, databaseName, assemblyName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listAssembliesWithHttpOperationResponse
     id: >-
@@ -6619,19 +5237,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listAssembliesWithHttpOperationResponse(accountName,
       databaseName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlAssemblyList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlAssemblyList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6715,8 +5322,6 @@ items:
       content: >-
         function listAssembliesWithHttpOperationResponse(accountName,
         databaseName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listAssemblies'
     id: 'azure-arm-datalake-analytics.Catalog#listAssemblies'
     parent: azure-arm-datalake-analytics.Catalog
@@ -6725,39 +5330,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listAssemblies(accountName,
       databaseName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlAssemblyList} - The deserialized result object.'
-        value: '{USqlAssemblyList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlAssemblyList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlAssemblyList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6851,8 +5425,6 @@ items:
       content: >-
         function listAssemblies(accountName, databaseName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getSchemaWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#getSchemaWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -6863,15 +5435,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getSchemaWithHttpOperationResponse(accountName,
       databaseName, schemaName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<USqlSchema>} - The deserialized result object.'
-        value: '{HttpOperationResponse<USqlSchema>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6908,8 +5473,6 @@ items:
       content: >-
         function getSchemaWithHttpOperationResponse(accountName, databaseName,
         schemaName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getSchema'
     id: 'azure-arm-datalake-analytics.Catalog#getSchema'
     parent: azure-arm-datalake-analytics.Catalog
@@ -6920,39 +5483,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getSchema(accountName, databaseName,
       schemaName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlSchema} - The deserialized result object.'
-        value: '{USqlSchema} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlSchema} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlSchema} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6999,8 +5531,6 @@ items:
       content: >-
         function getSchema(accountName, databaseName, schemaName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listSchemasWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#listSchemasWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -7009,19 +5539,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listSchemasWithHttpOperationResponse(accountName,
       databaseName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlSchemaList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlSchemaList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -7103,8 +5622,6 @@ items:
       content: >-
         function listSchemasWithHttpOperationResponse(accountName, databaseName,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listSchemas'
     id: 'azure-arm-datalake-analytics.Catalog#listSchemas'
     parent: azure-arm-datalake-analytics.Catalog
@@ -7113,39 +5630,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listSchemas(accountName,
       databaseName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlSchemaList} - The deserialized result object.'
-        value: '{USqlSchemaList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlSchemaList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlSchemaList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -7237,8 +5723,6 @@ items:
       content: >-
         function listSchemas(accountName, databaseName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableStatisticsByDatabaseWithHttpOperationResponse
     id: >-
@@ -7253,19 +5737,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableStatisticsByDatabaseWithHttpOperationResponse(accountName,
       databaseName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableStatisticsList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<USqlTableStatisticsList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -7350,8 +5823,6 @@ items:
         function
         listTableStatisticsByDatabaseWithHttpOperationResponse(accountName,
         databaseName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTableStatisticsByDatabase'
     id: 'azure-arm-datalake-analytics.Catalog#listTableStatisticsByDatabase'
     parent: azure-arm-datalake-analytics.Catalog
@@ -7364,41 +5835,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableStatisticsByDatabase(accountName,
       databaseName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableStatisticsList} - The deserialized result object.'
-        value: '{USqlTableStatisticsList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatisticsList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatisticsList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -7492,8 +5930,6 @@ items:
       content: >-
         function listTableStatisticsByDatabase(accountName, databaseName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTablesByDatabaseWithHttpOperationResponse
     id: >-
@@ -7510,19 +5946,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTablesByDatabaseWithHttpOperationResponse(accountName,
       databaseName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlTableList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -7604,8 +6029,6 @@ items:
       content: >-
         function listTablesByDatabaseWithHttpOperationResponse(accountName,
         databaseName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTablesByDatabase'
     id: 'azure-arm-datalake-analytics.Catalog#listTablesByDatabase'
     parent: azure-arm-datalake-analytics.Catalog
@@ -7618,39 +6041,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTablesByDatabase(accountName,
       databaseName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableList} - The deserialized result object.'
-        value: '{USqlTableList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -7742,8 +6134,6 @@ items:
       content: >-
         function listTablesByDatabase(accountName, databaseName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableValuedFunctionsByDatabaseWithHttpOperationResponse
     id: >-
@@ -7760,19 +6150,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableValuedFunctionsByDatabaseWithHttpOperationResponse(accountName,
       databaseName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableValuedFunctionList>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<USqlTableValuedFunctionList>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -7857,8 +6236,6 @@ items:
         function
         listTableValuedFunctionsByDatabaseWithHttpOperationResponse(accountName,
         databaseName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTableValuedFunctionsByDatabase'
     id: 'azure-arm-datalake-analytics.Catalog#listTableValuedFunctionsByDatabase'
     parent: azure-arm-datalake-analytics.Catalog
@@ -7873,41 +6250,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableValuedFunctionsByDatabase(accountName,
       databaseName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableValuedFunctionList} - The deserialized result object.'
-        value: '{USqlTableValuedFunctionList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableValuedFunctionList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableValuedFunctionList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8001,8 +6345,6 @@ items:
       content: >-
         function listTableValuedFunctionsByDatabase(accountName, databaseName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listViewsByDatabaseWithHttpOperationResponse
     id: >-
@@ -8017,19 +6359,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listViewsByDatabaseWithHttpOperationResponse(accountName,
       databaseName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlViewList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlViewList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8111,8 +6442,6 @@ items:
       content: >-
         function listViewsByDatabaseWithHttpOperationResponse(accountName,
         databaseName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listViewsByDatabase'
     id: 'azure-arm-datalake-analytics.Catalog#listViewsByDatabase'
     parent: azure-arm-datalake-analytics.Catalog
@@ -8123,39 +6452,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listViewsByDatabase(accountName,
       databaseName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlViewList} - The deserialized result object.'
-        value: '{USqlViewList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlViewList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlViewList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8247,8 +6545,6 @@ items:
       content: >-
         function listViewsByDatabase(accountName, databaseName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getDatabaseWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.Catalog#getDatabaseWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.Catalog
@@ -8257,19 +6553,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getDatabaseWithHttpOperationResponse(accountName,
       databaseName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlDatabase>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlDatabase>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8302,8 +6587,6 @@ items:
       content: >-
         function getDatabaseWithHttpOperationResponse(accountName, databaseName,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#getDatabase'
     id: 'azure-arm-datalake-analytics.Catalog#getDatabase'
     parent: azure-arm-datalake-analytics.Catalog
@@ -8312,39 +6595,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.getDatabase(accountName,
       databaseName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlDatabase} - The deserialized result object.'
-        value: '{USqlDatabase} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlDatabase} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlDatabase} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8387,8 +6639,6 @@ items:
       content: >-
         function getDatabase(accountName, databaseName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listDatabasesWithHttpOperationResponse
     id: >-
@@ -8399,19 +6649,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listDatabasesWithHttpOperationResponse(accountName,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlDatabaseList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlDatabaseList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8487,8 +6726,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listDatabasesWithHttpOperationResponse(accountName, options)'
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listDatabases'
     id: 'azure-arm-datalake-analytics.Catalog#listDatabases'
     parent: azure-arm-datalake-analytics.Catalog
@@ -8497,39 +6734,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listDatabases(accountName, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlDatabaseList} - The deserialized result object.'
-        value: '{USqlDatabaseList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlDatabaseList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlDatabaseList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8615,8 +6821,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listDatabases(accountName, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listCredentialsNextWithHttpOperationResponse
     id: >-
@@ -8627,19 +6831,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listCredentialsNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlCredentialList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlCredentialList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8668,8 +6861,6 @@ items:
       content: >-
         function listCredentialsNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listCredentialsNext'
     id: 'azure-arm-datalake-analytics.Catalog#listCredentialsNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -8678,39 +6869,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listCredentialsNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlCredentialList} - The deserialized result object.'
-        value: '{USqlCredentialList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlCredentialList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlCredentialList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8747,8 +6907,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listCredentialsNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listExternalDataSourcesNextWithHttpOperationResponse
     id: >-
@@ -8763,19 +6921,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listExternalDataSourcesNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlExternalDataSourceList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<USqlExternalDataSourceList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8805,8 +6952,6 @@ items:
         function
         listExternalDataSourcesNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listExternalDataSourcesNext'
     id: 'azure-arm-datalake-analytics.Catalog#listExternalDataSourcesNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -8817,41 +6962,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listExternalDataSourcesNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlExternalDataSourceList} - The deserialized result object.'
-        value: '{USqlExternalDataSourceList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlExternalDataSourceList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlExternalDataSourceList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8890,8 +7002,6 @@ items:
       content: >-
         function listExternalDataSourcesNext(nextPageLink, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listProceduresNextWithHttpOperationResponse
     id: >-
@@ -8902,19 +7012,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listProceduresNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlProcedureList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlProcedureList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8943,8 +7042,6 @@ items:
       content: >-
         function listProceduresNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listProceduresNext'
     id: 'azure-arm-datalake-analytics.Catalog#listProceduresNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -8953,39 +7050,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listProceduresNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlProcedureList} - The deserialized result object.'
-        value: '{USqlProcedureList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlProcedureList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlProcedureList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9022,8 +7088,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listProceduresNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTablesNextWithHttpOperationResponse
     id: >-
@@ -9034,19 +7098,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTablesNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlTableList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9073,8 +7126,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listTablesNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTablesNext'
     id: 'azure-arm-datalake-analytics.Catalog#listTablesNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -9083,39 +7134,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTablesNext(nextPageLink, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableList} - The deserialized result object.'
-        value: '{USqlTableList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9152,8 +7172,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listTablesNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableStatisticsByDatabaseAndSchemaNextWithHttpOperationResponse
     id: >-
@@ -9170,19 +7188,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableStatisticsByDatabaseAndSchemaNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableStatisticsList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<USqlTableStatisticsList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9212,8 +7219,6 @@ items:
         function
         listTableStatisticsByDatabaseAndSchemaNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableStatisticsByDatabaseAndSchemaNext
     id: >-
@@ -9230,41 +7235,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableStatisticsByDatabaseAndSchemaNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableStatisticsList} - The deserialized result object.'
-        value: '{USqlTableStatisticsList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatisticsList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatisticsList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9303,8 +7275,6 @@ items:
       content: >-
         function listTableStatisticsByDatabaseAndSchemaNext(nextPageLink,
         options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableTypesNextWithHttpOperationResponse
     id: >-
@@ -9315,19 +7285,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableTypesNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableTypeList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlTableTypeList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9356,8 +7315,6 @@ items:
       content: >-
         function listTableTypesNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTableTypesNext'
     id: 'azure-arm-datalake-analytics.Catalog#listTableTypesNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -9366,39 +7323,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableTypesNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableTypeList} - The deserialized result object.'
-        value: '{USqlTableTypeList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableTypeList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableTypeList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9435,8 +7361,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listTableTypesNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listPackagesNextWithHttpOperationResponse
     id: >-
@@ -9447,19 +7371,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listPackagesNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlPackageList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlPackageList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9488,8 +7401,6 @@ items:
       content: >-
         function listPackagesNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listPackagesNext'
     id: 'azure-arm-datalake-analytics.Catalog#listPackagesNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -9498,39 +7409,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listPackagesNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlPackageList} - The deserialized result object.'
-        value: '{USqlPackageList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlPackageList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlPackageList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9567,8 +7447,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listPackagesNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listViewsNextWithHttpOperationResponse
     id: >-
@@ -9579,19 +7457,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listViewsNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlViewList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlViewList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9618,8 +7485,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listViewsNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listViewsNext'
     id: 'azure-arm-datalake-analytics.Catalog#listViewsNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -9628,39 +7493,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listViewsNext(nextPageLink, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlViewList} - The deserialized result object.'
-        value: '{USqlViewList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlViewList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlViewList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9697,8 +7531,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listViewsNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableStatisticsNextWithHttpOperationResponse
     id: >-
@@ -9711,19 +7543,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableStatisticsNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableStatisticsList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<USqlTableStatisticsList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9752,8 +7573,6 @@ items:
       content: >-
         function listTableStatisticsNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTableStatisticsNext'
     id: 'azure-arm-datalake-analytics.Catalog#listTableStatisticsNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -9764,41 +7583,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableStatisticsNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableStatisticsList} - The deserialized result object.'
-        value: '{USqlTableStatisticsList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatisticsList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatisticsList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9837,8 +7623,6 @@ items:
       content: >-
         function listTableStatisticsNext(nextPageLink, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTablePartitionsNextWithHttpOperationResponse
     id: >-
@@ -9851,19 +7635,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTablePartitionsNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTablePartitionList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<USqlTablePartitionList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9892,8 +7665,6 @@ items:
       content: >-
         function listTablePartitionsNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTablePartitionsNext'
     id: 'azure-arm-datalake-analytics.Catalog#listTablePartitionsNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -9904,41 +7675,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTablePartitionsNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTablePartitionList} - The deserialized result object.'
-        value: '{USqlTablePartitionList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTablePartitionList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTablePartitionList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -9977,8 +7715,6 @@ items:
       content: >-
         function listTablePartitionsNext(nextPageLink, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTypesNextWithHttpOperationResponse
     id: >-
@@ -9991,19 +7727,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTypesNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTypeList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlTypeList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10030,8 +7755,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listTypesNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTypesNext'
     id: 'azure-arm-datalake-analytics.Catalog#listTypesNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -10042,39 +7765,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTypesNext(nextPageLink, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTypeList} - The deserialized result object.'
-        value: '{USqlTypeList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTypeList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTypeList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10111,8 +7803,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listTypesNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableValuedFunctionsNextWithHttpOperationResponse
     id: >-
@@ -10127,19 +7817,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableValuedFunctionsNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableValuedFunctionList>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<USqlTableValuedFunctionList>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10169,8 +7848,6 @@ items:
         function
         listTableValuedFunctionsNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTableValuedFunctionsNext'
     id: 'azure-arm-datalake-analytics.Catalog#listTableValuedFunctionsNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -10181,41 +7858,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableValuedFunctionsNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableValuedFunctionList} - The deserialized result object.'
-        value: '{USqlTableValuedFunctionList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableValuedFunctionList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableValuedFunctionList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10254,8 +7898,6 @@ items:
       content: >-
         function listTableValuedFunctionsNext(nextPageLink, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listAssembliesNextWithHttpOperationResponse
     id: >-
@@ -10266,19 +7908,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listAssembliesNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlAssemblyList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlAssemblyList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10307,8 +7938,6 @@ items:
       content: >-
         function listAssembliesNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listAssembliesNext'
     id: 'azure-arm-datalake-analytics.Catalog#listAssembliesNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -10317,39 +7946,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listAssembliesNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlAssemblyList} - The deserialized result object.'
-        value: '{USqlAssemblyList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlAssemblyList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlAssemblyList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10386,8 +7984,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listAssembliesNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listSchemasNextWithHttpOperationResponse
     id: >-
@@ -10398,19 +7994,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listSchemasNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlSchemaList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlSchemaList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10437,8 +8022,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listSchemasNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listSchemasNext'
     id: 'azure-arm-datalake-analytics.Catalog#listSchemasNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -10447,39 +8030,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listSchemasNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlSchemaList} - The deserialized result object.'
-        value: '{USqlSchemaList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlSchemaList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlSchemaList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10516,8 +8068,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listSchemasNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableStatisticsByDatabaseNextWithHttpOperationResponse
     id: >-
@@ -10532,19 +8082,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableStatisticsByDatabaseNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableStatisticsList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<USqlTableStatisticsList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10574,8 +8113,6 @@ items:
         function
         listTableStatisticsByDatabaseNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTableStatisticsByDatabaseNext'
     id: 'azure-arm-datalake-analytics.Catalog#listTableStatisticsByDatabaseNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -10586,41 +8123,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableStatisticsByDatabaseNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableStatisticsList} - The deserialized result object.'
-        value: '{USqlTableStatisticsList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatisticsList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableStatisticsList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10659,8 +8163,6 @@ items:
       content: >-
         function listTableStatisticsByDatabaseNext(nextPageLink, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTablesByDatabaseNextWithHttpOperationResponse
     id: >-
@@ -10675,19 +8177,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTablesByDatabaseNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlTableList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10716,8 +8207,6 @@ items:
       content: >-
         function listTablesByDatabaseNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listTablesByDatabaseNext'
     id: 'azure-arm-datalake-analytics.Catalog#listTablesByDatabaseNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -10730,39 +8219,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTablesByDatabaseNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableList} - The deserialized result object.'
-        value: '{USqlTableList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10801,8 +8259,6 @@ items:
       content: >-
         function listTablesByDatabaseNext(nextPageLink, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableValuedFunctionsByDatabaseNextWithHttpOperationResponse
     id: >-
@@ -10819,19 +8275,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableValuedFunctionsByDatabaseNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlTableValuedFunctionList>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<USqlTableValuedFunctionList>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10861,8 +8306,6 @@ items:
         function
         listTableValuedFunctionsByDatabaseNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listTableValuedFunctionsByDatabaseNext
     id: >-
@@ -10879,41 +8322,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listTableValuedFunctionsByDatabaseNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlTableValuedFunctionList} - The deserialized result object.'
-        value: '{USqlTableValuedFunctionList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableValuedFunctionList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlTableValuedFunctionList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -10952,8 +8362,6 @@ items:
       content: >-
         function listTableValuedFunctionsByDatabaseNext(nextPageLink, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listViewsByDatabaseNextWithHttpOperationResponse
     id: >-
@@ -10966,19 +8374,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listViewsByDatabaseNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlViewList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlViewList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -11007,8 +8404,6 @@ items:
       content: >-
         function listViewsByDatabaseNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listViewsByDatabaseNext'
     id: 'azure-arm-datalake-analytics.Catalog#listViewsByDatabaseNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -11019,39 +8414,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listViewsByDatabaseNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlViewList} - The deserialized result object.'
-        value: '{USqlViewList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlViewList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlViewList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -11090,8 +8454,6 @@ items:
       content: >-
         function listViewsByDatabaseNext(nextPageLink, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.Catalog#listDatabasesNextWithHttpOperationResponse
     id: >-
@@ -11102,19 +8464,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listDatabasesNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<USqlDatabaseList>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<USqlDatabaseList>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -11143,8 +8494,6 @@ items:
       content: >-
         function listDatabasesNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.Catalog#listDatabasesNext'
     id: 'azure-arm-datalake-analytics.Catalog#listDatabasesNext'
     parent: azure-arm-datalake-analytics.Catalog
@@ -11153,39 +8502,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.Catalog.listDatabasesNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{USqlDatabaseList} - The deserialized result object.'
-        value: '{USqlDatabaseList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlDatabaseList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link USqlDatabaseList} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -11222,8 +8540,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listDatabasesNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-arm-datalake-analytics.DataLakeAnalyticsCatalogManagementClient
     name: DataLakeAnalyticsCatalogManagementClient

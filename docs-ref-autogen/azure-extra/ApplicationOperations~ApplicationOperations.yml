@@ -13,6 +13,8 @@ items:
         branch: master
         path: lib\services\extra\lib\graphRbacManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-extra.ApplicationOperations~ApplicationOperations.#ctor'
@@ -21,8 +23,6 @@ items:
       - 'azure-extra.ApplicationOperations~ApplicationOperations#get'
       - 'azure-extra.ApplicationOperations~ApplicationOperations#list'
       - 'azure-extra.ApplicationOperations~ApplicationOperations#update'
-    langs:
-      - js
   - id: 'azure-extra.ApplicationOperations~ApplicationOperations.#ctor'
     uid: 'azure-extra.ApplicationOperations~ApplicationOperations.#ctor'
     parent: azure-extra.ApplicationOperations~ApplicationOperations
@@ -47,6 +47,8 @@ items:
     fullName: >-
       azure-extra.ApplicationOperations~ApplicationOperations.create(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -94,8 +96,6 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function create(parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-extra.ApplicationOperations~ApplicationOperations#deleteMethod'
     id: 'azure-extra.ApplicationOperations~ApplicationOperations#deleteMethod'
     parent: azure-extra.ApplicationOperations~ApplicationOperations
@@ -104,6 +104,8 @@ items:
     fullName: >-
       azure-extra.ApplicationOperations~ApplicationOperations.deleteMethod(applicationObjectId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -120,8 +122,6 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function deleteMethod(applicationObjectId, callback)'
-    langs:
-      - js
   - uid: 'azure-extra.ApplicationOperations~ApplicationOperations#get'
     id: 'azure-extra.ApplicationOperations~ApplicationOperations#get'
     parent: azure-extra.ApplicationOperations~ApplicationOperations
@@ -130,6 +130,8 @@ items:
     fullName: >-
       azure-extra.ApplicationOperations~ApplicationOperations.get(applicationObjectId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -146,8 +148,6 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function get(applicationObjectId, callback)'
-    langs:
-      - js
   - uid: 'azure-extra.ApplicationOperations~ApplicationOperations#list'
     id: 'azure-extra.ApplicationOperations~ApplicationOperations#list'
     parent: azure-extra.ApplicationOperations~ApplicationOperations
@@ -156,6 +156,8 @@ items:
     fullName: >-
       azure-extra.ApplicationOperations~ApplicationOperations.list(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -187,8 +189,6 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function list(parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-extra.ApplicationOperations~ApplicationOperations#update'
     id: 'azure-extra.ApplicationOperations~ApplicationOperations#update'
     parent: azure-extra.ApplicationOperations~ApplicationOperations
@@ -197,6 +197,8 @@ items:
     fullName: >-
       azure-extra.ApplicationOperations~ApplicationOperations.update(applicationObjectId,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -248,5 +250,3 @@ items:
           - azure-extra.Stream
         description: The response stream.
       content: 'function update(applicationObjectId, parameters, callback)'
-    langs:
-      - js

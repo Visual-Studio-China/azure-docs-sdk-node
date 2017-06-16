@@ -31,12 +31,12 @@ items:
         branch: master
         path: lib\services\management\lib\managementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-mgmt.LocationOperations~LocationOperations.#ctor'
       - 'azure-asm-mgmt.LocationOperations~LocationOperations#list'
-    langs:
-      - js
   - id: 'azure-asm-mgmt.LocationOperations~LocationOperations.#ctor'
     uid: 'azure-asm-mgmt.LocationOperations~LocationOperations.#ctor'
     parent: azure-asm-mgmt.LocationOperations~LocationOperations
@@ -63,6 +63,8 @@ items:
       http://msdn.microsoft.com/en-us/library/windowsazure/gg441293.aspx for
       more information)
     fullName: azure-asm-mgmt.LocationOperations~LocationOperations.list(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -75,5 +77,3 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: function list(callback)
-    langs:
-      - js

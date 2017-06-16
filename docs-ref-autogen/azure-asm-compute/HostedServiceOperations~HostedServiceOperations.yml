@@ -23,6 +23,8 @@ items:
         branch: master
         path: lib\services\computeManagement\lib\computeManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-compute.HostedServiceOperations~HostedServiceOperations.#ctor'
@@ -58,8 +60,6 @@ items:
       - >-
         azure-asm-compute.HostedServiceOperations~HostedServiceOperations#listPublisherExtensions
       - 'azure-asm-compute.HostedServiceOperations~HostedServiceOperations#update'
-    langs:
-      - js
   - id: 'azure-asm-compute.HostedServiceOperations~HostedServiceOperations.#ctor'
     uid: 'azure-asm-compute.HostedServiceOperations~HostedServiceOperations.#ctor'
     parent: azure-asm-compute.HostedServiceOperations~HostedServiceOperations
@@ -93,6 +93,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.addExtension(serviceName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -197,8 +199,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function addExtension(serviceName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations#beginAddingExtension
     id: >-
@@ -216,6 +216,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.beginAddingExtension(serviceName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -320,8 +322,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function beginAddingExtension(serviceName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations#beginDeletingAll
     id: >-
@@ -337,6 +337,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.beginDeletingAll(serviceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -353,8 +355,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function beginDeletingAll(serviceName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations#beginDeletingExtension
     id: >-
@@ -369,6 +369,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.beginDeletingExtension(serviceName,
       extensionId, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -391,8 +393,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function beginDeletingExtension(serviceName, extensionId, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations#checkNameAvailability
     id: >-
@@ -407,6 +407,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.checkNameAvailability(serviceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -425,8 +427,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function checkNameAvailability(serviceName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-compute.HostedServiceOperations~HostedServiceOperations#create'
     id: 'azure-asm-compute.HostedServiceOperations~HostedServiceOperations#create'
     parent: azure-asm-compute.HostedServiceOperations~HostedServiceOperations
@@ -438,6 +438,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.create(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -549,8 +551,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function create(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations#deleteMethod
     id: >-
@@ -565,6 +565,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.deleteMethod(serviceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -581,8 +583,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function deleteMethod(serviceName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations#deleteAll
     id: >-
@@ -598,6 +598,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.deleteAll(serviceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -614,8 +616,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function deleteAll(serviceName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations#deleteExtension
     id: >-
@@ -630,6 +630,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.deleteExtension(serviceName,
       extensionId, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -652,8 +654,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function deleteExtension(serviceName, extensionId, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-compute.HostedServiceOperations~HostedServiceOperations#get'
     id: 'azure-asm-compute.HostedServiceOperations~HostedServiceOperations#get'
     parent: azure-asm-compute.HostedServiceOperations~HostedServiceOperations
@@ -668,6 +668,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.get(serviceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -684,8 +686,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function get(serviceName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations#getDetailed
     id: >-
@@ -703,6 +703,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.getDetailed(serviceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -719,8 +721,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function getDetailed(serviceName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations#getExtension
     id: >-
@@ -735,6 +735,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.getExtension(serviceName,
       extensionId, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -757,8 +759,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function getExtension(serviceName, extensionId, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-compute.HostedServiceOperations~HostedServiceOperations#list'
     id: 'azure-asm-compute.HostedServiceOperations~HostedServiceOperations#list'
     parent: azure-asm-compute.HostedServiceOperations~HostedServiceOperations
@@ -770,6 +770,8 @@ items:
       more information)
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.list(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -782,8 +784,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: function list(callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations#listAvailableExtensions
     id: >-
@@ -800,6 +800,8 @@ items:
       more information)
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.listAvailableExtensions(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -812,8 +814,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: function listAvailableExtensions(callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations#listExtensions
     id: >-
@@ -828,6 +828,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.listExtensions(serviceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -844,8 +846,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function listExtensions(serviceName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations#listExtensionVersions
     id: >-
@@ -862,6 +862,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.listExtensionVersions(providerNamespace,
       extensionType, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -884,8 +886,6 @@ items:
       content: >-
         function listExtensionVersions(providerNamespace, extensionType,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations#listPublisherExtensions
     id: >-
@@ -902,6 +902,8 @@ items:
       more information)
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.listPublisherExtensions(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -914,8 +916,6 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: function listPublisherExtensions(callback)
-    langs:
-      - js
   - uid: 'azure-asm-compute.HostedServiceOperations~HostedServiceOperations#update'
     id: 'azure-asm-compute.HostedServiceOperations~HostedServiceOperations#update'
     parent: azure-asm-compute.HostedServiceOperations~HostedServiceOperations
@@ -928,6 +928,8 @@ items:
     fullName: >-
       azure-asm-compute.HostedServiceOperations~HostedServiceOperations.update(serviceName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1014,5 +1016,3 @@ items:
           - azure-asm-compute.Stream
         description: The response stream.
       content: 'function update(serviceName, parameters, callback)'
-    langs:
-      - js

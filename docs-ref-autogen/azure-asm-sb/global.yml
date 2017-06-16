@@ -16,11 +16,11 @@ items:
     name: ServiceBusManagementClient
     summary: Generated ServiceBusManagementClient client exports.
     fullName: azure-asm-sb.ServiceBusManagementClient
+    langs:
+      - js
     type: Member
     syntax:
       content: ServiceBusManagementClient
-    langs:
-      - js
   - uid: azure-asm-sb._global.createServiceBusManagementClient
     id: azure-asm-sb._global.createServiceBusManagementClient
     name: 'createServiceBusManagementClient(baseUri, filters)'
@@ -29,6 +29,8 @@ items:
 
       NOTE: These APIs are still in development and should not be used.
     fullName: 'azure-asm-sb.createServiceBusManagementClient(baseUri, filters)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -62,8 +64,6 @@ items:
           - azure-asm-sb.ServiceBusManagementClient
         description: A new ServiceBusManagementClient object.
       content: 'function createServiceBusManagementClient(baseUri, filters)'
-    langs:
-      - js
   - uid: azure-asm-sb._global.createCertificateCloudCredentials
     id: azure-asm-sb._global.createCertificateCloudCredentials
     name: createCertificateCloudCredentials()
@@ -71,6 +71,8 @@ items:
       Creates a new CertificateCloudCredentials object.
       Either a pair of cert / key values need to be pass or a pem file location.
     fullName: azure-asm-sb.createCertificateCloudCredentials()
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -98,5 +100,3 @@ items:
           - azure-asm-sb.CertificateCloudCredentials
         description: ''
       content: function createCertificateCloudCredentials()
-    langs:
-      - js

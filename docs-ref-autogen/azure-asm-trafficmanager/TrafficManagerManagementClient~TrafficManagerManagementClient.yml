@@ -25,6 +25,8 @@ items:
         path: >-
           lib\services\trafficManagerManagement\lib\trafficManagerManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - >-
@@ -33,8 +35,6 @@ items:
         azure-asm-trafficmanager.TrafficManagerManagementClient~TrafficManagerManagementClient#definitions
       - >-
         azure-asm-trafficmanager.TrafficManagerManagementClient~TrafficManagerManagementClient#profiles
-    langs:
-      - js
   - id: >-
       azure-asm-trafficmanager.TrafficManagerManagementClient~TrafficManagerManagementClient.#ctor
     uid: >-
@@ -90,14 +90,14 @@ items:
       [DefinitionOperations](-DefinitionOperations.html) object.
     fullName: >-
       azure-asm-trafficmanager.TrafficManagerManagementClient~TrafficManagerManagementClient.definitions
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: definitions
-    langs:
-      - js
   - uid: >-
       azure-asm-trafficmanager.TrafficManagerManagementClient~TrafficManagerManagementClient#profiles
     id: >-
@@ -110,11 +110,11 @@ items:
       object.
     fullName: >-
       azure-asm-trafficmanager.TrafficManagerManagementClient~TrafficManagerManagementClient.profiles
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: profiles
-    langs:
-      - js

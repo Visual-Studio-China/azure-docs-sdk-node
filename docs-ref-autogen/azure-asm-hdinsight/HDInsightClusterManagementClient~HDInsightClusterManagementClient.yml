@@ -16,6 +16,8 @@ items:
         branch: master
         path: lib\services\hdinsight\lib\hDInsightClusterManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - >-
@@ -24,8 +26,6 @@ items:
         azure-asm-hdinsight.HDInsightClusterManagementClient~HDInsightClusterManagementClient#clusterManagement
       - >-
         azure-asm-hdinsight.HDInsightClusterManagementClient~HDInsightClusterManagementClient#getOperationStatus
-    langs:
-      - js
   - id: >-
       azure-asm-hdinsight.HDInsightClusterManagementClient~HDInsightClusterManagementClient.#ctor
     uid: >-
@@ -89,14 +89,14 @@ items:
       object.
     fullName: >-
       azure-asm-hdinsight.HDInsightClusterManagementClient~HDInsightClusterManagementClient.clusterManagement
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: clusterManagement
-    langs:
-      - js
   - uid: >-
       azure-asm-hdinsight.HDInsightClusterManagementClient~HDInsightClusterManagementClient#getOperationStatus
     id: >-
@@ -112,6 +112,8 @@ items:
     fullName: >-
       azure-asm-hdinsight.HDInsightClusterManagementClient~HDInsightClusterManagementClient.getOperationStatus(requestId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -134,5 +136,3 @@ items:
           - azure-asm-hdinsight.Stream
         description: The response stream.
       content: 'function getOperationStatus(requestId, callback)'
-    langs:
-      - js

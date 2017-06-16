@@ -13,12 +13,12 @@ items:
         branch: master
         path: lib\services\monitoring\lib\eventsClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-monitoring.EventsClient~EventsClient.#ctor'
       - 'azure-monitoring.EventsClient~EventsClient#eventData'
-    langs:
-      - js
   - id: 'azure-monitoring.EventsClient~EventsClient.#ctor'
     uid: 'azure-monitoring.EventsClient~EventsClient.#ctor'
     parent: azure-monitoring.EventsClient~EventsClient
@@ -65,11 +65,11 @@ items:
       Provides an instance of the
       [EventDataOperations](-EventDataOperations.html) object.
     fullName: azure-monitoring.EventsClient~EventsClient.eventData
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: eventData
-    langs:
-      - js

@@ -18,6 +18,8 @@ items:
         branch: master
         path: lib\services\serviceBusManagement\lib\serviceBusManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient.#ctor'
@@ -35,8 +37,6 @@ items:
         azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient#getOperationStatus
       - >-
         azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient#getServiceBusRegions
-    langs:
-      - js
   - id: 'azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient.#ctor'
     uid: 'azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient.#ctor'
     parent: azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient
@@ -88,14 +88,14 @@ items:
       [NamespaceOperations](-NamespaceOperations.html) object.
     fullName: >-
       azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient.namespaces
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: namespaces
-    langs:
-      - js
   - uid: >-
       azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient#notificationHubs
     id: >-
@@ -107,14 +107,14 @@ items:
       [NotificationHubOperations](-NotificationHubOperations.html) object.
     fullName: >-
       azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient.notificationHubs
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: notificationHubs
-    langs:
-      - js
   - uid: 'azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient#queues'
     id: 'azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient#queues'
     parent: azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient
@@ -123,14 +123,14 @@ items:
       Provides an instance of the [QueueOperations](-QueueOperations.html)
       object.
     fullName: azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient.queues
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: queues
-    langs:
-      - js
   - uid: 'azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient#relays'
     id: 'azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient#relays'
     parent: azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient
@@ -139,14 +139,14 @@ items:
       Provides an instance of the [RelayOperations](-RelayOperations.html)
       object.
     fullName: azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient.relays
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: relays
-    langs:
-      - js
   - uid: 'azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient#topics'
     id: 'azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient#topics'
     parent: azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient
@@ -155,14 +155,14 @@ items:
       Provides an instance of the [TopicOperations](-TopicOperations.html)
       object.
     fullName: azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient.topics
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: topics
-    langs:
-      - js
   - uid: >-
       azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient#getOperationStatus
     id: >-
@@ -179,6 +179,8 @@ items:
     fullName: >-
       azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient.getOperationStatus(requestId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -201,8 +203,6 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: 'function getOperationStatus(requestId, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient#getServiceBusRegions
     id: >-
@@ -216,6 +216,8 @@ items:
       more information)
     fullName: >-
       azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient.getServiceBusRegions(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -228,5 +230,3 @@ items:
           - azure-asm-sb.Stream
         description: The response stream.
       content: function getServiceBusRegions(callback)
-    langs:
-      - js

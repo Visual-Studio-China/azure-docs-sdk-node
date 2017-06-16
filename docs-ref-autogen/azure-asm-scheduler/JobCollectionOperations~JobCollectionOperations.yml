@@ -19,6 +19,8 @@ items:
         branch: master
         path: lib\services\schedulerManagement\lib\schedulerManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - >-
@@ -38,8 +40,6 @@ items:
       - 'azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations#get'
       - >-
         azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations#update
-    langs:
-      - js
   - id: 'azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations.#ctor'
     uid: 'azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations.#ctor'
     parent: azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations
@@ -67,6 +67,8 @@ items:
     fullName: >-
       azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations.beginCreating(cloudServiceName,
       jobCollectionName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -170,8 +172,6 @@ items:
       content: >-
         function beginCreating(cloudServiceName, jobCollectionName, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations#beginDeleting
     id: >-
@@ -182,6 +182,8 @@ items:
     fullName: >-
       azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations.beginDeleting(cloudServiceName,
       jobCollectionName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -202,8 +204,6 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: 'function beginDeleting(cloudServiceName, jobCollectionName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations#beginUpdating
     id: >-
@@ -214,6 +214,8 @@ items:
     fullName: >-
       azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations.beginUpdating(cloudServiceName,
       jobCollectionName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -323,8 +325,6 @@ items:
       content: >-
         function beginUpdating(cloudServiceName, jobCollectionName, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations#checkNameAvailability
     id: >-
@@ -337,6 +337,8 @@ items:
     fullName: >-
       azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations.checkNameAvailability(cloudServiceName,
       jobCollectionName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -365,8 +367,6 @@ items:
       content: >-
         function checkNameAvailability(cloudServiceName, jobCollectionName,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations#create'
     id: 'azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations#create'
     parent: azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations
@@ -375,6 +375,8 @@ items:
     fullName: >-
       azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations.create(cloudServiceName,
       jobCollectionName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -478,8 +480,6 @@ items:
       content: >-
         function create(cloudServiceName, jobCollectionName, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations#deleteMethod
     id: >-
@@ -490,6 +490,8 @@ items:
     fullName: >-
       azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations.deleteMethod(cloudServiceName,
       jobCollectionName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -510,8 +512,6 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: 'function deleteMethod(cloudServiceName, jobCollectionName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations#get'
     id: 'azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations#get'
     parent: azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations
@@ -520,6 +520,8 @@ items:
     fullName: >-
       azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations.get(cloudServiceName,
       jobCollectionName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -540,8 +542,6 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: 'function get(cloudServiceName, jobCollectionName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations#update'
     id: 'azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations#update'
     parent: azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations
@@ -550,6 +550,8 @@ items:
     fullName: >-
       azure-asm-scheduler.JobCollectionOperations~JobCollectionOperations.update(cloudServiceName,
       jobCollectionName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -659,5 +661,3 @@ items:
       content: >-
         function update(cloudServiceName, jobCollectionName, parameters,
         callback)
-    langs:
-      - js

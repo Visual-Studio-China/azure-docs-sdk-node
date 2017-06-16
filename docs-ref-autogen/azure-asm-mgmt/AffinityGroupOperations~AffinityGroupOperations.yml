@@ -22,6 +22,8 @@ items:
         branch: master
         path: lib\services\management\lib\managementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations.#ctor'
@@ -31,8 +33,6 @@ items:
       - 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#get'
       - 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#list'
       - 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#update'
-    langs:
-      - js
   - id: 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations.#ctor'
     uid: 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations.#ctor'
     parent: azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations
@@ -61,6 +61,8 @@ items:
     fullName: >-
       azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations.create(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -112,8 +114,6 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: 'function create(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#deleteMethod
     id: >-
@@ -128,6 +128,8 @@ items:
     fullName: >-
       azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations.deleteMethod(affinityGroupName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -144,8 +146,6 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: 'function deleteMethod(affinityGroupName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#get'
     id: 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#get'
     parent: azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations
@@ -158,6 +158,8 @@ items:
     fullName: >-
       azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations.get(affinityGroupName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -178,8 +180,6 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: 'function get(affinityGroupName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#list'
     id: 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#list'
     parent: azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations
@@ -191,6 +191,8 @@ items:
       more information)
     fullName: >-
       azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations.list(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -203,8 +205,6 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: function list(callback)
-    langs:
-      - js
   - uid: 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#update'
     id: 'azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations#update'
     parent: azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations
@@ -217,6 +217,8 @@ items:
     fullName: >-
       azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations.update(affinityGroupName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -254,5 +256,3 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: 'function update(affinityGroupName, parameters, callback)'
-    langs:
-      - js

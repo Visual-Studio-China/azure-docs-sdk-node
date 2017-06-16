@@ -18,6 +18,8 @@ items:
         path: >-
           lib\services\dataLake.Analytics\lib\account\operations\firewallRules.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-datalake-analytics.FirewallRules.#ctor'
@@ -38,8 +40,6 @@ items:
       - >-
         azure-arm-datalake-analytics.FirewallRules#listByAccountNextWithHttpOperationResponse
       - 'azure-arm-datalake-analytics.FirewallRules#listByAccountNext'
-    langs:
-      - js
   - id: 'azure-arm-datalake-analytics.FirewallRules.#ctor'
     uid: 'azure-arm-datalake-analytics.FirewallRules.#ctor'
     parent: azure-arm-datalake-analytics.FirewallRules
@@ -73,19 +73,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.FirewallRules.createOrUpdateWithHttpOperationResponse(resourceGroupName,
       accountName, firewallRuleName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<FirewallRule>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<FirewallRule>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -157,8 +146,6 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(resourceGroupName,
         accountName, firewallRuleName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.FirewallRules#createOrUpdate'
     id: 'azure-arm-datalake-analytics.FirewallRules#createOrUpdate'
     parent: azure-arm-datalake-analytics.FirewallRules
@@ -173,39 +160,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.FirewallRules.createOrUpdate(resourceGroupName,
       accountName, firewallRuleName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{FirewallRule} - The deserialized result object.'
-        value: '{FirewallRule} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -287,8 +243,6 @@ items:
       content: >-
         function createOrUpdate(resourceGroupName, accountName,
         firewallRuleName, parameters, options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.FirewallRules#updateWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.FirewallRules#updateWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.FirewallRules
@@ -299,19 +253,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.FirewallRules.updateWithHttpOperationResponse(resourceGroupName,
       accountName, firewallRuleName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<FirewallRule>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<FirewallRule>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -379,8 +322,6 @@ items:
       content: >-
         function updateWithHttpOperationResponse(resourceGroupName, accountName,
         firewallRuleName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.FirewallRules#update'
     id: 'azure-arm-datalake-analytics.FirewallRules#update'
     parent: azure-arm-datalake-analytics.FirewallRules
@@ -391,39 +332,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.FirewallRules.update(resourceGroupName,
       accountName, firewallRuleName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{FirewallRule} - The deserialized result object.'
-        value: '{FirewallRule} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -501,8 +411,6 @@ items:
       content: >-
         function update(resourceGroupName, accountName, firewallRuleName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.FirewallRules#deleteMethodWithHttpOperationResponse
     id: >-
@@ -517,15 +425,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.FirewallRules.deleteMethodWithHttpOperationResponse(resourceGroupName,
       accountName, firewallRuleName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -564,8 +465,6 @@ items:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceGroupName,
         accountName, firewallRuleName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.FirewallRules#deleteMethod'
     id: 'azure-arm-datalake-analytics.FirewallRules#deleteMethod'
     parent: azure-arm-datalake-analytics.FirewallRules
@@ -578,37 +477,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.FirewallRules.deleteMethod(resourceGroupName,
       accountName, firewallRuleName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -657,8 +527,6 @@ items:
       content: >-
         function deleteMethod(resourceGroupName, accountName, firewallRuleName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.FirewallRules#getWithHttpOperationResponse'
     id: 'azure-arm-datalake-analytics.FirewallRules#getWithHttpOperationResponse'
     parent: azure-arm-datalake-analytics.FirewallRules
@@ -669,19 +537,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.FirewallRules.getWithHttpOperationResponse(resourceGroupName,
       accountName, firewallRuleName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<FirewallRule>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<FirewallRule>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -720,8 +577,6 @@ items:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName, accountName,
         firewallRuleName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.FirewallRules#get'
     id: 'azure-arm-datalake-analytics.FirewallRules#get'
     parent: azure-arm-datalake-analytics.FirewallRules
@@ -732,39 +587,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.FirewallRules.get(resourceGroupName,
       accountName, firewallRuleName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{FirewallRule} - The deserialized result object.'
-        value: '{FirewallRule} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -813,8 +637,6 @@ items:
       content: >-
         function get(resourceGroupName, accountName, firewallRuleName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.FirewallRules#listByAccountWithHttpOperationResponse
     id: >-
@@ -831,19 +653,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.FirewallRules.listByAccountWithHttpOperationResponse(resourceGroupName,
       accountName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<DataLakeAnalyticsFirewallRuleListResult>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<DataLakeAnalyticsFirewallRuleListResult>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -878,8 +689,6 @@ items:
       content: >-
         function listByAccountWithHttpOperationResponse(resourceGroupName,
         accountName, options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.FirewallRules#listByAccount'
     id: 'azure-arm-datalake-analytics.FirewallRules#listByAccount'
     parent: azure-arm-datalake-analytics.FirewallRules
@@ -892,45 +701,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.FirewallRules.listByAccount(resourceGroupName,
       accountName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {DataLakeAnalyticsFirewallRuleListResult} - The deserialized result
-          object.
-        value: >-
-          {DataLakeAnalyticsFirewallRuleListResult} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeAnalyticsFirewallRuleListResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeAnalyticsFirewallRuleListResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -975,8 +747,6 @@ items:
       content: >-
         function listByAccount(resourceGroupName, accountName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-datalake-analytics.FirewallRules#listByAccountNextWithHttpOperationResponse
     id: >-
@@ -991,19 +761,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.FirewallRules.listByAccountNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<DataLakeAnalyticsFirewallRuleListResult>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<DataLakeAnalyticsFirewallRuleListResult>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1032,8 +791,6 @@ items:
       content: >-
         function listByAccountNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-datalake-analytics.FirewallRules#listByAccountNext'
     id: 'azure-arm-datalake-analytics.FirewallRules#listByAccountNext'
     parent: azure-arm-datalake-analytics.FirewallRules
@@ -1046,45 +803,8 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.FirewallRules.listByAccountNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {DataLakeAnalyticsFirewallRuleListResult} - The deserialized result
-          object.
-        value: >-
-          {DataLakeAnalyticsFirewallRuleListResult} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeAnalyticsFirewallRuleListResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DataLakeAnalyticsFirewallRuleListResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1121,8 +841,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listByAccountNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-arm-datalake-analytics.DataLakeAnalyticsAccountManagementClient
     name: DataLakeAnalyticsAccountManagementClient

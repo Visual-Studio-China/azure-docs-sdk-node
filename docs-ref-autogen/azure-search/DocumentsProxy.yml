@@ -17,13 +17,13 @@ items:
         branch: master
         path: lib\services\search\lib\index\operations\documentsProxy.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-search.DocumentsProxy.#ctor'
       - 'azure-search.DocumentsProxy#countWithHttpOperationResponse'
       - 'azure-search.DocumentsProxy#count'
-    langs:
-      - js
   - id: 'azure-search.DocumentsProxy.#ctor'
     uid: 'azure-search.DocumentsProxy.#ctor'
     parent: azure-search.DocumentsProxy
@@ -46,15 +46,8 @@ items:
     name: countWithHttpOperationResponse(options)
     summary: Queries the number of documents in the Azure Search index.
     fullName: azure-search.DocumentsProxy.countWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Number>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Number>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -89,45 +82,14 @@ items:
           - Promise
         description: A promise is returned
       content: function countWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-search.DocumentsProxy#count'
     id: 'azure-search.DocumentsProxy#count'
     parent: azure-search.DocumentsProxy
     name: 'count(options, optionalCallback)'
     summary: Queries the number of documents in the Azure Search index.
     fullName: 'azure-search.DocumentsProxy.count(options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Number} - The deserialized result object.'
-        value: '{Number} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {number} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {number} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -172,8 +134,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function count(options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-search.SearchIndexClient
     name: SearchIndexClient

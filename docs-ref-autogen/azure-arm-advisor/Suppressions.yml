@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\advisorManagement\lib\operations\suppressions.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-advisor.Suppressions.#ctor'
@@ -28,8 +30,6 @@ items:
       - 'azure-arm-advisor.Suppressions#deleteMethod'
       - 'azure-arm-advisor.Suppressions#listWithHttpOperationResponse'
       - 'azure-arm-advisor.Suppressions#list'
-    langs:
-      - js
   - id: 'azure-arm-advisor.Suppressions.#ctor'
     uid: 'azure-arm-advisor.Suppressions.#ctor'
     parent: azure-arm-advisor.Suppressions
@@ -54,19 +54,8 @@ items:
     fullName: >-
       azure-arm-advisor.Suppressions.getWithHttpOperationResponse(resourceUri,
       recommendationId, name, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<SuppressionContract>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<SuppressionContract>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -103,8 +92,6 @@ items:
       content: >-
         function getWithHttpOperationResponse(resourceUri, recommendationId,
         name, options)
-    langs:
-      - js
   - uid: 'azure-arm-advisor.Suppressions#get'
     id: 'azure-arm-advisor.Suppressions#get'
     parent: azure-arm-advisor.Suppressions
@@ -113,39 +100,8 @@ items:
     fullName: >-
       azure-arm-advisor.Suppressions.get(resourceUri, recommendationId, name,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{SuppressionContract} - The deserialized result object.'
-        value: '{SuppressionContract} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SuppressionContract} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SuppressionContract} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -192,8 +148,6 @@ items:
       content: >-
         function get(resourceUri, recommendationId, name, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-advisor.Suppressions#createWithHttpOperationResponse'
     id: 'azure-arm-advisor.Suppressions#createWithHttpOperationResponse'
     parent: azure-arm-advisor.Suppressions
@@ -210,19 +164,8 @@ items:
     fullName: >-
       azure-arm-advisor.Suppressions.createWithHttpOperationResponse(resourceUri,
       recommendationId, name, suppressionContract, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<SuppressionContract>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<SuppressionContract>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -279,8 +222,6 @@ items:
       content: >-
         function createWithHttpOperationResponse(resourceUri, recommendationId,
         name, suppressionContract, options)
-    langs:
-      - js
   - uid: 'azure-arm-advisor.Suppressions#create'
     id: 'azure-arm-advisor.Suppressions#create'
     parent: azure-arm-advisor.Suppressions
@@ -297,39 +238,8 @@ items:
     fullName: >-
       azure-arm-advisor.Suppressions.create(resourceUri, recommendationId, name,
       suppressionContract, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{SuppressionContract} - The deserialized result object.'
-        value: '{SuppressionContract} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SuppressionContract} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link SuppressionContract} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -396,8 +306,6 @@ items:
       content: >-
         function create(resourceUri, recommendationId, name,
         suppressionContract, options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-advisor.Suppressions#deleteMethodWithHttpOperationResponse'
     id: 'azure-arm-advisor.Suppressions#deleteMethodWithHttpOperationResponse'
     parent: azure-arm-advisor.Suppressions
@@ -413,15 +321,8 @@ items:
     fullName: >-
       azure-arm-advisor.Suppressions.deleteMethodWithHttpOperationResponse(resourceUri,
       recommendationId, name, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -458,8 +359,6 @@ items:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceUri,
         recommendationId, name, options)
-    langs:
-      - js
   - uid: 'azure-arm-advisor.Suppressions#deleteMethod'
     id: 'azure-arm-advisor.Suppressions#deleteMethod'
     parent: azure-arm-advisor.Suppressions
@@ -475,37 +374,8 @@ items:
     fullName: >-
       azure-arm-advisor.Suppressions.deleteMethod(resourceUri, recommendationId,
       name, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -552,8 +422,6 @@ items:
       content: >-
         function deleteMethod(resourceUri, recommendationId, name, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-advisor.Suppressions#listWithHttpOperationResponse'
     id: 'azure-arm-advisor.Suppressions#listWithHttpOperationResponse'
     parent: azure-arm-advisor.Suppressions
@@ -566,15 +434,8 @@ items:
 
       suppression.
     fullName: azure-arm-advisor.Suppressions.listWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Array>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Array>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -595,8 +456,6 @@ items:
           - Promise
         description: A promise is returned
       content: function listWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-arm-advisor.Suppressions#list'
     id: 'azure-arm-advisor.Suppressions#list'
     parent: azure-arm-advisor.Suppressions
@@ -609,37 +468,8 @@ items:
 
       suppression.
     fullName: 'azure-arm-advisor.Suppressions.list(options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Array} - The deserialized result object.'
-        value: '{Array} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -670,8 +500,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-arm-advisor.AdvisorManagementClient
     name: AdvisorManagementClient

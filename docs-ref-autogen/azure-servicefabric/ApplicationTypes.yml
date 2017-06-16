@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\serviceFabric\lib\operations\applicationTypes.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-servicefabric.ApplicationTypes.#ctor'
@@ -28,8 +30,6 @@ items:
       - 'azure-servicefabric.ApplicationTypes#register'
       - 'azure-servicefabric.ApplicationTypes#unregisterWithHttpOperationResponse'
       - 'azure-servicefabric.ApplicationTypes#unregister'
-    langs:
-      - js
   - id: 'azure-servicefabric.ApplicationTypes.#ctor'
     uid: 'azure-servicefabric.ApplicationTypes.#ctor'
     parent: azure-servicefabric.ApplicationTypes
@@ -53,15 +53,8 @@ items:
     summary: List application types
     fullName: >-
       azure-servicefabric.ApplicationTypes.listWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Array>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Array>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -82,45 +75,14 @@ items:
           - Promise
         description: A promise is returned
       content: function listWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-servicefabric.ApplicationTypes#list'
     id: 'azure-servicefabric.ApplicationTypes#list'
     parent: azure-servicefabric.ApplicationTypes
     name: 'list(options, optionalCallback)'
     summary: List application types
     fullName: 'azure-servicefabric.ApplicationTypes.list(options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Array} - The deserialized result object.'
-        value: '{Array} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -151,8 +113,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-servicefabric.ApplicationTypes#getWithHttpOperationResponse'
     id: 'azure-servicefabric.ApplicationTypes#getWithHttpOperationResponse'
     parent: azure-servicefabric.ApplicationTypes
@@ -161,15 +121,8 @@ items:
     fullName: >-
       azure-servicefabric.ApplicationTypes.getWithHttpOperationResponse(applicationTypeName,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Array>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Array>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -194,8 +147,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function getWithHttpOperationResponse(applicationTypeName, options)'
-    langs:
-      - js
   - uid: 'azure-servicefabric.ApplicationTypes#get'
     id: 'azure-servicefabric.ApplicationTypes#get'
     parent: azure-servicefabric.ApplicationTypes
@@ -204,37 +155,8 @@ items:
     fullName: >-
       azure-servicefabric.ApplicationTypes.get(applicationTypeName, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Array} - The deserialized result object.'
-        value: '{Array} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {array} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -269,8 +191,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function get(applicationTypeName, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-servicefabric.ApplicationTypes#registerWithHttpOperationResponse'
     id: 'azure-servicefabric.ApplicationTypes#registerWithHttpOperationResponse'
     parent: azure-servicefabric.ApplicationTypes
@@ -279,15 +199,8 @@ items:
     fullName: >-
       azure-servicefabric.ApplicationTypes.registerWithHttpOperationResponse(registerApplicationType,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<String>} - The deserialized result object.'
-        value: '{HttpOperationResponse<String>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -319,8 +232,6 @@ items:
       content: >-
         function registerWithHttpOperationResponse(registerApplicationType,
         options)
-    langs:
-      - js
   - uid: 'azure-servicefabric.ApplicationTypes#register'
     id: 'azure-servicefabric.ApplicationTypes#register'
     parent: azure-servicefabric.ApplicationTypes
@@ -329,37 +240,8 @@ items:
     fullName: >-
       azure-servicefabric.ApplicationTypes.register(registerApplicationType,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{String} - The deserialized result object.'
-        value: '{String} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -399,8 +281,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function register(registerApplicationType, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-servicefabric.ApplicationTypes#unregisterWithHttpOperationResponse'
     id: 'azure-servicefabric.ApplicationTypes#unregisterWithHttpOperationResponse'
     parent: azure-servicefabric.ApplicationTypes
@@ -411,15 +291,8 @@ items:
     fullName: >-
       azure-servicefabric.ApplicationTypes.unregisterWithHttpOperationResponse(applicationTypeName,
       unregisterApplicationType, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<String>} - The deserialized result object.'
-        value: '{HttpOperationResponse<String>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -457,8 +330,6 @@ items:
       content: >-
         function unregisterWithHttpOperationResponse(applicationTypeName,
         unregisterApplicationType, options)
-    langs:
-      - js
   - uid: 'azure-servicefabric.ApplicationTypes#unregister'
     id: 'azure-servicefabric.ApplicationTypes#unregister'
     parent: azure-servicefabric.ApplicationTypes
@@ -469,37 +340,8 @@ items:
     fullName: >-
       azure-servicefabric.ApplicationTypes.unregister(applicationTypeName,
       unregisterApplicationType, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{String} - The deserialized result object.'
-        value: '{String} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -547,8 +389,6 @@ items:
       content: >-
         function unregister(applicationTypeName, unregisterApplicationType,
         options, optionalCallback)
-    langs:
-      - js
 references:
   - uid: azure-servicefabric.ServiceFabricClient
     name: ServiceFabricClient

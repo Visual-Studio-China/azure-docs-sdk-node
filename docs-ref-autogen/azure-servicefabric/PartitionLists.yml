@@ -17,13 +17,13 @@ items:
         branch: master
         path: lib\services\serviceFabric\lib\operations\partitionLists.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-servicefabric.PartitionLists.#ctor'
       - 'azure-servicefabric.PartitionLists#repairWithHttpOperationResponse'
       - 'azure-servicefabric.PartitionLists#repair'
-    langs:
-      - js
   - id: 'azure-servicefabric.PartitionLists.#ctor'
     uid: 'azure-servicefabric.PartitionLists.#ctor'
     parent: azure-servicefabric.PartitionLists
@@ -48,15 +48,8 @@ items:
     fullName: >-
       azure-servicefabric.PartitionLists.repairWithHttpOperationResponse(serviceName,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<String>} - The deserialized result object.'
-        value: '{HttpOperationResponse<String>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -81,8 +74,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function repairWithHttpOperationResponse(serviceName, options)'
-    langs:
-      - js
   - uid: 'azure-servicefabric.PartitionLists#repair'
     id: 'azure-servicefabric.PartitionLists#repair'
     parent: azure-servicefabric.PartitionLists
@@ -91,37 +82,8 @@ items:
     fullName: >-
       azure-servicefabric.PartitionLists.repair(serviceName, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{String} - The deserialized result object.'
-        value: '{String} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -156,8 +118,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function repair(serviceName, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-servicefabric.ServiceFabricClient
     name: ServiceFabricClient

@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\documentdbManagement\lib\operations\databaseAccounts.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-documentdb.DatabaseAccounts.#ctor'
@@ -67,8 +69,6 @@ items:
       - >-
         azure-arm-documentdb.DatabaseAccounts#beginRegenerateKeyWithHttpOperationResponse
       - 'azure-arm-documentdb.DatabaseAccounts#beginRegenerateKey'
-    langs:
-      - js
   - id: 'azure-arm-documentdb.DatabaseAccounts.#ctor'
     uid: 'azure-arm-documentdb.DatabaseAccounts.#ctor'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -93,19 +93,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.getWithHttpOperationResponse(resourceGroupName,
       accountName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<DatabaseAccount>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<DatabaseAccount>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -136,8 +125,6 @@ items:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName, accountName,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#get'
     id: 'azure-arm-documentdb.DatabaseAccounts#get'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -146,39 +133,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.get(resourceGroupName, accountName,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{DatabaseAccount} - The deserialized result object.'
-        value: '{DatabaseAccount} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -217,8 +173,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function get(resourceGroupName, accountName, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#patchWithHttpOperationResponse'
     id: 'azure-arm-documentdb.DatabaseAccounts#patchWithHttpOperationResponse'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -229,19 +183,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.patchWithHttpOperationResponse(resourceGroupName,
       accountName, updateParameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<DatabaseAccount>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<DatabaseAccount>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -282,8 +225,6 @@ items:
       content: >-
         function patchWithHttpOperationResponse(resourceGroupName, accountName,
         updateParameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#patch'
     id: 'azure-arm-documentdb.DatabaseAccounts#patch'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -294,39 +235,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.patch(resourceGroupName,
       accountName, updateParameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{DatabaseAccount} - The deserialized result object.'
-        value: '{DatabaseAccount} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -377,8 +287,6 @@ items:
       content: >-
         function patch(resourceGroupName, accountName, updateParameters,
         options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-documentdb.DatabaseAccounts#createOrUpdateWithHttpOperationResponse
     id: >-
@@ -391,19 +299,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.createOrUpdateWithHttpOperationResponse(resourceGroupName,
       accountName, createUpdateParameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<DatabaseAccount>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<DatabaseAccount>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -534,8 +431,6 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(resourceGroupName,
         accountName, createUpdateParameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#createOrUpdate'
     id: 'azure-arm-documentdb.DatabaseAccounts#createOrUpdate'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -546,39 +441,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.createOrUpdate(resourceGroupName,
       accountName, createUpdateParameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{DatabaseAccount} - The deserialized result object.'
-        value: '{DatabaseAccount} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -719,8 +583,6 @@ items:
       content: >-
         function createOrUpdate(resourceGroupName, accountName,
         createUpdateParameters, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-documentdb.DatabaseAccounts#deleteMethodWithHttpOperationResponse
     id: >-
@@ -733,15 +595,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.deleteMethodWithHttpOperationResponse(resourceGroupName,
       accountName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -772,8 +627,6 @@ items:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceGroupName,
         accountName, options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#deleteMethod'
     id: 'azure-arm-documentdb.DatabaseAccounts#deleteMethod'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -782,37 +635,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.deleteMethod(resourceGroupName,
       accountName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -853,8 +677,6 @@ items:
       content: >-
         function deleteMethod(resourceGroupName, accountName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-documentdb.DatabaseAccounts#failoverPriorityChangeWithHttpOperationResponse
     id: >-
@@ -876,15 +698,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.failoverPriorityChangeWithHttpOperationResponse(resourceGroupName,
       accountName, failoverParameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -929,8 +744,6 @@ items:
         function
         failoverPriorityChangeWithHttpOperationResponse(resourceGroupName,
         accountName, failoverParameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#failoverPriorityChange'
     id: 'azure-arm-documentdb.DatabaseAccounts#failoverPriorityChange'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -950,37 +763,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.failoverPriorityChange(resourceGroupName,
       accountName, failoverParameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1034,8 +818,6 @@ items:
       content: >-
         function failoverPriorityChange(resourceGroupName, accountName,
         failoverParameters, options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#listWithHttpOperationResponse'
     id: 'azure-arm-documentdb.DatabaseAccounts#listWithHttpOperationResponse'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -1045,19 +827,8 @@ items:
       subscription.
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.listWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<DatabaseAccountsListResult>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<DatabaseAccountsListResult>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1078,8 +849,6 @@ items:
           - Promise
         description: A promise is returned
       content: function listWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#list'
     id: 'azure-arm-documentdb.DatabaseAccounts#list'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -1088,41 +857,8 @@ items:
       Lists all the Azure DocumentDB database accounts available under the
       subscription.
     fullName: 'azure-arm-documentdb.DatabaseAccounts.list(options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{DatabaseAccountsListResult} - The deserialized result object.'
-        value: '{DatabaseAccountsListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccountsListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccountsListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1153,8 +889,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-documentdb.DatabaseAccounts#listByResourceGroupWithHttpOperationResponse
     id: >-
@@ -1167,19 +901,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.listByResourceGroupWithHttpOperationResponse(resourceGroupName,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<DatabaseAccountsListResult>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<DatabaseAccountsListResult>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1206,8 +929,6 @@ items:
       content: >-
         function listByResourceGroupWithHttpOperationResponse(resourceGroupName,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#listByResourceGroup'
     id: 'azure-arm-documentdb.DatabaseAccounts#listByResourceGroup'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -1218,41 +939,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.listByResourceGroup(resourceGroupName,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{DatabaseAccountsListResult} - The deserialized result object.'
-        value: '{DatabaseAccountsListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccountsListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccountsListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1289,8 +977,6 @@ items:
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#listKeysWithHttpOperationResponse'
     id: 'azure-arm-documentdb.DatabaseAccounts#listKeysWithHttpOperationResponse'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -1299,19 +985,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.listKeysWithHttpOperationResponse(resourceGroupName,
       accountName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<DatabaseAccountListKeysResult>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<DatabaseAccountListKeysResult>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1342,8 +1017,6 @@ items:
       content: >-
         function listKeysWithHttpOperationResponse(resourceGroupName,
         accountName, options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#listKeys'
     id: 'azure-arm-documentdb.DatabaseAccounts#listKeys'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -1352,41 +1025,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.listKeys(resourceGroupName,
       accountName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{DatabaseAccountListKeysResult} - The deserialized result object.'
-        value: '{DatabaseAccountListKeysResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccountListKeysResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccountListKeysResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1427,8 +1067,6 @@ items:
       content: >-
         function listKeys(resourceGroupName, accountName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-documentdb.DatabaseAccounts#listConnectionStringsWithHttpOperationResponse
     id: >-
@@ -1443,19 +1081,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.listConnectionStringsWithHttpOperationResponse(resourceGroupName,
       accountName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<DatabaseAccountListConnectionStringsResult>} -
-          The deserialized result object.
-        value: >-
-          {HttpOperationResponse<DatabaseAccountListConnectionStringsResult>} -
-          The deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1487,8 +1114,6 @@ items:
         function
         listConnectionStringsWithHttpOperationResponse(resourceGroupName,
         accountName, options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#listConnectionStrings'
     id: 'azure-arm-documentdb.DatabaseAccounts#listConnectionStrings'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -1501,45 +1126,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.listConnectionStrings(resourceGroupName,
       accountName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {DatabaseAccountListConnectionStringsResult} - The deserialized result
-          object.
-        value: >-
-          {DatabaseAccountListConnectionStringsResult} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccountListConnectionStringsResult}
-                               for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccountListConnectionStringsResult}
-                               for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1580,8 +1168,6 @@ items:
       content: >-
         function listConnectionStrings(resourceGroupName, accountName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-documentdb.DatabaseAccounts#listReadOnlyKeysWithHttpOperationResponse
     id: >-
@@ -1598,19 +1184,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.listReadOnlyKeysWithHttpOperationResponse(resourceGroupName,
       accountName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<DatabaseAccountListReadOnlyKeysResult>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<DatabaseAccountListReadOnlyKeysResult>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1641,8 +1216,6 @@ items:
       content: >-
         function listReadOnlyKeysWithHttpOperationResponse(resourceGroupName,
         accountName, options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#listReadOnlyKeys'
     id: 'azure-arm-documentdb.DatabaseAccounts#listReadOnlyKeys'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -1657,45 +1230,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.listReadOnlyKeys(resourceGroupName,
       accountName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {DatabaseAccountListReadOnlyKeysResult} - The deserialized result
-          object.
-        value: >-
-          {DatabaseAccountListReadOnlyKeysResult} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccountListReadOnlyKeysResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccountListReadOnlyKeysResult} for
-                               more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1736,8 +1272,6 @@ items:
       content: >-
         function listReadOnlyKeys(resourceGroupName, accountName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-documentdb.DatabaseAccounts#regenerateKeyWithHttpOperationResponse
     id: >-
@@ -1752,15 +1286,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.regenerateKeyWithHttpOperationResponse(resourceGroupName,
       accountName, keyToRegenerate, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1802,8 +1329,6 @@ items:
       content: >-
         function regenerateKeyWithHttpOperationResponse(resourceGroupName,
         accountName, keyToRegenerate, options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#regenerateKey'
     id: 'azure-arm-documentdb.DatabaseAccounts#regenerateKey'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -1816,37 +1341,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.regenerateKey(resourceGroupName,
       accountName, keyToRegenerate, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1898,8 +1394,6 @@ items:
       content: >-
         function regenerateKey(resourceGroupName, accountName, keyToRegenerate,
         options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-documentdb.DatabaseAccounts#checkNameExistsWithHttpOperationResponse
     id: >-
@@ -1913,15 +1407,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.checkNameExistsWithHttpOperationResponse(accountName,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Boolean>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Boolean>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1946,8 +1433,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function checkNameExistsWithHttpOperationResponse(accountName, options)'
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#checkNameExists'
     id: 'azure-arm-documentdb.DatabaseAccounts#checkNameExists'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -1959,37 +1444,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.checkNameExists(accountName,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Boolean} - The deserialized result object.'
-        value: '{Boolean} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {boolean} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {boolean} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2024,8 +1480,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function checkNameExists(accountName, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#beginPatchWithHttpOperationResponse'
     id: 'azure-arm-documentdb.DatabaseAccounts#beginPatchWithHttpOperationResponse'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -2036,19 +1490,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.beginPatchWithHttpOperationResponse(resourceGroupName,
       accountName, updateParameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<DatabaseAccount>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<DatabaseAccount>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2089,8 +1532,6 @@ items:
       content: >-
         function beginPatchWithHttpOperationResponse(resourceGroupName,
         accountName, updateParameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#beginPatch'
     id: 'azure-arm-documentdb.DatabaseAccounts#beginPatch'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -2101,39 +1542,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.beginPatch(resourceGroupName,
       accountName, updateParameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{DatabaseAccount} - The deserialized result object.'
-        value: '{DatabaseAccount} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2184,8 +1594,6 @@ items:
       content: >-
         function beginPatch(resourceGroupName, accountName, updateParameters,
         options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-documentdb.DatabaseAccounts#beginCreateOrUpdateWithHttpOperationResponse
     id: >-
@@ -2198,19 +1606,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
       accountName, createUpdateParameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<DatabaseAccount>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<DatabaseAccount>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2341,8 +1738,6 @@ items:
       content: >-
         function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
         accountName, createUpdateParameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#beginCreateOrUpdate'
     id: 'azure-arm-documentdb.DatabaseAccounts#beginCreateOrUpdate'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -2353,39 +1748,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.beginCreateOrUpdate(resourceGroupName,
       accountName, createUpdateParameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{DatabaseAccount} - The deserialized result object.'
-        value: '{DatabaseAccount} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link DatabaseAccount} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2526,8 +1890,6 @@ items:
       content: >-
         function beginCreateOrUpdate(resourceGroupName, accountName,
         createUpdateParameters, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-documentdb.DatabaseAccounts#beginDeleteMethodWithHttpOperationResponse
     id: >-
@@ -2540,15 +1902,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.beginDeleteMethodWithHttpOperationResponse(resourceGroupName,
       accountName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2579,8 +1934,6 @@ items:
       content: >-
         function beginDeleteMethodWithHttpOperationResponse(resourceGroupName,
         accountName, options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#beginDeleteMethod'
     id: 'azure-arm-documentdb.DatabaseAccounts#beginDeleteMethod'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -2591,37 +1944,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.beginDeleteMethod(resourceGroupName,
       accountName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2662,8 +1986,6 @@ items:
       content: >-
         function beginDeleteMethod(resourceGroupName, accountName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-documentdb.DatabaseAccounts#beginFailoverPriorityChangeWithHttpOperationResponse
     id: >-
@@ -2685,15 +2007,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.beginFailoverPriorityChangeWithHttpOperationResponse(resourceGroupName,
       accountName, failoverParameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2738,8 +2053,6 @@ items:
         function
         beginFailoverPriorityChangeWithHttpOperationResponse(resourceGroupName,
         accountName, failoverParameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#beginFailoverPriorityChange'
     id: 'azure-arm-documentdb.DatabaseAccounts#beginFailoverPriorityChange'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -2759,37 +2072,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.beginFailoverPriorityChange(resourceGroupName,
       accountName, failoverParameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2843,8 +2127,6 @@ items:
       content: >-
         function beginFailoverPriorityChange(resourceGroupName, accountName,
         failoverParameters, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-documentdb.DatabaseAccounts#beginRegenerateKeyWithHttpOperationResponse
     id: >-
@@ -2859,15 +2141,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.beginRegenerateKeyWithHttpOperationResponse(resourceGroupName,
       accountName, keyToRegenerate, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2909,8 +2184,6 @@ items:
       content: >-
         function beginRegenerateKeyWithHttpOperationResponse(resourceGroupName,
         accountName, keyToRegenerate, options)
-    langs:
-      - js
   - uid: 'azure-arm-documentdb.DatabaseAccounts#beginRegenerateKey'
     id: 'azure-arm-documentdb.DatabaseAccounts#beginRegenerateKey'
     parent: azure-arm-documentdb.DatabaseAccounts
@@ -2923,37 +2196,8 @@ items:
     fullName: >-
       azure-arm-documentdb.DatabaseAccounts.beginRegenerateKey(resourceGroupName,
       accountName, keyToRegenerate, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3005,8 +2249,6 @@ items:
       content: >-
         function beginRegenerateKey(resourceGroupName, accountName,
         keyToRegenerate, options, optionalCallback)
-    langs:
-      - js
 references:
   - uid: azure-arm-documentdb.DocumentdbManagementClient
     name: DocumentdbManagementClient

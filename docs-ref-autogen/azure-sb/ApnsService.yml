@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\serviceBus\lib\apnsservice.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-sb.ApnsService.#ctor'
@@ -29,8 +31,6 @@ items:
       - 'azure-sb.ApnsService#listRegistrationsByToken'
       - 'azure-sb.ApnsService#_createBody'
       - 'azure-sb.ApnsService#_createTemplateBody'
-    langs:
-      - js
   - id: 'azure-sb.ApnsService.#ctor'
     uid: 'azure-sb.ApnsService.#ctor'
     parent: azure-sb.ApnsService
@@ -62,6 +62,8 @@ items:
     name: 'send(tags, payload, callback)'
     summary: Sends an APNS notification.
     fullName: 'azure-sb.ApnsService.send(tags, payload, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -126,8 +128,6 @@ items:
                                                                     if an error occurs; otherwise, `response`
                                                                     will contain information related to this operation.
       content: 'function send(tags, payload, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ApnsService#createNativeRegistration'
     id: 'azure-sb.ApnsService#createNativeRegistration'
     parent: azure-sb.ApnsService
@@ -136,6 +136,8 @@ items:
     fullName: >-
       azure-sb.ApnsService.createNativeRegistration(token, tags, options,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -161,8 +163,6 @@ items:
                                                                             if an error occurs; otherwise, `response`
                                                                             will contain information related to this operation.
       content: 'function createNativeRegistration(token, tags, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ApnsService#createOrUpdateNativeRegistration'
     id: 'azure-sb.ApnsService#createOrUpdateNativeRegistration'
     parent: azure-sb.ApnsService
@@ -173,6 +173,8 @@ items:
     fullName: >-
       azure-sb.ApnsService.createOrUpdateNativeRegistration(registrationId,
       token, tags, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -204,8 +206,6 @@ items:
       content: >-
         function createOrUpdateNativeRegistration(registrationId, token, tags,
         options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.ApnsService#createTemplateRegistration'
     id: 'azure-sb.ApnsService#createTemplateRegistration'
     parent: azure-sb.ApnsService
@@ -214,6 +214,8 @@ items:
     fullName: >-
       azure-sb.ApnsService.createTemplateRegistration(token, tags, template,
       options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -286,8 +288,6 @@ items:
       content: >-
         function createTemplateRegistration(token, tags, template, options,
         callback)
-    langs:
-      - js
   - uid: 'azure-sb.ApnsService#createOrUpdateTemplateRegistration'
     id: 'azure-sb.ApnsService#createOrUpdateTemplateRegistration'
     parent: azure-sb.ApnsService
@@ -298,6 +298,8 @@ items:
     fullName: >-
       azure-sb.ApnsService.createOrUpdateTemplateRegistration(registrationId,
       token, template, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -369,8 +371,6 @@ items:
       content: >-
         function createOrUpdateTemplateRegistration(registrationId, token,
         template, options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.ApnsService#updateTemplateRegistration'
     id: 'azure-sb.ApnsService#updateTemplateRegistration'
     parent: azure-sb.ApnsService
@@ -381,6 +381,8 @@ items:
     fullName: >-
       azure-sb.ApnsService.updateTemplateRegistration(registrationId, token,
       template, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -452,14 +454,14 @@ items:
       content: >-
         function updateTemplateRegistration(registrationId, token, template,
         options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.ApnsService#listRegistrationsByToken'
     id: 'azure-sb.ApnsService#listRegistrationsByToken'
     parent: azure-sb.ApnsService
     name: 'listRegistrationsByToken(token, options, callback)'
     summary: Retrieves a registration by device token.
     fullName: 'azure-sb.ApnsService.listRegistrationsByToken(token, options, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -494,8 +496,6 @@ items:
                                                                     if an error occurs; otherwise, `response`
                                                                     will contain information related to this operation.
       content: 'function listRegistrationsByToken(token, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ApnsService#_createBody'
     id: 'azure-sb.ApnsService#_createBody'
     parent: azure-sb.ApnsService
@@ -504,6 +504,8 @@ items:
     fullName: >-
       azure-sb.ApnsService._createBody(elementName, token, tags, template,
       options)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -541,14 +543,14 @@ items:
           - string
         description: The template body.
       content: 'function _createBody(elementName, token, tags, template, options)'
-    langs:
-      - js
   - uid: 'azure-sb.ApnsService#_createTemplateBody'
     id: 'azure-sb.ApnsService#_createTemplateBody'
     parent: azure-sb.ApnsService
     name: '_createTemplateBody(token, tags, template, options)'
     summary: Creates a template registration body.
     fullName: 'azure-sb.ApnsService._createTemplateBody(token, tags, template, options)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -576,8 +578,6 @@ items:
           - string
         description: The template body.
       content: 'function _createTemplateBody(token, tags, template, options)'
-    langs:
-      - js
 references:
   - uid: azure-sb.NotificationHubService
     name: NotificationHubService

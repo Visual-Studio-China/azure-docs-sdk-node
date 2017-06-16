@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\resourceManagement\lib\link\operations\resourceLinks.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-resource.ResourceLinks.#ctor'
@@ -38,8 +40,6 @@ items:
       - >-
         azure-arm-resource.ResourceLinks#listAtSourceScopeNextWithHttpOperationResponse
       - 'azure-arm-resource.ResourceLinks#listAtSourceScopeNext'
-    langs:
-      - js
   - id: 'azure-arm-resource.ResourceLinks.#ctor'
     uid: 'azure-arm-resource.ResourceLinks.#ctor'
     parent: azure-arm-resource.ResourceLinks
@@ -64,15 +64,8 @@ items:
     fullName: >-
       azure-arm-resource.ResourceLinks.deleteMethodWithHttpOperationResponse(linkId,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -106,8 +99,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function deleteMethodWithHttpOperationResponse(linkId, options)'
-    langs:
-      - js
   - uid: 'azure-arm-resource.ResourceLinks#deleteMethod'
     id: 'azure-arm-resource.ResourceLinks#deleteMethod'
     parent: azure-arm-resource.ResourceLinks
@@ -116,37 +107,8 @@ items:
     fullName: >-
       azure-arm-resource.ResourceLinks.deleteMethod(linkId, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -190,8 +152,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function deleteMethod(linkId, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-arm-resource.ResourceLinks#createOrUpdateWithHttpOperationResponse'
     id: 'azure-arm-resource.ResourceLinks#createOrUpdateWithHttpOperationResponse'
     parent: azure-arm-resource.ResourceLinks
@@ -200,19 +160,8 @@ items:
     fullName: >-
       azure-arm-resource.ResourceLinks.createOrUpdateWithHttpOperationResponse(linkId,
       parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ResourceLink>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<ResourceLink>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -270,8 +219,6 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(linkId, parameters,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-resource.ResourceLinks#createOrUpdate'
     id: 'azure-arm-resource.ResourceLinks#createOrUpdate'
     parent: azure-arm-resource.ResourceLinks
@@ -280,39 +227,8 @@ items:
     fullName: >-
       azure-arm-resource.ResourceLinks.createOrUpdate(linkId, parameters,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ResourceLink} - The deserialized result object.'
-        value: '{ResourceLink} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceLink} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceLink} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -378,8 +294,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function createOrUpdate(linkId, parameters, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-arm-resource.ResourceLinks#getWithHttpOperationResponse'
     id: 'azure-arm-resource.ResourceLinks#getWithHttpOperationResponse'
     parent: azure-arm-resource.ResourceLinks
@@ -388,19 +302,8 @@ items:
     fullName: >-
       azure-arm-resource.ResourceLinks.getWithHttpOperationResponse(linkId,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ResourceLink>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<ResourceLink>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -430,47 +333,14 @@ items:
           - Promise
         description: A promise is returned
       content: 'function getWithHttpOperationResponse(linkId, options)'
-    langs:
-      - js
   - uid: 'azure-arm-resource.ResourceLinks#get'
     id: 'azure-arm-resource.ResourceLinks#get'
     parent: azure-arm-resource.ResourceLinks
     name: 'get(linkId, options, optionalCallback)'
     summary: Gets a resource link with the specified ID.
     fullName: 'azure-arm-resource.ResourceLinks.get(linkId, options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ResourceLink} - The deserialized result object.'
-        value: '{ResourceLink} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceLink} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceLink} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -510,8 +380,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function get(linkId, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-resource.ResourceLinks#listAtSubscriptionWithHttpOperationResponse
     id: >-
@@ -521,19 +389,8 @@ items:
     summary: Gets all the linked resources for the subscription.
     fullName: >-
       azure-arm-resource.ResourceLinks.listAtSubscriptionWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ResourceLinkResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<ResourceLinkResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -565,8 +422,6 @@ items:
           - Promise
         description: A promise is returned
       content: function listAtSubscriptionWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-arm-resource.ResourceLinks#listAtSubscription'
     id: 'azure-arm-resource.ResourceLinks#listAtSubscription'
     parent: azure-arm-resource.ResourceLinks
@@ -575,39 +430,8 @@ items:
     fullName: >-
       azure-arm-resource.ResourceLinks.listAtSubscription(options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ResourceLinkResult} - The deserialized result object.'
-        value: '{ResourceLinkResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceLinkResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceLinkResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -649,8 +473,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listAtSubscription(options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-resource.ResourceLinks#listAtSourceScopeWithHttpOperationResponse
     id: >-
@@ -661,19 +483,8 @@ items:
     fullName: >-
       azure-arm-resource.ResourceLinks.listAtSourceScopeWithHttpOperationResponse(scope,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ResourceLinkResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<ResourceLinkResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -717,8 +528,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listAtSourceScopeWithHttpOperationResponse(scope, options)'
-    langs:
-      - js
   - uid: 'azure-arm-resource.ResourceLinks#listAtSourceScope'
     id: 'azure-arm-resource.ResourceLinks#listAtSourceScope'
     parent: azure-arm-resource.ResourceLinks
@@ -727,39 +536,8 @@ items:
     fullName: >-
       azure-arm-resource.ResourceLinks.listAtSourceScope(scope, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ResourceLinkResult} - The deserialized result object.'
-        value: '{ResourceLinkResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceLinkResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceLinkResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -813,8 +591,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listAtSourceScope(scope, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-resource.ResourceLinks#listAtSubscriptionNextWithHttpOperationResponse
     id: >-
@@ -825,19 +601,8 @@ items:
     fullName: >-
       azure-arm-resource.ResourceLinks.listAtSubscriptionNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ResourceLinkResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<ResourceLinkResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -866,8 +631,6 @@ items:
       content: >-
         function listAtSubscriptionNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-resource.ResourceLinks#listAtSubscriptionNext'
     id: 'azure-arm-resource.ResourceLinks#listAtSubscriptionNext'
     parent: azure-arm-resource.ResourceLinks
@@ -876,39 +639,8 @@ items:
     fullName: >-
       azure-arm-resource.ResourceLinks.listAtSubscriptionNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ResourceLinkResult} - The deserialized result object.'
-        value: '{ResourceLinkResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceLinkResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceLinkResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -945,8 +677,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listAtSubscriptionNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-resource.ResourceLinks#listAtSourceScopeNextWithHttpOperationResponse
     id: >-
@@ -957,19 +687,8 @@ items:
     fullName: >-
       azure-arm-resource.ResourceLinks.listAtSourceScopeNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ResourceLinkResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<ResourceLinkResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -998,8 +717,6 @@ items:
       content: >-
         function listAtSourceScopeNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-resource.ResourceLinks#listAtSourceScopeNext'
     id: 'azure-arm-resource.ResourceLinks#listAtSourceScopeNext'
     parent: azure-arm-resource.ResourceLinks
@@ -1008,39 +725,8 @@ items:
     fullName: >-
       azure-arm-resource.ResourceLinks.listAtSourceScopeNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ResourceLinkResult} - The deserialized result object.'
-        value: '{ResourceLinkResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceLinkResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResourceLinkResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1077,8 +763,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listAtSourceScopeNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-arm-resource.ManagementLinkClient
     name: ManagementLinkClient

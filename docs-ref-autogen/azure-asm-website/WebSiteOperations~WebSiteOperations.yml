@@ -22,6 +22,8 @@ items:
         branch: master
         path: lib\services\webSiteManagement\lib\webSiteManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-website.WebSiteOperations~WebSiteOperations.#ctor'
@@ -72,8 +74,6 @@ items:
         azure-asm-website.WebSiteOperations~WebSiteOperations#updateHybridConnection
       - >-
         azure-asm-website.WebSiteOperations~WebSiteOperations#updateSlotConfigNames
-    langs:
-      - js
   - id: 'azure-asm-website.WebSiteOperations~WebSiteOperations.#ctor'
     uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations.#ctor'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -102,6 +102,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.applySlotConfiguration(webSpaceName,
       webSiteName, targetSwapSlot, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -130,8 +132,6 @@ items:
       content: >-
         function applySlotConfiguration(webSpaceName, webSiteName,
         targetSwapSlot, callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#backup'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#backup'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -140,6 +140,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.backup(webSpaceName,
       webSiteName, backupRequest, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -261,8 +263,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function backup(webSpaceName, webSiteName, backupRequest, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#beginSwappingSlots'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#beginSwappingSlots'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -273,6 +273,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.beginSwappingSlots(webSpaceName,
       webSiteName, sourceSlotName, targetSlotName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -307,8 +309,6 @@ items:
       content: >-
         function beginSwappingSlots(webSpaceName, webSiteName, sourceSlotName,
         targetSlotName, callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#create'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#create'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -321,6 +321,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.create(webSpaceName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -385,8 +387,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function create(webSpaceName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations#createHybridConnection
     id: >-
@@ -397,6 +397,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.createHybridConnection(webSpaceName,
       siteName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -470,8 +472,6 @@ items:
       content: >-
         function createHybridConnection(webSpaceName, siteName, parameters,
         callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#createRepository'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#createRepository'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -486,6 +486,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.createRepository(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -506,8 +508,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function createRepository(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#deleteMethod'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#deleteMethod'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -522,6 +522,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.deleteMethod(webSpaceName,
       webSiteName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -570,8 +572,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function deleteMethod(webSpaceName, webSiteName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations#deleteHybridConnection
     id: >-
@@ -584,6 +584,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.deleteHybridConnection(webSpaceName,
       webSiteName, hybridConnectionName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -612,8 +614,6 @@ items:
       content: >-
         function deleteHybridConnection(webSpaceName, webSiteName,
         hybridConnectionName, callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#deleteRepository'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#deleteRepository'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -628,6 +628,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.deleteRepository(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -648,8 +650,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function deleteRepository(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#discover'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#discover'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -661,6 +661,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.discover(webSpaceName,
       webSiteName, restoreRequest, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -741,8 +743,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function discover(webSpaceName, webSiteName, restoreRequest, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#generatePassword'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#generatePassword'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -760,6 +760,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.generatePassword(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -780,8 +782,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function generatePassword(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#get'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#get'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -793,6 +793,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.get(webSpaceName,
       webSiteName, parametersOrCallback, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -827,8 +829,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function get(webSpaceName, webSiteName, parametersOrCallback, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations#getBackupConfiguration
     id: >-
@@ -839,6 +839,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.getBackupConfiguration(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -859,8 +861,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function getBackupConfiguration(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getConfiguration'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getConfiguration'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -873,6 +873,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.getConfiguration(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -893,8 +895,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function getConfiguration(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations#getHistoricalUsageMetrics
     id: >-
@@ -909,6 +909,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.getHistoricalUsageMetrics(webSpaceName,
       webSiteName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1012,8 +1014,6 @@ items:
       content: >-
         function getHistoricalUsageMetrics(webSpaceName, webSiteName,
         parameters, callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getHybridConnection'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getHybridConnection'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1024,6 +1024,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.getHybridConnection(webSpaceName,
       webSiteName, hybridConnectionName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1052,8 +1054,6 @@ items:
       content: >-
         function getHybridConnection(webSpaceName, webSiteName,
         hybridConnectionName, callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getInstanceIds'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getInstanceIds'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1066,6 +1066,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.getInstanceIds(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1086,8 +1088,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function getInstanceIds(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getPublishProfile'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getPublishProfile'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1100,6 +1100,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.getPublishProfile(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1120,8 +1122,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function getPublishProfile(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getRepository'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getRepository'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1136,6 +1136,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.getRepository(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1156,8 +1158,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function getRepository(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getSlotConfigNames'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getSlotConfigNames'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1166,6 +1166,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.getSlotConfigNames(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1186,8 +1188,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function getSlotConfigNames(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getUsageMetrics'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#getUsageMetrics'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1203,6 +1203,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.getUsageMetrics(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1223,8 +1225,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function getUsageMetrics(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#isHostnameAvailable'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#isHostnameAvailable'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1233,6 +1233,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.isHostnameAvailable(webSiteName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1249,8 +1251,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function isHostnameAvailable(webSiteName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#listBackups'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#listBackups'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1259,6 +1259,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.listBackups(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1279,8 +1281,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function listBackups(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations#listHybridConnections
     id: >-
@@ -1291,6 +1291,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.listHybridConnections(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1311,8 +1313,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function listHybridConnections(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations#resetSlotConfiguration
     id: >-
@@ -1323,6 +1323,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.resetSlotConfiguration(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1343,8 +1345,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function resetSlotConfiguration(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#restart'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#restart'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1356,6 +1356,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.restart(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1376,8 +1378,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function restart(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#restore'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#restore'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1388,6 +1388,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.restore(webSpaceName,
       webSiteName, restoreRequest, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1468,8 +1470,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function restore(webSpaceName, webSiteName, restoreRequest, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#swapSlots'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#swapSlots'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1480,6 +1480,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.swapSlots(webSpaceName,
       webSiteName, sourceSlotName, targetSlotName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1514,8 +1516,6 @@ items:
       content: >-
         function swapSlots(webSpaceName, webSiteName, sourceSlotName,
         targetSlotName, callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#syncRepository'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#syncRepository'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1530,6 +1530,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.syncRepository(webSpaceName,
       webSiteName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1550,8 +1552,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function syncRepository(webSpaceName, webSiteName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#update'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#update'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1564,6 +1564,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.update(webSpaceName,
       webSiteName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1634,8 +1636,6 @@ items:
           - azure-asm-website.Stream
         description: The response stream.
       content: 'function update(webSpaceName, webSiteName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations#updateBackupConfiguration
     id: >-
@@ -1648,6 +1648,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.updateBackupConfiguration(webSpaceName,
       webSiteName, backupRequest, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1771,8 +1773,6 @@ items:
       content: >-
         function updateBackupConfiguration(webSpaceName, webSiteName,
         backupRequest, callback)
-    langs:
-      - js
   - uid: 'azure-asm-website.WebSiteOperations~WebSiteOperations#updateConfiguration'
     id: 'azure-asm-website.WebSiteOperations~WebSiteOperations#updateConfiguration'
     parent: azure-asm-website.WebSiteOperations~WebSiteOperations
@@ -1785,6 +1785,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.updateConfiguration(webSpaceName,
       webSiteName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2082,8 +2084,6 @@ items:
       content: >-
         function updateConfiguration(webSpaceName, webSiteName, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations#updateHybridConnection
     id: >-
@@ -2094,6 +2094,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.updateHybridConnection(webSpaceName,
       siteName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2175,8 +2177,6 @@ items:
       content: >-
         function updateHybridConnection(webSpaceName, siteName, parameters,
         callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations#updateSlotConfigNames
     id: >-
@@ -2187,6 +2187,8 @@ items:
     fullName: >-
       azure-asm-website.WebSiteOperations~WebSiteOperations.updateSlotConfigNames(webSpaceName,
       webSiteName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2246,5 +2248,3 @@ items:
       content: >-
         function updateSlotConfigNames(webSpaceName, webSiteName, parameters,
         callback)
-    langs:
-      - js

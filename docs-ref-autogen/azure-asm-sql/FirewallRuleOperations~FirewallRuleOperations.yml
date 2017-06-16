@@ -24,6 +24,8 @@ items:
         branch: master
         path: lib\services\sqlManagement\lib\sqlManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations.#ctor'
@@ -32,8 +34,6 @@ items:
       - 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations#get'
       - 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations#list'
       - 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations#update'
-    langs:
-      - js
   - id: 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations.#ctor'
     uid: 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations.#ctor'
     parent: azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations
@@ -58,6 +58,8 @@ items:
     fullName: >-
       azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations.create(serverName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -100,8 +102,6 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function create(serverName, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations#deleteMethod'
     id: 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations#deleteMethod'
     parent: azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations
@@ -110,6 +110,8 @@ items:
     fullName: >-
       azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations.deleteMethod(serverName,
       ruleName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -132,8 +134,6 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function deleteMethod(serverName, ruleName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations#get'
     id: 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations#get'
     parent: azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations
@@ -144,6 +144,8 @@ items:
     fullName: >-
       azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations.get(serverName,
       ruleName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -166,8 +168,6 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function get(serverName, ruleName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations#list'
     id: 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations#list'
     parent: azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations
@@ -178,6 +178,8 @@ items:
     fullName: >-
       azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations.list(serverName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -196,8 +198,6 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function list(serverName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations#update'
     id: 'azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations#update'
     parent: azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations
@@ -208,6 +208,8 @@ items:
     fullName: >-
       azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations.update(serverName,
       ruleName, parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -254,5 +256,3 @@ items:
           - azure-asm-sql.Stream
         description: The response stream.
       content: 'function update(serverName, ruleName, parameters, callback)'
-    langs:
-      - js

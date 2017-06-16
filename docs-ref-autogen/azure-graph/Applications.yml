@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\graphManagement\lib\operations\applications.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-graph.Applications.#ctor'
@@ -42,8 +44,6 @@ items:
       - 'azure-graph.Applications#updatePasswordCredentials'
       - 'azure-graph.Applications#listNextWithHttpOperationResponse'
       - 'azure-graph.Applications#listNext'
-    langs:
-      - js
   - id: 'azure-graph.Applications.#ctor'
     uid: 'azure-graph.Applications.#ctor'
     parent: azure-graph.Applications
@@ -68,15 +68,8 @@ items:
     fullName: >-
       azure-graph.Applications.createWithHttpOperationResponse(parameters,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Application>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Application>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -143,47 +136,14 @@ items:
           - Promise
         description: A promise is returned
       content: 'function createWithHttpOperationResponse(parameters, options)'
-    langs:
-      - js
   - uid: 'azure-graph.Applications#create'
     id: 'azure-graph.Applications#create'
     parent: azure-graph.Applications
     name: 'create(parameters, options, optionalCallback)'
     summary: Create a new application.
     fullName: 'azure-graph.Applications.create(parameters, options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Application} - The deserialized result object.'
-        value: '{Application} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Application} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Application} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -260,27 +220,14 @@ items:
 
           {Promise} A promise is returned
       content: 'function create(parameters, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-graph.Applications#listWithHttpOperationResponse'
     id: 'azure-graph.Applications#listWithHttpOperationResponse'
     parent: azure-graph.Applications
     name: listWithHttpOperationResponse(options)
     summary: Lists applications by filter parameters.
     fullName: azure-graph.Applications.listWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ApplicationListResult>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<ApplicationListResult>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -306,47 +253,14 @@ items:
           - Promise
         description: A promise is returned
       content: function listWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-graph.Applications#list'
     id: 'azure-graph.Applications#list'
     parent: azure-graph.Applications
     name: 'list(options, optionalCallback)'
     summary: Lists applications by filter parameters.
     fullName: 'azure-graph.Applications.list(options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ApplicationListResult} - The deserialized result object.'
-        value: '{ApplicationListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApplicationListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApplicationListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -382,8 +296,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-graph.Applications#deleteMethodWithHttpOperationResponse'
     id: 'azure-graph.Applications#deleteMethodWithHttpOperationResponse'
     parent: azure-graph.Applications
@@ -392,15 +304,8 @@ items:
     fullName: >-
       azure-graph.Applications.deleteMethodWithHttpOperationResponse(applicationObjectId,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -427,8 +332,6 @@ items:
       content: >-
         function deleteMethodWithHttpOperationResponse(applicationObjectId,
         options)
-    langs:
-      - js
   - uid: 'azure-graph.Applications#deleteMethod'
     id: 'azure-graph.Applications#deleteMethod'
     parent: azure-graph.Applications
@@ -437,37 +340,8 @@ items:
     fullName: >-
       azure-graph.Applications.deleteMethod(applicationObjectId, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -502,8 +376,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function deleteMethod(applicationObjectId, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-graph.Applications#getWithHttpOperationResponse'
     id: 'azure-graph.Applications#getWithHttpOperationResponse'
     parent: azure-graph.Applications
@@ -512,15 +384,8 @@ items:
     fullName: >-
       azure-graph.Applications.getWithHttpOperationResponse(applicationObjectId,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Application>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Application>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -545,8 +410,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function getWithHttpOperationResponse(applicationObjectId, options)'
-    langs:
-      - js
   - uid: 'azure-graph.Applications#get'
     id: 'azure-graph.Applications#get'
     parent: azure-graph.Applications
@@ -555,39 +418,8 @@ items:
     fullName: >-
       azure-graph.Applications.get(applicationObjectId, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Application} - The deserialized result object.'
-        value: '{Application} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Application} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Application} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -622,8 +454,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function get(applicationObjectId, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-graph.Applications#patchWithHttpOperationResponse'
     id: 'azure-graph.Applications#patchWithHttpOperationResponse'
     parent: azure-graph.Applications
@@ -632,15 +462,8 @@ items:
     fullName: >-
       azure-graph.Applications.patchWithHttpOperationResponse(applicationObjectId,
       parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -718,8 +541,6 @@ items:
       content: >-
         function patchWithHttpOperationResponse(applicationObjectId, parameters,
         options)
-    langs:
-      - js
   - uid: 'azure-graph.Applications#patch'
     id: 'azure-graph.Applications#patch'
     parent: azure-graph.Applications
@@ -728,37 +549,8 @@ items:
     fullName: >-
       azure-graph.Applications.patch(applicationObjectId, parameters, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -846,8 +638,6 @@ items:
       content: >-
         function patch(applicationObjectId, parameters, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-graph.Applications#listKeyCredentialsWithHttpOperationResponse'
     id: 'azure-graph.Applications#listKeyCredentialsWithHttpOperationResponse'
     parent: azure-graph.Applications
@@ -856,19 +646,8 @@ items:
     fullName: >-
       azure-graph.Applications.listKeyCredentialsWithHttpOperationResponse(applicationObjectId,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<KeyCredentialListResult>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<KeyCredentialListResult>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -896,8 +675,6 @@ items:
         function
         listKeyCredentialsWithHttpOperationResponse(applicationObjectId,
         options)
-    langs:
-      - js
   - uid: 'azure-graph.Applications#listKeyCredentials'
     id: 'azure-graph.Applications#listKeyCredentials'
     parent: azure-graph.Applications
@@ -906,41 +683,8 @@ items:
     fullName: >-
       azure-graph.Applications.listKeyCredentials(applicationObjectId, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{KeyCredentialListResult} - The deserialized result object.'
-        value: '{KeyCredentialListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyCredentialListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link KeyCredentialListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -977,8 +721,6 @@ items:
       content: >-
         function listKeyCredentials(applicationObjectId, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-graph.Applications#updateKeyCredentialsWithHttpOperationResponse'
     id: 'azure-graph.Applications#updateKeyCredentialsWithHttpOperationResponse'
     parent: azure-graph.Applications
@@ -989,15 +731,8 @@ items:
     fullName: >-
       azure-graph.Applications.updateKeyCredentialsWithHttpOperationResponse(applicationObjectId,
       value, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1029,8 +764,6 @@ items:
         function
         updateKeyCredentialsWithHttpOperationResponse(applicationObjectId,
         value, options)
-    langs:
-      - js
   - uid: 'azure-graph.Applications#updateKeyCredentials'
     id: 'azure-graph.Applications#updateKeyCredentials'
     parent: azure-graph.Applications
@@ -1041,37 +774,8 @@ items:
     fullName: >-
       azure-graph.Applications.updateKeyCredentials(applicationObjectId, value,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1112,8 +816,6 @@ items:
       content: >-
         function updateKeyCredentials(applicationObjectId, value, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-graph.Applications#listPasswordCredentialsWithHttpOperationResponse'
     id: 'azure-graph.Applications#listPasswordCredentialsWithHttpOperationResponse'
     parent: azure-graph.Applications
@@ -1124,19 +826,8 @@ items:
     fullName: >-
       azure-graph.Applications.listPasswordCredentialsWithHttpOperationResponse(applicationObjectId,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<PasswordCredentialListResult>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<PasswordCredentialListResult>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1164,8 +855,6 @@ items:
         function
         listPasswordCredentialsWithHttpOperationResponse(applicationObjectId,
         options)
-    langs:
-      - js
   - uid: 'azure-graph.Applications#listPasswordCredentials'
     id: 'azure-graph.Applications#listPasswordCredentials'
     parent: azure-graph.Applications
@@ -1174,41 +863,8 @@ items:
     fullName: >-
       azure-graph.Applications.listPasswordCredentials(applicationObjectId,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{PasswordCredentialListResult} - The deserialized result object.'
-        value: '{PasswordCredentialListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PasswordCredentialListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PasswordCredentialListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1245,8 +901,6 @@ items:
       content: >-
         function listPasswordCredentials(applicationObjectId, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-graph.Applications#updatePasswordCredentialsWithHttpOperationResponse
     id: >-
@@ -1259,15 +913,8 @@ items:
     fullName: >-
       azure-graph.Applications.updatePasswordCredentialsWithHttpOperationResponse(applicationObjectId,
       value, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1299,8 +946,6 @@ items:
         function
         updatePasswordCredentialsWithHttpOperationResponse(applicationObjectId,
         value, options)
-    langs:
-      - js
   - uid: 'azure-graph.Applications#updatePasswordCredentials'
     id: 'azure-graph.Applications#updatePasswordCredentials'
     parent: azure-graph.Applications
@@ -1311,37 +956,8 @@ items:
     fullName: >-
       azure-graph.Applications.updatePasswordCredentials(applicationObjectId,
       value, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1382,8 +998,6 @@ items:
       content: >-
         function updatePasswordCredentials(applicationObjectId, value, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-graph.Applications#listNextWithHttpOperationResponse'
     id: 'azure-graph.Applications#listNextWithHttpOperationResponse'
     parent: azure-graph.Applications
@@ -1392,19 +1006,8 @@ items:
     fullName: >-
       azure-graph.Applications.listNextWithHttpOperationResponse(nextLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ApplicationListResult>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<ApplicationListResult>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1429,47 +1032,14 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listNextWithHttpOperationResponse(nextLink, options)'
-    langs:
-      - js
   - uid: 'azure-graph.Applications#listNext'
     id: 'azure-graph.Applications#listNext'
     parent: azure-graph.Applications
     name: 'listNext(nextLink, options, optionalCallback)'
     summary: Gets a list of applications from the current tenant.
     fullName: 'azure-graph.Applications.listNext(nextLink, options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ApplicationListResult} - The deserialized result object.'
-        value: '{ApplicationListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApplicationListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ApplicationListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1504,8 +1074,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listNext(nextLink, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-graph.GraphRbacManagementClient
     name: GraphRbacManagementClient

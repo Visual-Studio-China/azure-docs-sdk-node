@@ -23,6 +23,8 @@ items:
         branch: master
         path: lib\services\monitoring\lib\alertsClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-monitoring.RuleOperations~RuleOperations.#ctor'
@@ -30,8 +32,6 @@ items:
       - 'azure-monitoring.RuleOperations~RuleOperations#deleteMethod'
       - 'azure-monitoring.RuleOperations~RuleOperations#get'
       - 'azure-monitoring.RuleOperations~RuleOperations#list'
-    langs:
-      - js
   - id: 'azure-monitoring.RuleOperations~RuleOperations.#ctor'
     uid: 'azure-monitoring.RuleOperations~RuleOperations.#ctor'
     parent: azure-monitoring.RuleOperations~RuleOperations
@@ -56,6 +56,8 @@ items:
     fullName: >-
       azure-monitoring.RuleOperations~RuleOperations.createOrUpdate(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -116,8 +118,6 @@ items:
           - azure-monitoring.Stream
         description: The response stream.
       content: 'function createOrUpdate(parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-monitoring.RuleOperations~RuleOperations#deleteMethod'
     id: 'azure-monitoring.RuleOperations~RuleOperations#deleteMethod'
     parent: azure-monitoring.RuleOperations~RuleOperations
@@ -126,6 +126,8 @@ items:
     fullName: >-
       azure-monitoring.RuleOperations~RuleOperations.deleteMethod(ruleId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -142,14 +144,14 @@ items:
           - azure-monitoring.Stream
         description: The response stream.
       content: 'function deleteMethod(ruleId, callback)'
-    langs:
-      - js
   - uid: 'azure-monitoring.RuleOperations~RuleOperations#get'
     id: 'azure-monitoring.RuleOperations~RuleOperations#get'
     parent: azure-monitoring.RuleOperations~RuleOperations
     name: 'get(ruleId, callback)'
     summary: ''
     fullName: 'azure-monitoring.RuleOperations~RuleOperations.get(ruleId, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -166,14 +168,14 @@ items:
           - azure-monitoring.Stream
         description: The response stream.
       content: 'function get(ruleId, callback)'
-    langs:
-      - js
   - uid: 'azure-monitoring.RuleOperations~RuleOperations#list'
     id: 'azure-monitoring.RuleOperations~RuleOperations#list'
     parent: azure-monitoring.RuleOperations~RuleOperations
     name: list(callback)
     summary: List the alert rules within a subscription.
     fullName: azure-monitoring.RuleOperations~RuleOperations.list(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -186,5 +188,3 @@ items:
           - azure-monitoring.Stream
         description: The response stream.
       content: function list(callback)
-    langs:
-      - js

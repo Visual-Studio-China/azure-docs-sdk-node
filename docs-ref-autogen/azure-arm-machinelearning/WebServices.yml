@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\machinelearning\lib\webservices\operations\webServices.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-machinelearning.WebServices.#ctor'
@@ -50,8 +52,6 @@ items:
       - 'azure-arm-machinelearning.WebServices#listByResourceGroupNext'
       - 'azure-arm-machinelearning.WebServices#listNextWithHttpOperationResponse'
       - 'azure-arm-machinelearning.WebServices#listNext'
-    langs:
-      - js
   - id: 'azure-arm-machinelearning.WebServices.#ctor'
     uid: 'azure-arm-machinelearning.WebServices.#ctor'
     parent: azure-arm-machinelearning.WebServices
@@ -84,15 +84,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.createOrUpdateWithHttpOperationResponse(resourceGroupName,
       webServiceName, createOrUpdatePayload, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<WebService>} - The deserialized result object.'
-        value: '{HttpOperationResponse<WebService>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -443,8 +436,6 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(resourceGroupName,
         webServiceName, createOrUpdatePayload, options)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#createOrUpdate'
     id: 'azure-arm-machinelearning.WebServices#createOrUpdate'
     parent: azure-arm-machinelearning.WebServices
@@ -459,39 +450,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.createOrUpdate(resourceGroupName,
       webServiceName, createOrUpdatePayload, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{WebService} - The deserialized result object.'
-        value: '{WebService} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WebService} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WebService} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -852,8 +812,6 @@ items:
       content: >-
         function createOrUpdate(resourceGroupName, webServiceName,
         createOrUpdatePayload, options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#getWithHttpOperationResponse'
     id: 'azure-arm-machinelearning.WebServices#getWithHttpOperationResponse'
     parent: azure-arm-machinelearning.WebServices
@@ -870,15 +828,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.getWithHttpOperationResponse(resourceGroupName,
       webServiceName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<WebService>} - The deserialized result object.'
-        value: '{HttpOperationResponse<WebService>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -911,8 +862,6 @@ items:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName, webServiceName,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#get'
     id: 'azure-arm-machinelearning.WebServices#get'
     parent: azure-arm-machinelearning.WebServices
@@ -929,39 +878,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.get(resourceGroupName,
       webServiceName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{WebService} - The deserialized result object.'
-        value: '{WebService} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WebService} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WebService} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1004,8 +922,6 @@ items:
       content: >-
         function get(resourceGroupName, webServiceName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#patchWithHttpOperationResponse'
     id: 'azure-arm-machinelearning.WebServices#patchWithHttpOperationResponse'
     parent: azure-arm-machinelearning.WebServices
@@ -1022,15 +938,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.patchWithHttpOperationResponse(resourceGroupName,
       webServiceName, patchPayload, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<WebService>} - The deserialized result object.'
-        value: '{HttpOperationResponse<WebService>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1385,8 +1294,6 @@ items:
       content: >-
         function patchWithHttpOperationResponse(resourceGroupName,
         webServiceName, patchPayload, options)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#patch'
     id: 'azure-arm-machinelearning.WebServices#patch'
     parent: azure-arm-machinelearning.WebServices
@@ -1403,39 +1310,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.patch(resourceGroupName,
       webServiceName, patchPayload, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{WebService} - The deserialized result object.'
-        value: '{WebService} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WebService} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WebService} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1800,8 +1676,6 @@ items:
       content: >-
         function patch(resourceGroupName, webServiceName, patchPayload, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#removeWithHttpOperationResponse'
     id: 'azure-arm-machinelearning.WebServices#removeWithHttpOperationResponse'
     parent: azure-arm-machinelearning.WebServices
@@ -1812,15 +1686,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.removeWithHttpOperationResponse(resourceGroupName,
       webServiceName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1853,8 +1720,6 @@ items:
       content: >-
         function removeWithHttpOperationResponse(resourceGroupName,
         webServiceName, options)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#remove'
     id: 'azure-arm-machinelearning.WebServices#remove'
     parent: azure-arm-machinelearning.WebServices
@@ -1863,37 +1728,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.remove(resourceGroupName,
       webServiceName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1936,8 +1772,6 @@ items:
       content: >-
         function remove(resourceGroupName, webServiceName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#listKeysWithHttpOperationResponse'
     id: 'azure-arm-machinelearning.WebServices#listKeysWithHttpOperationResponse'
     parent: azure-arm-machinelearning.WebServices
@@ -1948,19 +1782,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.listKeysWithHttpOperationResponse(resourceGroupName,
       webServiceName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<WebServiceKeys>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<WebServiceKeys>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1993,8 +1816,6 @@ items:
       content: >-
         function listKeysWithHttpOperationResponse(resourceGroupName,
         webServiceName, options)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#listKeys'
     id: 'azure-arm-machinelearning.WebServices#listKeys'
     parent: azure-arm-machinelearning.WebServices
@@ -2003,39 +1824,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.listKeys(resourceGroupName,
       webServiceName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{WebServiceKeys} - The deserialized result object.'
-        value: '{WebServiceKeys} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WebServiceKeys} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WebServiceKeys} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2078,8 +1868,6 @@ items:
       content: >-
         function listKeys(resourceGroupName, webServiceName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-machinelearning.WebServices#listByResourceGroupWithHttpOperationResponse
     id: >-
@@ -2090,19 +1878,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.listByResourceGroupWithHttpOperationResponse(resourceGroupName,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<PaginatedWebServicesList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<PaginatedWebServicesList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2136,8 +1913,6 @@ items:
       content: >-
         function listByResourceGroupWithHttpOperationResponse(resourceGroupName,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#listByResourceGroup'
     id: 'azure-arm-machinelearning.WebServices#listByResourceGroup'
     parent: azure-arm-machinelearning.WebServices
@@ -2146,41 +1921,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.listByResourceGroup(resourceGroupName,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{PaginatedWebServicesList} - The deserialized result object.'
-        value: '{PaginatedWebServicesList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PaginatedWebServicesList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PaginatedWebServicesList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2224,8 +1966,6 @@ items:
       content: >-
         function listByResourceGroup(resourceGroupName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#listWithHttpOperationResponse'
     id: 'azure-arm-machinelearning.WebServices#listWithHttpOperationResponse'
     parent: azure-arm-machinelearning.WebServices
@@ -2233,19 +1973,8 @@ items:
     summary: Gets the web services in the specified subscription.
     fullName: >-
       azure-arm-machinelearning.WebServices.listWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<PaginatedWebServicesList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<PaginatedWebServicesList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2271,49 +2000,14 @@ items:
           - Promise
         description: A promise is returned
       content: function listWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#list'
     id: 'azure-arm-machinelearning.WebServices#list'
     parent: azure-arm-machinelearning.WebServices
     name: 'list(options, optionalCallback)'
     summary: Gets the web services in the specified subscription.
     fullName: 'azure-arm-machinelearning.WebServices.list(options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{PaginatedWebServicesList} - The deserialized result object.'
-        value: '{PaginatedWebServicesList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PaginatedWebServicesList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PaginatedWebServicesList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2349,8 +2043,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-machinelearning.WebServices#beginCreateOrUpdateWithHttpOperationResponse
     id: >-
@@ -2367,15 +2059,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
       webServiceName, createOrUpdatePayload, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<WebService>} - The deserialized result object.'
-        value: '{HttpOperationResponse<WebService>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2726,8 +2411,6 @@ items:
       content: >-
         function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
         webServiceName, createOrUpdatePayload, options)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#beginCreateOrUpdate'
     id: 'azure-arm-machinelearning.WebServices#beginCreateOrUpdate'
     parent: azure-arm-machinelearning.WebServices
@@ -2742,39 +2425,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.beginCreateOrUpdate(resourceGroupName,
       webServiceName, createOrUpdatePayload, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{WebService} - The deserialized result object.'
-        value: '{WebService} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WebService} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WebService} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3135,8 +2787,6 @@ items:
       content: >-
         function beginCreateOrUpdate(resourceGroupName, webServiceName,
         createOrUpdatePayload, options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#beginPatchWithHttpOperationResponse'
     id: 'azure-arm-machinelearning.WebServices#beginPatchWithHttpOperationResponse'
     parent: azure-arm-machinelearning.WebServices
@@ -3153,15 +2803,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.beginPatchWithHttpOperationResponse(resourceGroupName,
       webServiceName, patchPayload, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<WebService>} - The deserialized result object.'
-        value: '{HttpOperationResponse<WebService>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3516,8 +3159,6 @@ items:
       content: >-
         function beginPatchWithHttpOperationResponse(resourceGroupName,
         webServiceName, patchPayload, options)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#beginPatch'
     id: 'azure-arm-machinelearning.WebServices#beginPatch'
     parent: azure-arm-machinelearning.WebServices
@@ -3534,39 +3175,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.beginPatch(resourceGroupName,
       webServiceName, patchPayload, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{WebService} - The deserialized result object.'
-        value: '{WebService} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WebService} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link WebService} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3931,8 +3541,6 @@ items:
       content: >-
         function beginPatch(resourceGroupName, webServiceName, patchPayload,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#beginRemoveWithHttpOperationResponse'
     id: 'azure-arm-machinelearning.WebServices#beginRemoveWithHttpOperationResponse'
     parent: azure-arm-machinelearning.WebServices
@@ -3943,15 +3551,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.beginRemoveWithHttpOperationResponse(resourceGroupName,
       webServiceName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3984,8 +3585,6 @@ items:
       content: >-
         function beginRemoveWithHttpOperationResponse(resourceGroupName,
         webServiceName, options)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#beginRemove'
     id: 'azure-arm-machinelearning.WebServices#beginRemove'
     parent: azure-arm-machinelearning.WebServices
@@ -3994,37 +3593,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.beginRemove(resourceGroupName,
       webServiceName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4067,8 +3637,6 @@ items:
       content: >-
         function beginRemove(resourceGroupName, webServiceName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-machinelearning.WebServices#listByResourceGroupNextWithHttpOperationResponse
     id: >-
@@ -4079,19 +3647,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.listByResourceGroupNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<PaginatedWebServicesList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<PaginatedWebServicesList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4120,8 +3677,6 @@ items:
       content: >-
         function listByResourceGroupNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#listByResourceGroupNext'
     id: 'azure-arm-machinelearning.WebServices#listByResourceGroupNext'
     parent: azure-arm-machinelearning.WebServices
@@ -4130,41 +3685,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.listByResourceGroupNext(nextPageLink,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{PaginatedWebServicesList} - The deserialized result object.'
-        value: '{PaginatedWebServicesList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PaginatedWebServicesList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PaginatedWebServicesList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4203,8 +3725,6 @@ items:
       content: >-
         function listByResourceGroupNext(nextPageLink, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#listNextWithHttpOperationResponse'
     id: 'azure-arm-machinelearning.WebServices#listNextWithHttpOperationResponse'
     parent: azure-arm-machinelearning.WebServices
@@ -4213,19 +3733,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.listNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<PaginatedWebServicesList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<PaginatedWebServicesList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4252,8 +3761,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
   - uid: 'azure-arm-machinelearning.WebServices#listNext'
     id: 'azure-arm-machinelearning.WebServices#listNext'
     parent: azure-arm-machinelearning.WebServices
@@ -4262,41 +3769,8 @@ items:
     fullName: >-
       azure-arm-machinelearning.WebServices.listNext(nextPageLink, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{PaginatedWebServicesList} - The deserialized result object.'
-        value: '{PaginatedWebServicesList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PaginatedWebServicesList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PaginatedWebServicesList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4333,8 +3807,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-arm-machinelearning.AzureMLWebServicesManagementClient
     name: AzureMLWebServicesManagementClient

@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\postgresqlManagement\lib\operations\firewallRules.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-postgresql.FirewallRules.#ctor'
@@ -35,8 +37,6 @@ items:
       - >-
         azure-arm-postgresql.FirewallRules#beginDeleteMethodWithHttpOperationResponse
       - 'azure-arm-postgresql.FirewallRules#beginDeleteMethod'
-    langs:
-      - js
   - id: 'azure-arm-postgresql.FirewallRules.#ctor'
     uid: 'azure-arm-postgresql.FirewallRules.#ctor'
     parent: azure-arm-postgresql.FirewallRules
@@ -63,19 +63,8 @@ items:
     fullName: >-
       azure-arm-postgresql.FirewallRules.createOrUpdateWithHttpOperationResponse(resourceGroupName,
       serverName, firewallRuleName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<FirewallRule>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<FirewallRule>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -134,8 +123,6 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(resourceGroupName,
         serverName, firewallRuleName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-postgresql.FirewallRules#createOrUpdate'
     id: 'azure-arm-postgresql.FirewallRules#createOrUpdate'
     parent: azure-arm-postgresql.FirewallRules
@@ -146,39 +133,8 @@ items:
     fullName: >-
       azure-arm-postgresql.FirewallRules.createOrUpdate(resourceGroupName,
       serverName, firewallRuleName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{FirewallRule} - The deserialized result object.'
-        value: '{FirewallRule} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -247,8 +203,6 @@ items:
       content: >-
         function createOrUpdate(resourceGroupName, serverName, firewallRuleName,
         parameters, options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-postgresql.FirewallRules#deleteMethodWithHttpOperationResponse'
     id: 'azure-arm-postgresql.FirewallRules#deleteMethodWithHttpOperationResponse'
     parent: azure-arm-postgresql.FirewallRules
@@ -259,15 +213,8 @@ items:
     fullName: >-
       azure-arm-postgresql.FirewallRules.deleteMethodWithHttpOperationResponse(resourceGroupName,
       serverName, firewallRuleName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -308,8 +255,6 @@ items:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceGroupName,
         serverName, firewallRuleName, options)
-    langs:
-      - js
   - uid: 'azure-arm-postgresql.FirewallRules#deleteMethod'
     id: 'azure-arm-postgresql.FirewallRules#deleteMethod'
     parent: azure-arm-postgresql.FirewallRules
@@ -320,37 +265,8 @@ items:
     fullName: >-
       azure-arm-postgresql.FirewallRules.deleteMethod(resourceGroupName,
       serverName, firewallRuleName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -401,8 +317,6 @@ items:
       content: >-
         function deleteMethod(resourceGroupName, serverName, firewallRuleName,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-postgresql.FirewallRules#getWithHttpOperationResponse'
     id: 'azure-arm-postgresql.FirewallRules#getWithHttpOperationResponse'
     parent: azure-arm-postgresql.FirewallRules
@@ -413,19 +327,8 @@ items:
     fullName: >-
       azure-arm-postgresql.FirewallRules.getWithHttpOperationResponse(resourceGroupName,
       serverName, firewallRuleName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<FirewallRule>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<FirewallRule>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -466,8 +369,6 @@ items:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName, serverName,
         firewallRuleName, options)
-    langs:
-      - js
   - uid: 'azure-arm-postgresql.FirewallRules#get'
     id: 'azure-arm-postgresql.FirewallRules#get'
     parent: azure-arm-postgresql.FirewallRules
@@ -478,39 +379,8 @@ items:
     fullName: >-
       azure-arm-postgresql.FirewallRules.get(resourceGroupName, serverName,
       firewallRuleName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{FirewallRule} - The deserialized result object.'
-        value: '{FirewallRule} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -561,8 +431,6 @@ items:
       content: >-
         function get(resourceGroupName, serverName, firewallRuleName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-postgresql.FirewallRules#listByServerWithHttpOperationResponse'
     id: 'azure-arm-postgresql.FirewallRules#listByServerWithHttpOperationResponse'
     parent: azure-arm-postgresql.FirewallRules
@@ -573,19 +441,8 @@ items:
     fullName: >-
       azure-arm-postgresql.FirewallRules.listByServerWithHttpOperationResponse(resourceGroupName,
       serverName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<FirewallRuleListResult>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<FirewallRuleListResult>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -622,8 +479,6 @@ items:
       content: >-
         function listByServerWithHttpOperationResponse(resourceGroupName,
         serverName, options)
-    langs:
-      - js
   - uid: 'azure-arm-postgresql.FirewallRules#listByServer'
     id: 'azure-arm-postgresql.FirewallRules#listByServer'
     parent: azure-arm-postgresql.FirewallRules
@@ -632,41 +487,8 @@ items:
     fullName: >-
       azure-arm-postgresql.FirewallRules.listByServer(resourceGroupName,
       serverName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{FirewallRuleListResult} - The deserialized result object.'
-        value: '{FirewallRuleListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRuleListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRuleListResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -713,8 +535,6 @@ items:
       content: >-
         function listByServer(resourceGroupName, serverName, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-postgresql.FirewallRules#beginCreateOrUpdateWithHttpOperationResponse
     id: >-
@@ -727,19 +547,8 @@ items:
     fullName: >-
       azure-arm-postgresql.FirewallRules.beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
       serverName, firewallRuleName, parameters, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<FirewallRule>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<FirewallRule>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -798,8 +607,6 @@ items:
       content: >-
         function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName,
         serverName, firewallRuleName, parameters, options)
-    langs:
-      - js
   - uid: 'azure-arm-postgresql.FirewallRules#beginCreateOrUpdate'
     id: 'azure-arm-postgresql.FirewallRules#beginCreateOrUpdate'
     parent: azure-arm-postgresql.FirewallRules
@@ -810,39 +617,8 @@ items:
     fullName: >-
       azure-arm-postgresql.FirewallRules.beginCreateOrUpdate(resourceGroupName,
       serverName, firewallRuleName, parameters, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{FirewallRule} - The deserialized result object.'
-        value: '{FirewallRule} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link FirewallRule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -911,8 +687,6 @@ items:
       content: >-
         function beginCreateOrUpdate(resourceGroupName, serverName,
         firewallRuleName, parameters, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-postgresql.FirewallRules#beginDeleteMethodWithHttpOperationResponse
     id: >-
@@ -925,15 +699,8 @@ items:
     fullName: >-
       azure-arm-postgresql.FirewallRules.beginDeleteMethodWithHttpOperationResponse(resourceGroupName,
       serverName, firewallRuleName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -974,8 +741,6 @@ items:
       content: >-
         function beginDeleteMethodWithHttpOperationResponse(resourceGroupName,
         serverName, firewallRuleName, options)
-    langs:
-      - js
   - uid: 'azure-arm-postgresql.FirewallRules#beginDeleteMethod'
     id: 'azure-arm-postgresql.FirewallRules#beginDeleteMethod'
     parent: azure-arm-postgresql.FirewallRules
@@ -986,37 +751,8 @@ items:
     fullName: >-
       azure-arm-postgresql.FirewallRules.beginDeleteMethod(resourceGroupName,
       serverName, firewallRuleName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1067,8 +803,6 @@ items:
       content: >-
         function beginDeleteMethod(resourceGroupName, serverName,
         firewallRuleName, options, optionalCallback)
-    langs:
-      - js
 references:
   - uid: azure-arm-postgresql.PostgreSQLManagementClient
     name: PostgreSQLManagementClient

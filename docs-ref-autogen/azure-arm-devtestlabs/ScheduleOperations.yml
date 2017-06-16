@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\devTestLabs\lib\operations\scheduleOperations.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-arm-devtestlabs.ScheduleOperations.#ctor'
@@ -43,8 +45,6 @@ items:
       - >-
         azure-arm-devtestlabs.ScheduleOperations#listNextWithHttpOperationResponse
       - 'azure-arm-devtestlabs.ScheduleOperations#listNext'
-    langs:
-      - js
   - id: 'azure-arm-devtestlabs.ScheduleOperations.#ctor'
     uid: 'azure-arm-devtestlabs.ScheduleOperations.#ctor'
     parent: azure-arm-devtestlabs.ScheduleOperations
@@ -69,19 +69,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.listWithHttpOperationResponse(resourceGroupName,
       labName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ResponseWithContinuationSchedule>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<ResponseWithContinuationSchedule>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -131,8 +120,6 @@ items:
       content: >-
         function listWithHttpOperationResponse(resourceGroupName, labName,
         options)
-    langs:
-      - js
   - uid: 'azure-arm-devtestlabs.ScheduleOperations#list'
     id: 'azure-arm-devtestlabs.ScheduleOperations#list'
     parent: azure-arm-devtestlabs.ScheduleOperations
@@ -141,41 +128,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.list(resourceGroupName, labName,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ResponseWithContinuationSchedule} - The deserialized result object.'
-        value: '{ResponseWithContinuationSchedule} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResponseWithContinuationSchedule} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResponseWithContinuationSchedule} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -233,8 +187,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(resourceGroupName, labName, options, optionalCallback)'
-    langs:
-      - js
   - uid: >-
       azure-arm-devtestlabs.ScheduleOperations#getResourceWithHttpOperationResponse
     id: >-
@@ -247,15 +199,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.getResourceWithHttpOperationResponse(resourceGroupName,
       labName, name, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Schedule>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Schedule>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -290,8 +235,6 @@ items:
       content: >-
         function getResourceWithHttpOperationResponse(resourceGroupName,
         labName, name, options)
-    langs:
-      - js
   - uid: 'azure-arm-devtestlabs.ScheduleOperations#getResource'
     id: 'azure-arm-devtestlabs.ScheduleOperations#getResource'
     parent: azure-arm-devtestlabs.ScheduleOperations
@@ -300,39 +243,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.getResource(resourceGroupName,
       labName, name, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Schedule} - The deserialized result object.'
-        value: '{Schedule} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Schedule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Schedule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -377,8 +289,6 @@ items:
       content: >-
         function getResource(resourceGroupName, labName, name, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-devtestlabs.ScheduleOperations#createOrUpdateResourceWithHttpOperationResponse
     id: >-
@@ -391,15 +301,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.createOrUpdateResourceWithHttpOperationResponse(resourceGroupName,
       labName, name, schedule, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Schedule>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Schedule>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -538,8 +441,6 @@ items:
         function
         createOrUpdateResourceWithHttpOperationResponse(resourceGroupName,
         labName, name, schedule, options)
-    langs:
-      - js
   - uid: 'azure-arm-devtestlabs.ScheduleOperations#createOrUpdateResource'
     id: 'azure-arm-devtestlabs.ScheduleOperations#createOrUpdateResource'
     parent: azure-arm-devtestlabs.ScheduleOperations
@@ -550,39 +451,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.createOrUpdateResource(resourceGroupName,
       labName, name, schedule, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Schedule} - The deserialized result object.'
-        value: '{Schedule} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Schedule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Schedule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -730,8 +600,6 @@ items:
       content: >-
         function createOrUpdateResource(resourceGroupName, labName, name,
         schedule, options, optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-devtestlabs.ScheduleOperations#deleteResourceWithHttpOperationResponse
     id: >-
@@ -744,15 +612,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.deleteResourceWithHttpOperationResponse(resourceGroupName,
       labName, name, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -787,8 +648,6 @@ items:
       content: >-
         function deleteResourceWithHttpOperationResponse(resourceGroupName,
         labName, name, options)
-    langs:
-      - js
   - uid: 'azure-arm-devtestlabs.ScheduleOperations#deleteResource'
     id: 'azure-arm-devtestlabs.ScheduleOperations#deleteResource'
     parent: azure-arm-devtestlabs.ScheduleOperations
@@ -799,37 +658,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.deleteResource(resourceGroupName,
       labName, name, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -874,8 +704,6 @@ items:
       content: >-
         function deleteResource(resourceGroupName, labName, name, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-devtestlabs.ScheduleOperations#patchResourceWithHttpOperationResponse
     id: >-
@@ -888,15 +716,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.patchResourceWithHttpOperationResponse(resourceGroupName,
       labName, name, schedule, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Schedule>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Schedule>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1034,8 +855,6 @@ items:
       content: >-
         function patchResourceWithHttpOperationResponse(resourceGroupName,
         labName, name, schedule, options)
-    langs:
-      - js
   - uid: 'azure-arm-devtestlabs.ScheduleOperations#patchResource'
     id: 'azure-arm-devtestlabs.ScheduleOperations#patchResource'
     parent: azure-arm-devtestlabs.ScheduleOperations
@@ -1046,39 +865,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.patchResource(resourceGroupName,
       labName, name, schedule, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Schedule} - The deserialized result object.'
-        value: '{Schedule} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Schedule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link Schedule} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1226,8 +1014,6 @@ items:
       content: >-
         function patchResource(resourceGroupName, labName, name, schedule,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-devtestlabs.ScheduleOperations#executeWithHttpOperationResponse'
     id: 'azure-arm-devtestlabs.ScheduleOperations#executeWithHttpOperationResponse'
     parent: azure-arm-devtestlabs.ScheduleOperations
@@ -1238,15 +1024,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.executeWithHttpOperationResponse(resourceGroupName,
       labName, name, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1281,8 +1060,6 @@ items:
       content: >-
         function executeWithHttpOperationResponse(resourceGroupName, labName,
         name, options)
-    langs:
-      - js
   - uid: 'azure-arm-devtestlabs.ScheduleOperations#execute'
     id: 'azure-arm-devtestlabs.ScheduleOperations#execute'
     parent: azure-arm-devtestlabs.ScheduleOperations
@@ -1291,37 +1068,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.execute(resourceGroupName,
       labName, name, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1366,8 +1114,6 @@ items:
       content: >-
         function execute(resourceGroupName, labName, name, options,
         optionalCallback)
-    langs:
-      - js
   - uid: >-
       azure-arm-devtestlabs.ScheduleOperations#beginExecuteWithHttpOperationResponse
     id: >-
@@ -1380,15 +1126,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.beginExecuteWithHttpOperationResponse(resourceGroupName,
       labName, name, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1423,8 +1162,6 @@ items:
       content: >-
         function beginExecuteWithHttpOperationResponse(resourceGroupName,
         labName, name, options)
-    langs:
-      - js
   - uid: 'azure-arm-devtestlabs.ScheduleOperations#beginExecute'
     id: 'azure-arm-devtestlabs.ScheduleOperations#beginExecute'
     parent: azure-arm-devtestlabs.ScheduleOperations
@@ -1433,37 +1170,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.beginExecute(resourceGroupName,
       labName, name, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1508,8 +1216,6 @@ items:
       content: >-
         function beginExecute(resourceGroupName, labName, name, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-arm-devtestlabs.ScheduleOperations#listNextWithHttpOperationResponse'
     id: 'azure-arm-devtestlabs.ScheduleOperations#listNextWithHttpOperationResponse'
     parent: azure-arm-devtestlabs.ScheduleOperations
@@ -1518,19 +1224,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.listNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ResponseWithContinuationSchedule>} - The
-          deserialized result object.
-        value: >-
-          {HttpOperationResponse<ResponseWithContinuationSchedule>} - The
-          deserialized result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1557,8 +1252,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
   - uid: 'azure-arm-devtestlabs.ScheduleOperations#listNext'
     id: 'azure-arm-devtestlabs.ScheduleOperations#listNext'
     parent: azure-arm-devtestlabs.ScheduleOperations
@@ -1567,41 +1260,8 @@ items:
     fullName: >-
       azure-arm-devtestlabs.ScheduleOperations.listNext(nextPageLink, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ResponseWithContinuationSchedule} - The deserialized result object.'
-        value: '{ResponseWithContinuationSchedule} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResponseWithContinuationSchedule} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ResponseWithContinuationSchedule} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1638,8 +1298,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-arm-devtestlabs.DevTestLabsClient
     name: DevTestLabsClient

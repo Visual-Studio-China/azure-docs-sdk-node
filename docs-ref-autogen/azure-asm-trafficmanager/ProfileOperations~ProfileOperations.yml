@@ -23,6 +23,8 @@ items:
         path: >-
           lib\services\trafficManagerManagement\lib\trafficManagerManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations.#ctor'
@@ -34,8 +36,6 @@ items:
       - 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations#get'
       - 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations#list'
       - 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations#update'
-    langs:
-      - js
   - id: 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations.#ctor'
     uid: 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations.#ctor'
     parent: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
@@ -67,6 +67,8 @@ items:
     fullName: >-
       azure-asm-trafficmanager.ProfileOperations~ProfileOperations.checkDnsPrefixAvailability(dnsName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -83,8 +85,6 @@ items:
           - azure-asm-trafficmanager.Stream
         description: The response stream.
       content: 'function checkDnsPrefixAvailability(dnsName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations#create'
     id: 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations#create'
     parent: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
@@ -96,6 +96,8 @@ items:
     fullName: >-
       azure-asm-trafficmanager.ProfileOperations~ProfileOperations.create(name,
       domainName, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -118,8 +120,6 @@ items:
           - azure-asm-trafficmanager.Stream
         description: The response stream.
       content: 'function create(name, domainName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations#deleteMethod'
     id: 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations#deleteMethod'
     parent: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
@@ -131,6 +131,8 @@ items:
     fullName: >-
       azure-asm-trafficmanager.ProfileOperations~ProfileOperations.deleteMethod(profileName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -147,8 +149,6 @@ items:
           - azure-asm-trafficmanager.Stream
         description: The response stream.
       content: 'function deleteMethod(profileName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations#get'
     id: 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations#get'
     parent: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
@@ -160,6 +160,8 @@ items:
     fullName: >-
       azure-asm-trafficmanager.ProfileOperations~ProfileOperations.get(profileName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -176,8 +178,6 @@ items:
           - azure-asm-trafficmanager.Stream
         description: The response stream.
       content: 'function get(profileName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations#list'
     id: 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations#list'
     parent: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
@@ -188,6 +188,8 @@ items:
       information)
     fullName: >-
       azure-asm-trafficmanager.ProfileOperations~ProfileOperations.list(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -200,8 +202,6 @@ items:
           - azure-asm-trafficmanager.Stream
         description: The response stream.
       content: function list(callback)
-    langs:
-      - js
   - uid: 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations#update'
     id: 'azure-asm-trafficmanager.ProfileOperations~ProfileOperations#update'
     parent: azure-asm-trafficmanager.ProfileOperations~ProfileOperations
@@ -213,6 +213,8 @@ items:
     fullName: >-
       azure-asm-trafficmanager.ProfileOperations~ProfileOperations.update(profileName,
       profileStatus, definitionVersionNumber, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -243,5 +245,3 @@ items:
       content: >-
         function update(profileName, profileStatus, definitionVersionNumber,
         callback)
-    langs:
-      - js

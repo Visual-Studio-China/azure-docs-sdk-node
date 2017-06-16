@@ -22,6 +22,8 @@ items:
         branch: master
         path: lib\services\management\lib\managementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations.#ctor'
@@ -32,8 +34,6 @@ items:
         azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations#registerResource
       - >-
         azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations#unregisterResource
-    langs:
-      - js
   - id: 'azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations.#ctor'
     uid: 'azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations.#ctor'
     parent: azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations
@@ -60,6 +60,8 @@ items:
       http://msdn.microsoft.com/en-us/library/windowsazure/hh403995.aspx for
       more information)
     fullName: azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations.get(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -72,8 +74,6 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: function get(callback)
-    langs:
-      - js
   - uid: >-
       azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations#listOperations
     id: >-
@@ -89,6 +89,8 @@ items:
     fullName: >-
       azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations.listOperations(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -185,8 +187,6 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: 'function listOperations(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations#registerResource
     id: >-
@@ -197,6 +197,8 @@ items:
     fullName: >-
       azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations.registerResource(resourceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -213,8 +215,6 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: 'function registerResource(resourceName, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations#unregisterResource
     id: >-
@@ -225,6 +225,8 @@ items:
     fullName: >-
       azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations.unregisterResource(resourceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -241,5 +243,3 @@ items:
           - azure-asm-mgmt.Stream
         description: The response stream.
       content: 'function unregisterResource(resourceName, callback)'
-    langs:
-      - js

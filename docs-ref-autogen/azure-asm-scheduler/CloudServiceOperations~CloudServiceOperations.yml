@@ -19,6 +19,8 @@ items:
         branch: master
         path: lib\services\schedulerManagement\lib\cloudServiceManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations.#ctor'
@@ -30,8 +32,6 @@ items:
       - 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#delete'
       - 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#get'
       - 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#list'
-    langs:
-      - js
   - id: 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations.#ctor'
     uid: 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations.#ctor'
     parent: azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations
@@ -60,6 +60,8 @@ items:
     fullName: >-
       azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations.beginCreating(cloudServiceName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -103,8 +105,6 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: 'function beginCreating(cloudServiceName, parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#beginDeleting
     id: >-
@@ -115,6 +115,8 @@ items:
     fullName: >-
       azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations.beginDeleting(cloudServiceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -131,8 +133,6 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: 'function beginDeleting(cloudServiceName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#create'
     id: 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#create'
     parent: azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations
@@ -141,6 +141,8 @@ items:
     fullName: >-
       azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations.create(cloudServiceName,
       parameters, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -184,8 +186,6 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: 'function create(cloudServiceName, parameters, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#delete'
     id: 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#delete'
     parent: azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations
@@ -194,6 +194,8 @@ items:
     fullName: >-
       azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations.delete(cloudServiceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -210,8 +212,6 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: 'function delete(cloudServiceName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#get'
     id: 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#get'
     parent: azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations
@@ -220,6 +220,8 @@ items:
     fullName: >-
       azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations.get(cloudServiceName,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -236,8 +238,6 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: 'function get(cloudServiceName, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#list'
     id: 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations#list'
     parent: azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations
@@ -247,6 +247,8 @@ items:
       for a subscription.
     fullName: >-
       azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations.list(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -259,5 +261,3 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: function list(callback)
-    langs:
-      - js

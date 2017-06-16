@@ -13,12 +13,12 @@ items:
         branch: master
         path: lib\services\batch\lib\hmacsha256.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-batch.HmacSha256Sign.#ctor'
       - 'azure-batch.HmacSha256Sign#sign'
-    langs:
-      - js
   - id: 'azure-batch.HmacSha256Sign.#ctor'
     uid: 'azure-batch.HmacSha256Sign.#ctor'
     parent: azure-batch.HmacSha256Sign
@@ -38,6 +38,8 @@ items:
       Computes a signature for the specified string using the HMAC-SHA256
       algorithm.
     fullName: azure-batch.HmacSha256Sign.sign(stringToSign)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -48,5 +50,3 @@ items:
       return:
         description: A String that contains the HMAC-SHA256-encoded signature.
       content: function sign(stringToSign)
-    langs:
-      - js

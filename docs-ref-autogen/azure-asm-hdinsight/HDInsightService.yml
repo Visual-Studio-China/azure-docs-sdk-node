@@ -15,6 +15,8 @@ items:
         branch: master
         path: lib\services\hdinsight\lib\hdinsightservice.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-asm-hdinsight.HDInsightService.#ctor'
@@ -22,8 +24,6 @@ items:
       - 'azure-asm-hdinsight.HDInsightService#deleteCluster'
       - 'azure-asm-hdinsight.HDInsightService#createCluster'
       - 'azure-asm-hdinsight.HDInsightService#listClusters'
-    langs:
-      - js
   - id: 'azure-asm-hdinsight.HDInsightService.#ctor'
     uid: 'azure-asm-hdinsight.HDInsightService.#ctor'
     parent: azure-asm-hdinsight.HDInsightService
@@ -99,6 +99,8 @@ items:
       to the server to create the cluster.
     fullName: >-
       azure-asm-hdinsight.HDInsightService.convertCreationObject(clusterCreationObject)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -196,8 +198,6 @@ items:
             - string
           description: The user password
       content: function convertCreationObject(clusterCreationObject)
-    langs:
-      - js
   - uid: 'azure-asm-hdinsight.HDInsightService#deleteCluster'
     id: 'azure-asm-hdinsight.HDInsightService#deleteCluster'
     parent: azure-asm-hdinsight.HDInsightService
@@ -206,6 +206,8 @@ items:
     fullName: >-
       azure-asm-hdinsight.HDInsightService.deleteCluster(name, location,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -225,8 +227,6 @@ items:
                                                                     if an error occurs; otherwise, `response`
                                                                     will contain information related to this operation.
       content: 'function deleteCluster(name, location, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-hdinsight.HDInsightService#createCluster'
     id: 'azure-asm-hdinsight.HDInsightService#createCluster'
     parent: azure-asm-hdinsight.HDInsightService
@@ -235,6 +235,8 @@ items:
     fullName: >-
       azure-asm-hdinsight.HDInsightService.createCluster(clusterCreationObject,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -347,14 +349,14 @@ items:
                                                                     if an error occurs; otherwise, `response`
                                                                     will contain information related to this operation.
       content: 'function createCluster(clusterCreationObject, callback)'
-    langs:
-      - js
   - uid: 'azure-asm-hdinsight.HDInsightService#listClusters'
     id: 'azure-asm-hdinsight.HDInsightService#listClusters'
     parent: azure-asm-hdinsight.HDInsightService
     name: listClusters(callback)
     summary: Lists all HDInsight clusters current existing on the subscription.
     fullName: azure-asm-hdinsight.HDInsightService.listClusters(callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -366,5 +368,3 @@ items:
                                                                     if an error occurs; otherwise, `response`
                                                                     will contain information related to this operation.
       content: function listClusters(callback)
-    langs:
-      - js

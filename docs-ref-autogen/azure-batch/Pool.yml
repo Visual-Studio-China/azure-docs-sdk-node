@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\batch\lib\operations\pool.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-batch.Pool.#ctor'
@@ -56,8 +58,6 @@ items:
       - 'azure-batch.Pool#listUsageMetricsNext'
       - 'azure-batch.Pool#listNextWithHttpOperationResponse'
       - 'azure-batch.Pool#listNext'
-    langs:
-      - js
   - id: 'azure-batch.Pool.#ctor'
     uid: 'azure-batch.Pool.#ctor'
     parent: azure-batch.Pool
@@ -86,19 +86,8 @@ items:
       includes all pools that existed in the account in the time range of the
       returned aggregation intervals.
     fullName: azure-batch.Pool.listUsageMetricsWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<PoolListUsageMetricsResult>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<PoolListUsageMetricsResult>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -221,8 +210,6 @@ items:
           - Promise
         description: A promise is returned
       content: function listUsageMetricsWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#listUsageMetrics'
     id: 'azure-batch.Pool#listUsageMetrics'
     parent: azure-batch.Pool
@@ -235,41 +222,8 @@ items:
       includes all pools that existed in the account in the time range of the
       returned aggregation intervals.
     fullName: 'azure-batch.Pool.listUsageMetrics(options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{PoolListUsageMetricsResult} - The deserialized result object.'
-        value: '{PoolListUsageMetricsResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PoolListUsageMetricsResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PoolListUsageMetricsResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -402,8 +356,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listUsageMetrics(options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#getAllLifetimeStatisticsWithHttpOperationResponse'
     id: 'azure-batch.Pool#getAllLifetimeStatisticsWithHttpOperationResponse'
     parent: azure-batch.Pool
@@ -416,19 +368,8 @@ items:
       account, from account creation to the last update time of the statistics.
     fullName: >-
       azure-batch.Pool.getAllLifetimeStatisticsWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<PoolStatistics>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<PoolStatistics>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -496,8 +437,6 @@ items:
           - Promise
         description: A promise is returned
       content: function getAllLifetimeStatisticsWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#getAllLifetimeStatistics'
     id: 'azure-batch.Pool#getAllLifetimeStatistics'
     parent: azure-batch.Pool
@@ -509,39 +448,8 @@ items:
       Statistics are aggregated across all pools that have ever existed in the
       account, from account creation to the last update time of the statistics.
     fullName: 'azure-batch.Pool.getAllLifetimeStatistics(options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{PoolStatistics} - The deserialized result object.'
-        value: '{PoolStatistics} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PoolStatistics} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PoolStatistics} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -619,8 +527,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function getAllLifetimeStatistics(options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#addWithHttpOperationResponse'
     id: 'azure-batch.Pool#addWithHttpOperationResponse'
     parent: azure-batch.Pool
@@ -636,15 +542,8 @@ items:
 
       accessible to Microsoft Support engineers.
     fullName: 'azure-batch.Pool.addWithHttpOperationResponse(pool, options)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1504,8 +1403,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function addWithHttpOperationResponse(pool, options)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#add'
     id: 'azure-batch.Pool#add'
     parent: azure-batch.Pool
@@ -1521,37 +1418,8 @@ items:
 
       accessible to Microsoft Support engineers.
     fullName: 'azure-batch.Pool.add(pool, options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2421,27 +2289,14 @@ items:
 
           {Promise} A promise is returned
       content: 'function add(pool, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#listWithHttpOperationResponse'
     id: 'azure-batch.Pool#listWithHttpOperationResponse'
     parent: azure-batch.Pool
     name: listWithHttpOperationResponse(options)
     summary: Lists all of the pools in the specified account.
     fullName: azure-batch.Pool.listWithHttpOperationResponse(options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<CloudPoolListResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<CloudPoolListResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2533,47 +2388,14 @@ items:
           - Promise
         description: A promise is returned
       content: function listWithHttpOperationResponse(options)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#list'
     id: 'azure-batch.Pool#list'
     parent: azure-batch.Pool
     name: 'list(options, optionalCallback)'
     summary: Lists all of the pools in the specified account.
     fullName: 'azure-batch.Pool.list(options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{CloudPoolListResult} - The deserialized result object.'
-        value: '{CloudPoolListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CloudPoolListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CloudPoolListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2675,8 +2497,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function list(options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#deleteMethodWithHttpOperationResponse'
     id: 'azure-batch.Pool#deleteMethodWithHttpOperationResponse'
     parent: azure-batch.Pool
@@ -2716,15 +2536,8 @@ items:
 
       with error code PoolBeingDeleted.
     fullName: 'azure-batch.Pool.deleteMethodWithHttpOperationResponse(poolId, options)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -2850,8 +2663,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function deleteMethodWithHttpOperationResponse(poolId, options)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#deleteMethod'
     id: 'azure-batch.Pool#deleteMethod'
     parent: azure-batch.Pool
@@ -2891,37 +2702,8 @@ items:
 
       with error code PoolBeingDeleted.
     fullName: 'azure-batch.Pool.deleteMethod(poolId, options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3057,23 +2839,14 @@ items:
 
           {Promise} A promise is returned
       content: 'function deleteMethod(poolId, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#existsWithHttpOperationResponse'
     id: 'azure-batch.Pool#existsWithHttpOperationResponse'
     parent: azure-batch.Pool
     name: 'existsWithHttpOperationResponse(poolId, options)'
     summary: Gets basic properties of a pool.
     fullName: 'azure-batch.Pool.existsWithHttpOperationResponse(poolId, options)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<Boolean>} - The deserialized result object.'
-        value: '{HttpOperationResponse<Boolean>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3200,45 +2973,14 @@ items:
           - Promise
         description: A promise is returned
       content: 'function existsWithHttpOperationResponse(poolId, options)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#exists'
     id: 'azure-batch.Pool#exists'
     parent: azure-batch.Pool
     name: 'exists(poolId, options, optionalCallback)'
     summary: Gets basic properties of a pool.
     fullName: 'azure-batch.Pool.exists(poolId, options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{Boolean} - The deserialized result object.'
-        value: '{Boolean} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {boolean} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {boolean} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3375,23 +3117,14 @@ items:
 
           {Promise} A promise is returned
       content: 'function exists(poolId, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#getWithHttpOperationResponse'
     id: 'azure-batch.Pool#getWithHttpOperationResponse'
     parent: azure-batch.Pool
     name: 'getWithHttpOperationResponse(poolId, options)'
     summary: Gets information about the specified pool.
     fullName: 'azure-batch.Pool.getWithHttpOperationResponse(poolId, options)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<CloudPool>} - The deserialized result object.'
-        value: '{HttpOperationResponse<CloudPool>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3528,47 +3261,14 @@ items:
           - Promise
         description: A promise is returned
       content: 'function getWithHttpOperationResponse(poolId, options)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#get'
     id: 'azure-batch.Pool#get'
     parent: azure-batch.Pool
     name: 'get(poolId, options, optionalCallback)'
     summary: Gets information about the specified pool.
     fullName: 'azure-batch.Pool.get(poolId, options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{CloudPool} - The deserialized result object.'
-        value: '{CloudPool} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CloudPool} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CloudPool} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -3715,8 +3415,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function get(poolId, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#patchWithHttpOperationResponse'
     id: 'azure-batch.Pool#patchWithHttpOperationResponse'
     parent: azure-batch.Pool
@@ -3736,15 +3434,8 @@ items:
     fullName: >-
       azure-batch.Pool.patchWithHttpOperationResponse(poolId,
       poolPatchParameter, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4137,8 +3828,6 @@ items:
       content: >-
         function patchWithHttpOperationResponse(poolId, poolPatchParameter,
         options)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#patch'
     id: 'azure-batch.Pool#patch'
     parent: azure-batch.Pool
@@ -4158,37 +3847,8 @@ items:
     fullName: >-
       azure-batch.Pool.patch(poolId, poolPatchParameter, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4589,8 +4249,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function patch(poolId, poolPatchParameter, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#disableAutoScaleWithHttpOperationResponse'
     id: 'azure-batch.Pool#disableAutoScaleWithHttpOperationResponse'
     parent: azure-batch.Pool
@@ -4599,15 +4257,8 @@ items:
     fullName: >-
       azure-batch.Pool.disableAutoScaleWithHttpOperationResponse(poolId,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4683,45 +4334,14 @@ items:
           - Promise
         description: A promise is returned
       content: 'function disableAutoScaleWithHttpOperationResponse(poolId, options)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#disableAutoScale'
     id: 'azure-batch.Pool#disableAutoScale'
     parent: azure-batch.Pool
     name: 'disableAutoScale(poolId, options, optionalCallback)'
     summary: Disables automatic scaling for a pool.
     fullName: 'azure-batch.Pool.disableAutoScale(poolId, options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -4807,8 +4427,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function disableAutoScale(poolId, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#enableAutoScaleWithHttpOperationResponse'
     id: 'azure-batch.Pool#enableAutoScaleWithHttpOperationResponse'
     parent: azure-batch.Pool
@@ -4835,15 +4453,8 @@ items:
     fullName: >-
       azure-batch.Pool.enableAutoScaleWithHttpOperationResponse(poolId,
       poolEnableAutoScaleParameter, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -5034,8 +4645,6 @@ items:
       content: >-
         function enableAutoScaleWithHttpOperationResponse(poolId,
         poolEnableAutoScaleParameter, options)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#enableAutoScale'
     id: 'azure-batch.Pool#enableAutoScale'
     parent: azure-batch.Pool
@@ -5062,37 +4671,8 @@ items:
     fullName: >-
       azure-batch.Pool.enableAutoScale(poolId, poolEnableAutoScaleParameter,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -5293,8 +4873,6 @@ items:
       content: >-
         function enableAutoScale(poolId, poolEnableAutoScaleParameter, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#evaluateAutoScaleWithHttpOperationResponse'
     id: 'azure-batch.Pool#evaluateAutoScaleWithHttpOperationResponse'
     parent: azure-batch.Pool
@@ -5310,19 +4888,8 @@ items:
     fullName: >-
       azure-batch.Pool.evaluateAutoScaleWithHttpOperationResponse(poolId,
       autoScaleFormula, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<AutoScaleRun>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<AutoScaleRun>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -5420,8 +4987,6 @@ items:
       content: >-
         function evaluateAutoScaleWithHttpOperationResponse(poolId,
         autoScaleFormula, options)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#evaluateAutoScale'
     id: 'azure-batch.Pool#evaluateAutoScale'
     parent: azure-batch.Pool
@@ -5435,39 +5000,8 @@ items:
     fullName: >-
       azure-batch.Pool.evaluateAutoScale(poolId, autoScaleFormula, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{AutoScaleRun} - The deserialized result object.'
-        value: '{AutoScaleRun} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AutoScaleRun} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link AutoScaleRun} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -5575,8 +5109,6 @@ items:
       content: >-
         function evaluateAutoScale(poolId, autoScaleFormula, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#resizeWithHttpOperationResponse'
     id: 'azure-batch.Pool#resizeWithHttpOperationResponse'
     parent: azure-batch.Pool
@@ -5603,15 +5135,8 @@ items:
     fullName: >-
       azure-batch.Pool.resizeWithHttpOperationResponse(poolId,
       poolResizeParameter, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -5791,8 +5316,6 @@ items:
       content: >-
         function resizeWithHttpOperationResponse(poolId, poolResizeParameter,
         options)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#resize'
     id: 'azure-batch.Pool#resize'
     parent: azure-batch.Pool
@@ -5819,37 +5342,8 @@ items:
     fullName: >-
       azure-batch.Pool.resize(poolId, poolResizeParameter, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6037,8 +5531,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function resize(poolId, poolResizeParameter, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#stopResizeWithHttpOperationResponse'
     id: 'azure-batch.Pool#stopResizeWithHttpOperationResponse'
     parent: azure-batch.Pool
@@ -6058,15 +5550,8 @@ items:
 
       the pool when it is created.
     fullName: 'azure-batch.Pool.stopResizeWithHttpOperationResponse(poolId, options)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6192,8 +5677,6 @@ items:
           - Promise
         description: A promise is returned
       content: 'function stopResizeWithHttpOperationResponse(poolId, options)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#stopResize'
     id: 'azure-batch.Pool#stopResize'
     parent: azure-batch.Pool
@@ -6213,37 +5696,8 @@ items:
 
       the pool when it is created.
     fullName: 'azure-batch.Pool.stopResize(poolId, options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6379,8 +5833,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function stopResize(poolId, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#updatePropertiesWithHttpOperationResponse'
     id: 'azure-batch.Pool#updatePropertiesWithHttpOperationResponse'
     parent: azure-batch.Pool
@@ -6403,15 +5855,8 @@ items:
     fullName: >-
       azure-batch.Pool.updatePropertiesWithHttpOperationResponse(poolId,
       poolUpdatePropertiesParameter, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -6746,8 +6191,6 @@ items:
       content: >-
         function updatePropertiesWithHttpOperationResponse(poolId,
         poolUpdatePropertiesParameter, options)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#updateProperties'
     id: 'azure-batch.Pool#updateProperties'
     parent: azure-batch.Pool
@@ -6770,37 +6213,8 @@ items:
     fullName: >-
       azure-batch.Pool.updateProperties(poolId, poolUpdatePropertiesParameter,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -7145,8 +6559,6 @@ items:
       content: >-
         function updateProperties(poolId, poolUpdatePropertiesParameter,
         options, optionalCallback)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#upgradeOSWithHttpOperationResponse'
     id: 'azure-batch.Pool#upgradeOSWithHttpOperationResponse'
     parent: azure-batch.Pool
@@ -7185,15 +6597,8 @@ items:
     fullName: >-
       azure-batch.Pool.upgradeOSWithHttpOperationResponse(poolId,
       targetOSVersion, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -7327,8 +6732,6 @@ items:
       content: >-
         function upgradeOSWithHttpOperationResponse(poolId, targetOSVersion,
         options)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#upgradeOS'
     id: 'azure-batch.Pool#upgradeOS'
     parent: azure-batch.Pool
@@ -7367,37 +6770,8 @@ items:
     fullName: >-
       azure-batch.Pool.upgradeOS(poolId, targetOSVersion, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -7539,8 +6913,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function upgradeOS(poolId, targetOSVersion, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#removeNodesWithHttpOperationResponse'
     id: 'azure-batch.Pool#removeNodesWithHttpOperationResponse'
     parent: azure-batch.Pool
@@ -7558,15 +6930,8 @@ items:
     fullName: >-
       azure-batch.Pool.removeNodesWithHttpOperationResponse(poolId,
       nodeRemoveParameter, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -7736,8 +7101,6 @@ items:
       content: >-
         function removeNodesWithHttpOperationResponse(poolId,
         nodeRemoveParameter, options)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#removeNodes'
     id: 'azure-batch.Pool#removeNodes'
     parent: azure-batch.Pool
@@ -7755,37 +7118,8 @@ items:
     fullName: >-
       azure-batch.Pool.removeNodes(poolId, nodeRemoveParameter, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -7965,8 +7299,6 @@ items:
       content: >-
         function removeNodes(poolId, nodeRemoveParameter, options,
         optionalCallback)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#listUsageMetricsNextWithHttpOperationResponse'
     id: 'azure-batch.Pool#listUsageMetricsNextWithHttpOperationResponse'
     parent: azure-batch.Pool
@@ -7981,19 +7313,8 @@ items:
     fullName: >-
       azure-batch.Pool.listUsageMetricsNextWithHttpOperationResponse(nextPageLink,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<PoolListUsageMetricsResult>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<PoolListUsageMetricsResult>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8060,8 +7381,6 @@ items:
       content: >-
         function listUsageMetricsNextWithHttpOperationResponse(nextPageLink,
         options)
-    langs:
-      - js
   - uid: 'azure-batch.Pool#listUsageMetricsNext'
     id: 'azure-batch.Pool#listUsageMetricsNext'
     parent: azure-batch.Pool
@@ -8076,41 +7395,8 @@ items:
     fullName: >-
       azure-batch.Pool.listUsageMetricsNext(nextPageLink, options,
       optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{PoolListUsageMetricsResult} - The deserialized result object.'
-        value: '{PoolListUsageMetricsResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PoolListUsageMetricsResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PoolListUsageMetricsResult} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8185,27 +7471,14 @@ items:
 
           {Promise} A promise is returned
       content: 'function listUsageMetricsNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#listNextWithHttpOperationResponse'
     id: 'azure-batch.Pool#listNextWithHttpOperationResponse'
     parent: azure-batch.Pool
     name: 'listNextWithHttpOperationResponse(nextPageLink, options)'
     summary: Lists all of the pools in the specified account.
     fullName: 'azure-batch.Pool.listNextWithHttpOperationResponse(nextPageLink, options)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<CloudPoolListResult>} - The deserialized result
-          object.
-        value: >-
-          {HttpOperationResponse<CloudPoolListResult>} - The deserialized result
-          object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8268,47 +7541,14 @@ items:
           - Promise
         description: A promise is returned
       content: 'function listNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
   - uid: 'azure-batch.Pool#listNext'
     id: 'azure-batch.Pool#listNext'
     parent: azure-batch.Pool
     name: 'listNext(nextPageLink, options, optionalCallback)'
     summary: Lists all of the pools in the specified account.
     fullName: 'azure-batch.Pool.listNext(nextPageLink, options, optionalCallback)'
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{CloudPoolListResult} - The deserialized result object.'
-        value: '{CloudPoolListResult} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CloudPoolListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link CloudPoolListResult} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -8381,8 +7621,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function listNext(nextPageLink, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-batch.BatchServiceClient
     name: BatchServiceClient

@@ -13,6 +13,8 @@ items:
         branch: master
         path: lib\services\legacyStorage\lib\blob\internal\sharedaccesssignature.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-storage-legacy.SharedAccessSignature.#ctor'
@@ -20,8 +22,6 @@ items:
       - 'azure-storage-legacy.SharedAccessSignature#signRequest'
       - 'azure-storage-legacy.SharedAccessSignature#_generateSignature'
       - 'azure-storage-legacy.SharedAccessSignature#_permissionMatchesRequest'
-    langs:
-      - js
   - id: 'azure-storage-legacy.SharedAccessSignature.#ctor'
     uid: 'azure-storage-legacy.SharedAccessSignature.#ctor'
     parent: azure-storage-legacy.SharedAccessSignature
@@ -58,15 +58,8 @@ items:
     fullName: >-
       azure-storage-legacy.SharedAccessSignature.generateSignedQueryString(path,
       sharedAccessPolicy)
-    tags:
-      - originalTitle: parma
-        title: parma
-        text: >-
-          {ResourceTypes}             
-          resourceType                                  The resource type.
-        value: >-
-          {ResourceTypes}             
-          resourceType                                  The resource type.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -101,14 +94,14 @@ items:
           - object
         description: The shared access signature query string.
       content: 'function generateSignedQueryString(path, sharedAccessPolicy)'
-    langs:
-      - js
   - uid: 'azure-storage-legacy.SharedAccessSignature#signRequest'
     id: 'azure-storage-legacy.SharedAccessSignature#signRequest'
     parent: azure-storage-legacy.SharedAccessSignature
     name: 'signRequest(The, callback)'
     summary: Signs a request with the signature header.
     fullName: 'azure-storage-legacy.SharedAccessSignature.signRequest(The, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -125,8 +118,6 @@ items:
           - undefined
         description: ''
       content: 'function signRequest(The, callback)'
-    langs:
-      - js
   - uid: 'azure-storage-legacy.SharedAccessSignature#_generateSignature'
     id: 'azure-storage-legacy.SharedAccessSignature#_generateSignature'
     parent: azure-storage-legacy.SharedAccessSignature
@@ -135,15 +126,8 @@ items:
     fullName: >-
       azure-storage-legacy.SharedAccessSignature._generateSignature(path,
       sharedAccessPolicy)
-    tags:
-      - originalTitle: parma
-        title: parma
-        text: >-
-          {ResourceTypes}             
-          resourceType                                  The resource type.
-        value: >-
-          {ResourceTypes}             
-          resourceType                                  The resource type.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -178,8 +162,6 @@ items:
           - string
         description: The shared access signature.
       content: 'function _generateSignature(path, sharedAccessPolicy)'
-    langs:
-      - js
   - uid: 'azure-storage-legacy.SharedAccessSignature#_permissionMatchesRequest'
     id: 'azure-storage-legacy.SharedAccessSignature#_permissionMatchesRequest'
     parent: azure-storage-legacy.SharedAccessSignature
@@ -188,23 +170,8 @@ items:
     fullName: >-
       azure-storage-legacy.SharedAccessSignature._permissionMatchesRequest(sharedAccessSignature,
       requiredPermission)
-    tags:
-      - originalTitle: parma
-        title: parma
-        text: >-
-          {WebResource}                webResource               The web
-          resource.
-        value: >-
-          {WebResource}                webResource               The web
-          resource.
-      - originalTitle: parma
-        title: parma
-        text: >-
-          {ResourceTypes}              resourceType              The resource
-          type.
-        value: >-
-          {ResourceTypes}              resourceType              The resource
-          type.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -223,5 +190,3 @@ items:
       content: >-
         function _permissionMatchesRequest(sharedAccessSignature,
         requiredPermission)
-    langs:
-      - js

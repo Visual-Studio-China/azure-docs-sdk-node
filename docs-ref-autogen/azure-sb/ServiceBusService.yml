@@ -40,6 +40,8 @@ items:
         branch: master
         path: lib\services\serviceBus\lib\servicebusservice.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-sb.ServiceBusService.#ctor'
@@ -74,8 +76,6 @@ items:
       - 'azure-sb.ServiceBusService#getNotificationHub'
       - 'azure-sb.ServiceBusService#listNotificationHubs'
       - 'azure-sb.ServiceBusService#deleteNotificationHub'
-    langs:
-      - js
   - id: 'azure-sb.ServiceBusService.#ctor'
     uid: 'azure-sb.ServiceBusService.#ctor'
     parent: azure-sb.ServiceBusService
@@ -146,6 +146,8 @@ items:
     fullName: >-
       azure-sb.ServiceBusService.receiveQueueMessage(queuePath, options,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -185,8 +187,6 @@ items:
           - undefined
         description: ''
       content: 'function receiveQueueMessage(queuePath, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#receiveSubscriptionMessage'
     id: 'azure-sb.ServiceBusService#receiveSubscriptionMessage'
     parent: azure-sb.ServiceBusService
@@ -195,6 +195,8 @@ items:
     fullName: >-
       azure-sb.ServiceBusService.receiveSubscriptionMessage(topicPath,
       subscriptionPath, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -240,14 +242,14 @@ items:
       content: >-
         function receiveSubscriptionMessage(topicPath, subscriptionPath,
         options, callback)
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#deleteMessage'
     id: 'azure-sb.ServiceBusService#deleteMessage'
     parent: azure-sb.ServiceBusService
     name: 'deleteMessage(message, callback)'
     summary: Deletes a message.
     fullName: 'azure-sb.ServiceBusService.deleteMessage(message, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -267,14 +269,14 @@ items:
           - undefined
         description: ''
       content: 'function deleteMessage(message, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#unlockMessage'
     id: 'azure-sb.ServiceBusService#unlockMessage'
     parent: azure-sb.ServiceBusService
     name: 'unlockMessage(message, callback)'
     summary: Unlocks a message.
     fullName: 'azure-sb.ServiceBusService.unlockMessage(message, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -294,14 +296,14 @@ items:
           - undefined
         description: ''
       content: 'function unlockMessage(message, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#renewLockForMessage'
     id: 'azure-sb.ServiceBusService#renewLockForMessage'
     parent: azure-sb.ServiceBusService
     name: 'renewLockForMessage(message, callback)'
     summary: Renew-lock for message.
     fullName: 'azure-sb.ServiceBusService.renewLockForMessage(message, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -321,14 +323,14 @@ items:
           - undefined
         description: ''
       content: 'function renewLockForMessage(message, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#sendQueueMessage'
     id: 'azure-sb.ServiceBusService#sendQueueMessage'
     parent: azure-sb.ServiceBusService
     name: 'sendQueueMessage(queuePath, message, callback)'
     summary: Sends a queue message.
     fullName: 'azure-sb.ServiceBusService.sendQueueMessage(queuePath, message, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -409,14 +411,14 @@ items:
           - undefined
         description: ''
       content: 'function sendQueueMessage(queuePath, message, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#sendTopicMessage'
     id: 'azure-sb.ServiceBusService#sendTopicMessage'
     parent: azure-sb.ServiceBusService
     name: 'sendTopicMessage(topicPath, message, callback)'
     summary: Sends a topic message.
     fullName: 'azure-sb.ServiceBusService.sendTopicMessage(topicPath, message, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -499,14 +501,14 @@ items:
           - undefined
         description: ''
       content: 'function sendTopicMessage(topicPath, message, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#_sendMessage'
     id: 'azure-sb.ServiceBusService#_sendMessage'
     parent: azure-sb.ServiceBusService
     name: '_sendMessage(path, message, callback)'
     summary: Sends a message.
     fullName: 'azure-sb.ServiceBusService._sendMessage(path, message, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -587,14 +589,14 @@ items:
           - undefined
         description: ''
       content: 'function _sendMessage(path, message, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#_receiveMessage'
     id: 'azure-sb.ServiceBusService#_receiveMessage'
     parent: azure-sb.ServiceBusService
     name: '_receiveMessage(path, options, callback)'
     summary: Receives a message.
     fullName: 'azure-sb.ServiceBusService._receiveMessage(path, options, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -636,14 +638,14 @@ items:
           - undefined
         description: ''
       content: 'function _receiveMessage(path, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#createQueue'
     id: 'azure-sb.ServiceBusService#createQueue'
     parent: azure-sb.ServiceBusService
     name: 'createQueue(queuePath, options, callback)'
     summary: Creates a queue.
     fullName: 'azure-sb.ServiceBusService.createQueue(queuePath, options, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -732,8 +734,6 @@ items:
           - undefined
         description: ''
       content: 'function createQueue(queuePath, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#createQueueIfNotExists'
     id: 'azure-sb.ServiceBusService#createQueueIfNotExists'
     parent: azure-sb.ServiceBusService
@@ -742,6 +742,8 @@ items:
     fullName: >-
       azure-sb.ServiceBusService.createQueueIfNotExists(queuePath, options,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -830,14 +832,14 @@ items:
           - undefined
         description: ''
       content: 'function createQueueIfNotExists(queuePath, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#deleteQueue'
     id: 'azure-sb.ServiceBusService#deleteQueue'
     parent: azure-sb.ServiceBusService
     name: 'deleteQueue(queuePath, callback)'
     summary: Deletes a queue.
     fullName: 'azure-sb.ServiceBusService.deleteQueue(queuePath, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -856,14 +858,14 @@ items:
           - undefined
         description: ''
       content: 'function deleteQueue(queuePath, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#getQueue'
     id: 'azure-sb.ServiceBusService#getQueue'
     parent: azure-sb.ServiceBusService
     name: 'getQueue(queuePath, callback)'
     summary: Retrieves a queue.
     fullName: 'azure-sb.ServiceBusService.getQueue(queuePath, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -884,14 +886,14 @@ items:
           - undefined
         description: ''
       content: 'function getQueue(queuePath, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#listQueues'
     id: 'azure-sb.ServiceBusService#listQueues'
     parent: azure-sb.ServiceBusService
     name: 'listQueues(options, callback)'
     summary: Returns a list of queues.
     fullName: 'azure-sb.ServiceBusService.listQueues(options, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -923,14 +925,14 @@ items:
           - undefined
         description: ''
       content: 'function listQueues(options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#createTopic'
     id: 'azure-sb.ServiceBusService#createTopic'
     parent: azure-sb.ServiceBusService
     name: 'createTopic(topic, options, callback)'
     summary: Creates a topic.
     fullName: 'azure-sb.ServiceBusService.createTopic(topic, options, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1014,8 +1016,6 @@ items:
           - undefined
         description: ''
       content: 'function createTopic(topic, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#createTopicIfNotExists'
     id: 'azure-sb.ServiceBusService#createTopicIfNotExists'
     parent: azure-sb.ServiceBusService
@@ -1024,6 +1024,8 @@ items:
     fullName: >-
       azure-sb.ServiceBusService.createTopicIfNotExists(topic, options,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1129,14 +1131,14 @@ items:
           - undefined
         description: ''
       content: 'function createTopicIfNotExists(topic, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#deleteTopic'
     id: 'azure-sb.ServiceBusService#deleteTopic'
     parent: azure-sb.ServiceBusService
     name: 'deleteTopic(topicPath, callback)'
     summary: Deletes a topic.
     fullName: 'azure-sb.ServiceBusService.deleteTopic(topicPath, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1157,14 +1159,14 @@ items:
           - undefined
         description: ''
       content: 'function deleteTopic(topicPath, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#getTopic'
     id: 'azure-sb.ServiceBusService#getTopic'
     parent: azure-sb.ServiceBusService
     name: 'getTopic(topicPath, callback)'
     summary: Retrieves a topic.
     fullName: 'azure-sb.ServiceBusService.getTopic(topicPath, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1187,14 +1189,14 @@ items:
           - undefined
         description: ''
       content: 'function getTopic(topicPath, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#listTopics'
     id: 'azure-sb.ServiceBusService#listTopics'
     parent: azure-sb.ServiceBusService
     name: 'listTopics(options, callback)'
     summary: Returns a list of topics.
     fullName: 'azure-sb.ServiceBusService.listTopics(options, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1226,8 +1228,6 @@ items:
           - undefined
         description: ''
       content: 'function listTopics(options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#createSubscription'
     id: 'azure-sb.ServiceBusService#createSubscription'
     parent: azure-sb.ServiceBusService
@@ -1236,6 +1236,8 @@ items:
     fullName: >-
       azure-sb.ServiceBusService.createSubscription(topicPath, subscriptionPath,
       options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1319,8 +1321,6 @@ items:
       content: >-
         function createSubscription(topicPath, subscriptionPath, options,
         callback)
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#deleteSubscription'
     id: 'azure-sb.ServiceBusService#deleteSubscription'
     parent: azure-sb.ServiceBusService
@@ -1329,6 +1329,8 @@ items:
     fullName: >-
       azure-sb.ServiceBusService.deleteSubscription(topicPath, subscriptionPath,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1355,8 +1357,6 @@ items:
           - undefined
         description: ''
       content: 'function deleteSubscription(topicPath, subscriptionPath, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#getSubscription'
     id: 'azure-sb.ServiceBusService#getSubscription'
     parent: azure-sb.ServiceBusService
@@ -1365,6 +1365,8 @@ items:
     fullName: >-
       azure-sb.ServiceBusService.getSubscription(topicPath, subscriptionPath,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1393,14 +1395,14 @@ items:
           - undefined
         description: ''
       content: 'function getSubscription(topicPath, subscriptionPath, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#listSubscriptions'
     id: 'azure-sb.ServiceBusService#listSubscriptions'
     parent: azure-sb.ServiceBusService
     name: 'listSubscriptions(topicPath, options, callback)'
     summary: Returns a list of subscriptions.
     fullName: 'azure-sb.ServiceBusService.listSubscriptions(topicPath, options, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1438,8 +1440,6 @@ items:
           - undefined
         description: ''
       content: 'function listSubscriptions(topicPath, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#createRule'
     id: 'azure-sb.ServiceBusService#createRule'
     parent: azure-sb.ServiceBusService
@@ -1448,6 +1448,8 @@ items:
     fullName: >-
       azure-sb.ServiceBusService.createRule(topicPath, subscriptionPath,
       rulePath, options, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1526,8 +1528,6 @@ items:
       content: >-
         function createRule(topicPath, subscriptionPath, rulePath, options,
         callback)
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#deleteRule'
     id: 'azure-sb.ServiceBusService#deleteRule'
     parent: azure-sb.ServiceBusService
@@ -1536,6 +1536,8 @@ items:
     fullName: >-
       azure-sb.ServiceBusService.deleteRule(topicPath, subscriptionPath,
       rulePath, callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1566,8 +1568,6 @@ items:
           - undefined
         description: ''
       content: 'function deleteRule(topicPath, subscriptionPath, rulePath, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#getRule'
     id: 'azure-sb.ServiceBusService#getRule'
     parent: azure-sb.ServiceBusService
@@ -1576,6 +1576,8 @@ items:
     fullName: >-
       azure-sb.ServiceBusService.getRule(topicPath, subscriptionPath, rulePath,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1608,8 +1610,6 @@ items:
           - undefined
         description: ''
       content: 'function getRule(topicPath, subscriptionPath, rulePath, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#listRules'
     id: 'azure-sb.ServiceBusService#listRules'
     parent: azure-sb.ServiceBusService
@@ -1618,6 +1618,8 @@ items:
     fullName: >-
       azure-sb.ServiceBusService.listRules(topicPath, subscriptionPath, options,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1661,8 +1663,6 @@ items:
           - undefined
         description: ''
       content: 'function listRules(topicPath, subscriptionPath, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#createNotificationHub'
     id: 'azure-sb.ServiceBusService#createNotificationHub'
     parent: azure-sb.ServiceBusService
@@ -1671,6 +1671,8 @@ items:
     fullName: >-
       azure-sb.ServiceBusService.createNotificationHub(hubPath, options,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1716,14 +1718,14 @@ items:
           - undefined
         description: ''
       content: 'function createNotificationHub(hubPath, options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#getNotificationHub'
     id: 'azure-sb.ServiceBusService#getNotificationHub'
     parent: azure-sb.ServiceBusService
     name: 'getNotificationHub(hubPath, callback)'
     summary: Gets a notification hub.
     fullName: 'azure-sb.ServiceBusService.getNotificationHub(hubPath, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1744,14 +1746,14 @@ items:
           - undefined
         description: ''
       content: 'function getNotificationHub(hubPath, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#listNotificationHubs'
     id: 'azure-sb.ServiceBusService#listNotificationHubs'
     parent: azure-sb.ServiceBusService
     name: 'listNotificationHubs(options, callback)'
     summary: Returns a list of notification hubs.
     fullName: 'azure-sb.ServiceBusService.listNotificationHubs(options, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1783,14 +1785,14 @@ items:
           - undefined
         description: ''
       content: 'function listNotificationHubs(options, callback)'
-    langs:
-      - js
   - uid: 'azure-sb.ServiceBusService#deleteNotificationHub'
     id: 'azure-sb.ServiceBusService#deleteNotificationHub'
     parent: azure-sb.ServiceBusService
     name: 'deleteNotificationHub(hubPath, callback)'
     summary: Deletes a notification hub.
     fullName: 'azure-sb.ServiceBusService.deleteNotificationHub(hubPath, callback)'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -1809,5 +1811,3 @@ items:
           - undefined
         description: ''
       content: 'function deleteNotificationHub(hubPath, callback)'
-    langs:
-      - js

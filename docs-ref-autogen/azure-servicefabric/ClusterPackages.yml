@@ -17,6 +17,8 @@ items:
         branch: master
         path: lib\services\serviceFabric\lib\operations\clusterPackages.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - 'azure-servicefabric.ClusterPackages.#ctor'
@@ -24,8 +26,6 @@ items:
       - 'azure-servicefabric.ClusterPackages#register'
       - 'azure-servicefabric.ClusterPackages#unregisterWithHttpOperationResponse'
       - 'azure-servicefabric.ClusterPackages#unregister'
-    langs:
-      - js
   - id: 'azure-servicefabric.ClusterPackages.#ctor'
     uid: 'azure-servicefabric.ClusterPackages.#ctor'
     parent: azure-servicefabric.ClusterPackages
@@ -50,15 +50,8 @@ items:
     fullName: >-
       azure-servicefabric.ClusterPackages.registerWithHttpOperationResponse(registerClusterPackage,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<String>} - The deserialized result object.'
-        value: '{HttpOperationResponse<String>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -99,8 +92,6 @@ items:
       content: >-
         function registerWithHttpOperationResponse(registerClusterPackage,
         options)
-    langs:
-      - js
   - uid: 'azure-servicefabric.ClusterPackages#register'
     id: 'azure-servicefabric.ClusterPackages#register'
     parent: azure-servicefabric.ClusterPackages
@@ -109,37 +100,8 @@ items:
     fullName: >-
       azure-servicefabric.ClusterPackages.register(registerClusterPackage,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{String} - The deserialized result object.'
-        value: '{String} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -188,8 +150,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function register(registerClusterPackage, options, optionalCallback)'
-    langs:
-      - js
   - uid: 'azure-servicefabric.ClusterPackages#unregisterWithHttpOperationResponse'
     id: 'azure-servicefabric.ClusterPackages#unregisterWithHttpOperationResponse'
     parent: azure-servicefabric.ClusterPackages
@@ -198,15 +158,8 @@ items:
     fullName: >-
       azure-servicefabric.ClusterPackages.unregisterWithHttpOperationResponse(unregisterClusterPackage,
       options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<String>} - The deserialized result object.'
-        value: '{HttpOperationResponse<String>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -249,8 +202,6 @@ items:
       content: >-
         function unregisterWithHttpOperationResponse(unregisterClusterPackage,
         options)
-    langs:
-      - js
   - uid: 'azure-servicefabric.ClusterPackages#unregister'
     id: 'azure-servicefabric.ClusterPackages#unregister'
     parent: azure-servicefabric.ClusterPackages
@@ -259,37 +210,8 @@ items:
     fullName: >-
       azure-servicefabric.ClusterPackages.unregister(unregisterClusterPackage,
       options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{String} - The deserialized result object.'
-        value: '{String} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {string} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -340,8 +262,6 @@ items:
 
           {Promise} A promise is returned
       content: 'function unregister(unregisterClusterPackage, options, optionalCallback)'
-    langs:
-      - js
 references:
   - uid: azure-servicefabric.ServiceFabricClient
     name: ServiceFabricClient

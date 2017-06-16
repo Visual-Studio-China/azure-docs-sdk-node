@@ -16,6 +16,8 @@ items:
         branch: master
         path: lib\services\schedulerManagement\lib\cloudServiceManagementClient.js
         repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    langs:
+      - js
     type: Class
     children:
       - >-
@@ -26,8 +28,6 @@ items:
         azure-asm-scheduler.CloudServiceManagementClient~CloudServiceManagementClient#entitleResource
       - >-
         azure-asm-scheduler.CloudServiceManagementClient~CloudServiceManagementClient#getOperationStatus
-    langs:
-      - js
   - id: >-
       azure-asm-scheduler.CloudServiceManagementClient~CloudServiceManagementClient.#ctor
     uid: >-
@@ -83,14 +83,14 @@ items:
       [CloudServiceOperations](-CloudServiceOperations.html) object.
     fullName: >-
       azure-asm-scheduler.CloudServiceManagementClient~CloudServiceManagementClient.cloudServices
+    langs:
+      - js
     type: Member
     syntax:
       return:
         type:
           - object
       content: cloudServices
-    langs:
-      - js
   - uid: >-
       azure-asm-scheduler.CloudServiceManagementClient~CloudServiceManagementClient#entitleResource
     id: >-
@@ -105,6 +105,8 @@ items:
     fullName: >-
       azure-asm-scheduler.CloudServiceManagementClient~CloudServiceManagementClient.entitleResource(parameters,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -139,8 +141,6 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: 'function entitleResource(parameters, callback)'
-    langs:
-      - js
   - uid: >-
       azure-asm-scheduler.CloudServiceManagementClient~CloudServiceManagementClient#getOperationStatus
     id: >-
@@ -158,6 +158,8 @@ items:
     fullName: >-
       azure-asm-scheduler.CloudServiceManagementClient~CloudServiceManagementClient.getOperationStatus(requestId,
       callback)
+    langs:
+      - js
     type: Function
     syntax:
       parameters:
@@ -180,5 +182,3 @@ items:
           - azure-asm-scheduler.Stream
         description: The response stream.
       content: 'function getOperationStatus(requestId, callback)'
-    langs:
-      - js
