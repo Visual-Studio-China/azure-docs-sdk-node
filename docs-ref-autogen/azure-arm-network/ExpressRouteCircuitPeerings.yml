@@ -13,7 +13,7 @@ items:
       id: azure-arm-network.ExpressRouteCircuitPeerings
       path: >-
         lib\services\networkManagement2\lib\operations\expressRouteCircuitPeerings.js
-      startLine: 1096
+      startLine: 1110
       remote:
         branch: jsdoc
         path: >-
@@ -480,6 +480,13 @@ items:
             The
             reference of AdvertisedPublicPrefixes.
           optional: true
+        - id: peeringParameters.microsoftPeeringConfig.advertisedCommunities
+          type:
+            - array
+          description: |-
+            The
+            communities of bgp peering. Spepcified for microsoft peering
+          optional: true
         - id: >-
             peeringParameters.microsoftPeeringConfig.advertisedPublicPrefixesState
           type:
@@ -502,6 +509,13 @@ items:
           description: |-
             The
             CustomerASN of the peering.
+          optional: true
+        - id: peeringParameters.microsoftPeeringConfig.legacyMode
+          type:
+            - number
+          description: |-
+            The
+            legacy mode of the peering.
           optional: true
         - id: peeringParameters.microsoftPeeringConfig.routingRegistryName
           type:
@@ -772,6 +786,13 @@ items:
             The
             reference of AdvertisedPublicPrefixes.
           optional: true
+        - id: peeringParameters.microsoftPeeringConfig.advertisedCommunities
+          type:
+            - array
+          description: |-
+            The
+            communities of bgp peering. Spepcified for microsoft peering
+          optional: true
         - id: >-
             peeringParameters.microsoftPeeringConfig.advertisedPublicPrefixesState
           type:
@@ -794,6 +815,13 @@ items:
           description: |-
             The
             CustomerASN of the peering.
+          optional: true
+        - id: peeringParameters.microsoftPeeringConfig.legacyMode
+          type:
+            - number
+          description: |-
+            The
+            legacy mode of the peering.
           optional: true
         - id: peeringParameters.microsoftPeeringConfig.routingRegistryName
           type:
@@ -1340,6 +1368,13 @@ items:
             The
             reference of AdvertisedPublicPrefixes.
           optional: true
+        - id: peeringParameters.microsoftPeeringConfig.advertisedCommunities
+          type:
+            - array
+          description: |-
+            The
+            communities of bgp peering. Spepcified for microsoft peering
+          optional: true
         - id: >-
             peeringParameters.microsoftPeeringConfig.advertisedPublicPrefixesState
           type:
@@ -1362,6 +1397,13 @@ items:
           description: |-
             The
             CustomerASN of the peering.
+          optional: true
+        - id: peeringParameters.microsoftPeeringConfig.legacyMode
+          type:
+            - number
+          description: |-
+            The
+            legacy mode of the peering.
           optional: true
         - id: peeringParameters.microsoftPeeringConfig.routingRegistryName
           type:
@@ -1632,6 +1674,13 @@ items:
             The
             reference of AdvertisedPublicPrefixes.
           optional: true
+        - id: peeringParameters.microsoftPeeringConfig.advertisedCommunities
+          type:
+            - array
+          description: |-
+            The
+            communities of bgp peering. Spepcified for microsoft peering
+          optional: true
         - id: >-
             peeringParameters.microsoftPeeringConfig.advertisedPublicPrefixesState
           type:
@@ -1654,6 +1703,13 @@ items:
           description: |-
             The
             CustomerASN of the peering.
+          optional: true
+        - id: peeringParameters.microsoftPeeringConfig.legacyMode
+          type:
+            - number
+          description: |-
+            The
+            legacy mode of the peering.
           optional: true
         - id: peeringParameters.microsoftPeeringConfig.routingRegistryName
           type:

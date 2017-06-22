@@ -1,0 +1,456 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-monitor.AlertRules
+    id: azure-arm-monitor.AlertRules
+    name: AlertRules
+    summary: |-
+      AlertRules
+      __NOTE__: An instance of this class is automatically created for an
+      instance of the MonitorManagementClient.
+      Initializes a new instance of the AlertRules class.
+    fullName: azure-arm-monitor.AlertRules
+    source:
+      id: azure-arm-monitor.AlertRules
+      path: lib\services\monitorManagement\lib\operations\alertRules.js
+      startLine: 28
+      remote:
+        branch: jsdoc
+        path: lib\services\monitorManagement\lib\operations\alertRules.js
+        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
+    type: Class
+    children:
+      - 'azure-arm-monitor.AlertRules.#ctor'
+      - 'azure-arm-monitor.AlertRules#createOrUpdate'
+      - 'azure-arm-monitor.AlertRules#deleteMethod'
+      - 'azure-arm-monitor.AlertRules#get'
+      - 'azure-arm-monitor.AlertRules#update'
+      - 'azure-arm-monitor.AlertRules#listByResourceGroup'
+    langs:
+      - js
+  - id: 'azure-arm-monitor.AlertRules.#ctor'
+    uid: 'azure-arm-monitor.AlertRules.#ctor'
+    parent: azure-arm-monitor.AlertRules
+    name: AlertRules(client)
+    fullName: azure-arm-monitor.AlertRules.AlertRules(client)
+    summary: ''
+    type: Constructor
+    syntax:
+      parameters:
+        - id: client
+          type:
+            - azure-arm-monitor.MonitorManagementClient
+          description: Reference to the service client.
+      content: new AlertRules(client)
+    langs:
+      - js
+  - uid: 'azure-arm-monitor.AlertRules#createOrUpdate'
+    id: 'azure-arm-monitor.AlertRules#createOrUpdate'
+    parent: azure-arm-monitor.AlertRules
+    name: 'createOrUpdate(resourceGroupName, ruleName, parameters, options, callback)'
+    summary: Creates or updates an alert rule.
+    fullName: >-
+      azure-arm-monitor.AlertRules.createOrUpdate(resourceGroupName, ruleName,
+      parameters, options, callback)
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: ruleName
+          type:
+            - string
+          description: The name of the rule.
+        - id: parameters
+          type:
+            - object
+          description: The parameters of the rule to create or update.
+        - id: parameters.alertRuleResourceName
+          type:
+            - string
+          description: the name of the alert rule.
+        - id: parameters.description
+          type:
+            - string
+          description: |-
+            the description of the alert rule
+            that will be included in the alert email.
+          optional: true
+        - id: parameters.isEnabled
+          type:
+            - boolean
+          description: |-
+            the flag that indicates whether the
+            alert rule is enabled.
+        - id: parameters.condition
+          type:
+            - object
+          description: |-
+            the condition that results in the alert
+            rule being activated.
+        - id: parameters.condition.dataSource
+          type:
+            - object
+          description: >-
+            the resource from which
+
+            the rule collects its data. For this type dataSource will always be
+            of type
+
+            RuleMetricDataSource.
+          optional: true
+        - id: parameters.condition.dataSource.resourceUri
+          type:
+            - string
+          description: |-
+            the resource
+            identifier of the resource the rule monitors.
+          optional: true
+        - id: parameters.condition.dataSource.odatatype
+          type:
+            - string
+          description: |-
+            Polymorphic
+            Discriminator
+        - id: parameters.condition.odatatype
+          type:
+            - string
+          description: Polymorphic Discriminator
+        - id: parameters.actions
+          type:
+            - array
+          description: >-
+            the array of actions that are performed
+
+            when the alert rule becomes active, and when an alert condition is
+            resolved.
+          optional: true
+        - id: parameters.location
+          type:
+            - string
+          description: Resource location
+        - id: parameters.tags
+          type:
+            - object
+          description: Resource tags
+          optional: true
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: callback
+          type:
+            - function
+          description: ''
+      return:
+        type:
+          - function
+        description: |-
+          callback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object.
+                               See <xref:azure-arm-monitor.AlertRuleResource> for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+      content: >-
+        function createOrUpdate(resourceGroupName, ruleName, parameters,
+        options, callback)
+    langs:
+      - js
+  - uid: 'azure-arm-monitor.AlertRules#deleteMethod'
+    id: 'azure-arm-monitor.AlertRules#deleteMethod'
+    parent: azure-arm-monitor.AlertRules
+    name: 'deleteMethod(resourceGroupName, ruleName, options, callback)'
+    summary: Deletes an alert rule
+    fullName: >-
+      azure-arm-monitor.AlertRules.deleteMethod(resourceGroupName, ruleName,
+      options, callback)
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: ruleName
+          type:
+            - string
+          description: The name of the rule.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: callback
+          type:
+            - function
+          description: ''
+      return:
+        type:
+          - function
+        description: |-
+          callback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+      content: 'function deleteMethod(resourceGroupName, ruleName, options, callback)'
+    langs:
+      - js
+  - uid: 'azure-arm-monitor.AlertRules#get'
+    id: 'azure-arm-monitor.AlertRules#get'
+    parent: azure-arm-monitor.AlertRules
+    name: 'get(resourceGroupName, ruleName, options, callback)'
+    summary: Gets an alert rule
+    fullName: >-
+      azure-arm-monitor.AlertRules.get(resourceGroupName, ruleName, options,
+      callback)
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: ruleName
+          type:
+            - string
+          description: The name of the rule.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: callback
+          type:
+            - function
+          description: ''
+      return:
+        type:
+          - function
+        description: |-
+          callback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object.
+                               See <xref:azure-arm-monitor.AlertRuleResource> for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+      content: 'function get(resourceGroupName, ruleName, options, callback)'
+    langs:
+      - js
+  - uid: 'azure-arm-monitor.AlertRules#update'
+    id: 'azure-arm-monitor.AlertRules#update'
+    parent: azure-arm-monitor.AlertRules
+    name: 'update(resourceGroupName, ruleName, alertRulesResource, options, callback)'
+    summary: |-
+      Updates an existing AlertRuleResource. To update other fields use the
+      CreateOrUpdate method.
+    fullName: >-
+      azure-arm-monitor.AlertRules.update(resourceGroupName, ruleName,
+      alertRulesResource, options, callback)
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: ruleName
+          type:
+            - string
+          description: The name of the rule.
+        - id: alertRulesResource
+          type:
+            - object
+          description: Parameters supplied to the operation.
+        - id: alertRulesResource.tags
+          type:
+            - object
+          description: Resource tags
+          optional: true
+        - id: alertRulesResource.name
+          type:
+            - string
+          description: the name of the alert rule.
+        - id: alertRulesResource.description
+          type:
+            - string
+          description: |-
+            the description of the
+            alert rule that will be included in the alert email.
+          optional: true
+        - id: alertRulesResource.isEnabled
+          type:
+            - boolean
+          description: |-
+            the flag that indicates
+            whether the alert rule is enabled.
+        - id: alertRulesResource.condition
+          type:
+            - object
+          description: |-
+            the condition that results in
+            the alert rule being activated.
+        - id: alertRulesResource.condition.dataSource
+          type:
+            - object
+          description: >-
+            the resource from
+
+            which the rule collects its data. For this type dataSource will
+            always be of
+
+            type RuleMetricDataSource.
+          optional: true
+        - id: alertRulesResource.condition.dataSource.resourceUri
+          type:
+            - string
+          description: |-
+            the
+            resource identifier of the resource the rule monitors.
+          optional: true
+        - id: alertRulesResource.condition.dataSource.odatatype
+          type:
+            - string
+          description: Polymorphic Discriminator
+        - id: alertRulesResource.condition.odatatype
+          type:
+            - string
+          description: |-
+            Polymorphic
+            Discriminator
+        - id: alertRulesResource.actions
+          type:
+            - array
+          description: >-
+            the array of actions that are
+
+            performed when the alert rule becomes active, and when an alert
+            condition is
+
+            resolved.
+          optional: true
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: callback
+          type:
+            - function
+          description: ''
+      return:
+        type:
+          - function
+        description: |-
+          callback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object.
+                               See <xref:azure-arm-monitor.AlertRuleResource> for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+      content: >-
+        function update(resourceGroupName, ruleName, alertRulesResource,
+        options, callback)
+    langs:
+      - js
+  - uid: 'azure-arm-monitor.AlertRules#listByResourceGroup'
+    id: 'azure-arm-monitor.AlertRules#listByResourceGroup'
+    parent: azure-arm-monitor.AlertRules
+    name: 'listByResourceGroup(resourceGroupName, options, callback)'
+    summary: List the alert rules within a resource group.
+    fullName: >-
+      azure-arm-monitor.AlertRules.listByResourceGroup(resourceGroupName,
+      options, callback)
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: callback
+          type:
+            - function
+          description: ''
+      return:
+        type:
+          - function
+        description: |-
+          callback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object.
+                               See <xref:azure-arm-monitor.AlertRuleResourceCollection> for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+      content: 'function listByResourceGroup(resourceGroupName, options, callback)'
+    langs:
+      - js
+references:
+  - uid: azure-arm-monitor.MonitorManagementClient
+    name: MonitorManagementClient
+    fullName: azure-arm-monitor.MonitorManagementClient
+    isExternal: false

@@ -1,0 +1,95 @@
+- uid: azure-arm-monitor.ActionGroups
+  name: ActionGroups
+  items:
+    - uid: 'azure-arm-monitor.ActionGroups#createOrUpdate'
+      name: createOrUpdate
+    - uid: 'azure-arm-monitor.ActionGroups#get'
+      name: get
+    - uid: 'azure-arm-monitor.ActionGroups#deleteMethod'
+      name: deleteMethod
+    - uid: 'azure-arm-monitor.ActionGroups#listBySubscriptionId'
+      name: listBySubscriptionId
+    - uid: 'azure-arm-monitor.ActionGroups#listByResourceGroup'
+      name: listByResourceGroup
+    - uid: 'azure-arm-monitor.ActionGroups#enableReceiver'
+      name: enableReceiver
+- uid: azure-arm-monitor.ActivityLogAlerts
+  name: ActivityLogAlerts
+  items:
+    - uid: 'azure-arm-monitor.ActivityLogAlerts#createOrUpdate'
+      name: createOrUpdate
+    - uid: 'azure-arm-monitor.ActivityLogAlerts#get'
+      name: get
+    - uid: 'azure-arm-monitor.ActivityLogAlerts#deleteMethod'
+      name: deleteMethod
+    - uid: 'azure-arm-monitor.ActivityLogAlerts#update'
+      name: update
+    - uid: 'azure-arm-monitor.ActivityLogAlerts#listBySubscriptionId'
+      name: listBySubscriptionId
+    - uid: 'azure-arm-monitor.ActivityLogAlerts#listByResourceGroup'
+      name: listByResourceGroup
+- uid: azure-arm-monitor.AlertRuleIncidents
+  name: AlertRuleIncidents
+  items:
+    - uid: 'azure-arm-monitor.AlertRuleIncidents#get'
+      name: get
+    - uid: 'azure-arm-monitor.AlertRuleIncidents#listByAlertRule'
+      name: listByAlertRule
+- uid: azure-arm-monitor.AlertRules
+  name: AlertRules
+  items:
+    - uid: 'azure-arm-monitor.AlertRules#createOrUpdate'
+      name: createOrUpdate
+    - uid: 'azure-arm-monitor.AlertRules#deleteMethod'
+      name: deleteMethod
+    - uid: 'azure-arm-monitor.AlertRules#get'
+      name: get
+    - uid: 'azure-arm-monitor.AlertRules#update'
+      name: update
+    - uid: 'azure-arm-monitor.AlertRules#listByResourceGroup'
+      name: listByResourceGroup
+- uid: azure-arm-monitor.AutoscaleSettings
+  name: AutoscaleSettings
+  items:
+    - uid: 'azure-arm-monitor.AutoscaleSettings#listByResourceGroup'
+      name: listByResourceGroup
+    - uid: 'azure-arm-monitor.AutoscaleSettings#createOrUpdate'
+      name: createOrUpdate
+    - uid: 'azure-arm-monitor.AutoscaleSettings#deleteMethod'
+      name: deleteMethod
+    - uid: 'azure-arm-monitor.AutoscaleSettings#get'
+      name: get
+    - uid: 'azure-arm-monitor.AutoscaleSettings#update'
+      name: update
+    - uid: 'azure-arm-monitor.AutoscaleSettings#listByResourceGroupNext'
+      name: listByResourceGroupNext
+- uid: azure-arm-monitor.LogProfiles
+  name: LogProfiles
+  items:
+    - uid: 'azure-arm-monitor.LogProfiles#deleteMethod'
+      name: deleteMethod
+    - uid: 'azure-arm-monitor.LogProfiles#get'
+      name: get
+    - uid: 'azure-arm-monitor.LogProfiles#createOrUpdate'
+      name: createOrUpdate
+    - uid: 'azure-arm-monitor.LogProfiles#update'
+      name: update
+    - uid: 'azure-arm-monitor.LogProfiles#list'
+      name: list
+- uid: azure-arm-monitor.MonitorManagementClient
+  name: MonitorManagementClient
+- uid: azure-arm-monitor.Represents a collection of alert rule resources.
+  name: Represents a collection of alert rule resources.
+- uid: azure-arm-monitor.Represents a collection of log profiles.
+  name: Represents a collection of log profiles.
+- uid: azure-arm-monitor.ServiceDiagnosticSettingsOperations
+  name: ServiceDiagnosticSettingsOperations
+  items:
+    - uid: 'azure-arm-monitor.ServiceDiagnosticSettingsOperations#get'
+      name: get
+    - uid: 'azure-arm-monitor.ServiceDiagnosticSettingsOperations#createOrUpdate'
+      name: createOrUpdate
+    - uid: 'azure-arm-monitor.ServiceDiagnosticSettingsOperations#update'
+      name: update
+- uid: azure-arm-monitor.The List incidents operation response.
+  name: The List incidents operation response.

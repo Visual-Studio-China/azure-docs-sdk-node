@@ -1,0 +1,45 @@
+- uid: >-
+    azure-monitor.A collection of event categories. Currently possible values
+    are:
+
+    Administrative, Security, ServiceHealth, Alert, Recommendation, Policy.
+  name: |-
+    A collection of event categories. Currently possible values are:
+    Administrative, Security, ServiceHealth, Alert, Recommendation, Policy.
+- uid: azure-monitor.ActivityLogs
+  name: ActivityLogs
+  items:
+    - uid: 'azure-monitor.ActivityLogs#list'
+      name: list
+    - uid: 'azure-monitor.ActivityLogs#listNext'
+      name: listNext
+- uid: azure-monitor.EventCategories
+  name: EventCategories
+  items:
+    - uid: 'azure-monitor.EventCategories#list'
+      name: list
+- uid: azure-monitor.MetricDefinitions
+  name: MetricDefinitions
+  items:
+    - uid: 'azure-monitor.MetricDefinitions#list'
+      name: list
+- uid: azure-monitor.Metrics
+  name: Metrics
+  items:
+    - uid: 'azure-monitor.Metrics#list'
+      name: list
+- uid: azure-monitor.MonitorClient
+  name: MonitorClient
+- uid: azure-monitor.Represents collection of metric definitions.
+  name: Represents collection of metric definitions.
+- uid: azure-monitor.Represents collection of usage metrics.
+  name: Represents collection of usage metrics.
+- uid: azure-monitor.TenantActivityLogs
+  name: TenantActivityLogs
+  items:
+    - uid: 'azure-monitor.TenantActivityLogs#list'
+      name: list
+    - uid: 'azure-monitor.TenantActivityLogs#listNext'
+      name: listNext
+- uid: azure-monitor.The collection of metric value sets.
+  name: The collection of metric value sets.

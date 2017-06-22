@@ -20,6 +20,9 @@
         - name: azure-keyvault
           href: azure-keyvault\toc.yml
           topicHref: azure-keyvault\index.md
+        - name: azure-monitor
+          href: azure-monitor\toc.yml
+          topicHref: azure-monitor\index.md
         - name: azure-monitoring
           href: azure-monitoring\toc.yml
           topicHref: azure-monitoring\index.md
@@ -121,6 +124,9 @@
         - name: azure-arm-mediaservices
           href: azure-arm-mediaservices\toc.yml
           topicHref: azure-arm-mediaservices\index.md
+        - name: azure-arm-monitor
+          href: azure-arm-monitor\toc.yml
+          topicHref: azure-arm-monitor\index.md
         - name: azure-arm-mysql
           href: azure-arm-mysql\toc.yml
           topicHref: azure-arm-mysql\index.md
