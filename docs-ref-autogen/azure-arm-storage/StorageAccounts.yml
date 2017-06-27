@@ -12,7 +12,7 @@ items:
     source:
       id: azure-arm-storage.StorageAccounts
       path: lib\services\storageManagement2\lib\operations\storageAccounts.js
-      startLine: 2359
+      startLine: 2410
       remote:
         branch: jsdoc
         path: lib\services\storageManagement2\lib\operations\storageAccounts.js
@@ -441,6 +441,43 @@ items:
             The
             Uri of KeyVault.
           optional: true
+        - id: parameters.networkAcls
+          type:
+            - object
+          description: Network ACL
+          optional: true
+        - id: parameters.networkAcls.bypass
+          type:
+            - string
+          description: |-
+            Specifies whether traffic is
+            bypassed for Logging/Metrics/AzureServices. Possible values are any
+            combination of Logging|Metrics|AzureServices (For example, "Logging,
+            Metrics"), or None to bypass none of those traffics. Possible values
+            include: 'None', 'Logging', 'Metrics', 'AzureServices'
+          optional: true
+        - id: parameters.networkAcls.virtualNetworkRules
+          type:
+            - array
+          description: |-
+            Sets the virtual
+            network ACL rules
+          optional: true
+        - id: parameters.networkAcls.ipRules
+          type:
+            - array
+          description: Sets the IP ACL rules
+          optional: true
+        - id: parameters.networkAcls.defaultAction
+          type:
+            - string
+          description: >-
+            Specifies the default
+
+            action of allow or deny when no other rules match. Possible values
+            include:
+
+            'Allow', 'Deny'
         - id: parameters.accessTier
           type:
             - string
@@ -725,6 +762,43 @@ items:
             The
             Uri of KeyVault.
           optional: true
+        - id: parameters.networkAcls
+          type:
+            - object
+          description: Network ACL
+          optional: true
+        - id: parameters.networkAcls.bypass
+          type:
+            - string
+          description: |-
+            Specifies whether traffic is
+            bypassed for Logging/Metrics/AzureServices. Possible values are any
+            combination of Logging|Metrics|AzureServices (For example, "Logging,
+            Metrics"), or None to bypass none of those traffics. Possible values
+            include: 'None', 'Logging', 'Metrics', 'AzureServices'
+          optional: true
+        - id: parameters.networkAcls.virtualNetworkRules
+          type:
+            - array
+          description: |-
+            Sets the virtual
+            network ACL rules
+          optional: true
+        - id: parameters.networkAcls.ipRules
+          type:
+            - array
+          description: Sets the IP ACL rules
+          optional: true
+        - id: parameters.networkAcls.defaultAction
+          type:
+            - string
+          description: >-
+            Specifies the default
+
+            action of allow or deny when no other rules match. Possible values
+            include:
+
+            'Allow', 'Deny'
         - id: parameters.accessTier
           type:
             - string
@@ -1320,6 +1394,43 @@ items:
             Allows https traffic
             only to storage service if sets to true.
           optional: true
+        - id: parameters.networkAcls
+          type:
+            - object
+          description: Network ACL
+          optional: true
+        - id: parameters.networkAcls.bypass
+          type:
+            - string
+          description: |-
+            Specifies whether traffic is
+            bypassed for Logging/Metrics/AzureServices. Possible values are any
+            combination of Logging|Metrics|AzureServices (For example, "Logging,
+            Metrics"), or None to bypass none of those traffics. Possible values
+            include: 'None', 'Logging', 'Metrics', 'AzureServices'
+          optional: true
+        - id: parameters.networkAcls.virtualNetworkRules
+          type:
+            - array
+          description: |-
+            Sets the virtual
+            network ACL rules
+          optional: true
+        - id: parameters.networkAcls.ipRules
+          type:
+            - array
+          description: Sets the IP ACL rules
+          optional: true
+        - id: parameters.networkAcls.defaultAction
+          type:
+            - string
+          description: >-
+            Specifies the default
+
+            action of allow or deny when no other rules match. Possible values
+            include:
+
+            'Allow', 'Deny'
         - id: options
           type:
             - object
@@ -1599,6 +1710,43 @@ items:
             Allows https traffic
             only to storage service if sets to true.
           optional: true
+        - id: parameters.networkAcls
+          type:
+            - object
+          description: Network ACL
+          optional: true
+        - id: parameters.networkAcls.bypass
+          type:
+            - string
+          description: |-
+            Specifies whether traffic is
+            bypassed for Logging/Metrics/AzureServices. Possible values are any
+            combination of Logging|Metrics|AzureServices (For example, "Logging,
+            Metrics"), or None to bypass none of those traffics. Possible values
+            include: 'None', 'Logging', 'Metrics', 'AzureServices'
+          optional: true
+        - id: parameters.networkAcls.virtualNetworkRules
+          type:
+            - array
+          description: |-
+            Sets the virtual
+            network ACL rules
+          optional: true
+        - id: parameters.networkAcls.ipRules
+          type:
+            - array
+          description: Sets the IP ACL rules
+          optional: true
+        - id: parameters.networkAcls.defaultAction
+          type:
+            - string
+          description: >-
+            Specifies the default
+
+            action of allow or deny when no other rules match. Possible values
+            include:
+
+            'Allow', 'Deny'
         - id: options
           type:
             - object
@@ -3205,6 +3353,43 @@ items:
             The
             Uri of KeyVault.
           optional: true
+        - id: parameters.networkAcls
+          type:
+            - object
+          description: Network ACL
+          optional: true
+        - id: parameters.networkAcls.bypass
+          type:
+            - string
+          description: |-
+            Specifies whether traffic is
+            bypassed for Logging/Metrics/AzureServices. Possible values are any
+            combination of Logging|Metrics|AzureServices (For example, "Logging,
+            Metrics"), or None to bypass none of those traffics. Possible values
+            include: 'None', 'Logging', 'Metrics', 'AzureServices'
+          optional: true
+        - id: parameters.networkAcls.virtualNetworkRules
+          type:
+            - array
+          description: |-
+            Sets the virtual
+            network ACL rules
+          optional: true
+        - id: parameters.networkAcls.ipRules
+          type:
+            - array
+          description: Sets the IP ACL rules
+          optional: true
+        - id: parameters.networkAcls.defaultAction
+          type:
+            - string
+          description: >-
+            Specifies the default
+
+            action of allow or deny when no other rules match. Possible values
+            include:
+
+            'Allow', 'Deny'
         - id: parameters.accessTier
           type:
             - string
@@ -3489,6 +3674,43 @@ items:
             The
             Uri of KeyVault.
           optional: true
+        - id: parameters.networkAcls
+          type:
+            - object
+          description: Network ACL
+          optional: true
+        - id: parameters.networkAcls.bypass
+          type:
+            - string
+          description: |-
+            Specifies whether traffic is
+            bypassed for Logging/Metrics/AzureServices. Possible values are any
+            combination of Logging|Metrics|AzureServices (For example, "Logging,
+            Metrics"), or None to bypass none of those traffics. Possible values
+            include: 'None', 'Logging', 'Metrics', 'AzureServices'
+          optional: true
+        - id: parameters.networkAcls.virtualNetworkRules
+          type:
+            - array
+          description: |-
+            Sets the virtual
+            network ACL rules
+          optional: true
+        - id: parameters.networkAcls.ipRules
+          type:
+            - array
+          description: Sets the IP ACL rules
+          optional: true
+        - id: parameters.networkAcls.defaultAction
+          type:
+            - string
+          description: >-
+            Specifies the default
+
+            action of allow or deny when no other rules match. Possible values
+            include:
+
+            'Allow', 'Deny'
         - id: parameters.accessTier
           type:
             - string
