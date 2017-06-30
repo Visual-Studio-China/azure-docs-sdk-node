@@ -9,14 +9,6 @@ items:
       instance of the ComputeManagementClient.
       Initializes a new instance of the VirtualMachines class.
     fullName: azure-arm-compute.VirtualMachines
-    source:
-      id: azure-arm-compute.VirtualMachines
-      path: lib\services\computeManagement2\lib\operations\virtualMachines.js
-      startLine: 4030
-      remote:
-        branch: jsdoc
-        path: lib\services\computeManagement2\lib\operations\virtualMachines.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-compute.VirtualMachines.#ctor'

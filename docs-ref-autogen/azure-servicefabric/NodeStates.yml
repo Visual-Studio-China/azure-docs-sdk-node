@@ -9,14 +9,6 @@ items:
       instance of the ServiceFabricClient.
       Initializes a new instance of the NodeStates class.
     fullName: azure-servicefabric.NodeStates
-    source:
-      id: azure-servicefabric.NodeStates
-      path: lib\services\serviceFabric\lib\operations\nodeStates.js
-      startLine: 164
-      remote:
-        branch: jsdoc
-        path: lib\services\serviceFabric\lib\operations\nodeStates.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-servicefabric.NodeStates.#ctor'

@@ -13,14 +13,6 @@ items:
       ServiceBusManagementClient~ServiceBusManagementClient#namespaces}.
       Initializes a new instance of the NamespaceOperations class.
     fullName: azure-asm-sb.NamespaceOperations
-    source:
-      id: azure-asm-sb.NamespaceOperations~NamespaceOperations
-      path: lib\services\serviceBusManagement\lib\serviceBusManagementClient.js
-      startLine: 370
-      remote:
-        branch: jsdoc
-        path: lib\services\serviceBusManagement\lib\serviceBusManagementClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-asm-sb.NamespaceOperations~NamespaceOperations.#ctor'

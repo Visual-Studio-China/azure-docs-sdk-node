@@ -9,16 +9,6 @@ items:
       instance of the CustomerInsightsManagementClient.
       Initializes a new instance of the ConnectorMappings class.
     fullName: azure-arm-customerinsights.ConnectorMappings
-    source:
-      id: azure-arm-customerinsights.ConnectorMappings
-      path: >-
-        lib\services\customerInsightsManagement\lib\operations\connectorMappings.js
-      startLine: 898
-      remote:
-        branch: jsdoc
-        path: >-
-          lib\services\customerInsightsManagement\lib\operations\connectorMappings.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-customerinsights.ConnectorMappings.#ctor'

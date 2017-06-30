@@ -9,14 +9,6 @@ items:
       instance of the LogicManagementClient.
       Initializes a new instance of the Sessions class.
     fullName: azure-arm-logic.Sessions
-    source:
-      id: azure-arm-logic.Sessions
-      path: lib\services\logicManagement\lib\operations\sessions.js
-      startLine: 804
-      remote:
-        branch: jsdoc
-        path: lib\services\logicManagement\lib\operations\sessions.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-logic.Sessions.#ctor'

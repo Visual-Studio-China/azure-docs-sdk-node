@@ -9,14 +9,6 @@ items:
       instance of the WebSiteManagementClient.
       Initializes a new instance of the WebApps class.
     fullName: azure-arm-website.WebApps
-    source:
-      id: azure-arm-website.WebApps
-      path: lib\services\webSiteManagement2\lib\operations\webApps.js
-      startLine: 44245
-      remote:
-        branch: jsdoc
-        path: lib\services\webSiteManagement2\lib\operations\webApps.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-website.WebApps.#ctor'

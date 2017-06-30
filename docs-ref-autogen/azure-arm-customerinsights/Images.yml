@@ -9,14 +9,6 @@ items:
       instance of the CustomerInsightsManagementClient.
       Initializes a new instance of the Images class.
     fullName: azure-arm-customerinsights.Images
-    source:
-      id: azure-arm-customerinsights.Images
-      path: lib\services\customerInsightsManagement\lib\operations\images.js
-      startLine: 371
-      remote:
-        branch: jsdoc
-        path: lib\services\customerInsightsManagement\lib\operations\images.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-customerinsights.Images.#ctor'

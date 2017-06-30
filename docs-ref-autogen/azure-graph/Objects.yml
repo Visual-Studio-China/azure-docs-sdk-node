@@ -9,14 +9,6 @@ items:
       instance of the GraphRbacManagementClient.
       Initializes a new instance of the Objects class.
     fullName: azure-graph.Objects
-    source:
-      id: azure-graph.Objects
-      path: lib\services\graphManagement\lib\operations\objects.js
-      startLine: 453
-      remote:
-        branch: jsdoc
-        path: lib\services\graphManagement\lib\operations\objects.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-graph.Objects.#ctor'

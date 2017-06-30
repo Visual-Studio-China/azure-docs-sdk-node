@@ -9,14 +9,6 @@ items:
       instance of the ServicemapManagementClient.
       Initializes a new instance of the Maps class.
     fullName: azure-arm-servicemap.Maps
-    source:
-      id: azure-arm-servicemap.Maps
-      path: lib\services\serviceMapManagement\lib\operations\maps.js
-      startLine: 228
-      remote:
-        branch: jsdoc
-        path: lib\services\serviceMapManagement\lib\operations\maps.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-servicemap.Maps.#ctor'

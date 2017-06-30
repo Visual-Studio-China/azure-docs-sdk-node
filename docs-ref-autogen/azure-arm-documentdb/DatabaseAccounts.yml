@@ -9,14 +9,6 @@ items:
       instance of the DocumentdbManagementClient.
       Initializes a new instance of the DatabaseAccounts class.
     fullName: azure-arm-documentdb.DatabaseAccounts
-    source:
-      id: azure-arm-documentdb.DatabaseAccounts
-      path: lib\services\documentdbManagement\lib\operations\databaseAccounts.js
-      startLine: 2464
-      remote:
-        branch: jsdoc
-        path: lib\services\documentdbManagement\lib\operations\databaseAccounts.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-documentdb.DatabaseAccounts.#ctor'

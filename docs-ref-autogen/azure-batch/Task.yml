@@ -9,14 +9,6 @@ items:
       instance of the BatchServiceClient.
       Initializes a new instance of the Task class.
     fullName: azure-batch.Task
-    source:
-      id: azure-batch.Task
-      path: lib\services\batch\lib\operations\task.js
-      startLine: 2745
-      remote:
-        branch: jsdoc
-        path: lib\services\batch\lib\operations\task.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-batch.Task.#ctor'

@@ -15,14 +15,6 @@ items:
       SqlManagementClient~SqlManagementClient#databaseOperations}.
       Initializes a new instance of the DatabaseOperationOperations class.
     fullName: azure-asm-sql.DatabaseOperationOperations
-    source:
-      id: azure-asm-sql.DatabaseOperationOperations~DatabaseOperationOperations
-      path: lib\services\sqlManagement\lib\sqlManagementClient.js
-      startLine: 2062
-      remote:
-        branch: jsdoc
-        path: lib\services\sqlManagement\lib\sqlManagementClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - >-

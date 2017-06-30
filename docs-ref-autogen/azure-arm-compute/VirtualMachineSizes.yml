@@ -9,14 +9,6 @@ items:
       instance of the ComputeManagementClient.
       Initializes a new instance of the VirtualMachineSizes class.
     fullName: azure-arm-compute.VirtualMachineSizes
-    source:
-      id: azure-arm-compute.VirtualMachineSizes
-      path: lib\services\computeManagement2\lib\operations\virtualMachineSizes.js
-      startLine: 172
-      remote:
-        branch: jsdoc
-        path: lib\services\computeManagement2\lib\operations\virtualMachineSizes.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-compute.VirtualMachineSizes.#ctor'

@@ -7,16 +7,6 @@ items:
       Initializes a new instance of the DataLakeStoreAccountManagementClient
       class.
     fullName: azure-arm-datalake-store.DataLakeStoreAccountManagementClient
-    source:
-      id: azure-arm-datalake-store.DataLakeStoreAccountManagementClient
-      path: >-
-        lib\services\dataLake.Store\lib\account\dataLakeStoreAccountManagementClient.js
-      startLine: 54
-      remote:
-        branch: jsdoc
-        path: >-
-          lib\services\dataLake.Store\lib\account\dataLakeStoreAccountManagementClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-datalake-store.DataLakeStoreAccountManagementClient.#ctor'

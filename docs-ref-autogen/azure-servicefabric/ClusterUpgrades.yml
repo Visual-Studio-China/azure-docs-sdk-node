@@ -9,14 +9,6 @@ items:
       instance of the ServiceFabricClient.
       Initializes a new instance of the ClusterUpgrades class.
     fullName: azure-servicefabric.ClusterUpgrades
-    source:
-      id: azure-servicefabric.ClusterUpgrades
-      path: lib\services\serviceFabric\lib\operations\clusterUpgrades.js
-      startLine: 757
-      remote:
-        branch: jsdoc
-        path: lib\services\serviceFabric\lib\operations\clusterUpgrades.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-servicefabric.ClusterUpgrades.#ctor'

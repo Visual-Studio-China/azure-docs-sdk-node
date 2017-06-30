@@ -9,14 +9,6 @@ items:
       instance of the BatchServiceClient.
       Initializes a new instance of the CertificateOperations class.
     fullName: azure-batch.CertificateOperations
-    source:
-      id: azure-batch.CertificateOperations
-      path: lib\services\batch\lib\operations\certificateOperations.js
-      startLine: 1303
-      remote:
-        branch: jsdoc
-        path: lib\services\batch\lib\operations\certificateOperations.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-batch.CertificateOperations.#ctor'

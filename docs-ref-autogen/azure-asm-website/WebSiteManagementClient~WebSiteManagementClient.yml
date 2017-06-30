@@ -12,14 +12,6 @@ items:
       more information)
       Initializes a new instance of the WebSiteManagementClient class.
     fullName: azure-asm-website.WebSiteManagementClient
-    source:
-      id: azure-asm-website.WebSiteManagementClient~WebSiteManagementClient
-      path: lib\services\webSiteManagement\lib\webSiteManagementClient.js
-      startLine: 59
-      remote:
-        branch: jsdoc
-        path: lib\services\webSiteManagement\lib\webSiteManagementClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-asm-website.WebSiteManagementClient~WebSiteManagementClient.#ctor'

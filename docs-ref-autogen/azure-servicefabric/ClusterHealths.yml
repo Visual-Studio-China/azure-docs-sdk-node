@@ -9,14 +9,6 @@ items:
       instance of the ServiceFabricClient.
       Initializes a new instance of the ClusterHealths class.
     fullName: azure-servicefabric.ClusterHealths
-    source:
-      id: azure-servicefabric.ClusterHealths
-      path: lib\services\serviceFabric\lib\operations\clusterHealths.js
-      startLine: 346
-      remote:
-        branch: jsdoc
-        path: lib\services\serviceFabric\lib\operations\clusterHealths.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-servicefabric.ClusterHealths.#ctor'

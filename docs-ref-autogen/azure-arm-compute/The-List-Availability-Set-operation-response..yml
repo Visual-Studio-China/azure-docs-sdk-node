@@ -5,15 +5,6 @@ items:
     name: The List Availability Set operation response.
     summary: Initializes a new instance of the AvailabilitySetListResult class.
     fullName: azure-arm-compute.The List Availability Set operation response.
-    source:
-      id: azure-arm-compute.The List Availability Set operation response.
-      path: lib\services\computeManagement2\lib\models\availabilitySetListResult.js
-      startLine: 13
-      remote:
-        branch: jsdoc
-        path: >-
-          lib\services\computeManagement2\lib\models\availabilitySetListResult.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-compute.The List Availability Set operation response..#ctor'

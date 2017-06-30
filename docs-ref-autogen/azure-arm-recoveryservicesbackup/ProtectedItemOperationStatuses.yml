@@ -9,16 +9,6 @@ items:
       instance of the RecoveryServicesBackupClient.
       Initializes a new instance of the ProtectedItemOperationStatuses class.
     fullName: azure-arm-recoveryservicesbackup.ProtectedItemOperationStatuses
-    source:
-      id: azure-arm-recoveryservicesbackup.ProtectedItemOperationStatuses
-      path: >-
-        lib\services\recoveryServicesBackupManagement\lib\operations\protectedItemOperationStatuses.js
-      startLine: 201
-      remote:
-        branch: jsdoc
-        path: >-
-          lib\services\recoveryServicesBackupManagement\lib\operations\protectedItemOperationStatuses.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-recoveryservicesbackup.ProtectedItemOperationStatuses.#ctor'

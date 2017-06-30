@@ -9,14 +9,6 @@ items:
       instance of the ManagementLockClient.
       Initializes a new instance of the ManagementLocks class.
     fullName: azure-arm-resource.ManagementLocks
-    source:
-      id: azure-arm-resource.ManagementLocks
-      path: lib\services\resourceManagement\lib\lock\operations\managementLocks.js
-      startLine: 2957
-      remote:
-        branch: jsdoc
-        path: lib\services\resourceManagement\lib\lock\operations\managementLocks.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-resource.ManagementLocks.#ctor'

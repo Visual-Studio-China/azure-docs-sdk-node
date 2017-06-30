@@ -9,14 +9,6 @@ items:
       instance of the AzureMLWebServicesManagementClient.
       Initializes a new instance of the WebServices class.
     fullName: azure-arm-machinelearning.WebServices
-    source:
-      id: azure-arm-machinelearning.WebServices
-      path: lib\services\machinelearning\lib\webservices\operations\webServices.js
-      startLine: 2108
-      remote:
-        branch: jsdoc
-        path: lib\services\machinelearning\lib\webservices\operations\webServices.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-machinelearning.WebServices.#ctor'

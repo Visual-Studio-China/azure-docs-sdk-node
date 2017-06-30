@@ -9,14 +9,6 @@ items:
       instance of the DevTestLabsClient.
       Initializes a new instance of the VirtualNetworkOperations class.
     fullName: azure-arm-devtestlabs.VirtualNetworkOperations
-    source:
-      id: azure-arm-devtestlabs.VirtualNetworkOperations
-      path: lib\services\devTestLabs\lib\operations\virtualNetworkOperations.js
-      startLine: 1204
-      remote:
-        branch: jsdoc
-        path: lib\services\devTestLabs\lib\operations\virtualNetworkOperations.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-devtestlabs.VirtualNetworkOperations.#ctor'

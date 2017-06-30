@@ -9,14 +9,6 @@ items:
       instance of the RecoveryServicesClient.
       Initializes a new instance of the Vaults class.
     fullName: azure-arm-recoveryservices.Vaults
-    source:
-      id: azure-arm-recoveryservices.Vaults
-      path: lib\services\recoveryServicesManagement\lib\operations\vaults.js
-      startLine: 761
-      remote:
-        branch: jsdoc
-        path: lib\services\recoveryServicesManagement\lib\operations\vaults.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-recoveryservices.Vaults.#ctor'

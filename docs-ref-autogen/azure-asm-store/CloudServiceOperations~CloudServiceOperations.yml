@@ -13,14 +13,6 @@ items:
       StoreManagementClient~StoreManagementClient#cloudServices}.
       Initializes a new instance of the CloudServiceOperations class.
     fullName: azure-asm-store.CloudServiceOperations
-    source:
-      id: azure-asm-store.CloudServiceOperations~CloudServiceOperations
-      path: lib\services\storeManagement\lib\storeManagementClient.js
-      startLine: 775
-      remote:
-        branch: jsdoc
-        path: lib\services\storeManagement\lib\storeManagementClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-asm-store.CloudServiceOperations~CloudServiceOperations.#ctor'

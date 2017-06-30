@@ -9,14 +9,6 @@ items:
       instance of the RedisManagementClient.
       Initializes a new instance of the Redis class.
     fullName: azure-arm-rediscache.Redis
-    source:
-      id: azure-arm-rediscache.Redis
-      path: lib\services\rediscachemanagement\lib\operations\redis.js
-      startLine: 2364
-      remote:
-        branch: jsdoc
-        path: lib\services\rediscachemanagement\lib\operations\redis.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-rediscache.Redis.#ctor'

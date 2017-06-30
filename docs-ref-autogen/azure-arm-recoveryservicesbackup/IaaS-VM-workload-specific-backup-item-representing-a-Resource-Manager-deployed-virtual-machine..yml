@@ -19,20 +19,6 @@ items:
       representing a Resource
 
       Manager-deployed virtual machine.
-    source:
-      id: >-
-        azure-arm-recoveryservicesbackup.IaaS VM workload-specific backup item
-        representing a Resource
-
-        Manager-deployed virtual machine.
-      path: >-
-        lib\services\recoveryServicesBackupManagement\lib\models\azureIaaSComputeVMContainer.js
-      startLine: 15
-      remote:
-        branch: jsdoc
-        path: >-
-          lib\services\recoveryServicesBackupManagement\lib\models\azureIaaSComputeVMContainer.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - >-

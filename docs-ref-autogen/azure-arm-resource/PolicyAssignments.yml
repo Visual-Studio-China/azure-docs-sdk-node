@@ -9,16 +9,6 @@ items:
       instance of the PolicyClient.
       Initializes a new instance of the PolicyAssignments class.
     fullName: azure-arm-resource.PolicyAssignments
-    source:
-      id: azure-arm-resource.PolicyAssignments
-      path: >-
-        lib\services\resourceManagement\lib\policy\operations\policyAssignments.js
-      startLine: 1849
-      remote:
-        branch: jsdoc
-        path: >-
-          lib\services\resourceManagement\lib\policy\operations\policyAssignments.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-resource.PolicyAssignments.#ctor'

@@ -9,14 +9,6 @@ items:
       instance of the NetworkManagementClient.
       Initializes a new instance of the SecurityRules class.
     fullName: azure-arm-network.SecurityRules
-    source:
-      id: azure-arm-network.SecurityRules
-      path: lib\services\networkManagement2\lib\operations\securityRules.js
-      startLine: 1025
-      remote:
-        branch: jsdoc
-        path: lib\services\networkManagement2\lib\operations\securityRules.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-network.SecurityRules.#ctor'

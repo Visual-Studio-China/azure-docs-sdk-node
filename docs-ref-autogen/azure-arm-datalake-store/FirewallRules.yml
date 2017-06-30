@@ -9,14 +9,6 @@ items:
       instance of the DataLakeStoreAccountManagementClient.
       Initializes a new instance of the FirewallRules class.
     fullName: azure-arm-datalake-store.FirewallRules
-    source:
-      id: azure-arm-datalake-store.FirewallRules
-      path: lib\services\dataLake.Store\lib\account\operations\firewallRules.js
-      startLine: 958
-      remote:
-        branch: jsdoc
-        path: lib\services\dataLake.Store\lib\account\operations\firewallRules.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-datalake-store.FirewallRules.#ctor'

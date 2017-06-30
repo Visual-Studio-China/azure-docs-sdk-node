@@ -9,14 +9,6 @@ items:
       instance of the NetworkManagementClient.
       Initializes a new instance of the NetworkWatchers class.
     fullName: azure-arm-network.NetworkWatchers
-    source:
-      id: azure-arm-network.NetworkWatchers
-      path: lib\services\networkManagement2\lib\operations\networkWatchers.js
-      startLine: 3269
-      remote:
-        branch: jsdoc
-        path: lib\services\networkManagement2\lib\operations\networkWatchers.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-network.NetworkWatchers.#ctor'

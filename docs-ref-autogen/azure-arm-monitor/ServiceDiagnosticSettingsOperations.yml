@@ -13,16 +13,6 @@ items:
       Initializes a new instance of the ServiceDiagnosticSettingsOperations
       class.
     fullName: azure-arm-monitor.ServiceDiagnosticSettingsOperations
-    source:
-      id: azure-arm-monitor.ServiceDiagnosticSettingsOperations
-      path: >-
-        lib\services\monitorManagement\lib\operations\serviceDiagnosticSettingsOperations.js
-      startLine: 28
-      remote:
-        branch: jsdoc
-        path: >-
-          lib\services\monitorManagement\lib\operations\serviceDiagnosticSettingsOperations.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-monitor.ServiceDiagnosticSettingsOperations.#ctor'

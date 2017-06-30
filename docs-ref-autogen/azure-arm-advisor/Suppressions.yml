@@ -9,14 +9,6 @@ items:
       instance of the AdvisorManagementClient.
       Initializes a new instance of the Suppressions class.
     fullName: azure-arm-advisor.Suppressions
-    source:
-      id: azure-arm-advisor.Suppressions
-      path: lib\services\advisorManagement\lib\operations\suppressions.js
-      startLine: 630
-      remote:
-        branch: jsdoc
-        path: lib\services\advisorManagement\lib\operations\suppressions.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-advisor.Suppressions.#ctor'

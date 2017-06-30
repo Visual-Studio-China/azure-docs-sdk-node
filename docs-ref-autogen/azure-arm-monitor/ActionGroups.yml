@@ -9,14 +9,6 @@ items:
       instance of the MonitorManagementClient.
       Initializes a new instance of the ActionGroups class.
     fullName: azure-arm-monitor.ActionGroups
-    source:
-      id: azure-arm-monitor.ActionGroups
-      path: lib\services\monitorManagement\lib\operations\actionGroups.js
-      startLine: 28
-      remote:
-        branch: jsdoc
-        path: lib\services\monitorManagement\lib\operations\actionGroups.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-monitor.ActionGroups.#ctor'

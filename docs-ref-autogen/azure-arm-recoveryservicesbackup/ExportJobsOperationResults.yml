@@ -9,16 +9,6 @@ items:
       instance of the RecoveryServicesBackupClient.
       Initializes a new instance of the ExportJobsOperationResults class.
     fullName: azure-arm-recoveryservicesbackup.ExportJobsOperationResults
-    source:
-      id: azure-arm-recoveryservicesbackup.ExportJobsOperationResults
-      path: >-
-        lib\services\recoveryServicesBackupManagement\lib\operations\exportJobsOperationResults.js
-      startLine: 178
-      remote:
-        branch: jsdoc
-        path: >-
-          lib\services\recoveryServicesBackupManagement\lib\operations\exportJobsOperationResults.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-recoveryservicesbackup.ExportJobsOperationResults.#ctor'

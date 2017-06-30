@@ -9,14 +9,6 @@ items:
       instance of the CustomerInsightsManagementClient.
       Initializes a new instance of the Profiles class.
     fullName: azure-arm-customerinsights.Profiles
-    source:
-      id: azure-arm-customerinsights.Profiles
-      path: lib\services\customerInsightsManagement\lib\operations\profiles.js
-      startLine: 1031
-      remote:
-        branch: jsdoc
-        path: lib\services\customerInsightsManagement\lib\operations\profiles.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-customerinsights.Profiles.#ctor'

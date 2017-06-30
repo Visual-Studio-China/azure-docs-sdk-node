@@ -16,15 +16,6 @@ items:
       Initializes a new instance of the RestorableDroppedDatabaseOperations
       class.
     fullName: azure-asm-sql.RestorableDroppedDatabaseOperations
-    source:
-      id: >-
-        azure-asm-sql.RestorableDroppedDatabaseOperations~RestorableDroppedDatabaseOperations
-      path: lib\services\sqlManagement\lib\sqlManagementClient.js
-      startLine: 5435
-      remote:
-        branch: jsdoc
-        path: lib\services\sqlManagement\lib\sqlManagementClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - >-

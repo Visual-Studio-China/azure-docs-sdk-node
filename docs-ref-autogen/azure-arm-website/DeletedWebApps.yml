@@ -9,14 +9,6 @@ items:
       instance of the WebSiteManagementClient.
       Initializes a new instance of the DeletedWebApps class.
     fullName: azure-arm-website.DeletedWebApps
-    source:
-      id: azure-arm-website.DeletedWebApps
-      path: lib\services\webSiteManagement2\lib\operations\deletedWebApps.js
-      startLine: 576
-      remote:
-        branch: jsdoc
-        path: lib\services\webSiteManagement2\lib\operations\deletedWebApps.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-website.DeletedWebApps.#ctor'

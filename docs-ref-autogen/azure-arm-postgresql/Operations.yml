@@ -9,14 +9,6 @@ items:
       instance of the PostgreSQLManagementClient.
       Initializes a new instance of the Operations class.
     fullName: azure-arm-postgresql.Operations
-    source:
-      id: azure-arm-postgresql.Operations
-      path: lib\services\postgresqlManagement\lib\operations\operations.js
-      startLine: 156
-      remote:
-        branch: jsdoc
-        path: lib\services\postgresqlManagement\lib\operations\operations.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-postgresql.Operations.#ctor'

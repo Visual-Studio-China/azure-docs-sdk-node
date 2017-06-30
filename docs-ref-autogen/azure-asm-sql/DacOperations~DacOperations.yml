@@ -19,14 +19,6 @@ items:
 
       Initializes a new instance of the DacOperations class.
     fullName: azure-asm-sql.DacOperations
-    source:
-      id: azure-asm-sql.DacOperations~DacOperations
-      path: lib\services\sqlManagement\lib\sqlManagementClient.js
-      startLine: 172
-      remote:
-        branch: jsdoc
-        path: lib\services\sqlManagement\lib\sqlManagementClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-asm-sql.DacOperations~DacOperations.#ctor'

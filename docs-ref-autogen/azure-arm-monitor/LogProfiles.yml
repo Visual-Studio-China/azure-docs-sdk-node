@@ -9,14 +9,6 @@ items:
       instance of the MonitorManagementClient.
       Initializes a new instance of the LogProfiles class.
     fullName: azure-arm-monitor.LogProfiles
-    source:
-      id: azure-arm-monitor.LogProfiles
-      path: lib\services\monitorManagement\lib\operations\logProfiles.js
-      startLine: 28
-      remote:
-        branch: jsdoc
-        path: lib\services\monitorManagement\lib\operations\logProfiles.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-monitor.LogProfiles.#ctor'

@@ -9,14 +9,6 @@ items:
       instance of the ServiceFabricClient.
       Initializes a new instance of the DeployedCodePackages class.
     fullName: azure-servicefabric.DeployedCodePackages
-    source:
-      id: azure-servicefabric.DeployedCodePackages
-      path: lib\services\serviceFabric\lib\operations\deployedCodePackages.js
-      startLine: 178
-      remote:
-        branch: jsdoc
-        path: lib\services\serviceFabric\lib\operations\deployedCodePackages.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-servicefabric.DeployedCodePackages.#ctor'

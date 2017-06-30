@@ -7,16 +7,6 @@ items:
       Initializes a new instance of the AzureMLCommitmentPlansManagementClient
       class.
     fullName: azure-arm-machinelearning.AzureMLCommitmentPlansManagementClient
-    source:
-      id: azure-arm-machinelearning.AzureMLCommitmentPlansManagementClient
-      path: >-
-        lib\services\machinelearning\lib\commitmentPlan\azureMLCommitmentPlansManagementClient.js
-      startLine: 54
-      remote:
-        branch: jsdoc
-        path: >-
-          lib\services\machinelearning\lib\commitmentPlan\azureMLCommitmentPlansManagementClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-machinelearning.AzureMLCommitmentPlansManagementClient.#ctor'

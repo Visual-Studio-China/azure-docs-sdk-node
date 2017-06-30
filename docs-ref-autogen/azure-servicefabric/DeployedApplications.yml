@@ -9,14 +9,6 @@ items:
       instance of the ServiceFabricClient.
       Initializes a new instance of the DeployedApplications class.
     fullName: azure-servicefabric.DeployedApplications
-    source:
-      id: azure-servicefabric.DeployedApplications
-      path: lib\services\serviceFabric\lib\operations\deployedApplications.js
-      startLine: 311
-      remote:
-        branch: jsdoc
-        path: lib\services\serviceFabric\lib\operations\deployedApplications.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-servicefabric.DeployedApplications.#ctor'

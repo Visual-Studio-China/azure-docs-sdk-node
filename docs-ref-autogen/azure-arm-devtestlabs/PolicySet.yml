@@ -9,14 +9,6 @@ items:
       instance of the DevTestLabsClient.
       Initializes a new instance of the PolicySet class.
     fullName: azure-arm-devtestlabs.PolicySet
-    source:
-      id: azure-arm-devtestlabs.PolicySet
-      path: lib\services\devTestLabs\lib\operations\policySet.js
-      startLine: 200
-      remote:
-        branch: jsdoc
-        path: lib\services\devTestLabs\lib\operations\policySet.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-devtestlabs.PolicySet.#ctor'

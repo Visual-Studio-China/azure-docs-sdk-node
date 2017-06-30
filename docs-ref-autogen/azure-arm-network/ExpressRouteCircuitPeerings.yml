@@ -9,16 +9,6 @@ items:
       instance of the NetworkManagementClient.
       Initializes a new instance of the ExpressRouteCircuitPeerings class.
     fullName: azure-arm-network.ExpressRouteCircuitPeerings
-    source:
-      id: azure-arm-network.ExpressRouteCircuitPeerings
-      path: >-
-        lib\services\networkManagement2\lib\operations\expressRouteCircuitPeerings.js
-      startLine: 1110
-      remote:
-        branch: jsdoc
-        path: >-
-          lib\services\networkManagement2\lib\operations\expressRouteCircuitPeerings.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-network.ExpressRouteCircuitPeerings.#ctor'

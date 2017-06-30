@@ -5,14 +5,6 @@ items:
     name: KeyVaultClient
     summary: Initializes a new instance of the KeyVaultClient class.
     fullName: azure-keyvault.KeyVaultClient
-    source:
-      id: azure-keyvault.KeyVaultClient
-      path: lib\services\keyVault\lib\keyVault.js
-      startLine: 190
-      remote:
-        branch: jsdoc
-        path: lib\services\keyVault\lib\keyVault.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-keyvault.KeyVaultClient.#ctor'

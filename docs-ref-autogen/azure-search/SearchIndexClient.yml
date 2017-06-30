@@ -5,14 +5,6 @@ items:
     name: SearchIndexClient
     summary: Initializes a new instance of the SearchIndexClient class.
     fullName: azure-search.SearchIndexClient
-    source:
-      id: azure-search.SearchIndexClient
-      path: lib\services\search\lib\index\searchIndexClient.js
-      startLine: 52
-      remote:
-        branch: jsdoc
-        path: lib\services\search\lib\index\searchIndexClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-search.SearchIndexClient.#ctor'

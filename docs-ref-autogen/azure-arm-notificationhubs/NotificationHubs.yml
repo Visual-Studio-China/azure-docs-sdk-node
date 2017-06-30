@@ -9,16 +9,6 @@ items:
       instance of the NotificationHubsManagementClient.
       Initializes a new instance of the NotificationHubs class.
     fullName: azure-arm-notificationhubs.NotificationHubs
-    source:
-      id: azure-arm-notificationhubs.NotificationHubs
-      path: >-
-        lib\services\notificationHubsManagement\lib\operations\notificationHubs.js
-      startLine: 2336
-      remote:
-        branch: jsdoc
-        path: >-
-          lib\services\notificationHubsManagement\lib\operations\notificationHubs.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-notificationhubs.NotificationHubs.#ctor'

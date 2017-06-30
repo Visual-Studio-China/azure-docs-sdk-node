@@ -5,14 +5,6 @@ items:
     name: The collection of metric value sets.
     summary: Initializes a new instance of the MetricCollection class.
     fullName: azure-monitor.The collection of metric value sets.
-    source:
-      id: azure-monitor.The collection of metric value sets.
-      path: lib\services\monitor\lib\models\metricCollection.js
-      startLine: 15
-      remote:
-        branch: jsdoc
-        path: lib\services\monitor\lib\models\metricCollection.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-monitor.The collection of metric value sets..#ctor'

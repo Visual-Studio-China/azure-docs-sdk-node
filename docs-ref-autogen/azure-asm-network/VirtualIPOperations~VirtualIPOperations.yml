@@ -13,14 +13,6 @@ items:
       NetworkManagementClient~NetworkManagementClient#virtualIPs}.
       Initializes a new instance of the VirtualIPOperations class.
     fullName: azure-asm-network.VirtualIPOperations
-    source:
-      id: azure-asm-network.VirtualIPOperations~VirtualIPOperations
-      path: lib\services\networkManagement\lib\networkManagementClient.js
-      startLine: 20382
-      remote:
-        branch: jsdoc
-        path: lib\services\networkManagement\lib\networkManagementClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-asm-network.VirtualIPOperations~VirtualIPOperations.#ctor'

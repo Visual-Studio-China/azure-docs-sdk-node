@@ -9,14 +9,6 @@ items:
       instance of the SearchServiceClient.
       Initializes a new instance of the Indexes class.
     fullName: azure-search.Indexes
-    source:
-      id: azure-search.Indexes
-      path: lib\services\search\lib\service\operations\indexes.js
-      startLine: 1362
-      remote:
-        branch: jsdoc
-        path: lib\services\search\lib\service\operations\indexes.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-search.Indexes.#ctor'

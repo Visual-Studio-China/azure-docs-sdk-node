@@ -16,14 +16,6 @@ items:
 
       Initializes a new instance of the EventDataOperations class.
     fullName: azure-monitoring.EventDataOperations
-    source:
-      id: azure-monitoring.EventDataOperations~EventDataOperations
-      path: lib\services\monitoring\lib\eventsClient.js
-      startLine: 98
-      remote:
-        branch: jsdoc
-        path: lib\services\monitoring\lib\eventsClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-monitoring.EventDataOperations~EventDataOperations.#ctor'

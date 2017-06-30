@@ -9,14 +9,6 @@ items:
       instance of the CdnManagementClient.
       Initializes a new instance of the Endpoints class.
     fullName: azure-arm-cdn.Endpoints
-    source:
-      id: azure-arm-cdn.Endpoints
-      path: lib\services\cdnManagement\lib\operations\endpoints.js
-      startLine: 2986
-      remote:
-        branch: jsdoc
-        path: lib\services\cdnManagement\lib\operations\endpoints.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-cdn.Endpoints.#ctor'

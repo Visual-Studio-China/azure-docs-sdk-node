@@ -144,14 +144,8 @@
       name: create
     - uid: azure-common._global.create
       name: create
-    - uid: azure-common._global.create
-      name: create
     - uid: azure-common._global.setAgent
       name: setAgent
-    - uid: azure-common._global.create
-      name: create
-    - uid: azure-common._global.create
-      name: create
     - uid: azure-common._global.create
       name: create
     - uid: azure-common._global.noMatchConnectionString

@@ -9,14 +9,6 @@ items:
       instance of the SearchServiceClient.
       Initializes a new instance of the Indexers class.
     fullName: azure-search.Indexers
-    source:
-      id: azure-search.Indexers
-      path: lib\services\search\lib\service\operations\indexers.js
-      startLine: 1440
-      remote:
-        branch: jsdoc
-        path: lib\services\search\lib\service\operations\indexers.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-search.Indexers.#ctor'

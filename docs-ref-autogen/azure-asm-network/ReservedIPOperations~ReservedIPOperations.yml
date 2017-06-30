@@ -13,14 +13,6 @@ items:
       NetworkManagementClient~NetworkManagementClient#reservedIPs}.
       Initializes a new instance of the ReservedIPOperations class.
     fullName: azure-asm-network.ReservedIPOperations
-    source:
-      id: azure-asm-network.ReservedIPOperations~ReservedIPOperations
-      path: lib\services\networkManagement\lib\networkManagementClient.js
-      startLine: 16151
-      remote:
-        branch: jsdoc
-        path: lib\services\networkManagement\lib\networkManagementClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-asm-network.ReservedIPOperations~ReservedIPOperations.#ctor'

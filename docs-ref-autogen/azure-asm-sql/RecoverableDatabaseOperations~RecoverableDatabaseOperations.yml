@@ -12,15 +12,6 @@ items:
       SqlManagementClient~SqlManagementClient#recoverableDatabases}.
       Initializes a new instance of the RecoverableDatabaseOperations class.
     fullName: azure-asm-sql.RecoverableDatabaseOperations
-    source:
-      id: >-
-        azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations
-      path: lib\services\sqlManagement\lib\sqlManagementClient.js
-      startLine: 4931
-      remote:
-        branch: jsdoc
-        path: lib\services\sqlManagement\lib\sqlManagementClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - >-

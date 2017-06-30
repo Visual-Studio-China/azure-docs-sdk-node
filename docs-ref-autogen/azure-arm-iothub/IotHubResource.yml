@@ -9,14 +9,6 @@ items:
       instance of the IotHubClient.
       Initializes a new instance of the IotHubResource class.
     fullName: azure-arm-iothub.IotHubResource
-    source:
-      id: azure-arm-iothub.IotHubResource
-      path: lib\services\iothub\lib\operations\iotHubResource.js
-      startLine: 4432
-      remote:
-        branch: jsdoc
-        path: lib\services\iothub\lib\operations\iotHubResource.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-iothub.IotHubResource.#ctor'

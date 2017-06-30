@@ -9,15 +9,6 @@ items:
       instance of the CustomerInsightsManagementClient.
       Initializes a new instance of the Relationships class.
     fullName: azure-arm-customerinsights.Relationships
-    source:
-      id: azure-arm-customerinsights.Relationships
-      path: lib\services\customerInsightsManagement\lib\operations\relationships.js
-      startLine: 963
-      remote:
-        branch: jsdoc
-        path: >-
-          lib\services\customerInsightsManagement\lib\operations\relationships.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-customerinsights.Relationships.#ctor'

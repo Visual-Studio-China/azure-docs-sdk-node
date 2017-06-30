@@ -9,15 +9,6 @@ items:
       instance of the ServiceFabricClient.
       Initializes a new instance of the ApplicationUpgradeRollbacks class.
     fullName: azure-servicefabric.ApplicationUpgradeRollbacks
-    source:
-      id: azure-servicefabric.ApplicationUpgradeRollbacks
-      path: lib\services\serviceFabric\lib\operations\applicationUpgradeRollbacks.js
-      startLine: 164
-      remote:
-        branch: jsdoc
-        path: >-
-          lib\services\serviceFabric\lib\operations\applicationUpgradeRollbacks.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-servicefabric.ApplicationUpgradeRollbacks.#ctor'

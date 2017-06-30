@@ -9,14 +9,6 @@ items:
       instance of the DataLakeAnalyticsJobManagementClient.
       Initializes a new instance of the Pipeline class.
     fullName: azure-arm-datalake-analytics.Pipeline
-    source:
-      id: azure-arm-datalake-analytics.Pipeline
-      path: lib\services\dataLake.Analytics\lib\job\operations\pipeline.js
-      startLine: 491
-      remote:
-        branch: jsdoc
-        path: lib\services\dataLake.Analytics\lib\job\operations\pipeline.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-arm-datalake-analytics.Pipeline.#ctor'

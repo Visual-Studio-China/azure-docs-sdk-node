@@ -11,14 +11,6 @@ items:
       CloudServiceManagementClient~CloudServiceManagementClient#cloudServices}.
       Initializes a new instance of the CloudServiceOperations class.
     fullName: azure-asm-scheduler.CloudServiceOperations
-    source:
-      id: azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations
-      path: lib\services\schedulerManagement\lib\cloudServiceManagementClient.js
-      startLine: 329
-      remote:
-        branch: jsdoc
-        path: lib\services\schedulerManagement\lib\cloudServiceManagementClient.js
-        repo: 'https://github.com/Azure/azure-sdk-for-node.git'
     type: Class
     children:
       - 'azure-asm-scheduler.CloudServiceOperations~CloudServiceOperations.#ctor'
