@@ -42,6 +42,21 @@
     - uid: 'azure-arm-network.ApplicationGateways#listAvailableWafRuleSets'
       name: listAvailableWafRuleSets
     - uid: >-
+        azure-arm-network.ApplicationGateways#availableSslOptionsWithHttpOperationResponse
+      name: availableSslOptionsWithHttpOperationResponse
+    - uid: 'azure-arm-network.ApplicationGateways#availableSslOptions'
+      name: availableSslOptions
+    - uid: >-
+        azure-arm-network.ApplicationGateways#listAvailableSslPredefinedPoliciesWithHttpOperationResponse
+      name: listAvailableSslPredefinedPoliciesWithHttpOperationResponse
+    - uid: 'azure-arm-network.ApplicationGateways#listAvailableSslPredefinedPolicies'
+      name: listAvailableSslPredefinedPolicies
+    - uid: >-
+        azure-arm-network.ApplicationGateways#getSslPredefinedPolicyWithHttpOperationResponse
+      name: getSslPredefinedPolicyWithHttpOperationResponse
+    - uid: 'azure-arm-network.ApplicationGateways#getSslPredefinedPolicy'
+      name: getSslPredefinedPolicy
+    - uid: >-
         azure-arm-network.ApplicationGateways#beginDeleteMethodWithHttpOperationResponse
       name: beginDeleteMethodWithHttpOperationResponse
     - uid: 'azure-arm-network.ApplicationGateways#beginDeleteMethod'
@@ -74,6 +89,12 @@
       name: listAllNextWithHttpOperationResponse
     - uid: 'azure-arm-network.ApplicationGateways#listAllNext'
       name: listAllNext
+    - uid: >-
+        azure-arm-network.ApplicationGateways#listAvailableSslPredefinedPoliciesNextWithHttpOperationResponse
+      name: listAvailableSslPredefinedPoliciesNextWithHttpOperationResponse
+    - uid: >-
+        azure-arm-network.ApplicationGateways#listAvailableSslPredefinedPoliciesNext
+      name: listAvailableSslPredefinedPoliciesNext
 - uid: azure-arm-network.BgpServiceCommunities
   name: BgpServiceCommunities
   items:
@@ -1050,6 +1071,11 @@
     - uid: 'azure-arm-network.VirtualNetworkGateways#generatevpnclientpackage'
       name: generatevpnclientpackage
     - uid: >-
+        azure-arm-network.VirtualNetworkGateways#generateVpnProfileWithHttpOperationResponse
+      name: generateVpnProfileWithHttpOperationResponse
+    - uid: 'azure-arm-network.VirtualNetworkGateways#generateVpnProfile'
+      name: generateVpnProfile
+    - uid: >-
         azure-arm-network.VirtualNetworkGateways#getBgpPeerStatusWithHttpOperationResponse
       name: getBgpPeerStatusWithHttpOperationResponse
     - uid: 'azure-arm-network.VirtualNetworkGateways#getBgpPeerStatus'
@@ -1079,6 +1105,16 @@
       name: beginResetWithHttpOperationResponse
     - uid: 'azure-arm-network.VirtualNetworkGateways#beginReset'
       name: beginReset
+    - uid: >-
+        azure-arm-network.VirtualNetworkGateways#beginGeneratevpnclientpackageWithHttpOperationResponse
+      name: beginGeneratevpnclientpackageWithHttpOperationResponse
+    - uid: 'azure-arm-network.VirtualNetworkGateways#beginGeneratevpnclientpackage'
+      name: beginGeneratevpnclientpackage
+    - uid: >-
+        azure-arm-network.VirtualNetworkGateways#beginGenerateVpnProfileWithHttpOperationResponse
+      name: beginGenerateVpnProfileWithHttpOperationResponse
+    - uid: 'azure-arm-network.VirtualNetworkGateways#beginGenerateVpnProfile'
+      name: beginGenerateVpnProfile
     - uid: >-
         azure-arm-network.VirtualNetworkGateways#beginGetBgpPeerStatusWithHttpOperationResponse
       name: beginGetBgpPeerStatusWithHttpOperationResponse

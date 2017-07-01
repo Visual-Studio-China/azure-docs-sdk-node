@@ -250,6 +250,12 @@ items:
             - array
           description: VpnClientRevokedCertificate for Virtual network gateway.
           optional: true
+        - id: >-
+            parameters.virtualNetworkGateway2.vpnClientConfiguration.vpnClientProtocols
+          type:
+            - array
+          description: VpnClientProtocols for Virtual network gateway.
+          optional: true
         - id: parameters.virtualNetworkGateway2.bgpSettings
           type:
             - object
@@ -676,6 +682,12 @@ items:
           type:
             - array
           description: VpnClientRevokedCertificate for Virtual network gateway.
+          optional: true
+        - id: >-
+            parameters.virtualNetworkGateway2.vpnClientConfiguration.vpnClientProtocols
+          type:
+            - array
+          description: VpnClientProtocols for Virtual network gateway.
           optional: true
         - id: parameters.virtualNetworkGateway2.bgpSettings
           type:
@@ -2064,6 +2076,12 @@ items:
             - array
           description: VpnClientRevokedCertificate for Virtual network gateway.
           optional: true
+        - id: >-
+            parameters.virtualNetworkGateway2.vpnClientConfiguration.vpnClientProtocols
+          type:
+            - array
+          description: VpnClientProtocols for Virtual network gateway.
+          optional: true
         - id: parameters.virtualNetworkGateway2.bgpSettings
           type:
             - object
@@ -2491,6 +2509,12 @@ items:
           type:
             - array
           description: VpnClientRevokedCertificate for Virtual network gateway.
+          optional: true
+        - id: >-
+            parameters.virtualNetworkGateway2.vpnClientConfiguration.vpnClientProtocols
+          type:
+            - array
+          description: VpnClientProtocols for Virtual network gateway.
           optional: true
         - id: parameters.virtualNetworkGateway2.bgpSettings
           type:
