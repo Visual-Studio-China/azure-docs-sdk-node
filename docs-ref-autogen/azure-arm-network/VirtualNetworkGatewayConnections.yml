@@ -263,6 +263,25 @@ items:
             Virtual
             network gateway's BGP speaker settings.
           optional: true
+        - id: parameters.virtualNetworkGateway2.radiusServer
+          type:
+            - string
+          description: >-
+            The radius
+
+            server address property of the VirtualNetworkGateway resource for
+            vpn client
+
+            connection.
+          optional: true
+        - id: parameters.virtualNetworkGateway2.radiusSecret
+          type:
+            - string
+          description: |-
+            The radius
+            secret property of the VirtualNetworkGateway resource for vpn client
+            connection.
+          optional: true
         - id: parameters.virtualNetworkGateway2.resourceGuid
           type:
             - string
@@ -695,6 +714,25 @@ items:
           description: |-
             Virtual
             network gateway's BGP speaker settings.
+          optional: true
+        - id: parameters.virtualNetworkGateway2.radiusServer
+          type:
+            - string
+          description: >-
+            The radius
+
+            server address property of the VirtualNetworkGateway resource for
+            vpn client
+
+            connection.
+          optional: true
+        - id: parameters.virtualNetworkGateway2.radiusSecret
+          type:
+            - string
+          description: |-
+            The radius
+            secret property of the VirtualNetworkGateway resource for vpn client
+            connection.
           optional: true
         - id: parameters.virtualNetworkGateway2.resourceGuid
           type:
@@ -2089,6 +2127,25 @@ items:
             Virtual
             network gateway's BGP speaker settings.
           optional: true
+        - id: parameters.virtualNetworkGateway2.radiusServer
+          type:
+            - string
+          description: >-
+            The radius
+
+            server address property of the VirtualNetworkGateway resource for
+            vpn client
+
+            connection.
+          optional: true
+        - id: parameters.virtualNetworkGateway2.radiusSecret
+          type:
+            - string
+          description: |-
+            The radius
+            secret property of the VirtualNetworkGateway resource for vpn client
+            connection.
+          optional: true
         - id: parameters.virtualNetworkGateway2.resourceGuid
           type:
             - string
@@ -2522,6 +2579,25 @@ items:
           description: |-
             Virtual
             network gateway's BGP speaker settings.
+          optional: true
+        - id: parameters.virtualNetworkGateway2.radiusServer
+          type:
+            - string
+          description: >-
+            The radius
+
+            server address property of the VirtualNetworkGateway resource for
+            vpn client
+
+            connection.
+          optional: true
+        - id: parameters.virtualNetworkGateway2.radiusSecret
+          type:
+            - string
+          description: |-
+            The radius
+            secret property of the VirtualNetworkGateway resource for vpn client
+            connection.
           optional: true
         - id: parameters.virtualNetworkGateway2.resourceGuid
           type:

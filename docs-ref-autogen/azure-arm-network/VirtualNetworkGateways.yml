@@ -292,6 +292,20 @@ items:
             The weight added to
             routes learned from this BGP speaker.
           optional: true
+        - id: parameters.radiusServer
+          type:
+            - string
+          description: |-
+            The radius server address property
+            of the VirtualNetworkGateway resource for vpn client connection.
+          optional: true
+        - id: parameters.radiusSecret
+          type:
+            - string
+          description: |-
+            The radius secret property of the
+            VirtualNetworkGateway resource for vpn client connection.
+          optional: true
         - id: parameters.resourceGuid
           type:
             - string
@@ -567,6 +581,20 @@ items:
           description: |-
             The weight added to
             routes learned from this BGP speaker.
+          optional: true
+        - id: parameters.radiusServer
+          type:
+            - string
+          description: |-
+            The radius server address property
+            of the VirtualNetworkGateway resource for vpn client connection.
+          optional: true
+        - id: parameters.radiusSecret
+          type:
+            - string
+          description: |-
+            The radius secret property of the
+            VirtualNetworkGateway resource for vpn client connection.
           optional: true
         - id: parameters.resourceGuid
           type:
@@ -2391,6 +2419,20 @@ items:
             The weight added to
             routes learned from this BGP speaker.
           optional: true
+        - id: parameters.radiusServer
+          type:
+            - string
+          description: |-
+            The radius server address property
+            of the VirtualNetworkGateway resource for vpn client connection.
+          optional: true
+        - id: parameters.radiusSecret
+          type:
+            - string
+          description: |-
+            The radius secret property of the
+            VirtualNetworkGateway resource for vpn client connection.
+          optional: true
         - id: parameters.resourceGuid
           type:
             - string
@@ -2666,6 +2708,20 @@ items:
           description: |-
             The weight added to
             routes learned from this BGP speaker.
+          optional: true
+        - id: parameters.radiusServer
+          type:
+            - string
+          description: |-
+            The radius server address property
+            of the VirtualNetworkGateway resource for vpn client connection.
+          optional: true
+        - id: parameters.radiusSecret
+          type:
+            - string
+          description: |-
+            The radius secret property of the
+            VirtualNetworkGateway resource for vpn client connection.
           optional: true
         - id: parameters.resourceGuid
           type:

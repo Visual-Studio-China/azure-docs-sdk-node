@@ -35,8 +35,8 @@ items:
         azure-arm-network.ApplicationGateways#listAvailableWafRuleSetsWithHttpOperationResponse
       - 'azure-arm-network.ApplicationGateways#listAvailableWafRuleSets'
       - >-
-        azure-arm-network.ApplicationGateways#availableSslOptionsWithHttpOperationResponse
-      - 'azure-arm-network.ApplicationGateways#availableSslOptions'
+        azure-arm-network.ApplicationGateways#listAvailableSslOptionsWithHttpOperationResponse
+      - 'azure-arm-network.ApplicationGateways#listAvailableSslOptions'
       - >-
         azure-arm-network.ApplicationGateways#listAvailableSslPredefinedPoliciesWithHttpOperationResponse
       - 'azure-arm-network.ApplicationGateways#listAvailableSslPredefinedPolicies'
@@ -1773,14 +1773,14 @@ items:
     langs:
       - js
   - uid: >-
-      azure-arm-network.ApplicationGateways#availableSslOptionsWithHttpOperationResponse
+      azure-arm-network.ApplicationGateways#listAvailableSslOptionsWithHttpOperationResponse
     id: >-
-      azure-arm-network.ApplicationGateways#availableSslOptionsWithHttpOperationResponse
+      azure-arm-network.ApplicationGateways#listAvailableSslOptionsWithHttpOperationResponse
     parent: azure-arm-network.ApplicationGateways
-    name: availableSslOptionsWithHttpOperationResponse(options)
+    name: listAvailableSslOptionsWithHttpOperationResponse(options)
     summary: Lists available Ssl options for configuring Ssl policy.
     fullName: >-
-      azure-arm-network.ApplicationGateways.availableSslOptionsWithHttpOperationResponse(options)
+      azure-arm-network.ApplicationGateways.listAvailableSslOptionsWithHttpOperationResponse(options)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -1813,16 +1813,16 @@ items:
         type:
           - Promise
         description: A promise is returned
-      content: function availableSslOptionsWithHttpOperationResponse(options)
+      content: function listAvailableSslOptionsWithHttpOperationResponse(options)
     langs:
       - js
-  - uid: 'azure-arm-network.ApplicationGateways#availableSslOptions'
-    id: 'azure-arm-network.ApplicationGateways#availableSslOptions'
+  - uid: 'azure-arm-network.ApplicationGateways#listAvailableSslOptions'
+    id: 'azure-arm-network.ApplicationGateways#listAvailableSslOptions'
     parent: azure-arm-network.ApplicationGateways
-    name: 'availableSslOptions(options, optionalCallback)'
+    name: 'listAvailableSslOptions(options, optionalCallback)'
     summary: Lists available Ssl options for configuring Ssl policy.
     fullName: >-
-      azure-arm-network.ApplicationGateways.availableSslOptions(options,
+      azure-arm-network.ApplicationGateways.listAvailableSslOptions(options,
       optionalCallback)
     tags:
       - originalTitle: resolve
@@ -1892,7 +1892,7 @@ items:
           then it returns the callback else returns a Promise.
 
           {Promise} A promise is returned
-      content: 'function availableSslOptions(options, optionalCallback)'
+      content: 'function listAvailableSslOptions(options, optionalCallback)'
     langs:
       - js
   - uid: >-

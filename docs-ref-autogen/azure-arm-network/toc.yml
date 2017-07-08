@@ -42,10 +42,10 @@
     - uid: 'azure-arm-network.ApplicationGateways#listAvailableWafRuleSets'
       name: listAvailableWafRuleSets
     - uid: >-
-        azure-arm-network.ApplicationGateways#availableSslOptionsWithHttpOperationResponse
-      name: availableSslOptionsWithHttpOperationResponse
-    - uid: 'azure-arm-network.ApplicationGateways#availableSslOptions'
-      name: availableSslOptions
+        azure-arm-network.ApplicationGateways#listAvailableSslOptionsWithHttpOperationResponse
+      name: listAvailableSslOptionsWithHttpOperationResponse
+    - uid: 'azure-arm-network.ApplicationGateways#listAvailableSslOptions'
+      name: listAvailableSslOptions
     - uid: >-
         azure-arm-network.ApplicationGateways#listAvailableSslPredefinedPoliciesWithHttpOperationResponse
       name: listAvailableSslPredefinedPoliciesWithHttpOperationResponse
@@ -95,6 +95,19 @@
     - uid: >-
         azure-arm-network.ApplicationGateways#listAvailableSslPredefinedPoliciesNext
       name: listAvailableSslPredefinedPoliciesNext
+- uid: azure-arm-network.AvailablePrivateAccessServices
+  name: AvailablePrivateAccessServices
+  items:
+    - uid: >-
+        azure-arm-network.AvailablePrivateAccessServices#listWithHttpOperationResponse
+      name: listWithHttpOperationResponse
+    - uid: 'azure-arm-network.AvailablePrivateAccessServices#list'
+      name: list
+    - uid: >-
+        azure-arm-network.AvailablePrivateAccessServices#listNextWithHttpOperationResponse
+      name: listNextWithHttpOperationResponse
+    - uid: 'azure-arm-network.AvailablePrivateAccessServices#listNext'
+      name: listNext
 - uid: azure-arm-network.BgpServiceCommunities
   name: BgpServiceCommunities
   items:

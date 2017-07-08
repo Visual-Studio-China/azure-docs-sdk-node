@@ -490,6 +490,13 @@ items:
             - object
           description: Resource tags.
           optional: true
+        - id: subnetParameters.privateAccessServices
+          type:
+            - array
+          description: |-
+            An array of private
+            access services values.
+          optional: true
         - id: subnetParameters.resourceNavigationLinks
           type:
             - array
@@ -719,6 +726,13 @@ items:
           type:
             - object
           description: Resource tags.
+          optional: true
+        - id: subnetParameters.privateAccessServices
+          type:
+            - array
+          description: |-
+            An array of private
+            access services values.
           optional: true
         - id: subnetParameters.resourceNavigationLinks
           type:
@@ -1215,6 +1229,13 @@ items:
             - object
           description: Resource tags.
           optional: true
+        - id: subnetParameters.privateAccessServices
+          type:
+            - array
+          description: |-
+            An array of private
+            access services values.
+          optional: true
         - id: subnetParameters.resourceNavigationLinks
           type:
             - array
@@ -1444,6 +1465,13 @@ items:
           type:
             - object
           description: Resource tags.
+          optional: true
+        - id: subnetParameters.privateAccessServices
+          type:
+            - array
+          description: |-
+            An array of private
+            access services values.
           optional: true
         - id: subnetParameters.resourceNavigationLinks
           type:
