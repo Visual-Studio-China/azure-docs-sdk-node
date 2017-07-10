@@ -175,21 +175,33 @@
   items:
     - uid: 'azure-storage-legacy.SharedKey#signRequest'
       name: signRequest
+    - uid: 'azure-storage-legacy.SharedKey#_getCanonicalizedResource'
+      name: _getCanonicalizedResource
+    - uid: 'azure-storage-legacy.SharedKey#_getCanonicalizedHeaders'
+      name: _getCanonicalizedHeaders
 - uid: azure-storage-legacy.SharedKeyLite
   name: SharedKeyLite
   items:
     - uid: 'azure-storage-legacy.SharedKeyLite#signRequest'
       name: signRequest
+    - uid: 'azure-storage-legacy.SharedKeyLite#_getCanonicalizedResource'
+      name: _getCanonicalizedResource
+    - uid: 'azure-storage-legacy.SharedKeyLite#_getCanonicalizedHeaders'
+      name: _getCanonicalizedHeaders
 - uid: azure-storage-legacy.SharedKeyLiteTable
   name: SharedKeyLiteTable
   items:
     - uid: 'azure-storage-legacy.SharedKeyLiteTable#signRequest'
       name: signRequest
+    - uid: 'azure-storage-legacy.SharedKeyLiteTable#_getCanonicalizedResource'
+      name: _getCanonicalizedResource
 - uid: azure-storage-legacy.SharedKeyTable
   name: SharedKeyTable
   items:
     - uid: 'azure-storage-legacy.SharedKeyTable#signRequest'
       name: signRequest
+    - uid: 'azure-storage-legacy.SharedKeyTable#_getCanonicalizedResource'
+      name: _getCanonicalizedResource
 - uid: azure-storage-legacy.TableQuery
   name: TableQuery
   items:

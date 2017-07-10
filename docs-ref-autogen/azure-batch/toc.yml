@@ -31,6 +31,10 @@
   items:
     - uid: 'azure-batch.BatchSharedKeyCredentials#signRequest'
       name: signRequest
+    - uid: 'azure-batch.BatchSharedKeyCredentials#_getCanonicalizedHeaders'
+      name: _getCanonicalizedHeaders
+    - uid: 'azure-batch.BatchSharedKeyCredentials#_getCanonicalizedResource'
+      name: _getCanonicalizedResource
 - uid: azure-batch.CertificateOperations
   name: CertificateOperations
   items:

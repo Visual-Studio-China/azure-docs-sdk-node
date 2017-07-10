@@ -55,6 +55,8 @@
       name: _processResponse
     - uid: 'azure-common.ServiceClient#withFilter'
       name: withFilter
+    - uid: azure-common.ServiceClient._buildResponse
+      name: _buildResponse
     - uid: azure-common.ServiceClient._parseResponse
       name: _parseResponse
     - uid: 'azure-common.ServiceClient#_setRequestUrl'
@@ -69,6 +71,10 @@
       name: isEmulated
     - uid: azure-common.ServiceClient._normalizeError
       name: _normalizeError
+    - uid: 'azure-common.ServiceClient#setProxy'
+      name: setProxy
+    - uid: 'azure-common.ServiceClient#setAgent'
+      name: setAgent
     - uid: 'azure-common.ServiceClient#_setDefaultProxy'
       name: _setDefaultProxy
     - uid: 'azure-common.ServiceClient#_isHttps'
@@ -168,6 +174,8 @@
       name: settingWithFunc
     - uid: azure-common._global.matchedSpecification
       name: matchedSpecification
+    - uid: azure-common._global.parseHost
+      name: parseHost
     - uid: azure-common._global.serializeEntry
       name: serializeEntry
     - uid: azure-common._global.propertyType

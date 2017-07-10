@@ -9,6 +9,7 @@ items:
     children:
       - 'azure-storage-legacy.SharedKeyTable.#ctor'
       - 'azure-storage-legacy.SharedKeyTable#signRequest'
+      - 'azure-storage-legacy.SharedKeyTable#_getCanonicalizedResource'
     langs:
       - js
   - id: 'azure-storage-legacy.SharedKeyTable.#ctor'
@@ -61,5 +62,27 @@ items:
           - undefined
         description: ''
       content: 'function signRequest(The, callback)'
+    langs:
+      - js
+  - uid: 'azure-storage-legacy.SharedKeyTable#_getCanonicalizedResource'
+    id: 'azure-storage-legacy.SharedKeyTable#_getCanonicalizedResource'
+    parent: azure-storage-legacy.SharedKeyTable
+    name: _getCanonicalizedResource(webResource)
+    summary: |-
+      /*
+      Retrieves the webresource's canonicalized resource string.
+    fullName: azure-storage-legacy.SharedKeyTable._getCanonicalizedResource(webResource)
+    type: Function
+    syntax:
+      parameters:
+        - id: webResource
+          type:
+            - azure-storage-legacy.WebResource
+          description: The webresource to get the canonicalized resource string from.
+      return:
+        type:
+          - string
+        description: The canonicalized resource string.
+      content: function _getCanonicalizedResource(webResource)
     langs:
       - js
