@@ -9,8 +9,6 @@ items:
     children:
       - 'azure-storage-legacy.SharedKeyLite.#ctor'
       - 'azure-storage-legacy.SharedKeyLite#signRequest'
-      - 'azure-storage-legacy.SharedKeyLite#_getCanonicalizedResource'
-      - 'azure-storage-legacy.SharedKeyLite#_getCanonicalizedHeaders'
     langs:
       - js
   - id: 'azure-storage-legacy.SharedKeyLite.#ctor'
@@ -63,60 +61,5 @@ items:
           - undefined
         description: ''
       content: 'function signRequest(The, callback)'
-    langs:
-      - js
-  - uid: 'azure-storage-legacy.SharedKeyLite#_getCanonicalizedResource'
-    id: 'azure-storage-legacy.SharedKeyLite#_getCanonicalizedResource'
-    parent: azure-storage-legacy.SharedKeyLite
-    name: _getCanonicalizedResource(webResource)
-    summary: |-
-      /*
-      Retrieves the webresource's canonicalized resource string.
-    fullName: azure-storage-legacy.SharedKeyLite._getCanonicalizedResource(webResource)
-    type: Function
-    syntax:
-      parameters:
-        - id: webResource
-          type:
-            - azure-storage-legacy.WebResource
-          description: The webresource to get the canonicalized resource string from.
-      return:
-        type:
-          - string
-        description: The canonicalized resource string.
-      content: function _getCanonicalizedResource(webResource)
-    langs:
-      - js
-  - uid: 'azure-storage-legacy.SharedKeyLite#_getCanonicalizedHeaders'
-    id: 'azure-storage-legacy.SharedKeyLite#_getCanonicalizedHeaders'
-    parent: azure-storage-legacy.SharedKeyLite
-    name: _getCanonicalizedHeaders(The)
-    summary: |-
-      /*
-      Constructs the Canonicalized Headers string.
-
-      To construct the CanonicalizedHeaders portion of the signature string,
-      follow these steps: 1. Retrieve all headers for the resource that begin
-      with x-ms-, including the x-ms-date header. 2. Convert each HTTP header
-      name to lowercase. 3. Sort the headers lexicographically by header name,
-      in ascending order. Each header may appear only once in the
-      string. 4. Unfold the string by replacing any breaking white space with a
-      single space. 5. Trim any white space around the colon in the header. 6.
-      Finally, append a new line character to each canonicalized header in the
-      resulting list. Construct the CanonicalizedHeaders string by
-      concatenating all headers in this list into a single string.
-    fullName: azure-storage-legacy.SharedKeyLite._getCanonicalizedHeaders(The)
-    type: Function
-    syntax:
-      parameters:
-        - id: The
-          type:
-            - object
-          description: webresource object.
-      return:
-        type:
-          - string
-        description: The canonicalized headers.
-      content: function _getCanonicalizedHeaders(The)
     langs:
       - js

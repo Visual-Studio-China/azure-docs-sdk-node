@@ -24,7 +24,6 @@ items:
       - azure-common._global.allRequired
       - azure-common._global.settingWithFunc
       - azure-common._global.matchedSpecification
-      - azure-common._global.parseHost
       - azure-common._global.serializeEntry
       - azure-common._global.propertyType
       - azure-common._global.unserializeValue
@@ -361,27 +360,6 @@ items:
           boolean If any filter returns null, false. If there are any settings
           left over after all filters are processed, false. Otherwise true.
       content: function matchedSpecification(array)
-    langs:
-      - js
-  - uid: azure-common._global.parseHost
-    id: azure-common._global.parseHost
-    name: parseHost(uri)
-    summary: |-
-      /*
-      Returns a parsed host from a full host name.
-    fullName: azure-common.parseHost(uri)
-    type: Function
-    syntax:
-      parameters:
-        - id: uri
-          type:
-            - string
-          description: The full host to be parsed.
-      return:
-        type:
-          - object
-        description: THe parsed host as returned by the method "url.parse".
-      content: function parseHost(uri)
     langs:
       - js
   - uid: azure-common._global.serializeEntry

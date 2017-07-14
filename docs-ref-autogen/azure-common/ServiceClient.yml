@@ -18,7 +18,6 @@ items:
       - 'azure-common.ServiceClient#_buildRequestOptions'
       - 'azure-common.ServiceClient#_processResponse'
       - 'azure-common.ServiceClient#withFilter'
-      - azure-common.ServiceClient._buildResponse
       - azure-common.ServiceClient._parseResponse
       - 'azure-common.ServiceClient#_setRequestUrl'
       - 'azure-common.ServiceClient#_getPath'
@@ -26,8 +25,6 @@ items:
       - 'azure-common.ServiceClient#parseMetadataHeaders'
       - azure-common.ServiceClient.isEmulated
       - azure-common.ServiceClient._normalizeError
-      - 'azure-common.ServiceClient#setProxy'
-      - 'azure-common.ServiceClient#setAgent'
       - 'azure-common.ServiceClient#_setDefaultProxy'
       - 'azure-common.ServiceClient#_isHttps'
     langs:
@@ -399,46 +396,6 @@ items:
       content: function withFilter(filter)
     langs:
       - js
-  - uid: azure-common.ServiceClient._buildResponse
-    id: azure-common.ServiceClient._buildResponse
-    parent: azure-common.ServiceClient
-    name: '_buildResponse(isSuccessful, body, headers, statusCode, md5)'
-    summary: |-
-      /*
-      Builds a response object with normalized key names.
-    fullName: >-
-      azure-common.ServiceClient._buildResponse(isSuccessful, body, headers,
-      statusCode, md5)
-    type: Function
-    syntax:
-      parameters:
-        - id: isSuccessful
-          type:
-            - azure-common.Bool
-          description: Boolean value indicating if the request was successful
-        - id: body
-          type:
-            - Object
-          description: The response body.
-        - id: headers
-          type:
-            - Object
-          description: The response headers.
-        - id: statusCode
-          type:
-            - azure-common.int
-          description: The response status code.
-        - id: md5
-          type:
-            - string
-          description: The response's content md5 hash.
-      return:
-        type:
-          - Object
-        description: A response object.
-      content: 'function _buildResponse(isSuccessful, body, headers, statusCode, md5)'
-    langs:
-      - js
   - uid: azure-common.ServiceClient._parseResponse
     id: azure-common.ServiceClient._parseResponse
     parent: azure-common.ServiceClient
@@ -601,53 +558,6 @@ items:
           - Object
         description: The normalized error object with all properties lower cased.
       content: function _normalizeError(error)
-    langs:
-      - js
-  - uid: 'azure-common.ServiceClient#setProxy'
-    id: 'azure-common.ServiceClient#setProxy'
-    parent: azure-common.ServiceClient
-    name: setProxy(proxy)
-    summary: |-
-      /*
-      Sets proxy object specified by caller.
-    fullName: azure-common.ServiceClient.setProxy(proxy)
-    type: Function
-    syntax:
-      parameters:
-        - id: proxy
-          type:
-            - object
-          description: |-
-            proxy to use for tunneling
-                                          {
-                                           host: hostname
-                                           port: port number
-                                           proxyAuth: 'user:password' for basic auth
-                                           headers: {...} headers for proxy server
-                                           key: key for proxy server
-                                           ca: ca for proxy server
-                                           cert: cert for proxy server
-                                          }
-                                          if null or undefined, clears proxy
-      content: function setProxy(proxy)
-    langs:
-      - js
-  - uid: 'azure-common.ServiceClient#setAgent'
-    id: 'azure-common.ServiceClient#setAgent'
-    parent: azure-common.ServiceClient
-    name: setAgent(agent)
-    summary: |-
-      /*
-      Sets the http agent specified by caller.
-    fullName: azure-common.ServiceClient.setAgent(agent)
-    type: Function
-    syntax:
-      parameters:
-        - id: agent
-          type:
-            - object
-          description: http agent
-      content: function setAgent(agent)
     langs:
       - js
   - uid: 'azure-common.ServiceClient#_setDefaultProxy'
