@@ -120,6 +120,10 @@
       name: getQuotasWithHttpOperationResponse
     - uid: 'azure-arm-batch.Location#getQuotas'
       name: getQuotas
+    - uid: 'azure-arm-batch.Location#checkNameAvailabilityWithHttpOperationResponse'
+      name: checkNameAvailabilityWithHttpOperationResponse
+    - uid: 'azure-arm-batch.Location#checkNameAvailability'
+      name: checkNameAvailability
 - uid: azure-arm-batch.Operations
   name: Operations
   items:

@@ -214,6 +214,10 @@
       name: listPreparationAndReleaseTaskStatusWithHttpOperationResponse
     - uid: 'azure-batch.Job#listPreparationAndReleaseTaskStatus'
       name: listPreparationAndReleaseTaskStatus
+    - uid: 'azure-batch.Job#getTaskCountsWithHttpOperationResponse'
+      name: getTaskCountsWithHttpOperationResponse
+    - uid: 'azure-batch.Job#getTaskCounts'
+      name: getTaskCounts
     - uid: 'azure-batch.Job#listNextWithHttpOperationResponse'
       name: listNextWithHttpOperationResponse
     - uid: 'azure-batch.Job#listNext'
