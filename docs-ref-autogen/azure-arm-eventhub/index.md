@@ -1,40 +1,9 @@
-# Microsoft Azure SDK for Node.js - EventHubManagement
-
-This project provides a Node.js package that makes it easy to manage Azure EventHub Resources. Right now it supports:
-- **Node.js version: 6.0.0 or higher**
-
-## How to Install
-
-```bash
-npm install azure-arm-eventhub
-```
-
-## How to Use
-
-### Authentication, client creation and getting information about an eventhub as an example
-
- ```javascript
- var msRestAzure = require('ms-rest-azure');
- var EventHubManagement = require('azure-arm-eventhub');
- 
- // Interactive Login
- msRestAzure.interactiveLogin(function(err, credentials) {
-  var client = new EventHubManagement(credentials, 'your-subscription-id');
-  var resourceGroupName = 'testRG';
-  var namespaceName = 'testNS';
-  var eventHubName = 'testEH';
-  client.eventHubs.get(resourceGroupName, namespaceName, eventHubName, function(err, eventHubs, request, response) {
-    if (err) {
-      console.log(err);
-    } else {
-      eventHubs.map(function (hub, index, array) {
-        console.log('found hub :' + hub.name);
-      }));
-    }
-  });
- });
- ```
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js - All-up](https://github.com/WindowsAzure/azure-sdk-for-node)
+# Package azure-arm-eventhub
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-arm-eventhub.Operations |Operations __NOTE__: An instance of this class is automatically created for an instance of the EventHubManagementClient. Initializes a new instance of the Operations class.|
+| @azure-arm-eventhub.Namespaces |Namespaces __NOTE__: An instance of this class is automatically created for an instance of the EventHubManagementClient. Initializes a new instance of the Namespaces class.|
+| @azure-arm-eventhub.EventHubs |EventHubs __NOTE__: An instance of this class is automatically created for an instance of the EventHubManagementClient. Initializes a new instance of the EventHubs class.|
+| @azure-arm-eventhub.ConsumerGroups |ConsumerGroups __NOTE__: An instance of this class is automatically created for an instance of the EventHubManagementClient. Initializes a new instance of the ConsumerGroups class.|
+| @azure-arm-eventhub.EventHubManagementClient |Initializes a new instance of the EventHubManagementClient class.|

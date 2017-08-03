@@ -1,71 +1,19 @@
-# Microsoft Azure SDK for Node.js - Web Site Management
-
-This project provides a Node.js package that makes it easy to manage Microsoft Azure Web Site. Right now it supports:
-- **Node.js version: 4.x or higher**
-- **API version: 2014-04-01**
-
-## Features
-
-- Manage web space
-- Manage web site
-- Manage web farm
-
-## How to Install
-
-```bash
-npm install azure-asm-website
-```
-
-## How to Use
-
-### Authentication
-
-This library support management certificate authentication. To authenticate the library for the REST API calls, you need to
-* Have a management certificate set up in your Microsoft Azure subscription. You can do this by
-  * Either uploading a certificate in the [Microsoft Azure management portal](https://manage.windowsazure.com).
-  * Or use the [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli).
-* Obtain the .pem file of your certificate. If you used [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli) to set it up. You can run ``azure account cert export`` to get the .pem file.
-
-### Create the WebSiteManagementClient
-
-```javascript
-var fs                = require('fs'),
-    webSiteManagement = require('azure-asm-website');
-
-var webSiteManagementClient = webSiteManagement.createWebSiteManagementClient(webSiteManagement.createCertificateCloudCredentials({
-  subscriptionId: '<your subscription id>',
-  pem: fs.readFileSync('<your pem file>')
-}));
-```
-
-### Manage Web Site
-
-```javascript
-var webSiteName = "website01";
-
-// Get all the available webspaces under a subscription.
-webSiteManagementClient.webSpaces.list(function (err, result) {
-    if (err) {
-    console.error(err);
-  } else {
-    console.info(result);
-  }
-});
-
-// Create a web site.
-webSiteManagementClient.webSites.create("westuswebspace", {
-  name: webSiteName,
-  hostNames: [webSiteName + ".azurewebsites.net"],
-  webSpaceName: "westuswebspace"
-}, function (err, result) {
-  if (err) {
-    console.error(err);
-  } else {
-    console.info(result);
-  }
-});
-```
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js - All-up](https://github.com/WindowsAzure/azure-sdk-for-node)
+# Package azure-asm-website
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-asm-website.WebsiteManagementService |The WebsiteManagementService object allows you to perform management operations on Microsoft Azure Web Sites.|
+| @azure-asm-website.WebSpaceOperations~WebSpaceOperations |Operations for managing web spaces beneath your subscription. __NOTE__: An instance of this class is automatically created for an instance of the [WebSiteManagementClient] {@link WebSiteManagementClient~WebSiteManagementClient}. See [webSpaces] {@link WebSiteManagementClient~WebSiteManagementClient#webSpaces}. Initializes a new instance of the WebSpaceOperations class.|
+| @azure-asm-website.WebSiteOperations~WebSiteOperations |Operations for managing the web sites in a web space.  (see http://msdn.microsoft.com/en-us/library/windowsazure/dn166981.aspx for more information) __NOTE__: An instance of this class is automatically created for an instance of the [WebSiteManagementClient] {@link WebSiteManagementClient~WebSiteManagementClient}. See [webSites] {@link WebSiteManagementClient~WebSiteManagementClient#webSites}. Initializes a new instance of the WebSiteOperations class.|
+| @azure-asm-website.WebHostingPlanOperations~WebHostingPlanOperations |Operations for managing web hosting plans beneath your subscription. __NOTE__: An instance of this class is automatically created for an instance of the [WebSiteManagementClient] {@link WebSiteManagementClient~WebSiteManagementClient}. See [webHostingPlans] {@link WebSiteManagementClient~WebSiteManagementClient#webHostingPlans}. Initializes a new instance of the WebHostingPlanOperations class.|
+| @azure-asm-website.WebSiteManagementClient~WebSiteManagementClient |The Web Sites Management API provides a RESTful set of web services that interact with the Windows Azure Web Sites service to manage your web sites. The API has entities that capture the relationship between an end user and Windows Azure Web Sites service.  (see http://msdn.microsoft.com/en-us/library/windowsazure/dn166981.aspx for more information) Initializes a new instance of the WebSiteManagementClient class.|
+| @azure-asm-website.TriggeredWebJobOperations~TriggeredWebJobOperations |Operations for managing Triggered WebJobs. __NOTE__: An instance of this class is automatically created for an instance of the [WebSiteExtensionsClient] {@link WebSiteExtensionsClient~WebSiteExtensionsClient}. See [triggeredWebJobs] {@link WebSiteExtensionsClient~WebSiteExtensionsClient#triggeredWebJobs}. Initializes a new instance of the TriggeredWebJobOperations class.|
+| @azure-asm-website.SettingsOperations~SettingsOperations |Operations for managing the settings. __NOTE__: An instance of this class is automatically created for an instance of the [WebSiteExtensionsClient] {@link WebSiteExtensionsClient~WebSiteExtensionsClient}. See [settings] {@link WebSiteExtensionsClient~WebSiteExtensionsClient#settings}. Initializes a new instance of the SettingsOperations class.|
+| @azure-asm-website.RepositoryOperations~RepositoryOperations |Operations for managing the repository. __NOTE__: An instance of this class is automatically created for an instance of the [WebSiteExtensionsClient] {@link WebSiteExtensionsClient~WebSiteExtensionsClient}. See [repository] {@link WebSiteExtensionsClient~WebSiteExtensionsClient#repository}. Initializes a new instance of the RepositoryOperations class.|
+| @azure-asm-website.DiagnosticOperations~DiagnosticOperations |Operations for managing the diagnostics settings. __NOTE__: An instance of this class is automatically created for an instance of the [WebSiteExtensionsClient] {@link WebSiteExtensionsClient~WebSiteExtensionsClient}. See [diagnostics] {@link WebSiteExtensionsClient~WebSiteExtensionsClient#diagnostics}. Initializes a new instance of the DiagnosticOperations class.|
+| @azure-asm-website.DeploymentOperations~DeploymentOperations |Operations for managing the repositories. __NOTE__: An instance of this class is automatically created for an instance of the [WebSiteExtensionsClient] {@link WebSiteExtensionsClient~WebSiteExtensionsClient}. See [deployments] {@link WebSiteExtensionsClient~WebSiteExtensionsClient#deployments}. Initializes a new instance of the DeploymentOperations class.|
+| @azure-asm-website.ContinuousWebJobOperations~ContinuousWebJobOperations |Operations for managing continuous WebJobs. __NOTE__: An instance of this class is automatically created for an instance of the [WebSiteExtensionsClient] {@link WebSiteExtensionsClient~WebSiteExtensionsClient}. See [continuousWebJobs] {@link WebSiteExtensionsClient~WebSiteExtensionsClient#continuousWebJobs}. Initializes a new instance of the ContinuousWebJobOperations class.|
+| @azure-asm-website.CommandsOperations~CommandsOperations |Operations for invoking commands. __NOTE__: An instance of this class is automatically created for an instance of the [WebSiteExtensionsClient] {@link WebSiteExtensionsClient~WebSiteExtensionsClient}. See [commands] {@link WebSiteExtensionsClient~WebSiteExtensionsClient#commands}. Initializes a new instance of the CommandsOperations class.|
+| @azure-asm-website.WebSiteExtensionsClient~WebSiteExtensionsClient |The websites extensions client manages the web sites deployments, web jobs and other extensions. Initializes a new instance of the WebSiteExtensionsClient class.|
+| @azure-asm-website.ScmService |The ScmService object allows you to perform management operations on Microsoft Azure Web Sites Repositories.|
+| @azure-asm-website.BasicAuthenticationCloudCredentials ||

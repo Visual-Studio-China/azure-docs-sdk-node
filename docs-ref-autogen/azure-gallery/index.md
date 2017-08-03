@@ -1,24 +1,6 @@
-# Microsoft Azure SDK for Node.js - Gallery
-
-This project provides a Node.js package for accessing the Azure Gallery. Right now it supports:
-- **Node.js version: 0.6.15 or higher**
-- **API version: **
-
-## Features
-
-
-## How to Install
-
-```bash
-npm install azure-gallery
-```
-
-## How to Use
-
-### Authentication
-
-### Create the gallery client
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js](https://github.com/WindowsAzure/azure-sdk-for-node)
+# Package azure-gallery
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-gallery.ItemOperations~ItemOperations |Operations for working with gallery items. __NOTE__: An instance of this class is automatically created for an instance of the [GalleryClient] <xref:azure-gallery.GalleryClient~GalleryClient>. See [items] <xref:azure-gallery.GalleryClient~GalleryClient%23items>. Initializes a new instance of the ItemOperations class.|
+| @azure-gallery.GalleryClient~GalleryClient |Initializes a new instance of the GalleryClient class.|

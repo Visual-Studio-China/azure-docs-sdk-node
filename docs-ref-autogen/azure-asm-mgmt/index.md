@@ -1,66 +1,10 @@
-# Microsoft Azure SDK for Node.js - Core Management
-
-This project provides a Node.js package that makes it easy to manage basic Microsoft Azure functionalities. Right now it supports:
-- **API version: 2013-03-01**
-
-## Features
-
-- List locations and affinity groups
-- Manage management certificate
-- Manage subscription
-
-## How to Install
-
-```bash
-npm install azure-asm-mgmt
-```
-
-## How to Use
-
-### Authentication
-
-This library support management certificate authentication. To authenticate the library for the REST API calls, you need to
-* Have a management certificate set up in your Microsoft Azure subscription. You can do this by
-  * Either uploading a certificate in the [Microsoft Azure management portal](https://manage.windowsazure.com).
-  * Or use the [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli).
-* Obtain the .pem file of your certificate. If you used [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli) to set it up. You can run ``azure account cert export`` to get the .pem file.
-* Open the .pem file in a text editor to get the **cert value** and **key value**.
-
-### Create the ManagementClient
-
-```javascript
-var fs         = require('fs'),
-    management = require('azure-asm-mgmt');
-
-var managementClient = management.createManagementClient(management.createCertificateCloudCredentials({
-  subscriptionId: '<your subscription id>',
-  pem: fs.readFileSync('<your pem file>')
-}));
-```
-
-### List locations and affinity groups
-
-```
-// List all the available locations.
-managementClient.locations.list(function (err, result) {
-  if (err) {
-    console.error(err);
-  } else {
-    console.info(result);
-  }
-});
-
-// List all the affinity groups under a subscription.
-managementClient.affinityGroups.list(function (err, result) {
-  if (err) {
-    console.error(err);
-  } else {
-    console.info(result);
-  }
-});
-```
-
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js](https://github.com/WindowsAzure/azure-sdk-for-node)
+# Package azure-asm-mgmt
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-asm-mgmt.SubscriptionOperations~SubscriptionOperations |Operations for listing subscription details.  (see http://msdn.microsoft.com/en-us/library/windowsazure/gg715315.aspx for more information) __NOTE__: An instance of this class is automatically created for an instance of the [ManagementClient] {@link ManagementClient~ManagementClient}. See [subscriptions] {@link ManagementClient~ManagementClient#subscriptions}. Initializes a new instance of the SubscriptionOperations class.|
+| @azure-asm-mgmt.RoleSizeOperations~RoleSizeOperations |The Service Management API includes operations for listing the available role sizes for VMs in your subscription. __NOTE__: An instance of this class is automatically created for an instance of the [ManagementClient] {@link ManagementClient~ManagementClient}. See [roleSizes] <xref:azure-asm-mgmt.ManagementClient~ManagementClient%23roleSizes>. Initializes a new instance of the RoleSizeOperations class.|
+| @azure-asm-mgmt.ManagementCertificateOperations~ManagementCertificateOperations |You can use management certificates, which are also known as subscription certificates, to authenticate clients attempting to connect to resources associated with your Azure subscription.  (see http://msdn.microsoft.com/en-us/library/windowsazure/jj154124.aspx for more information) __NOTE__: An instance of this class is automatically created for an instance of the [ManagementClient] {@link ManagementClient~ManagementClient}. See [managementCertificates] {@link ManagementClient~ManagementClient#managementCertificates}. Initializes a new instance of the ManagementCertificateOperations class.|
+| @azure-asm-mgmt.LocationOperations~LocationOperations |The Service Management API includes operations for listing the available data center locations for a hosted service in your subscription.  (see http://msdn.microsoft.com/en-us/library/windowsazure/gg441299.aspx for more information) __NOTE__: An instance of this class is automatically created for an instance of the [ManagementClient] {@link ManagementClient~ManagementClient}. See [locations] <xref:azure-asm-mgmt.ManagementClient~ManagementClient%23locations>. Initializes a new instance of the LocationOperations class.|
+| @azure-asm-mgmt.AffinityGroupOperations~AffinityGroupOperations |Operations for managing affinity groups in your subscription.  (see http://msdn.microsoft.com/en-us/library/windowsazure/ee460798.aspx for more information) __NOTE__: An instance of this class is automatically created for an instance of the [ManagementClient] {@link ManagementClient~ManagementClient}. See [affinityGroups] {@link ManagementClient~ManagementClient#affinityGroups}. Initializes a new instance of the AffinityGroupOperations class.|
+| @azure-asm-mgmt.ManagementClient~ManagementClient |The Service Management API provides programmatic access to much of the functionality available through the Management Portal. The Service Management API is a REST API. All API operations are performed over SSL and are mutually authenticated using X.509 v3 certificates.  (see http://msdn.microsoft.com/en-us/library/windowsazure/ee460799.aspx for more information) Initializes a new instance of the ManagementClient class.|

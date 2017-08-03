@@ -1,51 +1,15 @@
-# Microsoft Azure SDK for Node.js - Monitoring
-
-This project provides a Node.js package that makes it easy to manage Microsoft Azure Monitoring. Right now it supports:
-- **API version: 2012-03-01**
-
-## Features
-
-- TBD
-
-## How to Install
-
-```bash
-npm install azure-monitoring
-```
-
-## How to Use
-
-### Authentication
-
-This library support management certificate authentication. To authenticate the library for the REST API calls, you need to
-* Have a management certificate set up in your Microsoft Azure subscription. You can do this by
-  * Either uploading a certificate in the [Microsoft Azure management portal](https://manage.windowsazure.com).
-  * Or use the [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli).
-* Obtain the .pem file of your certificate. If you used [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli) to set it up. You can run ``azure account cert export`` to get the .pem file.
-* Open the .pem file in a text editor to get the **cert value** and **key value**.
-
-### Create the SqlManagementClient
-
-```javascript
-var fs            = require('fs'),
-    monitoring = require('azure-monitoring');
-
-var metricsClient = monitoring.createMetricsClient(monitoring.createCertificateCloudCredentials({
-  subscriptionId: '<your subscription id>',
-  pem: fs.readFileSync('<your pem file>')
-}));
-
-var autoScaleClient = monitoring.createAutoScaleClient(monitoring.createCertificateCloudCredentials({
-  subscriptionId: '<your subscription id>',
-  pem: fs.readFileSync('<your pem file>')
-}));
-
-var alertsClient = monitoring.createAlertsClient(monitoring.createCertificateCloudCredentials({
-  subscriptionId: '<your subscription id>',
-  pem: fs.readFileSync('<your pem file>')
-}));
-```
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js](https://github.com/WindowsAzure/azure-sdk-for-node)
+# Package azure-monitoring
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-monitoring.MetricValueOperations~MetricValueOperations |__NOTE__: An instance of this class is automatically created for an instance of the [MetricsClient] <xref:azure-monitoring.MetricsClient~MetricsClient>. See [metricValues] <xref:azure-monitoring.MetricsClient~MetricsClient%23metricValues>. Initializes a new instance of the MetricValueOperations class.|
+| @azure-monitoring.MetricSettingOperations~MetricSettingOperations |__NOTE__: An instance of this class is automatically created for an instance of the [MetricsClient] <xref:azure-monitoring.MetricsClient~MetricsClient>. See [metricSettings] <xref:azure-monitoring.MetricsClient~MetricsClient%23metricSettings>. Initializes a new instance of the MetricSettingOperations class.|
+| @azure-monitoring.MetricDefinitionOperations~MetricDefinitionOperations |__NOTE__: An instance of this class is automatically created for an instance of the [MetricsClient] <xref:azure-monitoring.MetricsClient~MetricsClient>. See [metricDefinitions] {@link MetricsClient~MetricsClient#metricDefinitions}. Initializes a new instance of the MetricDefinitionOperations class.|
+| @azure-monitoring.MetricsClient~MetricsClient |Initializes a new instance of the MetricsClient class.|
+| @azure-monitoring.EventDataOperations~EventDataOperations |Operations for event data. __NOTE__: An instance of this class is automatically created for an instance of the [EventsClient] <xref:azure-monitoring.EventsClient~EventsClient>. See [eventData] <xref:azure-monitoring.EventsClient~EventsClient%23eventData>. Initializes a new instance of the EventDataOperations class.|
+| @azure-monitoring.EventsClient~EventsClient |Initializes a new instance of the EventsClient class.|
+| @azure-monitoring.SettingOperations~SettingOperations |Operations for managing the autoscale settings. __NOTE__: An instance of this class is automatically created for an instance of the [AutoscaleClient] <xref:azure-monitoring.AutoscaleClient~AutoscaleClient>. See [settings] <xref:azure-monitoring.AutoscaleClient~AutoscaleClient%23settings>. Initializes a new instance of the SettingOperations class.|
+| @azure-monitoring.AutoscaleClient~AutoscaleClient |Initializes a new instance of the AutoscaleClient class.|
+| @azure-monitoring.RuleOperations~RuleOperations |Operations for managing the alert rules. __NOTE__: An instance of this class is automatically created for an instance of the [AlertsClient] <xref:azure-monitoring.AlertsClient~AlertsClient>. See [rules] <xref:azure-monitoring.AlertsClient~AlertsClient%23rules>. Initializes a new instance of the RuleOperations class.|
+| @azure-monitoring.IncidentOperations~IncidentOperations |Operations for managing the alert incidents. __NOTE__: An instance of this class is automatically created for an instance of the [AlertsClient] <xref:azure-monitoring.AlertsClient~AlertsClient>. See [incidents] <xref:azure-monitoring.AlertsClient~AlertsClient%23incidents>. Initializes a new instance of the IncidentOperations class.|
+| @azure-monitoring.AlertsClient~AlertsClient |Initializes a new instance of the AlertsClient class.|

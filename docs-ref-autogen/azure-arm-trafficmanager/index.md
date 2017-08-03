@@ -1,30 +1,9 @@
-# Microsoft Azure SDK for Node.js - Traffic Manager Management
-
-This project provides a Node.js package that makes it easy to manage Microsoft Azure Traffic Manager ARM Resources. 
-
-## How to Install
-
-```bash
-npm install azure-arm-trafficmanager
-```
-
-## How to Use
-
-### Authentication, client creation and listing profiles in a resource group as an example
-
- ```javascript
- var msRestAzure = require('ms-rest-azure');
- var trafficManager = require('azure-arm-trafficmanager');
- 
- // Interactive Login
- msRestAzure.interactiveLogin(function(err, credentials) {
-  var client = new trafficManager(credentials, 'your-subscription-id');
-  var resourceGroupName = 'test-group';
-  client.profiles.listInResourceGroup(resourceGroupName, function(err, profiles, request, response) {
-    if (err) console.log(err);
-    profiles.map(function (profile, index, array) {
-      console.log('found profile :' + profile.name);
-    }));
-  });
- });
- ```
+# Package azure-arm-trafficmanager
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-arm-trafficmanager.TrafficManagerManagementClient |Initializes a new instance of the TrafficManagerManagementClient class.|
+| @azure-arm-trafficmanager.Profiles |Profiles __NOTE__: An instance of this class is automatically created for an instance of the TrafficManagerManagementClient. Initializes a new instance of the Profiles class.|
+| @azure-arm-trafficmanager.GeographicHierarchies |GeographicHierarchies __NOTE__: An instance of this class is automatically created for an instance of the TrafficManagerManagementClient. Initializes a new instance of the GeographicHierarchies class.|
+| @azure-arm-trafficmanager.Endpoints |Endpoints __NOTE__: An instance of this class is automatically created for an instance of the TrafficManagerManagementClient. Initializes a new instance of the Endpoints class.|
+| @azure-arm-trafficmanager.The list Traffic Manager profiles operation response. |Initializes a new instance of the ProfileListResult class.|

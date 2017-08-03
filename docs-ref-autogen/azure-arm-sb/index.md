@@ -1,37 +1,10 @@
-# Microsoft Azure SDK for Node.js - ServicebusManagement
-
-This project provides a Node.js package that makes it easy to manage Azure Servicebus Resources. Right now it supports:
-- **Node.js version: 4.0.0 or higher**
-
-## How to Install
-
-```bash
-npm install azure-arm-sb
-```
-
-## How to Use
-
-### Authentication, client creation and listing namespaces within a subscription as an example
-
- ```javascript
- var msRestAzure = require('ms-rest-azure');
- var ServicebusManagement = require('azure-arm-sb');
- 
- // Interactive Login
- msRestAzure.interactiveLogin(function(err, credentials) {
-  var client = new ServicebusManagement(credentials, 'your-subscription-id');
-  client.namespaces.listBySubscription(function(err, namespaces, request, response) {
-    if (err) {
-      console.log(err);
-    } else {
-      namespaces.map(function (ns, index, array) {
-        console.log('found ns :' + ns.name);
-      }));
-    }
-  });
- });
- ```
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js - All-up](https://github.com/WindowsAzure/azure-sdk-for-node)
+# Package azure-arm-sb
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-arm-sb.ServiceBusManagementClient |Initializes a new instance of the ServiceBusManagementClient class.|
+| @azure-arm-sb.Topics |Topics __NOTE__: An instance of this class is automatically created for an instance of the ServiceBusManagementClient. Initializes a new instance of the Topics class.|
+| @azure-arm-sb.Subscriptions |Subscriptions __NOTE__: An instance of this class is automatically created for an instance of the ServiceBusManagementClient. Initializes a new instance of the Subscriptions class.|
+| @azure-arm-sb.Queues |Queues __NOTE__: An instance of this class is automatically created for an instance of the ServiceBusManagementClient. Initializes a new instance of the Queues class.|
+| @azure-arm-sb.Operations |Operations __NOTE__: An instance of this class is automatically created for an instance of the ServiceBusManagementClient. Initializes a new instance of the Operations class.|
+| @azure-arm-sb.Namespaces |Namespaces __NOTE__: An instance of this class is automatically created for an instance of the ServiceBusManagementClient. Initializes a new instance of the Namespaces class.|

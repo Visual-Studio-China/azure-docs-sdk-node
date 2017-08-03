@@ -1,9 +1,7 @@
-# Microsoft Azure SDK for Node.js - Traffic Manager Management
-
-This project provides a Node.js package that makes it easy to manage Microsoft Azure Traffic Manager. 
-
-## How to Install
-
-```bash
-npm install azure-asm-trafficmanager
-```
+# Package azure-asm-trafficmanager
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-asm-trafficmanager.ProfileOperations~ProfileOperations |The Traffic Manager API includes operations for managing Traffic Manager profiles. __NOTE__: An instance of this class is automatically created for an instance of the [TrafficManagerManagementClient] {@link TrafficManagerManagementClient~TrafficManagerManagementClient}. See [profiles] {@link TrafficManagerManagementClient~TrafficManagerManagementClient#profiles}. Initializes a new instance of the ProfileOperations class.|
+| @azure-asm-trafficmanager.DefinitionOperations~DefinitionOperations |The Traffic Manager API includes operations for managing definitions for a specified profile. __NOTE__: An instance of this class is automatically created for an instance of the [TrafficManagerManagementClient] {@link TrafficManagerManagementClient~TrafficManagerManagementClient}. See [definitions] {@link TrafficManagerManagementClient~TrafficManagerManagementClient#definitions}. Initializes a new instance of the DefinitionOperations class.|
+| @azure-asm-trafficmanager.TrafficManagerManagementClient~TrafficManagerManagementClient |The Windows Azure Traffic Manager management API provides a RESTful set of web services that interact with Windows Azure Traffic Manager service for creating, updating, listing, and deleting Traffic Manager profiles and definitions.  (see http://msdn.microsoft.com/en-us/library/windowsazure/dn166981.aspx for more information) Initializes a new instance of the TrafficManagerManagementClient class.|

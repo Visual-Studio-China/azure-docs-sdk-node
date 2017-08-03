@@ -1,38 +1,10 @@
-# Microsoft Azure SDK for Node.js - Authorization
-
-This project provides a Node.js package for accessing the Azure PAS. Right now it supports:
-- **Node.js version: 6.x.x or higher**
-- **API version: 2015-07-01**
-
-## Features
-
-
-## How to Install
-
-```bash
-npm install azure-arm-authorization
-```
-
-## How to Use
-
-### Authentication, client creation and listing role assignments as an example
-
- ```javascript
- var msRestAzure = require('ms-rest-azure');
- var authorizationManagement = require("azure-arm-authorization");
-
- // Interactive Login
- // It provides a url and code that needs to be copied and pasted in a browser and authenticated over there. If successful, 
- // the user will get a DeviceTokenCredentials object.
- msRestAzure.interactiveLogin(function(err, credentials) {
-  var client = new authorizationManagement(credentials, 'your-subscription-id');
-  client.roleAssignments.listForResourceGroup(rgName, function(err, result) {
-    if (err) console.log(err);
-    console.log(result);
-  });
- });
- ```
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js](https://github.com/Azure/azure-sdk-for-node)
+# Package azure-arm-authorization
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-arm-authorization.RoleDefinitions |RoleDefinitions __NOTE__: An instance of this class is automatically created for an instance of the AuthorizationManagementClient. Initializes a new instance of the RoleDefinitions class.|
+| @azure-arm-authorization.RoleAssignments |RoleAssignments __NOTE__: An instance of this class is automatically created for an instance of the AuthorizationManagementClient. Initializes a new instance of the RoleAssignments class.|
+| @azure-arm-authorization.ProviderOperationsMetadataOperations |ProviderOperationsMetadataOperations __NOTE__: An instance of this class is automatically created for an instance of the AuthorizationManagementClient. Initializes a new instance of the ProviderOperationsMetadataOperations class.|
+| @azure-arm-authorization.Permissions |Permissions __NOTE__: An instance of this class is automatically created for an instance of the AuthorizationManagementClient. Initializes a new instance of the Permissions class.|
+| @azure-arm-authorization.ClassicAdministrators |ClassicAdministrators __NOTE__: An instance of this class is automatically created for an instance of the AuthorizationManagementClient. Initializes a new instance of the ClassicAdministrators class.|
+| @azure-arm-authorization.AuthorizationManagementClient |Initializes a new instance of the AuthorizationManagementClient class.|

@@ -1,33 +1,17 @@
-# Microsoft Azure SDK for Node.js - DevTest Labs Management
-
-This project provides a Node.js package that makes it easy to manage Microsoft Azure DevTest Labs. Right now it supports:
-- **Node.js version: 6.x.x or higher**
-
-## How to Install
-
-```bash
-npm install azure-arm-devtestlabs
-```
-## How to Use
-
-### Authentication, client creation and getting properties of a lab as an example
-
- ```javascript
- var msRestAzure = require('ms-rest-azure');
- var DevTestLabsClient = require('azure-arm-devtestlabs');
-
- // Interactive Login
- // It provides a url and code that needs to be copied and pasted in a browser and authenticated over there. If successful, 
- // the user will get a DeviceTokenCredentials object.
- msRestAzure.interactiveLogin(function(err, credentials) {
-  var client = new DevTestLabsClient(credentials, 'your-subscription-id');
-  client.labOperations.getResource(resourceGroupName, labName, function(err, result, request, response) {
-    if (err) console.log(err);
-    console.log(result);
-  });
- });
- ```
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js - All-up](https://github.com/WindowsAzure/azure-sdk-for-node)
+# Package azure-arm-devtestlabs
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-arm-devtestlabs.VirtualNetworkOperations |VirtualNetworkOperations __NOTE__: An instance of this class is automatically created for an instance of the DevTestLabsClient. Initializes a new instance of the VirtualNetworkOperations class.|
+| @azure-arm-devtestlabs.VirtualMachine |VirtualMachine __NOTE__: An instance of this class is automatically created for an instance of the DevTestLabsClient. Initializes a new instance of the VirtualMachine class.|
+| @azure-arm-devtestlabs.ScheduleOperations |ScheduleOperations __NOTE__: An instance of this class is automatically created for an instance of the DevTestLabsClient. Initializes a new instance of the ScheduleOperations class.|
+| @azure-arm-devtestlabs.PolicySet |PolicySet __NOTE__: An instance of this class is automatically created for an instance of the DevTestLabsClient. Initializes a new instance of the PolicySet class.|
+| @azure-arm-devtestlabs.PolicyOperations |PolicyOperations __NOTE__: An instance of this class is automatically created for an instance of the DevTestLabsClient. Initializes a new instance of the PolicyOperations class.|
+| @azure-arm-devtestlabs.LabOperations |LabOperations __NOTE__: An instance of this class is automatically created for an instance of the DevTestLabsClient. Initializes a new instance of the LabOperations class.|
+| @azure-arm-devtestlabs.GalleryImageOperations |GalleryImageOperations __NOTE__: An instance of this class is automatically created for an instance of the DevTestLabsClient. Initializes a new instance of the GalleryImageOperations class.|
+| @azure-arm-devtestlabs.FormulaOperations |FormulaOperations __NOTE__: An instance of this class is automatically created for an instance of the DevTestLabsClient. Initializes a new instance of the FormulaOperations class.|
+| @azure-arm-devtestlabs.CustomImageOperations |CustomImageOperations __NOTE__: An instance of this class is automatically created for an instance of the DevTestLabsClient. Initializes a new instance of the CustomImageOperations class.|
+| @azure-arm-devtestlabs.CostOperations |CostOperations __NOTE__: An instance of this class is automatically created for an instance of the DevTestLabsClient. Initializes a new instance of the CostOperations class.|
+| @azure-arm-devtestlabs.ArtifactSourceOperations |ArtifactSourceOperations __NOTE__: An instance of this class is automatically created for an instance of the DevTestLabsClient. Initializes a new instance of the ArtifactSourceOperations class.|
+| @azure-arm-devtestlabs.ArtifactOperations |ArtifactOperations __NOTE__: An instance of this class is automatically created for an instance of the DevTestLabsClient. Initializes a new instance of the ArtifactOperations class.|
+| @azure-arm-devtestlabs.DevTestLabsClient |Initializes a new instance of the DevTestLabsClient class.|

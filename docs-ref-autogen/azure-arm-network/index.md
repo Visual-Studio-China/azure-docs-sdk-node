@@ -1,53 +1,32 @@
-# Microsoft Azure SDK for Node.js - Network Management
-
-This project provides a Node.js package that makes it easy to manage Microsoft Azure Network Resources.
-- **Node.js version: 6.x.x or higher**
-- **API version: 2017-06-01**
-
-## Features
-
-- Manage virtual network
-- Manage subnet
-- Manage network security group
-- Manage network security rule
-- Manage load balancer
-- Manage network interface
-- Manage publicIPAddress
-- Manage application gateway
-- Manage connections
-- Manage express route
-- Manage local network gateway
-
-
-## How to Install
-
-```bash
-npm install azure-arm-network
-```
-
-## How to use
-
-### Authentication, client creation and listing vnets in a resource group as an example
-
- ```javascript
- var msRestAzure = require('ms-rest-azure');
- var NetworkManagementClient = require('azure-arm-network');
-
- // Interactive Login
- // It provides a url and code that needs to be copied and pasted in a browser and authenticated over there. If successful, 
- // the user will get a DeviceTokenCredentials object.
- msRestAzure.interactiveLogin(function(err, credentials) {
-  var client = new NetworkManagementClient(credentials, 'your-subscription-id');
-  client.virtualNetworks.list(resourceGroupName, function(err, result, request, response) {
-    if (err) console.log(err);
-    console.log(result);
-  });
- });
- ```
-
- ## Detailed Sample
-A detailed sample for managing a load balancer than can be cloned and is ready to used can be found [here](https://github.com/Azure-Samples/network-node-manage-loadbalancer).
-
- ## Related projects
-
-- [Microsoft Azure SDK for Node.js - All-up](https://github.com/WindowsAzure/azure-sdk-for-node)
+# Package azure-arm-network
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-arm-network.VirtualNetworks |VirtualNetworks __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the VirtualNetworks class.|
+| @azure-arm-network.VirtualNetworkPeerings |VirtualNetworkPeerings __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the VirtualNetworkPeerings class.|
+| @azure-arm-network.VirtualNetworkGateways |VirtualNetworkGateways __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the VirtualNetworkGateways class.|
+| @azure-arm-network.VirtualNetworkGatewayConnections |VirtualNetworkGatewayConnections __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the VirtualNetworkGatewayConnections class.|
+| @azure-arm-network.Usages |Usages __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the Usages class.|
+| @azure-arm-network.Subnets |Subnets __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the Subnets class.|
+| @azure-arm-network.SecurityRules |SecurityRules __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the SecurityRules class.|
+| @azure-arm-network.RouteTables |RouteTables __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the RouteTables class.|
+| @azure-arm-network.Routes |Routes __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the Routes class.|
+| @azure-arm-network.RouteFilters |RouteFilters __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the RouteFilters class.|
+| @azure-arm-network.RouteFilterRules |RouteFilterRules __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the RouteFilterRules class.|
+| @azure-arm-network.PublicIPAddresses |PublicIPAddresses __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the PublicIPAddresses class.|
+| @azure-arm-network.PacketCaptures |PacketCaptures __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the PacketCaptures class.|
+| @azure-arm-network.NetworkWatchers |NetworkWatchers __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the NetworkWatchers class.|
+| @azure-arm-network.NetworkSecurityGroups |NetworkSecurityGroups __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the NetworkSecurityGroups class.|
+| @azure-arm-network.NetworkInterfaces |NetworkInterfaces __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the NetworkInterfaces class.|
+| @azure-arm-network.LocalNetworkGateways |LocalNetworkGateways __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the LocalNetworkGateways class.|
+| @azure-arm-network.LoadBalancers |LoadBalancers __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the LoadBalancers class.|
+| @azure-arm-network.ExpressRouteServiceProviders |ExpressRouteServiceProviders __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the ExpressRouteServiceProviders class.|
+| @azure-arm-network.ExpressRouteCircuits |ExpressRouteCircuits __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the ExpressRouteCircuits class.|
+| @azure-arm-network.ExpressRouteCircuitPeerings |ExpressRouteCircuitPeerings __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the ExpressRouteCircuitPeerings class.|
+| @azure-arm-network.ExpressRouteCircuitAuthorizations |ExpressRouteCircuitAuthorizations __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the ExpressRouteCircuitAuthorizations class.|
+| @azure-arm-network.BgpServiceCommunities |BgpServiceCommunities __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the BgpServiceCommunities class.|
+| @azure-arm-network.AvailablePrivateAccessServices |AvailablePrivateAccessServices __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the AvailablePrivateAccessServices class.|
+| @azure-arm-network.ApplicationGateways |ApplicationGateways __NOTE__: An instance of this class is automatically created for an instance of the NetworkManagementClient. Initializes a new instance of the ApplicationGateways class.|
+| @azure-arm-network.NetworkManagementClient |Initializes a new instance of the NetworkManagementClient class.|
+| @azure-arm-network.List of packet capture sessions. |Initializes a new instance of the PacketCaptureListResult class.|
+| @azure-arm-network.List of network watcher resources. |Initializes a new instance of the NetworkWatcherListResult class.|

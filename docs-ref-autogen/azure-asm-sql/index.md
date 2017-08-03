@@ -1,81 +1,21 @@
-# Microsoft Azure SDK for Node.js - SQL Database Management
-
-This project provides a Node.js package that makes it easy to manage Microsoft Azure SQL Database. Right now it supports:
-- **API version: 2012-03-01**
-
-## Features
-
-- Manage server
-- Manage database
-- Manage firewall rule
-- Manage service objective
-- Manage database copy
-- Manage database operation
-- Manage DAC (dedicated administrator connection)
-
-## How to Install
-
-```bash
-npm install azure-asm-sql
-```
-
-## How to Use
-
-### Authentication
-
-This library support management certificate authentication. To authenticate the library for the REST API calls, you need to
-* Have a management certificate set up in your Microsoft Azure subscription. You can do this by
-  * Either uploading a certificate in the [Microsoft Azure management portal](https://manage.windowsazure.com).
-  * Or use the [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli).
-* Obtain the .pem file of your certificate. If you used [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli) to set it up. You can run ``azure account cert export`` to get the .pem file.
-* Open the .pem file in a text editor to get the **cert value** and **key value**.
-
-### Create the SqlManagementClient
-
-```javascript
-var fs            = require('fs'),
-    sqlManagement = require('azure-asm-sql');
-
-var sqlManagementClient = sqlManagement.createSqlManagementClient(sqlManagement.createCertificateCloudCredentials({
-  subscriptionId: '<your subscription id>',
-  pem: fs.readFileSync('<your pem file>')
-}));
-```
-
-### Manage Database
-
-```javascript
-var sqlDatabaseName = "database01";
-
-// Create a SQL database server.
-sqlManagementClient.servers.create({
-  administratorUserName: "<your admin user name>",
-  administratorPassword: "<your admin password>",
-  location: "West US"
-}, function (err, result) {
-  if (err) {
-    console.error(err);
-  } else {
-    sqlServerName = result.serverName;
-    console.info(result);
-
-    // Create a SQL database.
-    sqlManagementClient.databases.create(result.serverName, {
-      name: sqlDatabaseName,
-      edition: common.Constants.SqlAzureConstants.WEB_EDITION,
-      collationName: common.Constants.SqlAzureConstants.DEFAULT_COLLATION_NAME,
-      maximumDatabaseSizeInGB: common.Constants.SqlAzureConstants.WEB_1GB
-    }, function (err, result) {
-      if (err) {
-        console.error(err);
-      } else {
-        console.info(result);
-      }
-    });
-  }
-});
-```
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js](https://github.com/WindowsAzure/azure-sdk-for-node)
+# Package azure-asm-sql
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-asm-sql.SqlServiceClient ||
+| @azure-asm-sql.SqlService |The SqlService object allows you to perform management operations against databases created using Microsoft Azure SQL Database.|
+| @azure-asm-sql.SqlManagementService |The SqlManagementService object allows you to perform managment operations on Microsoft Azure SQL Database Servers.|
+| @azure-asm-sql.ServiceObjectiveOperations~ServiceObjectiveOperations |This class provides methods to get a specific service objective by using its ID or to List all of the service objectives on a server. __NOTE__: An instance of this class is automatically created for an instance of the [SqlManagementClient] {@link SqlManagementClient~SqlManagementClient}. See [serviceObjectives] {@link SqlManagementClient~SqlManagementClient#serviceObjectives}. Initializes a new instance of the ServiceObjectiveOperations class.|
+| @azure-asm-sql.ServerOperations~ServerOperations |Contains methods to allow various operations on Azure SQL Database Servers. __NOTE__: An instance of this class is automatically created for an instance of the [SqlManagementClient] {@link SqlManagementClient~SqlManagementClient}. See [servers] <xref:azure-asm-sql.SqlManagementClient~SqlManagementClient%23servers>. Initializes a new instance of the ServerOperations class.|
+| @azure-asm-sql.RestoreDatabaseOperations~RestoreDatabaseOperations |Contains the operation to create restore requests for Azure SQL Databases. __NOTE__: An instance of this class is automatically created for an instance of the [SqlManagementClient] {@link SqlManagementClient~SqlManagementClient}. See [restoreDatabaseOperations] {@link SqlManagementClient~SqlManagementClient#restoreDatabaseOperations}. Initializes a new instance of the RestoreDatabaseOperations class.|
+| @azure-asm-sql.RestorableDroppedDatabaseOperations~RestorableDroppedDatabaseOperations |Contains operations for getting dropped Azure SQL Databases that can be restored. __NOTE__: An instance of this class is automatically created for an instance of the [SqlManagementClient] {@link SqlManagementClient~SqlManagementClient}. See [restorableDroppedDatabases] {@link SqlManagementClient~SqlManagementClient#restorableDroppedDatabases}. Initializes a new instance of the RestorableDroppedDatabaseOperations class.|
+| @azure-asm-sql.RecoverDatabaseOperations~RecoverDatabaseOperations |Contains the operation to create recovery requests for Azure SQL Databases. __NOTE__: An instance of this class is automatically created for an instance of the [SqlManagementClient] {@link SqlManagementClient~SqlManagementClient}. See [recoverDatabaseOperations] {@link SqlManagementClient~SqlManagementClient#recoverDatabaseOperations}. Initializes a new instance of the RecoverDatabaseOperations class.|
+| @azure-asm-sql.RecoverableDatabaseOperations~RecoverableDatabaseOperations |Contains operations for getting Azure SQL Databases that can be recovered. __NOTE__: An instance of this class is automatically created for an instance of the [SqlManagementClient] {@link SqlManagementClient~SqlManagementClient}. See [recoverableDatabases] {@link SqlManagementClient~SqlManagementClient#recoverableDatabases}. Initializes a new instance of the RecoverableDatabaseOperations class.|
+| @azure-asm-sql.QuotaOperations~QuotaOperations |The Azure SQL Database Management API includes operations for getting Azure SQL Database Server quotas. Specifically, using the APIs you can get a specific quota or list all of the quotas for the Azure SQL Database Server. __NOTE__: An instance of this class is automatically created for an instance of the [SqlManagementClient] {@link SqlManagementClient~SqlManagementClient}. See [quotas] <xref:azure-asm-sql.SqlManagementClient~SqlManagementClient%23quotas>. Initializes a new instance of the QuotaOperations class.|
+| @azure-asm-sql.FirewallRuleOperations~FirewallRuleOperations |The Azure SQL Database Management API includes operations for managing the server-level Firewall Rules for Azure SQL Database Servers. You cannot manage the database-level firewall rules using the Azure SQL Database Management API; they can only be managed by running the Transact-SQL statements against the master or individual user databases. __NOTE__: An instance of this class is automatically created for an instance of the [SqlManagementClient] {@link SqlManagementClient~SqlManagementClient}. See [firewallRules] {@link SqlManagementClient~SqlManagementClient#firewallRules}. Initializes a new instance of the FirewallRuleOperations class.|
+| @azure-asm-sql.DatabaseOperations~DatabaseOperations |Represents all the operations for operating on Azure SQL Databases. Contains operations to: Create, Retrieve, Update, and Delete databases, and also includes the ability to get the event logs for a database. __NOTE__: An instance of this class is automatically created for an instance of the [SqlManagementClient] {@link SqlManagementClient~SqlManagementClient}. See [databases] <xref:azure-asm-sql.SqlManagementClient~SqlManagementClient%23databases>. Initializes a new instance of the DatabaseOperations class.|
+| @azure-asm-sql.DatabaseOperationOperations~DatabaseOperationOperations |The Azure SQL Database Management API includes operations for getting database operations. Specifically, this API allows you to get a specific operation, or to list all the operations that happened on a specific database or on all databases in the Azure SQL Database Server. __NOTE__: An instance of this class is automatically created for an instance of the [SqlManagementClient] {@link SqlManagementClient~SqlManagementClient}. See [databaseOperations] {@link SqlManagementClient~SqlManagementClient#databaseOperations}. Initializes a new instance of the DatabaseOperationOperations class.|
+| @azure-asm-sql.DatabaseCopyOperations~DatabaseCopyOperations |Represents the SQL Database Management API includes operations for managing SQL Server database copies for a subscription. __NOTE__: An instance of this class is automatically created for an instance of the [SqlManagementClient] {@link SqlManagementClient~SqlManagementClient}. See [databaseCopies] {@link SqlManagementClient~SqlManagementClient#databaseCopies}. Initializes a new instance of the DatabaseCopyOperations class.|
+| @azure-asm-sql.DacOperations~DacOperations |Includes operations for importing and exporting Azure SQL Databases into and out of Azure blob storage. __NOTE__: An instance of this class is automatically created for an instance of the [SqlManagementClient] {@link SqlManagementClient~SqlManagementClient}. See [dac] <xref:azure-asm-sql.SqlManagementClient~SqlManagementClient%23dac>. Initializes a new instance of the DacOperations class.|
+| @azure-asm-sql.SqlManagementClient~SqlManagementClient |This is the main client class for interacting with the Azure SQL Database REST APIs. Initializes a new instance of the SqlManagementClient class.|
+| @azure-asm-sql.createSqlService |The SqlService object allows you to perform management operations against databases created using Microsoft Azure SQL Database.|

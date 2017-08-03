@@ -1,38 +1,18 @@
-# Microsoft Azure SDK for Node.js - LogicManagement
-
-This project provides a Node.js package that makes it easy to manage Microsoft Azure Logic.
-## API-Version: 2016-06-01
-## Minimum node.js version >= 6.x.x
-
-## How to Install
-
-```bash
-npm install azure-arm-logic
-```
-
-## How to Use
-
-### Authentication, client creation and listing workflows as an example
-
- ```javascript
- const msRestAzure = require('ms-rest-azure');
- const LogicManagement = require("azure-arm-logic");
- 
- // Interactive Login
- // It provides a url and code that needs to be copied and pasted in a browser and authenticated over there. If successful, 
- // the user will get a DeviceTokenCredentials object.
- msRestAzure.interactiveLogin().then((credentials) => {
-   let client = new LogicManagement(credentials, 'your-subscription-id');
-   return client.workflows.listBySubscription();
- }).then((workflows) => {
-  console.log('List of workflows:');
-  console.dir(workflows, {depth: null, colors: true});
-}).catch((err) => {
-   console.log('An error ocurred');
-   console.dir(err, {depth: null, colors: true});
- });
-```
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js](https://github.com/Azure/azure-sdk-for-node)
+# Package azure-arm-logic
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-arm-logic.WorkflowVersions |WorkflowVersions __NOTE__: An instance of this class is automatically created for an instance of the LogicManagementClient. Initializes a new instance of the WorkflowVersions class.|
+| @azure-arm-logic.WorkflowTriggers |WorkflowTriggers __NOTE__: An instance of this class is automatically created for an instance of the LogicManagementClient. Initializes a new instance of the WorkflowTriggers class.|
+| @azure-arm-logic.WorkflowTriggerHistories |WorkflowTriggerHistories __NOTE__: An instance of this class is automatically created for an instance of the LogicManagementClient. Initializes a new instance of the WorkflowTriggerHistories class.|
+| @azure-arm-logic.Workflows |Workflows __NOTE__: An instance of this class is automatically created for an instance of the LogicManagementClient. Initializes a new instance of the Workflows class.|
+| @azure-arm-logic.WorkflowRuns |WorkflowRuns __NOTE__: An instance of this class is automatically created for an instance of the LogicManagementClient. Initializes a new instance of the WorkflowRuns class.|
+| @azure-arm-logic.WorkflowRunActions |WorkflowRunActions __NOTE__: An instance of this class is automatically created for an instance of the LogicManagementClient. Initializes a new instance of the WorkflowRunActions class.|
+| @azure-arm-logic.Sessions |Sessions __NOTE__: An instance of this class is automatically created for an instance of the LogicManagementClient. Initializes a new instance of the Sessions class.|
+| @azure-arm-logic.Schemas |Schemas __NOTE__: An instance of this class is automatically created for an instance of the LogicManagementClient. Initializes a new instance of the Schemas class.|
+| @azure-arm-logic.Partners |Partners __NOTE__: An instance of this class is automatically created for an instance of the LogicManagementClient. Initializes a new instance of the Partners class.|
+| @azure-arm-logic.Maps |Maps __NOTE__: An instance of this class is automatically created for an instance of the LogicManagementClient. Initializes a new instance of the Maps class.|
+| @azure-arm-logic.IntegrationAccounts |IntegrationAccounts __NOTE__: An instance of this class is automatically created for an instance of the LogicManagementClient. Initializes a new instance of the IntegrationAccounts class.|
+| @azure-arm-logic.Certificates |Certificates __NOTE__: An instance of this class is automatically created for an instance of the LogicManagementClient. Initializes a new instance of the Certificates class.|
+| @azure-arm-logic.Agreements |Agreements __NOTE__: An instance of this class is automatically created for an instance of the LogicManagementClient. Initializes a new instance of the Agreements class.|
+| @azure-arm-logic.LogicManagementClient |Initializes a new instance of the LogicManagementClient class.|

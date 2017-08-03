@@ -1,7 +1,15 @@
-# Microsoft Azure SDK for Node.js - Common
-
-This project provides a Node.js package that serves as the building block for the different services modules in the overall Microsoft Azure SDK for Node.js.
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js](https://github.com/Azure/azure-sdk-for-node)
+# Package azure-common
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-common.StorageServiceClient ||
+| @azure-common.ServiceManagementClient ||
+| @azure-common.ServiceClient ||
+| @azure-common.HmacSha256Sign ||
+| @azure-common.LinearRetryPolicyFilter ||
+| @azure-common.ExponentialRetryPolicyFilter ||
+| @azure-common.TokenCloudCredentials ||
+| @azure-common.CertificateCloudCredentials ||
+| @azure-common.AnonymousCloudCredentials ||
+| @azure-common.ConnectionStringParser ||
+| @azure-common.WebResource ||

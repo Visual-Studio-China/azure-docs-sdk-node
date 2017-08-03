@@ -1,38 +1,15 @@
-# Microsoft Azure SDK for Node.js - Azure Monitor Management
-
-This project provides a Node.js package that makes it easy to use the Azure Monitor API. Right now it supports:
-- **Node.js version: 0.6.15 or higher**
-- **API version: 2014-04-01, 2015-04-01, 2016-03-01, 2016-09-01, 2017-05-01-preview **
-
-## How to Install
-
-```bash
-npm install azure-monitor
-```
-
-## How to Use
-
-### Authentication
-
- ```javascript
- var msRestAzure = require('ms-rest-azure');
- var monitorClient = require('azure-monitor');
- 
- // Interactive Login
- msRestAzure.interactiveLogin(function(err, credentials) {
-   var client = new monitorClient(credentials, 'your-subscription-id');
- });
- ```
-
-### Create the monitorClient
-
-```javascript
- var msRestAzure = require("ms-rest-azure"),
- var monitorClient = require("azure-monitor");
-
- var client = new monitorClient(credentials, 'your subscription id');
-```
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js - All-up](https://github.com/WindowsAzure/azure-sdk-for-node)
+# Package azure-monitor
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-monitor.TenantActivityLogs |TenantActivityLogs __NOTE__: An instance of this class is automatically created for an instance of the MonitorClient. Initializes a new instance of the TenantActivityLogs class.|
+| @azure-monitor.Metrics |Metrics __NOTE__: An instance of this class is automatically created for an instance of the MonitorClient. Initializes a new instance of the Metrics class.|
+| @azure-monitor.MetricDefinitions |MetricDefinitions __NOTE__: An instance of this class is automatically created for an instance of the MonitorClient. Initializes a new instance of the MetricDefinitions class.|
+| @azure-monitor.EventCategories |EventCategories __NOTE__: An instance of this class is automatically created for an instance of the MonitorClient. Initializes a new instance of the EventCategories class.|
+| @azure-monitor.ActivityLogs |ActivityLogs __NOTE__: An instance of this class is automatically created for an instance of the MonitorClient. Initializes a new instance of the ActivityLogs class.|
+| @azure-monitor.MonitorClient |Initializes a new instance of the MonitorClient class.|
+| @azure-monitor.Represents collection of usage metrics. |Initializes a new instance of the UsageMetricCollection class.|
+| @azure-monitor.Represents collection of metric definitions. |Initializes a new instance of the MetricDefinitionCollection class.|
+| @azure-monitor.The collection of metric value sets. |Initializes a new instance of the MetricCollection class.|
+| @azure-monitor.A collection of event categories. Currently possible values are:
+Administrative, Security, ServiceHealth, Alert, Recommendation, Policy. |Initializes a new instance of the EventCategoryCollection class.|

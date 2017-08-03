@@ -1,131 +1,30 @@
-# Microsoft Azure SDK for Node.js - Data Lake Analytics
-
-This project provides a Node.js package that makes it easy to manage Azure Data Lake Analytics accounts.
-
-Right now it supports:
-
-  *  **Node.js version: 6.x.x or higher**
-  *  **REST API version for Account: 2016-11-01**
-  *  **REST API version for Catalog: 2016-11-01**
-  *  **REST API version for Job: 2016-11-01**
-
-## Features
-
-- Account management: create, get, list, update, and delete.
-- Account storage management: add, get, list update and delete Data Lake Store accounts and Azure Storage accounts from an existing Data Lake analytics account.
-- Job management: submit, get, list, cancel.
-- Catalog management: get, list, create (secrets and credentials), update (secrets and credentials), delete (secrets and credentials).
-
-## How to Install
-
-```bash
-npm install azure-arm-datalake-analytics
-```
-
-## How to Use
-
-### Authentication, account, job and catalog client creation and listing jobs as an example
-
-### Login and list jobs using promises
- ```javascript
- var msRestAzure = require('ms-rest-azure');
- var adlaManagement = require("azure-arm-datalake-analytics");
-
- // Interactive Login
- // It provides a url and code that needs to be copied and pasted in a browser and authenticated over there. If successful, 
- // the user will get a DeviceTokenCredentials object.
- msRestAzure.interactiveLogin().then((credentials) => {
-  var acccountClient = new adlaManagement.DataLakeAnalyticsAccountClient(credentials, 'your-subscription-id');
-  var jobClient = new adlaManagement.DataLakeAnalyticsJobClient(credentials, 'azuredatalakeanalytics.net');
-  var catalogClient = new adlaManagement.DataLakeAnalyticsCatalogClient(credentials, 'azuredatalakeanalytics.net');
-  return jobClient.job.list(accountName);
-}).then((jobs) => {
-  console.log(result);
-  return;
-}).catch((err) => {
-  console.log('An error occured');
-  console.dir(err, {depth: null, colors: true});
-});
- ```
-
-### Create a Data Lake Analytics Account using callback pattern
-```javascript
-var util = require('util');
-var resourceGroupName = 'testrg';
-var accountName = 'testadlaacct';
-var location = 'eastus2';
-
-// A Data Lake Store account must already have been created to create
-// a Data Lake Analytics account. See the Data Lake Store readme for
-// information on doing so. For now, we assume one exists already.
-var datalakeStoreAccountName = 'existingadlsaccount';
-
-// account object to create
-var accountToCreate = {
-  tags: {
-    testtag1: 'testvalue1',
-    testtag2: 'testvalue2'
-  },
-  location: location,
-  defaultDataLakeStoreAccount: datalakeStoreAccountName,
-  dataLakeStoreAccounts: [
-    {
-      name: datalakeStoreAccountName
-    }
-  ]
-};
-
-client.account.create(resourceGroupName, accountName, accountToCreate, function (err, result, request, response) {
-  if (err) {
-    console.log(err);
-    /*err has reference to the actual request and response, so you can see what was sent and received on the wire.
-      The structure of err looks like this:
-      err: {
-        code: 'Error Code',
-        message: 'Error Message',
-        body: 'The response body if any',
-        request: reference to a stripped version of http request
-        response: reference to a stripped version of the response
-      }
-    */
-  } else {
-    console.log('result is: ' + util.inspect(result, {depth: null}));
-  }
-});
-```
-
-### Get a list of jobs using callback pattern
-
-```javascript
-var util = require('util');
-var accountName = 'testadlaacct';
-jobClient.job.list(accountName, function (err, result, request, response) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log('result is: ' + util.inspect(result, {depth: null}));
-  }
-});
-```
-
-### Get a list of databases in the Data Lake Analytics Catalog using Promise that provides the HttpOperationResponse<T> wrapper
-```javascript
-var util = require('util');
-var accountName = 'testadlaacct';
-catalogClient.catalog.listDatabasesWithHttpOperationResponse(accountName).then((httpOperationResponse) => {
-  console.log('Deserialized Result (list of databases)');
-  console.dir(httpOperationResponse.body, {depth: null, colors: true});
-  console.log('Actual Request');
-  console.dir(httpOperationResponse.request, {depth: null, colors: true});
-  console.log('Raw Response');
-  console.dir(httpOperationResponse.response, {depth: 3, colors: true});
-}).catch((err) => {
-  console.log('An error occurred.');
-  console.dir(err, {depth: null, colors: true});
-});
-```
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js](https://github.com/azure/azure-sdk-for-node)
-- [Microsoft Azure SDK for Node.js - Data Lake Store Management](https://github.com/Azure/azure-sdk-for-node/tree/autorest/lib/services/dataLake.Store)
+# Package azure-arm-datalake-analytics
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-arm-datalake-analytics.Recurrence |Recurrence __NOTE__: An instance of this class is automatically created for an instance of the DataLakeAnalyticsJobManagementClient. Initializes a new instance of the Recurrence class.|
+| @azure-arm-datalake-analytics.Pipeline |Pipeline __NOTE__: An instance of this class is automatically created for an instance of the DataLakeAnalyticsJobManagementClient. Initializes a new instance of the Pipeline class.|
+| @azure-arm-datalake-analytics.Job |Job __NOTE__: An instance of this class is automatically created for an instance of the DataLakeAnalyticsJobManagementClient. Initializes a new instance of the Job class.|
+| @azure-arm-datalake-analytics.DataLakeAnalyticsJobManagementClient |Initializes a new instance of the DataLakeAnalyticsJobManagementClient class.|
+| @azure-arm-datalake-analytics.Catalog |Catalog __NOTE__: An instance of this class is automatically created for an instance of the DataLakeAnalyticsCatalogManagementClient. Initializes a new instance of the Catalog class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL view item list. |Initializes a new instance of the USqlViewList class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL type item list. |Initializes a new instance of the USqlTypeList class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL table valued function item list. |Initializes a new instance of the USqlTableValuedFunctionList class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL table type item list. |Initializes a new instance of the USqlTableTypeList class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL table statistics item list. |Initializes a new instance of the USqlTableStatisticsList class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL table partition item list. |Initializes a new instance of the USqlTablePartitionList class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL table item list. |Initializes a new instance of the USqlTableList class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL schema item list. |Initializes a new instance of the USqlSchemaList class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL procedure item list. |Initializes a new instance of the USqlProcedureList class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL package item list. |Initializes a new instance of the USqlPackageList class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL external datasource item list. |Initializes a new instance of the USqlExternalDataSourceList class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL database item list. |Initializes a new instance of the USqlDatabaseList class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL credential item list. |Initializes a new instance of the USqlCredentialList class.|
+| @azure-arm-datalake-analytics.A Data Lake Analytics catalog U-SQL assembly CLR item list. |Initializes a new instance of the USqlAssemblyList class.|
+| @azure-arm-datalake-analytics.DataLakeAnalyticsCatalogManagementClient |Initializes a new instance of the DataLakeAnalyticsCatalogManagementClient class.|
+| @azure-arm-datalake-analytics.StorageAccounts |StorageAccounts __NOTE__: An instance of this class is automatically created for an instance of the DataLakeAnalyticsAccountManagementClient. Initializes a new instance of the StorageAccounts class.|
+| @azure-arm-datalake-analytics.FirewallRules |FirewallRules __NOTE__: An instance of this class is automatically created for an instance of the DataLakeAnalyticsAccountManagementClient. Initializes a new instance of the FirewallRules class.|
+| @azure-arm-datalake-analytics.DataLakeStoreAccounts |DataLakeStoreAccounts __NOTE__: An instance of this class is automatically created for an instance of the DataLakeAnalyticsAccountManagementClient. Initializes a new instance of the DataLakeStoreAccounts class.|
+| @azure-arm-datalake-analytics.ComputePolicies |ComputePolicies __NOTE__: An instance of this class is automatically created for an instance of the DataLakeAnalyticsAccountManagementClient. Initializes a new instance of the ComputePolicies class.|
+| @azure-arm-datalake-analytics.Account |Account __NOTE__: An instance of this class is automatically created for an instance of the DataLakeAnalyticsAccountManagementClient. Initializes a new instance of the Account class.|
+| @azure-arm-datalake-analytics.DataLakeAnalyticsAccountManagementClient |Initializes a new instance of the DataLakeAnalyticsAccountManagementClient class.|

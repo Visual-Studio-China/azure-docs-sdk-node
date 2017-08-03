@@ -1,134 +1,17 @@
-# Microsoft Azure SDK for Node.js - Compute Management
-
-This project provides a Node.js package that makes it easy to manage Microsoft Azure Virtual Machines and Cloud Services. Right now it supports:
-- **Node.js version: 0.6.15 or higher**
-- **API version: 2016-06-01**
-
-## Features
-
-- Manage virtual machine
-- Manage virtual machine OS and data disk
-- Manage virtual machine image
-- Manage deployment
-- Manage cloud service
-- Manage service certificate
-- Get operating systems and operating system families
-- Redeploy virtual machines
-- Migrate virtual machines to resource manager stack
-
-## How to Install
-
-```bash
-npm install azure-asm-compute
-```
-
-## How to Use
-
-### Authentication
-
-This library support management certificate authentication. To authenticate the library for the REST API calls, you need to
-* Have a management certificate set up in your Microsoft Azure subscription. You can do this by
-  * Either uploading a certificate in the [Microsoft Azure management portal](https://manage.windowsazure.com).
-  * Or use the [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli).
-* Obtain the .pem file of your certificate. If you used [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli) to set it up. You can run ``azure account cert export`` to get the .pem file.
-
-### Create the ComputeManagementClient
-
-```javascript
-var fs                = require('fs'),
-    computeManagement = require('azure-asm-compute');
-
-var computeManagementClient = computeManagement.createComputeManagementClient(computeManagement.createCertificateCloudCredentials({
-  subscriptionId: '<your subscription id>',
-  pem: fs.readFileSync('<your pem file>', 'utf-8')
-}));
-``` 
-
-### Manage Virtual Machine
-
-```javascript
-var serviceName = "cloudservice01";
-var deploymentName = "deployment01";
-var virualMachineName = "vm01";
-var storageAccountName = "storage01";
-var diskContainerName = "vhds";
-
-// List all the virtual machine images you can use.
-computeManagementClient.virtualMachineVMImages.list(function (err, result) {
-  if (err) {
-    console.error(err);
-  } else {
-    console.info(result);
-  }
-});
-
-// Create a cloud service.
-computeManagementClient.hostedServices.create({
-  serviceName: serviceName,
-  label: "cloud service 01",
-  location: "West US"
-}, function (err, result) {
-  if (err) {
-    console.error(err);
-  } else {
-    console.info(result);
-
-    // Create a virtual machine in the cloud service.
-    computeManagementClient.virtualMachines.createDeployment(serviceName, {
-      name: deploymentName,
-      deploymentSlot: "Production",
-      label: "deployment 01",
-      roles: [{
-        roleName: virualMachineName,
-        roleType: "PersistentVMRole",
-        label: "virutal machine 01",
-        oSVirtualHardDisk: {
-          sourceImageName: "a699494373c04fc0bc8f2bb1389d6106__Windows-Server-2012-R2-201312.01-en.us-127GB.vhd",
-          mediaLink: "http://"+ storageAccountName + ".blob.core.windows.net/" + diskContainerName + "/" +
-            serviceName + "-" + virualMachineName + "-" + Math.floor((Math.random()*100)+1) + ".vhd"
-        },
-        dataVirtualHardDisks: [],
-        configurationSets: [{
-          configurationSetType: "WindowsProvisioningConfiguration",
-          adminUserName: "<your admin user name>",
-          adminPassword: "<your admin password>",
-          computerName: virualMachineName,
-          enableAutomaticUpdates: true,
-          resetPasswordOnFirstLogon: false,
-          storedCertificateSettings: [],
-          inputEndpoints: [],
-          windowsRemoteManagement: {
-            listeners: [{
-              listenerType: "Https"
-            }]
-          }
-        }, {
-          configurationSetType: "NetworkConfiguration",
-          subnetNames: [],
-          storedCertificateSettings: [],
-          inputEndpoints: [{
-            localPort: 3389,
-            protocol: "tcp",
-            name: "RemoteDesktop"
-          }, {
-            localPort: 5986,
-            protocol: "tcp",
-            name: "WinRmHTTPS"
-          }]
-        }]
-      }]
-    }, function (err, result) {
-      if (err) {
-        console.error(err);
-      } else {
-        console.info(result);
-      }
-    });
-  }
-});
-```
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js](https://github.com/WindowsAzure/azure-sdk-for-node)
-- [Microsoft Azure SDK for Node.js - Network Management](https://github.com/andrerod/azure-sdk-for-node/tree/master/lib/services/networkManagement)
+# Package azure-asm-compute
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-asm-compute.VirtualMachineVMImageOperations~VirtualMachineVMImageOperations |The Service Management API includes operations for managing the virtual machine templates in your subscription. __NOTE__: An instance of this class is automatically created for an instance of the [ComputeManagementClient] {@link ComputeManagementClient~ComputeManagementClient}. See [virtualMachineVMImages] {@link ComputeManagementClient~ComputeManagementClient#virtualMachineVMImages}. Initializes a new instance of the VirtualMachineVMImageOperations class.|
+| @azure-asm-compute.VirtualMachineOSImageOperations~VirtualMachineOSImageOperations |The Service Management API includes operations for managing the OS images in your subscription.  (see http://msdn.microsoft.com/en-us/library/windowsazure/jj157175.aspx for more information) __NOTE__: An instance of this class is automatically created for an instance of the [ComputeManagementClient] {@link ComputeManagementClient~ComputeManagementClient}. See [virtualMachineOSImages] {@link ComputeManagementClient~ComputeManagementClient#virtualMachineOSImages}. Initializes a new instance of the VirtualMachineOSImageOperations class.|
+| @azure-asm-compute.VirtualMachineOperations~VirtualMachineOperations |The Service Management API includes operations for managing the virtual machines in your subscription.  (see http://msdn.microsoft.com/en-us/library/windowsazure/jj157206.aspx for more information) __NOTE__: An instance of this class is automatically created for an instance of the [ComputeManagementClient] {@link ComputeManagementClient~ComputeManagementClient}. See [virtualMachines] {@link ComputeManagementClient~ComputeManagementClient#virtualMachines}. Initializes a new instance of the VirtualMachineOperations class.|
+| @azure-asm-compute.VirtualMachineExtensionOperations~VirtualMachineExtensionOperations |The Service Management API includes operations for managing the virtual machine extensions in your subscription.  (see http://msdn.microsoft.com/en-us/library/windowsazure/jj157206.aspx for more information) __NOTE__: An instance of this class is automatically created for an instance of the [ComputeManagementClient] {@link ComputeManagementClient~ComputeManagementClient}. See [virtualMachineExtensions] {@link ComputeManagementClient~ComputeManagementClient#virtualMachineExtensions}. Initializes a new instance of the VirtualMachineExtensionOperations class.|
+| @azure-asm-compute.VirtualMachineDiskOperations~VirtualMachineDiskOperations |The Service Management API includes operations for managing the disks in your subscription.  (see http://msdn.microsoft.com/en-us/library/windowsazure/jj157188.aspx for more information) __NOTE__: An instance of this class is automatically created for an instance of the [ComputeManagementClient] {@link ComputeManagementClient~ComputeManagementClient}. See [virtualMachineDisks] {@link ComputeManagementClient~ComputeManagementClient#virtualMachineDisks}. Initializes a new instance of the VirtualMachineDiskOperations class.|
+| @azure-asm-compute.ServiceCertificateOperations~ServiceCertificateOperations |Operations for managing service certificates for your subscription.  (see http://msdn.microsoft.com/en-us/library/windowsazure/ee795178.aspx for more information) __NOTE__: An instance of this class is automatically created for an instance of the [ComputeManagementClient] {@link ComputeManagementClient~ComputeManagementClient}. See [serviceCertificates] {@link ComputeManagementClient~ComputeManagementClient#serviceCertificates}. Initializes a new instance of the ServiceCertificateOperations class.|
+| @azure-asm-compute.OperatingSystemOperations~OperatingSystemOperations |Operations for determining the version of the Azure Guest Operating System on which your service is running.  (see http://msdn.microsoft.com/en-us/library/windowsazure/ff684169.aspx for more information) __NOTE__: An instance of this class is automatically created for an instance of the [ComputeManagementClient] {@link ComputeManagementClient~ComputeManagementClient}. See [operatingSystems] {@link ComputeManagementClient~ComputeManagementClient#operatingSystems}. Initializes a new instance of the OperatingSystemOperations class.|
+| @azure-asm-compute.LoadBalancerOperations~LoadBalancerOperations |The Compute Management API includes operations for managing the load balancers for your subscription. __NOTE__: An instance of this class is automatically created for an instance of the [ComputeManagementClient] {@link ComputeManagementClient~ComputeManagementClient}. See [loadBalancers] {@link ComputeManagementClient~ComputeManagementClient#loadBalancers}. Initializes a new instance of the LoadBalancerOperations class.|
+| @azure-asm-compute.HostedServiceOperations~HostedServiceOperations |The Service Management API includes operations for managing the hosted services beneath your subscription.  (see http://msdn.microsoft.com/en-us/library/windowsazure/ee460812.aspx for more information) __NOTE__: An instance of this class is automatically created for an instance of the [ComputeManagementClient] {@link ComputeManagementClient~ComputeManagementClient}. See [hostedServices] {@link ComputeManagementClient~ComputeManagementClient#hostedServices}. Initializes a new instance of the HostedServiceOperations class.|
+| @azure-asm-compute.ExtensionImageOperations~ExtensionImageOperations |The Service Management API includes operations for managing the service and virtual machine extension images in your publisher subscription. __NOTE__: An instance of this class is automatically created for an instance of the [ComputeManagementClient] {@link ComputeManagementClient~ComputeManagementClient}. See [extensionImages] {@link ComputeManagementClient~ComputeManagementClient#extensionImages}. Initializes a new instance of the ExtensionImageOperations class.|
+| @azure-asm-compute.DNSServerOperations~DNSServerOperations |The Compute Management API includes operations for managing the dns servers for your subscription. __NOTE__: An instance of this class is automatically created for an instance of the [ComputeManagementClient] {@link ComputeManagementClient~ComputeManagementClient}. See [dnsServer] {@link ComputeManagementClient~ComputeManagementClient#dnsServer}. Initializes a new instance of the DNSServerOperations class.|
+| @azure-asm-compute.DeploymentOperations~DeploymentOperations |The Service Management API includes operations for managing the deployments in your subscription.  (see http://msdn.microsoft.com/en-us/library/windowsazure/ee460812.aspx for more information) __NOTE__: An instance of this class is automatically created for an instance of the [ComputeManagementClient] {@link ComputeManagementClient~ComputeManagementClient}. See [deployments] {@link ComputeManagementClient~ComputeManagementClient#deployments}. Initializes a new instance of the DeploymentOperations class.|
+| @azure-asm-compute.ComputeManagementClient~ComputeManagementClient |The Service Management API provides programmatic access to much of the functionality available through the Management Portal. The Service Management API is a REST API. All API operations are performed over SSL, and are mutually authenticated using X.509 v3 certificates.  (see http://msdn.microsoft.com/en-us/library/windowsazure/ee460799.aspx for more information) Initializes a new instance of the ComputeManagementClient class.|

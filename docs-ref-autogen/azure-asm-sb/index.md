@@ -1,60 +1,10 @@
-# Microsoft Azure SDK for Node.js - Service Bus Management
-
-This project provides a Node.js package that makes it easy to manage Microsoft Azure Service Bus. Right now it supports:
-- **API version: 2013-08-01**
-
-## Features
-
-- Manage namespace
-- Manage queue
-- Manage topic
-- Manage relay
-- Manage notification hub
-
-## How to Install
-
-```bash
-npm install azure-asm-sb
-```
-
-## How to Use
-
-### Authentication
-
-This library support management certificate authentication. To authenticate the library for the REST API calls, you need to
-* Have a management certificate set up in your Microsoft Azure subscription. You can do this by
-  * Either uploading a certificate in the [Microsoft Azure management portal](https://manage.windowsazure.com).
-  * Or use the [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli).
-* Obtain the .pem file of your certificate. If you used [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli) to set it up. You can run ``azure account cert export`` to get the .pem file.
-
-### Create the ServiceBusManagementClient
-
-```javascript
-var fs           = require('fs'),
-    sbManagement = require('azure-asm-sb');
-
-var sbManagementClient = sbManagement.createServiceBusManagementClient(sbManagement.createCertificateCloudCredentials({
-  subscriptionId: '<your subscription id>',
-  pem: fs.readFileSync('<your pem file>')
-}));
-```
-
-### Manage Namespace
-
-```javascript
-var namespaceName = "namespace01";
-
-// Create a namespace.
-sbManagementClient.namespaces.create(namespaceName, "West US", function (err, result) {
-  if (err) {
-    console.error(err);
-  } else {
-    console.info(result);
-  }
-});
-```
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js](https://github.com/WindowsAzure/azure-sdk-for-node)
-- [Microsoft Azure SDK for Node.js - Service Bus](https://github.com/WindowsAzure/azure-sdk-for-node/tree/master/lib/services/serviceBus)
+# Package azure-asm-sb
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-asm-sb.TopicOperations~TopicOperations |The Service Bus Management API includes operations for managing Service Bus topics for a namespace. __NOTE__: An instance of this class is automatically created for an instance of the [ServiceBusManagementClient] {@link ServiceBusManagementClient~ServiceBusManagementClient}. See [topics] {@link ServiceBusManagementClient~ServiceBusManagementClient#topics}. Initializes a new instance of the TopicOperations class.|
+| @azure-asm-sb.RelayOperations~RelayOperations |The Service Bus Management API includes operations for managing Service Bus relays. __NOTE__: An instance of this class is automatically created for an instance of the [ServiceBusManagementClient] {@link ServiceBusManagementClient~ServiceBusManagementClient}. See [relays] {@link ServiceBusManagementClient~ServiceBusManagementClient#relays}. Initializes a new instance of the RelayOperations class.|
+| @azure-asm-sb.QueueOperations~QueueOperations |The Service Bus Management API includes operations for managing Service Bus queues. __NOTE__: An instance of this class is automatically created for an instance of the [ServiceBusManagementClient] {@link ServiceBusManagementClient~ServiceBusManagementClient}. See [queues] {@link ServiceBusManagementClient~ServiceBusManagementClient#queues}. Initializes a new instance of the QueueOperations class.|
+| @azure-asm-sb.NotificationHubOperations~NotificationHubOperations |The Service Bus Management API includes operations for managing Service Bus notification hubs. __NOTE__: An instance of this class is automatically created for an instance of the [ServiceBusManagementClient] {@link ServiceBusManagementClient~ServiceBusManagementClient}. See [notificationHubs] {@link ServiceBusManagementClient~ServiceBusManagementClient#notificationHubs}. Initializes a new instance of the NotificationHubOperations class.|
+| @azure-asm-sb.NamespaceOperations~NamespaceOperations |The Service Bus Management API includes operations for managing Service Bus namespaces. __NOTE__: An instance of this class is automatically created for an instance of the [ServiceBusManagementClient] {@link ServiceBusManagementClient~ServiceBusManagementClient}. See [namespaces] {@link ServiceBusManagementClient~ServiceBusManagementClient#namespaces}. Initializes a new instance of the NamespaceOperations class.|
+| @azure-asm-sb.ServiceBusManagementClient~ServiceBusManagementClient |The Service Bus Management API is a REST API for managing Service Bus queues, topics, rules and subscriptions.  (see http://msdn.microsoft.com/en-us/library/windowsazure/hh780776.aspx for more information) Initializes a new instance of the ServiceBusManagementClient class.|

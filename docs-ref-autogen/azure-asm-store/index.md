@@ -1,43 +1,7 @@
-# Microsoft Azure SDK for Node.js - Store Management
-
-This project provides a Node.js package that makes it easy to manage Microsoft Azure Store. Right now it supports:
-- **API version: 2013-06-01**
-
-## Features
-
-- Manage add-on
-
-## How to Install
-
-```bash
-npm install azure-asm-store
-```
-
-## How to Use
-
-### Authentication
-
-This library support management certificate authentication. To authenticate the library for the REST API calls, you need to
-* Have a management certificate set up in your Microsoft Azure subscription. You can do this by
-  * Either uploading a certificate in the [Microsoft Azure management portal](https://manage.windowsazure.com).
-  * Or use the [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli).
-* Obtain the .pem file of your certificate. If you used [Microsoft Azure Xplat-CLI](https://github.com/Azure/azure-xplat-cli) to set it up. You can run ``azure account cert export`` to get the .pem file.
-* Open the .pem file in a text editor and **certvalue** and **keyvalue**.
-
-### Create the StoreManagementClient
-
-```javascript
-var storeManagement = require('azure-asm-store');
-
-var storeManagementClient = storeManagement.createStoreManagementClient(storeManagement.createCertificateCloudCredentials({
-  subscriptionId: '<your subscription id>',
-  certvalue: '<your management certificate value>',
-  keyvalue: '<your management certificate key value>'
-}));
-```
-
-### Manage Add-On
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js](https://github.com/WindowsAzure/azure-sdk-for-node)
+# Package azure-asm-store
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-asm-store.CloudServiceOperations~CloudServiceOperations |Provides REST operations for working with cloud services from the Windows Azure store service. __NOTE__: An instance of this class is automatically created for an instance of the [StoreManagementClient] {@link StoreManagementClient~StoreManagementClient}. See [cloudServices] {@link StoreManagementClient~StoreManagementClient#cloudServices}. Initializes a new instance of the CloudServiceOperations class.|
+| @azure-asm-store.AddOnOperations~AddOnOperations |Provides REST operations for working with Store add-ins from the Windows Azure store service. __NOTE__: An instance of this class is automatically created for an instance of the [StoreManagementClient] {@link StoreManagementClient~StoreManagementClient}. See [addOns] <xref:azure-asm-store.StoreManagementClient~StoreManagementClient%23addOns>. Initializes a new instance of the AddOnOperations class.|
+| @azure-asm-store.StoreManagementClient~StoreManagementClient |The Windows Azure Store API is a REST API for managing Windows Azure Store add-ins. Initializes a new instance of the StoreManagementClient class.|

@@ -1,77 +1,13 @@
-# Microsoft Azure SDK for Node.js - Gallery
-
-This project provides a Node.js package for accessing the Azure ServiceBus service.
-
-
-## How to Install
-
-```bash
-npm install azure-sb
-```
-
-## How to Use
-
-```node
-var azure = require('azure-sb');
-
-function checkForMessages(sbService, queueName, callback) {
-  sbService.receiveQueueMessage(queueName, { isPeekLock: true }, function (err, lockedMessage) {
-    if (err) {
-      if (err == 'No messages to receive') {
-        console.log('No messages');
-      } else {
-        callback(err);
-      }
-    } else {
-      callback(null, lockedMessage);
-    }
-  });
-}
-
-function processMessage(sbService, err, lockedMsg) {
-  if (err) {
-    console.log('Error on Rx: ', err);
-  } else {
-    console.log('Rx: ', lockedMsg);
-    sbService.deleteMessage(lockedMsg, function(err2) {
-      if (err2) {
-        console.log('Failed to delete message: ', err2);
-      } else {
-        console.log('Deleted message.');
-      }
-    })
-  }
-}
-
-var idx = 0;
-function sendMessages(sbService, queueName) {
-  var msg = 'Message # ' + (++idx);
-  sbService.sendQueueMessage(queueName, msg, function (err) {
-   if (err) {
-     console.log('Failed Tx: ', err);
-   } else {
-     console.log('Sent ' + msg);
-   }
-  });
-}
-
-var connStr = process.argv[2] || process.env.CONNECTION_STRING;
-if (!connStr) throw new Error('Must provide connection string');
-var queueName = 'sbqtest';
-
-console.log('Connecting to ' + connStr + ' queue ' + queueName);
-var sbService = azure.createServiceBusService(connStr);
-sbService.createQueueIfNotExists(queueName, function (err) {
-  if (err) {
-   console.log('Failed to create queue: ', err);
-  } else {
-   setInterval(checkForMessages.bind(null, sbService, queueName, processMessage.bind(null, sbService)), 5000);
-   setInterval(sendMessages.bind(null, sbService, queueName), 15000);
-  }
-});
-```
-Thanks to [@noodlefrenzy](https://github.com/noodlefrenzy) for the great example. The original is [here](https://github.com/noodlefrenzy/node-cerulean/blob/master/examples/servicebus_send_receive.js).
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js](https://github.com/WindowsAzure/azure-sdk-for-node)
+# Package azure-sb
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-sb.WnsService ||
+| @azure-sb.ServiceBusServiceClient ||
+| @azure-sb.ServiceBusServiceBase ||
+| @azure-sb.ServiceBusService |The ServiceBusServices allows you to work with Microsoft Azure Service Bus. Service Bus provides both queues for sending and receiving messages, as well as push notifications for mobile devices.  Service Bus queues provide both standard message queue functionality as well as publish/subscribe functioanlity. For more information on Service Bus queues, as well as task focused information on using them from Node.js applications, see [How to Use Service Bus Queues](https://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/service-bus-queues/) and [How to Use Service Bus Topics/Subscriptions](https://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/service-bus-topics/).  Service Bus provides push notifications through the Notification Hub. While the ServiceBusService can be used to manage Notification Hubs, you must use the <xref:azure-sb.NotificationHubService> to send messages to mobile devices.|
+| @azure-sb.NotificationHubService |The NotificationHubService allows you to send push notifications to iOS, Android, and Windows Store devices.  For more information on Notification Hubs, as well as task focused information on using them from Node.js applications, see [How to Use Service Bus Notification Hubs](https://www.windowsazure.com/en-us/develop/nodejs/how-to-guides/service-bus-notification-hubs/).|
+| @azure-sb.MpnsService |The MpnsService class is used to send notifications using the [Microsoft Push Notification Service](http://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402558).|
+| @azure-sb.SharedAccessSignature ||
+| @azure-sb.GcmService |The GcmService class is used to send notifications using [Google Cloud Messaging](http://developer.android.com/google/gcm/index.html).|
+| @azure-sb.ApnsService |The ApnsService class is used to send notifications using the Apple Push Notification Service (APNS). This service is used to communicate with iOS device.|

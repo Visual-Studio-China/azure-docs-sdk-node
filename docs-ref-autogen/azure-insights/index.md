@@ -1,38 +1,16 @@
-# Microsoft Azure SDK for Node.js - Web Site Management
-
-This project provides a Node.js package that makes it easy to use the Azure Insights API. Right now it supports:
-- **Node.js version: 0.6.15 or higher**
-- **API version: 2014-04-01, 2015-04-01, 2016-03-01, 2016-09-01**
-
-## How to Install
-
-```bash
-npm install azure-insights
-```
-
-## How to Use
-
-### Authentication
-
- ```javascript
- var msRestAzure = require('ms-rest-azure');
- var insightsClient = require('azure-insights');
- 
- // Interactive Login
- msRestAzure.interactiveLogin(function(err, credentials) {
-   var client = new insightsClient(credentials, 'your-subscription-id');
- });
- ```
-
-### Create the InsightsClient
-
-```javascript
- var msRestAzure = require("ms-rest-azure"),
- var insightsClient = require("azure-insights");
-
- var client = new insightsClient(credentials, 'your subscription id');
-```
-
-## Related projects
-
-- [Microsoft Azure SDK for Node.js - All-up](https://github.com/WindowsAzure/azure-sdk-for-node)
+# Package azure-insights
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-insights.UsageMetrics |UsageMetrics __NOTE__: An instance of this class is automatically created for an instance of the InsightsClient. Initializes a new instance of the UsageMetrics class.|
+| @azure-insights.TenantEvents |TenantEvents __NOTE__: An instance of this class is automatically created for an instance of the InsightsClient. Initializes a new instance of the TenantEvents class.|
+| @azure-insights.Metrics |Metrics __NOTE__: An instance of this class is automatically created for an instance of the InsightsClient. Initializes a new instance of the Metrics class.|
+| @azure-insights.MetricDefinitions |MetricDefinitions __NOTE__: An instance of this class is automatically created for an instance of the InsightsClient. Initializes a new instance of the MetricDefinitions class.|
+| @azure-insights.Events |Events __NOTE__: An instance of this class is automatically created for an instance of the InsightsClient. Initializes a new instance of the Events class.|
+| @azure-insights.EventCategories |EventCategories __NOTE__: An instance of this class is automatically created for an instance of the InsightsClient. Initializes a new instance of the EventCategories class.|
+| @azure-insights.Represents collection of usage metrics. |Initializes a new instance of the UsageMetricCollection class.|
+| @azure-insights.Represents collection of metric definitions. |Initializes a new instance of the MetricDefinitionCollection class.|
+| @azure-insights.The collection of metric value sets. |Initializes a new instance of the MetricCollection class.|
+| @azure-insights.A collection of event categories. Currently possible values are:
+Administrative, Security, ServiceHealth, Alert, Recommendation, Policy. |Initializes a new instance of the EventCategoryCollection class.|
+| @azure-insights.InsightsClient |Initializes a new instance of the InsightsClient class.|

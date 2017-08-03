@@ -1,57 +1,16 @@
-# Microsoft Azure SDK for Node.js - Batch Service
-
-This project provides a Node.js package that makes it easy to work with Microsoft Azure Batch Service. Right now it supports:
-- **Node.js version: 6.x.x or higher**
-
-Please check details on [API reference documents](http://azure.github.io/azure-sdk-for-node/azure-batch/latest/).
-
-## How to Install
-
-```bash
-npm install azure-batch
-```
-
-## How to use
-
-### Authentication
-
- ```javascript
- var batch = require('azure-batch');
-
- //user authentication
- var credentials = new batch.SharedKeyCredentials('your-account-name', 'your-account-key');
- ```
-
-### Create the BatchServiceClient
-
-```javascript
-
-var client = new batch.ServiceClient(credentials, 'your-batch-endpoint');
-```
-
-## List all Jobs under account
-
-```javascript
-let options = {}
-options.jobListOptions = { maxResults : 10 };
-
-function loop(nextLink) {
-  if (nextLink !== null && nextLink !== undefined) {
-    return client.job.listNext(nextLink).then((res) => {
-      console.dir(res, {depth: null, colors: true});
-      return loop(res.odatanextLink);
-    });
-  }
-  return Promise.resolve();
-};
-
-
-client.job.list(options).then((result) => {
-  console.dir(result, {depth: null, colors: true});
-}).then((result) => {
-  return loop(result.odatanextLink);
-}).catch((err) => {
-  console.log('An error occurred.');
-  console.dir(err, {depth: null, colors: true});
-});
-```
+# Package azure-batch
+## Classes
+| Class Name | Description |
+|---|---|
+| @azure-batch.Task |Task __NOTE__: An instance of this class is automatically created for an instance of the BatchServiceClient. Initializes a new instance of the Task class.|
+| @azure-batch.Pool |Pool __NOTE__: An instance of this class is automatically created for an instance of the BatchServiceClient. Initializes a new instance of the Pool class.|
+| @azure-batch.JobSchedule |JobSchedule __NOTE__: An instance of this class is automatically created for an instance of the BatchServiceClient. Initializes a new instance of the JobSchedule class.|
+| @azure-batch.Job |Job __NOTE__: An instance of this class is automatically created for an instance of the BatchServiceClient. Initializes a new instance of the Job class.|
+| @azure-batch.File |File __NOTE__: An instance of this class is automatically created for an instance of the BatchServiceClient. Initializes a new instance of the File class.|
+| @azure-batch.ComputeNodeOperations |ComputeNodeOperations __NOTE__: An instance of this class is automatically created for an instance of the BatchServiceClient. Initializes a new instance of the ComputeNodeOperations class.|
+| @azure-batch.CertificateOperations |CertificateOperations __NOTE__: An instance of this class is automatically created for an instance of the BatchServiceClient. Initializes a new instance of the CertificateOperations class.|
+| @azure-batch.Application |Application __NOTE__: An instance of this class is automatically created for an instance of the BatchServiceClient. Initializes a new instance of the Application class.|
+| @azure-batch.Account |Account __NOTE__: An instance of this class is automatically created for an instance of the BatchServiceClient. Initializes a new instance of the Account class.|
+| @azure-batch.HmacSha256Sign ||
+| @azure-batch.BatchSharedKeyCredentials |Creates a new BatchSharedKeyCredentials object.|
+| @azure-batch.BatchServiceClient |Initializes a new instance of the BatchServiceClient class.|
