@@ -642,7 +642,7 @@ items:
         - id: queuePath
           type:
             - string
-          description: A string object that represents the name of the queue to delete.
+          description: A string object that represents the name of the queue to create.
         - id: options
           type:
             - object
