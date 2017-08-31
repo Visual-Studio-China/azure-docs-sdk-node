@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-network.Routes
     id: azure-arm-network.Routes
     name: Routes
-    summary: |-
-      Routes
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the NetworkManagementClient.
-      Initializes a new instance of the Routes class.
+    summary: Class representing a Routes.
     fullName: azure-arm-network.Routes
     type: Class
     children:
@@ -33,7 +29,7 @@ items:
     parent: azure-arm-network.Routes
     name: Routes(client)
     fullName: azure-arm-network.Routes.Routes(client)
-    summary: ''
+    summary: Create a Routes.
     type: Constructor
     syntax:
       parameters:

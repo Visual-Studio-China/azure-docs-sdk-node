@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-network.PublicIPAddresses
     id: azure-arm-network.PublicIPAddresses
     name: PublicIPAddresses
-    summary: |-
-      PublicIPAddresses
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the NetworkManagementClient.
-      Initializes a new instance of the PublicIPAddresses class.
+    summary: Class representing a PublicIPAddresses.
     fullName: azure-arm-network.PublicIPAddresses
     type: Class
     children:
@@ -61,7 +57,7 @@ items:
     parent: azure-arm-network.PublicIPAddresses
     name: PublicIPAddresses(client)
     fullName: azure-arm-network.PublicIPAddresses.PublicIPAddresses(client)
-    summary: ''
+    summary: Create a PublicIPAddresses.
     type: Constructor
     syntax:
       parameters:
@@ -396,6 +392,18 @@ items:
           description: |-
             Parameters supplied to the create or update
             public IP address operation.
+        - id: parameters.sku
+          type:
+            - object
+          description: The public IP address SKU.
+          optional: true
+        - id: parameters.sku.name
+          type:
+            - string
+          description: |-
+            Name of a public IP address SKU.
+            Possible values include: 'Basic', 'Standard'
+          optional: true
         - id: parameters.publicIPAllocationMethod
           type:
             - string
@@ -473,7 +481,9 @@ items:
         - id: parameters.ipAddress
           type:
             - string
-          description: ''
+          description: |-
+            The IP address associated with the
+            public IP address resource.
           optional: true
         - id: parameters.idleTimeoutInMinutes
           type:
@@ -600,6 +610,18 @@ items:
           description: |-
             Parameters supplied to the create or update
             public IP address operation.
+        - id: parameters.sku
+          type:
+            - object
+          description: The public IP address SKU.
+          optional: true
+        - id: parameters.sku.name
+          type:
+            - string
+          description: |-
+            Name of a public IP address SKU.
+            Possible values include: 'Basic', 'Standard'
+          optional: true
         - id: parameters.publicIPAllocationMethod
           type:
             - string
@@ -677,7 +699,9 @@ items:
         - id: parameters.ipAddress
           type:
             - string
-          description: ''
+          description: |-
+            The IP address associated with the
+            public IP address resource.
           optional: true
         - id: parameters.idleTimeoutInMinutes
           type:
@@ -1711,6 +1735,18 @@ items:
           description: |-
             Parameters supplied to the create or update
             public IP address operation.
+        - id: parameters.sku
+          type:
+            - object
+          description: The public IP address SKU.
+          optional: true
+        - id: parameters.sku.name
+          type:
+            - string
+          description: |-
+            Name of a public IP address SKU.
+            Possible values include: 'Basic', 'Standard'
+          optional: true
         - id: parameters.publicIPAllocationMethod
           type:
             - string
@@ -1788,7 +1824,9 @@ items:
         - id: parameters.ipAddress
           type:
             - string
-          description: ''
+          description: |-
+            The IP address associated with the
+            public IP address resource.
           optional: true
         - id: parameters.idleTimeoutInMinutes
           type:
@@ -1915,6 +1953,18 @@ items:
           description: |-
             Parameters supplied to the create or update
             public IP address operation.
+        - id: parameters.sku
+          type:
+            - object
+          description: The public IP address SKU.
+          optional: true
+        - id: parameters.sku.name
+          type:
+            - string
+          description: |-
+            Name of a public IP address SKU.
+            Possible values include: 'Basic', 'Standard'
+          optional: true
         - id: parameters.publicIPAllocationMethod
           type:
             - string
@@ -1992,7 +2042,9 @@ items:
         - id: parameters.ipAddress
           type:
             - string
-          description: ''
+          description: |-
+            The IP address associated with the
+            public IP address resource.
           optional: true
         - id: parameters.idleTimeoutInMinutes
           type:

@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-network.Subnets
     id: azure-arm-network.Subnets
     name: Subnets
-    summary: |-
-      Subnets
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the NetworkManagementClient.
-      Initializes a new instance of the Subnets class.
+    summary: Class representing a Subnets.
     fullName: azure-arm-network.Subnets
     type: Class
     children:
@@ -33,7 +29,7 @@ items:
     parent: azure-arm-network.Subnets
     name: Subnets(client)
     fullName: azure-arm-network.Subnets.Subnets(client)
-    summary: ''
+    summary: Create a Subnets.
     type: Constructor
     syntax:
       parameters:
@@ -490,12 +486,12 @@ items:
             - object
           description: Resource tags.
           optional: true
-        - id: subnetParameters.privateAccessServices
+        - id: subnetParameters.serviceEndpoints
           type:
             - array
           description: |-
-            An array of private
-            access services values.
+            An array of service
+            endpoints.
           optional: true
         - id: subnetParameters.resourceNavigationLinks
           type:
@@ -727,12 +723,12 @@ items:
             - object
           description: Resource tags.
           optional: true
-        - id: subnetParameters.privateAccessServices
+        - id: subnetParameters.serviceEndpoints
           type:
             - array
           description: |-
-            An array of private
-            access services values.
+            An array of service
+            endpoints.
           optional: true
         - id: subnetParameters.resourceNavigationLinks
           type:
@@ -1229,12 +1225,12 @@ items:
             - object
           description: Resource tags.
           optional: true
-        - id: subnetParameters.privateAccessServices
+        - id: subnetParameters.serviceEndpoints
           type:
             - array
           description: |-
-            An array of private
-            access services values.
+            An array of service
+            endpoints.
           optional: true
         - id: subnetParameters.resourceNavigationLinks
           type:
@@ -1466,12 +1462,12 @@ items:
             - object
           description: Resource tags.
           optional: true
-        - id: subnetParameters.privateAccessServices
+        - id: subnetParameters.serviceEndpoints
           type:
             - array
           description: |-
-            An array of private
-            access services values.
+            An array of service
+            endpoints.
           optional: true
         - id: subnetParameters.resourceNavigationLinks
           type:

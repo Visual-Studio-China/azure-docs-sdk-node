@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-network.RouteFilters
     id: azure-arm-network.RouteFilters
     name: RouteFilters
-    summary: |-
-      RouteFilters
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the NetworkManagementClient.
-      Initializes a new instance of the RouteFilters class.
+    summary: Class representing a RouteFilters.
     fullName: azure-arm-network.RouteFilters
     type: Class
     children:
@@ -45,7 +41,7 @@ items:
     parent: azure-arm-network.RouteFilters
     name: RouteFilters(client)
     fullName: azure-arm-network.RouteFilters.RouteFilters(client)
-    summary: ''
+    summary: Create a RouteFilters.
     type: Constructor
     syntax:
       parameters:
@@ -379,6 +375,13 @@ items:
             Collection of RouteFilterRules
             contained within a route filter.
           optional: true
+        - id: routeFilterParameters.peerings
+          type:
+            - array
+          description: |-
+            A collection of references
+            to express route circuit peerings.
+          optional: true
         - id: routeFilterParameters.id
           type:
             - string
@@ -482,6 +485,13 @@ items:
             Collection of RouteFilterRules
             contained within a route filter.
           optional: true
+        - id: routeFilterParameters.peerings
+          type:
+            - array
+          description: |-
+            A collection of references
+            to express route circuit peerings.
+          optional: true
         - id: routeFilterParameters.id
           type:
             - string
@@ -570,6 +580,13 @@ items:
           description: |-
             Collection of RouteFilterRules
             contained within a route filter.
+          optional: true
+        - id: routeFilterParameters.peerings
+          type:
+            - array
+          description: |-
+            A collection of references
+            to express route circuit peerings.
           optional: true
         - id: routeFilterParameters.tags
           type:
@@ -668,6 +685,13 @@ items:
           description: |-
             Collection of RouteFilterRules
             contained within a route filter.
+          optional: true
+        - id: routeFilterParameters.peerings
+          type:
+            - array
+          description: |-
+            A collection of references
+            to express route circuit peerings.
           optional: true
         - id: routeFilterParameters.tags
           type:
@@ -1131,6 +1155,13 @@ items:
             Collection of RouteFilterRules
             contained within a route filter.
           optional: true
+        - id: routeFilterParameters.peerings
+          type:
+            - array
+          description: |-
+            A collection of references
+            to express route circuit peerings.
+          optional: true
         - id: routeFilterParameters.id
           type:
             - string
@@ -1234,6 +1265,13 @@ items:
             Collection of RouteFilterRules
             contained within a route filter.
           optional: true
+        - id: routeFilterParameters.peerings
+          type:
+            - array
+          description: |-
+            A collection of references
+            to express route circuit peerings.
+          optional: true
         - id: routeFilterParameters.id
           type:
             - string
@@ -1322,6 +1360,13 @@ items:
           description: |-
             Collection of RouteFilterRules
             contained within a route filter.
+          optional: true
+        - id: routeFilterParameters.peerings
+          type:
+            - array
+          description: |-
+            A collection of references
+            to express route circuit peerings.
           optional: true
         - id: routeFilterParameters.tags
           type:
@@ -1420,6 +1465,13 @@ items:
           description: |-
             Collection of RouteFilterRules
             contained within a route filter.
+          optional: true
+        - id: routeFilterParameters.peerings
+          type:
+            - array
+          description: |-
+            A collection of references
+            to express route circuit peerings.
           optional: true
         - id: routeFilterParameters.tags
           type:

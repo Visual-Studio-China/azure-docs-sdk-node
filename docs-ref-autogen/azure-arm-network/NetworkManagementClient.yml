@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-network.NetworkManagementClient
     id: azure-arm-network.NetworkManagementClient
     name: NetworkManagementClient
-    summary: Initializes a new instance of the NetworkManagementClient class.
+    summary: Class representing a NetworkManagementClient.
     fullName: azure-arm-network.NetworkManagementClient
     type: Class
     children:
@@ -20,7 +20,7 @@ items:
     fullName: >-
       azure-arm-network.NetworkManagementClient.NetworkManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a NetworkManagementClient.
     type: Constructor
     syntax:
       parameters:

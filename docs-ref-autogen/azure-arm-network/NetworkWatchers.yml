@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-network.NetworkWatchers
     id: azure-arm-network.NetworkWatchers
     name: NetworkWatchers
-    summary: |-
-      NetworkWatchers
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the NetworkManagementClient.
-      Initializes a new instance of the NetworkWatchers class.
+    summary: Class representing a NetworkWatchers.
     fullName: azure-arm-network.NetworkWatchers
     type: Class
     children:
@@ -81,7 +77,7 @@ items:
     parent: azure-arm-network.NetworkWatchers
     name: NetworkWatchers(client)
     fullName: azure-arm-network.NetworkWatchers.NetworkWatchers(client)
-    summary: ''
+    summary: Create a NetworkWatchers.
     type: Constructor
     syntax:
       parameters:

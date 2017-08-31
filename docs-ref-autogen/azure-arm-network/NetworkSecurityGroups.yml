@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-network.NetworkSecurityGroups
     id: azure-arm-network.NetworkSecurityGroups
     name: NetworkSecurityGroups
-    summary: |-
-      NetworkSecurityGroups
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the NetworkManagementClient.
-      Initializes a new instance of the NetworkSecurityGroups class.
+    summary: Class representing a NetworkSecurityGroups.
     fullName: azure-arm-network.NetworkSecurityGroups
     type: Class
     children:
@@ -43,7 +39,7 @@ items:
     parent: azure-arm-network.NetworkSecurityGroups
     name: NetworkSecurityGroups(client)
     fullName: azure-arm-network.NetworkSecurityGroups.NetworkSecurityGroups(client)
-    summary: ''
+    summary: Create a NetworkSecurityGroups.
     type: Constructor
     syntax:
       parameters:

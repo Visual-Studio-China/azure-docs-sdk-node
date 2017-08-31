@@ -1,32 +1,28 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-arm-network.AvailablePrivateAccessServices
-    id: azure-arm-network.AvailablePrivateAccessServices
-    name: AvailablePrivateAccessServices
-    summary: |-
-      AvailablePrivateAccessServices
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the NetworkManagementClient.
-      Initializes a new instance of the AvailablePrivateAccessServices class.
-    fullName: azure-arm-network.AvailablePrivateAccessServices
+  - uid: azure-arm-network.NetworkInterfaceLoadBalancers
+    id: azure-arm-network.NetworkInterfaceLoadBalancers
+    name: NetworkInterfaceLoadBalancers
+    summary: Class representing a NetworkInterfaceLoadBalancers.
+    fullName: azure-arm-network.NetworkInterfaceLoadBalancers
     type: Class
     children:
-      - 'azure-arm-network.AvailablePrivateAccessServices.#ctor'
+      - 'azure-arm-network.NetworkInterfaceLoadBalancers.#ctor'
       - >-
-        azure-arm-network.AvailablePrivateAccessServices#listWithHttpOperationResponse
-      - 'azure-arm-network.AvailablePrivateAccessServices#list'
+        azure-arm-network.NetworkInterfaceLoadBalancers#listWithHttpOperationResponse
+      - 'azure-arm-network.NetworkInterfaceLoadBalancers#list'
       - >-
-        azure-arm-network.AvailablePrivateAccessServices#listNextWithHttpOperationResponse
-      - 'azure-arm-network.AvailablePrivateAccessServices#listNext'
+        azure-arm-network.NetworkInterfaceLoadBalancers#listNextWithHttpOperationResponse
+      - 'azure-arm-network.NetworkInterfaceLoadBalancers#listNext'
     langs:
       - js
-  - id: 'azure-arm-network.AvailablePrivateAccessServices.#ctor'
-    uid: 'azure-arm-network.AvailablePrivateAccessServices.#ctor'
-    parent: azure-arm-network.AvailablePrivateAccessServices
-    name: AvailablePrivateAccessServices(client)
+  - id: 'azure-arm-network.NetworkInterfaceLoadBalancers.#ctor'
+    uid: 'azure-arm-network.NetworkInterfaceLoadBalancers.#ctor'
+    parent: azure-arm-network.NetworkInterfaceLoadBalancers
+    name: NetworkInterfaceLoadBalancers(client)
     fullName: >-
-      azure-arm-network.AvailablePrivateAccessServices.AvailablePrivateAccessServices(client)
-    summary: ''
+      azure-arm-network.NetworkInterfaceLoadBalancers.NetworkInterfaceLoadBalancers(client)
+    summary: Create a NetworkInterfaceLoadBalancers.
     type: Constructor
     syntax:
       parameters:
@@ -34,27 +30,29 @@ items:
           type:
             - azure-arm-network.NetworkManagementClient
           description: Reference to the service client.
-      content: new AvailablePrivateAccessServices(client)
+      content: new NetworkInterfaceLoadBalancers(client)
     langs:
       - js
   - uid: >-
-      azure-arm-network.AvailablePrivateAccessServices#listWithHttpOperationResponse
+      azure-arm-network.NetworkInterfaceLoadBalancers#listWithHttpOperationResponse
     id: >-
-      azure-arm-network.AvailablePrivateAccessServices#listWithHttpOperationResponse
-    parent: azure-arm-network.AvailablePrivateAccessServices
-    name: 'listWithHttpOperationResponse(location, options)'
-    summary: List what values of private access services are available for use.
-    fullName: >-
-      azure-arm-network.AvailablePrivateAccessServices.listWithHttpOperationResponse(location,
+      azure-arm-network.NetworkInterfaceLoadBalancers#listWithHttpOperationResponse
+    parent: azure-arm-network.NetworkInterfaceLoadBalancers
+    name: >-
+      listWithHttpOperationResponse(resourceGroupName, networkInterfaceName,
       options)
+    summary: Get all load balancers in a network interface
+    fullName: >-
+      azure-arm-network.NetworkInterfaceLoadBalancers.listWithHttpOperationResponse(resourceGroupName,
+      networkInterfaceName, options)
     tags:
       - originalTitle: resolve
         title: resolve
         text: >-
-          {HttpOperationResponse<PrivateAccessServicesListResult>} - The
+          {HttpOperationResponse<NetworkInterfaceLoadBalancerListResult>} - The
           deserialized result object.
         value: >-
-          {HttpOperationResponse<PrivateAccessServicesListResult>} - The
+          {HttpOperationResponse<NetworkInterfaceLoadBalancerListResult>} - The
           deserialized result object.
       - originalTitle: reject
         title: reject
@@ -63,12 +61,14 @@ items:
     type: Function
     syntax:
       parameters:
-        - id: location
+        - id: resourceGroupName
           type:
             - string
-          description: |-
-            The location to check available private access
-            values.
+          description: The name of the resource group.
+        - id: networkInterfaceName
+          type:
+            - string
+          description: The name of the network interface.
         - id: options
           type:
             - object
@@ -85,22 +85,28 @@ items:
         type:
           - Promise
         description: A promise is returned
-      content: 'function listWithHttpOperationResponse(location, options)'
+      content: >-
+        function listWithHttpOperationResponse(resourceGroupName,
+        networkInterfaceName, options)
     langs:
       - js
-  - uid: 'azure-arm-network.AvailablePrivateAccessServices#list'
-    id: 'azure-arm-network.AvailablePrivateAccessServices#list'
-    parent: azure-arm-network.AvailablePrivateAccessServices
-    name: 'list(location, options, optionalCallback)'
-    summary: List what values of private access services are available for use.
+  - uid: 'azure-arm-network.NetworkInterfaceLoadBalancers#list'
+    id: 'azure-arm-network.NetworkInterfaceLoadBalancers#list'
+    parent: azure-arm-network.NetworkInterfaceLoadBalancers
+    name: 'list(resourceGroupName, networkInterfaceName, options, optionalCallback)'
+    summary: Get all load balancers in a network interface
     fullName: >-
-      azure-arm-network.AvailablePrivateAccessServices.list(location, options,
-      optionalCallback)
+      azure-arm-network.NetworkInterfaceLoadBalancers.list(resourceGroupName,
+      networkInterfaceName, options, optionalCallback)
     tags:
       - originalTitle: resolve
         title: resolve
-        text: '{PrivateAccessServicesListResult} - The deserialized result object.'
-        value: '{PrivateAccessServicesListResult} - The deserialized result object.'
+        text: >-
+          {NetworkInterfaceLoadBalancerListResult} - The deserialized result
+          object.
+        value: >-
+          {NetworkInterfaceLoadBalancerListResult} - The deserialized result
+          object.
       - originalTitle: reject
         title: reject
         text: |-
@@ -111,8 +117,8 @@ items:
                                {Error}  err        - The Error object if an error occurred, null otherwise.
 
                                {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PrivateAccessServicesListResult} for more
-                               information.
+                               See {@link NetworkInterfaceLoadBalancerListResult} for
+                               more information.
 
                                {object} [request]  - The HTTP Request object if an error did not occur.
 
@@ -125,8 +131,8 @@ items:
                                {Error}  err        - The Error object if an error occurred, null otherwise.
 
                                {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PrivateAccessServicesListResult} for more
-                               information.
+                               See {@link NetworkInterfaceLoadBalancerListResult} for
+                               more information.
 
                                {object} [request]  - The HTTP Request object if an error did not occur.
 
@@ -134,12 +140,14 @@ items:
     type: Function
     syntax:
       parameters:
-        - id: location
+        - id: resourceGroupName
           type:
             - string
-          description: |-
-            The location to check available private access
-            values.
+          description: The name of the resource group.
+        - id: networkInterfaceName
+          type:
+            - string
+          description: The name of the network interface.
         - id: options
           type:
             - object
@@ -166,27 +174,29 @@ items:
           then it returns the callback else returns a Promise.
 
           {Promise} A promise is returned
-      content: 'function list(location, options, optionalCallback)'
+      content: >-
+        function list(resourceGroupName, networkInterfaceName, options,
+        optionalCallback)
     langs:
       - js
   - uid: >-
-      azure-arm-network.AvailablePrivateAccessServices#listNextWithHttpOperationResponse
+      azure-arm-network.NetworkInterfaceLoadBalancers#listNextWithHttpOperationResponse
     id: >-
-      azure-arm-network.AvailablePrivateAccessServices#listNextWithHttpOperationResponse
-    parent: azure-arm-network.AvailablePrivateAccessServices
+      azure-arm-network.NetworkInterfaceLoadBalancers#listNextWithHttpOperationResponse
+    parent: azure-arm-network.NetworkInterfaceLoadBalancers
     name: 'listNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: List what values of private access services are available for use.
+    summary: Get all load balancers in a network interface
     fullName: >-
-      azure-arm-network.AvailablePrivateAccessServices.listNextWithHttpOperationResponse(nextPageLink,
+      azure-arm-network.NetworkInterfaceLoadBalancers.listNextWithHttpOperationResponse(nextPageLink,
       options)
     tags:
       - originalTitle: resolve
         title: resolve
         text: >-
-          {HttpOperationResponse<PrivateAccessServicesListResult>} - The
+          {HttpOperationResponse<NetworkInterfaceLoadBalancerListResult>} - The
           deserialized result object.
         value: >-
-          {HttpOperationResponse<PrivateAccessServicesListResult>} - The
+          {HttpOperationResponse<NetworkInterfaceLoadBalancerListResult>} - The
           deserialized result object.
       - originalTitle: reject
         title: reject
@@ -220,19 +230,23 @@ items:
       content: 'function listNextWithHttpOperationResponse(nextPageLink, options)'
     langs:
       - js
-  - uid: 'azure-arm-network.AvailablePrivateAccessServices#listNext'
-    id: 'azure-arm-network.AvailablePrivateAccessServices#listNext'
-    parent: azure-arm-network.AvailablePrivateAccessServices
+  - uid: 'azure-arm-network.NetworkInterfaceLoadBalancers#listNext'
+    id: 'azure-arm-network.NetworkInterfaceLoadBalancers#listNext'
+    parent: azure-arm-network.NetworkInterfaceLoadBalancers
     name: 'listNext(nextPageLink, options, optionalCallback)'
-    summary: List what values of private access services are available for use.
+    summary: Get all load balancers in a network interface
     fullName: >-
-      azure-arm-network.AvailablePrivateAccessServices.listNext(nextPageLink,
+      azure-arm-network.NetworkInterfaceLoadBalancers.listNext(nextPageLink,
       options, optionalCallback)
     tags:
       - originalTitle: resolve
         title: resolve
-        text: '{PrivateAccessServicesListResult} - The deserialized result object.'
-        value: '{PrivateAccessServicesListResult} - The deserialized result object.'
+        text: >-
+          {NetworkInterfaceLoadBalancerListResult} - The deserialized result
+          object.
+        value: >-
+          {NetworkInterfaceLoadBalancerListResult} - The deserialized result
+          object.
       - originalTitle: reject
         title: reject
         text: |-
@@ -243,8 +257,8 @@ items:
                                {Error}  err        - The Error object if an error occurred, null otherwise.
 
                                {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PrivateAccessServicesListResult} for more
-                               information.
+                               See {@link NetworkInterfaceLoadBalancerListResult} for
+                               more information.
 
                                {object} [request]  - The HTTP Request object if an error did not occur.
 
@@ -257,8 +271,8 @@ items:
                                {Error}  err        - The Error object if an error occurred, null otherwise.
 
                                {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link PrivateAccessServicesListResult} for more
-                               information.
+                               See {@link NetworkInterfaceLoadBalancerListResult} for
+                               more information.
 
                                {object} [request]  - The HTTP Request object if an error did not occur.
 

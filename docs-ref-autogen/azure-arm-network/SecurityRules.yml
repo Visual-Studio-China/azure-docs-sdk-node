@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-network.SecurityRules
     id: azure-arm-network.SecurityRules
     name: SecurityRules
-    summary: |-
-      SecurityRules
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the NetworkManagementClient.
-      Initializes a new instance of the SecurityRules class.
+    summary: Class representing a SecurityRules.
     fullName: azure-arm-network.SecurityRules
     type: Class
     children:
@@ -35,7 +31,7 @@ items:
     parent: azure-arm-network.SecurityRules
     name: SecurityRules(client)
     fullName: azure-arm-network.SecurityRules.SecurityRules(client)
-    summary: ''
+    summary: Create a SecurityRules.
     type: Constructor
     syntax:
       parameters:
@@ -449,18 +445,47 @@ items:
             network
 
             traffic originates from.
+        - id: securityRuleParameters.sourceAddressPrefixes
+          type:
+            - array
+          description: |-
+            The CIDR or
+            source IP ranges.
+          optional: true
         - id: securityRuleParameters.destinationAddressPrefix
           type:
             - string
           description: >-
             The
 
-            destination address prefix. CIDR or source IP range. Asterix '*' can
-            also be
+            destination address prefix. CIDR or destination IP range. Asterix
+            '*' can
 
-            used to match all source IPs. Default tags such as 'VirtualNetwork',
+            also be used to match all source IPs. Default tags such as
+            'VirtualNetwork',
 
             'AzureLoadBalancer' and 'Internet' can also be used.
+        - id: securityRuleParameters.destinationAddressPrefixes
+          type:
+            - array
+          description: |-
+            The
+            destination address prefixes. CIDR or destination IP ranges.
+          optional: true
+        - id: securityRuleParameters.sourcePortRanges
+          type:
+            - array
+          description: |-
+            The source port
+            ranges.
+          optional: true
+        - id: securityRuleParameters.destinationPortRanges
+          type:
+            - array
+          description: |-
+            The
+            destination port ranges.
+          optional: true
         - id: securityRuleParameters.access
           type:
             - string
@@ -675,18 +700,47 @@ items:
             network
 
             traffic originates from.
+        - id: securityRuleParameters.sourceAddressPrefixes
+          type:
+            - array
+          description: |-
+            The CIDR or
+            source IP ranges.
+          optional: true
         - id: securityRuleParameters.destinationAddressPrefix
           type:
             - string
           description: >-
             The
 
-            destination address prefix. CIDR or source IP range. Asterix '*' can
-            also be
+            destination address prefix. CIDR or destination IP range. Asterix
+            '*' can
 
-            used to match all source IPs. Default tags such as 'VirtualNetwork',
+            also be used to match all source IPs. Default tags such as
+            'VirtualNetwork',
 
             'AzureLoadBalancer' and 'Internet' can also be used.
+        - id: securityRuleParameters.destinationAddressPrefixes
+          type:
+            - array
+          description: |-
+            The
+            destination address prefixes. CIDR or destination IP ranges.
+          optional: true
+        - id: securityRuleParameters.sourcePortRanges
+          type:
+            - array
+          description: |-
+            The source port
+            ranges.
+          optional: true
+        - id: securityRuleParameters.destinationPortRanges
+          type:
+            - array
+          description: |-
+            The
+            destination port ranges.
+          optional: true
         - id: securityRuleParameters.access
           type:
             - string
@@ -1185,18 +1239,47 @@ items:
             network
 
             traffic originates from.
+        - id: securityRuleParameters.sourceAddressPrefixes
+          type:
+            - array
+          description: |-
+            The CIDR or
+            source IP ranges.
+          optional: true
         - id: securityRuleParameters.destinationAddressPrefix
           type:
             - string
           description: >-
             The
 
-            destination address prefix. CIDR or source IP range. Asterix '*' can
-            also be
+            destination address prefix. CIDR or destination IP range. Asterix
+            '*' can
 
-            used to match all source IPs. Default tags such as 'VirtualNetwork',
+            also be used to match all source IPs. Default tags such as
+            'VirtualNetwork',
 
             'AzureLoadBalancer' and 'Internet' can also be used.
+        - id: securityRuleParameters.destinationAddressPrefixes
+          type:
+            - array
+          description: |-
+            The
+            destination address prefixes. CIDR or destination IP ranges.
+          optional: true
+        - id: securityRuleParameters.sourcePortRanges
+          type:
+            - array
+          description: |-
+            The source port
+            ranges.
+          optional: true
+        - id: securityRuleParameters.destinationPortRanges
+          type:
+            - array
+          description: |-
+            The
+            destination port ranges.
+          optional: true
         - id: securityRuleParameters.access
           type:
             - string
@@ -1411,18 +1494,47 @@ items:
             network
 
             traffic originates from.
+        - id: securityRuleParameters.sourceAddressPrefixes
+          type:
+            - array
+          description: |-
+            The CIDR or
+            source IP ranges.
+          optional: true
         - id: securityRuleParameters.destinationAddressPrefix
           type:
             - string
           description: >-
             The
 
-            destination address prefix. CIDR or source IP range. Asterix '*' can
-            also be
+            destination address prefix. CIDR or destination IP range. Asterix
+            '*' can
 
-            used to match all source IPs. Default tags such as 'VirtualNetwork',
+            also be used to match all source IPs. Default tags such as
+            'VirtualNetwork',
 
             'AzureLoadBalancer' and 'Internet' can also be used.
+        - id: securityRuleParameters.destinationAddressPrefixes
+          type:
+            - array
+          description: |-
+            The
+            destination address prefixes. CIDR or destination IP ranges.
+          optional: true
+        - id: securityRuleParameters.sourcePortRanges
+          type:
+            - array
+          description: |-
+            The source port
+            ranges.
+          optional: true
+        - id: securityRuleParameters.destinationPortRanges
+          type:
+            - array
+          description: |-
+            The
+            destination port ranges.
+          optional: true
         - id: securityRuleParameters.access
           type:
             - string

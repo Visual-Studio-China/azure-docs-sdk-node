@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-network.ExpressRouteCircuitPeerings
     id: azure-arm-network.ExpressRouteCircuitPeerings
     name: ExpressRouteCircuitPeerings
-    summary: |-
-      ExpressRouteCircuitPeerings
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the NetworkManagementClient.
-      Initializes a new instance of the ExpressRouteCircuitPeerings class.
+    summary: Class representing a ExpressRouteCircuitPeerings.
     fullName: azure-arm-network.ExpressRouteCircuitPeerings
     type: Class
     children:
@@ -41,7 +37,7 @@ items:
     name: ExpressRouteCircuitPeerings(client)
     fullName: >-
       azure-arm-network.ExpressRouteCircuitPeerings.ExpressRouteCircuitPeerings(client)
-    summary: ''
+    summary: Create a ExpressRouteCircuitPeerings.
     type: Constructor
     syntax:
       parameters:
@@ -613,6 +609,13 @@ items:
             - array
           description: Collection of RouteFilterRules contained within a route filter.
           optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.peerings
+          type:
+            - array
+          description: |-
+            A
+            collection of references to express route circuit peerings.
+          optional: true
         - id: peeringParameters.ipv6PeeringConfig.routeFilter.id
           type:
             - string
@@ -959,6 +962,13 @@ items:
           type:
             - array
           description: Collection of RouteFilterRules contained within a route filter.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.peerings
+          type:
+            - array
+          description: |-
+            A
+            collection of references to express route circuit peerings.
           optional: true
         - id: peeringParameters.ipv6PeeringConfig.routeFilter.id
           type:
@@ -1583,6 +1593,13 @@ items:
             - array
           description: Collection of RouteFilterRules contained within a route filter.
           optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.peerings
+          type:
+            - array
+          description: |-
+            A
+            collection of references to express route circuit peerings.
+          optional: true
         - id: peeringParameters.ipv6PeeringConfig.routeFilter.id
           type:
             - string
@@ -1929,6 +1946,13 @@ items:
           type:
             - array
           description: Collection of RouteFilterRules contained within a route filter.
+          optional: true
+        - id: peeringParameters.ipv6PeeringConfig.routeFilter.peerings
+          type:
+            - array
+          description: |-
+            A
+            collection of references to express route circuit peerings.
           optional: true
         - id: peeringParameters.ipv6PeeringConfig.routeFilter.id
           type:
