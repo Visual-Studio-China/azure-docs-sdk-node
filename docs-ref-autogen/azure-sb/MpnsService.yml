@@ -591,9 +591,6 @@ items:
     summary: >-
       Updates a registration with a Tile template. For more information see
       http://msdn.microsoft.com/en-us/library/windowsazure/jj553779.aspx.
-
-
-      <<<<<<< HEAD
     fullName: >-
       azure-sb.MpnsService.updateTileRegistration(registrationId, channel, tags,
       template, options, callback)

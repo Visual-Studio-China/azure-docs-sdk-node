@@ -51,9 +51,9 @@ items:
   - uid: 'azure-sb.ApnsService#send'
     id: 'azure-sb.ApnsService#send'
     parent: azure-sb.ApnsService
-    name: 'send(tags, payload, callback)'
+    name: 'send(tags, payload, optionsOrCallback, callback)'
     summary: Sends an APNS notification.
-    fullName: 'azure-sb.ApnsService.send(tags, payload, callback)'
+    fullName: 'azure-sb.ApnsService.send(tags, payload, optionsOrCallback, callback)'
     type: Function
     syntax:
       parameters:
@@ -110,6 +110,18 @@ items:
             If the 'aps' member is not provided, the payload object that
             contains the notification text.
           optional: true
+        - id: optionsOrCallback
+          type:
+            - object
+            - function
+          description: The request options or callback function.
+          optional: true
+        - id: optionsOrCallback.headers
+          type:
+            - object
+            - function
+          description: The apns headers.
+          optional: true
         - id: callback
           type:
             - function
@@ -117,7 +129,7 @@ items:
             `error` will contain information
                                                                     if an error occurs; otherwise, `response`
                                                                     will contain information related to this operation.
-      content: 'function send(tags, payload, callback)'
+      content: 'function send(tags, payload, optionsOrCallback, callback)'
     langs:
       - js
   - uid: 'azure-sb.ApnsService#createNativeRegistration'
@@ -201,11 +213,13 @@ items:
   - uid: 'azure-sb.ApnsService#createTemplateRegistration'
     id: 'azure-sb.ApnsService#createTemplateRegistration'
     parent: azure-sb.ApnsService
-    name: 'createTemplateRegistration(token, tags, template, options, callback)'
+    name: >-
+      createTemplateRegistration(token, tags, template, optionsOrCallback,
+      callback)
     summary: Creates a template registration.
     fullName: >-
       azure-sb.ApnsService.createTemplateRegistration(token, tags, template,
-      options, callback)
+      optionsOrCallback, callback)
     type: Function
     syntax:
       parameters:
@@ -263,10 +277,17 @@ items:
             If the 'aps' member is not provided, the payload object that
             contains the notification text.
           optional: true
-        - id: options
+        - id: optionsOrCallback
           type:
             - object
-          description: The request options.
+            - function
+          description: The request options or callback function.
+          optional: true
+        - id: optionsOrCallback.headers
+          type:
+            - object
+            - function
+          description: The apns headers to include.
           optional: true
         - id: callback
           type:
@@ -276,8 +297,8 @@ items:
                                                                     if an error occurs; otherwise, `response`
                                                                     will contain information related to this operation.
       content: >-
-        function createTemplateRegistration(token, tags, template, options,
-        callback)
+        function createTemplateRegistration(token, tags, template,
+        optionsOrCallback, callback)
     langs:
       - js
   - uid: 'azure-sb.ApnsService#createOrUpdateTemplateRegistration'
@@ -351,6 +372,11 @@ items:
             - object
           description: The request options.
           optional: true
+        - id: options.headers
+          type:
+            - object
+          description: The apns headers to include.
+          optional: true
         - id: callback
           type:
             - function
@@ -367,12 +393,12 @@ items:
     id: 'azure-sb.ApnsService#updateTemplateRegistration'
     parent: azure-sb.ApnsService
     name: >-
-      updateTemplateRegistration(registrationId, token, template, options,
-      callback)
+      updateTemplateRegistration(registrationId, token, template,
+      optionsOrCallback, callback)
     summary: Updates a template registration.
     fullName: >-
       azure-sb.ApnsService.updateTemplateRegistration(registrationId, token,
-      template, options, callback)
+      template, optionsOrCallback, callback)
     type: Function
     syntax:
       parameters:
@@ -429,10 +455,17 @@ items:
             If the 'aps' member is not provided, the payload object that
             contains the notification text.
           optional: true
-        - id: options
+        - id: optionsOrCallback
           type:
             - object
-          description: The request options.
+            - function
+          description: The request options or callback function.
+          optional: true
+        - id: optionsOrCallback.headers
+          type:
+            - object
+            - function
+          description: The apns headers to include.
           optional: true
         - id: callback
           type:
@@ -443,7 +476,7 @@ items:
                                                                     will contain information related to this operation.
       content: >-
         function updateTemplateRegistration(registrationId, token, template,
-        options, callback)
+        optionsOrCallback, callback)
     langs:
       - js
   - uid: 'azure-sb.ApnsService#listRegistrationsByToken'
@@ -528,6 +561,11 @@ items:
             - function
           description: The pns credentials to use.
           optional: true
+        - id: options.headers
+          type:
+            - object
+          description: The apns headers to include.
+          optional: true
       return:
         type:
           - string
@@ -562,6 +600,12 @@ items:
             - object
             - function
           description: The request options or callback function.
+          optional: true
+        - id: options.headers
+          type:
+            - object
+            - function
+          description: The apns headers to include.
           optional: true
       return:
         type:

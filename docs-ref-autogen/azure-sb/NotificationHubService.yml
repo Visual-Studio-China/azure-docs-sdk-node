@@ -326,6 +326,10 @@ items:
           type:
             - object
           description: Only if Apple template registration
+        - id: registration.ApnsHeaders
+          type:
+            - object
+          description: Only if Apple template registration
         - id: options
           type:
             - object
