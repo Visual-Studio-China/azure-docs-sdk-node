@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-storage.StorageAccounts
     id: azure-arm-storage.StorageAccounts
     name: StorageAccounts
-    summary: |-
-      StorageAccounts
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the StorageManagementClient.
-      Initializes a new instance of the StorageAccounts class.
+    summary: Class representing a StorageAccounts.
     fullName: azure-arm-storage.StorageAccounts
     type: Class
     children:
@@ -47,7 +43,7 @@ items:
     parent: azure-arm-storage.StorageAccounts
     name: StorageAccounts(client)
     fullName: azure-arm-storage.StorageAccounts.StorageAccounts(client)
-    summary: ''
+    summary: Create a StorageAccounts.
     type: Constructor
     syntax:
       parameters:
@@ -63,10 +59,10 @@ items:
     id: >-
       azure-arm-storage.StorageAccounts#checkNameAvailabilityWithHttpOperationResponse
     parent: azure-arm-storage.StorageAccounts
-    name: 'checkNameAvailabilityWithHttpOperationResponse(accountName, options)'
+    name: 'checkNameAvailabilityWithHttpOperationResponse(name, options)'
     summary: Checks that the storage account name is valid and is not already in use.
     fullName: >-
-      azure-arm-storage.StorageAccounts.checkNameAvailabilityWithHttpOperationResponse(accountName,
+      azure-arm-storage.StorageAccounts.checkNameAvailabilityWithHttpOperationResponse(name,
       options)
     tags:
       - originalTitle: resolve
@@ -84,17 +80,7 @@ items:
     type: Function
     syntax:
       parameters:
-        - id: accountName
-          type:
-            - object
-          description: >-
-            The name of the storage account within the
-
-            specified resource group. Storage account names must be between 3
-            and 24
-
-            characters in length and use numbers and lower-case letters only.
-        - id: accountName.name
+        - id: name
           type:
             - string
           description: The storage account name.
@@ -114,19 +100,17 @@ items:
         type:
           - Promise
         description: A promise is returned
-      content: >-
-        function checkNameAvailabilityWithHttpOperationResponse(accountName,
-        options)
+      content: 'function checkNameAvailabilityWithHttpOperationResponse(name, options)'
     langs:
       - js
   - uid: 'azure-arm-storage.StorageAccounts#checkNameAvailability'
     id: 'azure-arm-storage.StorageAccounts#checkNameAvailability'
     parent: azure-arm-storage.StorageAccounts
-    name: 'checkNameAvailability(accountName, options, optionalCallback)'
+    name: 'checkNameAvailability(name, options, optionalCallback)'
     summary: Checks that the storage account name is valid and is not already in use.
     fullName: >-
-      azure-arm-storage.StorageAccounts.checkNameAvailability(accountName,
-      options, optionalCallback)
+      azure-arm-storage.StorageAccounts.checkNameAvailability(name, options,
+      optionalCallback)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -165,17 +149,7 @@ items:
     type: Function
     syntax:
       parameters:
-        - id: accountName
-          type:
-            - object
-          description: >-
-            The name of the storage account within the
-
-            specified resource group. Storage account names must be between 3
-            and 24
-
-            characters in length and use numbers and lower-case letters only.
-        - id: accountName.name
+        - id: name
           type:
             - string
           description: The storage account name.
@@ -205,7 +179,7 @@ items:
           then it returns the callback else returns a Promise.
 
           {Promise} A promise is returned
-      content: 'function checkNameAvailability(accountName, options, optionalCallback)'
+      content: 'function checkNameAvailability(name, options, optionalCallback)'
     langs:
       - js
   - uid: 'azure-arm-storage.StorageAccounts#createWithHttpOperationResponse'
@@ -282,6 +256,15 @@ items:
             was called accountType. Possible values include: 'Standard_LRS',
 
             'Standard_GRS', 'Standard_RAGRS', 'Standard_ZRS', 'Premium_LRS'
+        - id: parameters.sku.restrictions
+          type:
+            - array
+          description: >-
+            The restrictions because of
+
+            which SKU cannot be used. This is empty if there are no
+            restrictions.
+          optional: true
         - id: parameters.kind
           type:
             - string
@@ -433,43 +416,48 @@ items:
             The
             Uri of KeyVault.
           optional: true
-        - id: parameters.networkAcls
+        - id: parameters.networkRuleSet
           type:
             - object
-          description: Network ACL
+          description: Network rule set
           optional: true
-        - id: parameters.networkAcls.bypass
+        - id: parameters.networkRuleSet.bypass
           type:
             - string
-          description: |-
-            Specifies whether traffic is
-            bypassed for Logging/Metrics/AzureServices. Possible values are any
+          description: >-
+            Specifies whether traffic
+
+            is bypassed for Logging/Metrics/AzureServices. Possible values are
+            any
+
             combination of Logging|Metrics|AzureServices (For example, "Logging,
+
             Metrics"), or None to bypass none of those traffics. Possible values
+
             include: 'None', 'Logging', 'Metrics', 'AzureServices'
           optional: true
-        - id: parameters.networkAcls.virtualNetworkRules
+        - id: parameters.networkRuleSet.virtualNetworkRules
           type:
             - array
           description: |-
-            Sets the virtual
-            network ACL rules
+            Sets the
+            virtual network rules
           optional: true
-        - id: parameters.networkAcls.ipRules
+        - id: parameters.networkRuleSet.ipRules
           type:
             - array
           description: Sets the IP ACL rules
           optional: true
-        - id: parameters.networkAcls.defaultAction
+        - id: parameters.networkRuleSet.defaultAction
           type:
             - string
           description: >-
-            Specifies the default
+            Specifies the
 
-            action of allow or deny when no other rules match. Possible values
-            include:
+            default action of allow or deny when no other rules match. Possible
+            values
 
-            'Allow', 'Deny'
+            include: 'Allow', 'Deny'
         - id: parameters.accessTier
           type:
             - string
@@ -603,6 +591,15 @@ items:
             was called accountType. Possible values include: 'Standard_LRS',
 
             'Standard_GRS', 'Standard_RAGRS', 'Standard_ZRS', 'Premium_LRS'
+        - id: parameters.sku.restrictions
+          type:
+            - array
+          description: >-
+            The restrictions because of
+
+            which SKU cannot be used. This is empty if there are no
+            restrictions.
+          optional: true
         - id: parameters.kind
           type:
             - string
@@ -754,43 +751,48 @@ items:
             The
             Uri of KeyVault.
           optional: true
-        - id: parameters.networkAcls
+        - id: parameters.networkRuleSet
           type:
             - object
-          description: Network ACL
+          description: Network rule set
           optional: true
-        - id: parameters.networkAcls.bypass
+        - id: parameters.networkRuleSet.bypass
           type:
             - string
-          description: |-
-            Specifies whether traffic is
-            bypassed for Logging/Metrics/AzureServices. Possible values are any
+          description: >-
+            Specifies whether traffic
+
+            is bypassed for Logging/Metrics/AzureServices. Possible values are
+            any
+
             combination of Logging|Metrics|AzureServices (For example, "Logging,
+
             Metrics"), or None to bypass none of those traffics. Possible values
+
             include: 'None', 'Logging', 'Metrics', 'AzureServices'
           optional: true
-        - id: parameters.networkAcls.virtualNetworkRules
+        - id: parameters.networkRuleSet.virtualNetworkRules
           type:
             - array
           description: |-
-            Sets the virtual
-            network ACL rules
+            Sets the
+            virtual network rules
           optional: true
-        - id: parameters.networkAcls.ipRules
+        - id: parameters.networkRuleSet.ipRules
           type:
             - array
           description: Sets the IP ACL rules
           optional: true
-        - id: parameters.networkAcls.defaultAction
+        - id: parameters.networkRuleSet.defaultAction
           type:
             - string
           description: >-
-            Specifies the default
+            Specifies the
 
-            action of allow or deny when no other rules match. Possible values
-            include:
+            default action of allow or deny when no other rules match. Possible
+            values
 
-            'Allow', 'Deny'
+            include: 'Allow', 'Deny'
         - id: parameters.accessTier
           type:
             - string
@@ -1241,6 +1243,15 @@ items:
             was called accountType. Possible values include: 'Standard_LRS',
 
             'Standard_GRS', 'Standard_RAGRS', 'Standard_ZRS', 'Premium_LRS'
+        - id: parameters.sku.restrictions
+          type:
+            - array
+          description: >-
+            The restrictions because of
+
+            which SKU cannot be used. This is empty if there are no
+            restrictions.
+          optional: true
         - id: parameters.tags
           type:
             - object
@@ -1386,43 +1397,48 @@ items:
             Allows https traffic
             only to storage service if sets to true.
           optional: true
-        - id: parameters.networkAcls
+        - id: parameters.networkRuleSet
           type:
             - object
-          description: Network ACL
+          description: Network rule set
           optional: true
-        - id: parameters.networkAcls.bypass
+        - id: parameters.networkRuleSet.bypass
           type:
             - string
-          description: |-
-            Specifies whether traffic is
-            bypassed for Logging/Metrics/AzureServices. Possible values are any
+          description: >-
+            Specifies whether traffic
+
+            is bypassed for Logging/Metrics/AzureServices. Possible values are
+            any
+
             combination of Logging|Metrics|AzureServices (For example, "Logging,
+
             Metrics"), or None to bypass none of those traffics. Possible values
+
             include: 'None', 'Logging', 'Metrics', 'AzureServices'
           optional: true
-        - id: parameters.networkAcls.virtualNetworkRules
+        - id: parameters.networkRuleSet.virtualNetworkRules
           type:
             - array
           description: |-
-            Sets the virtual
-            network ACL rules
+            Sets the
+            virtual network rules
           optional: true
-        - id: parameters.networkAcls.ipRules
+        - id: parameters.networkRuleSet.ipRules
           type:
             - array
           description: Sets the IP ACL rules
           optional: true
-        - id: parameters.networkAcls.defaultAction
+        - id: parameters.networkRuleSet.defaultAction
           type:
             - string
           description: >-
-            Specifies the default
+            Specifies the
 
-            action of allow or deny when no other rules match. Possible values
-            include:
+            default action of allow or deny when no other rules match. Possible
+            values
 
-            'Allow', 'Deny'
+            include: 'Allow', 'Deny'
         - id: options
           type:
             - object
@@ -1557,6 +1573,15 @@ items:
             was called accountType. Possible values include: 'Standard_LRS',
 
             'Standard_GRS', 'Standard_RAGRS', 'Standard_ZRS', 'Premium_LRS'
+        - id: parameters.sku.restrictions
+          type:
+            - array
+          description: >-
+            The restrictions because of
+
+            which SKU cannot be used. This is empty if there are no
+            restrictions.
+          optional: true
         - id: parameters.tags
           type:
             - object
@@ -1702,43 +1727,48 @@ items:
             Allows https traffic
             only to storage service if sets to true.
           optional: true
-        - id: parameters.networkAcls
+        - id: parameters.networkRuleSet
           type:
             - object
-          description: Network ACL
+          description: Network rule set
           optional: true
-        - id: parameters.networkAcls.bypass
+        - id: parameters.networkRuleSet.bypass
           type:
             - string
-          description: |-
-            Specifies whether traffic is
-            bypassed for Logging/Metrics/AzureServices. Possible values are any
+          description: >-
+            Specifies whether traffic
+
+            is bypassed for Logging/Metrics/AzureServices. Possible values are
+            any
+
             combination of Logging|Metrics|AzureServices (For example, "Logging,
+
             Metrics"), or None to bypass none of those traffics. Possible values
+
             include: 'None', 'Logging', 'Metrics', 'AzureServices'
           optional: true
-        - id: parameters.networkAcls.virtualNetworkRules
+        - id: parameters.networkRuleSet.virtualNetworkRules
           type:
             - array
           description: |-
-            Sets the virtual
-            network ACL rules
+            Sets the
+            virtual network rules
           optional: true
-        - id: parameters.networkAcls.ipRules
+        - id: parameters.networkRuleSet.ipRules
           type:
             - array
           description: Sets the IP ACL rules
           optional: true
-        - id: parameters.networkAcls.defaultAction
+        - id: parameters.networkRuleSet.defaultAction
           type:
             - string
           description: >-
-            Specifies the default
+            Specifies the
 
-            action of allow or deny when no other rules match. Possible values
-            include:
+            default action of allow or deny when no other rules match. Possible
+            values
 
-            'Allow', 'Deny'
+            include: 'Allow', 'Deny'
         - id: options
           type:
             - object
@@ -2189,11 +2219,11 @@ items:
     parent: azure-arm-storage.StorageAccounts
     name: >-
       regenerateKeyWithHttpOperationResponse(resourceGroupName, accountName,
-      regenerateKeyParameter, options)
+      keyName, options)
     summary: Regenerates one of the access keys for the specified storage account.
     fullName: >-
       azure-arm-storage.StorageAccounts.regenerateKeyWithHttpOperationResponse(resourceGroupName,
-      accountName, regenerateKeyParameter, options)
+      accountName, keyName, options)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -2226,18 +2256,12 @@ items:
             and 24
 
             characters in length and use numbers and lower-case letters only.
-        - id: regenerateKeyParameter
-          type:
-            - object
-          description: |-
-            Specifies name of the key which
-            should be regenerated -- key1 or key2.
-        - id: regenerateKeyParameter.keyName
+        - id: keyName
           type:
             - string
           description: |-
-            The name of storage keys that
-            want to be regenerated, possible vaules are key1, key2.
+            The name of storage keys that want to be
+            regenerated, possible vaules are key1, key2.
         - id: options
           type:
             - object
@@ -2256,19 +2280,19 @@ items:
         description: A promise is returned
       content: >-
         function regenerateKeyWithHttpOperationResponse(resourceGroupName,
-        accountName, regenerateKeyParameter, options)
+        accountName, keyName, options)
     langs:
       - js
   - uid: 'azure-arm-storage.StorageAccounts#regenerateKey'
     id: 'azure-arm-storage.StorageAccounts#regenerateKey'
     parent: azure-arm-storage.StorageAccounts
     name: >-
-      regenerateKey(resourceGroupName, accountName, regenerateKeyParameter,
-      options, optionalCallback)
+      regenerateKey(resourceGroupName, accountName, keyName, options,
+      optionalCallback)
     summary: Regenerates one of the access keys for the specified storage account.
     fullName: >-
       azure-arm-storage.StorageAccounts.regenerateKey(resourceGroupName,
-      accountName, regenerateKeyParameter, options, optionalCallback)
+      accountName, keyName, options, optionalCallback)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -2323,18 +2347,12 @@ items:
             and 24
 
             characters in length and use numbers and lower-case letters only.
-        - id: regenerateKeyParameter
-          type:
-            - object
-          description: |-
-            Specifies name of the key which
-            should be regenerated -- key1 or key2.
-        - id: regenerateKeyParameter.keyName
+        - id: keyName
           type:
             - string
           description: |-
-            The name of storage keys that
-            want to be regenerated, possible vaules are key1, key2.
+            The name of storage keys that want to be
+            regenerated, possible vaules are key1, key2.
         - id: options
           type:
             - object
@@ -2362,8 +2380,8 @@ items:
 
           {Promise} A promise is returned
       content: >-
-        function regenerateKey(resourceGroupName, accountName,
-        regenerateKeyParameter, options, optionalCallback)
+        function regenerateKey(resourceGroupName, accountName, keyName, options,
+        optionalCallback)
     langs:
       - js
   - uid: 'azure-arm-storage.StorageAccounts#listAccountSASWithHttpOperationResponse'
@@ -3194,6 +3212,15 @@ items:
             was called accountType. Possible values include: 'Standard_LRS',
 
             'Standard_GRS', 'Standard_RAGRS', 'Standard_ZRS', 'Premium_LRS'
+        - id: parameters.sku.restrictions
+          type:
+            - array
+          description: >-
+            The restrictions because of
+
+            which SKU cannot be used. This is empty if there are no
+            restrictions.
+          optional: true
         - id: parameters.kind
           type:
             - string
@@ -3345,43 +3372,48 @@ items:
             The
             Uri of KeyVault.
           optional: true
-        - id: parameters.networkAcls
+        - id: parameters.networkRuleSet
           type:
             - object
-          description: Network ACL
+          description: Network rule set
           optional: true
-        - id: parameters.networkAcls.bypass
+        - id: parameters.networkRuleSet.bypass
           type:
             - string
-          description: |-
-            Specifies whether traffic is
-            bypassed for Logging/Metrics/AzureServices. Possible values are any
+          description: >-
+            Specifies whether traffic
+
+            is bypassed for Logging/Metrics/AzureServices. Possible values are
+            any
+
             combination of Logging|Metrics|AzureServices (For example, "Logging,
+
             Metrics"), or None to bypass none of those traffics. Possible values
+
             include: 'None', 'Logging', 'Metrics', 'AzureServices'
           optional: true
-        - id: parameters.networkAcls.virtualNetworkRules
+        - id: parameters.networkRuleSet.virtualNetworkRules
           type:
             - array
           description: |-
-            Sets the virtual
-            network ACL rules
+            Sets the
+            virtual network rules
           optional: true
-        - id: parameters.networkAcls.ipRules
+        - id: parameters.networkRuleSet.ipRules
           type:
             - array
           description: Sets the IP ACL rules
           optional: true
-        - id: parameters.networkAcls.defaultAction
+        - id: parameters.networkRuleSet.defaultAction
           type:
             - string
           description: >-
-            Specifies the default
+            Specifies the
 
-            action of allow or deny when no other rules match. Possible values
-            include:
+            default action of allow or deny when no other rules match. Possible
+            values
 
-            'Allow', 'Deny'
+            include: 'Allow', 'Deny'
         - id: parameters.accessTier
           type:
             - string
@@ -3515,6 +3547,15 @@ items:
             was called accountType. Possible values include: 'Standard_LRS',
 
             'Standard_GRS', 'Standard_RAGRS', 'Standard_ZRS', 'Premium_LRS'
+        - id: parameters.sku.restrictions
+          type:
+            - array
+          description: >-
+            The restrictions because of
+
+            which SKU cannot be used. This is empty if there are no
+            restrictions.
+          optional: true
         - id: parameters.kind
           type:
             - string
@@ -3666,43 +3707,48 @@ items:
             The
             Uri of KeyVault.
           optional: true
-        - id: parameters.networkAcls
+        - id: parameters.networkRuleSet
           type:
             - object
-          description: Network ACL
+          description: Network rule set
           optional: true
-        - id: parameters.networkAcls.bypass
+        - id: parameters.networkRuleSet.bypass
           type:
             - string
-          description: |-
-            Specifies whether traffic is
-            bypassed for Logging/Metrics/AzureServices. Possible values are any
+          description: >-
+            Specifies whether traffic
+
+            is bypassed for Logging/Metrics/AzureServices. Possible values are
+            any
+
             combination of Logging|Metrics|AzureServices (For example, "Logging,
+
             Metrics"), or None to bypass none of those traffics. Possible values
+
             include: 'None', 'Logging', 'Metrics', 'AzureServices'
           optional: true
-        - id: parameters.networkAcls.virtualNetworkRules
+        - id: parameters.networkRuleSet.virtualNetworkRules
           type:
             - array
           description: |-
-            Sets the virtual
-            network ACL rules
+            Sets the
+            virtual network rules
           optional: true
-        - id: parameters.networkAcls.ipRules
+        - id: parameters.networkRuleSet.ipRules
           type:
             - array
           description: Sets the IP ACL rules
           optional: true
-        - id: parameters.networkAcls.defaultAction
+        - id: parameters.networkRuleSet.defaultAction
           type:
             - string
           description: >-
-            Specifies the default
+            Specifies the
 
-            action of allow or deny when no other rules match. Possible values
-            include:
+            default action of allow or deny when no other rules match. Possible
+            values
 
-            'Allow', 'Deny'
+            include: 'Allow', 'Deny'
         - id: parameters.accessTier
           type:
             - string
