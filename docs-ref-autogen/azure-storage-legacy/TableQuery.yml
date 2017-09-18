@@ -18,7 +18,6 @@ items:
       - 'azure-storage-legacy.TableQuery#top'
       - 'azure-storage-legacy.TableQuery#toQueryObject'
       - 'azure-storage-legacy.TableQuery#toPath'
-      - 'azure-storage-legacy.TableQuery#_replaceOperators'
     langs:
       - js
   - id: 'azure-storage-legacy.TableQuery.#ctor'
@@ -247,25 +246,5 @@ items:
           - string
         description: The path string.
       content: function toPath()
-    langs:
-      - js
-  - uid: 'azure-storage-legacy.TableQuery#_replaceOperators'
-    id: 'azure-storage-legacy.TableQuery#_replaceOperators'
-    parent: azure-storage-legacy.TableQuery
-    name: _replaceOperators(whereClause)
-    summary: Replace operators.
-    fullName: azure-storage-legacy.TableQuery._replaceOperators(whereClause)
-    type: Function
-    syntax:
-      parameters:
-        - id: whereClause
-          type:
-            - string
-          description: The text where to replace the operators.
-      return:
-        type:
-          - string
-        description: The string with the replaced operators.
-      content: function _replaceOperators(whereClause)
     langs:
       - js

@@ -8,7 +8,6 @@ items:
     type: Class
     children:
       - 'azure-asm-sql.SqlServiceClient.#ctor'
-      - 'azure-asm-sql.SqlServiceClient#_buildRequestOptions'
     langs:
       - js
   - id: 'azure-asm-sql.SqlServiceClient.#ctor'
@@ -55,31 +54,5 @@ items:
       content: >-
         new SqlServiceClient(serverName, administratorLogin,
         administratorLoginPassword, host, acsHost, authenticationProvider)
-    langs:
-      - js
-  - uid: 'azure-asm-sql.SqlServiceClient#_buildRequestOptions'
-    id: 'azure-asm-sql.SqlServiceClient#_buildRequestOptions'
-    parent: azure-asm-sql.SqlServiceClient
-    name: '_buildRequestOptions(webResource, options, callback)'
-    summary: Builds the request options to be passed to the http.request method.
-    fullName: >-
-      azure-asm-sql.SqlServiceClient._buildRequestOptions(webResource, options,
-      callback)
-    type: Function
-    syntax:
-      parameters:
-        - id: webResource
-          type:
-            - azure-asm-sql.WebResource
-          description: The webresource where to build the options from.
-        - id: options
-          type:
-            - object
-          description: The request options.
-        - id: callback
-          type:
-            - function
-          description: The callback function.
-      content: 'function _buildRequestOptions(webResource, options, callback)'
     langs:
       - js

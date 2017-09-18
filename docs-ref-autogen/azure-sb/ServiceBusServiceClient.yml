@@ -8,7 +8,6 @@ items:
     type: Class
     children:
       - 'azure-sb.ServiceBusServiceClient.#ctor'
-      - 'azure-sb.ServiceBusServiceClient#_buildRequestOptions'
     langs:
       - js
   - id: 'azure-sb.ServiceBusServiceClient.#ctor'
@@ -65,31 +64,5 @@ items:
       content: >-
         new ServiceBusServiceClient(accessKey, issuer, sharedAccessKeyName,
         sharedAccessKeyValue, host, acsHost, authenticationProvider)
-    langs:
-      - js
-  - uid: 'azure-sb.ServiceBusServiceClient#_buildRequestOptions'
-    id: 'azure-sb.ServiceBusServiceClient#_buildRequestOptions'
-    parent: azure-sb.ServiceBusServiceClient
-    name: '_buildRequestOptions(webResource, options, callback)'
-    summary: Builds the request options to be passed to the http.request method.
-    fullName: >-
-      azure-sb.ServiceBusServiceClient._buildRequestOptions(webResource,
-      options, callback)
-    type: Function
-    syntax:
-      parameters:
-        - id: webResource
-          type:
-            - azure-sb.WebResource
-          description: The webresource where to build the options from.
-        - id: options
-          type:
-            - object
-          description: The request options.
-        - id: callback
-          type:
-            - function
-          description: The callback function.
-      content: 'function _buildRequestOptions(webResource, options, callback)'
     langs:
       - js
