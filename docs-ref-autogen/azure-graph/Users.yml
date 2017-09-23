@@ -3,11 +3,7 @@ items:
   - uid: azure-graph.Users
     id: azure-graph.Users
     name: Users
-    summary: |-
-      Users
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the GraphRbacManagementClient.
-      Initializes a new instance of the Users class.
+    summary: Class representing a Users.
     fullName: azure-graph.Users
     type: Class
     children:
@@ -33,7 +29,7 @@ items:
     parent: azure-graph.Users
     name: Users(client)
     fullName: azure-graph.Users.Users(client)
-    summary: ''
+    summary: Create a Users.
     type: Constructor
     syntax:
       parameters:
@@ -101,6 +97,11 @@ items:
           type:
             - string
           description: The mail alias for the user.
+        - id: parameters.mail
+          type:
+            - string
+          description: The primary email address of the user.
+          optional: true
         - id: parameters.immutableId
           type:
             - string
@@ -114,6 +115,40 @@ items:
             on-premises
 
             Active Directory user account with their Azure AD user object.
+          optional: true
+        - id: parameters.usageLocation
+          type:
+            - string
+          description: >-
+            A two letter country code (ISO
+
+            standard 3166). Required for users that will be assigned licenses
+            due to
+
+            legal requirement to check for availability of services in
+            countries.
+
+            Examples include: "US", "JP", and "GB".
+          optional: true
+        - id: parameters.givenName
+          type:
+            - string
+          description: The given name for the user.
+          optional: true
+        - id: parameters.surname
+          type:
+            - string
+          description: |-
+            The user's surname (family name or last
+            name).
+          optional: true
+        - id: parameters.userType
+          type:
+            - string
+          description: |-
+            A string value that can be used to
+            classify user types in your directory, such as 'Member' and 'Guest'.
+            Possible values include: 'Member', 'Guest'
           optional: true
         - id: options
           type:
@@ -215,6 +250,11 @@ items:
           type:
             - string
           description: The mail alias for the user.
+        - id: parameters.mail
+          type:
+            - string
+          description: The primary email address of the user.
+          optional: true
         - id: parameters.immutableId
           type:
             - string
@@ -228,6 +268,40 @@ items:
             on-premises
 
             Active Directory user account with their Azure AD user object.
+          optional: true
+        - id: parameters.usageLocation
+          type:
+            - string
+          description: >-
+            A two letter country code (ISO
+
+            standard 3166). Required for users that will be assigned licenses
+            due to
+
+            legal requirement to check for availability of services in
+            countries.
+
+            Examples include: "US", "JP", and "GB".
+          optional: true
+        - id: parameters.givenName
+          type:
+            - string
+          description: The given name for the user.
+          optional: true
+        - id: parameters.surname
+          type:
+            - string
+          description: |-
+            The user's surname (family name or last
+            name).
+          optional: true
+        - id: parameters.userType
+          type:
+            - string
+          description: |-
+            A string value that can be used to
+            classify user types in your directory, such as 'Member' and 'Guest'.
+            Possible values include: 'Member', 'Guest'
           optional: true
         - id: options
           type:
@@ -556,10 +630,69 @@ items:
             - boolean
           description: Whether to force a password change on next login.
           optional: true
+        - id: parameters.userPrincipalName
+          type:
+            - string
+          description: >-
+            The user principal name
+
+            (someuser@contoso.com). It must contain one of the verified domains
+            for the
+
+            tenant.
+          optional: true
         - id: parameters.mailNickname
           type:
             - string
           description: The mail alias for the user.
+          optional: true
+        - id: parameters.immutableId
+          type:
+            - string
+          description: >-
+            This must be specified if you are
+
+            using a federated domain for the user's userPrincipalName (UPN)
+            property
+
+            when creating a new user account. It is used to associate an
+            on-premises
+
+            Active Directory user account with their Azure AD user object.
+          optional: true
+        - id: parameters.usageLocation
+          type:
+            - string
+          description: >-
+            A two letter country code (ISO
+
+            standard 3166). Required for users that will be assigned licenses
+            due to
+
+            legal requirement to check for availability of services in
+            countries.
+
+            Examples include: "US", "JP", and "GB".
+          optional: true
+        - id: parameters.givenName
+          type:
+            - string
+          description: The given name for the user.
+          optional: true
+        - id: parameters.surname
+          type:
+            - string
+          description: |-
+            The user's surname (family name or last
+            name).
+          optional: true
+        - id: parameters.userType
+          type:
+            - string
+          description: |-
+            A string value that can be used to
+            classify user types in your directory, such as 'Member' and 'Guest'.
+            Possible values include: 'Member', 'Guest'
           optional: true
         - id: options
           type:
@@ -660,10 +793,69 @@ items:
             - boolean
           description: Whether to force a password change on next login.
           optional: true
+        - id: parameters.userPrincipalName
+          type:
+            - string
+          description: >-
+            The user principal name
+
+            (someuser@contoso.com). It must contain one of the verified domains
+            for the
+
+            tenant.
+          optional: true
         - id: parameters.mailNickname
           type:
             - string
           description: The mail alias for the user.
+          optional: true
+        - id: parameters.immutableId
+          type:
+            - string
+          description: >-
+            This must be specified if you are
+
+            using a federated domain for the user's userPrincipalName (UPN)
+            property
+
+            when creating a new user account. It is used to associate an
+            on-premises
+
+            Active Directory user account with their Azure AD user object.
+          optional: true
+        - id: parameters.usageLocation
+          type:
+            - string
+          description: >-
+            A two letter country code (ISO
+
+            standard 3166). Required for users that will be assigned licenses
+            due to
+
+            legal requirement to check for availability of services in
+            countries.
+
+            Examples include: "US", "JP", and "GB".
+          optional: true
+        - id: parameters.givenName
+          type:
+            - string
+          description: The given name for the user.
+          optional: true
+        - id: parameters.surname
+          type:
+            - string
+          description: |-
+            The user's surname (family name or last
+            name).
+          optional: true
+        - id: parameters.userType
+          type:
+            - string
+          description: |-
+            A string value that can be used to
+            classify user types in your directory, such as 'Member' and 'Guest'.
+            Possible values include: 'Member', 'Guest'
           optional: true
         - id: options
           type:

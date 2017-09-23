@@ -3,11 +3,7 @@ items:
   - uid: azure-graph.Groups
     id: azure-graph.Groups
     name: Groups
-    summary: |-
-      Groups
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the GraphRbacManagementClient.
-      Initializes a new instance of the Groups class.
+    summary: Class representing a Groups.
     fullName: azure-graph.Groups
     type: Class
     children:
@@ -41,7 +37,7 @@ items:
     parent: azure-graph.Groups
     name: Groups(client)
     fullName: azure-graph.Groups.Groups(client)
-    summary: ''
+    summary: Create a Groups.
     type: Constructor
     syntax:
       parameters:

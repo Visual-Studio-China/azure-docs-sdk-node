@@ -3,11 +3,7 @@ items:
   - uid: azure-graph.Objects
     id: azure-graph.Objects
     name: Objects
-    summary: |-
-      Objects
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the GraphRbacManagementClient.
-      Initializes a new instance of the Objects class.
+    summary: Class representing a Objects.
     fullName: azure-graph.Objects
     type: Class
     children:
@@ -25,7 +21,7 @@ items:
     parent: azure-graph.Objects
     name: Objects(client)
     fullName: azure-graph.Objects.Objects(client)
-    summary: ''
+    summary: Create a Objects.
     type: Constructor
     syntax:
       parameters:

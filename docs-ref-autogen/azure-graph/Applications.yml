@@ -3,11 +3,7 @@ items:
   - uid: azure-graph.Applications
     id: azure-graph.Applications
     name: Applications
-    summary: |-
-      Applications
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the GraphRbacManagementClient.
-      Initializes a new instance of the Applications class.
+    summary: Class representing a Applications.
     fullName: azure-graph.Applications
     type: Class
     children:
@@ -41,7 +37,7 @@ items:
     parent: azure-graph.Applications
     name: Applications(client)
     fullName: azure-graph.Applications.Applications(client)
-    summary: ''
+    summary: Create a Applications.
     type: Constructor
     syntax:
       parameters:
@@ -117,6 +113,28 @@ items:
           description: |-
             The list of
             PasswordCredential objects.
+          optional: true
+        - id: parameters.oauth2AllowImplicitFlow
+          type:
+            - boolean
+          description: |-
+            Whether to allow
+            implicit grant flow for OAuth2
+          optional: true
+        - id: parameters.requiredResourceAccess
+          type:
+            - array
+          description: >-
+            Specifies resources that
+
+            this application requires access to and the set of OAuth permission
+            scopes
+
+            and application roles that it needs under each of those resources.
+            This
+
+            pre-configuration of required resource access drives the consent
+            experience.
           optional: true
         - id: options
           type:
@@ -224,6 +242,28 @@ items:
           description: |-
             The list of
             PasswordCredential objects.
+          optional: true
+        - id: parameters.oauth2AllowImplicitFlow
+          type:
+            - boolean
+          description: |-
+            Whether to allow
+            implicit grant flow for OAuth2
+          optional: true
+        - id: parameters.requiredResourceAccess
+          type:
+            - array
+          description: >-
+            Specifies resources that
+
+            this application requires access to and the set of OAuth permission
+            scopes
+
+            and application roles that it needs under each of those resources.
+            This
+
+            pre-configuration of required resource access drives the consent
+            experience.
           optional: true
         - id: options
           type:
@@ -691,6 +731,28 @@ items:
             The list of
             PasswordCredential objects.
           optional: true
+        - id: parameters.oauth2AllowImplicitFlow
+          type:
+            - boolean
+          description: |-
+            Whether to allow
+            implicit grant flow for OAuth2
+          optional: true
+        - id: parameters.requiredResourceAccess
+          type:
+            - array
+          description: >-
+            Specifies resources that
+
+            this application requires access to and the set of OAuth permission
+            scopes
+
+            and application roles that it needs under each of those resources.
+            This
+
+            pre-configuration of required resource access drives the consent
+            experience.
+          optional: true
         - id: options
           type:
             - object
@@ -808,6 +870,28 @@ items:
           description: |-
             The list of
             PasswordCredential objects.
+          optional: true
+        - id: parameters.oauth2AllowImplicitFlow
+          type:
+            - boolean
+          description: |-
+            Whether to allow
+            implicit grant flow for OAuth2
+          optional: true
+        - id: parameters.requiredResourceAccess
+          type:
+            - array
+          description: >-
+            Specifies resources that
+
+            this application requires access to and the set of OAuth permission
+            scopes
+
+            and application roles that it needs under each of those resources.
+            This
+
+            pre-configuration of required resource access drives the consent
+            experience.
           optional: true
         - id: options
           type:

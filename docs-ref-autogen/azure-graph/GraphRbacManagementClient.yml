@@ -3,7 +3,7 @@ items:
   - uid: azure-graph.GraphRbacManagementClient
     id: azure-graph.GraphRbacManagementClient
     name: GraphRbacManagementClient
-    summary: Initializes a new instance of the GraphRbacManagementClient class.
+    summary: Class representing a GraphRbacManagementClient.
     fullName: azure-graph.GraphRbacManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-graph.GraphRbacManagementClient.GraphRbacManagementClient(credentials,
       tenantID, baseUri, options)
-    summary: ''
+    summary: Create a GraphRbacManagementClient.
     type: Constructor
     syntax:
       parameters:
