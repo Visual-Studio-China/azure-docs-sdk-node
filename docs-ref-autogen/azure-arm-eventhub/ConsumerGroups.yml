@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-eventhub.ConsumerGroups
     id: azure-arm-eventhub.ConsumerGroups
     name: ConsumerGroups
-    summary: |-
-      ConsumerGroups
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the EventHubManagementClient.
-      Initializes a new instance of the ConsumerGroups class.
+    summary: Class representing a ConsumerGroups.
     fullName: azure-arm-eventhub.ConsumerGroups
     type: Class
     children:
@@ -32,7 +28,7 @@ items:
     parent: azure-arm-eventhub.ConsumerGroups
     name: ConsumerGroups(client)
     fullName: azure-arm-eventhub.ConsumerGroups.ConsumerGroups(client)
-    summary: ''
+    summary: Create a ConsumerGroups.
     type: Constructor
     syntax:
       parameters:
@@ -53,7 +49,7 @@ items:
       Creates or updates an Event Hubs consumer group as a nested resource
       within
 
-      a namespace.
+      a Namespace.
     fullName: >-
       azure-arm-eventhub.ConsumerGroups.createOrUpdateWithHttpOperationResponse(resourceGroupName,
       namespaceName, eventHubName, consumerGroupName, parameters, options)
@@ -77,16 +73,16 @@ items:
           type:
             - string
           description: |-
-            Name of the Resource group within the
-            Azure subscription.
+            Name of the resource group within the
+            azure subscription.
         - id: namespaceName
           type:
             - string
-          description: The namespace name
+          description: The Namespace name
         - id: eventHubName
           type:
             - string
-          description: The eventhub name
+          description: The Event Hub name
         - id: consumerGroupName
           type:
             - string
@@ -95,8 +91,8 @@ items:
           type:
             - object
           description: |-
-            Parameters supplied to create a consumer group
-            resource.
+            Parameters supplied to create or update a
+            consumer group resource.
         - id: parameters.userMetadata
           type:
             - string
@@ -141,7 +137,7 @@ items:
       Creates or updates an Event Hubs consumer group as a nested resource
       within
 
-      a namespace.
+      a Namespace.
     fullName: >-
       azure-arm-eventhub.ConsumerGroups.createOrUpdate(resourceGroupName,
       namespaceName, eventHubName, consumerGroupName, parameters, options,
@@ -186,16 +182,16 @@ items:
           type:
             - string
           description: |-
-            Name of the Resource group within the
-            Azure subscription.
+            Name of the resource group within the
+            azure subscription.
         - id: namespaceName
           type:
             - string
-          description: The namespace name
+          description: The Namespace name
         - id: eventHubName
           type:
             - string
-          description: The eventhub name
+          description: The Event Hub name
         - id: consumerGroupName
           type:
             - string
@@ -204,8 +200,8 @@ items:
           type:
             - object
           description: |-
-            Parameters supplied to create a consumer group
-            resource.
+            Parameters supplied to create or update a
+            consumer group resource.
         - id: parameters.userMetadata
           type:
             - string
@@ -276,16 +272,16 @@ items:
           type:
             - string
           description: |-
-            Name of the Resource group within the
-            Azure subscription.
+            Name of the resource group within the
+            azure subscription.
         - id: namespaceName
           type:
             - string
-          description: The namespace name
+          description: The Namespace name
         - id: eventHubName
           type:
             - string
-          description: The eventhub name
+          description: The Event Hub name
         - id: consumerGroupName
           type:
             - string
@@ -359,16 +355,16 @@ items:
           type:
             - string
           description: |-
-            Name of the Resource group within the
-            Azure subscription.
+            Name of the resource group within the
+            azure subscription.
         - id: namespaceName
           type:
             - string
-          description: The namespace name
+          description: The Namespace name
         - id: eventHubName
           type:
             - string
-          description: The eventhub name
+          description: The Event Hub name
         - id: consumerGroupName
           type:
             - string
@@ -434,16 +430,16 @@ items:
           type:
             - string
           description: |-
-            Name of the Resource group within the
-            Azure subscription.
+            Name of the resource group within the
+            azure subscription.
         - id: namespaceName
           type:
             - string
-          description: The namespace name
+          description: The Namespace name
         - id: eventHubName
           type:
             - string
-          description: The eventhub name
+          description: The Event Hub name
         - id: consumerGroupName
           type:
             - string
@@ -519,16 +515,16 @@ items:
           type:
             - string
           description: |-
-            Name of the Resource group within the
-            Azure subscription.
+            Name of the resource group within the
+            azure subscription.
         - id: namespaceName
           type:
             - string
-          description: The namespace name
+          description: The Namespace name
         - id: eventHubName
           type:
             - string
-          description: The eventhub name
+          description: The Event Hub name
         - id: consumerGroupName
           type:
             - string
@@ -571,10 +567,10 @@ items:
       listByEventHubWithHttpOperationResponse(resourceGroupName, namespaceName,
       eventHubName, options)
     summary: >-
-      Gets all the consumer groups in a eventhub. An empty feed is returned if
+      Gets all the consumer groups in a Namespace. An empty feed is returned if
       no
 
-      consumer group exists in the eventhub.
+      consumer group exists in the Namespace.
     fullName: >-
       azure-arm-eventhub.ConsumerGroups.listByEventHubWithHttpOperationResponse(resourceGroupName,
       namespaceName, eventHubName, options)
@@ -598,16 +594,16 @@ items:
           type:
             - string
           description: |-
-            Name of the Resource group within the
-            Azure subscription.
+            Name of the resource group within the
+            azure subscription.
         - id: namespaceName
           type:
             - string
-          description: The namespace name
+          description: The Namespace name
         - id: eventHubName
           type:
             - string
-          description: The eventhub name
+          description: The Event Hub name
         - id: options
           type:
             - object
@@ -636,10 +632,10 @@ items:
       listByEventHub(resourceGroupName, namespaceName, eventHubName, options,
       optionalCallback)
     summary: >-
-      Gets all the consumer groups in a eventhub. An empty feed is returned if
+      Gets all the consumer groups in a Namespace. An empty feed is returned if
       no
 
-      consumer group exists in the eventhub.
+      consumer group exists in the Namespace.
     fullName: >-
       azure-arm-eventhub.ConsumerGroups.listByEventHub(resourceGroupName,
       namespaceName, eventHubName, options, optionalCallback)
@@ -685,16 +681,16 @@ items:
           type:
             - string
           description: |-
-            Name of the Resource group within the
-            Azure subscription.
+            Name of the resource group within the
+            azure subscription.
         - id: namespaceName
           type:
             - string
-          description: The namespace name
+          description: The Namespace name
         - id: eventHubName
           type:
             - string
-          description: The eventhub name
+          description: The Event Hub name
         - id: options
           type:
             - object
@@ -733,10 +729,10 @@ items:
     parent: azure-arm-eventhub.ConsumerGroups
     name: 'listByEventHubNextWithHttpOperationResponse(nextPageLink, options)'
     summary: >-
-      Gets all the consumer groups in a eventhub. An empty feed is returned if
+      Gets all the consumer groups in a Namespace. An empty feed is returned if
       no
 
-      consumer group exists in the eventhub.
+      consumer group exists in the Namespace.
     fullName: >-
       azure-arm-eventhub.ConsumerGroups.listByEventHubNextWithHttpOperationResponse(nextPageLink,
       options)
@@ -788,10 +784,10 @@ items:
     parent: azure-arm-eventhub.ConsumerGroups
     name: 'listByEventHubNext(nextPageLink, options, optionalCallback)'
     summary: >-
-      Gets all the consumer groups in a eventhub. An empty feed is returned if
+      Gets all the consumer groups in a Namespace. An empty feed is returned if
       no
 
-      consumer group exists in the eventhub.
+      consumer group exists in the Namespace.
     fullName: >-
       azure-arm-eventhub.ConsumerGroups.listByEventHubNext(nextPageLink,
       options, optionalCallback)

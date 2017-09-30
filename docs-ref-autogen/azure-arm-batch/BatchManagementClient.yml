@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-batch.BatchManagementClient
     id: azure-arm-batch.BatchManagementClient
     name: BatchManagementClient
-    summary: Initializes a new instance of the BatchManagementClient class.
+    summary: Class representing a BatchManagementClient.
     fullName: azure-arm-batch.BatchManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-batch.BatchManagementClient.BatchManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a BatchManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -59,11 +59,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: The API version to be used with the HTTP request.
           optional: true
         - id: options.acceptLanguage
           type:

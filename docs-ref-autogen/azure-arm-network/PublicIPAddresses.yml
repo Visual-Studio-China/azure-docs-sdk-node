@@ -514,6 +514,13 @@ items:
             A unique read-only string that changes
             whenever the resource is updated.
           optional: true
+        - id: parameters.zones
+          type:
+            - array
+          description: |-
+            A list of availability zones denoting the
+            IP allocated for the resource needs to come from.
+          optional: true
         - id: parameters.id
           type:
             - string
@@ -731,6 +738,13 @@ items:
           description: |-
             A unique read-only string that changes
             whenever the resource is updated.
+          optional: true
+        - id: parameters.zones
+          type:
+            - array
+          description: |-
+            A list of availability zones denoting the
+            IP allocated for the resource needs to come from.
           optional: true
         - id: parameters.id
           type:
@@ -1857,6 +1871,13 @@ items:
             A unique read-only string that changes
             whenever the resource is updated.
           optional: true
+        - id: parameters.zones
+          type:
+            - array
+          description: |-
+            A list of availability zones denoting the
+            IP allocated for the resource needs to come from.
+          optional: true
         - id: parameters.id
           type:
             - string
@@ -2074,6 +2095,13 @@ items:
           description: |-
             A unique read-only string that changes
             whenever the resource is updated.
+          optional: true
+        - id: parameters.zones
+          type:
+            - array
+          description: |-
+            A list of availability zones denoting the
+            IP allocated for the resource needs to come from.
           optional: true
         - id: parameters.id
           type:

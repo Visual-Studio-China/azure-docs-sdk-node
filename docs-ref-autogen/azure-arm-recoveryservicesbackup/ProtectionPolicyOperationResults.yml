@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-recoveryservicesbackup.ProtectionPolicyOperationResults
     id: azure-arm-recoveryservicesbackup.ProtectionPolicyOperationResults
     name: ProtectionPolicyOperationResults
-    summary: |-
-      ProtectionPolicyOperationResults
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the ProtectionPolicyOperationResults class.
+    summary: Class representing a ProtectionPolicyOperationResults.
     fullName: azure-arm-recoveryservicesbackup.ProtectionPolicyOperationResults
     type: Class
     children:
@@ -23,7 +19,7 @@ items:
     name: ProtectionPolicyOperationResults(client)
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionPolicyOperationResults.ProtectionPolicyOperationResults(client)
-    summary: ''
+    summary: Create a ProtectionPolicyOperationResults.
     type: Constructor
     syntax:
       parameters:
@@ -65,23 +61,25 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: policyName
           type:
             - string
           description: |-
-            The backup policy name used in this GET
-            operation.
+            Backup policy name whose operation's result needs
+            to be fetched.
         - id: operationId
           type:
             - string
-          description: The ID associated with this GET operation.
+          description: |-
+            Operation ID which represents the operation
+            whose result needs to be fetched.
         - id: options
           type:
             - object
@@ -154,23 +152,25 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: policyName
           type:
             - string
           description: |-
-            The backup policy name used in this GET
-            operation.
+            Backup policy name whose operation's result needs
+            to be fetched.
         - id: operationId
           type:
             - string
-          description: The ID associated with this GET operation.
+          description: |-
+            Operation ID which represents the operation
+            whose result needs to be fetched.
         - id: options
           type:
             - object

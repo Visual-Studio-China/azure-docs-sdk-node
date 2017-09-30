@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-devtestlabs.DevTestLabsClient
     id: azure-arm-devtestlabs.DevTestLabsClient
     name: DevTestLabsClient
-    summary: Initializes a new instance of the DevTestLabsClient class.
+    summary: Class representing a DevTestLabsClient.
     fullName: azure-arm-devtestlabs.DevTestLabsClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-devtestlabs.DevTestLabsClient.DevTestLabsClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a DevTestLabsClient.
     type: Constructor
     syntax:
       parameters:
@@ -57,11 +57,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Client API version.
           optional: true
         - id: options.acceptLanguage
           type:

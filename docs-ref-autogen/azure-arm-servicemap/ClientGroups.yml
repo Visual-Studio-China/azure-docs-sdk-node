@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-servicemap.ClientGroups
     id: azure-arm-servicemap.ClientGroups
     name: ClientGroups
-    summary: |-
-      ClientGroups
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ServicemapManagementClient.
-      Initializes a new instance of the ClientGroups class.
+    summary: Class representing a ClientGroups.
     fullName: azure-arm-servicemap.ClientGroups
     type: Class
     children:
@@ -29,7 +25,7 @@ items:
     parent: azure-arm-servicemap.ClientGroups
     name: ClientGroups(client)
     fullName: azure-arm-servicemap.ClientGroups.ClientGroups(client)
-    summary: ''
+    summary: Create a ClientGroups.
     type: Constructor
     syntax:
       parameters:

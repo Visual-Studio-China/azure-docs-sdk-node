@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-datalake-analytics.FirewallRules
     id: azure-arm-datalake-analytics.FirewallRules
     name: FirewallRules
-    summary: |-
-      FirewallRules
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the DataLakeAnalyticsAccountManagementClient.
-      Initializes a new instance of the FirewallRules class.
+    summary: Class representing a FirewallRules.
     fullName: azure-arm-datalake-analytics.FirewallRules
     type: Class
     children:
@@ -36,7 +32,7 @@ items:
     parent: azure-arm-datalake-analytics.FirewallRules
     name: FirewallRules(client)
     fullName: azure-arm-datalake-analytics.FirewallRules.FirewallRules(client)
-    summary: ''
+    summary: Create a FirewallRules.
     type: Constructor
     syntax:
       parameters:

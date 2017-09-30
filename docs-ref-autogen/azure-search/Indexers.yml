@@ -3,11 +3,7 @@ items:
   - uid: azure-search.Indexers
     id: azure-search.Indexers
     name: Indexers
-    summary: |-
-      Indexers
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the SearchServiceClient.
-      Initializes a new instance of the Indexers class.
+    summary: Class representing a Indexers.
     fullName: azure-search.Indexers
     type: Class
     children:
@@ -35,7 +31,7 @@ items:
     parent: azure-search.Indexers
     name: Indexers(client)
     fullName: azure-search.Indexers.Indexers(client)
-    summary: ''
+    summary: Create a Indexers.
     type: Constructor
     syntax:
       parameters:

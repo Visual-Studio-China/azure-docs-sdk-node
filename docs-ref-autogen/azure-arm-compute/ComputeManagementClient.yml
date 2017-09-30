@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-compute.ComputeManagementClient
     id: azure-arm-compute.ComputeManagementClient
     name: ComputeManagementClient
-    summary: Initializes a new instance of the ComputeManagementClient class.
+    summary: Class representing a ComputeManagementClient.
     fullName: azure-arm-compute.ComputeManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-compute.ComputeManagementClient.ComputeManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a ComputeManagementClient.
     type: Constructor
     syntax:
       parameters:

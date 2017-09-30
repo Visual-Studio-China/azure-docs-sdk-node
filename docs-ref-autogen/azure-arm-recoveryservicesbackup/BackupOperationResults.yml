@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-recoveryservicesbackup.BackupOperationResults
     id: azure-arm-recoveryservicesbackup.BackupOperationResults
     name: BackupOperationResults
-    summary: |-
-      BackupOperationResults
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the BackupOperationResults class.
+    summary: Class representing a BackupOperationResults.
     fullName: azure-arm-recoveryservicesbackup.BackupOperationResults
     type: Class
     children:
@@ -23,7 +19,7 @@ items:
     name: BackupOperationResults(client)
     fullName: >-
       azure-arm-recoveryservicesbackup.BackupOperationResults.BackupOperationResults(client)
-    summary: ''
+    summary: Create a BackupOperationResults.
     type: Constructor
     syntax:
       parameters:
@@ -43,14 +39,14 @@ items:
       getWithHttpOperationResponse(vaultName, resourceGroupName, operationId,
       options)
     summary: >-
-      Provides the status of the delete operations, for example, deleting a
-      backup
+      Provides the status of the delete operations such as deleting backed up
 
-      item. Once the operation starts, the response status code is Accepted. The
+      item. Once the operation has started, the status code in the response
+      would
 
-      response status code remains in this state until the operation reaches
+      be Accepted. It will continue to be in this state till it reaches
 
-      completion. On successful completion, the status code changes to OK. This
+      completion. On successful completion, the status code will be OK. This
 
       method expects OperationID as an argument. OperationID is part of the
 
@@ -73,17 +69,17 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: operationId
           type:
             - string
-          description: The ID of the operation.
+          description: OperationID which represents the operation.
         - id: options
           type:
             - object
@@ -110,14 +106,14 @@ items:
     parent: azure-arm-recoveryservicesbackup.BackupOperationResults
     name: 'get(vaultName, resourceGroupName, operationId, options, optionalCallback)'
     summary: >-
-      Provides the status of the delete operations, for example, deleting a
-      backup
+      Provides the status of the delete operations such as deleting backed up
 
-      item. Once the operation starts, the response status code is Accepted. The
+      item. Once the operation has started, the status code in the response
+      would
 
-      response status code remains in this state until the operation reaches
+      be Accepted. It will continue to be in this state till it reaches
 
-      completion. On successful completion, the status code changes to OK. This
+      completion. On successful completion, the status code will be OK. This
 
       method expects OperationID as an argument. OperationID is part of the
 
@@ -162,17 +158,17 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: operationId
           type:
             - string
-          description: The ID of the operation.
+          description: OperationID which represents the operation.
         - id: options
           type:
             - object

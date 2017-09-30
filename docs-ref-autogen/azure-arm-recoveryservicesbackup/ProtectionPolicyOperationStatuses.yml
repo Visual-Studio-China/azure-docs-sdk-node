@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-recoveryservicesbackup.ProtectionPolicyOperationStatuses
     id: azure-arm-recoveryservicesbackup.ProtectionPolicyOperationStatuses
     name: ProtectionPolicyOperationStatuses
-    summary: |-
-      ProtectionPolicyOperationStatuses
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the ProtectionPolicyOperationStatuses class.
+    summary: Class representing a ProtectionPolicyOperationStatuses.
     fullName: azure-arm-recoveryservicesbackup.ProtectionPolicyOperationStatuses
     type: Class
     children:
@@ -23,7 +19,7 @@ items:
     name: ProtectionPolicyOperationStatuses(client)
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionPolicyOperationStatuses.ProtectionPolicyOperationStatuses(client)
-    summary: ''
+    summary: Create a ProtectionPolicyOperationStatuses.
     type: Constructor
     syntax:
       parameters:
@@ -43,16 +39,17 @@ items:
       getWithHttpOperationResponse(vaultName, resourceGroupName, policyName,
       operationId, options)
     summary: >-
-      Provides the status of the asynchronous operations like backup or restore.
+      Provides the status of the asynchronous operations like backup, restore.
+      The
 
-      The status can be: in progress, completed, or failed. You can refer to the
+      status can be in progress, completed or failed. You can refer to the
 
-      Operation Status enumeration for the possible states of an operation. Some
+      Operation Status enum for all the possible states of an operation. Some
 
       operations create jobs. This method returns the list of jobs associated
       with
 
-      the operation.
+      operation.
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionPolicyOperationStatuses.getWithHttpOperationResponse(vaultName,
       resourceGroupName, policyName, operationId, options)
@@ -75,23 +72,25 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: policyName
           type:
             - string
           description: |-
-            The backup policy name used in this GET
-            operation.
+            Backup policy name whose operation's status needs
+            to be fetched.
         - id: operationId
           type:
             - string
-          description: The ID associated with this GET operation.
+          description: |-
+            Operation ID which represents an operation whose
+            status needs to be fetched.
         - id: options
           type:
             - object
@@ -120,16 +119,17 @@ items:
       get(vaultName, resourceGroupName, policyName, operationId, options,
       optionalCallback)
     summary: >-
-      Provides the status of the asynchronous operations like backup or restore.
+      Provides the status of the asynchronous operations like backup, restore.
+      The
 
-      The status can be: in progress, completed, or failed. You can refer to the
+      status can be in progress, completed or failed. You can refer to the
 
-      Operation Status enumeration for the possible states of an operation. Some
+      Operation Status enum for all the possible states of an operation. Some
 
       operations create jobs. This method returns the list of jobs associated
       with
 
-      the operation.
+      operation.
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionPolicyOperationStatuses.get(vaultName,
       resourceGroupName, policyName, operationId, options, optionalCallback)
@@ -172,23 +172,25 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: policyName
           type:
             - string
           description: |-
-            The backup policy name used in this GET
-            operation.
+            Backup policy name whose operation's status needs
+            to be fetched.
         - id: operationId
           type:
             - string
-          description: The ID associated with this GET operation.
+          description: |-
+            Operation ID which represents an operation whose
+            status needs to be fetched.
         - id: options
           type:
             - object

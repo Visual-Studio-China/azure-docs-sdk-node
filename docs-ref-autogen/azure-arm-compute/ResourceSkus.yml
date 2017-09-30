@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-compute.ResourceSkus
     id: azure-arm-compute.ResourceSkus
     name: ResourceSkus
-    summary: |-
-      ResourceSkus
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ComputeManagementClient.
-      Initializes a new instance of the ResourceSkus class.
+    summary: Class representing a ResourceSkus.
     fullName: azure-arm-compute.ResourceSkus
     type: Class
     children:
@@ -23,7 +19,7 @@ items:
     parent: azure-arm-compute.ResourceSkus
     name: ResourceSkus(client)
     fullName: azure-arm-compute.ResourceSkus.ResourceSkus(client)
-    summary: ''
+    summary: Create a ResourceSkus.
     type: Constructor
     syntax:
       parameters:

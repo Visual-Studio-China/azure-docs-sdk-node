@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-customerinsights.Images
     id: azure-arm-customerinsights.Images
     name: Images
-    summary: |-
-      Images
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the CustomerInsightsManagementClient.
-      Initializes a new instance of the Images class.
+    summary: Class representing a Images.
     fullName: azure-arm-customerinsights.Images
     type: Class
     children:
@@ -25,7 +21,7 @@ items:
     parent: azure-arm-customerinsights.Images
     name: Images(client)
     fullName: azure-arm-customerinsights.Images.Images(client)
-    summary: ''
+    summary: Create a Images.
     type: Constructor
     syntax:
       parameters:

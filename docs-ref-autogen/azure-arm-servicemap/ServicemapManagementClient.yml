@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-servicemap.ServicemapManagementClient
     id: azure-arm-servicemap.ServicemapManagementClient
     name: ServicemapManagementClient
-    summary: Initializes a new instance of the ServicemapManagementClient class.
+    summary: Class representing a ServicemapManagementClient.
     fullName: azure-arm-servicemap.ServicemapManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-servicemap.ServicemapManagementClient.ServicemapManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a ServicemapManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -57,11 +57,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: API version.
           optional: true
         - id: options.acceptLanguage
           type:

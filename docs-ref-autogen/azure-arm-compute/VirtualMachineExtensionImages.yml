@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-compute.VirtualMachineExtensionImages
     id: azure-arm-compute.VirtualMachineExtensionImages
     name: VirtualMachineExtensionImages
-    summary: |-
-      VirtualMachineExtensionImages
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ComputeManagementClient.
-      Initializes a new instance of the VirtualMachineExtensionImages class.
+    summary: Class representing a VirtualMachineExtensionImages.
     fullName: azure-arm-compute.VirtualMachineExtensionImages
     type: Class
     children:
@@ -29,7 +25,7 @@ items:
     name: VirtualMachineExtensionImages(client)
     fullName: >-
       azure-arm-compute.VirtualMachineExtensionImages.VirtualMachineExtensionImages(client)
-    summary: ''
+    summary: Create a VirtualMachineExtensionImages.
     type: Constructor
     syntax:
       parameters:
@@ -71,7 +67,7 @@ items:
         - id: location
           type:
             - string
-          description: ''
+          description: The name of a supported Azure region.
         - id: publisherName
           type:
             - string
@@ -154,7 +150,7 @@ items:
         - id: location
           type:
             - string
-          description: ''
+          description: The name of a supported Azure region.
         - id: publisherName
           type:
             - string
@@ -223,7 +219,7 @@ items:
         - id: location
           type:
             - string
-          description: ''
+          description: The name of a supported Azure region.
         - id: publisherName
           type:
             - string
@@ -294,7 +290,7 @@ items:
         - id: location
           type:
             - string
-          description: ''
+          description: The name of a supported Azure region.
         - id: publisherName
           type:
             - string
@@ -355,7 +351,7 @@ items:
         - id: location
           type:
             - string
-          description: ''
+          description: The name of a supported Azure region.
         - id: publisherName
           type:
             - string
@@ -445,7 +441,7 @@ items:
         - id: location
           type:
             - string
-          description: ''
+          description: The name of a supported Azure region.
         - id: publisherName
           type:
             - string

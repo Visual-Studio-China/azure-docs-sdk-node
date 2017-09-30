@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-advisor.Recommendations
     id: azure-arm-advisor.Recommendations
     name: Recommendations
-    summary: |-
-      Recommendations
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the AdvisorManagementClient.
-      Initializes a new instance of the Recommendations class.
+    summary: Class representing a Recommendations.
     fullName: azure-arm-advisor.Recommendations
     type: Class
     children:
@@ -30,7 +26,7 @@ items:
     parent: azure-arm-advisor.Recommendations
     name: Recommendations(client)
     fullName: azure-arm-advisor.Recommendations.Recommendations(client)
-    summary: ''
+    summary: Create a Recommendations.
     type: Constructor
     syntax:
       parameters:

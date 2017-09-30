@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-monitor.MonitorManagementClient
     id: azure-arm-monitor.MonitorManagementClient
     name: MonitorManagementClient
-    summary: Initializes a new instance of the MonitorManagementClient class.
+    summary: Class representing a MonitorManagementClient.
     fullName: azure-arm-monitor.MonitorManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-monitor.MonitorManagementClient.MonitorManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a MonitorManagementClient.
     type: Constructor
     syntax:
       parameters:

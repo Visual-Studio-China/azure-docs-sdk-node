@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-postgresql.Operations
     id: azure-arm-postgresql.Operations
     name: Operations
-    summary: |-
-      Operations
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the PostgreSQLManagementClient.
-      Initializes a new instance of the Operations class.
+    summary: Class representing a Operations.
     fullName: azure-arm-postgresql.Operations
     type: Class
     children:
@@ -21,7 +17,7 @@ items:
     parent: azure-arm-postgresql.Operations
     name: Operations(client)
     fullName: azure-arm-postgresql.Operations.Operations(client)
-    summary: ''
+    summary: Create a Operations.
     type: Constructor
     syntax:
       parameters:

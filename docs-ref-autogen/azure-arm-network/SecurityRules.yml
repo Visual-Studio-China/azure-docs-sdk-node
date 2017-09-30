@@ -452,6 +452,13 @@ items:
             The CIDR or
             source IP ranges.
           optional: true
+        - id: securityRuleParameters.sourceApplicationSecurityGroups
+          type:
+            - array
+          description: |-
+            The
+            application security group specified as source.
+          optional: true
         - id: securityRuleParameters.destinationAddressPrefix
           type:
             - string
@@ -471,6 +478,11 @@ items:
           description: |-
             The
             destination address prefixes. CIDR or destination IP ranges.
+          optional: true
+        - id: securityRuleParameters.destinationApplicationSecurityGroups
+          type:
+            - array
+          description: The application security group specified as destination.
           optional: true
         - id: securityRuleParameters.sourcePortRanges
           type:
@@ -707,6 +719,13 @@ items:
             The CIDR or
             source IP ranges.
           optional: true
+        - id: securityRuleParameters.sourceApplicationSecurityGroups
+          type:
+            - array
+          description: |-
+            The
+            application security group specified as source.
+          optional: true
         - id: securityRuleParameters.destinationAddressPrefix
           type:
             - string
@@ -726,6 +745,11 @@ items:
           description: |-
             The
             destination address prefixes. CIDR or destination IP ranges.
+          optional: true
+        - id: securityRuleParameters.destinationApplicationSecurityGroups
+          type:
+            - array
+          description: The application security group specified as destination.
           optional: true
         - id: securityRuleParameters.sourcePortRanges
           type:
@@ -1246,6 +1270,13 @@ items:
             The CIDR or
             source IP ranges.
           optional: true
+        - id: securityRuleParameters.sourceApplicationSecurityGroups
+          type:
+            - array
+          description: |-
+            The
+            application security group specified as source.
+          optional: true
         - id: securityRuleParameters.destinationAddressPrefix
           type:
             - string
@@ -1265,6 +1296,11 @@ items:
           description: |-
             The
             destination address prefixes. CIDR or destination IP ranges.
+          optional: true
+        - id: securityRuleParameters.destinationApplicationSecurityGroups
+          type:
+            - array
+          description: The application security group specified as destination.
           optional: true
         - id: securityRuleParameters.sourcePortRanges
           type:
@@ -1501,6 +1537,13 @@ items:
             The CIDR or
             source IP ranges.
           optional: true
+        - id: securityRuleParameters.sourceApplicationSecurityGroups
+          type:
+            - array
+          description: |-
+            The
+            application security group specified as source.
+          optional: true
         - id: securityRuleParameters.destinationAddressPrefix
           type:
             - string
@@ -1520,6 +1563,11 @@ items:
           description: |-
             The
             destination address prefixes. CIDR or destination IP ranges.
+          optional: true
+        - id: securityRuleParameters.destinationApplicationSecurityGroups
+          type:
+            - array
+          description: The application security group specified as destination.
           optional: true
         - id: securityRuleParameters.sourcePortRanges
           type:

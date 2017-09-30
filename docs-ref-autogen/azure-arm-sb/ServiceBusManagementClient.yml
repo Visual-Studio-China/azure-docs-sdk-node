@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-sb.ServiceBusManagementClient
     id: azure-arm-sb.ServiceBusManagementClient
     name: ServiceBusManagementClient
-    summary: Initializes a new instance of the ServiceBusManagementClient class.
+    summary: Class representing a ServiceBusManagementClient.
     fullName: azure-arm-sb.ServiceBusManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-sb.ServiceBusManagementClient.ServiceBusManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a ServiceBusManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -60,11 +60,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Client API version.
           optional: true
         - id: options.acceptLanguage
           type:

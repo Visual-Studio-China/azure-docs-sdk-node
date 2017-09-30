@@ -3,11 +3,7 @@ items:
   - uid: azure-batch.CertificateOperations
     id: azure-batch.CertificateOperations
     name: CertificateOperations
-    summary: |-
-      CertificateOperations
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the BatchServiceClient.
-      Initializes a new instance of the CertificateOperations class.
+    summary: Class representing a CertificateOperations.
     fullName: azure-batch.CertificateOperations
     type: Class
     children:
@@ -32,7 +28,7 @@ items:
     parent: azure-batch.CertificateOperations
     name: CertificateOperations(client)
     fullName: azure-batch.CertificateOperations.CertificateOperations(client)
-    summary: ''
+    summary: Create a CertificateOperations.
     type: Constructor
     syntax:
       parameters:

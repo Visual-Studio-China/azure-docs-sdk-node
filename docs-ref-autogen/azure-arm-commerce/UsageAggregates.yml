@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-commerce.UsageAggregates
     id: azure-arm-commerce.UsageAggregates
     name: UsageAggregates
-    summary: |-
-      UsageAggregates
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the UsageManagementClient.
-      Initializes a new instance of the UsageAggregates class.
+    summary: Class representing a UsageAggregates.
     fullName: azure-arm-commerce.UsageAggregates
     type: Class
     children:
@@ -23,7 +19,7 @@ items:
     parent: azure-arm-commerce.UsageAggregates
     name: UsageAggregates(client)
     fullName: azure-arm-commerce.UsageAggregates.UsageAggregates(client)
-    summary: ''
+    summary: Create a UsageAggregates.
     type: Constructor
     syntax:
       parameters:

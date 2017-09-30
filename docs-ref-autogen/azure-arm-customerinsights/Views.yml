@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-customerinsights.Views
     id: azure-arm-customerinsights.Views
     name: Views
-    summary: |-
-      Views
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the CustomerInsightsManagementClient.
-      Initializes a new instance of the Views class.
+    summary: Class representing a Views.
     fullName: azure-arm-customerinsights.Views
     type: Class
     children:
@@ -29,7 +25,7 @@ items:
     parent: azure-arm-customerinsights.Views
     name: Views(client)
     fullName: azure-arm-customerinsights.Views.Views(client)
-    summary: ''
+    summary: Create a Views.
     type: Constructor
     syntax:
       parameters:

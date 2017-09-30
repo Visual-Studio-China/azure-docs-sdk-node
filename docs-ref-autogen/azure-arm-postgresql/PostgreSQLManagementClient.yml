@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-postgresql.PostgreSQLManagementClient
     id: azure-arm-postgresql.PostgreSQLManagementClient
     name: PostgreSQLManagementClient
-    summary: Initializes a new instance of the PostgreSQLManagementClient class.
+    summary: Class representing a PostgreSQLManagementClient.
     fullName: azure-arm-postgresql.PostgreSQLManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-postgresql.PostgreSQLManagementClient.PostgreSQLManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a PostgreSQLManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -57,11 +57,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: The API version to use for the request.
           optional: true
         - id: options.acceptLanguage
           type:

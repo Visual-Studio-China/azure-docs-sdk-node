@@ -3,9 +3,7 @@ items:
   - uid: azure-arm-datalake-analytics.DataLakeAnalyticsAccountManagementClient
     id: azure-arm-datalake-analytics.DataLakeAnalyticsAccountManagementClient
     name: DataLakeAnalyticsAccountManagementClient
-    summary: >-
-      Initializes a new instance of the DataLakeAnalyticsAccountManagementClient
-      class.
+    summary: Class representing a DataLakeAnalyticsAccountManagementClient.
     fullName: azure-arm-datalake-analytics.DataLakeAnalyticsAccountManagementClient
     type: Class
     children:
@@ -24,7 +22,7 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.DataLakeAnalyticsAccountManagementClient.DataLakeAnalyticsAccountManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a DataLakeAnalyticsAccountManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -67,11 +65,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Client Api Version.
           optional: true
         - id: options.acceptLanguage
           type:

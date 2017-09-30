@@ -3,21 +3,17 @@ items:
   - uid: azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections
     id: azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections
     name: ItemLevelRecoveryConnections
-    summary: |-
-      ItemLevelRecoveryConnections
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the ItemLevelRecoveryConnections class.
+    summary: Class representing a ItemLevelRecoveryConnections.
     fullName: azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections
     type: Class
     children:
       - 'azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections.#ctor'
       - >-
-        azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#revokeWithHttpOperationResponse
-      - 'azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#revoke'
-      - >-
         azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#provisionWithHttpOperationResponse
       - 'azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#provision'
+      - >-
+        azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#revokeWithHttpOperationResponse
+      - 'azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#revoke'
     langs:
       - js
   - id: 'azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections.#ctor'
@@ -26,7 +22,7 @@ items:
     name: ItemLevelRecoveryConnections(client)
     fullName: >-
       azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections.ItemLevelRecoveryConnections(client)
-    summary: ''
+    summary: Create a ItemLevelRecoveryConnections.
     type: Constructor
     syntax:
       parameters:
@@ -35,6 +31,267 @@ items:
             - azure-arm-recoveryservicesbackup.RecoveryServicesBackupClient
           description: Reference to the service client.
       content: new ItemLevelRecoveryConnections(client)
+    langs:
+      - js
+  - uid: >-
+      azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#provisionWithHttpOperationResponse
+    id: >-
+      azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#provisionWithHttpOperationResponse
+    parent: azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections
+    name: >-
+      provisionWithHttpOperationResponse(vaultName, resourceGroupName,
+      fabricName, containerName, protectedItemName, recoveryPointId, parameters,
+      options)
+    summary: >-
+      Provisions a script which invokes an iSCSI connection to the backup data.
+
+      Executing this script opens a file explorer displaying all the recoverable
+
+      files and folders. This is an asynchronous operation. To know the status
+      of
+
+      provisioning, call GetProtectedItemOperationResult API.
+    fullName: >-
+      azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections.provisionWithHttpOperationResponse(vaultName,
+      resourceGroupName, fabricName, containerName, protectedItemName,
+      recoveryPointId, parameters, options)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
+    type: Function
+    syntax:
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: The name of the recovery services vault.
+        - id: resourceGroupName
+          type:
+            - string
+          description: |-
+            The name of the resource group where the
+            recovery services vault is present.
+        - id: fabricName
+          type:
+            - string
+          description: Fabric name associated with the backed up items.
+        - id: containerName
+          type:
+            - string
+          description: |-
+            Container name associated with the backed up
+            items.
+        - id: protectedItemName
+          type:
+            - string
+          description: |-
+            Backed up item name whose files/folders
+            are to be restored.
+        - id: recoveryPointId
+          type:
+            - string
+          description: |-
+            Recovery point ID which represents backed up
+            data. iSCSI connection will be provisioned for this backed up data.
+        - id: parameters
+          type:
+            - object
+          description: resource ILR request
+        - id: parameters.properties
+          type:
+            - object
+          description: ILRRequestResource properties
+          optional: true
+        - id: parameters.properties.objectType
+          type:
+            - string
+          description: Polymorphic Discriminator
+        - id: parameters.location
+          type:
+            - string
+          description: Resource location.
+          optional: true
+        - id: parameters.tags
+          type:
+            - object
+          description: Resource tags.
+          optional: true
+        - id: parameters.eTag
+          type:
+            - string
+          description: Optional ETag.
+          optional: true
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+      return:
+        type:
+          - Promise
+        description: A promise is returned
+      content: >-
+        function provisionWithHttpOperationResponse(vaultName,
+        resourceGroupName, fabricName, containerName, protectedItemName,
+        recoveryPointId, parameters, options)
+    langs:
+      - js
+  - uid: 'azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#provision'
+    id: 'azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#provision'
+    parent: azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections
+    name: >-
+      provision(vaultName, resourceGroupName, fabricName, containerName,
+      protectedItemName, recoveryPointId, parameters, options, optionalCallback)
+    summary: >-
+      Provisions a script which invokes an iSCSI connection to the backup data.
+
+      Executing this script opens a file explorer displaying all the recoverable
+
+      files and folders. This is an asynchronous operation. To know the status
+      of
+
+      provisioning, call GetProtectedItemOperationResult API.
+    fullName: >-
+      azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections.provision(vaultName,
+      resourceGroupName, fabricName, containerName, protectedItemName,
+      recoveryPointId, parameters, options, optionalCallback)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    type: Function
+    syntax:
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: The name of the recovery services vault.
+        - id: resourceGroupName
+          type:
+            - string
+          description: |-
+            The name of the resource group where the
+            recovery services vault is present.
+        - id: fabricName
+          type:
+            - string
+          description: Fabric name associated with the backed up items.
+        - id: containerName
+          type:
+            - string
+          description: |-
+            Container name associated with the backed up
+            items.
+        - id: protectedItemName
+          type:
+            - string
+          description: |-
+            Backed up item name whose files/folders
+            are to be restored.
+        - id: recoveryPointId
+          type:
+            - string
+          description: |-
+            Recovery point ID which represents backed up
+            data. iSCSI connection will be provisioned for this backed up data.
+        - id: parameters
+          type:
+            - object
+          description: resource ILR request
+        - id: parameters.properties
+          type:
+            - object
+          description: ILRRequestResource properties
+          optional: true
+        - id: parameters.properties.objectType
+          type:
+            - string
+          description: Polymorphic Discriminator
+        - id: parameters.location
+          type:
+            - string
+          description: Resource location.
+          optional: true
+        - id: parameters.tags
+          type:
+            - object
+          description: Resource tags.
+          optional: true
+        - id: parameters.eTag
+          type:
+            - string
+          description: Optional ETag.
+          optional: true
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: optionalCallback
+          type:
+            - function
+          description: The optional callback.
+          optional: true
+      return:
+        type:
+          - function
+          - Promise
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
+      content: >-
+        function provision(vaultName, resourceGroupName, fabricName,
+        containerName, protectedItemName, recoveryPointId, parameters, options,
+        optionalCallback)
     langs:
       - js
   - uid: >-
@@ -71,37 +328,35 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: |-
-            The fabric name associated with the backup items.
-            The value allowed is Azure.
+          description: Fabric name associated with the backed up items.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backed up
             items.
         - id: protectedItemName
           type:
             - string
           description: |-
-            The name of the backup items whose files
-            or folders will be restored.
+            Backed up item name whose files/folders
+            are to be restored.
         - id: recoveryPointId
           type:
             - string
           description: |-
-            The string that identifies the recovery
-            point. The iSCSI connection will be revoked for this protected data.
+            Recovery point ID which represents backed up
+            data. iSCSI connection will be revoked for this backed up data.
         - id: options
           type:
             - object
@@ -177,37 +432,35 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: |-
-            The fabric name associated with the backup items.
-            The value allowed is Azure.
+          description: Fabric name associated with the backed up items.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backed up
             items.
         - id: protectedItemName
           type:
             - string
           description: |-
-            The name of the backup items whose files
-            or folders will be restored.
+            Backed up item name whose files/folders
+            are to be restored.
         - id: recoveryPointId
           type:
             - string
           description: |-
-            The string that identifies the recovery
-            point. The iSCSI connection will be revoked for this protected data.
+            Recovery point ID which represents backed up
+            data. iSCSI connection will be revoked for this backed up data.
         - id: options
           type:
             - object
@@ -237,310 +490,6 @@ items:
       content: >-
         function revoke(vaultName, resourceGroupName, fabricName, containerName,
         protectedItemName, recoveryPointId, options, optionalCallback)
-    langs:
-      - js
-  - uid: >-
-      azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#provisionWithHttpOperationResponse
-    id: >-
-      azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#provisionWithHttpOperationResponse
-    parent: azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections
-    name: >-
-      provisionWithHttpOperationResponse(vaultName, resourceGroupName,
-      fabricName, containerName, protectedItemName, recoveryPointId,
-      resourceILRRequest, options)
-    summary: |-
-      Provisions a script which invokes an iSCSI connection to the backup data.
-      Executing this script opens File Explorer which displays the recoverable
-      files and folders. This is an asynchronous operation. To get the
-      provisioning status, call GetProtectedItemOperationResult API.
-    fullName: >-
-      azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections.provisionWithHttpOperationResponse(vaultName,
-      resourceGroupName, fabricName, containerName, protectedItemName,
-      recoveryPointId, resourceILRRequest, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{HttpOperationResponse<null>} - The deserialized result object.'
-        value: '{HttpOperationResponse<null>} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
-    type: Function
-    syntax:
-      parameters:
-        - id: vaultName
-          type:
-            - string
-          description: The name of the Recovery Services vault.
-        - id: resourceGroupName
-          type:
-            - string
-          description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
-        - id: fabricName
-          type:
-            - string
-          description: The fabric name associated with the backup items.
-        - id: containerName
-          type:
-            - string
-          description: |-
-            The container name associated with the backup
-            items.
-        - id: protectedItemName
-          type:
-            - string
-          description: |-
-            The name of the backup item whose files or
-            folders are to be restored.
-        - id: recoveryPointId
-          type:
-            - string
-          description: |-
-            The recovery point ID for backup data. The
-            iSCSI connection will be provisioned for this backup data.
-        - id: resourceILRRequest
-          type:
-            - object
-          description: |-
-            The resource Item Level Recovery (ILR)
-            request.
-        - id: resourceILRRequest.properties
-          type:
-            - object
-          description: ''
-          optional: true
-        - id: resourceILRRequest.properties.objectType
-          type:
-            - string
-          description: |-
-            Polymorphic
-            Discriminator
-        - id: resourceILRRequest.id
-          type:
-            - string
-          description: |-
-            Resource ID represents the complete
-            path to the resource.
-          optional: true
-        - id: resourceILRRequest.name
-          type:
-            - string
-          description: |-
-            Resource name associated with the
-            resource.
-          optional: true
-        - id: resourceILRRequest.type
-          type:
-            - string
-          description: |-
-            Resource type represents the
-            complete path of the form Namespace/ResourceType/ResourceType/...
-          optional: true
-        - id: resourceILRRequest.location
-          type:
-            - string
-          description: Resource location.
-          optional: true
-        - id: resourceILRRequest.tags
-          type:
-            - object
-          description: Resource tags.
-          optional: true
-        - id: resourceILRRequest.eTag
-          type:
-            - string
-          description: Optional ETag.
-          optional: true
-        - id: options
-          type:
-            - object
-          description: Optional Parameters.
-          optional: true
-        - id: options.customHeaders
-          type:
-            - object
-          description: |-
-            Headers that will be added to the
-            request
-          optional: true
-      return:
-        type:
-          - Promise
-        description: A promise is returned
-      content: >-
-        function provisionWithHttpOperationResponse(vaultName,
-        resourceGroupName, fabricName, containerName, protectedItemName,
-        recoveryPointId, resourceILRRequest, options)
-    langs:
-      - js
-  - uid: 'azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#provision'
-    id: 'azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections#provision'
-    parent: azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections
-    name: >-
-      provision(vaultName, resourceGroupName, fabricName, containerName,
-      protectedItemName, recoveryPointId, resourceILRRequest, options,
-      optionalCallback)
-    summary: |-
-      Provisions a script which invokes an iSCSI connection to the backup data.
-      Executing this script opens File Explorer which displays the recoverable
-      files and folders. This is an asynchronous operation. To get the
-      provisioning status, call GetProtectedItemOperationResult API.
-    fullName: >-
-      azure-arm-recoveryservicesbackup.ItemLevelRecoveryConnections.provision(vaultName,
-      resourceGroupName, fabricName, containerName, protectedItemName,
-      recoveryPointId, resourceILRRequest, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{null} - The deserialized result object.'
-        value: '{null} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object if an error did not occur.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-    type: Function
-    syntax:
-      parameters:
-        - id: vaultName
-          type:
-            - string
-          description: The name of the Recovery Services vault.
-        - id: resourceGroupName
-          type:
-            - string
-          description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
-        - id: fabricName
-          type:
-            - string
-          description: The fabric name associated with the backup items.
-        - id: containerName
-          type:
-            - string
-          description: |-
-            The container name associated with the backup
-            items.
-        - id: protectedItemName
-          type:
-            - string
-          description: |-
-            The name of the backup item whose files or
-            folders are to be restored.
-        - id: recoveryPointId
-          type:
-            - string
-          description: |-
-            The recovery point ID for backup data. The
-            iSCSI connection will be provisioned for this backup data.
-        - id: resourceILRRequest
-          type:
-            - object
-          description: |-
-            The resource Item Level Recovery (ILR)
-            request.
-        - id: resourceILRRequest.properties
-          type:
-            - object
-          description: ''
-          optional: true
-        - id: resourceILRRequest.properties.objectType
-          type:
-            - string
-          description: |-
-            Polymorphic
-            Discriminator
-        - id: resourceILRRequest.id
-          type:
-            - string
-          description: |-
-            Resource ID represents the complete
-            path to the resource.
-          optional: true
-        - id: resourceILRRequest.name
-          type:
-            - string
-          description: |-
-            Resource name associated with the
-            resource.
-          optional: true
-        - id: resourceILRRequest.type
-          type:
-            - string
-          description: |-
-            Resource type represents the
-            complete path of the form Namespace/ResourceType/ResourceType/...
-          optional: true
-        - id: resourceILRRequest.location
-          type:
-            - string
-          description: Resource location.
-          optional: true
-        - id: resourceILRRequest.tags
-          type:
-            - object
-          description: Resource tags.
-          optional: true
-        - id: resourceILRRequest.eTag
-          type:
-            - string
-          description: Optional ETag.
-          optional: true
-        - id: options
-          type:
-            - object
-          description: Optional Parameters.
-          optional: true
-        - id: options.customHeaders
-          type:
-            - object
-          description: |-
-            Headers that will be added to the
-            request
-          optional: true
-        - id: optionalCallback
-          type:
-            - function
-          description: The optional callback.
-          optional: true
-      return:
-        type:
-          - function
-          - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
-      content: >-
-        function provision(vaultName, resourceGroupName, fabricName,
-        containerName, protectedItemName, recoveryPointId, resourceILRRequest,
-        options, optionalCallback)
     langs:
       - js
 references:

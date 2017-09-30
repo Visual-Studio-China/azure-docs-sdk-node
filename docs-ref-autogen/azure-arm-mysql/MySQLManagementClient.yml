@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-mysql.MySQLManagementClient
     id: azure-arm-mysql.MySQLManagementClient
     name: MySQLManagementClient
-    summary: Initializes a new instance of the MySQLManagementClient class.
+    summary: Class representing a MySQLManagementClient.
     fullName: azure-arm-mysql.MySQLManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-mysql.MySQLManagementClient.MySQLManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a MySQLManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -57,11 +57,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: The API version to use for the request.
           optional: true
         - id: options.acceptLanguage
           type:

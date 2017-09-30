@@ -41,7 +41,7 @@ items:
     name: >-
       listWithHttpOperationResponse(resourceGroupName, networkInterfaceName,
       options)
-    summary: Get all load balancers in a network interface
+    summary: List all load balancers in a network interface.
     fullName: >-
       azure-arm-network.NetworkInterfaceLoadBalancers.listWithHttpOperationResponse(resourceGroupName,
       networkInterfaceName, options)
@@ -94,7 +94,7 @@ items:
     id: 'azure-arm-network.NetworkInterfaceLoadBalancers#list'
     parent: azure-arm-network.NetworkInterfaceLoadBalancers
     name: 'list(resourceGroupName, networkInterfaceName, options, optionalCallback)'
-    summary: Get all load balancers in a network interface
+    summary: List all load balancers in a network interface.
     fullName: >-
       azure-arm-network.NetworkInterfaceLoadBalancers.list(resourceGroupName,
       networkInterfaceName, options, optionalCallback)
@@ -185,7 +185,7 @@ items:
       azure-arm-network.NetworkInterfaceLoadBalancers#listNextWithHttpOperationResponse
     parent: azure-arm-network.NetworkInterfaceLoadBalancers
     name: 'listNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: Get all load balancers in a network interface
+    summary: List all load balancers in a network interface.
     fullName: >-
       azure-arm-network.NetworkInterfaceLoadBalancers.listNextWithHttpOperationResponse(nextPageLink,
       options)
@@ -234,7 +234,7 @@ items:
     id: 'azure-arm-network.NetworkInterfaceLoadBalancers#listNext'
     parent: azure-arm-network.NetworkInterfaceLoadBalancers
     name: 'listNext(nextPageLink, options, optionalCallback)'
-    summary: Get all load balancers in a network interface
+    summary: List all load balancers in a network interface.
     fullName: >-
       azure-arm-network.NetworkInterfaceLoadBalancers.listNext(nextPageLink,
       options, optionalCallback)

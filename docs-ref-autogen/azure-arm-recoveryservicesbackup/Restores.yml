@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-recoveryservicesbackup.Restores
     id: azure-arm-recoveryservicesbackup.Restores
     name: Restores
-    summary: |-
-      Restores
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the Restores class.
+    summary: Class representing a Restores.
     fullName: azure-arm-recoveryservicesbackup.Restores
     type: Class
     children:
@@ -22,7 +18,7 @@ items:
     parent: azure-arm-recoveryservicesbackup.Restores
     name: Restores(client)
     fullName: azure-arm-recoveryservicesbackup.Restores.Restores(client)
-    summary: ''
+    summary: Create a Restores.
     type: Constructor
     syntax:
       parameters:
@@ -38,15 +34,16 @@ items:
     parent: azure-arm-recoveryservicesbackup.Restores
     name: >-
       triggerWithHttpOperationResponse(vaultName, resourceGroupName, fabricName,
-      containerName, protectedItemName, recoveryPointId, resourceRestoreRequest,
-      options)
-    summary: |-
-      Restores the specified backup data. This is an asynchronous operation. To
+      containerName, protectedItemName, recoveryPointId, parameters, options)
+    summary: >-
+      Restores the specified backed up data. This is an asynchronous operation.
+      To
+
       know the status of this API call, use GetProtectedItemOperationResult API.
     fullName: >-
       azure-arm-recoveryservicesbackup.Restores.triggerWithHttpOperationResponse(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName,
-      recoveryPointId, resourceRestoreRequest, options)
+      recoveryPointId, parameters, options)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -62,80 +59,57 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup items.
+          description: Fabric name associated with the backed up items.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backed up
             items.
         - id: protectedItemName
           type:
             - string
-          description: The backup item to be restored.
+          description: Backed up item to be restored.
         - id: recoveryPointId
           type:
             - string
           description: |-
-            The recovery point ID for the backup data to
-            be restored.
-        - id: resourceRestoreRequest
+            Recovery point ID which represents the
+            backed up data to be restored.
+        - id: parameters
           type:
             - object
-          description: The resource restore request.
-        - id: resourceRestoreRequest.properties
+          description: resource restore request
+        - id: parameters.properties
           type:
             - object
-          description: ''
+          description: RestoreRequestResource properties
           optional: true
-        - id: resourceRestoreRequest.properties.objectType
+        - id: parameters.properties.objectType
           type:
             - string
-          description: |-
-            Polymorphic
-            Discriminator
-        - id: resourceRestoreRequest.id
-          type:
-            - string
-          description: |-
-            Resource ID represents the
-            complete path to the resource.
-          optional: true
-        - id: resourceRestoreRequest.name
-          type:
-            - string
-          description: |-
-            Resource name associated with
-            the resource.
-          optional: true
-        - id: resourceRestoreRequest.type
-          type:
-            - string
-          description: |-
-            Resource type represents the
-            complete path of the form Namespace/ResourceType/ResourceType/...
-          optional: true
-        - id: resourceRestoreRequest.location
+          description: Polymorphic Discriminator
+        - id: parameters.location
           type:
             - string
           description: Resource location.
           optional: true
-        - id: resourceRestoreRequest.tags
+        - id: parameters.tags
           type:
             - object
           description: Resource tags.
           optional: true
-        - id: resourceRestoreRequest.eTag
+        - id: parameters.eTag
           type:
             - string
           description: Optional ETag.
@@ -159,7 +133,7 @@ items:
       content: >-
         function triggerWithHttpOperationResponse(vaultName, resourceGroupName,
         fabricName, containerName, protectedItemName, recoveryPointId,
-        resourceRestoreRequest, options)
+        parameters, options)
     langs:
       - js
   - uid: 'azure-arm-recoveryservicesbackup.Restores#trigger'
@@ -167,15 +141,16 @@ items:
     parent: azure-arm-recoveryservicesbackup.Restores
     name: >-
       trigger(vaultName, resourceGroupName, fabricName, containerName,
-      protectedItemName, recoveryPointId, resourceRestoreRequest, options,
-      optionalCallback)
-    summary: |-
-      Restores the specified backup data. This is an asynchronous operation. To
+      protectedItemName, recoveryPointId, parameters, options, optionalCallback)
+    summary: >-
+      Restores the specified backed up data. This is an asynchronous operation.
+      To
+
       know the status of this API call, use GetProtectedItemOperationResult API.
     fullName: >-
       azure-arm-recoveryservicesbackup.Restores.trigger(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName,
-      recoveryPointId, resourceRestoreRequest, options, optionalCallback)
+      recoveryPointId, parameters, options, optionalCallback)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -213,80 +188,57 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup items.
+          description: Fabric name associated with the backed up items.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backed up
             items.
         - id: protectedItemName
           type:
             - string
-          description: The backup item to be restored.
+          description: Backed up item to be restored.
         - id: recoveryPointId
           type:
             - string
           description: |-
-            The recovery point ID for the backup data to
-            be restored.
-        - id: resourceRestoreRequest
+            Recovery point ID which represents the
+            backed up data to be restored.
+        - id: parameters
           type:
             - object
-          description: The resource restore request.
-        - id: resourceRestoreRequest.properties
+          description: resource restore request
+        - id: parameters.properties
           type:
             - object
-          description: ''
+          description: RestoreRequestResource properties
           optional: true
-        - id: resourceRestoreRequest.properties.objectType
+        - id: parameters.properties.objectType
           type:
             - string
-          description: |-
-            Polymorphic
-            Discriminator
-        - id: resourceRestoreRequest.id
-          type:
-            - string
-          description: |-
-            Resource ID represents the
-            complete path to the resource.
-          optional: true
-        - id: resourceRestoreRequest.name
-          type:
-            - string
-          description: |-
-            Resource name associated with
-            the resource.
-          optional: true
-        - id: resourceRestoreRequest.type
-          type:
-            - string
-          description: |-
-            Resource type represents the
-            complete path of the form Namespace/ResourceType/ResourceType/...
-          optional: true
-        - id: resourceRestoreRequest.location
+          description: Polymorphic Discriminator
+        - id: parameters.location
           type:
             - string
           description: Resource location.
           optional: true
-        - id: resourceRestoreRequest.tags
+        - id: parameters.tags
           type:
             - object
           description: Resource tags.
           optional: true
-        - id: resourceRestoreRequest.eTag
+        - id: parameters.eTag
           type:
             - string
           description: Optional ETag.
@@ -319,8 +271,8 @@ items:
           {Promise} A promise is returned
       content: >-
         function trigger(vaultName, resourceGroupName, fabricName,
-        containerName, protectedItemName, recoveryPointId,
-        resourceRestoreRequest, options, optionalCallback)
+        containerName, protectedItemName, recoveryPointId, parameters, options,
+        optionalCallback)
     langs:
       - js
 references:

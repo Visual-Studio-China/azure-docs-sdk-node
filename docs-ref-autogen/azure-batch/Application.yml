@@ -3,11 +3,7 @@ items:
   - uid: azure-batch.Application
     id: azure-batch.Application
     name: Application
-    summary: |-
-      Application
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the BatchServiceClient.
-      Initializes a new instance of the Application class.
+    summary: Class representing a Application.
     fullName: azure-batch.Application
     type: Class
     children:
@@ -25,7 +21,7 @@ items:
     parent: azure-batch.Application
     name: Application(client)
     fullName: azure-batch.Application.Application(client)
-    summary: ''
+    summary: Create a Application.
     type: Constructor
     syntax:
       parameters:
@@ -294,7 +290,20 @@ items:
     id: 'azure-batch.Application#getWithHttpOperationResponse'
     parent: azure-batch.Application
     name: 'getWithHttpOperationResponse(applicationId, options)'
-    summary: Gets information about the specified application.
+    summary: >-
+      Gets information about the specified application.
+
+
+      This operation returns only applications and versions that are available
+      for
+
+      use on compute nodes; that is, that can be used in an application package
+
+      reference. For administrator information about applications and versions
+
+      that are not yet available to compute nodes, use the Azure portal or the
+
+      Azure Resource Manager API.
     fullName: >-
       azure-batch.Application.getWithHttpOperationResponse(applicationId,
       options)
@@ -388,7 +397,20 @@ items:
     id: 'azure-batch.Application#get'
     parent: azure-batch.Application
     name: 'get(applicationId, options, optionalCallback)'
-    summary: Gets information about the specified application.
+    summary: >-
+      Gets information about the specified application.
+
+
+      This operation returns only applications and versions that are available
+      for
+
+      use on compute nodes; that is, that can be used in an application package
+
+      reference. For administrator information about applications and versions
+
+      that are not yet available to compute nodes, use the Azure portal or the
+
+      Azure Resource Manager API.
     fullName: 'azure-batch.Application.get(applicationId, options, optionalCallback)'
     tags:
       - originalTitle: resolve

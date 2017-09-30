@@ -3,15 +3,12 @@ items:
   - uid: azure-monitor.MetricDefinitions
     id: azure-monitor.MetricDefinitions
     name: MetricDefinitions
-    summary: |-
-      MetricDefinitions
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the MonitorClient.
-      Initializes a new instance of the MetricDefinitions class.
+    summary: Class representing a MetricDefinitions.
     fullName: azure-monitor.MetricDefinitions
     type: Class
     children:
       - 'azure-monitor.MetricDefinitions.#ctor'
+      - 'azure-monitor.MetricDefinitions#listWithHttpOperationResponse'
       - 'azure-monitor.MetricDefinitions#list'
     langs:
       - js
@@ -20,7 +17,7 @@ items:
     parent: azure-monitor.MetricDefinitions
     name: MetricDefinitions(client)
     fullName: azure-monitor.MetricDefinitions.MetricDefinitions(client)
-    summary: ''
+    summary: Create a MetricDefinitions.
     type: Constructor
     syntax:
       parameters:
@@ -31,12 +28,27 @@ items:
       content: new MetricDefinitions(client)
     langs:
       - js
-  - uid: 'azure-monitor.MetricDefinitions#list'
-    id: 'azure-monitor.MetricDefinitions#list'
+  - uid: 'azure-monitor.MetricDefinitions#listWithHttpOperationResponse'
+    id: 'azure-monitor.MetricDefinitions#listWithHttpOperationResponse'
     parent: azure-monitor.MetricDefinitions
-    name: 'list(resourceUri, options, callback)'
+    name: 'listWithHttpOperationResponse(resourceUri, options)'
     summary: Lists the metric definitions for the resource.
-    fullName: 'azure-monitor.MetricDefinitions.list(resourceUri, options, callback)'
+    fullName: >-
+      azure-monitor.MetricDefinitions.listWithHttpOperationResponse(resourceUri,
+      options)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<MetricDefinitionCollection>} - The deserialized
+          result object.
+        value: >-
+          {HttpOperationResponse<MetricDefinitionCollection>} - The deserialized
+          result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -49,28 +61,74 @@ items:
             - object
           description: Optional Parameters.
           optional: true
-        - id: options.filter
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+      return:
+        type:
+          - Promise
+        description: A promise is returned
+      content: 'function listWithHttpOperationResponse(resourceUri, options)'
+    langs:
+      - js
+  - uid: 'azure-monitor.MetricDefinitions#list'
+    id: 'azure-monitor.MetricDefinitions#list'
+    parent: azure-monitor.MetricDefinitions
+    name: 'list(resourceUri, options, optionalCallback)'
+    summary: Lists the metric definitions for the resource.
+    fullName: >-
+      azure-monitor.MetricDefinitions.list(resourceUri, options,
+      optionalCallback)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{MetricDefinitionCollection} - The deserialized result object.'
+        value: '{MetricDefinitionCollection} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link MetricDefinitionCollection} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link MetricDefinitionCollection} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceUri
           type:
             - string
-          description: >-
-            Reduces the set of data collected by
-
-            retrieving particular metric definitions from all the definitions
-            available
-
-            for the resource.<br>For example, to get just the definition for the
-            'CPU
-
-            percentage' counter: $filter=name.value eq '\Processor(_Total)\%
-            Processor
-
-            Time'.<br>Multiple metrics can be retrieved by joining together
-            *'name eq
-
-            <value>'* clauses separated by *or* logical operators.<br>**NOTE**:
-            No other
-
-            syntax is allowed.
+          description: The identifier of the resource.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
           optional: true
         - id: options.customHeaders
           type:
@@ -79,26 +137,21 @@ items:
             Headers that will be added to the
             request
           optional: true
-        - id: callback
+        - id: optionalCallback
           type:
             - function
-          description: ''
+          description: The optional callback.
+          optional: true
       return:
         type:
           - function
+          - Promise
         description: |-
-          callback(err, result, request, response)
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
 
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object.
-                               See <xref:azure-monitor.MetricDefinitionCollection> for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-      content: 'function list(resourceUri, options, callback)'
+          {Promise} A promise is returned
+      content: 'function list(resourceUri, options, optionalCallback)'
     langs:
       - js
 references:

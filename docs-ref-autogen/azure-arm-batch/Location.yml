@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-batch.Location
     id: azure-arm-batch.Location
     name: Location
-    summary: |-
-      Location
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the BatchManagementClient.
-      Initializes a new instance of the Location class.
+    summary: Class representing a Location.
     fullName: azure-arm-batch.Location
     type: Class
     children:
@@ -23,7 +19,7 @@ items:
     parent: azure-arm-batch.Location
     name: Location(client)
     fullName: azure-arm-batch.Location.Location(client)
-    summary: ''
+    summary: Create a Location.
     type: Constructor
     syntax:
       parameters:

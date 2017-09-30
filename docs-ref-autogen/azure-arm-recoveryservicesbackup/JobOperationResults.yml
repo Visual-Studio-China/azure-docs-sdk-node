@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-recoveryservicesbackup.JobOperationResults
     id: azure-arm-recoveryservicesbackup.JobOperationResults
     name: JobOperationResults
-    summary: |-
-      JobOperationResults
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the JobOperationResults class.
+    summary: Class representing a JobOperationResults.
     fullName: azure-arm-recoveryservicesbackup.JobOperationResults
     type: Class
     children:
@@ -23,7 +19,7 @@ items:
     name: JobOperationResults(client)
     fullName: >-
       azure-arm-recoveryservicesbackup.JobOperationResults.JobOperationResults(client)
-    summary: ''
+    summary: Create a JobOperationResults.
     type: Constructor
     syntax:
       parameters:
@@ -42,7 +38,9 @@ items:
     name: >-
       getWithHttpOperationResponse(vaultName, resourceGroupName, jobName,
       operationId, options)
-    summary: Gets the result of the operation.
+    summary: |-
+      Fetches the result of any operation.
+      the operation.
     fullName: >-
       azure-arm-recoveryservicesbackup.JobOperationResults.getWithHttpOperationResponse(vaultName,
       resourceGroupName, jobName, operationId, options)
@@ -61,21 +59,23 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: jobName
           type:
             - string
-          description: Job name associated with this GET operation.
+          description: Job name whose operation result has to be fetched.
         - id: operationId
           type:
             - string
-          description: OperationID associated with this GET operation.
+          description: |-
+            OperationID which represents the operation whose
+            result has to be fetched.
         - id: options
           type:
             - object
@@ -103,7 +103,9 @@ items:
     name: >-
       get(vaultName, resourceGroupName, jobName, operationId, options,
       optionalCallback)
-    summary: Gets the result of the operation.
+    summary: |-
+      Fetches the result of any operation.
+      the operation.
     fullName: >-
       azure-arm-recoveryservicesbackup.JobOperationResults.get(vaultName,
       resourceGroupName, jobName, operationId, options, optionalCallback)
@@ -144,21 +146,23 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: jobName
           type:
             - string
-          description: Job name associated with this GET operation.
+          description: Job name whose operation result has to be fetched.
         - id: operationId
           type:
             - string
-          description: OperationID associated with this GET operation.
+          description: |-
+            OperationID which represents the operation whose
+            result has to be fetched.
         - id: options
           type:
             - object

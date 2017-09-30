@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-batch.BatchAccountOperations
     id: azure-arm-batch.BatchAccountOperations
     name: BatchAccountOperations
-    summary: |-
-      BatchAccountOperations
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the BatchManagementClient.
-      Initializes a new instance of the BatchAccountOperations class.
+    summary: Class representing a BatchAccountOperations.
     fullName: azure-arm-batch.BatchAccountOperations
     type: Class
     children:
@@ -52,7 +48,7 @@ items:
     parent: azure-arm-batch.BatchAccountOperations
     name: BatchAccountOperations(client)
     fullName: azure-arm-batch.BatchAccountOperations.BatchAccountOperations(client)
-    summary: ''
+    summary: Create a BatchAccountOperations.
     type: Constructor
     syntax:
       parameters:

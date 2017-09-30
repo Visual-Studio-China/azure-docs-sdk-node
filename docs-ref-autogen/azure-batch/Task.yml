@@ -3,11 +3,7 @@ items:
   - uid: azure-batch.Task
     id: azure-batch.Task
     name: Task
-    summary: |-
-      Task
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the BatchServiceClient.
-      Initializes a new instance of the Task class.
+    summary: Class representing a Task.
     fullName: azure-batch.Task
     type: Class
     children:
@@ -39,7 +35,7 @@ items:
     parent: azure-batch.Task
     name: Task(client)
     fullName: azure-batch.Task.Task(client)
-    summary: ''
+    summary: Create a Task.
     type: Constructor
     syntax:
       parameters:
@@ -54,7 +50,16 @@ items:
     id: 'azure-batch.Task#addWithHttpOperationResponse'
     parent: azure-batch.Task
     name: 'addWithHttpOperationResponse(jobId, task, options)'
-    summary: Adds a task to the specified job.
+    summary: >-
+      Adds a task to the specified job.
+
+
+      The maximum lifetime of a task from addition to completion is 7 days. If a
+
+      task has not completed within 7 days of being added it will be terminated
+      by
+
+      the Batch service and left in whatever state it was in at that time.
     fullName: 'azure-batch.Task.addWithHttpOperationResponse(jobId, task, options)'
     tags:
       - originalTitle: resolve
@@ -126,6 +131,88 @@ items:
             /c
 
             MyCommand" in Windows or "/bin/sh -c MyCommand" in Linux.
+        - id: task.containerSettings
+          type:
+            - object
+          description: >-
+            The settings for the container
+
+            under which the task runs. If the pool that will run this task has
+
+            containerConfiguration set, this must be set as well. If the pool
+            that will
+
+            run this task doesn't have containerConfiguration set, this must not
+            be set.
+
+            When this is specified, all directories recursively below the
+
+            AZ_BATCH_NODE_ROOT_DIR (the root of Azure Batch directories on the
+            node) are
+
+            mapped into the container, all task environment variables are mapped
+            into
+
+            the container, and the task command line is executed in the
+            container.
+          optional: true
+        - id: task.containerSettings.containerRunOptions
+          type:
+            - string
+          description: >-
+            Additional
+
+            options to the container create command. These additional options
+            are
+
+            supplied as arguments to the "docker create" command, in addition to
+            those
+
+            controlled by the Batch Service.
+          optional: true
+        - id: task.containerSettings.imageName
+          type:
+            - string
+          description: >-
+            The image to use to create
+
+            the container in which the task will run. This is the full image
+            reference,
+
+            as would be specified to "docker pull". If no tag is provided as
+            part of the
+
+            image name, the tag ":latest" is used as a default.
+        - id: task.containerSettings.registry
+          type:
+            - object
+          description: >-
+            The private registry which
+
+            contains the container image. This setting can be omitted if was
+            already
+
+            provided at pool creation.
+          optional: true
+        - id: task.containerSettings.registry.registryServer
+          type:
+            - string
+          description: |-
+            The
+            registry URL. If omitted, the default is "docker.io".
+          optional: true
+        - id: task.containerSettings.registry.userName
+          type:
+            - string
+          description: |-
+            The user name to
+            log into the registry server.
+        - id: task.containerSettings.registry.password
+          type:
+            - string
+          description: |-
+            The password to log
+            into the registry server.
         - id: task.exitConditions
           type:
             - object
@@ -208,22 +295,35 @@ items:
 
             condition and the job's onTaskFailed property is
 
-            'performExitOptionsJobAction'. The default is none for exit code 0
-            and
+            'performExitOptionsJobAction'. Values are:
 
-            terminate for all other exit conditions. If the job's onTaskFailed
-            property
 
-            is noAction, then specify this property returns an error. The add
-            task
+            none - Take no action.
 
-            request fails with an invalid property value error;; if you are
-            calling the
+            disable - Disable the job. This is equivalent to calling the disable
+            job
 
-            REST API directly, the HTTP status code is 400 (Bad Request).
-            Possible
+            API, with a disableTasks value of requeue.
 
-            values include: 'none', 'disable', 'terminate'
+            terminate - Terminate the job. The terminateReason in the job's
+
+            executionInfo is set to "TaskFailed". The default is none for exit
+            code 0
+
+            and terminate for all other exit conditions.
+
+
+            If the job's onTaskFailed property is noAction, then specifying this
+
+            property returns an error and the add task request fails with an
+            invalid
+
+            property value error; if you are calling the REST API directly, the
+            HTTP
+
+            status code is 400 (Bad Request). Possible values include: 'none',
+
+            'disable', 'terminate'
           optional: true
         - id: task.exitConditions.default.dependencyAction
           type:
@@ -232,14 +332,23 @@ items:
             An action
 
             that the Batch service performs on tasks that depend on this task.
-            The
+            Values
 
-            default is 'satisfy' for exit code 0, and 'block' for all other exit
+            are:
+
+
+            satisfy - Satisfy the task's dependencies.
+
+            block - Block the task's dependencies.
+
+
+            The default is 'satisfy' for exit code 0, and 'block' for all other
+            exit
 
             conditions. If the job's usesTaskDependencies property is set to
             false, then
 
-            specifying the dependencyAction property returns an error. The add
+            specifying the dependencyAction property returns an erro and the add
             task
 
             request fails with an invalid property value error; if you are
@@ -303,10 +412,16 @@ items:
             the location of a compute node or a task that has run previously.
             You can
 
-            pass the affinityId of a compute node or task to indicate that this
-            task
+            pass the affinityId of a compute node to indicate that this task
+            needs to
 
-            needs to be placed close to the node or task.
+            run on that compute node. Note that this is just a soft affinity. If
+            the
+
+            target node is busy or unavailable at the time the task is
+            scheduled, then
+
+            the task will be scheduled elsewhere.
         - id: task.constraints
           type:
             - object
@@ -421,16 +536,18 @@ items:
           description: >-
             The scope for the auto
 
-            user pool - specifies that the task runs as the common auto user
-            account
+            user Values are:
 
-            which is created on every node in a pool. task - specifies that the
-            service
 
-            should create a new user for the task. The default value is task.
-            Possible
+            pool - specifies that the task runs as the common auto user account
+            which is
 
-            values include: 'task', 'pool'
+            created on every node in a pool.
+
+            task - specifies that the service should create a new user for the
+            task.
+
+            The default value is task. Possible values include: 'task', 'pool'
           optional: true
         - id: task.userIdentity.autoUser.elevationLevel
           type:
@@ -465,7 +582,8 @@ items:
             - number
           description: |-
             The number of
-            compute nodes required by the task.
+            compute nodes required by the task. If omitted, the default is 1.
+          optional: true
         - id: task.multiInstanceSettings.coordinationCommandLine
           type:
             - string
@@ -482,7 +600,6 @@ items:
             ready to
 
             process inter-node messages.
-          optional: true
         - id: task.multiInstanceSettings.commonResourceFiles
           type:
             - array
@@ -500,7 +617,12 @@ items:
             including the primary, whereas task resource files are downloaded
             only for
 
-            the primary.
+            the primary. Also note that these resource files are not downloaded
+            to the
+
+            task working directory, but instead are downloaded to the task root
+
+            directory (one directory above the working directory).
           optional: true
         - id: task.dependsOn
           type:
@@ -530,7 +652,19 @@ items:
             depends on. All tasks in this list must complete successfully before
             the
 
-            dependent task can be scheduled.
+            dependent task can be scheduled. The taskIds collection is limited
+            to 64000
+
+            characters total (i.e. the combined length of all task IDs). If the
+            taskIds
+
+            collection exceeds the maximum length, the Add Task request fails
+            with error
+
+            code TaskDependencyListTooLong. In this case consider using task ID
+            ranges
+
+            instead.
           optional: true
         - id: task.dependsOn.taskIdRanges
           type:
@@ -552,7 +686,22 @@ items:
             packages that the Batch service will deploy to the compute node
             before
 
-            running the command line.
+            running the command line. Application packages are downloaded and
+            deployed
+
+            to a shared directory, not the task working directory. Therefore, if
+            a
+
+            referenced package is already on the compute node, and is up to
+            date, then
+
+            it is not re-downloaded; the existing copy on the compute node is
+            used. If a
+
+            referenced application package cannot be installed, for example
+            because the
+
+            package has been deleted or because download failed, the task fails.
           optional: true
         - id: task.authenticationTokenSettings
           type:
@@ -669,7 +818,16 @@ items:
     id: 'azure-batch.Task#add'
     parent: azure-batch.Task
     name: 'add(jobId, task, options, optionalCallback)'
-    summary: Adds a task to the specified job.
+    summary: >-
+      Adds a task to the specified job.
+
+
+      The maximum lifetime of a task from addition to completion is 7 days. If a
+
+      task has not completed within 7 days of being added it will be terminated
+      by
+
+      the Batch service and left in whatever state it was in at that time.
     fullName: 'azure-batch.Task.add(jobId, task, options, optionalCallback)'
     tags:
       - originalTitle: resolve
@@ -763,6 +921,88 @@ items:
             /c
 
             MyCommand" in Windows or "/bin/sh -c MyCommand" in Linux.
+        - id: task.containerSettings
+          type:
+            - object
+          description: >-
+            The settings for the container
+
+            under which the task runs. If the pool that will run this task has
+
+            containerConfiguration set, this must be set as well. If the pool
+            that will
+
+            run this task doesn't have containerConfiguration set, this must not
+            be set.
+
+            When this is specified, all directories recursively below the
+
+            AZ_BATCH_NODE_ROOT_DIR (the root of Azure Batch directories on the
+            node) are
+
+            mapped into the container, all task environment variables are mapped
+            into
+
+            the container, and the task command line is executed in the
+            container.
+          optional: true
+        - id: task.containerSettings.containerRunOptions
+          type:
+            - string
+          description: >-
+            Additional
+
+            options to the container create command. These additional options
+            are
+
+            supplied as arguments to the "docker create" command, in addition to
+            those
+
+            controlled by the Batch Service.
+          optional: true
+        - id: task.containerSettings.imageName
+          type:
+            - string
+          description: >-
+            The image to use to create
+
+            the container in which the task will run. This is the full image
+            reference,
+
+            as would be specified to "docker pull". If no tag is provided as
+            part of the
+
+            image name, the tag ":latest" is used as a default.
+        - id: task.containerSettings.registry
+          type:
+            - object
+          description: >-
+            The private registry which
+
+            contains the container image. This setting can be omitted if was
+            already
+
+            provided at pool creation.
+          optional: true
+        - id: task.containerSettings.registry.registryServer
+          type:
+            - string
+          description: |-
+            The
+            registry URL. If omitted, the default is "docker.io".
+          optional: true
+        - id: task.containerSettings.registry.userName
+          type:
+            - string
+          description: |-
+            The user name to
+            log into the registry server.
+        - id: task.containerSettings.registry.password
+          type:
+            - string
+          description: |-
+            The password to log
+            into the registry server.
         - id: task.exitConditions
           type:
             - object
@@ -845,22 +1085,35 @@ items:
 
             condition and the job's onTaskFailed property is
 
-            'performExitOptionsJobAction'. The default is none for exit code 0
-            and
+            'performExitOptionsJobAction'. Values are:
 
-            terminate for all other exit conditions. If the job's onTaskFailed
-            property
 
-            is noAction, then specify this property returns an error. The add
-            task
+            none - Take no action.
 
-            request fails with an invalid property value error;; if you are
-            calling the
+            disable - Disable the job. This is equivalent to calling the disable
+            job
 
-            REST API directly, the HTTP status code is 400 (Bad Request).
-            Possible
+            API, with a disableTasks value of requeue.
 
-            values include: 'none', 'disable', 'terminate'
+            terminate - Terminate the job. The terminateReason in the job's
+
+            executionInfo is set to "TaskFailed". The default is none for exit
+            code 0
+
+            and terminate for all other exit conditions.
+
+
+            If the job's onTaskFailed property is noAction, then specifying this
+
+            property returns an error and the add task request fails with an
+            invalid
+
+            property value error; if you are calling the REST API directly, the
+            HTTP
+
+            status code is 400 (Bad Request). Possible values include: 'none',
+
+            'disable', 'terminate'
           optional: true
         - id: task.exitConditions.default.dependencyAction
           type:
@@ -869,14 +1122,23 @@ items:
             An action
 
             that the Batch service performs on tasks that depend on this task.
-            The
+            Values
 
-            default is 'satisfy' for exit code 0, and 'block' for all other exit
+            are:
+
+
+            satisfy - Satisfy the task's dependencies.
+
+            block - Block the task's dependencies.
+
+
+            The default is 'satisfy' for exit code 0, and 'block' for all other
+            exit
 
             conditions. If the job's usesTaskDependencies property is set to
             false, then
 
-            specifying the dependencyAction property returns an error. The add
+            specifying the dependencyAction property returns an erro and the add
             task
 
             request fails with an invalid property value error; if you are
@@ -940,10 +1202,16 @@ items:
             the location of a compute node or a task that has run previously.
             You can
 
-            pass the affinityId of a compute node or task to indicate that this
-            task
+            pass the affinityId of a compute node to indicate that this task
+            needs to
 
-            needs to be placed close to the node or task.
+            run on that compute node. Note that this is just a soft affinity. If
+            the
+
+            target node is busy or unavailable at the time the task is
+            scheduled, then
+
+            the task will be scheduled elsewhere.
         - id: task.constraints
           type:
             - object
@@ -1058,16 +1326,18 @@ items:
           description: >-
             The scope for the auto
 
-            user pool - specifies that the task runs as the common auto user
-            account
+            user Values are:
 
-            which is created on every node in a pool. task - specifies that the
-            service
 
-            should create a new user for the task. The default value is task.
-            Possible
+            pool - specifies that the task runs as the common auto user account
+            which is
 
-            values include: 'task', 'pool'
+            created on every node in a pool.
+
+            task - specifies that the service should create a new user for the
+            task.
+
+            The default value is task. Possible values include: 'task', 'pool'
           optional: true
         - id: task.userIdentity.autoUser.elevationLevel
           type:
@@ -1102,7 +1372,8 @@ items:
             - number
           description: |-
             The number of
-            compute nodes required by the task.
+            compute nodes required by the task. If omitted, the default is 1.
+          optional: true
         - id: task.multiInstanceSettings.coordinationCommandLine
           type:
             - string
@@ -1119,7 +1390,6 @@ items:
             ready to
 
             process inter-node messages.
-          optional: true
         - id: task.multiInstanceSettings.commonResourceFiles
           type:
             - array
@@ -1137,7 +1407,12 @@ items:
             including the primary, whereas task resource files are downloaded
             only for
 
-            the primary.
+            the primary. Also note that these resource files are not downloaded
+            to the
+
+            task working directory, but instead are downloaded to the task root
+
+            directory (one directory above the working directory).
           optional: true
         - id: task.dependsOn
           type:
@@ -1167,7 +1442,19 @@ items:
             depends on. All tasks in this list must complete successfully before
             the
 
-            dependent task can be scheduled.
+            dependent task can be scheduled. The taskIds collection is limited
+            to 64000
+
+            characters total (i.e. the combined length of all task IDs). If the
+            taskIds
+
+            collection exceeds the maximum length, the Add Task request fails
+            with error
+
+            code TaskDependencyListTooLong. In this case consider using task ID
+            ranges
+
+            instead.
           optional: true
         - id: task.dependsOn.taskIdRanges
           type:
@@ -1189,7 +1476,22 @@ items:
             packages that the Batch service will deploy to the compute node
             before
 
-            running the command line.
+            running the command line. Application packages are downloaded and
+            deployed
+
+            to a shared directory, not the task working directory. Therefore, if
+            a
+
+            referenced package is already on the compute node, and is up to
+            date, then
+
+            it is not re-downloaded; the existing copy on the compute node is
+            used. If a
+
+            referenced application package cannot be installed, for example
+            because the
+
+            package has been deleted or because download failed, the task fails.
           optional: true
         - id: task.authenticationTokenSettings
           type:
@@ -1615,11 +1917,25 @@ items:
 
       to the user to correctly handle failures when re-issuing a request. For
 
-      example, you should use the same task ids during a retry so that if the
+      example, you should use the same task IDs during a retry so that if the
 
       prior operation succeeded, the retry will not create extra tasks
 
-      unexpectedly.
+      unexpectedly. If the response contains any tasks which failed to add, a
+
+      client can retry the request. In a retry, it is most efficient to resubmit
+
+      only tasks that failed to add, and to omit tasks that were successfully
+
+      added on the first attempt. The maximum lifetime of a task from addition
+      to
+
+      completion is 7 days. If a task has not completed within 7 days of being
+
+      added it will be terminated by the Batch service and left in whatever
+      state
+
+      it was in at that time.
     fullName: >-
       azure-batch.Task.addCollectionWithHttpOperationResponse(jobId, value,
       options)
@@ -1648,7 +1964,18 @@ items:
         - id: value
           type:
             - array
-          description: The collection of tasks to add.
+          description: >-
+            The collection of tasks to add. The total serialized
+
+            size of this collection must be less than 4MB. If it is greater than
+            4MB
+
+            (for example if each task has 100's of resource files or environment
+
+            variables), the request will fail with code 'RequestBodyTooLarge'
+            and should
+
+            be retried again with fewer tasks.
         - id: options
           type:
             - object
@@ -1740,11 +2067,25 @@ items:
 
       to the user to correctly handle failures when re-issuing a request. For
 
-      example, you should use the same task ids during a retry so that if the
+      example, you should use the same task IDs during a retry so that if the
 
       prior operation succeeded, the retry will not create extra tasks
 
-      unexpectedly.
+      unexpectedly. If the response contains any tasks which failed to add, a
+
+      client can retry the request. In a retry, it is most efficient to resubmit
+
+      only tasks that failed to add, and to omit tasks that were successfully
+
+      added on the first attempt. The maximum lifetime of a task from addition
+      to
+
+      completion is 7 days. If a task has not completed within 7 days of being
+
+      added it will be terminated by the Batch service and left in whatever
+      state
+
+      it was in at that time.
     fullName: 'azure-batch.Task.addCollection(jobId, value, options, optionalCallback)'
     tags:
       - originalTitle: resolve
@@ -1793,7 +2134,18 @@ items:
         - id: value
           type:
             - array
-          description: The collection of tasks to add.
+          description: >-
+            The collection of tasks to add. The total serialized
+
+            size of this collection must be less than 4MB. If it is greater than
+            4MB
+
+            (for example if each task has 100's of resource files or environment
+
+            variables), the request will fail with code 'RequestBodyTooLarge'
+            and should
+
+            be retried again with fewer tasks.
         - id: options
           type:
             - object
@@ -2624,9 +2976,16 @@ items:
         - id: options.constraints
           type:
             - object
-          description: |-
+          description: >-
             Constraints that apply to this task.
-            If omitted, the task is given the default constraints.
+
+            If omitted, the task is given the default constraints. For
+            multi-instance
+
+            tasks, updating the retention time applies only to the primary task
+            and not
+
+            subtasks.
           optional: true
         - id: options.constraints.maxWallClockTime
           type:
@@ -2862,9 +3221,16 @@ items:
         - id: options.constraints
           type:
             - object
-          description: |-
+          description: >-
             Constraints that apply to this task.
-            If omitted, the task is given the default constraints.
+
+            If omitted, the task is given the default constraints. For
+            multi-instance
+
+            tasks, updating the retention time applies only to the primary task
+            and not
+
+            subtasks.
           optional: true
         - id: options.constraints.maxWallClockTime
           type:
@@ -3657,7 +4023,9 @@ items:
     parent: azure-batch.Task
     name: 'reactivateWithHttpOperationResponse(jobId, taskId, options)'
     summary: >-
-      Reactivates the specified task.
+      Reactivates a task, allowing it to run again even if its retry
+
+      count has been exhausted.
 
 
       Reactivation makes a task eligible to be retried again up to its maximum
@@ -3665,14 +4033,16 @@ items:
       retry count. The task's state is changed to active. As the task is no
       longer
 
-      in the completed state, any previous exit code or scheduling error is no
+      in the completed state, any previous exit code or failure information is
+      no
 
-      longer available after reactivation. This will fail for tasks that are not
+      longer available after reactivation. Each time a task is reactivated, its
+
+      retry count is reset to 0. Reactivation will fail for tasks that are not
 
       completed or that previously completed successfully (with an exit code of
 
-      0). Additionally, this will fail if the job has completed (or is
-      terminating
+      0). Additionally, it will fail if the job has completed (or is terminating
 
       or deleting).
     fullName: >-
@@ -3823,7 +4193,9 @@ items:
     parent: azure-batch.Task
     name: 'reactivate(jobId, taskId, options, optionalCallback)'
     summary: >-
-      Reactivates the specified task.
+      Reactivates a task, allowing it to run again even if its retry
+
+      count has been exhausted.
 
 
       Reactivation makes a task eligible to be retried again up to its maximum
@@ -3831,14 +4203,16 @@ items:
       retry count. The task's state is changed to active. As the task is no
       longer
 
-      in the completed state, any previous exit code or scheduling error is no
+      in the completed state, any previous exit code or failure information is
+      no
 
-      longer available after reactivation. This will fail for tasks that are not
+      longer available after reactivation. Each time a task is reactivated, its
+
+      retry count is reset to 0. Reactivation will fail for tasks that are not
 
       completed or that previously completed successfully (with an exit code of
 
-      0). Additionally, this will fail if the job has completed (or is
-      terminating
+      0). Additionally, it will fail if the job has completed (or is terminating
 
       or deleting).
     fullName: 'azure-batch.Task.reactivate(jobId, taskId, options, optionalCallback)'

@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-mediaservices.MediaServicesManagementClient
     id: azure-arm-mediaservices.MediaServicesManagementClient
     name: MediaServicesManagementClient
-    summary: Initializes a new instance of the MediaServicesManagementClient class.
+    summary: Class representing a MediaServicesManagementClient.
     fullName: azure-arm-mediaservices.MediaServicesManagementClient
     type: Class
     children:
@@ -19,7 +19,7 @@ items:
     fullName: >-
       azure-arm-mediaservices.MediaServicesManagementClient.MediaServicesManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a MediaServicesManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -59,13 +59,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: >-
-            Version of the API to be used with the client request. Current
-            version is 2015-10-01
           optional: true
         - id: options.acceptLanguage
           type:

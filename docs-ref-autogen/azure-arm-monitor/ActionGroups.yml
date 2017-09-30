@@ -3,20 +3,24 @@ items:
   - uid: azure-arm-monitor.ActionGroups
     id: azure-arm-monitor.ActionGroups
     name: ActionGroups
-    summary: |-
-      ActionGroups
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the MonitorManagementClient.
-      Initializes a new instance of the ActionGroups class.
+    summary: Class representing a ActionGroups.
     fullName: azure-arm-monitor.ActionGroups
     type: Class
     children:
       - 'azure-arm-monitor.ActionGroups.#ctor'
+      - 'azure-arm-monitor.ActionGroups#createOrUpdateWithHttpOperationResponse'
       - 'azure-arm-monitor.ActionGroups#createOrUpdate'
+      - 'azure-arm-monitor.ActionGroups#getWithHttpOperationResponse'
       - 'azure-arm-monitor.ActionGroups#get'
+      - 'azure-arm-monitor.ActionGroups#deleteMethodWithHttpOperationResponse'
       - 'azure-arm-monitor.ActionGroups#deleteMethod'
+      - >-
+        azure-arm-monitor.ActionGroups#listBySubscriptionIdWithHttpOperationResponse
       - 'azure-arm-monitor.ActionGroups#listBySubscriptionId'
+      - >-
+        azure-arm-monitor.ActionGroups#listByResourceGroupWithHttpOperationResponse
       - 'azure-arm-monitor.ActionGroups#listByResourceGroup'
+      - 'azure-arm-monitor.ActionGroups#enableReceiverWithHttpOperationResponse'
       - 'azure-arm-monitor.ActionGroups#enableReceiver'
     langs:
       - js
@@ -25,7 +29,7 @@ items:
     parent: azure-arm-monitor.ActionGroups
     name: ActionGroups(client)
     fullName: azure-arm-monitor.ActionGroups.ActionGroups(client)
-    summary: ''
+    summary: Create a ActionGroups.
     type: Constructor
     syntax:
       parameters:
@@ -36,16 +40,29 @@ items:
       content: new ActionGroups(client)
     langs:
       - js
-  - uid: 'azure-arm-monitor.ActionGroups#createOrUpdate'
-    id: 'azure-arm-monitor.ActionGroups#createOrUpdate'
+  - uid: 'azure-arm-monitor.ActionGroups#createOrUpdateWithHttpOperationResponse'
+    id: 'azure-arm-monitor.ActionGroups#createOrUpdateWithHttpOperationResponse'
     parent: azure-arm-monitor.ActionGroups
     name: >-
-      createOrUpdate(resourceGroupName, actionGroupName, actionGroup, options,
-      callback)
+      createOrUpdateWithHttpOperationResponse(resourceGroupName,
+      actionGroupName, actionGroup, options)
     summary: Create a new action group or update an existing one.
     fullName: >-
-      azure-arm-monitor.ActionGroups.createOrUpdate(resourceGroupName,
-      actionGroupName, actionGroup, options, callback)
+      azure-arm-monitor.ActionGroups.createOrUpdateWithHttpOperationResponse(resourceGroupName,
+      actionGroupName, actionGroup, options)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<ActionGroupResource>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<ActionGroupResource>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -76,7 +93,7 @@ items:
             Indicates whether this action group is
 
             enabled. If an action group is not enabled, then none of its
-            receviers will
+            receivers will
 
             receive communications.
         - id: actionGroup.emailReceivers
@@ -121,37 +138,246 @@ items:
             Headers that will be added to the
             request
           optional: true
-        - id: callback
-          type:
-            - function
-          description: ''
       return:
         type:
-          - function
-        description: |-
-          callback(err, result, request, response)
+          - Promise
+        description: A promise is returned
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName,
+        actionGroupName, actionGroup, options)
+    langs:
+      - js
+  - uid: 'azure-arm-monitor.ActionGroups#createOrUpdate'
+    id: 'azure-arm-monitor.ActionGroups#createOrUpdate'
+    parent: azure-arm-monitor.ActionGroups
+    name: >-
+      createOrUpdate(resourceGroupName, actionGroupName, actionGroup, options,
+      optionalCallback)
+    summary: Create a new action group or update an existing one.
+    fullName: >-
+      azure-arm-monitor.ActionGroups.createOrUpdate(resourceGroupName,
+      actionGroupName, actionGroup, options, optionalCallback)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{ActionGroupResource} - The deserialized result object.'
+        value: '{ActionGroupResource} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
 
                                {Error}  err        - The Error object if an error occurred, null otherwise.
 
-                               {object} [result]   - The deserialized result object.
-                               See <xref:azure-arm-monitor.ActionGroupResource> for more information.
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ActionGroupResource} for more information.
 
                                {object} [request]  - The HTTP Request object if an error did not occur.
 
                                {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ActionGroupResource} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: actionGroupName
+          type:
+            - string
+          description: The name of the action group.
+        - id: actionGroup
+          type:
+            - object
+          description: |-
+            The action group to create or use for the
+            update.
+        - id: actionGroup.groupShortName
+          type:
+            - string
+          description: |-
+            The short name of the action
+            group. This will be used in SMS messages.
+        - id: actionGroup.enabled
+          type:
+            - boolean
+          description: >-
+            Indicates whether this action group is
+
+            enabled. If an action group is not enabled, then none of its
+            receivers will
+
+            receive communications.
+        - id: actionGroup.emailReceivers
+          type:
+            - array
+          description: |-
+            The list of email receivers that
+            are part of this action group.
+          optional: true
+        - id: actionGroup.smsReceivers
+          type:
+            - array
+          description: |-
+            The list of SMS receivers that are
+            part of this action group.
+          optional: true
+        - id: actionGroup.webhookReceivers
+          type:
+            - array
+          description: |-
+            The list of webhook receivers
+            that are part of this action group.
+          optional: true
+        - id: actionGroup.location
+          type:
+            - string
+          description: Resource location
+        - id: actionGroup.tags
+          type:
+            - object
+          description: Resource tags
+          optional: true
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: optionalCallback
+          type:
+            - function
+          description: The optional callback.
+          optional: true
+      return:
+        type:
+          - function
+          - Promise
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function createOrUpdate(resourceGroupName, actionGroupName, actionGroup,
-        options, callback)
+        options, optionalCallback)
+    langs:
+      - js
+  - uid: 'azure-arm-monitor.ActionGroups#getWithHttpOperationResponse'
+    id: 'azure-arm-monitor.ActionGroups#getWithHttpOperationResponse'
+    parent: azure-arm-monitor.ActionGroups
+    name: 'getWithHttpOperationResponse(resourceGroupName, actionGroupName, options)'
+    summary: Get an action group.
+    fullName: >-
+      azure-arm-monitor.ActionGroups.getWithHttpOperationResponse(resourceGroupName,
+      actionGroupName, options)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<ActionGroupResource>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<ActionGroupResource>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: actionGroupName
+          type:
+            - string
+          description: The name of the action group.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+      return:
+        type:
+          - Promise
+        description: A promise is returned
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName,
+        actionGroupName, options)
     langs:
       - js
   - uid: 'azure-arm-monitor.ActionGroups#get'
     id: 'azure-arm-monitor.ActionGroups#get'
     parent: azure-arm-monitor.ActionGroups
-    name: 'get(resourceGroupName, actionGroupName, options, callback)'
+    name: 'get(resourceGroupName, actionGroupName, options, optionalCallback)'
     summary: Get an action group.
     fullName: >-
       azure-arm-monitor.ActionGroups.get(resourceGroupName, actionGroupName,
-      options, callback)
+      options, optionalCallback)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{ActionGroupResource} - The deserialized result object.'
+        value: '{ActionGroupResource} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ActionGroupResource} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ActionGroupResource} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -175,35 +401,117 @@ items:
             Headers that will be added to the
             request
           optional: true
-        - id: callback
+        - id: optionalCallback
           type:
             - function
-          description: ''
+          description: The optional callback.
+          optional: true
       return:
         type:
           - function
+          - Promise
         description: |-
-          callback(err, result, request, response)
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
 
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object.
-                               See <xref:azure-arm-monitor.ActionGroupResource> for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-      content: 'function get(resourceGroupName, actionGroupName, options, callback)'
+          {Promise} A promise is returned
+      content: >-
+        function get(resourceGroupName, actionGroupName, options,
+        optionalCallback)
+    langs:
+      - js
+  - uid: 'azure-arm-monitor.ActionGroups#deleteMethodWithHttpOperationResponse'
+    id: 'azure-arm-monitor.ActionGroups#deleteMethodWithHttpOperationResponse'
+    parent: azure-arm-monitor.ActionGroups
+    name: >-
+      deleteMethodWithHttpOperationResponse(resourceGroupName, actionGroupName,
+      options)
+    summary: Delete an action group.
+    fullName: >-
+      azure-arm-monitor.ActionGroups.deleteMethodWithHttpOperationResponse(resourceGroupName,
+      actionGroupName, options)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: actionGroupName
+          type:
+            - string
+          description: The name of the action group.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+      return:
+        type:
+          - Promise
+        description: A promise is returned
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName,
+        actionGroupName, options)
     langs:
       - js
   - uid: 'azure-arm-monitor.ActionGroups#deleteMethod'
     id: 'azure-arm-monitor.ActionGroups#deleteMethod'
     parent: azure-arm-monitor.ActionGroups
-    name: 'deleteMethod(resourceGroupName, actionGroupName, options, callback)'
+    name: >-
+      deleteMethod(resourceGroupName, actionGroupName, options,
+      optionalCallback)
     summary: Delete an action group.
     fullName: >-
       azure-arm-monitor.ActionGroups.deleteMethod(resourceGroupName,
-      actionGroupName, options, callback)
+      actionGroupName, options, optionalCallback)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
     type: Function
     syntax:
       parameters:
@@ -227,34 +535,47 @@ items:
             Headers that will be added to the
             request
           optional: true
-        - id: callback
+        - id: optionalCallback
           type:
             - function
-          description: ''
+          description: The optional callback.
+          optional: true
       return:
         type:
           - function
+          - Promise
         description: |-
-          callback(err, result, request, response)
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
 
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {null} [result]   - The deserialized result object.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
+          {Promise} A promise is returned
       content: >-
         function deleteMethod(resourceGroupName, actionGroupName, options,
-        callback)
+        optionalCallback)
     langs:
       - js
-  - uid: 'azure-arm-monitor.ActionGroups#listBySubscriptionId'
-    id: 'azure-arm-monitor.ActionGroups#listBySubscriptionId'
+  - uid: >-
+      azure-arm-monitor.ActionGroups#listBySubscriptionIdWithHttpOperationResponse
+    id: >-
+      azure-arm-monitor.ActionGroups#listBySubscriptionIdWithHttpOperationResponse
     parent: azure-arm-monitor.ActionGroups
-    name: 'listBySubscriptionId(options, callback)'
+    name: listBySubscriptionIdWithHttpOperationResponse(options)
     summary: Get a list of all action groups in a subscription.
-    fullName: 'azure-arm-monitor.ActionGroups.listBySubscriptionId(options, callback)'
+    fullName: >-
+      azure-arm-monitor.ActionGroups.listBySubscriptionIdWithHttpOperationResponse(options)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<ActionGroupList>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<ActionGroupList>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -270,35 +591,109 @@ items:
             Headers that will be added to the
             request
           optional: true
-        - id: callback
-          type:
-            - function
-          description: ''
       return:
         type:
-          - function
-        description: |-
-          callback(err, result, request, response)
+          - Promise
+        description: A promise is returned
+      content: function listBySubscriptionIdWithHttpOperationResponse(options)
+    langs:
+      - js
+  - uid: 'azure-arm-monitor.ActionGroups#listBySubscriptionId'
+    id: 'azure-arm-monitor.ActionGroups#listBySubscriptionId'
+    parent: azure-arm-monitor.ActionGroups
+    name: 'listBySubscriptionId(options, optionalCallback)'
+    summary: Get a list of all action groups in a subscription.
+    fullName: >-
+      azure-arm-monitor.ActionGroups.listBySubscriptionId(options,
+      optionalCallback)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{ActionGroupList} - The deserialized result object.'
+        value: '{ActionGroupList} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
 
                                {Error}  err        - The Error object if an error occurred, null otherwise.
 
-                               {object} [result]   - The deserialized result object.
-                               See <xref:azure-arm-monitor.ActionGroupList> for more information.
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ActionGroupList} for more information.
 
                                {object} [request]  - The HTTP Request object if an error did not occur.
 
                                {stream} [response] - The HTTP Response stream if an error did not occur.
-      content: 'function listBySubscriptionId(options, callback)'
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ActionGroupList} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    type: Function
+    syntax:
+      parameters:
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: optionalCallback
+          type:
+            - function
+          description: The optional callback.
+          optional: true
+      return:
+        type:
+          - function
+          - Promise
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
+      content: 'function listBySubscriptionId(options, optionalCallback)'
     langs:
       - js
-  - uid: 'azure-arm-monitor.ActionGroups#listByResourceGroup'
-    id: 'azure-arm-monitor.ActionGroups#listByResourceGroup'
+  - uid: >-
+      azure-arm-monitor.ActionGroups#listByResourceGroupWithHttpOperationResponse
+    id: >-
+      azure-arm-monitor.ActionGroups#listByResourceGroupWithHttpOperationResponse
     parent: azure-arm-monitor.ActionGroups
-    name: 'listByResourceGroup(resourceGroupName, options, callback)'
+    name: 'listByResourceGroupWithHttpOperationResponse(resourceGroupName, options)'
     summary: Get a list of all action groups in a resource group.
     fullName: >-
-      azure-arm-monitor.ActionGroups.listByResourceGroup(resourceGroupName,
-      options, callback)
+      azure-arm-monitor.ActionGroups.listByResourceGroupWithHttpOperationResponse(resourceGroupName,
+      options)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<ActionGroupList>} - The deserialized result
+          object.
+        value: >-
+          {HttpOperationResponse<ActionGroupList>} - The deserialized result
+          object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -318,39 +713,115 @@ items:
             Headers that will be added to the
             request
           optional: true
-        - id: callback
-          type:
-            - function
-          description: ''
       return:
         type:
-          - function
-        description: |-
-          callback(err, result, request, response)
+          - Promise
+        description: A promise is returned
+      content: >-
+        function listByResourceGroupWithHttpOperationResponse(resourceGroupName,
+        options)
+    langs:
+      - js
+  - uid: 'azure-arm-monitor.ActionGroups#listByResourceGroup'
+    id: 'azure-arm-monitor.ActionGroups#listByResourceGroup'
+    parent: azure-arm-monitor.ActionGroups
+    name: 'listByResourceGroup(resourceGroupName, options, optionalCallback)'
+    summary: Get a list of all action groups in a resource group.
+    fullName: >-
+      azure-arm-monitor.ActionGroups.listByResourceGroup(resourceGroupName,
+      options, optionalCallback)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{ActionGroupList} - The deserialized result object.'
+        value: '{ActionGroupList} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
 
                                {Error}  err        - The Error object if an error occurred, null otherwise.
 
-                               {object} [result]   - The deserialized result object.
-                               See <xref:azure-arm-monitor.ActionGroupList> for more information.
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ActionGroupList} for more information.
 
                                {object} [request]  - The HTTP Request object if an error did not occur.
 
                                {stream} [response] - The HTTP Response stream if an error did not occur.
-      content: 'function listByResourceGroup(resourceGroupName, options, callback)'
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ActionGroupList} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: optionalCallback
+          type:
+            - function
+          description: The optional callback.
+          optional: true
+      return:
+        type:
+          - function
+          - Promise
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
+      content: >-
+        function listByResourceGroup(resourceGroupName, options,
+        optionalCallback)
     langs:
       - js
-  - uid: 'azure-arm-monitor.ActionGroups#enableReceiver'
-    id: 'azure-arm-monitor.ActionGroups#enableReceiver'
+  - uid: 'azure-arm-monitor.ActionGroups#enableReceiverWithHttpOperationResponse'
+    id: 'azure-arm-monitor.ActionGroups#enableReceiverWithHttpOperationResponse'
     parent: azure-arm-monitor.ActionGroups
     name: >-
-      enableReceiver(resourceGroupName, actionGroupName, receiverName, options,
-      callback)
+      enableReceiverWithHttpOperationResponse(resourceGroupName,
+      actionGroupName, receiverName, options)
     summary: |-
       Enable a receiver in an action group. This changes the receiver's status
       from Disabled to Enabled.
     fullName: >-
-      azure-arm-monitor.ActionGroups.enableReceiver(resourceGroupName,
-      actionGroupName, receiverName, options, callback)
+      azure-arm-monitor.ActionGroups.enableReceiverWithHttpOperationResponse(resourceGroupName,
+      actionGroupName, receiverName, options)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<null>} - The deserialized result object.'
+        value: '{HttpOperationResponse<null>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
     type: Function
     syntax:
       parameters:
@@ -378,26 +849,102 @@ items:
             Headers that will be added to the
             request
           optional: true
-        - id: callback
-          type:
-            - function
-          description: ''
       return:
         type:
-          - function
-        description: |-
-          callback(err, result, request, response)
+          - Promise
+        description: A promise is returned
+      content: >-
+        function enableReceiverWithHttpOperationResponse(resourceGroupName,
+        actionGroupName, receiverName, options)
+    langs:
+      - js
+  - uid: 'azure-arm-monitor.ActionGroups#enableReceiver'
+    id: 'azure-arm-monitor.ActionGroups#enableReceiver'
+    parent: azure-arm-monitor.ActionGroups
+    name: >-
+      enableReceiver(resourceGroupName, actionGroupName, receiverName, options,
+      optionalCallback)
+    summary: |-
+      Enable a receiver in an action group. This changes the receiver's status
+      from Disabled to Enabled.
+    fullName: >-
+      azure-arm-monitor.ActionGroups.enableReceiver(resourceGroupName,
+      actionGroupName, receiverName, options, optionalCallback)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{null} - The deserialized result object.'
+        value: '{null} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
 
                                {Error}  err        - The Error object if an error occurred, null otherwise.
 
-                               {null} [result]   - The deserialized result object.
+                               {null} [result]   - The deserialized result object if an error did not occur.
 
                                {object} [request]  - The HTTP Request object if an error did not occur.
 
                                {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: actionGroupName
+          type:
+            - string
+          description: The name of the action group.
+        - id: receiverName
+          type:
+            - string
+          description: The name of the receiver to resubscribe.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: optionalCallback
+          type:
+            - function
+          description: The optional callback.
+          optional: true
+      return:
+        type:
+          - function
+          - Promise
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
       content: >-
         function enableReceiver(resourceGroupName, actionGroupName,
-        receiverName, options, callback)
+        receiverName, options, optionalCallback)
     langs:
       - js
 references:

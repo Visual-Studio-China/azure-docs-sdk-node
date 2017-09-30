@@ -3,11 +3,7 @@ items:
   - uid: azure-batch.ComputeNodeOperations
     id: azure-batch.ComputeNodeOperations
     name: ComputeNodeOperations
-    summary: |-
-      ComputeNodeOperations
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the BatchServiceClient.
-      Initializes a new instance of the ComputeNodeOperations class.
+    summary: Class representing a ComputeNodeOperations.
     fullName: azure-batch.ComputeNodeOperations
     type: Class
     children:
@@ -47,7 +43,7 @@ items:
     parent: azure-batch.ComputeNodeOperations
     name: ComputeNodeOperations(client)
     fullName: azure-batch.ComputeNodeOperations.ComputeNodeOperations(client)
-    summary: ''
+    summary: Create a ComputeNodeOperations.
     type: Constructor
     syntax:
       parameters:
@@ -673,7 +669,7 @@ items:
       updateUserWithHttpOperationResponse(poolId, nodeId, userName,
       nodeUpdateUserParameter, options)
     summary: >-
-      Updates the password or expiration time of a user account on the
+      Updates the password and expiration time of a user account on the
 
       specified compute node.
 
@@ -851,7 +847,7 @@ items:
       updateUser(poolId, nodeId, userName, nodeUpdateUserParameter, options,
       optionalCallback)
     summary: >-
-      Updates the password or expiration time of a user account on the
+      Updates the password and expiration time of a user account on the
 
       specified compute node.
 
@@ -1336,12 +1332,39 @@ items:
           description: >-
             When to reboot the compute node
 
-            and what to do with currently running tasks. The default value is
-            requeue.
+            and what to do with currently running tasks. Values are:
 
-            Possible values include: 'requeue', 'terminate', 'taskCompletion',
 
-            'retainedData'
+            requeue - Terminate running task processes and requeue the tasks.
+            The tasks
+
+            will run again when a node is available. Restart the node as soon as
+            tasks
+
+            have been terminated.
+
+            terminate - Terminate running tasks. The tasks will not run again.
+            Restart
+
+            the node as soon as tasks have been terminated.
+
+            taskcompletion - Allow currently running tasks to complete. Schedule
+            no new
+
+            tasks while waiting. Restart the node when all tasks have completed.
+
+            retaineddata - Allow currently running tasks to complete, then wait
+            for all
+
+            task data retention periods to expire. Schedule no new tasks while
+            waiting.
+
+            Restart the node when all task retention periods have expired.
+
+
+            The default value is requeue. Possible values include: 'requeue',
+
+            'terminate', 'taskCompletion', 'retainedData'
           optional: true
         - id: options.computeNodeRebootOptions
           type:
@@ -1470,12 +1493,39 @@ items:
           description: >-
             When to reboot the compute node
 
-            and what to do with currently running tasks. The default value is
-            requeue.
+            and what to do with currently running tasks. Values are:
 
-            Possible values include: 'requeue', 'terminate', 'taskCompletion',
 
-            'retainedData'
+            requeue - Terminate running task processes and requeue the tasks.
+            The tasks
+
+            will run again when a node is available. Restart the node as soon as
+            tasks
+
+            have been terminated.
+
+            terminate - Terminate running tasks. The tasks will not run again.
+            Restart
+
+            the node as soon as tasks have been terminated.
+
+            taskcompletion - Allow currently running tasks to complete. Schedule
+            no new
+
+            tasks while waiting. Restart the node when all tasks have completed.
+
+            retaineddata - Allow currently running tasks to complete, then wait
+            for all
+
+            task data retention periods to expire. Schedule no new tasks while
+            waiting.
+
+            Restart the node when all task retention periods have expired.
+
+
+            The default value is requeue. Possible values include: 'requeue',
+
+            'terminate', 'taskCompletion', 'retainedData'
           optional: true
         - id: options.computeNodeRebootOptions
           type:
@@ -1599,12 +1649,39 @@ items:
           description: >-
             When to reimage the compute node
 
-            and what to do with currently running tasks. The default value is
-            requeue.
+            and what to do with currently running tasks. Values are:
 
-            Possible values include: 'requeue', 'terminate', 'taskCompletion',
 
-            'retainedData'
+            requeue - Terminate running task processes and requeue the tasks.
+            The tasks
+
+            will run again when a node is available. Reimage the node as soon as
+            tasks
+
+            have been terminated.
+
+            terminate - Terminate running tasks. The tasks will not run again.
+            Reimage
+
+            the node as soon as tasks have been terminated.
+
+            taskcompletion - Allow currently running tasks to complete. Schedule
+            no new
+
+            tasks while waiting. Reimage the node when all tasks have completed.
+
+            retaineddata - Allow currently running tasks to complete, then wait
+            for all
+
+            task data retention periods to expire. Schedule no new tasks while
+            waiting.
+
+            Reimage the node when all task retention periods have expired.
+
+
+            The default value is requeue. Possible values include: 'requeue',
+
+            'terminate', 'taskCompletion', 'retainedData'
           optional: true
         - id: options.computeNodeReimageOptions
           type:
@@ -1740,12 +1817,39 @@ items:
           description: >-
             When to reimage the compute node
 
-            and what to do with currently running tasks. The default value is
-            requeue.
+            and what to do with currently running tasks. Values are:
 
-            Possible values include: 'requeue', 'terminate', 'taskCompletion',
 
-            'retainedData'
+            requeue - Terminate running task processes and requeue the tasks.
+            The tasks
+
+            will run again when a node is available. Reimage the node as soon as
+            tasks
+
+            have been terminated.
+
+            terminate - Terminate running tasks. The tasks will not run again.
+            Reimage
+
+            the node as soon as tasks have been terminated.
+
+            taskcompletion - Allow currently running tasks to complete. Schedule
+            no new
+
+            tasks while waiting. Reimage the node when all tasks have completed.
+
+            retaineddata - Allow currently running tasks to complete, then wait
+            for all
+
+            task data retention periods to expire. Schedule no new tasks while
+            waiting.
+
+            Reimage the node when all task retention periods have expired.
+
+
+            The default value is requeue. Possible values include: 'requeue',
+
+            'terminate', 'taskCompletion', 'retainedData'
           optional: true
         - id: options.computeNodeReimageOptions
           type:
@@ -1826,7 +1930,11 @@ items:
       azure-batch.ComputeNodeOperations#disableSchedulingWithHttpOperationResponse
     parent: azure-batch.ComputeNodeOperations
     name: 'disableSchedulingWithHttpOperationResponse(poolId, nodeId, options)'
-    summary: Disables task scheduling on the specified compute node.
+    summary: |-
+      Disables task scheduling on the specified compute node.
+
+      You can disable task scheduling on a node only if its current scheduling
+      state is enabled.
     fullName: >-
       azure-batch.ComputeNodeOperations.disableSchedulingWithHttpOperationResponse(poolId,
       nodeId, options)
@@ -1865,6 +1973,30 @@ items:
 
             currently running tasks when disabling task scheduling on the
             compute node.
+
+            Values are:
+
+
+            requeue - Terminate running task processes and requeue the tasks.
+            The tasks
+
+            may run again on other compute nodes, or when task scheduling is
+            re-enabled
+
+            on this node. Enter offline state as soon as tasks have been
+            terminated.
+
+            terminate - Terminate running tasks. The tasks will not run again.
+            Enter
+
+            offline state as soon as tasks have been terminated.
+
+            taskcompletion - Allow currently running tasks to complete. Schedule
+            no new
+
+            tasks while waiting. Enter offline state when all tasks have
+            completed.
+
 
             The default value is requeue. Possible values include: 'requeue',
 
@@ -1937,7 +2069,11 @@ items:
     id: 'azure-batch.ComputeNodeOperations#disableScheduling'
     parent: azure-batch.ComputeNodeOperations
     name: 'disableScheduling(poolId, nodeId, options, optionalCallback)'
-    summary: Disables task scheduling on the specified compute node.
+    summary: |-
+      Disables task scheduling on the specified compute node.
+
+      You can disable task scheduling on a node only if its current scheduling
+      state is enabled.
     fullName: >-
       azure-batch.ComputeNodeOperations.disableScheduling(poolId, nodeId,
       options, optionalCallback)
@@ -1998,6 +2134,30 @@ items:
 
             currently running tasks when disabling task scheduling on the
             compute node.
+
+            Values are:
+
+
+            requeue - Terminate running task processes and requeue the tasks.
+            The tasks
+
+            may run again on other compute nodes, or when task scheduling is
+            re-enabled
+
+            on this node. Enter offline state as soon as tasks have been
+            terminated.
+
+            terminate - Terminate running tasks. The tasks will not run again.
+            Enter
+
+            offline state as soon as tasks have been terminated.
+
+            taskcompletion - Allow currently running tasks to complete. Schedule
+            no new
+
+            tasks while waiting. Enter offline state when all tasks have
+            completed.
+
 
             The default value is requeue. Possible values include: 'requeue',
 
@@ -2080,7 +2240,11 @@ items:
       azure-batch.ComputeNodeOperations#enableSchedulingWithHttpOperationResponse
     parent: azure-batch.ComputeNodeOperations
     name: 'enableSchedulingWithHttpOperationResponse(poolId, nodeId, options)'
-    summary: Enables task scheduling on the specified compute node.
+    summary: |-
+      Enables task scheduling on the specified compute node.
+
+      You can enable task scheduling on a node only if its current scheduling
+      state is disabled
     fullName: >-
       azure-batch.ComputeNodeOperations.enableSchedulingWithHttpOperationResponse(poolId,
       nodeId, options)
@@ -2178,7 +2342,11 @@ items:
     id: 'azure-batch.ComputeNodeOperations#enableScheduling'
     parent: azure-batch.ComputeNodeOperations
     name: 'enableScheduling(poolId, nodeId, options, optionalCallback)'
-    summary: Enables task scheduling on the specified compute node.
+    summary: |-
+      Enables task scheduling on the specified compute node.
+
+      You can enable task scheduling on a node only if its current scheduling
+      state is disabled
     fullName: >-
       azure-batch.ComputeNodeOperations.enableScheduling(poolId, nodeId,
       options, optionalCallback)
@@ -2317,7 +2485,9 @@ items:
 
       must create a user account on the node. This API can be invoked only on
 
-      pools created with the virtual machine configuration property.
+      pools created with the virtual machine configuration property. For pools
+
+      created with a cloud service configuration, see the GetRemoteDesktop API.
     fullName: >-
       azure-batch.ComputeNodeOperations.getRemoteLoginSettingsWithHttpOperationResponse(poolId,
       nodeId, options)
@@ -2428,7 +2598,9 @@ items:
 
       must create a user account on the node. This API can be invoked only on
 
-      pools created with the virtual machine configuration property.
+      pools created with the virtual machine configuration property. For pools
+
+      created with a cloud service configuration, see the GetRemoteDesktop API.
     fullName: >-
       azure-batch.ComputeNodeOperations.getRemoteLoginSettings(poolId, nodeId,
       options, optionalCallback)
@@ -2568,18 +2740,14 @@ items:
       azure-batch.ComputeNodeOperations#getRemoteDesktopWithHttpOperationResponse
     parent: azure-batch.ComputeNodeOperations
     name: 'getRemoteDesktopWithHttpOperationResponse(poolId, nodeId, options)'
-    summary: >-
+    summary: |-
       Gets the Remote Desktop Protocol file for the specified compute
-
       node.
 
-
       Before you can access a node by using the RDP file, you must create a user
-
-      account on the node. This API can only be invoked on pools created with
-      the
-
-      cloud service configuration property.
+      account on the node. This API can only be invoked on pools created with a
+      cloud service configuration. For pools created with a virtual machine
+      configuration, see the GetRemoteLoginSettings API.
     fullName: >-
       azure-batch.ComputeNodeOperations.getRemoteDesktopWithHttpOperationResponse(poolId,
       nodeId, options)
@@ -2677,18 +2845,14 @@ items:
     id: 'azure-batch.ComputeNodeOperations#getRemoteDesktop'
     parent: azure-batch.ComputeNodeOperations
     name: 'getRemoteDesktop(poolId, nodeId, options, optionalCallback)'
-    summary: >-
+    summary: |-
       Gets the Remote Desktop Protocol file for the specified compute
-
       node.
 
-
       Before you can access a node by using the RDP file, you must create a user
-
-      account on the node. This API can only be invoked on pools created with
-      the
-
-      cloud service configuration property.
+      account on the node. This API can only be invoked on pools created with a
+      cloud service configuration. For pools created with a virtual machine
+      configuration, see the GetRemoteLoginSettings API.
     fullName: >-
       azure-batch.ComputeNodeOperations.getRemoteDesktop(poolId, nodeId,
       options, optionalCallback)

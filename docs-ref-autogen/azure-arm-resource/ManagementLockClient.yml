@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-resource.ManagementLockClient
     id: azure-arm-resource.ManagementLockClient
     name: ManagementLockClient
-    summary: Initializes a new instance of the ManagementLockClient class.
+    summary: Class representing a ManagementLockClient.
     fullName: azure-arm-resource.ManagementLockClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-resource.ManagementLockClient.ManagementLockClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a ManagementLockClient.
     type: Constructor
     syntax:
       parameters:
@@ -57,11 +57,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: The API version to use for the operation.
           optional: true
         - id: options.acceptLanguage
           type:

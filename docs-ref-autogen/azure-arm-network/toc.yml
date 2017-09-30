@@ -68,12 +68,38 @@
   name: ApplicationGatewayUrlPathMap
 - uid: azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration
   name: ApplicationGatewayWebApplicationFirewallConfiguration
+- uid: azure-arm-network.ApplicationSecurityGroup
+  name: ApplicationSecurityGroup
+- uid: azure-arm-network.ApplicationSecurityGroupListResult
+  name: ApplicationSecurityGroupListResult
+- uid: azure-arm-network.ApplicationSecurityGroups
+  name: ApplicationSecurityGroups
 - uid: azure-arm-network.AuthorizationListResult
   name: AuthorizationListResult
 - uid: azure-arm-network.AvailableEndpointServices
   name: AvailableEndpointServices
+- uid: azure-arm-network.AvailableProvidersList
+  name: AvailableProvidersList
+- uid: azure-arm-network.AvailableProvidersListCity
+  name: AvailableProvidersListCity
+- uid: azure-arm-network.AvailableProvidersListCountry
+  name: AvailableProvidersListCountry
+- uid: azure-arm-network.AvailableProvidersListParameters
+  name: AvailableProvidersListParameters
+- uid: azure-arm-network.AvailableProvidersListState
+  name: AvailableProvidersListState
 - uid: azure-arm-network.AzureAsyncOperationResult
   name: AzureAsyncOperationResult
+- uid: azure-arm-network.AzureReachabilityReport
+  name: AzureReachabilityReport
+- uid: azure-arm-network.AzureReachabilityReportItem
+  name: AzureReachabilityReportItem
+- uid: azure-arm-network.AzureReachabilityReportLatencyInfo
+  name: AzureReachabilityReportLatencyInfo
+- uid: azure-arm-network.AzureReachabilityReportLocation
+  name: AzureReachabilityReportLocation
+- uid: azure-arm-network.AzureReachabilityReportParameters
+  name: AzureReachabilityReportParameters
 - uid: azure-arm-network.BackendAddressPool
   name: BackendAddressPool
 - uid: azure-arm-network.BGPCommunity
@@ -444,3 +470,5 @@
   name: VpnClientRevokedCertificate
 - uid: azure-arm-network.VpnClientRootCertificate
   name: VpnClientRootCertificate
+- uid: azure-arm-network.VpnDeviceScriptParameters
+  name: VpnDeviceScriptParameters

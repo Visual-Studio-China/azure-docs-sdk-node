@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-compute.VirtualMachineExtensions
     id: azure-arm-compute.VirtualMachineExtensions
     name: VirtualMachineExtensions
-    summary: |-
-      VirtualMachineExtensions
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ComputeManagementClient.
-      Initializes a new instance of the VirtualMachineExtensions class.
+    summary: Class representing a VirtualMachineExtensions.
     fullName: azure-arm-compute.VirtualMachineExtensions
     type: Class
     children:
@@ -34,7 +30,7 @@ items:
     name: VirtualMachineExtensions(client)
     fullName: >-
       azure-arm-compute.VirtualMachineExtensions.VirtualMachineExtensions(client)
-    summary: ''
+    summary: Create a VirtualMachineExtensions.
     type: Constructor
     syntax:
       parameters:
@@ -115,24 +111,30 @@ items:
           type:
             - string
           description: |-
-            The type
-            of the extension handler.
+            Specifies
+            the type of the extension; an example is "CustomScriptExtension".
           optional: true
         - id: extensionParameters.typeHandlerVersion
           type:
             - string
           description: |-
-            The type version of
-            the extension handler.
+            Specifies the
+            version of the script handler.
           optional: true
         - id: extensionParameters.autoUpgradeMinorVersion
           type:
             - boolean
           description: >-
-            Whether the
+            Indicates
 
-            extension handler should be automatically upgraded across minor
-            versions.
+            whether the extension should use a newer minor version if one is
+            available
+
+            at deployment time. Once deployed, however, the extension will not
+            upgrade
+
+            minor versions unless redeployed, even with this property set to
+            true.
           optional: true
         - id: extensionParameters.settings
           type:
@@ -144,9 +146,13 @@ items:
         - id: extensionParameters.protectedSettings
           type:
             - object
-          description: |-
-            Json formatted
-            protected settings for the extension.
+          description: >-
+            The extension can
+
+            contain either protectedSettings or protectedSettingsFromKeyVault or
+            no
+
+            protected settings at all.
           optional: true
         - id: extensionParameters.instanceView
           type:
@@ -166,15 +172,13 @@ items:
           type:
             - string
           description: |-
-            The full type of the
-            extension handler which includes both publisher and type.
+            Specifies the type
+            of the extension; an example is "CustomScriptExtension".
           optional: true
         - id: extensionParameters.instanceView.typeHandlerVersion
           type:
             - string
-          description: |-
-            The
-            type version of the extension handler.
+          description: Specifies the version of the script handler.
           optional: true
         - id: extensionParameters.instanceView.substatuses
           type:
@@ -310,24 +314,30 @@ items:
           type:
             - string
           description: |-
-            The type
-            of the extension handler.
+            Specifies
+            the type of the extension; an example is "CustomScriptExtension".
           optional: true
         - id: extensionParameters.typeHandlerVersion
           type:
             - string
           description: |-
-            The type version of
-            the extension handler.
+            Specifies the
+            version of the script handler.
           optional: true
         - id: extensionParameters.autoUpgradeMinorVersion
           type:
             - boolean
           description: >-
-            Whether the
+            Indicates
 
-            extension handler should be automatically upgraded across minor
-            versions.
+            whether the extension should use a newer minor version if one is
+            available
+
+            at deployment time. Once deployed, however, the extension will not
+            upgrade
+
+            minor versions unless redeployed, even with this property set to
+            true.
           optional: true
         - id: extensionParameters.settings
           type:
@@ -339,9 +349,13 @@ items:
         - id: extensionParameters.protectedSettings
           type:
             - object
-          description: |-
-            Json formatted
-            protected settings for the extension.
+          description: >-
+            The extension can
+
+            contain either protectedSettings or protectedSettingsFromKeyVault or
+            no
+
+            protected settings at all.
           optional: true
         - id: extensionParameters.instanceView
           type:
@@ -361,15 +375,13 @@ items:
           type:
             - string
           description: |-
-            The full type of the
-            extension handler which includes both publisher and type.
+            Specifies the type
+            of the extension; an example is "CustomScriptExtension".
           optional: true
         - id: extensionParameters.instanceView.typeHandlerVersion
           type:
             - string
-          description: |-
-            The
-            type version of the extension handler.
+          description: Specifies the version of the script handler.
           optional: true
         - id: extensionParameters.instanceView.substatuses
           type:
@@ -817,24 +829,30 @@ items:
           type:
             - string
           description: |-
-            The type
-            of the extension handler.
+            Specifies
+            the type of the extension; an example is "CustomScriptExtension".
           optional: true
         - id: extensionParameters.typeHandlerVersion
           type:
             - string
           description: |-
-            The type version of
-            the extension handler.
+            Specifies the
+            version of the script handler.
           optional: true
         - id: extensionParameters.autoUpgradeMinorVersion
           type:
             - boolean
           description: >-
-            Whether the
+            Indicates
 
-            extension handler should be automatically upgraded across minor
-            versions.
+            whether the extension should use a newer minor version if one is
+            available
+
+            at deployment time. Once deployed, however, the extension will not
+            upgrade
+
+            minor versions unless redeployed, even with this property set to
+            true.
           optional: true
         - id: extensionParameters.settings
           type:
@@ -846,9 +864,13 @@ items:
         - id: extensionParameters.protectedSettings
           type:
             - object
-          description: |-
-            Json formatted
-            protected settings for the extension.
+          description: >-
+            The extension can
+
+            contain either protectedSettings or protectedSettingsFromKeyVault or
+            no
+
+            protected settings at all.
           optional: true
         - id: extensionParameters.instanceView
           type:
@@ -868,15 +890,13 @@ items:
           type:
             - string
           description: |-
-            The full type of the
-            extension handler which includes both publisher and type.
+            Specifies the type
+            of the extension; an example is "CustomScriptExtension".
           optional: true
         - id: extensionParameters.instanceView.typeHandlerVersion
           type:
             - string
-          description: |-
-            The
-            type version of the extension handler.
+          description: Specifies the version of the script handler.
           optional: true
         - id: extensionParameters.instanceView.substatuses
           type:
@@ -1012,24 +1032,30 @@ items:
           type:
             - string
           description: |-
-            The type
-            of the extension handler.
+            Specifies
+            the type of the extension; an example is "CustomScriptExtension".
           optional: true
         - id: extensionParameters.typeHandlerVersion
           type:
             - string
           description: |-
-            The type version of
-            the extension handler.
+            Specifies the
+            version of the script handler.
           optional: true
         - id: extensionParameters.autoUpgradeMinorVersion
           type:
             - boolean
           description: >-
-            Whether the
+            Indicates
 
-            extension handler should be automatically upgraded across minor
-            versions.
+            whether the extension should use a newer minor version if one is
+            available
+
+            at deployment time. Once deployed, however, the extension will not
+            upgrade
+
+            minor versions unless redeployed, even with this property set to
+            true.
           optional: true
         - id: extensionParameters.settings
           type:
@@ -1041,9 +1067,13 @@ items:
         - id: extensionParameters.protectedSettings
           type:
             - object
-          description: |-
-            Json formatted
-            protected settings for the extension.
+          description: >-
+            The extension can
+
+            contain either protectedSettings or protectedSettingsFromKeyVault or
+            no
+
+            protected settings at all.
           optional: true
         - id: extensionParameters.instanceView
           type:
@@ -1063,15 +1093,13 @@ items:
           type:
             - string
           description: |-
-            The full type of the
-            extension handler which includes both publisher and type.
+            Specifies the type
+            of the extension; an example is "CustomScriptExtension".
           optional: true
         - id: extensionParameters.instanceView.typeHandlerVersion
           type:
             - string
-          description: |-
-            The
-            type version of the extension handler.
+          description: Specifies the version of the script handler.
           optional: true
         - id: extensionParameters.instanceView.substatuses
           type:

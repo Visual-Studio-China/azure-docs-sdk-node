@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-resource.DeploymentOperations
     id: azure-arm-resource.DeploymentOperations
     name: DeploymentOperations
-    summary: |-
-      DeploymentOperations
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ResourceManagementClient.
-      Initializes a new instance of the DeploymentOperations class.
+    summary: Class representing a DeploymentOperations.
     fullName: azure-arm-resource.DeploymentOperations
     type: Class
     children:
@@ -26,7 +22,7 @@ items:
     parent: azure-arm-resource.DeploymentOperations
     name: DeploymentOperations(client)
     fullName: azure-arm-resource.DeploymentOperations.DeploymentOperations(client)
-    summary: ''
+    summary: Create a DeploymentOperations.
     type: Constructor
     syntax:
       parameters:

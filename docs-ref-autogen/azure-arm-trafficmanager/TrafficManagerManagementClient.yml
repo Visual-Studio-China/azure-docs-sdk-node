@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-trafficmanager.TrafficManagerManagementClient
     id: azure-arm-trafficmanager.TrafficManagerManagementClient
     name: TrafficManagerManagementClient
-    summary: Initializes a new instance of the TrafficManagerManagementClient class.
+    summary: Class representing a TrafficManagerManagementClient.
     fullName: azure-arm-trafficmanager.TrafficManagerManagementClient
     type: Class
     children:
@@ -19,7 +19,7 @@ items:
     fullName: >-
       azure-arm-trafficmanager.TrafficManagerManagementClient.TrafficManagerManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a TrafficManagerManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -62,11 +62,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Client Api Version.
           optional: true
         - id: options.acceptLanguage
           type:

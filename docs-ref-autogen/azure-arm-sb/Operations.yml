@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-sb.Operations
     id: azure-arm-sb.Operations
     name: Operations
-    summary: |-
-      Operations
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ServiceBusManagementClient.
-      Initializes a new instance of the Operations class.
+    summary: Class representing a Operations.
     fullName: azure-arm-sb.Operations
     type: Class
     children:
@@ -23,7 +19,7 @@ items:
     parent: azure-arm-sb.Operations
     name: Operations(client)
     fullName: azure-arm-sb.Operations.Operations(client)
-    summary: ''
+    summary: Create a Operations.
     type: Constructor
     syntax:
       parameters:

@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-resource.Features
     id: azure-arm-resource.Features
     name: Features
-    summary: |-
-      Features
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the FeatureClient.
-      Initializes a new instance of the Features class.
+    summary: Class representing a Features.
     fullName: azure-arm-resource.Features
     type: Class
     children:
@@ -31,7 +27,7 @@ items:
     parent: azure-arm-resource.Features
     name: Features(client)
     fullName: azure-arm-resource.Features.Features(client)
-    summary: ''
+    summary: Create a Features.
     type: Constructor
     syntax:
       parameters:

@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-resource.ResourceManagementClient
     id: azure-arm-resource.ResourceManagementClient
     name: ResourceManagementClient
-    summary: Initializes a new instance of the ResourceManagementClient class.
+    summary: Class representing a ResourceManagementClient.
     fullName: azure-arm-resource.ResourceManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-resource.ResourceManagementClient.ResourceManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a ResourceManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -57,11 +57,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: The API version to use for this operation.
           optional: true
         - id: options.acceptLanguage
           type:

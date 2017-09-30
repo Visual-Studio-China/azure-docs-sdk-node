@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-website.AppServiceEnvironments
     id: azure-arm-website.AppServiceEnvironments
     name: AppServiceEnvironments
-    summary: |-
-      AppServiceEnvironments
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the WebSiteManagementClient.
-      Initializes a new instance of the AppServiceEnvironments class.
+    summary: Class representing a AppServiceEnvironments.
     fullName: azure-arm-website.AppServiceEnvironments
     type: Class
     children:
@@ -226,7 +222,7 @@ items:
     parent: azure-arm-website.AppServiceEnvironments
     name: AppServiceEnvironments(client)
     fullName: azure-arm-website.AppServiceEnvironments.AppServiceEnvironments(client)
-    summary: ''
+    summary: Create a AppServiceEnvironments.
     type: Constructor
     syntax:
       parameters:
@@ -796,13 +792,6 @@ items:
             Access
             control list for controlling traffic to the App Service Environment.
           optional: true
-        - id: hostingEnvironmentEnvelope.appServiceEnvironmentResourceKind
-          type:
-            - string
-          description: |-
-            Kind of the
-            app service environment
-          optional: true
         - id: hostingEnvironmentEnvelope.frontEndScaleFactor
           type:
             - number
@@ -854,11 +843,6 @@ items:
             Custom settings
             for changing the behavior of the App Service Environment.
           optional: true
-        - id: hostingEnvironmentEnvelope.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: hostingEnvironmentEnvelope.kind
           type:
             - string
@@ -868,11 +852,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: hostingEnvironmentEnvelope.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: hostingEnvironmentEnvelope.tags
           type:
             - object
@@ -1071,13 +1050,6 @@ items:
             Access
             control list for controlling traffic to the App Service Environment.
           optional: true
-        - id: hostingEnvironmentEnvelope.appServiceEnvironmentResourceKind
-          type:
-            - string
-          description: |-
-            Kind of the
-            app service environment
-          optional: true
         - id: hostingEnvironmentEnvelope.frontEndScaleFactor
           type:
             - number
@@ -1129,11 +1101,6 @@ items:
             Custom settings
             for changing the behavior of the App Service Environment.
           optional: true
-        - id: hostingEnvironmentEnvelope.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: hostingEnvironmentEnvelope.kind
           type:
             - string
@@ -1143,11 +1110,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: hostingEnvironmentEnvelope.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: hostingEnvironmentEnvelope.tags
           type:
             - object
@@ -2753,29 +2715,10 @@ items:
             Capabilities of the
             SKU, e.g., is traffic manager enabled?
           optional: true
-        - id: multiRolePoolEnvelope.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: multiRolePoolEnvelope.kind
           type:
             - string
           description: Kind of resource.
-          optional: true
-        - id: multiRolePoolEnvelope.location
-          type:
-            - string
-          description: Resource Location.
-        - id: multiRolePoolEnvelope.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
-        - id: multiRolePoolEnvelope.tags
-          type:
-            - object
-          description: Resource tags.
           optional: true
         - id: options
           type:
@@ -2975,29 +2918,10 @@ items:
             Capabilities of the
             SKU, e.g., is traffic manager enabled?
           optional: true
-        - id: multiRolePoolEnvelope.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: multiRolePoolEnvelope.kind
           type:
             - string
           description: Kind of resource.
-          optional: true
-        - id: multiRolePoolEnvelope.location
-          type:
-            - string
-          description: Resource Location.
-        - id: multiRolePoolEnvelope.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
-        - id: multiRolePoolEnvelope.tags
-          type:
-            - object
-          description: Resource tags.
           optional: true
         - id: options
           type:
@@ -5607,29 +5531,10 @@ items:
             Capabilities of the
             SKU, e.g., is traffic manager enabled?
           optional: true
-        - id: workerPoolEnvelope.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: workerPoolEnvelope.kind
           type:
             - string
           description: Kind of resource.
-          optional: true
-        - id: workerPoolEnvelope.location
-          type:
-            - string
-          description: Resource Location.
-        - id: workerPoolEnvelope.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
-        - id: workerPoolEnvelope.tags
-          type:
-            - object
-          description: Resource tags.
           optional: true
         - id: options
           type:
@@ -5833,29 +5738,10 @@ items:
             Capabilities of the
             SKU, e.g., is traffic manager enabled?
           optional: true
-        - id: workerPoolEnvelope.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: workerPoolEnvelope.kind
           type:
             - string
           description: Kind of resource.
-          optional: true
-        - id: workerPoolEnvelope.location
-          type:
-            - string
-          description: Resource Location.
-        - id: workerPoolEnvelope.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
-        - id: workerPoolEnvelope.tags
-          type:
-            - object
-          description: Resource tags.
           optional: true
         - id: options
           type:
@@ -7136,13 +7022,6 @@ items:
             Access
             control list for controlling traffic to the App Service Environment.
           optional: true
-        - id: hostingEnvironmentEnvelope.appServiceEnvironmentResourceKind
-          type:
-            - string
-          description: |-
-            Kind of the
-            app service environment
-          optional: true
         - id: hostingEnvironmentEnvelope.frontEndScaleFactor
           type:
             - number
@@ -7194,11 +7073,6 @@ items:
             Custom settings
             for changing the behavior of the App Service Environment.
           optional: true
-        - id: hostingEnvironmentEnvelope.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: hostingEnvironmentEnvelope.kind
           type:
             - string
@@ -7208,11 +7082,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: hostingEnvironmentEnvelope.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: hostingEnvironmentEnvelope.tags
           type:
             - object
@@ -7411,13 +7280,6 @@ items:
             Access
             control list for controlling traffic to the App Service Environment.
           optional: true
-        - id: hostingEnvironmentEnvelope.appServiceEnvironmentResourceKind
-          type:
-            - string
-          description: |-
-            Kind of the
-            app service environment
-          optional: true
         - id: hostingEnvironmentEnvelope.frontEndScaleFactor
           type:
             - number
@@ -7469,11 +7331,6 @@ items:
             Custom settings
             for changing the behavior of the App Service Environment.
           optional: true
-        - id: hostingEnvironmentEnvelope.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: hostingEnvironmentEnvelope.kind
           type:
             - string
@@ -7483,11 +7340,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: hostingEnvironmentEnvelope.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: hostingEnvironmentEnvelope.tags
           type:
             - object
@@ -7848,29 +7700,10 @@ items:
             Capabilities of the
             SKU, e.g., is traffic manager enabled?
           optional: true
-        - id: multiRolePoolEnvelope.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: multiRolePoolEnvelope.kind
           type:
             - string
           description: Kind of resource.
-          optional: true
-        - id: multiRolePoolEnvelope.location
-          type:
-            - string
-          description: Resource Location.
-        - id: multiRolePoolEnvelope.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
-        - id: multiRolePoolEnvelope.tags
-          type:
-            - object
-          description: Resource tags.
           optional: true
         - id: options
           type:
@@ -8070,29 +7903,10 @@ items:
             Capabilities of the
             SKU, e.g., is traffic manager enabled?
           optional: true
-        - id: multiRolePoolEnvelope.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: multiRolePoolEnvelope.kind
           type:
             - string
           description: Kind of resource.
-          optional: true
-        - id: multiRolePoolEnvelope.location
-          type:
-            - string
-          description: Resource Location.
-        - id: multiRolePoolEnvelope.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
-        - id: multiRolePoolEnvelope.tags
-          type:
-            - object
-          description: Resource tags.
           optional: true
         - id: options
           type:
@@ -8581,29 +8395,10 @@ items:
             Capabilities of the
             SKU, e.g., is traffic manager enabled?
           optional: true
-        - id: workerPoolEnvelope.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: workerPoolEnvelope.kind
           type:
             - string
           description: Kind of resource.
-          optional: true
-        - id: workerPoolEnvelope.location
-          type:
-            - string
-          description: Resource Location.
-        - id: workerPoolEnvelope.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
-        - id: workerPoolEnvelope.tags
-          type:
-            - object
-          description: Resource tags.
           optional: true
         - id: options
           type:
@@ -8807,29 +8602,10 @@ items:
             Capabilities of the
             SKU, e.g., is traffic manager enabled?
           optional: true
-        - id: workerPoolEnvelope.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: workerPoolEnvelope.kind
           type:
             - string
           description: Kind of resource.
-          optional: true
-        - id: workerPoolEnvelope.location
-          type:
-            - string
-          description: Resource Location.
-        - id: workerPoolEnvelope.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
-        - id: workerPoolEnvelope.tags
-          type:
-            - object
-          description: Resource tags.
           optional: true
         - id: options
           type:

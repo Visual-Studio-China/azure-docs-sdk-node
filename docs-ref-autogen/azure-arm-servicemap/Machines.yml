@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-servicemap.Machines
     id: azure-arm-servicemap.Machines
     name: Machines
-    summary: |-
-      Machines
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ServicemapManagementClient.
-      Initializes a new instance of the Machines class.
+    summary: Class representing a Machines.
     fullName: azure-arm-servicemap.Machines
     type: Class
     children:
@@ -47,7 +43,7 @@ items:
     parent: azure-arm-servicemap.Machines
     name: Machines(client)
     fullName: azure-arm-servicemap.Machines.Machines(client)
-    summary: ''
+    summary: Create a Machines.
     type: Constructor
     syntax:
       parameters:

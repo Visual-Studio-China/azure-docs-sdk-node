@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-recoveryservicesbackup.ExportJobsOperationResults
     id: azure-arm-recoveryservicesbackup.ExportJobsOperationResults
     name: ExportJobsOperationResults
-    summary: |-
-      ExportJobsOperationResults
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the ExportJobsOperationResults class.
+    summary: Class representing a ExportJobsOperationResults.
     fullName: azure-arm-recoveryservicesbackup.ExportJobsOperationResults
     type: Class
     children:
@@ -23,7 +19,7 @@ items:
     name: ExportJobsOperationResults(client)
     fullName: >-
       azure-arm-recoveryservicesbackup.ExportJobsOperationResults.ExportJobsOperationResults(client)
-    summary: ''
+    summary: Create a ExportJobsOperationResults.
     type: Constructor
     syntax:
       parameters:
@@ -42,7 +38,15 @@ items:
     name: >-
       getWithHttpOperationResponse(vaultName, resourceGroupName, operationId,
       options)
-    summary: Gets the result of the operation triggered by the ExportJob API.
+    summary: >-
+      Gets the operation result of operation triggered by Export Jobs API. If
+      the
+
+      operation is successful, then it also contains URL of a Blob and a SAS key
+
+      to access the same. The blob contains exported jobs in JSON serialized
+
+      format.
     fullName: >-
       azure-arm-recoveryservicesbackup.ExportJobsOperationResults.getWithHttpOperationResponse(vaultName,
       resourceGroupName, operationId, options)
@@ -65,17 +69,17 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: operationId
           type:
             - string
-          description: The ID associated with the export job.
+          description: OperationID which represents the export job.
         - id: options
           type:
             - object
@@ -101,7 +105,15 @@ items:
     id: 'azure-arm-recoveryservicesbackup.ExportJobsOperationResults#get'
     parent: azure-arm-recoveryservicesbackup.ExportJobsOperationResults
     name: 'get(vaultName, resourceGroupName, operationId, options, optionalCallback)'
-    summary: Gets the result of the operation triggered by the ExportJob API.
+    summary: >-
+      Gets the operation result of operation triggered by Export Jobs API. If
+      the
+
+      operation is successful, then it also contains URL of a Blob and a SAS key
+
+      to access the same. The blob contains exported jobs in JSON serialized
+
+      format.
     fullName: >-
       azure-arm-recoveryservicesbackup.ExportJobsOperationResults.get(vaultName,
       resourceGroupName, operationId, options, optionalCallback)
@@ -146,17 +158,17 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: operationId
           type:
             - string
-          description: The ID associated with the export job.
+          description: OperationID which represents the export job.
         - id: options
           type:
             - object

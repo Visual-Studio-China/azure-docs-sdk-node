@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-relay.Operations
     id: azure-arm-relay.Operations
     name: Operations
-    summary: |-
-      Operations
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RelayManagementClient.
-      Initializes a new instance of the Operations class.
+    summary: Class representing a Operations.
     fullName: azure-arm-relay.Operations
     type: Class
     children:
@@ -23,7 +19,7 @@ items:
     parent: azure-arm-relay.Operations
     name: Operations(client)
     fullName: azure-arm-relay.Operations.Operations(client)
-    summary: ''
+    summary: Create a Operations.
     type: Constructor
     syntax:
       parameters:
@@ -38,7 +34,7 @@ items:
     id: 'azure-arm-relay.Operations#listWithHttpOperationResponse'
     parent: azure-arm-relay.Operations
     name: listWithHttpOperationResponse(options)
-    summary: Lists all of the available Relay REST API operations.
+    summary: Lists all available Relay REST API operations.
     fullName: azure-arm-relay.Operations.listWithHttpOperationResponse(options)
     tags:
       - originalTitle: resolve
@@ -79,7 +75,7 @@ items:
     id: 'azure-arm-relay.Operations#list'
     parent: azure-arm-relay.Operations
     name: 'list(options, optionalCallback)'
-    summary: Lists all of the available Relay REST API operations.
+    summary: Lists all available Relay REST API operations.
     fullName: 'azure-arm-relay.Operations.list(options, optionalCallback)'
     tags:
       - originalTitle: resolve
@@ -150,7 +146,7 @@ items:
     id: 'azure-arm-relay.Operations#listNextWithHttpOperationResponse'
     parent: azure-arm-relay.Operations
     name: 'listNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: Lists all of the available Relay REST API operations.
+    summary: Lists all available Relay REST API operations.
     fullName: >-
       azure-arm-relay.Operations.listNextWithHttpOperationResponse(nextPageLink,
       options)
@@ -199,7 +195,7 @@ items:
     id: 'azure-arm-relay.Operations#listNext'
     parent: azure-arm-relay.Operations
     name: 'listNext(nextPageLink, options, optionalCallback)'
-    summary: Lists all of the available Relay REST API operations.
+    summary: Lists all available Relay REST API operations.
     fullName: >-
       azure-arm-relay.Operations.listNext(nextPageLink, options,
       optionalCallback)

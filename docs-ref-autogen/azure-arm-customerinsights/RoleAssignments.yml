@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-customerinsights.RoleAssignments
     id: azure-arm-customerinsights.RoleAssignments
     name: RoleAssignments
-    summary: |-
-      RoleAssignments
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the CustomerInsightsManagementClient.
-      Initializes a new instance of the RoleAssignments class.
+    summary: Class representing a RoleAssignments.
     fullName: azure-arm-customerinsights.RoleAssignments
     type: Class
     children:
@@ -36,7 +32,7 @@ items:
     parent: azure-arm-customerinsights.RoleAssignments
     name: RoleAssignments(client)
     fullName: azure-arm-customerinsights.RoleAssignments.RoleAssignments(client)
-    summary: ''
+    summary: Create a RoleAssignments.
     type: Constructor
     syntax:
       parameters:
@@ -326,21 +322,33 @@ items:
             The Role assignments set for
             the assignment.
           optional: true
-        - id: parameters.roleAssignments.elements
+        - id: parameters.conflationPolicies
+          type:
+            - object
+          description: |-
+            Widget types set for the
+            assignment.
+          optional: true
+        - id: parameters.segments
+          type:
+            - object
+          description: |-
+            The Role assignments set for the
+            assignment.
+          optional: true
+        - id: parameters.segments.elements
           type:
             - array
           description: |-
-            The elements included
-            in the set.
+            The elements included in the
+            set.
           optional: true
-        - id: parameters.roleAssignments.exceptions
+        - id: parameters.segments.exceptions
           type:
             - array
-          description: >-
-            The elements that are
-
-            not included in the set, in case elements contains '*' indicating
-            'all'.
+          description: |-
+            The elements that are not
+            included in the set, in case elements contains '*' indicating 'all'.
           optional: true
         - id: options
           type:
@@ -522,21 +530,33 @@ items:
             The Role assignments set for
             the assignment.
           optional: true
-        - id: parameters.roleAssignments.elements
+        - id: parameters.conflationPolicies
+          type:
+            - object
+          description: |-
+            Widget types set for the
+            assignment.
+          optional: true
+        - id: parameters.segments
+          type:
+            - object
+          description: |-
+            The Role assignments set for the
+            assignment.
+          optional: true
+        - id: parameters.segments.elements
           type:
             - array
           description: |-
-            The elements included
-            in the set.
+            The elements included in the
+            set.
           optional: true
-        - id: parameters.roleAssignments.exceptions
+        - id: parameters.segments.exceptions
           type:
             - array
-          description: >-
-            The elements that are
-
-            not included in the set, in case elements contains '*' indicating
-            'all'.
+          description: |-
+            The elements that are not
+            included in the set, in case elements contains '*' indicating 'all'.
           optional: true
         - id: options
           type:
@@ -1000,21 +1020,33 @@ items:
             The Role assignments set for
             the assignment.
           optional: true
-        - id: parameters.roleAssignments.elements
+        - id: parameters.conflationPolicies
+          type:
+            - object
+          description: |-
+            Widget types set for the
+            assignment.
+          optional: true
+        - id: parameters.segments
+          type:
+            - object
+          description: |-
+            The Role assignments set for the
+            assignment.
+          optional: true
+        - id: parameters.segments.elements
           type:
             - array
           description: |-
-            The elements included
-            in the set.
+            The elements included in the
+            set.
           optional: true
-        - id: parameters.roleAssignments.exceptions
+        - id: parameters.segments.exceptions
           type:
             - array
-          description: >-
-            The elements that are
-
-            not included in the set, in case elements contains '*' indicating
-            'all'.
+          description: |-
+            The elements that are not
+            included in the set, in case elements contains '*' indicating 'all'.
           optional: true
         - id: options
           type:
@@ -1196,21 +1228,33 @@ items:
             The Role assignments set for
             the assignment.
           optional: true
-        - id: parameters.roleAssignments.elements
+        - id: parameters.conflationPolicies
+          type:
+            - object
+          description: |-
+            Widget types set for the
+            assignment.
+          optional: true
+        - id: parameters.segments
+          type:
+            - object
+          description: |-
+            The Role assignments set for the
+            assignment.
+          optional: true
+        - id: parameters.segments.elements
           type:
             - array
           description: |-
-            The elements included
-            in the set.
+            The elements included in the
+            set.
           optional: true
-        - id: parameters.roleAssignments.exceptions
+        - id: parameters.segments.exceptions
           type:
             - array
-          description: >-
-            The elements that are
-
-            not included in the set, in case elements contains '*' indicating
-            'all'.
+          description: |-
+            The elements that are not
+            included in the set, in case elements contains '*' indicating 'all'.
           optional: true
         - id: options
           type:

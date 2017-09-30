@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-dns.DnsManagementClient
     id: azure-arm-dns.DnsManagementClient
     name: DnsManagementClient
-    summary: Initializes a new instance of the DnsManagementClient class.
+    summary: Class representing a DnsManagementClient.
     fullName: azure-arm-dns.DnsManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-dns.DnsManagementClient.DnsManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a DnsManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -59,11 +59,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Specifies the API version.
           optional: true
         - id: options.acceptLanguage
           type:

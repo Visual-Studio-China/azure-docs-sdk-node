@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-relay.RelayManagementClient
     id: azure-arm-relay.RelayManagementClient
     name: RelayManagementClient
-    summary: Initializes a new instance of the RelayManagementClient class.
+    summary: Class representing a RelayManagementClient.
     fullName: azure-arm-relay.RelayManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-relay.RelayManagementClient.RelayManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a RelayManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -29,7 +29,7 @@ items:
           type:
             - string
           description: >-
-            Subscription credentials which uniquely identify Microsoft Azure
+            Subscription credentials which uniquely identify the Microsoft Azure
             subscription. The subscription ID forms part of the URI for every
             service call.
         - id: baseUri
@@ -60,11 +60,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Client Api Version.
           optional: true
         - id: options.acceptLanguage
           type:

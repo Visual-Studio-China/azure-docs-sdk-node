@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-automation.AutomationClient
     id: azure-arm-automation.AutomationClient
     name: AutomationClient
-    summary: Initializes a new instance of the AutomationClient class.
+    summary: Class representing a AutomationClient.
     fullName: azure-arm-automation.AutomationClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-automation.AutomationClient.AutomationClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a AutomationClient.
     type: Constructor
     syntax:
       parameters:

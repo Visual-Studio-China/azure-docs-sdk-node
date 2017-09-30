@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-postgresql.Databases
     id: azure-arm-postgresql.Databases
     name: Databases
-    summary: |-
-      Databases
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the PostgreSQLManagementClient.
-      Initializes a new instance of the Databases class.
+    summary: Class representing a Databases.
     fullName: azure-arm-postgresql.Databases
     type: Class
     children:
@@ -33,7 +29,7 @@ items:
     parent: azure-arm-postgresql.Databases
     name: Databases(client)
     fullName: azure-arm-postgresql.Databases.Databases(client)
-    summary: ''
+    summary: Create a Databases.
     type: Constructor
     syntax:
       parameters:
@@ -271,7 +267,7 @@ items:
         - id: databaseName
           type:
             - string
-          description: The name of the database to be deleted.
+          description: The name of the database.
         - id: options
           type:
             - object
@@ -354,7 +350,7 @@ items:
         - id: databaseName
           type:
             - string
-          description: The name of the database to be deleted.
+          description: The name of the database.
         - id: options
           type:
             - object
@@ -425,7 +421,7 @@ items:
         - id: databaseName
           type:
             - string
-          description: The name of the database to be retrieved.
+          description: The name of the database.
         - id: options
           type:
             - object
@@ -510,7 +506,7 @@ items:
         - id: databaseName
           type:
             - string
-          description: The name of the database to be retrieved.
+          description: The name of the database.
         - id: options
           type:
             - object
@@ -921,7 +917,7 @@ items:
         - id: databaseName
           type:
             - string
-          description: The name of the database to be deleted.
+          description: The name of the database.
         - id: options
           type:
             - object
@@ -1004,7 +1000,7 @@ items:
         - id: databaseName
           type:
             - string
-          description: The name of the database to be deleted.
+          description: The name of the database.
         - id: options
           type:
             - object

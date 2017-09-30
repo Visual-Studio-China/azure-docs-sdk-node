@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-recoveryservicesbackup.ProtectedItemOperationResults
     id: azure-arm-recoveryservicesbackup.ProtectedItemOperationResults
     name: ProtectedItemOperationResults
-    summary: |-
-      ProtectedItemOperationResults
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the ProtectedItemOperationResults class.
+    summary: Class representing a ProtectedItemOperationResults.
     fullName: azure-arm-recoveryservicesbackup.ProtectedItemOperationResults
     type: Class
     children:
@@ -23,7 +19,7 @@ items:
     name: ProtectedItemOperationResults(client)
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectedItemOperationResults.ProtectedItemOperationResults(client)
-    summary: ''
+    summary: Create a ProtectedItemOperationResults.
     type: Constructor
     syntax:
       parameters:
@@ -42,7 +38,7 @@ items:
     name: >-
       getWithHttpOperationResponse(vaultName, resourceGroupName, fabricName,
       containerName, protectedItemName, operationId, options)
-    summary: Gets the result of any operation on the backup item.
+    summary: Fetches the result of any operation on the backup item.
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectedItemOperationResults.getWithHttpOperationResponse(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName,
@@ -66,33 +62,35 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backup item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backup
             item.
         - id: protectedItemName
           type:
             - string
           description: |-
-            The name of backup item used in this GET
-            operation.
+            Backup item name whose details are to be
+            fetched.
         - id: operationId
           type:
             - string
-          description: The OperationID used in this GET operation.
+          description: |-
+            OperationID which represents the operation whose
+            result needs to be fetched.
         - id: options
           type:
             - object
@@ -120,7 +118,7 @@ items:
     name: >-
       get(vaultName, resourceGroupName, fabricName, containerName,
       protectedItemName, operationId, options, optionalCallback)
-    summary: Gets the result of any operation on the backup item.
+    summary: Fetches the result of any operation on the backup item.
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectedItemOperationResults.get(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName,
@@ -164,33 +162,35 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backup item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backup
             item.
         - id: protectedItemName
           type:
             - string
           description: |-
-            The name of backup item used in this GET
-            operation.
+            Backup item name whose details are to be
+            fetched.
         - id: operationId
           type:
             - string
-          description: The OperationID used in this GET operation.
+          description: |-
+            OperationID which represents the operation whose
+            result needs to be fetched.
         - id: options
           type:
             - object

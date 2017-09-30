@@ -3,7 +3,7 @@ items:
   - uid: azure-batch.BatchServiceClient
     id: azure-batch.BatchServiceClient
     name: BatchServiceClient
-    summary: Initializes a new instance of the BatchServiceClient class.
+    summary: Class representing a BatchServiceClient.
     fullName: azure-batch.BatchServiceClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-batch.BatchServiceClient.BatchServiceClient(credentials, baseUri,
       options)
-    summary: ''
+    summary: Create a BatchServiceClient.
     type: Constructor
     syntax:
       parameters:
@@ -53,11 +53,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Client API Version.
           optional: true
         - id: options.acceptLanguage
           type:

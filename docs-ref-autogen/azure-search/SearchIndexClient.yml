@@ -3,7 +3,7 @@ items:
   - uid: azure-search.SearchIndexClient
     id: azure-search.SearchIndexClient
     name: SearchIndexClient
-    summary: Initializes a new instance of the SearchIndexClient class.
+    summary: Class representing a SearchIndexClient.
     fullName: azure-search.SearchIndexClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-search.SearchIndexClient.SearchIndexClient(credentials, baseUri,
       options)
-    summary: ''
+    summary: Create a SearchIndexClient.
     type: Constructor
     syntax:
       parameters:
@@ -53,11 +53,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Client Api Version.
           optional: true
         - id: options.acceptLanguage
           type:

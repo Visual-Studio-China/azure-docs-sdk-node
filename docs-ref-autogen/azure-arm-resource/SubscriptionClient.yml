@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-resource.SubscriptionClient
     id: azure-arm-resource.SubscriptionClient
     name: SubscriptionClient
-    summary: Initializes a new instance of the SubscriptionClient class.
+    summary: Class representing a SubscriptionClient.
     fullName: azure-arm-resource.SubscriptionClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-resource.SubscriptionClient.SubscriptionClient(credentials,
       baseUri, options)
-    summary: ''
+    summary: Create a SubscriptionClient.
     type: Constructor
     syntax:
       parameters:
@@ -53,11 +53,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: The API version to use for the operation.
           optional: true
         - id: options.acceptLanguage
           type:

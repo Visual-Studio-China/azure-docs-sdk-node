@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-mysql.LogFiles
     id: azure-arm-mysql.LogFiles
     name: LogFiles
-    summary: |-
-      LogFiles
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the MySQLManagementClient.
-      Initializes a new instance of the LogFiles class.
+    summary: Class representing a LogFiles.
     fullName: azure-arm-mysql.LogFiles
     type: Class
     children:
@@ -21,7 +17,7 @@ items:
     parent: azure-arm-mysql.LogFiles
     name: LogFiles(client)
     fullName: azure-arm-mysql.LogFiles.LogFiles(client)
-    summary: ''
+    summary: Create a LogFiles.
     type: Constructor
     syntax:
       parameters:

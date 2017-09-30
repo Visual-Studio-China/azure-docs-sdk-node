@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-resource.PolicyDefinitions
     id: azure-arm-resource.PolicyDefinitions
     name: PolicyDefinitions
-    summary: |-
-      PolicyDefinitions
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the PolicyClient.
-      Initializes a new instance of the PolicyDefinitions class.
+    summary: Class representing a PolicyDefinitions.
     fullName: azure-arm-resource.PolicyDefinitions
     type: Class
     children:
@@ -31,7 +27,7 @@ items:
     parent: azure-arm-resource.PolicyDefinitions
     name: PolicyDefinitions(client)
     fullName: azure-arm-resource.PolicyDefinitions.PolicyDefinitions(client)
-    summary: ''
+    summary: Create a PolicyDefinitions.
     type: Constructor
     syntax:
       parameters:
@@ -91,6 +87,14 @@ items:
 
             include: 'NotSpecified', 'BuiltIn', 'Custom'
           optional: true
+        - id: parameters.mode
+          type:
+            - string
+          description: |-
+            The policy definition mode. Possible
+            values are NotSpecified, Indexed, and All. Possible values include:
+            'NotSpecified', 'Indexed', 'All'
+          optional: true
         - id: parameters.displayName
           type:
             - string
@@ -108,28 +112,17 @@ items:
             - object
           description: The policy rule.
           optional: true
+        - id: parameters.metadata
+          type:
+            - object
+          description: The policy definition metadata.
+          optional: true
         - id: parameters.parameters
           type:
             - object
           description: |-
             Required if a parameter is used in
             policy rule.
-          optional: true
-        - id: parameters.id
-          type:
-            - string
-          description: The ID of the policy definition.
-          optional: true
-        - id: parameters.name
-          type:
-            - string
-          description: >-
-            The name of the policy definition. If you
-
-            do not specify a value for name, the value is inferred from the name
-            value
-
-            in the request URI.
           optional: true
         - id: options
           type:
@@ -219,6 +212,14 @@ items:
 
             include: 'NotSpecified', 'BuiltIn', 'Custom'
           optional: true
+        - id: parameters.mode
+          type:
+            - string
+          description: |-
+            The policy definition mode. Possible
+            values are NotSpecified, Indexed, and All. Possible values include:
+            'NotSpecified', 'Indexed', 'All'
+          optional: true
         - id: parameters.displayName
           type:
             - string
@@ -236,28 +237,17 @@ items:
             - object
           description: The policy rule.
           optional: true
+        - id: parameters.metadata
+          type:
+            - object
+          description: The policy definition metadata.
+          optional: true
         - id: parameters.parameters
           type:
             - object
           description: |-
             Required if a parameter is used in
             policy rule.
-          optional: true
-        - id: parameters.id
-          type:
-            - string
-          description: The ID of the policy definition.
-          optional: true
-        - id: parameters.name
-          type:
-            - string
-          description: >-
-            The name of the policy definition. If you
-
-            do not specify a value for name, the value is inferred from the name
-            value
-
-            in the request URI.
           optional: true
         - id: options
           type:

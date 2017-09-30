@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-customerinsights.WidgetTypes
     id: azure-arm-customerinsights.WidgetTypes
     name: WidgetTypes
-    summary: |-
-      WidgetTypes
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the CustomerInsightsManagementClient.
-      Initializes a new instance of the WidgetTypes class.
+    summary: Class representing a WidgetTypes.
     fullName: azure-arm-customerinsights.WidgetTypes
     type: Class
     children:
@@ -27,7 +23,7 @@ items:
     parent: azure-arm-customerinsights.WidgetTypes
     name: WidgetTypes(client)
     fullName: azure-arm-customerinsights.WidgetTypes.WidgetTypes(client)
-    summary: ''
+    summary: Create a WidgetTypes.
     type: Constructor
     syntax:
       parameters:

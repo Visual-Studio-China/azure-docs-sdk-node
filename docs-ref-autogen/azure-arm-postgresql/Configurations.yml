@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-postgresql.Configurations
     id: azure-arm-postgresql.Configurations
     name: Configurations
-    summary: |-
-      Configurations
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the PostgreSQLManagementClient.
-      Initializes a new instance of the Configurations class.
+    summary: Class representing a Configurations.
     fullName: azure-arm-postgresql.Configurations
     type: Class
     children:
@@ -30,7 +26,7 @@ items:
     parent: azure-arm-postgresql.Configurations
     name: Configurations(client)
     fullName: azure-arm-postgresql.Configurations.Configurations(client)
-    summary: ''
+    summary: Create a Configurations.
     type: Constructor
     syntax:
       parameters:
@@ -278,9 +274,7 @@ items:
         - id: configurationName
           type:
             - string
-          description: |-
-            The name of the server configuration to be
-            retrieved.
+          description: The name of the server configuration.
         - id: options
           type:
             - object
@@ -365,9 +359,7 @@ items:
         - id: configurationName
           type:
             - string
-          description: |-
-            The name of the server configuration to be
-            retrieved.
+          description: The name of the server configuration.
         - id: options
           type:
             - object

@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-servermanagement.ServerManagement
     id: azure-arm-servermanagement.ServerManagement
     name: ServerManagement
-    summary: Initializes a new instance of the ServerManagement class.
+    summary: Class representing a ServerManagement.
     fullName: azure-arm-servermanagement.ServerManagement
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-servermanagement.ServerManagement.ServerManagement(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a ServerManagement.
     type: Constructor
     syntax:
       parameters:
@@ -60,11 +60,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Client API Version.
           optional: true
         - id: options.acceptLanguage
           type:

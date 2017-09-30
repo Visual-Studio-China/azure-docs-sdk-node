@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-advisor.AdvisorManagementClient
     id: azure-arm-advisor.AdvisorManagementClient
     name: AdvisorManagementClient
-    summary: Initializes a new instance of the AdvisorManagementClient class.
+    summary: Class representing a AdvisorManagementClient.
     fullName: azure-arm-advisor.AdvisorManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-advisor.AdvisorManagementClient.AdvisorManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a AdvisorManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -57,11 +57,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: The version of the API to be used with the client request.
           optional: true
         - id: options.acceptLanguage
           type:

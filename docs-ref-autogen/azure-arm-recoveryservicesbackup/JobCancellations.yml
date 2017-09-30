@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-recoveryservicesbackup.JobCancellations
     id: azure-arm-recoveryservicesbackup.JobCancellations
     name: JobCancellations
-    summary: |-
-      JobCancellations
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the JobCancellations class.
+    summary: Class representing a JobCancellations.
     fullName: azure-arm-recoveryservicesbackup.JobCancellations
     type: Class
     children:
@@ -22,7 +18,7 @@ items:
     parent: azure-arm-recoveryservicesbackup.JobCancellations
     name: JobCancellations(client)
     fullName: azure-arm-recoveryservicesbackup.JobCancellations.JobCancellations(client)
-    summary: ''
+    summary: Create a JobCancellations.
     type: Constructor
     syntax:
       parameters:
@@ -41,9 +37,11 @@ items:
     name: >-
       triggerWithHttpOperationResponse(vaultName, resourceGroupName, jobName,
       options)
-    summary: |-
-      Cancels the job. This is an asynchronous operation. To know the status of
-      the cancellation, call the GetCancelOperationResult API.
+    summary: >-
+      Cancels a job. This is an asynchronous operation. To know the status of
+      the
+
+      cancellation, call GetCancelOperationResult API.
     fullName: >-
       azure-arm-recoveryservicesbackup.JobCancellations.triggerWithHttpOperationResponse(vaultName,
       resourceGroupName, jobName, options)
@@ -62,13 +60,13 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: jobName
           type:
             - string
@@ -98,9 +96,11 @@ items:
     id: 'azure-arm-recoveryservicesbackup.JobCancellations#trigger'
     parent: azure-arm-recoveryservicesbackup.JobCancellations
     name: 'trigger(vaultName, resourceGroupName, jobName, options, optionalCallback)'
-    summary: |-
-      Cancels the job. This is an asynchronous operation. To know the status of
-      the cancellation, call the GetCancelOperationResult API.
+    summary: >-
+      Cancels a job. This is an asynchronous operation. To know the status of
+      the
+
+      cancellation, call GetCancelOperationResult API.
     fullName: >-
       azure-arm-recoveryservicesbackup.JobCancellations.trigger(vaultName,
       resourceGroupName, jobName, options, optionalCallback)
@@ -141,13 +141,13 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: jobName
           type:
             - string

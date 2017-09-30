@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-recoveryservicesbackup.ProtectedItemOperationStatuses
     id: azure-arm-recoveryservicesbackup.ProtectedItemOperationStatuses
     name: ProtectedItemOperationStatuses
-    summary: |-
-      ProtectedItemOperationStatuses
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the ProtectedItemOperationStatuses class.
+    summary: Class representing a ProtectedItemOperationStatuses.
     fullName: azure-arm-recoveryservicesbackup.ProtectedItemOperationStatuses
     type: Class
     children:
@@ -23,7 +19,7 @@ items:
     name: ProtectedItemOperationStatuses(client)
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectedItemOperationStatuses.ProtectedItemOperationStatuses(client)
-    summary: ''
+    summary: Create a ProtectedItemOperationStatuses.
     type: Constructor
     syntax:
       parameters:
@@ -43,10 +39,10 @@ items:
       getWithHttpOperationResponse(vaultName, resourceGroupName, fabricName,
       containerName, protectedItemName, operationId, options)
     summary: >-
-      Gets the status of an operation such as triggering a backup or restore.
+      Fetches the status of an operation such as triggering a backup, restore.
       The
 
-      status can be: In progress, Completed, or Failed. You can refer to the
+      status can be in progress, completed or failed. You can refer to the
 
       OperationStatus enum for all the possible states of the operation. Some
 
@@ -77,33 +73,35 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backup item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backup
             item.
         - id: protectedItemName
           type:
             - string
           description: |-
-            The name of backup item used in this GET
-            operation.
+            Backup item name whose details are to be
+            fetched.
         - id: operationId
           type:
             - string
-          description: The OperationID used in this GET operation.
+          description: |-
+            OperationID represents the operation whose
+            status needs to be fetched.
         - id: options
           type:
             - object
@@ -132,10 +130,10 @@ items:
       get(vaultName, resourceGroupName, fabricName, containerName,
       protectedItemName, operationId, options, optionalCallback)
     summary: >-
-      Gets the status of an operation such as triggering a backup or restore.
+      Fetches the status of an operation such as triggering a backup, restore.
       The
 
-      status can be: In progress, Completed, or Failed. You can refer to the
+      status can be in progress, completed or failed. You can refer to the
 
       OperationStatus enum for all the possible states of the operation. Some
 
@@ -186,33 +184,35 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backup item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backup
             item.
         - id: protectedItemName
           type:
             - string
           description: |-
-            The name of backup item used in this GET
-            operation.
+            Backup item name whose details are to be
+            fetched.
         - id: operationId
           type:
             - string
-          description: The OperationID used in this GET operation.
+          description: |-
+            OperationID represents the operation whose
+            status needs to be fetched.
         - id: options
           type:
             - object

@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-mysql.Servers
     id: azure-arm-mysql.Servers
     name: Servers
-    summary: |-
-      Servers
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the MySQLManagementClient.
-      Initializes a new instance of the Servers class.
+    summary: Class representing a Servers.
     fullName: azure-arm-mysql.Servers
     type: Class
     children:
@@ -37,7 +33,7 @@ items:
     parent: azure-arm-mysql.Servers
     name: Servers(client)
     fullName: azure-arm-mysql.Servers.Servers(client)
-    summary: ''
+    summary: Create a Servers.
     type: Constructor
     syntax:
       parameters:

@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-cdn.Endpoints
     id: azure-arm-cdn.Endpoints
     name: Endpoints
-    summary: |-
-      Endpoints
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the CdnManagementClient.
-      Initializes a new instance of the Endpoints class.
+    summary: Class representing a Endpoints.
     fullName: azure-arm-cdn.Endpoints
     type: Class
     children:
@@ -59,7 +55,7 @@ items:
     parent: azure-arm-cdn.Endpoints
     name: Endpoints(client)
     fullName: azure-arm-cdn.Endpoints.Endpoints(client)
-    summary: ''
+    summary: Create a Endpoints.
     type: Constructor
     syntax:
       parameters:
@@ -436,9 +432,11 @@ items:
         - id: endpoint.originPath
           type:
             - string
-          description: |-
-            The path used when CDN sends request
-            to origin.
+          description: >-
+            A directory path on the origin that
+
+            CDN can use to retreive content from, e.g.
+            contoso.cloudapp.net/originpath.
           optional: true
         - id: endpoint.contentTypesToCompress
           type:
@@ -489,35 +487,61 @@ items:
           type:
             - string
           description: >-
-            Defines the query
+            Defines how CDN caches
 
-            string caching behavior. Possible values include:
-            'IgnoreQueryString',
+            requests that include query strings. You can ignore any query
+            strings when
 
-            'BypassCaching', 'UseQueryString', 'NotSet'
+            caching, bypass caching to prevent requests that contain query
+            strings from
+
+            being cached, or cache every request with a unique URL. Possible
+            values
+
+            include: 'IgnoreQueryString', 'BypassCaching', 'UseQueryString',
+            'NotSet'
           optional: true
         - id: endpoint.optimizationType
           type:
             - string
           description: >-
-            Customer can specify what
+            Specifies what scenario the
 
-            scenario they want this CDN endpoint to optimize, e.g. Download,
+            customer wants this CDN endpoint to optimize for, e.g. Download,
             Media
 
-            services. With this information we can apply scenario driven
+            services. With this information, CDN can apply scenario driven
             optimization.
+
+            Possible values include: 'GeneralWebDelivery',
+            'GeneralMediaStreaming',
+
+            'VideoOnDemandMediaStreaming', 'LargeFileDownload',
+
+            'DynamicSiteAcceleration'
+          optional: true
+        - id: endpoint.probePath
+          type:
+            - string
+          description: >-
+            Path to a file hosted on the origin
+
+            which helps accelerate delivery of the dynamic content and calculate
+            the
+
+            most optimal routes for the CDN. This is relative to the origin
+            path.
           optional: true
         - id: endpoint.geoFilters
           type:
             - array
           description: >-
-            List of rules defining user geo access
+            List of rules defining the user's geo
 
-            within a CDN endpoint. Each geo filter defines an acess rule to a
-            specified
+            access within a CDN endpoint. Each geo filter defines an acess rule
+            to a
 
-            path or content, e.g. block APAC for path /pictures/
+            specified path or content, e.g. block APAC for path /pictures/
           optional: true
         - id: endpoint.origins
           type:
@@ -639,9 +663,11 @@ items:
         - id: endpoint.originPath
           type:
             - string
-          description: |-
-            The path used when CDN sends request
-            to origin.
+          description: >-
+            A directory path on the origin that
+
+            CDN can use to retreive content from, e.g.
+            contoso.cloudapp.net/originpath.
           optional: true
         - id: endpoint.contentTypesToCompress
           type:
@@ -692,35 +718,61 @@ items:
           type:
             - string
           description: >-
-            Defines the query
+            Defines how CDN caches
 
-            string caching behavior. Possible values include:
-            'IgnoreQueryString',
+            requests that include query strings. You can ignore any query
+            strings when
 
-            'BypassCaching', 'UseQueryString', 'NotSet'
+            caching, bypass caching to prevent requests that contain query
+            strings from
+
+            being cached, or cache every request with a unique URL. Possible
+            values
+
+            include: 'IgnoreQueryString', 'BypassCaching', 'UseQueryString',
+            'NotSet'
           optional: true
         - id: endpoint.optimizationType
           type:
             - string
           description: >-
-            Customer can specify what
+            Specifies what scenario the
 
-            scenario they want this CDN endpoint to optimize, e.g. Download,
+            customer wants this CDN endpoint to optimize for, e.g. Download,
             Media
 
-            services. With this information we can apply scenario driven
+            services. With this information, CDN can apply scenario driven
             optimization.
+
+            Possible values include: 'GeneralWebDelivery',
+            'GeneralMediaStreaming',
+
+            'VideoOnDemandMediaStreaming', 'LargeFileDownload',
+
+            'DynamicSiteAcceleration'
+          optional: true
+        - id: endpoint.probePath
+          type:
+            - string
+          description: >-
+            Path to a file hosted on the origin
+
+            which helps accelerate delivery of the dynamic content and calculate
+            the
+
+            most optimal routes for the CDN. This is relative to the origin
+            path.
           optional: true
         - id: endpoint.geoFilters
           type:
             - array
           description: >-
-            List of rules defining user geo access
+            List of rules defining the user's geo
 
-            within a CDN endpoint. Each geo filter defines an acess rule to a
-            specified
+            access within a CDN endpoint. Each geo filter defines an acess rule
+            to a
 
-            path or content, e.g. block APAC for path /pictures/
+            specified path or content, e.g. block APAC for path /pictures/
           optional: true
         - id: endpoint.origins
           type:
@@ -844,8 +896,9 @@ items:
           type:
             - string
           description: |-
-            The path used when CDN
-            sends request to origin.
+            A directory path on
+            the origin that CDN can use to retreive content from, e.g.
+            contoso.cloudapp.net/originpath.
           optional: true
         - id: endpointUpdateProperties.contentTypesToCompress
           type:
@@ -899,22 +952,52 @@ items:
         - id: endpointUpdateProperties.queryStringCachingBehavior
           type:
             - string
-          description: |-
-            Defines the query string caching behavior. Possible values include:
-            'IgnoreQueryString', 'BypassCaching', 'UseQueryString', 'NotSet'
+          description: >-
+            Defines how CDN caches requests that include query strings. You can
+            ignore
+
+            any query strings when caching, bypass caching to prevent requests
+            that
+
+            contain query strings from being cached, or cache every request with
+            a
+
+            unique URL. Possible values include: 'IgnoreQueryString',
+            'BypassCaching',
+
+            'UseQueryString', 'NotSet'
           optional: true
         - id: endpointUpdateProperties.optimizationType
           type:
             - string
           description: >-
-            Customer can
+            Specifies what
 
-            specify what scenario they want this CDN endpoint to optimize, e.g.
+            scenario the customer wants this CDN endpoint to optimize for, e.g.
 
-            Download, Media services. With this information we can apply
-            scenario driven
+            Download, Media services. With this information, CDN can apply
+            scenario
 
-            optimization.
+            driven optimization. Possible values include: 'GeneralWebDelivery',
+
+            'GeneralMediaStreaming', 'VideoOnDemandMediaStreaming',
+            'LargeFileDownload',
+
+            'DynamicSiteAcceleration'
+          optional: true
+        - id: endpointUpdateProperties.probePath
+          type:
+            - string
+          description: >-
+            Path to a file hosted
+
+            on the origin which helps accelerate delivery of the dynamic content
+            and
+
+            calculate the most optimal routes for the CDN. This is relative to
+            the
+
+            origin path.
           optional: true
         - id: endpointUpdateProperties.geoFilters
           type:
@@ -922,10 +1005,12 @@ items:
           description: >-
             List of rules defining
 
-            user geo access within a CDN endpoint. Each geo filter defines an
-            acess rule
+            the user's geo access within a CDN endpoint. Each geo filter defines
+            an
 
-            to a specified path or content, e.g. block APAC for path /pictures/
+            acess rule to a specified path or content, e.g. block APAC for path
+
+            /pictures/
           optional: true
         - id: options
           type:
@@ -1048,8 +1133,9 @@ items:
           type:
             - string
           description: |-
-            The path used when CDN
-            sends request to origin.
+            A directory path on
+            the origin that CDN can use to retreive content from, e.g.
+            contoso.cloudapp.net/originpath.
           optional: true
         - id: endpointUpdateProperties.contentTypesToCompress
           type:
@@ -1103,22 +1189,52 @@ items:
         - id: endpointUpdateProperties.queryStringCachingBehavior
           type:
             - string
-          description: |-
-            Defines the query string caching behavior. Possible values include:
-            'IgnoreQueryString', 'BypassCaching', 'UseQueryString', 'NotSet'
+          description: >-
+            Defines how CDN caches requests that include query strings. You can
+            ignore
+
+            any query strings when caching, bypass caching to prevent requests
+            that
+
+            contain query strings from being cached, or cache every request with
+            a
+
+            unique URL. Possible values include: 'IgnoreQueryString',
+            'BypassCaching',
+
+            'UseQueryString', 'NotSet'
           optional: true
         - id: endpointUpdateProperties.optimizationType
           type:
             - string
           description: >-
-            Customer can
+            Specifies what
 
-            specify what scenario they want this CDN endpoint to optimize, e.g.
+            scenario the customer wants this CDN endpoint to optimize for, e.g.
 
-            Download, Media services. With this information we can apply
-            scenario driven
+            Download, Media services. With this information, CDN can apply
+            scenario
 
-            optimization.
+            driven optimization. Possible values include: 'GeneralWebDelivery',
+
+            'GeneralMediaStreaming', 'VideoOnDemandMediaStreaming',
+            'LargeFileDownload',
+
+            'DynamicSiteAcceleration'
+          optional: true
+        - id: endpointUpdateProperties.probePath
+          type:
+            - string
+          description: >-
+            Path to a file hosted
+
+            on the origin which helps accelerate delivery of the dynamic content
+            and
+
+            calculate the most optimal routes for the CDN. This is relative to
+            the
+
+            origin path.
           optional: true
         - id: endpointUpdateProperties.geoFilters
           type:
@@ -1126,10 +1242,12 @@ items:
           description: >-
             List of rules defining
 
-            user geo access within a CDN endpoint. Each geo filter defines an
-            acess rule
+            the user's geo access within a CDN endpoint. Each geo filter defines
+            an
 
-            to a specified path or content, e.g. block APAC for path /pictures/
+            acess rule to a specified path or content, e.g. block APAC for path
+
+            /pictures/
           optional: true
         - id: options
           type:
@@ -2377,9 +2495,11 @@ items:
         - id: endpoint.originPath
           type:
             - string
-          description: |-
-            The path used when CDN sends request
-            to origin.
+          description: >-
+            A directory path on the origin that
+
+            CDN can use to retreive content from, e.g.
+            contoso.cloudapp.net/originpath.
           optional: true
         - id: endpoint.contentTypesToCompress
           type:
@@ -2430,35 +2550,61 @@ items:
           type:
             - string
           description: >-
-            Defines the query
+            Defines how CDN caches
 
-            string caching behavior. Possible values include:
-            'IgnoreQueryString',
+            requests that include query strings. You can ignore any query
+            strings when
 
-            'BypassCaching', 'UseQueryString', 'NotSet'
+            caching, bypass caching to prevent requests that contain query
+            strings from
+
+            being cached, or cache every request with a unique URL. Possible
+            values
+
+            include: 'IgnoreQueryString', 'BypassCaching', 'UseQueryString',
+            'NotSet'
           optional: true
         - id: endpoint.optimizationType
           type:
             - string
           description: >-
-            Customer can specify what
+            Specifies what scenario the
 
-            scenario they want this CDN endpoint to optimize, e.g. Download,
+            customer wants this CDN endpoint to optimize for, e.g. Download,
             Media
 
-            services. With this information we can apply scenario driven
+            services. With this information, CDN can apply scenario driven
             optimization.
+
+            Possible values include: 'GeneralWebDelivery',
+            'GeneralMediaStreaming',
+
+            'VideoOnDemandMediaStreaming', 'LargeFileDownload',
+
+            'DynamicSiteAcceleration'
+          optional: true
+        - id: endpoint.probePath
+          type:
+            - string
+          description: >-
+            Path to a file hosted on the origin
+
+            which helps accelerate delivery of the dynamic content and calculate
+            the
+
+            most optimal routes for the CDN. This is relative to the origin
+            path.
           optional: true
         - id: endpoint.geoFilters
           type:
             - array
           description: >-
-            List of rules defining user geo access
+            List of rules defining the user's geo
 
-            within a CDN endpoint. Each geo filter defines an acess rule to a
-            specified
+            access within a CDN endpoint. Each geo filter defines an acess rule
+            to a
 
-            path or content, e.g. block APAC for path /pictures/
+            specified path or content, e.g. block APAC for path /pictures/
           optional: true
         - id: endpoint.origins
           type:
@@ -2580,9 +2726,11 @@ items:
         - id: endpoint.originPath
           type:
             - string
-          description: |-
-            The path used when CDN sends request
-            to origin.
+          description: >-
+            A directory path on the origin that
+
+            CDN can use to retreive content from, e.g.
+            contoso.cloudapp.net/originpath.
           optional: true
         - id: endpoint.contentTypesToCompress
           type:
@@ -2633,35 +2781,61 @@ items:
           type:
             - string
           description: >-
-            Defines the query
+            Defines how CDN caches
 
-            string caching behavior. Possible values include:
-            'IgnoreQueryString',
+            requests that include query strings. You can ignore any query
+            strings when
 
-            'BypassCaching', 'UseQueryString', 'NotSet'
+            caching, bypass caching to prevent requests that contain query
+            strings from
+
+            being cached, or cache every request with a unique URL. Possible
+            values
+
+            include: 'IgnoreQueryString', 'BypassCaching', 'UseQueryString',
+            'NotSet'
           optional: true
         - id: endpoint.optimizationType
           type:
             - string
           description: >-
-            Customer can specify what
+            Specifies what scenario the
 
-            scenario they want this CDN endpoint to optimize, e.g. Download,
+            customer wants this CDN endpoint to optimize for, e.g. Download,
             Media
 
-            services. With this information we can apply scenario driven
+            services. With this information, CDN can apply scenario driven
             optimization.
+
+            Possible values include: 'GeneralWebDelivery',
+            'GeneralMediaStreaming',
+
+            'VideoOnDemandMediaStreaming', 'LargeFileDownload',
+
+            'DynamicSiteAcceleration'
+          optional: true
+        - id: endpoint.probePath
+          type:
+            - string
+          description: >-
+            Path to a file hosted on the origin
+
+            which helps accelerate delivery of the dynamic content and calculate
+            the
+
+            most optimal routes for the CDN. This is relative to the origin
+            path.
           optional: true
         - id: endpoint.geoFilters
           type:
             - array
           description: >-
-            List of rules defining user geo access
+            List of rules defining the user's geo
 
-            within a CDN endpoint. Each geo filter defines an acess rule to a
-            specified
+            access within a CDN endpoint. Each geo filter defines an acess rule
+            to a
 
-            path or content, e.g. block APAC for path /pictures/
+            specified path or content, e.g. block APAC for path /pictures/
           optional: true
         - id: endpoint.origins
           type:
@@ -2785,8 +2959,9 @@ items:
           type:
             - string
           description: |-
-            The path used when CDN
-            sends request to origin.
+            A directory path on
+            the origin that CDN can use to retreive content from, e.g.
+            contoso.cloudapp.net/originpath.
           optional: true
         - id: endpointUpdateProperties.contentTypesToCompress
           type:
@@ -2840,22 +3015,52 @@ items:
         - id: endpointUpdateProperties.queryStringCachingBehavior
           type:
             - string
-          description: |-
-            Defines the query string caching behavior. Possible values include:
-            'IgnoreQueryString', 'BypassCaching', 'UseQueryString', 'NotSet'
+          description: >-
+            Defines how CDN caches requests that include query strings. You can
+            ignore
+
+            any query strings when caching, bypass caching to prevent requests
+            that
+
+            contain query strings from being cached, or cache every request with
+            a
+
+            unique URL. Possible values include: 'IgnoreQueryString',
+            'BypassCaching',
+
+            'UseQueryString', 'NotSet'
           optional: true
         - id: endpointUpdateProperties.optimizationType
           type:
             - string
           description: >-
-            Customer can
+            Specifies what
 
-            specify what scenario they want this CDN endpoint to optimize, e.g.
+            scenario the customer wants this CDN endpoint to optimize for, e.g.
 
-            Download, Media services. With this information we can apply
-            scenario driven
+            Download, Media services. With this information, CDN can apply
+            scenario
 
-            optimization.
+            driven optimization. Possible values include: 'GeneralWebDelivery',
+
+            'GeneralMediaStreaming', 'VideoOnDemandMediaStreaming',
+            'LargeFileDownload',
+
+            'DynamicSiteAcceleration'
+          optional: true
+        - id: endpointUpdateProperties.probePath
+          type:
+            - string
+          description: >-
+            Path to a file hosted
+
+            on the origin which helps accelerate delivery of the dynamic content
+            and
+
+            calculate the most optimal routes for the CDN. This is relative to
+            the
+
+            origin path.
           optional: true
         - id: endpointUpdateProperties.geoFilters
           type:
@@ -2863,10 +3068,12 @@ items:
           description: >-
             List of rules defining
 
-            user geo access within a CDN endpoint. Each geo filter defines an
-            acess rule
+            the user's geo access within a CDN endpoint. Each geo filter defines
+            an
 
-            to a specified path or content, e.g. block APAC for path /pictures/
+            acess rule to a specified path or content, e.g. block APAC for path
+
+            /pictures/
           optional: true
         - id: options
           type:
@@ -2989,8 +3196,9 @@ items:
           type:
             - string
           description: |-
-            The path used when CDN
-            sends request to origin.
+            A directory path on
+            the origin that CDN can use to retreive content from, e.g.
+            contoso.cloudapp.net/originpath.
           optional: true
         - id: endpointUpdateProperties.contentTypesToCompress
           type:
@@ -3044,22 +3252,52 @@ items:
         - id: endpointUpdateProperties.queryStringCachingBehavior
           type:
             - string
-          description: |-
-            Defines the query string caching behavior. Possible values include:
-            'IgnoreQueryString', 'BypassCaching', 'UseQueryString', 'NotSet'
+          description: >-
+            Defines how CDN caches requests that include query strings. You can
+            ignore
+
+            any query strings when caching, bypass caching to prevent requests
+            that
+
+            contain query strings from being cached, or cache every request with
+            a
+
+            unique URL. Possible values include: 'IgnoreQueryString',
+            'BypassCaching',
+
+            'UseQueryString', 'NotSet'
           optional: true
         - id: endpointUpdateProperties.optimizationType
           type:
             - string
           description: >-
-            Customer can
+            Specifies what
 
-            specify what scenario they want this CDN endpoint to optimize, e.g.
+            scenario the customer wants this CDN endpoint to optimize for, e.g.
 
-            Download, Media services. With this information we can apply
-            scenario driven
+            Download, Media services. With this information, CDN can apply
+            scenario
 
-            optimization.
+            driven optimization. Possible values include: 'GeneralWebDelivery',
+
+            'GeneralMediaStreaming', 'VideoOnDemandMediaStreaming',
+            'LargeFileDownload',
+
+            'DynamicSiteAcceleration'
+          optional: true
+        - id: endpointUpdateProperties.probePath
+          type:
+            - string
+          description: >-
+            Path to a file hosted
+
+            on the origin which helps accelerate delivery of the dynamic content
+            and
+
+            calculate the most optimal routes for the CDN. This is relative to
+            the
+
+            origin path.
           optional: true
         - id: endpointUpdateProperties.geoFilters
           type:
@@ -3067,10 +3305,12 @@ items:
           description: >-
             List of rules defining
 
-            user geo access within a CDN endpoint. Each geo filter defines an
-            acess rule
+            the user's geo access within a CDN endpoint. Each geo filter defines
+            an
 
-            to a specified path or content, e.g. block APAC for path /pictures/
+            acess rule to a specified path or content, e.g. block APAC for path
+
+            /pictures/
           optional: true
         - id: options
           type:

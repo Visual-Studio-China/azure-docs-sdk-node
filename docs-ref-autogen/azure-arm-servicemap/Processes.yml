@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-servicemap.Processes
     id: azure-arm-servicemap.Processes
     name: Processes
-    summary: |-
-      Processes
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ServicemapManagementClient.
-      Initializes a new instance of the Processes class.
+    summary: Class representing a Processes.
     fullName: azure-arm-servicemap.Processes
     type: Class
     children:
@@ -34,7 +30,7 @@ items:
     parent: azure-arm-servicemap.Processes
     name: Processes(client)
     fullName: azure-arm-servicemap.Processes.Processes(client)
-    summary: ''
+    summary: Create a Processes.
     type: Constructor
     syntax:
       parameters:

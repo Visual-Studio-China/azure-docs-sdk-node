@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-website.AppServiceCertificateOrders
     id: azure-arm-website.AppServiceCertificateOrders
     name: AppServiceCertificateOrders
-    summary: |-
-      AppServiceCertificateOrders
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the WebSiteManagementClient.
-      Initializes a new instance of the AppServiceCertificateOrders class.
+    summary: Class representing a AppServiceCertificateOrders.
     fullName: azure-arm-website.AppServiceCertificateOrders
     type: Class
     children:
@@ -92,7 +88,7 @@ items:
     name: AppServiceCertificateOrders(client)
     fullName: >-
       azure-arm-website.AppServiceCertificateOrders.AppServiceCertificateOrders(client)
-    summary: ''
+    summary: Create a AppServiceCertificateOrders.
     type: Constructor
     syntax:
       parameters:
@@ -317,25 +313,6 @@ items:
             Last CSR that was created
             for this order.
           optional: true
-        - id: appServiceCertificateOrder.isPrivateKeyExternal
-          type:
-            - boolean
-          description: >-
-            <code>true</code> if private key is external; otherwise,
-            <code>false</code>.
-          optional: true
-        - id: appServiceCertificateOrder.appServiceCertificateNotRenewableReasons
-          type:
-            - array
-          description: >-
-            Reasons why App Service Certificate is not renewable at the current
-            moment.
-          optional: true
-        - id: appServiceCertificateOrder.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: appServiceCertificateOrder.kind
           type:
             - string
@@ -345,11 +322,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: appServiceCertificateOrder.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: appServiceCertificateOrder.tags
           type:
             - object
@@ -482,25 +454,6 @@ items:
             Last CSR that was created
             for this order.
           optional: true
-        - id: appServiceCertificateOrder.isPrivateKeyExternal
-          type:
-            - boolean
-          description: >-
-            <code>true</code> if private key is external; otherwise,
-            <code>false</code>.
-          optional: true
-        - id: appServiceCertificateOrder.appServiceCertificateNotRenewableReasons
-          type:
-            - array
-          description: >-
-            Reasons why App Service Certificate is not renewable at the current
-            moment.
-          optional: true
-        - id: appServiceCertificateOrder.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: appServiceCertificateOrder.kind
           type:
             - string
@@ -510,11 +463,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: appServiceCertificateOrder.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: appServiceCertificateOrder.tags
           type:
             - object
@@ -943,26 +891,6 @@ items:
             Last CSR that was created
             for this order.
           optional: true
-        - id: certificateDistinguishedName.isPrivateKeyExternal
-          type:
-            - boolean
-          description: >-
-            <code>true</code> if private key is external; otherwise,
-            <code>false</code>.
-          optional: true
-        - id: >-
-            certificateDistinguishedName.appServiceCertificateNotRenewableReasons
-          type:
-            - array
-          description: >-
-            Reasons why App Service Certificate is not renewable at the current
-            moment.
-          optional: true
-        - id: certificateDistinguishedName.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: certificateDistinguishedName.kind
           type:
             - string
@@ -972,11 +900,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: certificateDistinguishedName.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: certificateDistinguishedName.tags
           type:
             - object
@@ -1120,26 +1043,6 @@ items:
             Last CSR that was created
             for this order.
           optional: true
-        - id: certificateDistinguishedName.isPrivateKeyExternal
-          type:
-            - boolean
-          description: >-
-            <code>true</code> if private key is external; otherwise,
-            <code>false</code>.
-          optional: true
-        - id: >-
-            certificateDistinguishedName.appServiceCertificateNotRenewableReasons
-          type:
-            - array
-          description: >-
-            Reasons why App Service Certificate is not renewable at the current
-            moment.
-          optional: true
-        - id: certificateDistinguishedName.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: certificateDistinguishedName.kind
           type:
             - string
@@ -1149,11 +1052,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: certificateDistinguishedName.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: certificateDistinguishedName.tags
           type:
             - object
@@ -1714,11 +1612,6 @@ items:
             Key Vault secret
             name.
           optional: true
-        - id: keyVaultCertificate.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: keyVaultCertificate.kind
           type:
             - string
@@ -1728,11 +1621,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: keyVaultCertificate.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: keyVaultCertificate.tags
           type:
             - object
@@ -1843,11 +1731,6 @@ items:
             Key Vault secret
             name.
           optional: true
-        - id: keyVaultCertificate.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: keyVaultCertificate.kind
           type:
             - string
@@ -1857,11 +1740,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: keyVaultCertificate.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: keyVaultCertificate.tags
           type:
             - object
@@ -2126,11 +2004,6 @@ items:
 
             key and vice versa).
           optional: true
-        - id: reissueCertificateOrderRequest.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: reissueCertificateOrderRequest.kind
           type:
             - string
@@ -2140,11 +2013,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: reissueCertificateOrderRequest.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: reissueCertificateOrderRequest.tags
           type:
             - object
@@ -2265,11 +2133,6 @@ items:
 
             key and vice versa).
           optional: true
-        - id: reissueCertificateOrderRequest.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: reissueCertificateOrderRequest.kind
           type:
             - string
@@ -2279,11 +2142,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: reissueCertificateOrderRequest.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: reissueCertificateOrderRequest.tags
           type:
             - object
@@ -2384,11 +2242,6 @@ items:
 
             vice versa).
           optional: true
-        - id: renewCertificateOrderRequest.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: renewCertificateOrderRequest.kind
           type:
             - string
@@ -2398,11 +2251,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: renewCertificateOrderRequest.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: renewCertificateOrderRequest.tags
           type:
             - object
@@ -2514,11 +2362,6 @@ items:
 
             vice versa).
           optional: true
-        - id: renewCertificateOrderRequest.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: renewCertificateOrderRequest.kind
           type:
             - string
@@ -2528,11 +2371,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: renewCertificateOrderRequest.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: renewCertificateOrderRequest.tags
           type:
             - object
@@ -3586,26 +3424,6 @@ items:
             Last CSR that was created
             for this order.
           optional: true
-        - id: certificateDistinguishedName.isPrivateKeyExternal
-          type:
-            - boolean
-          description: >-
-            <code>true</code> if private key is external; otherwise,
-            <code>false</code>.
-          optional: true
-        - id: >-
-            certificateDistinguishedName.appServiceCertificateNotRenewableReasons
-          type:
-            - array
-          description: >-
-            Reasons why App Service Certificate is not renewable at the current
-            moment.
-          optional: true
-        - id: certificateDistinguishedName.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: certificateDistinguishedName.kind
           type:
             - string
@@ -3615,11 +3433,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: certificateDistinguishedName.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: certificateDistinguishedName.tags
           type:
             - object
@@ -3763,26 +3576,6 @@ items:
             Last CSR that was created
             for this order.
           optional: true
-        - id: certificateDistinguishedName.isPrivateKeyExternal
-          type:
-            - boolean
-          description: >-
-            <code>true</code> if private key is external; otherwise,
-            <code>false</code>.
-          optional: true
-        - id: >-
-            certificateDistinguishedName.appServiceCertificateNotRenewableReasons
-          type:
-            - array
-          description: >-
-            Reasons why App Service Certificate is not renewable at the current
-            moment.
-          optional: true
-        - id: certificateDistinguishedName.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: certificateDistinguishedName.kind
           type:
             - string
@@ -3792,11 +3585,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: certificateDistinguishedName.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: certificateDistinguishedName.tags
           type:
             - object
@@ -3895,11 +3683,6 @@ items:
             Key Vault secret
             name.
           optional: true
-        - id: keyVaultCertificate.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: keyVaultCertificate.kind
           type:
             - string
@@ -3909,11 +3692,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: keyVaultCertificate.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: keyVaultCertificate.tags
           type:
             - object
@@ -4026,11 +3804,6 @@ items:
             Key Vault secret
             name.
           optional: true
-        - id: keyVaultCertificate.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: keyVaultCertificate.kind
           type:
             - string
@@ -4040,11 +3813,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: keyVaultCertificate.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: keyVaultCertificate.tags
           type:
             - object

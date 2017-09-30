@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-notificationhubs.Name
     id: azure-arm-notificationhubs.Name
     name: Name
-    summary: |-
-      Name
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the NotificationHubsManagementClient.
-      Initializes a new instance of the Name class.
+    summary: Class representing a Name.
     fullName: azure-arm-notificationhubs.Name
     type: Class
     children:
@@ -22,7 +18,7 @@ items:
     parent: azure-arm-notificationhubs.Name
     name: Name(client)
     fullName: azure-arm-notificationhubs.Name.Name(client)
-    summary: ''
+    summary: Create a Name.
     type: Constructor
     syntax:
       parameters:

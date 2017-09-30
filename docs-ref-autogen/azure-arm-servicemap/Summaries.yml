@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-servicemap.Summaries
     id: azure-arm-servicemap.Summaries
     name: Summaries
-    summary: |-
-      Summaries
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ServicemapManagementClient.
-      Initializes a new instance of the Summaries class.
+    summary: Class representing a Summaries.
     fullName: azure-arm-servicemap.Summaries
     type: Class
     children:
@@ -21,7 +17,7 @@ items:
     parent: azure-arm-servicemap.Summaries
     name: Summaries(client)
     fullName: azure-arm-servicemap.Summaries.Summaries(client)
-    summary: ''
+    summary: Create a Summaries.
     type: Constructor
     syntax:
       parameters:

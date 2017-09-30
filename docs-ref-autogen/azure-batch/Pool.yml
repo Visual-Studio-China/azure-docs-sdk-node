@@ -3,11 +3,7 @@ items:
   - uid: azure-batch.Pool
     id: azure-batch.Pool
     name: Pool
-    summary: |-
-      Pool
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the BatchServiceClient.
-      Initializes a new instance of the Pool class.
+    summary: Class representing a Pool.
     fullName: azure-batch.Pool
     type: Class
     children:
@@ -55,7 +51,7 @@ items:
     parent: azure-batch.Pool
     name: Pool(client)
     fullName: azure-batch.Pool.Pool(client)
-    summary: ''
+    summary: Create a Pool.
     type: Constructor
     syntax:
       parameters:
@@ -70,13 +66,24 @@ items:
     id: 'azure-batch.Pool#listUsageMetricsWithHttpOperationResponse'
     parent: azure-batch.Pool
     name: listUsageMetricsWithHttpOperationResponse(options)
-    summary: |-
+    summary: >-
       Lists the usage metrics, aggregated by pool across individual time
+
       intervals, for the specified account.
 
+
       If you do not specify a $filter clause including a poolId, the response
+
       includes all pools that existed in the account in the time range of the
-      returned aggregation intervals.
+
+      returned aggregation intervals. If you do not specify a $filter clause
+
+      including a startTime or endTime these filters default to the start and
+      end
+
+      times of the last aggregation interval currently available; that is, only
+
+      the last aggregation interval is returned.
     fullName: azure-batch.Pool.listUsageMetricsWithHttpOperationResponse(options)
     tags:
       - originalTitle: resolve
@@ -219,13 +226,24 @@ items:
     id: 'azure-batch.Pool#listUsageMetrics'
     parent: azure-batch.Pool
     name: 'listUsageMetrics(options, optionalCallback)'
-    summary: |-
+    summary: >-
       Lists the usage metrics, aggregated by pool across individual time
+
       intervals, for the specified account.
 
+
       If you do not specify a $filter clause including a poolId, the response
+
       includes all pools that existed in the account in the time range of the
-      returned aggregation intervals.
+
+      returned aggregation intervals. If you do not specify a $filter clause
+
+      including a startTime or endTime these filters default to the start and
+      end
+
+      times of the last aggregation interval currently available; that is, only
+
+      the last aggregation interval is returned.
     fullName: 'azure-batch.Pool.listUsageMetrics(options, optionalCallback)'
     tags:
       - originalTitle: resolve
@@ -757,28 +775,6 @@ items:
 
             the specified OS family.
           optional: true
-        - id: pool.cloudServiceConfiguration.currentOSVersion
-          type:
-            - string
-          description: >-
-            The Azure
-
-            Guest OS Version currently installed on the virtual machines in the
-            pool.
-
-            This may differ from targetOSVersion if the pool state is Upgrading.
-            In this
-
-            case some virtual machines may be on the targetOSVersion and some
-            may be on
-
-            the currentOSVersion during the upgrade process. Once all virtual
-            machines
-
-            have upgraded, currentOSVersion is updated to be the same as
-
-            targetOSVersion.
-          optional: true
         - id: pool.virtualMachineConfiguration
           type:
             - object
@@ -794,16 +790,12 @@ items:
           type:
             - object
           description: >-
-            A
+            A reference
 
-            reference to the Azure Virtual Machines Marketplace image to use.
-            This
+            to the Azure Virtual Machines Marketplace image or the custom
+            Virtual
 
-            property and osDisk are mutually exclusive and one of the properties
-            must be
-
-            specified.
-          optional: true
+            Machine image to use.
         - id: pool.virtualMachineConfiguration.imageReference.publisher
           type:
             - string
@@ -812,6 +804,7 @@ items:
             example,
 
             Canonical or MicrosoftWindowsServer.
+          optional: true
         - id: pool.virtualMachineConfiguration.imageReference.offer
           type:
             - string
@@ -822,16 +815,15 @@ items:
             example,
 
             UbuntuServer or WindowsServer.
+          optional: true
         - id: pool.virtualMachineConfiguration.imageReference.sku
           type:
             - string
-          description: >-
-            The SKU
-
-            of the Azure Virtual Machines Marketplace image. For example,
-            14.04.0-LTS or
-
-            2012-R2-Datacenter.
+          description: |-
+            The
+            SKU of the Azure Virtual Machines Marketplace image. For example,
+            14.04.0-LTS or 2012-R2-Datacenter.
+          optional: true
         - id: pool.virtualMachineConfiguration.imageReference.version
           type:
             - string
@@ -844,67 +836,60 @@ items:
 
             omitted, the default is 'latest'.
           optional: true
-        - id: pool.virtualMachineConfiguration.osDisk
+        - id: >-
+            pool.virtualMachineConfiguration.imageReference.virtualMachineImageId
           type:
-            - object
-          description: >-
-            A reference to the
-
-            OS disk image to use. This property can be specified only if the
-            Batch
-
-            account was created with its poolAllocationMode property set to
-
-            'UserSubscription'. This property and imageReference are mutually
-            exclusive
-
-            and one of the properties must be specified.
-          optional: true
-        - id: pool.virtualMachineConfiguration.osDisk.imageUris
-          type:
-            - array
+            - string
           description: >-
             The
 
-            collection of Virtual Hard Disk (VHD) URIs. All the VHDs must be
-            identical
+            ARM resource identifier of the virtual machine image. Computes nodes
+            of the
 
-            and must reside in an Azure Storage account within the same
-            subscription and
+            pool will be created using this custom image. This is of the form
 
-            same region as the Batch account. For best performance, it is
-            recommended
+            /subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/images/{imageName}
 
-            that each VHD resides in a separate Azure Storage account. Each VHD
-            can
+            This property is mutually exclusive with other ImageReference
+            properties.
 
-            serve upto 20 Windows compute nodes or 40 Linux compute nodes. You
-            must
+            The virtual machine image must be in the same region and
+            subscription as the
 
-            supply enough VHD URIs to satisfy the 'targetDedicated' property of
+            Azure Batch account. For information about the firewall settings for
             the
 
-            pool. If you do not supply enough VHD URIs, the pool will partially
-            allocate
+            Batch node agent to communicate with the Batch service see
 
-            compute nodes, and a resize error will occur.
+            https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration.
+          optional: true
+        - id: pool.virtualMachineConfiguration.osDisk
+          type:
+            - object
+          description: |-
+            Settings for the
+            operating system disk of the Virtual Machine.
+          optional: true
         - id: pool.virtualMachineConfiguration.osDisk.caching
           type:
             - string
           description: >-
             The type
 
-            of caching to enable for the OS disk. none - The caching mode for
-            the disk
+            of caching to enable for the OS disk. Values are:
 
-            is not enabled. readOnly - The caching mode for the disk is read
-            only.
 
-            readWrite - The caching mode for the disk is read and write. The
-            default
+            none - The caching mode for the disk is not enabled.
 
-            value for caching is none. For information about the caching options
-            see:
+            readOnly - The caching mode for the disk is read only.
+
+            readWrite - The caching mode for the disk is read and write.
+
+
+            The default value for caching is none. For information about the
+            caching
+
+            options see:
 
             https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/27/exploring-windows-azure-drives-disks-and-images/.
 
@@ -959,6 +944,86 @@ items:
             omitted,
 
             the default value is true.
+          optional: true
+        - id: pool.virtualMachineConfiguration.dataDisks
+          type:
+            - array
+          description: >-
+            The
+
+            configuration for data disks attached to the comptue nodes in the
+            pool. This
+
+            property must be specified if the compute nodes in the pool need to
+            have
+
+            empty data disks attached to them. This cannot be updated.
+          optional: true
+        - id: pool.virtualMachineConfiguration.licenseType
+          type:
+            - string
+          description: >-
+            The type of
+
+            on-premises license to be used when deploying the operating system.
+            This
+
+            only applies to images that contain the Windows operating system,
+            and should
+
+            only be used when you hold valid on-premises licenses for the nodes
+            which
+
+            will be deployed. If omitted, no on-premises licensing discount is
+            applied.
+
+            Values are:
+
+
+            Windows_Server - The on-premises license is for Windows Server.
+
+            Windows_Client - The on-premises license is for Windows Client.
+          optional: true
+        - id: pool.virtualMachineConfiguration.containerConfiguration
+          type:
+            - object
+          description: >-
+            The container configuration for the pool. If specified, setup is
+            performed
+
+            on each node in the pool to allow tasks to run in containers. All
+            regular
+
+            tasks and job manager tasks run on this pool must specify the
+
+            containerSettings property, and all other tasks may specify it.
+          optional: true
+        - id: >-
+            pool.virtualMachineConfiguration.containerConfiguration.containerImageNames
+          type:
+            - array
+          description: >-
+            The collection of container image names. This is the full image
+            reference,
+
+            as would be specified to "docker pull". An image will be sourced
+            from the
+
+            default Docker registry unless the image is fully qualified with an
+
+            alternative registry.
+          optional: true
+        - id: >-
+            pool.virtualMachineConfiguration.containerConfiguration.containerRegistries
+          type:
+            - array
+          description: >-
+            Additional private registries from which containers can be pulled.
+            If any
+
+            images must be downloaded from a private registry which requires
+
+            credentials, then those credentials must be provided here.
           optional: true
         - id: pool.resizeTimeout
           type:
@@ -1143,9 +1208,34 @@ items:
             service will set the state of the compute nodes to unusable. For
             pools
 
-            created via virtualMachineConfiguration the Batch account must have
+            created with virtualMachineConfiguration only ARM virtual networks
 
-            poolAllocationMode userSubscription in order to use a VNet.
+            ('Microsoft.Network/virtualNetworks') are supported, but for pools
+            created
+
+            with cloudServiceConfiguration both ARM and classic virtual networks
+            are
+
+            supported. If the specified VNet has any associated Network Security
+            Groups
+
+            (NSG), then a few reserved system ports must be enabled for inbound
+
+            communication. For pools created with a virtual machine
+            configuration,
+
+            enable ports 29876 and 29877, as well as port 22 for Linux and port
+            3389 for
+
+            Windows. For pools created with a cloud service configuration,
+            enable ports
+
+            10100, 20100, and 30100. Also enable outbound connections to Azure
+            Storage
+
+            on port 443. For more details see:
+
+            https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration
           optional: true
         - id: pool.networkConfiguration.endpointConfiguration
           type:
@@ -1201,6 +1291,79 @@ items:
             "/bin/sh -c
 
             MyCommand" in Linux.
+        - id: pool.startTask.containerSettings
+          type:
+            - object
+          description: >-
+            The settings for the
+
+            container under which the start task runs. When this is specified,
+            all
+
+            directories recursively below the AZ_BATCH_NODE_ROOT_DIR (the root
+            of Azure
+
+            Batch directories on the node) are mapped into the container, all
+            task
+
+            environment variables are mapped into the container, and the task
+            command
+
+            line is executed in the container.
+          optional: true
+        - id: pool.startTask.containerSettings.containerRunOptions
+          type:
+            - string
+          description: >-
+            Additional options to the container create command. These additional
+            options
+
+            are supplied as arguments to the "docker create" command, in
+            addition to
+
+            those controlled by the Batch Service.
+          optional: true
+        - id: pool.startTask.containerSettings.imageName
+          type:
+            - string
+          description: >-
+            The image to use
+
+            to create the container in which the task will run. This is the full
+            image
+
+            reference, as would be specified to "docker pull". If no tag is
+            provided as
+
+            part of the image name, the tag ":latest" is used as a default.
+        - id: pool.startTask.containerSettings.registry
+          type:
+            - object
+          description: >-
+            The private
+
+            registry which contains the container image. This setting can be
+            omitted if
+
+            was already provided at pool creation.
+          optional: true
+        - id: pool.startTask.containerSettings.registry.registryServer
+          type:
+            - string
+          description: 'The registry URL. If omitted, the default is "docker.io".'
+          optional: true
+        - id: pool.startTask.containerSettings.registry.userName
+          type:
+            - string
+          description: |-
+            The user
+            name to log into the registry server.
+        - id: pool.startTask.containerSettings.registry.password
+          type:
+            - string
+          description: |-
+            The
+            password to log into the registry server.
         - id: pool.startTask.resourceFiles
           type:
             - array
@@ -1209,6 +1372,9 @@ items:
 
             service will download to the compute node before running the command
             line.
+
+            Files listed under this element are located in the task's working
+            directory.
           optional: true
         - id: pool.startTask.environmentSettings
           type:
@@ -1256,16 +1422,18 @@ items:
           description: >-
             The scope for
 
-            the auto user pool - specifies that the task runs as the common auto
-            user
+            the auto user Values are:
 
-            account which is created on every node in a pool. task - specifies
-            that the
 
-            service should create a new user for the task. The default value is
+            pool - specifies that the task runs as the common auto user account
+            which is
+
+            created on every node in a pool.
+
+            task - specifies that the service should create a new user for the
             task.
 
-            Possible values include: 'task', 'pool'
+            The default value is task. Possible values include: 'task', 'pool'
           optional: true
         - id: pool.startTask.userIdentity.autoUser.elevationLevel
           type:
@@ -1334,20 +1502,19 @@ items:
             service marks the compute node unusable, and will not schedule tasks
             to it.
 
-            This condition can be detected via the node state and scheduling
-            error
+            This condition can be detected via the node state and failure info
+            details.
 
-            detail. If false, the Batch service will not wait for the start task
-            to
+            If false, the Batch service will not wait for the start task to
+            complete. In
 
-            complete. In this case, other tasks can start executing on the
-            compute node
+            this case, other tasks can start executing on the compute node while
+            the
 
-            while the start task is still running; and even if the start task
-            fails, new
+            start task is still running; and even if the start task fails, new
+            tasks
 
-            tasks will continue to be scheduled on the node. The default is
-            false.
+            will continue to be scheduled on the node. The default is false.
           optional: true
         - id: pool.certificateReferences
           type:
@@ -1419,17 +1586,30 @@ items:
           type:
             - object
           description: |-
-            How the Batch service
-            distributes tasks between compute nodes in the pool.
+            How tasks are distributed across
+            compute nodes in a pool.
           optional: true
         - id: pool.taskSchedulingPolicy.nodeFillType
           type:
             - string
           description: >-
-            How tasks should be
+            How tasks are
 
-            distributed across compute nodes. Possible values include: 'spread',
-            'pack'
+            distributed across compute nodes in a pool. Values are:
+
+
+            pack - As many tasks as possible (maxTasksPerNode) should be
+            assigned to
+
+            each node in the pool before any tasks are assigned to the next node
+            in the
+
+            pool.
+
+            spread - Tasks should be assigned evenly across all nodes in the
+            pool.
+
+            Possible values include: 'spread', 'pack'
         - id: pool.userAccounts
           type:
             - array
@@ -1680,28 +1860,6 @@ items:
 
             the specified OS family.
           optional: true
-        - id: pool.cloudServiceConfiguration.currentOSVersion
-          type:
-            - string
-          description: >-
-            The Azure
-
-            Guest OS Version currently installed on the virtual machines in the
-            pool.
-
-            This may differ from targetOSVersion if the pool state is Upgrading.
-            In this
-
-            case some virtual machines may be on the targetOSVersion and some
-            may be on
-
-            the currentOSVersion during the upgrade process. Once all virtual
-            machines
-
-            have upgraded, currentOSVersion is updated to be the same as
-
-            targetOSVersion.
-          optional: true
         - id: pool.virtualMachineConfiguration
           type:
             - object
@@ -1717,16 +1875,12 @@ items:
           type:
             - object
           description: >-
-            A
+            A reference
 
-            reference to the Azure Virtual Machines Marketplace image to use.
-            This
+            to the Azure Virtual Machines Marketplace image or the custom
+            Virtual
 
-            property and osDisk are mutually exclusive and one of the properties
-            must be
-
-            specified.
-          optional: true
+            Machine image to use.
         - id: pool.virtualMachineConfiguration.imageReference.publisher
           type:
             - string
@@ -1735,6 +1889,7 @@ items:
             example,
 
             Canonical or MicrosoftWindowsServer.
+          optional: true
         - id: pool.virtualMachineConfiguration.imageReference.offer
           type:
             - string
@@ -1745,16 +1900,15 @@ items:
             example,
 
             UbuntuServer or WindowsServer.
+          optional: true
         - id: pool.virtualMachineConfiguration.imageReference.sku
           type:
             - string
-          description: >-
-            The SKU
-
-            of the Azure Virtual Machines Marketplace image. For example,
-            14.04.0-LTS or
-
-            2012-R2-Datacenter.
+          description: |-
+            The
+            SKU of the Azure Virtual Machines Marketplace image. For example,
+            14.04.0-LTS or 2012-R2-Datacenter.
+          optional: true
         - id: pool.virtualMachineConfiguration.imageReference.version
           type:
             - string
@@ -1767,67 +1921,60 @@ items:
 
             omitted, the default is 'latest'.
           optional: true
-        - id: pool.virtualMachineConfiguration.osDisk
+        - id: >-
+            pool.virtualMachineConfiguration.imageReference.virtualMachineImageId
           type:
-            - object
-          description: >-
-            A reference to the
-
-            OS disk image to use. This property can be specified only if the
-            Batch
-
-            account was created with its poolAllocationMode property set to
-
-            'UserSubscription'. This property and imageReference are mutually
-            exclusive
-
-            and one of the properties must be specified.
-          optional: true
-        - id: pool.virtualMachineConfiguration.osDisk.imageUris
-          type:
-            - array
+            - string
           description: >-
             The
 
-            collection of Virtual Hard Disk (VHD) URIs. All the VHDs must be
-            identical
+            ARM resource identifier of the virtual machine image. Computes nodes
+            of the
 
-            and must reside in an Azure Storage account within the same
-            subscription and
+            pool will be created using this custom image. This is of the form
 
-            same region as the Batch account. For best performance, it is
-            recommended
+            /subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/images/{imageName}
 
-            that each VHD resides in a separate Azure Storage account. Each VHD
-            can
+            This property is mutually exclusive with other ImageReference
+            properties.
 
-            serve upto 20 Windows compute nodes or 40 Linux compute nodes. You
-            must
+            The virtual machine image must be in the same region and
+            subscription as the
 
-            supply enough VHD URIs to satisfy the 'targetDedicated' property of
+            Azure Batch account. For information about the firewall settings for
             the
 
-            pool. If you do not supply enough VHD URIs, the pool will partially
-            allocate
+            Batch node agent to communicate with the Batch service see
 
-            compute nodes, and a resize error will occur.
+            https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration.
+          optional: true
+        - id: pool.virtualMachineConfiguration.osDisk
+          type:
+            - object
+          description: |-
+            Settings for the
+            operating system disk of the Virtual Machine.
+          optional: true
         - id: pool.virtualMachineConfiguration.osDisk.caching
           type:
             - string
           description: >-
             The type
 
-            of caching to enable for the OS disk. none - The caching mode for
-            the disk
+            of caching to enable for the OS disk. Values are:
 
-            is not enabled. readOnly - The caching mode for the disk is read
-            only.
 
-            readWrite - The caching mode for the disk is read and write. The
-            default
+            none - The caching mode for the disk is not enabled.
 
-            value for caching is none. For information about the caching options
-            see:
+            readOnly - The caching mode for the disk is read only.
+
+            readWrite - The caching mode for the disk is read and write.
+
+
+            The default value for caching is none. For information about the
+            caching
+
+            options see:
 
             https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/27/exploring-windows-azure-drives-disks-and-images/.
 
@@ -1882,6 +2029,86 @@ items:
             omitted,
 
             the default value is true.
+          optional: true
+        - id: pool.virtualMachineConfiguration.dataDisks
+          type:
+            - array
+          description: >-
+            The
+
+            configuration for data disks attached to the comptue nodes in the
+            pool. This
+
+            property must be specified if the compute nodes in the pool need to
+            have
+
+            empty data disks attached to them. This cannot be updated.
+          optional: true
+        - id: pool.virtualMachineConfiguration.licenseType
+          type:
+            - string
+          description: >-
+            The type of
+
+            on-premises license to be used when deploying the operating system.
+            This
+
+            only applies to images that contain the Windows operating system,
+            and should
+
+            only be used when you hold valid on-premises licenses for the nodes
+            which
+
+            will be deployed. If omitted, no on-premises licensing discount is
+            applied.
+
+            Values are:
+
+
+            Windows_Server - The on-premises license is for Windows Server.
+
+            Windows_Client - The on-premises license is for Windows Client.
+          optional: true
+        - id: pool.virtualMachineConfiguration.containerConfiguration
+          type:
+            - object
+          description: >-
+            The container configuration for the pool. If specified, setup is
+            performed
+
+            on each node in the pool to allow tasks to run in containers. All
+            regular
+
+            tasks and job manager tasks run on this pool must specify the
+
+            containerSettings property, and all other tasks may specify it.
+          optional: true
+        - id: >-
+            pool.virtualMachineConfiguration.containerConfiguration.containerImageNames
+          type:
+            - array
+          description: >-
+            The collection of container image names. This is the full image
+            reference,
+
+            as would be specified to "docker pull". An image will be sourced
+            from the
+
+            default Docker registry unless the image is fully qualified with an
+
+            alternative registry.
+          optional: true
+        - id: >-
+            pool.virtualMachineConfiguration.containerConfiguration.containerRegistries
+          type:
+            - array
+          description: >-
+            Additional private registries from which containers can be pulled.
+            If any
+
+            images must be downloaded from a private registry which requires
+
+            credentials, then those credentials must be provided here.
           optional: true
         - id: pool.resizeTimeout
           type:
@@ -2066,9 +2293,34 @@ items:
             service will set the state of the compute nodes to unusable. For
             pools
 
-            created via virtualMachineConfiguration the Batch account must have
+            created with virtualMachineConfiguration only ARM virtual networks
 
-            poolAllocationMode userSubscription in order to use a VNet.
+            ('Microsoft.Network/virtualNetworks') are supported, but for pools
+            created
+
+            with cloudServiceConfiguration both ARM and classic virtual networks
+            are
+
+            supported. If the specified VNet has any associated Network Security
+            Groups
+
+            (NSG), then a few reserved system ports must be enabled for inbound
+
+            communication. For pools created with a virtual machine
+            configuration,
+
+            enable ports 29876 and 29877, as well as port 22 for Linux and port
+            3389 for
+
+            Windows. For pools created with a cloud service configuration,
+            enable ports
+
+            10100, 20100, and 30100. Also enable outbound connections to Azure
+            Storage
+
+            on port 443. For more details see:
+
+            https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration
           optional: true
         - id: pool.networkConfiguration.endpointConfiguration
           type:
@@ -2124,6 +2376,79 @@ items:
             "/bin/sh -c
 
             MyCommand" in Linux.
+        - id: pool.startTask.containerSettings
+          type:
+            - object
+          description: >-
+            The settings for the
+
+            container under which the start task runs. When this is specified,
+            all
+
+            directories recursively below the AZ_BATCH_NODE_ROOT_DIR (the root
+            of Azure
+
+            Batch directories on the node) are mapped into the container, all
+            task
+
+            environment variables are mapped into the container, and the task
+            command
+
+            line is executed in the container.
+          optional: true
+        - id: pool.startTask.containerSettings.containerRunOptions
+          type:
+            - string
+          description: >-
+            Additional options to the container create command. These additional
+            options
+
+            are supplied as arguments to the "docker create" command, in
+            addition to
+
+            those controlled by the Batch Service.
+          optional: true
+        - id: pool.startTask.containerSettings.imageName
+          type:
+            - string
+          description: >-
+            The image to use
+
+            to create the container in which the task will run. This is the full
+            image
+
+            reference, as would be specified to "docker pull". If no tag is
+            provided as
+
+            part of the image name, the tag ":latest" is used as a default.
+        - id: pool.startTask.containerSettings.registry
+          type:
+            - object
+          description: >-
+            The private
+
+            registry which contains the container image. This setting can be
+            omitted if
+
+            was already provided at pool creation.
+          optional: true
+        - id: pool.startTask.containerSettings.registry.registryServer
+          type:
+            - string
+          description: 'The registry URL. If omitted, the default is "docker.io".'
+          optional: true
+        - id: pool.startTask.containerSettings.registry.userName
+          type:
+            - string
+          description: |-
+            The user
+            name to log into the registry server.
+        - id: pool.startTask.containerSettings.registry.password
+          type:
+            - string
+          description: |-
+            The
+            password to log into the registry server.
         - id: pool.startTask.resourceFiles
           type:
             - array
@@ -2132,6 +2457,9 @@ items:
 
             service will download to the compute node before running the command
             line.
+
+            Files listed under this element are located in the task's working
+            directory.
           optional: true
         - id: pool.startTask.environmentSettings
           type:
@@ -2179,16 +2507,18 @@ items:
           description: >-
             The scope for
 
-            the auto user pool - specifies that the task runs as the common auto
-            user
+            the auto user Values are:
 
-            account which is created on every node in a pool. task - specifies
-            that the
 
-            service should create a new user for the task. The default value is
+            pool - specifies that the task runs as the common auto user account
+            which is
+
+            created on every node in a pool.
+
+            task - specifies that the service should create a new user for the
             task.
 
-            Possible values include: 'task', 'pool'
+            The default value is task. Possible values include: 'task', 'pool'
           optional: true
         - id: pool.startTask.userIdentity.autoUser.elevationLevel
           type:
@@ -2257,20 +2587,19 @@ items:
             service marks the compute node unusable, and will not schedule tasks
             to it.
 
-            This condition can be detected via the node state and scheduling
-            error
+            This condition can be detected via the node state and failure info
+            details.
 
-            detail. If false, the Batch service will not wait for the start task
-            to
+            If false, the Batch service will not wait for the start task to
+            complete. In
 
-            complete. In this case, other tasks can start executing on the
-            compute node
+            this case, other tasks can start executing on the compute node while
+            the
 
-            while the start task is still running; and even if the start task
-            fails, new
+            start task is still running; and even if the start task fails, new
+            tasks
 
-            tasks will continue to be scheduled on the node. The default is
-            false.
+            will continue to be scheduled on the node. The default is false.
           optional: true
         - id: pool.certificateReferences
           type:
@@ -2342,17 +2671,30 @@ items:
           type:
             - object
           description: |-
-            How the Batch service
-            distributes tasks between compute nodes in the pool.
+            How tasks are distributed across
+            compute nodes in a pool.
           optional: true
         - id: pool.taskSchedulingPolicy.nodeFillType
           type:
             - string
           description: >-
-            How tasks should be
+            How tasks are
 
-            distributed across compute nodes. Possible values include: 'spread',
-            'pack'
+            distributed across compute nodes in a pool. Values are:
+
+
+            pack - As many tasks as possible (maxTasksPerNode) should be
+            assigned to
+
+            each node in the pool before any tasks are assigned to the next node
+            in the
+
+            pool.
+
+            spread - Tasks should be assigned evenly across all nodes in the
+            pool.
+
+            Possible values include: 'spread', 'pack'
         - id: pool.userAccounts
           type:
             - array
@@ -3789,9 +4131,10 @@ items:
             node as it joins the pool. The task runs when the node is added to
             the pool
 
-            or when the node is restarted. If omitted, any existing start task
-            is left
+            or when the node is restarted. If this element is present, it
+            overwrites any
 
+            existing start task. If omitted, any existing start task is left
             unchanged.
           optional: true
         - id: poolPatchParameter.startTask.commandLine
@@ -3812,6 +4155,81 @@ items:
             in
 
             Windows or "/bin/sh -c MyCommand" in Linux.
+        - id: poolPatchParameter.startTask.containerSettings
+          type:
+            - object
+          description: >-
+            The
+
+            settings for the container under which the start task runs. When
+            this is
+
+            specified, all directories recursively below the
+            AZ_BATCH_NODE_ROOT_DIR (the
+
+            root of Azure Batch directories on the node) are mapped into the
+            container,
+
+            all task environment variables are mapped into the container, and
+            the task
+
+            command line is executed in the container.
+          optional: true
+        - id: poolPatchParameter.startTask.containerSettings.containerRunOptions
+          type:
+            - string
+          description: >-
+            Additional options to the container create command. These additional
+            options
+
+            are supplied as arguments to the "docker create" command, in
+            addition to
+
+            those controlled by the Batch Service.
+          optional: true
+        - id: poolPatchParameter.startTask.containerSettings.imageName
+          type:
+            - string
+          description: >-
+            The
+
+            image to use to create the container in which the task will run.
+            This is the
+
+            full image reference, as would be specified to "docker pull". If no
+            tag is
+
+            provided as part of the image name, the tag ":latest" is used as a
+            default.
+        - id: poolPatchParameter.startTask.containerSettings.registry
+          type:
+            - object
+          description: >-
+            The private registry which contains the container image. This
+            setting can be
+
+            omitted if was already provided at pool creation.
+          optional: true
+        - id: >-
+            poolPatchParameter.startTask.containerSettings.registry.registryServer
+          type:
+            - string
+          description: |-
+            The
+            registry URL. If omitted, the default is "docker.io".
+          optional: true
+        - id: poolPatchParameter.startTask.containerSettings.registry.userName
+          type:
+            - string
+          description: |-
+            The user
+            name to log into the registry server.
+        - id: poolPatchParameter.startTask.containerSettings.registry.password
+          type:
+            - string
+          description: |-
+            The
+            password to log into the registry server.
         - id: poolPatchParameter.startTask.resourceFiles
           type:
             - array
@@ -3821,7 +4239,10 @@ items:
             that the Batch service will download to the compute node before
             running the
 
-            command line.
+            command line. Files listed under this element are located in the
+            task's
+
+            working directory.
           optional: true
         - id: poolPatchParameter.startTask.environmentSettings
           type:
@@ -3870,16 +4291,18 @@ items:
           type:
             - string
           description: >-
-            The scope for the auto user pool - specifies that the task runs as
-            the
+            The scope for the auto user Values are:
 
-            common auto user account which is created on every node in a pool.
-            task -
 
-            specifies that the service should create a new user for the task.
-            The
+            pool - specifies that the task runs as the common auto user account
+            which is
 
-            default value is task. Possible values include: 'task', 'pool'
+            created on every node in a pool.
+
+            task - specifies that the service should create a new user for the
+            task.
+
+            The default value is task. Possible values include: 'task', 'pool'
           optional: true
         - id: poolPatchParameter.startTask.userIdentity.autoUser.elevationLevel
           type:
@@ -3948,21 +4371,19 @@ items:
             Batch service marks the compute node unusable, and will not schedule
             tasks
 
-            to it. This condition can be detected via the node state and
-            scheduling
+            to it. This condition can be detected via the node state and failure
+            info
 
-            error detail. If false, the Batch service will not wait for the
-            start task
+            details. If false, the Batch service will not wait for the start
+            task to
 
-            to complete. In this case, other tasks can start executing on the
-            compute
+            complete. In this case, other tasks can start executing on the
+            compute node
 
-            node while the start task is still running; and even if the start
-            task
+            while the start task is still running; and even if the start task
+            fails, new
 
-            fails, new tasks will continue to be scheduled on the node. The
-            default is
-
+            tasks will continue to be scheduled on the node. The default is
             false.
           optional: true
         - id: poolPatchParameter.certificateReferences
@@ -3972,28 +4393,35 @@ items:
             A list of
 
             certificates to be installed on each compute node in the pool. If
-            omitted,
+            this
 
-            any existing certificate references are left unchanged. For Windows
-            compute
+            element is present, it replaces any existing certificate references
 
-            nodes, the Batch service installs the certificates to the specified
+            configured on the pool. If omitted, any existing certificate
+            references are
 
-            certificate store and location. For Linux compute nodes, the
-            certificates
+            left unchanged. For Windows compute nodes, the Batch service
+            installs the
 
-            are stored in a directory inside the task working directory and an
+            certificates to the specified certificate store and location. For
+            Linux
 
-            environment variable AZ_BATCH_CERTIFICATES_DIR is supplied to the
-            task to
+            compute nodes, the certificates are stored in a directory inside the
+            task
 
-            query for this location. For certificates with visibility of
-            'remoteUser', a
+            working directory and an environment variable
+            AZ_BATCH_CERTIFICATES_DIR is
 
-            'certs' directory is created in the user's home directory (e.g.,
+            supplied to the task to query for this location. For certificates
+            with
 
-            /home/{user-name}/certs) and certificates are placed in that
-            directory.
+            visibility of 'remoteUser', a 'certs' directory is created in the
+            user's
+
+            home directory (e.g., /home/{user-name}/certs) and certificates are
+            placed
+
+            in that directory.
           optional: true
         - id: poolPatchParameter.applicationPackageReferences
           type:
@@ -4233,9 +4661,10 @@ items:
             node as it joins the pool. The task runs when the node is added to
             the pool
 
-            or when the node is restarted. If omitted, any existing start task
-            is left
+            or when the node is restarted. If this element is present, it
+            overwrites any
 
+            existing start task. If omitted, any existing start task is left
             unchanged.
           optional: true
         - id: poolPatchParameter.startTask.commandLine
@@ -4256,6 +4685,81 @@ items:
             in
 
             Windows or "/bin/sh -c MyCommand" in Linux.
+        - id: poolPatchParameter.startTask.containerSettings
+          type:
+            - object
+          description: >-
+            The
+
+            settings for the container under which the start task runs. When
+            this is
+
+            specified, all directories recursively below the
+            AZ_BATCH_NODE_ROOT_DIR (the
+
+            root of Azure Batch directories on the node) are mapped into the
+            container,
+
+            all task environment variables are mapped into the container, and
+            the task
+
+            command line is executed in the container.
+          optional: true
+        - id: poolPatchParameter.startTask.containerSettings.containerRunOptions
+          type:
+            - string
+          description: >-
+            Additional options to the container create command. These additional
+            options
+
+            are supplied as arguments to the "docker create" command, in
+            addition to
+
+            those controlled by the Batch Service.
+          optional: true
+        - id: poolPatchParameter.startTask.containerSettings.imageName
+          type:
+            - string
+          description: >-
+            The
+
+            image to use to create the container in which the task will run.
+            This is the
+
+            full image reference, as would be specified to "docker pull". If no
+            tag is
+
+            provided as part of the image name, the tag ":latest" is used as a
+            default.
+        - id: poolPatchParameter.startTask.containerSettings.registry
+          type:
+            - object
+          description: >-
+            The private registry which contains the container image. This
+            setting can be
+
+            omitted if was already provided at pool creation.
+          optional: true
+        - id: >-
+            poolPatchParameter.startTask.containerSettings.registry.registryServer
+          type:
+            - string
+          description: |-
+            The
+            registry URL. If omitted, the default is "docker.io".
+          optional: true
+        - id: poolPatchParameter.startTask.containerSettings.registry.userName
+          type:
+            - string
+          description: |-
+            The user
+            name to log into the registry server.
+        - id: poolPatchParameter.startTask.containerSettings.registry.password
+          type:
+            - string
+          description: |-
+            The
+            password to log into the registry server.
         - id: poolPatchParameter.startTask.resourceFiles
           type:
             - array
@@ -4265,7 +4769,10 @@ items:
             that the Batch service will download to the compute node before
             running the
 
-            command line.
+            command line. Files listed under this element are located in the
+            task's
+
+            working directory.
           optional: true
         - id: poolPatchParameter.startTask.environmentSettings
           type:
@@ -4314,16 +4821,18 @@ items:
           type:
             - string
           description: >-
-            The scope for the auto user pool - specifies that the task runs as
-            the
+            The scope for the auto user Values are:
 
-            common auto user account which is created on every node in a pool.
-            task -
 
-            specifies that the service should create a new user for the task.
-            The
+            pool - specifies that the task runs as the common auto user account
+            which is
 
-            default value is task. Possible values include: 'task', 'pool'
+            created on every node in a pool.
+
+            task - specifies that the service should create a new user for the
+            task.
+
+            The default value is task. Possible values include: 'task', 'pool'
           optional: true
         - id: poolPatchParameter.startTask.userIdentity.autoUser.elevationLevel
           type:
@@ -4392,21 +4901,19 @@ items:
             Batch service marks the compute node unusable, and will not schedule
             tasks
 
-            to it. This condition can be detected via the node state and
-            scheduling
+            to it. This condition can be detected via the node state and failure
+            info
 
-            error detail. If false, the Batch service will not wait for the
-            start task
+            details. If false, the Batch service will not wait for the start
+            task to
 
-            to complete. In this case, other tasks can start executing on the
-            compute
+            complete. In this case, other tasks can start executing on the
+            compute node
 
-            node while the start task is still running; and even if the start
-            task
+            while the start task is still running; and even if the start task
+            fails, new
 
-            fails, new tasks will continue to be scheduled on the node. The
-            default is
-
+            tasks will continue to be scheduled on the node. The default is
             false.
           optional: true
         - id: poolPatchParameter.certificateReferences
@@ -4416,28 +4923,35 @@ items:
             A list of
 
             certificates to be installed on each compute node in the pool. If
-            omitted,
+            this
 
-            any existing certificate references are left unchanged. For Windows
-            compute
+            element is present, it replaces any existing certificate references
 
-            nodes, the Batch service installs the certificates to the specified
+            configured on the pool. If omitted, any existing certificate
+            references are
 
-            certificate store and location. For Linux compute nodes, the
-            certificates
+            left unchanged. For Windows compute nodes, the Batch service
+            installs the
 
-            are stored in a directory inside the task working directory and an
+            certificates to the specified certificate store and location. For
+            Linux
 
-            environment variable AZ_BATCH_CERTIFICATES_DIR is supplied to the
-            task to
+            compute nodes, the certificates are stored in a directory inside the
+            task
 
-            query for this location. For certificates with visibility of
-            'remoteUser', a
+            working directory and an environment variable
+            AZ_BATCH_CERTIFICATES_DIR is
 
-            'certs' directory is created in the user's home directory (e.g.,
+            supplied to the task to query for this location. For certificates
+            with
 
-            /home/{user-name}/certs) and certificates are placed in that
-            directory.
+            visibility of 'remoteUser', a 'certs' directory is created in the
+            user's
+
+            home directory (e.g., /home/{user-name}/certs) and certificates are
+            placed
+
+            in that directory.
           optional: true
         - id: poolPatchParameter.applicationPackageReferences
           type:
@@ -5330,7 +5844,8 @@ items:
       pool.
 
       This API is primarily for validating an autoscale formula, as it simply
-      returns the result without applying the formula to the pool.
+      returns the result without applying the formula to the pool. The pool must
+      have auto scaling enabled in order to evaluate a formula.
     fullName: >-
       azure-batch.Pool.evaluateAutoScaleWithHttpOperationResponse(poolId,
       autoScaleFormula, options)
@@ -5455,7 +5970,8 @@ items:
       pool.
 
       This API is primarily for validating an autoscale formula, as it simply
-      returns the result without applying the formula to the pool.
+      returns the result without applying the formula to the pool. The pool must
+      have auto scaling enabled in order to evaluate a formula.
     fullName: >-
       azure-batch.Pool.evaluateAutoScale(poolId, autoScaleFormula, options,
       optionalCallback)
@@ -6075,12 +6591,19 @@ items:
 
       operation: it only stops any further changes being made, and the pool
 
-      maintains its current state. A resize operation need not be an explicit
+      maintains its current state. After stopping, the pool stabilizes at the
 
-      resize pool request; this API can also be used to halt the initial sizing
-      of
+      number of nodes it was at when the stop operation was done. During the
+      stop
 
-      the pool when it is created.
+      operation, the pool allocation state changes first to stopping and then to
+
+      steady. A resize operation need not be an explicit resize pool request;
+      this
+
+      API can also be used to halt the initial sizing of the pool when it is
+
+      created.
     fullName: 'azure-batch.Pool.stopResizeWithHttpOperationResponse(poolId, options)'
     tags:
       - originalTitle: resolve
@@ -6230,12 +6753,19 @@ items:
 
       operation: it only stops any further changes being made, and the pool
 
-      maintains its current state. A resize operation need not be an explicit
+      maintains its current state. After stopping, the pool stabilizes at the
 
-      resize pool request; this API can also be used to halt the initial sizing
-      of
+      number of nodes it was at when the stop operation was done. During the
+      stop
 
-      the pool when it is created.
+      operation, the pool allocation state changes first to stopping and then to
+
+      steady. A resize operation need not be an explicit resize pool request;
+      this
+
+      API can also be used to halt the initial sizing of the pool when it is
+
+      created.
     fullName: 'azure-batch.Pool.stopResize(poolId, options, optionalCallback)'
     tags:
       - originalTitle: resolve
@@ -6485,6 +7015,78 @@ items:
             /c
 
             MyCommand" in Windows or "/bin/sh -c MyCommand" in Linux.
+        - id: poolUpdatePropertiesParameter.startTask.containerSettings
+          type:
+            - object
+          description: >-
+            The settings for the container under which the start task runs. When
+            this is
+
+            specified, all directories recursively below the
+            AZ_BATCH_NODE_ROOT_DIR (the
+
+            root of Azure Batch directories on the node) are mapped into the
+            container,
+
+            all task environment variables are mapped into the container, and
+            the task
+
+            command line is executed in the container.
+          optional: true
+        - id: >-
+            poolUpdatePropertiesParameter.startTask.containerSettings.containerRunOptions
+          type:
+            - string
+          description: >-
+            Additional options to the container create command. These additional
+            options
+
+            are supplied as arguments to the "docker create" command, in
+            addition to
+
+            those controlled by the Batch Service.
+          optional: true
+        - id: poolUpdatePropertiesParameter.startTask.containerSettings.imageName
+          type:
+            - string
+          description: >-
+            The
+
+            image to use to create the container in which the task will run.
+            This is the
+
+            full image reference, as would be specified to "docker pull". If no
+            tag is
+
+            provided as part of the image name, the tag ":latest" is used as a
+            default.
+        - id: poolUpdatePropertiesParameter.startTask.containerSettings.registry
+          type:
+            - object
+          description: >-
+            The
+
+            private registry which contains the container image. This setting
+            can be
+
+            omitted if was already provided at pool creation.
+          optional: true
+        - id: >-
+            poolUpdatePropertiesParameter.startTask.containerSettings.registry.registryServer
+          type:
+            - string
+          description: 'The registry URL. If omitted, the default is "docker.io".'
+          optional: true
+        - id: >-
+            poolUpdatePropertiesParameter.startTask.containerSettings.registry.userName
+          type:
+            - string
+          description: The user name to log into the registry server.
+        - id: >-
+            poolUpdatePropertiesParameter.startTask.containerSettings.registry.password
+          type:
+            - string
+          description: The password to log into the registry server.
         - id: poolUpdatePropertiesParameter.startTask.resourceFiles
           type:
             - array
@@ -6494,7 +7096,10 @@ items:
             list of files that the Batch service will download to the compute
             node
 
-            before running the command line.
+            before running the command line. Files listed under this element are
+            located
+
+            in the task's working directory.
           optional: true
         - id: poolUpdatePropertiesParameter.startTask.environmentSettings
           type:
@@ -6541,16 +7146,18 @@ items:
           description: >-
             The
 
-            scope for the auto user pool - specifies that the task runs as the
-            common
+            scope for the auto user Values are:
 
-            auto user account which is created on every node in a pool. task -
-            specifies
 
-            that the service should create a new user for the task. The default
-            value is
+            pool - specifies that the task runs as the common auto user account
+            which is
 
-            task. Possible values include: 'task', 'pool'
+            created on every node in a pool.
+
+            task - specifies that the service should create a new user for the
+            task.
+
+            The default value is task. Possible values include: 'task', 'pool'
           optional: true
         - id: >-
             poolUpdatePropertiesParameter.startTask.userIdentity.autoUser.elevationLevel
@@ -6617,8 +7224,8 @@ items:
             will not schedule tasks to it. This condition can be detected via
             the node
 
-            state and scheduling error detail. If false, the Batch service will
-            not wait
+            state and failure info details. If false, the Batch service will not
+            wait
 
             for the start task to complete. In this case, other tasks can start
 
@@ -6636,8 +7243,11 @@ items:
           description: >-
             A list of
 
-            certificates to be installed on each compute node in the pool. If
-            you
+            certificates to be installed on each compute node in the pool. This
+            list
+
+            replaces any existing certificate references configured on the pool.
+            If you
 
             specify an empty collection, any existing certificate references are
             removed
@@ -6673,22 +7283,22 @@ items:
             list of application packages to be installed on each compute node in
             the
 
+            pool. The list replaces any existing application package references
+            on the
+
             pool. Changes to application package references affect all new
             compute nodes
 
             joining the pool, but do not affect compute nodes that are already
             in the
 
-            pool until they are rebooted or reimaged. The list replaces any
-            existing
+            pool until they are rebooted or reimaged. If omitted, or if you
+            specify an
 
-            application package references. If omitted, or if you specify an
-            empty
+            empty collection, any existing application packages references are
+            removed
 
-            collection, any existing application packages references are removed
-            from
-
-            the pool.
+            from the pool.
         - id: poolUpdatePropertiesParameter.metadata
           type:
             - array
@@ -6874,6 +7484,78 @@ items:
             /c
 
             MyCommand" in Windows or "/bin/sh -c MyCommand" in Linux.
+        - id: poolUpdatePropertiesParameter.startTask.containerSettings
+          type:
+            - object
+          description: >-
+            The settings for the container under which the start task runs. When
+            this is
+
+            specified, all directories recursively below the
+            AZ_BATCH_NODE_ROOT_DIR (the
+
+            root of Azure Batch directories on the node) are mapped into the
+            container,
+
+            all task environment variables are mapped into the container, and
+            the task
+
+            command line is executed in the container.
+          optional: true
+        - id: >-
+            poolUpdatePropertiesParameter.startTask.containerSettings.containerRunOptions
+          type:
+            - string
+          description: >-
+            Additional options to the container create command. These additional
+            options
+
+            are supplied as arguments to the "docker create" command, in
+            addition to
+
+            those controlled by the Batch Service.
+          optional: true
+        - id: poolUpdatePropertiesParameter.startTask.containerSettings.imageName
+          type:
+            - string
+          description: >-
+            The
+
+            image to use to create the container in which the task will run.
+            This is the
+
+            full image reference, as would be specified to "docker pull". If no
+            tag is
+
+            provided as part of the image name, the tag ":latest" is used as a
+            default.
+        - id: poolUpdatePropertiesParameter.startTask.containerSettings.registry
+          type:
+            - object
+          description: >-
+            The
+
+            private registry which contains the container image. This setting
+            can be
+
+            omitted if was already provided at pool creation.
+          optional: true
+        - id: >-
+            poolUpdatePropertiesParameter.startTask.containerSettings.registry.registryServer
+          type:
+            - string
+          description: 'The registry URL. If omitted, the default is "docker.io".'
+          optional: true
+        - id: >-
+            poolUpdatePropertiesParameter.startTask.containerSettings.registry.userName
+          type:
+            - string
+          description: The user name to log into the registry server.
+        - id: >-
+            poolUpdatePropertiesParameter.startTask.containerSettings.registry.password
+          type:
+            - string
+          description: The password to log into the registry server.
         - id: poolUpdatePropertiesParameter.startTask.resourceFiles
           type:
             - array
@@ -6883,7 +7565,10 @@ items:
             list of files that the Batch service will download to the compute
             node
 
-            before running the command line.
+            before running the command line. Files listed under this element are
+            located
+
+            in the task's working directory.
           optional: true
         - id: poolUpdatePropertiesParameter.startTask.environmentSettings
           type:
@@ -6930,16 +7615,18 @@ items:
           description: >-
             The
 
-            scope for the auto user pool - specifies that the task runs as the
-            common
+            scope for the auto user Values are:
 
-            auto user account which is created on every node in a pool. task -
-            specifies
 
-            that the service should create a new user for the task. The default
-            value is
+            pool - specifies that the task runs as the common auto user account
+            which is
 
-            task. Possible values include: 'task', 'pool'
+            created on every node in a pool.
+
+            task - specifies that the service should create a new user for the
+            task.
+
+            The default value is task. Possible values include: 'task', 'pool'
           optional: true
         - id: >-
             poolUpdatePropertiesParameter.startTask.userIdentity.autoUser.elevationLevel
@@ -7006,8 +7693,8 @@ items:
             will not schedule tasks to it. This condition can be detected via
             the node
 
-            state and scheduling error detail. If false, the Batch service will
-            not wait
+            state and failure info details. If false, the Batch service will not
+            wait
 
             for the start task to complete. In this case, other tasks can start
 
@@ -7025,8 +7712,11 @@ items:
           description: >-
             A list of
 
-            certificates to be installed on each compute node in the pool. If
-            you
+            certificates to be installed on each compute node in the pool. This
+            list
+
+            replaces any existing certificate references configured on the pool.
+            If you
 
             specify an empty collection, any existing certificate references are
             removed
@@ -7062,22 +7752,22 @@ items:
             list of application packages to be installed on each compute node in
             the
 
+            pool. The list replaces any existing application package references
+            on the
+
             pool. Changes to application package references affect all new
             compute nodes
 
             joining the pool, but do not affect compute nodes that are already
             in the
 
-            pool until they are rebooted or reimaged. The list replaces any
-            existing
+            pool until they are rebooted or reimaged. If omitted, or if you
+            specify an
 
-            application package references. If omitted, or if you specify an
-            empty
+            empty collection, any existing application packages references are
+            removed
 
-            collection, any existing application packages references are removed
-            from
-
-            the pool.
+            from the pool.
         - id: poolUpdatePropertiesParameter.metadata
           type:
             - array
@@ -7205,7 +7895,18 @@ items:
       state changes to upgrading. When all compute nodes have finished
       upgrading,
 
-      the pool state returns to active.
+      the pool state returns to active. While the upgrade is in progress, the
+
+      pool's currentOSVersion reflects the OS version that nodes are upgrading
+
+      from, and targetOSVersion reflects the OS version that nodes are upgrading
+
+      to. Once the upgrade is complete, currentOSVersion is updated to reflect
+      the
+
+      OS version now running on all nodes. This operation can only be invoked on
+
+      pools created with the cloudServiceConfiguration property.
     fullName: >-
       azure-batch.Pool.upgradeOSWithHttpOperationResponse(poolId,
       targetOSVersion, options)
@@ -7387,7 +8088,18 @@ items:
       state changes to upgrading. When all compute nodes have finished
       upgrading,
 
-      the pool state returns to active.
+      the pool state returns to active. While the upgrade is in progress, the
+
+      pool's currentOSVersion reflects the OS version that nodes are upgrading
+
+      from, and targetOSVersion reflects the OS version that nodes are upgrading
+
+      to. Once the upgrade is complete, currentOSVersion is updated to reflect
+      the
+
+      OS version now running on all nodes. This operation can only be invoked on
+
+      pools created with the cloudServiceConfiguration property.
     fullName: >-
       azure-batch.Pool.upgradeOS(poolId, targetOSVersion, options,
       optionalCallback)
@@ -7608,7 +8320,7 @@ items:
           type:
             - array
           description: |-
-            A list containing the ids of the
+            A list containing the IDs of the
             compute nodes to be removed from the specified pool.
         - id: nodeRemoveParameter.resizeTimeout
           type:
@@ -7827,7 +8539,7 @@ items:
           type:
             - array
           description: |-
-            A list containing the ids of the
+            A list containing the IDs of the
             compute nodes to be removed from the specified pool.
         - id: nodeRemoveParameter.resizeTimeout
           type:
@@ -7995,13 +8707,24 @@ items:
     id: 'azure-batch.Pool#listUsageMetricsNextWithHttpOperationResponse'
     parent: azure-batch.Pool
     name: 'listUsageMetricsNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: |-
+    summary: >-
       Lists the usage metrics, aggregated by pool across individual time
+
       intervals, for the specified account.
 
+
       If you do not specify a $filter clause including a poolId, the response
+
       includes all pools that existed in the account in the time range of the
-      returned aggregation intervals.
+
+      returned aggregation intervals. If you do not specify a $filter clause
+
+      including a startTime or endTime these filters default to the start and
+      end
+
+      times of the last aggregation interval currently available; that is, only
+
+      the last aggregation interval is returned.
     fullName: >-
       azure-batch.Pool.listUsageMetricsNextWithHttpOperationResponse(nextPageLink,
       options)
@@ -8090,13 +8813,24 @@ items:
     id: 'azure-batch.Pool#listUsageMetricsNext'
     parent: azure-batch.Pool
     name: 'listUsageMetricsNext(nextPageLink, options, optionalCallback)'
-    summary: |-
+    summary: >-
       Lists the usage metrics, aggregated by pool across individual time
+
       intervals, for the specified account.
 
+
       If you do not specify a $filter clause including a poolId, the response
+
       includes all pools that existed in the account in the time range of the
-      returned aggregation intervals.
+
+      returned aggregation intervals. If you do not specify a $filter clause
+
+      including a startTime or endTime these filters default to the start and
+      end
+
+      times of the last aggregation interval currently available; that is, only
+
+      the last aggregation interval is returned.
     fullName: >-
       azure-batch.Pool.listUsageMetricsNext(nextPageLink, options,
       optionalCallback)

@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-customerinsights.Interactions
     id: azure-arm-customerinsights.Interactions
     name: Interactions
-    summary: |-
-      Interactions
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the CustomerInsightsManagementClient.
-      Initializes a new instance of the Interactions class.
+    summary: Class representing a Interactions.
     fullName: azure-arm-customerinsights.Interactions
     type: Class
     children:
@@ -21,6 +17,9 @@ items:
         azure-arm-customerinsights.Interactions#listByHubWithHttpOperationResponse
       - 'azure-arm-customerinsights.Interactions#listByHub'
       - >-
+        azure-arm-customerinsights.Interactions#suggestRelationshipLinksWithHttpOperationResponse
+      - 'azure-arm-customerinsights.Interactions#suggestRelationshipLinks'
+      - >-
         azure-arm-customerinsights.Interactions#beginCreateOrUpdateWithHttpOperationResponse
       - 'azure-arm-customerinsights.Interactions#beginCreateOrUpdate'
       - >-
@@ -33,7 +32,7 @@ items:
     parent: azure-arm-customerinsights.Interactions
     name: Interactions(client)
     fullName: azure-arm-customerinsights.Interactions.Interactions(client)
-    summary: ''
+    summary: Create a Interactions.
     type: Constructor
     syntax:
       parameters:
@@ -211,6 +210,19 @@ items:
             participant
 
             name here from ParticipantName.
+          optional: true
+        - id: parameters.isActivity
+          type:
+            - boolean
+          description: >-
+            An interaction can be tagged as an
+
+            activity only during create. This enables the interaction to be
+            editable and
+
+            can enable merging of properties from multiple data sources based on
+
+            precedence, which is defined at a link level.
           optional: true
         - id: options
           type:
@@ -420,6 +432,19 @@ items:
             participant
 
             name here from ParticipantName.
+          optional: true
+        - id: parameters.isActivity
+          type:
+            - boolean
+          description: >-
+            An interaction can be tagged as an
+
+            activity only during create. This enables the interaction to be
+            editable and
+
+            can enable merging of properties from multiple data sources based on
+
+            precedence, which is defined at a link level.
           optional: true
         - id: options
           type:
@@ -767,6 +792,159 @@ items:
     langs:
       - js
   - uid: >-
+      azure-arm-customerinsights.Interactions#suggestRelationshipLinksWithHttpOperationResponse
+    id: >-
+      azure-arm-customerinsights.Interactions#suggestRelationshipLinksWithHttpOperationResponse
+    parent: azure-arm-customerinsights.Interactions
+    name: >-
+      suggestRelationshipLinksWithHttpOperationResponse(resourceGroupName,
+      hubName, interactionName, options)
+    summary: Suggests relationships to create relationship links.
+    fullName: >-
+      azure-arm-customerinsights.Interactions.suggestRelationshipLinksWithHttpOperationResponse(resourceGroupName,
+      hubName, interactionName, options)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<SuggestRelationshipLinksResponse>} - The
+          deserialized result object.
+        value: >-
+          {HttpOperationResponse<SuggestRelationshipLinksResponse>} - The
+          deserialized result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: hubName
+          type:
+            - string
+          description: The name of the hub.
+        - id: interactionName
+          type:
+            - string
+          description: The name of the interaction.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+      return:
+        type:
+          - Promise
+        description: A promise is returned
+      content: >-
+        function
+        suggestRelationshipLinksWithHttpOperationResponse(resourceGroupName,
+        hubName, interactionName, options)
+    langs:
+      - js
+  - uid: 'azure-arm-customerinsights.Interactions#suggestRelationshipLinks'
+    id: 'azure-arm-customerinsights.Interactions#suggestRelationshipLinks'
+    parent: azure-arm-customerinsights.Interactions
+    name: >-
+      suggestRelationshipLinks(resourceGroupName, hubName, interactionName,
+      options, optionalCallback)
+    summary: Suggests relationships to create relationship links.
+    fullName: >-
+      azure-arm-customerinsights.Interactions.suggestRelationshipLinks(resourceGroupName,
+      hubName, interactionName, options, optionalCallback)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{SuggestRelationshipLinksResponse} - The deserialized result object.'
+        value: '{SuggestRelationshipLinksResponse} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SuggestRelationshipLinksResponse} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SuggestRelationshipLinksResponse} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: hubName
+          type:
+            - string
+          description: The name of the hub.
+        - id: interactionName
+          type:
+            - string
+          description: The name of the interaction.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: optionalCallback
+          type:
+            - function
+          description: The optional callback.
+          optional: true
+      return:
+        type:
+          - function
+          - Promise
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
+      content: >-
+        function suggestRelationshipLinks(resourceGroupName, hubName,
+        interactionName, options, optionalCallback)
+    langs:
+      - js
+  - uid: >-
       azure-arm-customerinsights.Interactions#beginCreateOrUpdateWithHttpOperationResponse
     id: >-
       azure-arm-customerinsights.Interactions#beginCreateOrUpdateWithHttpOperationResponse
@@ -933,6 +1111,19 @@ items:
             participant
 
             name here from ParticipantName.
+          optional: true
+        - id: parameters.isActivity
+          type:
+            - boolean
+          description: >-
+            An interaction can be tagged as an
+
+            activity only during create. This enables the interaction to be
+            editable and
+
+            can enable merging of properties from multiple data sources based on
+
+            precedence, which is defined at a link level.
           optional: true
         - id: options
           type:
@@ -1142,6 +1333,19 @@ items:
             participant
 
             name here from ParticipantName.
+          optional: true
+        - id: parameters.isActivity
+          type:
+            - boolean
+          description: >-
+            An interaction can be tagged as an
+
+            activity only during create. This enables the interaction to be
+            editable and
+
+            can enable merging of properties from multiple data sources based on
+
+            precedence, which is defined at a link level.
           optional: true
         - id: options
           type:

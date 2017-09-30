@@ -3,18 +3,11 @@ items:
   - uid: azure-arm-recoveryservicesbackup.ProtectedItems
     id: azure-arm-recoveryservicesbackup.ProtectedItems
     name: ProtectedItems
-    summary: |-
-      ProtectedItems
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the ProtectedItems class.
+    summary: Class representing a ProtectedItems.
     fullName: azure-arm-recoveryservicesbackup.ProtectedItems
     type: Class
     children:
       - 'azure-arm-recoveryservicesbackup.ProtectedItems.#ctor'
-      - >-
-        azure-arm-recoveryservicesbackup.ProtectedItems#listWithHttpOperationResponse
-      - 'azure-arm-recoveryservicesbackup.ProtectedItems#list'
       - >-
         azure-arm-recoveryservicesbackup.ProtectedItems#getWithHttpOperationResponse
       - 'azure-arm-recoveryservicesbackup.ProtectedItems#get'
@@ -24,9 +17,6 @@ items:
       - >-
         azure-arm-recoveryservicesbackup.ProtectedItems#deleteMethodWithHttpOperationResponse
       - 'azure-arm-recoveryservicesbackup.ProtectedItems#deleteMethod'
-      - >-
-        azure-arm-recoveryservicesbackup.ProtectedItems#listNextWithHttpOperationResponse
-      - 'azure-arm-recoveryservicesbackup.ProtectedItems#listNext'
     langs:
       - js
   - id: 'azure-arm-recoveryservicesbackup.ProtectedItems.#ctor'
@@ -34,7 +24,7 @@ items:
     parent: azure-arm-recoveryservicesbackup.ProtectedItems
     name: ProtectedItems(client)
     fullName: azure-arm-recoveryservicesbackup.ProtectedItems.ProtectedItems(client)
-    summary: ''
+    summary: Create a ProtectedItems.
     type: Constructor
     syntax:
       parameters:
@@ -46,194 +36,6 @@ items:
     langs:
       - js
   - uid: >-
-      azure-arm-recoveryservicesbackup.ProtectedItems#listWithHttpOperationResponse
-    id: >-
-      azure-arm-recoveryservicesbackup.ProtectedItems#listWithHttpOperationResponse
-    parent: azure-arm-recoveryservicesbackup.ProtectedItems
-    name: 'listWithHttpOperationResponse(vaultName, resourceGroupName, options)'
-    summary: |-
-      Provides a pageable list of all items in a subscription, that can be
-      protected.
-    fullName: >-
-      azure-arm-recoveryservicesbackup.ProtectedItems.listWithHttpOperationResponse(vaultName,
-      resourceGroupName, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ProtectedItemResourceList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<ProtectedItemResourceList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
-    type: Function
-    syntax:
-      parameters:
-        - id: vaultName
-          type:
-            - string
-          description: The name of the Recovery Services vault.
-        - id: resourceGroupName
-          type:
-            - string
-          description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
-        - id: options
-          type:
-            - object
-          description: Optional Parameters.
-          optional: true
-        - id: options.filter
-          type:
-            - string
-          description: >-
-            itemType eq { VM , FileFolder , AzureSqlDb
-
-            , SQLDB , Exchange , Sharepoint , DPMUnknown } and providerType eq {
-
-            AzureIaasVM, MAB, DPM, AzureBackupServer, AzureSql } and policyName
-            eq
-
-            {policyname} and containerName eq {containername} and
-            backupManagementType
-
-            eq { AzureIaasVM, MAB, DPM, AzureBackupServer, AzureSql }.
-          optional: true
-        - id: options.skipToken
-          type:
-            - string
-          description: The Skip Token filter.
-          optional: true
-        - id: options.customHeaders
-          type:
-            - object
-          description: |-
-            Headers that will be added to the
-            request
-          optional: true
-      return:
-        type:
-          - Promise
-        description: A promise is returned
-      content: >-
-        function listWithHttpOperationResponse(vaultName, resourceGroupName,
-        options)
-    langs:
-      - js
-  - uid: 'azure-arm-recoveryservicesbackup.ProtectedItems#list'
-    id: 'azure-arm-recoveryservicesbackup.ProtectedItems#list'
-    parent: azure-arm-recoveryservicesbackup.ProtectedItems
-    name: 'list(vaultName, resourceGroupName, options, optionalCallback)'
-    summary: |-
-      Provides a pageable list of all items in a subscription, that can be
-      protected.
-    fullName: >-
-      azure-arm-recoveryservicesbackup.ProtectedItems.list(vaultName,
-      resourceGroupName, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ProtectedItemResourceList} - The deserialized result object.'
-        value: '{ProtectedItemResourceList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProtectedItemResourceList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProtectedItemResourceList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-    type: Function
-    syntax:
-      parameters:
-        - id: vaultName
-          type:
-            - string
-          description: The name of the Recovery Services vault.
-        - id: resourceGroupName
-          type:
-            - string
-          description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
-        - id: options
-          type:
-            - object
-          description: Optional Parameters.
-          optional: true
-        - id: options.filter
-          type:
-            - string
-          description: >-
-            itemType eq { VM , FileFolder , AzureSqlDb
-
-            , SQLDB , Exchange , Sharepoint , DPMUnknown } and providerType eq {
-
-            AzureIaasVM, MAB, DPM, AzureBackupServer, AzureSql } and policyName
-            eq
-
-            {policyname} and containerName eq {containername} and
-            backupManagementType
-
-            eq { AzureIaasVM, MAB, DPM, AzureBackupServer, AzureSql }.
-          optional: true
-        - id: options.skipToken
-          type:
-            - string
-          description: The Skip Token filter.
-          optional: true
-        - id: options.customHeaders
-          type:
-            - object
-          description: |-
-            Headers that will be added to the
-            request
-          optional: true
-        - id: optionalCallback
-          type:
-            - function
-          description: The optional callback.
-          optional: true
-      return:
-        type:
-          - function
-          - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
-      content: 'function list(vaultName, resourceGroupName, options, optionalCallback)'
-    langs:
-      - js
-  - uid: >-
       azure-arm-recoveryservicesbackup.ProtectedItems#getWithHttpOperationResponse
     id: >-
       azure-arm-recoveryservicesbackup.ProtectedItems#getWithHttpOperationResponse
@@ -241,11 +43,10 @@ items:
     name: >-
       getWithHttpOperationResponse(vaultName, resourceGroupName, fabricName,
       containerName, protectedItemName, options)
-    summary: >-
-      Provides the details of the backup item. This is an asynchronous
-      operation.
-
-      To know the status of the operation, call the GetItemOperationResult API.
+    summary: |-
+      Provides the details of the backed up item. This is an asynchronous
+      operation. To know the status of the operation, call the
+      GetItemOperationResult API.
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectedItems.getWithHttpOperationResponse(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName, options)
@@ -268,29 +69,29 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backed up item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backed up
             item.
         - id: protectedItemName
           type:
             - string
           description: |-
-            The backup item name used in this GET
-            operation.
+            Backed up item name whose details are to
+            be fetched.
         - id: options
           type:
             - object
@@ -299,13 +100,7 @@ items:
         - id: options.filter
           type:
             - string
-          description: >-
-            expand eq {extendedinfo}. This filter
-
-            enables you to choose (or filter) specific items in the list of
-            backup
-
-            items.
+          description: OData filter options.
           optional: true
         - id: options.customHeaders
           type:
@@ -329,11 +124,10 @@ items:
     name: >-
       get(vaultName, resourceGroupName, fabricName, containerName,
       protectedItemName, options, optionalCallback)
-    summary: >-
-      Provides the details of the backup item. This is an asynchronous
-      operation.
-
-      To know the status of the operation, call the GetItemOperationResult API.
+    summary: |-
+      Provides the details of the backed up item. This is an asynchronous
+      operation. To know the status of the operation, call the
+      GetItemOperationResult API.
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectedItems.get(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName, options,
@@ -377,29 +171,29 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backed up item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backed up
             item.
         - id: protectedItemName
           type:
             - string
           description: |-
-            The backup item name used in this GET
-            operation.
+            Backed up item name whose details are to
+            be fetched.
         - id: options
           type:
             - object
@@ -408,13 +202,7 @@ items:
         - id: options.filter
           type:
             - string
-          description: >-
-            expand eq {extendedinfo}. This filter
-
-            enables you to choose (or filter) specific items in the list of
-            backup
-
-            items.
+          description: OData filter options.
           optional: true
         - id: options.customHeaders
           type:
@@ -449,17 +237,18 @@ items:
     parent: azure-arm-recoveryservicesbackup.ProtectedItems
     name: >-
       createOrUpdateWithHttpOperationResponse(vaultName, resourceGroupName,
-      fabricName, containerName, protectedItemName, resourceProtectedItem,
-      options)
-    summary: |-
-      This operation enables an item to be backed up, or modifies the existing
-      backup policy information for an item that has been backed up. This is an
-      asynchronous operation. To learn the status of the operation, call the
-      GetItemOperationResult API.
+      fabricName, containerName, protectedItemName, parameters, options)
+    summary: >-
+      Enables backup of an item or to modifies the backup policy information of
+      an
+
+      already backed up item. This is an asynchronous operation. To know the
+
+      status of the operation, call the GetItemOperationResult API.
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectedItems.createOrUpdateWithHttpOperationResponse(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName,
-      resourceProtectedItem, options)
+      parameters, options)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -475,120 +264,106 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backup item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backup
             item.
         - id: protectedItemName
           type:
             - string
-          description: The name of the backup item.
-        - id: resourceProtectedItem
+          description: Item name to be backed up.
+        - id: parameters
           type:
             - object
-          description: The resource backup item.
-        - id: resourceProtectedItem.properties
+          description: resource backed up item
+        - id: parameters.properties
           type:
             - object
-          description: ''
+          description: ProtectedItemResource properties
           optional: true
-        - id: resourceProtectedItem.properties.backupManagementType
+        - id: parameters.properties.backupManagementType
           type:
             - string
           description: >-
-            The
+            Type of backup
 
-            backup managemenent type associated with the backup item. Possible
-            values
+            managemenent for the backed up item. Possible values include:
+            'Invalid',
 
-            include: 'Invalid', 'AzureIaasVM', 'MAB', 'DPM',
-            'AzureBackupServer',
-
-            'AzureSql'
+            'AzureIaasVM', 'MAB', 'DPM', 'AzureBackupServer', 'AzureSql'
           optional: true
-        - id: resourceProtectedItem.properties.workloadType
+        - id: parameters.properties.workloadType
           type:
             - string
           description: >-
-            The workload
+            Type of workload this
 
-            type for this item. Possible values include: 'Invalid', 'VM',
+            item represents. Possible values include: 'Invalid', 'VM',
             'FileFolder',
 
-            'AzureSqlDb', 'SQLDB', 'Exchange', 'Sharepoint', 'DPMUnknown'
+            'AzureSqlDb', 'SQLDB', 'Exchange', 'Sharepoint', 'VMwareVM',
+            'SystemState',
+
+            'Client', 'GenericDataSource'
           optional: true
-        - id: resourceProtectedItem.properties.sourceResourceId
+        - id: parameters.properties.containerName
           type:
             - string
           description: |-
-            The ID
-            of the resource to be backed up.
+            Unique name of
+            container
           optional: true
-        - id: resourceProtectedItem.properties.policyId
+        - id: parameters.properties.sourceResourceId
           type:
             - string
           description: |-
-            The ID of the
-            backup policy associated with this backup item.
+            ARM ID of the
+            resource to be backed up.
           optional: true
-        - id: resourceProtectedItem.properties.lastRecoveryPoint
+        - id: parameters.properties.policyId
+          type:
+            - string
+          description: |-
+            ID of the backup policy
+            with which this item is backed up.
+          optional: true
+        - id: parameters.properties.lastRecoveryPoint
           type:
             - date
-          description: >-
-            The
-
-            timestamp when the most recent backup copy was created for this
-            backup item.
+          description: |-
+            Timestamp when the
+            last (latest) backup copy was created for this backup item.
           optional: true
-        - id: resourceProtectedItem.properties.protectedItemType
-          type:
-            - string
-          description: Polymorphic Discriminator
-        - id: resourceProtectedItem.id
+        - id: parameters.properties.protectedItemType
           type:
             - string
           description: |-
-            Resource ID represents the
-            complete path to the resource.
-          optional: true
-        - id: resourceProtectedItem.name
-          type:
-            - string
-          description: |-
-            Resource name associated with
-            the resource.
-          optional: true
-        - id: resourceProtectedItem.type
-          type:
-            - string
-          description: |-
-            Resource type represents the
-            complete path of the form Namespace/ResourceType/ResourceType/...
-          optional: true
-        - id: resourceProtectedItem.location
+            Polymorphic
+            Discriminator
+        - id: parameters.location
           type:
             - string
           description: Resource location.
           optional: true
-        - id: resourceProtectedItem.tags
+        - id: parameters.tags
           type:
             - object
           description: Resource tags.
           optional: true
-        - id: resourceProtectedItem.eTag
+        - id: parameters.eTag
           type:
             - string
           description: Optional ETag.
@@ -612,7 +387,7 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(vaultName,
         resourceGroupName, fabricName, containerName, protectedItemName,
-        resourceProtectedItem, options)
+        parameters, options)
     langs:
       - js
   - uid: 'azure-arm-recoveryservicesbackup.ProtectedItems#createOrUpdate'
@@ -620,16 +395,18 @@ items:
     parent: azure-arm-recoveryservicesbackup.ProtectedItems
     name: >-
       createOrUpdate(vaultName, resourceGroupName, fabricName, containerName,
-      protectedItemName, resourceProtectedItem, options, optionalCallback)
-    summary: |-
-      This operation enables an item to be backed up, or modifies the existing
-      backup policy information for an item that has been backed up. This is an
-      asynchronous operation. To learn the status of the operation, call the
-      GetItemOperationResult API.
+      protectedItemName, parameters, options, optionalCallback)
+    summary: >-
+      Enables backup of an item or to modifies the backup policy information of
+      an
+
+      already backed up item. This is an asynchronous operation. To know the
+
+      status of the operation, call the GetItemOperationResult API.
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectedItems.createOrUpdate(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName,
-      resourceProtectedItem, options, optionalCallback)
+      parameters, options, optionalCallback)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -667,120 +444,106 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backup item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backup
             item.
         - id: protectedItemName
           type:
             - string
-          description: The name of the backup item.
-        - id: resourceProtectedItem
+          description: Item name to be backed up.
+        - id: parameters
           type:
             - object
-          description: The resource backup item.
-        - id: resourceProtectedItem.properties
+          description: resource backed up item
+        - id: parameters.properties
           type:
             - object
-          description: ''
+          description: ProtectedItemResource properties
           optional: true
-        - id: resourceProtectedItem.properties.backupManagementType
+        - id: parameters.properties.backupManagementType
           type:
             - string
           description: >-
-            The
+            Type of backup
 
-            backup managemenent type associated with the backup item. Possible
-            values
+            managemenent for the backed up item. Possible values include:
+            'Invalid',
 
-            include: 'Invalid', 'AzureIaasVM', 'MAB', 'DPM',
-            'AzureBackupServer',
-
-            'AzureSql'
+            'AzureIaasVM', 'MAB', 'DPM', 'AzureBackupServer', 'AzureSql'
           optional: true
-        - id: resourceProtectedItem.properties.workloadType
+        - id: parameters.properties.workloadType
           type:
             - string
           description: >-
-            The workload
+            Type of workload this
 
-            type for this item. Possible values include: 'Invalid', 'VM',
+            item represents. Possible values include: 'Invalid', 'VM',
             'FileFolder',
 
-            'AzureSqlDb', 'SQLDB', 'Exchange', 'Sharepoint', 'DPMUnknown'
+            'AzureSqlDb', 'SQLDB', 'Exchange', 'Sharepoint', 'VMwareVM',
+            'SystemState',
+
+            'Client', 'GenericDataSource'
           optional: true
-        - id: resourceProtectedItem.properties.sourceResourceId
+        - id: parameters.properties.containerName
           type:
             - string
           description: |-
-            The ID
-            of the resource to be backed up.
+            Unique name of
+            container
           optional: true
-        - id: resourceProtectedItem.properties.policyId
+        - id: parameters.properties.sourceResourceId
           type:
             - string
           description: |-
-            The ID of the
-            backup policy associated with this backup item.
+            ARM ID of the
+            resource to be backed up.
           optional: true
-        - id: resourceProtectedItem.properties.lastRecoveryPoint
+        - id: parameters.properties.policyId
+          type:
+            - string
+          description: |-
+            ID of the backup policy
+            with which this item is backed up.
+          optional: true
+        - id: parameters.properties.lastRecoveryPoint
           type:
             - date
-          description: >-
-            The
-
-            timestamp when the most recent backup copy was created for this
-            backup item.
+          description: |-
+            Timestamp when the
+            last (latest) backup copy was created for this backup item.
           optional: true
-        - id: resourceProtectedItem.properties.protectedItemType
-          type:
-            - string
-          description: Polymorphic Discriminator
-        - id: resourceProtectedItem.id
+        - id: parameters.properties.protectedItemType
           type:
             - string
           description: |-
-            Resource ID represents the
-            complete path to the resource.
-          optional: true
-        - id: resourceProtectedItem.name
-          type:
-            - string
-          description: |-
-            Resource name associated with
-            the resource.
-          optional: true
-        - id: resourceProtectedItem.type
-          type:
-            - string
-          description: |-
-            Resource type represents the
-            complete path of the form Namespace/ResourceType/ResourceType/...
-          optional: true
-        - id: resourceProtectedItem.location
+            Polymorphic
+            Discriminator
+        - id: parameters.location
           type:
             - string
           description: Resource location.
           optional: true
-        - id: resourceProtectedItem.tags
+        - id: parameters.tags
           type:
             - object
           description: Resource tags.
           optional: true
-        - id: resourceProtectedItem.eTag
+        - id: parameters.eTag
           type:
             - string
           description: Optional ETag.
@@ -813,8 +576,7 @@ items:
           {Promise} A promise is returned
       content: >-
         function createOrUpdate(vaultName, resourceGroupName, fabricName,
-        containerName, protectedItemName, resourceProtectedItem, options,
-        optionalCallback)
+        containerName, protectedItemName, parameters, options, optionalCallback)
     langs:
       - js
   - uid: >-
@@ -826,8 +588,8 @@ items:
       deleteMethodWithHttpOperationResponse(vaultName, resourceGroupName,
       fabricName, containerName, protectedItemName, options)
     summary: |-
-      Used to disable the backup job for an item within a container. This is an
-      asynchronous operation. To learn the status of the request, call the
+      Used to disable backup of an item within a container. This is an
+      asynchronous operation. To know the status of the request, call the
       GetItemOperationResult API.
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectedItems.deleteMethodWithHttpOperationResponse(vaultName,
@@ -847,27 +609,27 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backed up item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backed up
             item.
         - id: protectedItemName
           type:
             - string
-          description: The backup item to be deleted.
+          description: Backed up item to be deleted.
         - id: options
           type:
             - object
@@ -897,8 +659,8 @@ items:
       deleteMethod(vaultName, resourceGroupName, fabricName, containerName,
       protectedItemName, options, optionalCallback)
     summary: |-
-      Used to disable the backup job for an item within a container. This is an
-      asynchronous operation. To learn the status of the request, call the
+      Used to disable backup of an item within a container. This is an
+      asynchronous operation. To know the status of the request, call the
       GetItemOperationResult API.
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectedItems.deleteMethod(vaultName,
@@ -941,27 +703,27 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backed up item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backed up
             item.
         - id: protectedItemName
           type:
             - string
-          description: The backup item to be deleted.
+          description: Backed up item to be deleted.
         - id: options
           type:
             - object
@@ -991,142 +753,6 @@ items:
       content: >-
         function deleteMethod(vaultName, resourceGroupName, fabricName,
         containerName, protectedItemName, options, optionalCallback)
-    langs:
-      - js
-  - uid: >-
-      azure-arm-recoveryservicesbackup.ProtectedItems#listNextWithHttpOperationResponse
-    id: >-
-      azure-arm-recoveryservicesbackup.ProtectedItems#listNextWithHttpOperationResponse
-    parent: azure-arm-recoveryservicesbackup.ProtectedItems
-    name: 'listNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: |-
-      Provides a pageable list of all items in a subscription, that can be
-      protected.
-    fullName: >-
-      azure-arm-recoveryservicesbackup.ProtectedItems.listNextWithHttpOperationResponse(nextPageLink,
-      options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<ProtectedItemResourceList>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<ProtectedItemResourceList>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
-    type: Function
-    syntax:
-      parameters:
-        - id: nextPageLink
-          type:
-            - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
-        - id: options
-          type:
-            - object
-          description: Optional Parameters.
-          optional: true
-        - id: options.customHeaders
-          type:
-            - object
-          description: |-
-            Headers that will be added to the
-            request
-          optional: true
-      return:
-        type:
-          - Promise
-        description: A promise is returned
-      content: 'function listNextWithHttpOperationResponse(nextPageLink, options)'
-    langs:
-      - js
-  - uid: 'azure-arm-recoveryservicesbackup.ProtectedItems#listNext'
-    id: 'azure-arm-recoveryservicesbackup.ProtectedItems#listNext'
-    parent: azure-arm-recoveryservicesbackup.ProtectedItems
-    name: 'listNext(nextPageLink, options, optionalCallback)'
-    summary: |-
-      Provides a pageable list of all items in a subscription, that can be
-      protected.
-    fullName: >-
-      azure-arm-recoveryservicesbackup.ProtectedItems.listNext(nextPageLink,
-      options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{ProtectedItemResourceList} - The deserialized result object.'
-        value: '{ProtectedItemResourceList} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProtectedItemResourceList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link ProtectedItemResourceList} for more
-                               information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-    type: Function
-    syntax:
-      parameters:
-        - id: nextPageLink
-          type:
-            - string
-          description: |-
-            The NextLink from the previous successful call
-            to List operation.
-        - id: options
-          type:
-            - object
-          description: Optional Parameters.
-          optional: true
-        - id: options.customHeaders
-          type:
-            - object
-          description: |-
-            Headers that will be added to the
-            request
-          optional: true
-        - id: optionalCallback
-          type:
-            - function
-          description: The optional callback.
-          optional: true
-      return:
-        type:
-          - function
-          - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
-      content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js
 references:

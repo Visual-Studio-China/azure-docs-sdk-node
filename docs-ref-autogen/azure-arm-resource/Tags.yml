@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-resource.Tags
     id: azure-arm-resource.Tags
     name: Tags
-    summary: |-
-      Tags
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ResourceManagementClient.
-      Initializes a new instance of the Tags class.
+    summary: Class representing a Tags.
     fullName: azure-arm-resource.Tags
     type: Class
     children:
@@ -31,7 +27,7 @@ items:
     parent: azure-arm-resource.Tags
     name: Tags(client)
     fullName: azure-arm-resource.Tags.Tags(client)
-    summary: ''
+    summary: Create a Tags.
     type: Constructor
     syntax:
       parameters:

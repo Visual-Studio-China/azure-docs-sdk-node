@@ -30,17 +30,23 @@ items:
         azure-arm-network.VirtualNetworkGateways#generateVpnProfileWithHttpOperationResponse
       - 'azure-arm-network.VirtualNetworkGateways#generateVpnProfile'
       - >-
-        azure-arm-network.VirtualNetworkGateways#getVpnProfilePacakgeUrlWithHttpOperationResponse
-      - 'azure-arm-network.VirtualNetworkGateways#getVpnProfilePacakgeUrl'
+        azure-arm-network.VirtualNetworkGateways#getVpnProfilePackageUrlWithHttpOperationResponse
+      - 'azure-arm-network.VirtualNetworkGateways#getVpnProfilePackageUrl'
       - >-
         azure-arm-network.VirtualNetworkGateways#getBgpPeerStatusWithHttpOperationResponse
       - 'azure-arm-network.VirtualNetworkGateways#getBgpPeerStatus'
+      - >-
+        azure-arm-network.VirtualNetworkGateways#supportedVpnDevicesWithHttpOperationResponse
+      - 'azure-arm-network.VirtualNetworkGateways#supportedVpnDevices'
       - >-
         azure-arm-network.VirtualNetworkGateways#getLearnedRoutesWithHttpOperationResponse
       - 'azure-arm-network.VirtualNetworkGateways#getLearnedRoutes'
       - >-
         azure-arm-network.VirtualNetworkGateways#getAdvertisedRoutesWithHttpOperationResponse
       - 'azure-arm-network.VirtualNetworkGateways#getAdvertisedRoutes'
+      - >-
+        azure-arm-network.VirtualNetworkGateways#vpnDeviceConfigurationScriptWithHttpOperationResponse
+      - 'azure-arm-network.VirtualNetworkGateways#vpnDeviceConfigurationScript'
       - >-
         azure-arm-network.VirtualNetworkGateways#beginCreateOrUpdateWithHttpOperationResponse
       - 'azure-arm-network.VirtualNetworkGateways#beginCreateOrUpdate'
@@ -57,8 +63,8 @@ items:
         azure-arm-network.VirtualNetworkGateways#beginGenerateVpnProfileWithHttpOperationResponse
       - 'azure-arm-network.VirtualNetworkGateways#beginGenerateVpnProfile'
       - >-
-        azure-arm-network.VirtualNetworkGateways#beginGetVpnProfilePacakgeUrlWithHttpOperationResponse
-      - 'azure-arm-network.VirtualNetworkGateways#beginGetVpnProfilePacakgeUrl'
+        azure-arm-network.VirtualNetworkGateways#beginGetVpnProfilePackageUrlWithHttpOperationResponse
+      - 'azure-arm-network.VirtualNetworkGateways#beginGetVpnProfilePackageUrl'
       - >-
         azure-arm-network.VirtualNetworkGateways#beginGetBgpPeerStatusWithHttpOperationResponse
       - 'azure-arm-network.VirtualNetworkGateways#beginGetBgpPeerStatus'
@@ -1914,12 +1920,12 @@ items:
     langs:
       - js
   - uid: >-
-      azure-arm-network.VirtualNetworkGateways#getVpnProfilePacakgeUrlWithHttpOperationResponse
+      azure-arm-network.VirtualNetworkGateways#getVpnProfilePackageUrlWithHttpOperationResponse
     id: >-
-      azure-arm-network.VirtualNetworkGateways#getVpnProfilePacakgeUrlWithHttpOperationResponse
+      azure-arm-network.VirtualNetworkGateways#getVpnProfilePackageUrlWithHttpOperationResponse
     parent: azure-arm-network.VirtualNetworkGateways
     name: >-
-      getVpnProfilePacakgeUrlWithHttpOperationResponse(resourceGroupName,
+      getVpnProfilePackageUrlWithHttpOperationResponse(resourceGroupName,
       virtualNetworkGatewayName, options)
     summary: >-
       Gets pre-generated VPN profile for P2S client of the virtual network
@@ -1929,7 +1935,7 @@ items:
 
       using generateVpnProfile.
     fullName: >-
-      azure-arm-network.VirtualNetworkGateways.getVpnProfilePacakgeUrlWithHttpOperationResponse(resourceGroupName,
+      azure-arm-network.VirtualNetworkGateways.getVpnProfilePackageUrlWithHttpOperationResponse(resourceGroupName,
       virtualNetworkGatewayName, options)
     tags:
       - originalTitle: resolve
@@ -1971,15 +1977,15 @@ items:
         description: A promise is returned
       content: >-
         function
-        getVpnProfilePacakgeUrlWithHttpOperationResponse(resourceGroupName,
+        getVpnProfilePackageUrlWithHttpOperationResponse(resourceGroupName,
         virtualNetworkGatewayName, options)
     langs:
       - js
-  - uid: 'azure-arm-network.VirtualNetworkGateways#getVpnProfilePacakgeUrl'
-    id: 'azure-arm-network.VirtualNetworkGateways#getVpnProfilePacakgeUrl'
+  - uid: 'azure-arm-network.VirtualNetworkGateways#getVpnProfilePackageUrl'
+    id: 'azure-arm-network.VirtualNetworkGateways#getVpnProfilePackageUrl'
     parent: azure-arm-network.VirtualNetworkGateways
     name: >-
-      getVpnProfilePacakgeUrl(resourceGroupName, virtualNetworkGatewayName,
+      getVpnProfilePackageUrl(resourceGroupName, virtualNetworkGatewayName,
       options, optionalCallback)
     summary: >-
       Gets pre-generated VPN profile for P2S client of the virtual network
@@ -1989,7 +1995,7 @@ items:
 
       using generateVpnProfile.
     fullName: >-
-      azure-arm-network.VirtualNetworkGateways.getVpnProfilePacakgeUrl(resourceGroupName,
+      azure-arm-network.VirtualNetworkGateways.getVpnProfilePackageUrl(resourceGroupName,
       virtualNetworkGatewayName, options, optionalCallback)
     tags:
       - originalTitle: resolve
@@ -2062,7 +2068,7 @@ items:
 
           {Promise} A promise is returned
       content: >-
-        function getVpnProfilePacakgeUrl(resourceGroupName,
+        function getVpnProfilePackageUrl(resourceGroupName,
         virtualNetworkGatewayName, options, optionalCallback)
     langs:
       - js
@@ -2226,6 +2232,146 @@ items:
       content: >-
         function getBgpPeerStatus(resourceGroupName, virtualNetworkGatewayName,
         options, optionalCallback)
+    langs:
+      - js
+  - uid: >-
+      azure-arm-network.VirtualNetworkGateways#supportedVpnDevicesWithHttpOperationResponse
+    id: >-
+      azure-arm-network.VirtualNetworkGateways#supportedVpnDevicesWithHttpOperationResponse
+    parent: azure-arm-network.VirtualNetworkGateways
+    name: >-
+      supportedVpnDevicesWithHttpOperationResponse(resourceGroupName,
+      virtualNetworkGatewayName, options)
+    summary: Gets a xml format representation for supported vpn devices.
+    fullName: >-
+      azure-arm-network.VirtualNetworkGateways.supportedVpnDevicesWithHttpOperationResponse(resourceGroupName,
+      virtualNetworkGatewayName, options)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<String>} - The deserialized result object.'
+        value: '{HttpOperationResponse<String>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: |-
+            The name of the virtual network
+            gateway.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+      return:
+        type:
+          - Promise
+        description: A promise is returned
+      content: >-
+        function supportedVpnDevicesWithHttpOperationResponse(resourceGroupName,
+        virtualNetworkGatewayName, options)
+    langs:
+      - js
+  - uid: 'azure-arm-network.VirtualNetworkGateways#supportedVpnDevices'
+    id: 'azure-arm-network.VirtualNetworkGateways#supportedVpnDevices'
+    parent: azure-arm-network.VirtualNetworkGateways
+    name: >-
+      supportedVpnDevices(resourceGroupName, virtualNetworkGatewayName, options,
+      optionalCallback)
+    summary: Gets a xml format representation for supported vpn devices.
+    fullName: >-
+      azure-arm-network.VirtualNetworkGateways.supportedVpnDevices(resourceGroupName,
+      virtualNetworkGatewayName, options, optionalCallback)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{String} - The deserialized result object.'
+        value: '{String} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {string} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {string} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: |-
+            The name of the virtual network
+            gateway.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: optionalCallback
+          type:
+            - function
+          description: The optional callback.
+          optional: true
+      return:
+        type:
+          - function
+          - Promise
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
+      content: >-
+        function supportedVpnDevices(resourceGroupName,
+        virtualNetworkGatewayName, options, optionalCallback)
     langs:
       - js
   - uid: >-
@@ -2538,6 +2684,204 @@ items:
       content: >-
         function getAdvertisedRoutes(resourceGroupName,
         virtualNetworkGatewayName, peer, options, optionalCallback)
+    langs:
+      - js
+  - uid: >-
+      azure-arm-network.VirtualNetworkGateways#vpnDeviceConfigurationScriptWithHttpOperationResponse
+    id: >-
+      azure-arm-network.VirtualNetworkGateways#vpnDeviceConfigurationScriptWithHttpOperationResponse
+    parent: azure-arm-network.VirtualNetworkGateways
+    name: >-
+      vpnDeviceConfigurationScriptWithHttpOperationResponse(resourceGroupName,
+      virtualNetworkGatewayConnectionName, parameters, options)
+    summary: Gets a xml format representation for vpn device configuration script.
+    fullName: >-
+      azure-arm-network.VirtualNetworkGateways.vpnDeviceConfigurationScriptWithHttpOperationResponse(resourceGroupName,
+      virtualNetworkGatewayConnectionName, parameters, options)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{HttpOperationResponse<String>} - The deserialized result object.'
+        value: '{HttpOperationResponse<String>} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: virtualNetworkGatewayConnectionName
+          type:
+            - string
+          description: >-
+            The name of the virtual
+
+            network gateway connection for which the configuration script is
+            generated.
+        - id: parameters
+          type:
+            - object
+          description: |-
+            Parameters supplied to the generate vpn device
+            script operation.
+        - id: parameters.vendor
+          type:
+            - string
+          description: The vendor for the vpn device.
+          optional: true
+        - id: parameters.deviceFamily
+          type:
+            - string
+          description: |-
+            The device family for the vpn
+            device.
+          optional: true
+        - id: parameters.firmwareVersion
+          type:
+            - string
+          description: |-
+            The firmware version for the
+            vpn device.
+          optional: true
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+      return:
+        type:
+          - Promise
+        description: A promise is returned
+      content: >-
+        function
+        vpnDeviceConfigurationScriptWithHttpOperationResponse(resourceGroupName,
+        virtualNetworkGatewayConnectionName, parameters, options)
+    langs:
+      - js
+  - uid: 'azure-arm-network.VirtualNetworkGateways#vpnDeviceConfigurationScript'
+    id: 'azure-arm-network.VirtualNetworkGateways#vpnDeviceConfigurationScript'
+    parent: azure-arm-network.VirtualNetworkGateways
+    name: >-
+      vpnDeviceConfigurationScript(resourceGroupName,
+      virtualNetworkGatewayConnectionName, parameters, options,
+      optionalCallback)
+    summary: Gets a xml format representation for vpn device configuration script.
+    fullName: >-
+      azure-arm-network.VirtualNetworkGateways.vpnDeviceConfigurationScript(resourceGroupName,
+      virtualNetworkGatewayConnectionName, parameters, options,
+      optionalCallback)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{String} - The deserialized result object.'
+        value: '{String} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {string} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {string} [result]   - The deserialized result object if an error did not occur.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    type: Function
+    syntax:
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: The name of the resource group.
+        - id: virtualNetworkGatewayConnectionName
+          type:
+            - string
+          description: >-
+            The name of the virtual
+
+            network gateway connection for which the configuration script is
+            generated.
+        - id: parameters
+          type:
+            - object
+          description: |-
+            Parameters supplied to the generate vpn device
+            script operation.
+        - id: parameters.vendor
+          type:
+            - string
+          description: The vendor for the vpn device.
+          optional: true
+        - id: parameters.deviceFamily
+          type:
+            - string
+          description: |-
+            The device family for the vpn
+            device.
+          optional: true
+        - id: parameters.firmwareVersion
+          type:
+            - string
+          description: |-
+            The firmware version for the
+            vpn device.
+          optional: true
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: optionalCallback
+          type:
+            - function
+          description: The optional callback.
+          optional: true
+      return:
+        type:
+          - function
+          - Promise
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
+      content: >-
+        function vpnDeviceConfigurationScript(resourceGroupName,
+        virtualNetworkGatewayConnectionName, parameters, options,
+        optionalCallback)
     langs:
       - js
   - uid: >-
@@ -3943,12 +4287,12 @@ items:
     langs:
       - js
   - uid: >-
-      azure-arm-network.VirtualNetworkGateways#beginGetVpnProfilePacakgeUrlWithHttpOperationResponse
+      azure-arm-network.VirtualNetworkGateways#beginGetVpnProfilePackageUrlWithHttpOperationResponse
     id: >-
-      azure-arm-network.VirtualNetworkGateways#beginGetVpnProfilePacakgeUrlWithHttpOperationResponse
+      azure-arm-network.VirtualNetworkGateways#beginGetVpnProfilePackageUrlWithHttpOperationResponse
     parent: azure-arm-network.VirtualNetworkGateways
     name: >-
-      beginGetVpnProfilePacakgeUrlWithHttpOperationResponse(resourceGroupName,
+      beginGetVpnProfilePackageUrlWithHttpOperationResponse(resourceGroupName,
       virtualNetworkGatewayName, options)
     summary: >-
       Gets pre-generated VPN profile for P2S client of the virtual network
@@ -3958,7 +4302,7 @@ items:
 
       using generateVpnProfile.
     fullName: >-
-      azure-arm-network.VirtualNetworkGateways.beginGetVpnProfilePacakgeUrlWithHttpOperationResponse(resourceGroupName,
+      azure-arm-network.VirtualNetworkGateways.beginGetVpnProfilePackageUrlWithHttpOperationResponse(resourceGroupName,
       virtualNetworkGatewayName, options)
     tags:
       - originalTitle: resolve
@@ -4000,15 +4344,15 @@ items:
         description: A promise is returned
       content: >-
         function
-        beginGetVpnProfilePacakgeUrlWithHttpOperationResponse(resourceGroupName,
+        beginGetVpnProfilePackageUrlWithHttpOperationResponse(resourceGroupName,
         virtualNetworkGatewayName, options)
     langs:
       - js
-  - uid: 'azure-arm-network.VirtualNetworkGateways#beginGetVpnProfilePacakgeUrl'
-    id: 'azure-arm-network.VirtualNetworkGateways#beginGetVpnProfilePacakgeUrl'
+  - uid: 'azure-arm-network.VirtualNetworkGateways#beginGetVpnProfilePackageUrl'
+    id: 'azure-arm-network.VirtualNetworkGateways#beginGetVpnProfilePackageUrl'
     parent: azure-arm-network.VirtualNetworkGateways
     name: >-
-      beginGetVpnProfilePacakgeUrl(resourceGroupName, virtualNetworkGatewayName,
+      beginGetVpnProfilePackageUrl(resourceGroupName, virtualNetworkGatewayName,
       options, optionalCallback)
     summary: >-
       Gets pre-generated VPN profile for P2S client of the virtual network
@@ -4018,7 +4362,7 @@ items:
 
       using generateVpnProfile.
     fullName: >-
-      azure-arm-network.VirtualNetworkGateways.beginGetVpnProfilePacakgeUrl(resourceGroupName,
+      azure-arm-network.VirtualNetworkGateways.beginGetVpnProfilePackageUrl(resourceGroupName,
       virtualNetworkGatewayName, options, optionalCallback)
     tags:
       - originalTitle: resolve
@@ -4091,7 +4435,7 @@ items:
 
           {Promise} A promise is returned
       content: >-
-        function beginGetVpnProfilePacakgeUrl(resourceGroupName,
+        function beginGetVpnProfilePackageUrl(resourceGroupName,
         virtualNetworkGatewayName, options, optionalCallback)
     langs:
       - js

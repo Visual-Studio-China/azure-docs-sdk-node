@@ -5,15 +5,7 @@ items:
     id: >-
       azure-arm-recoveryservicesbackup.ProtectionContainerRefreshOperationResults
     name: ProtectionContainerRefreshOperationResults
-    summary: >-
-      ProtectionContainerRefreshOperationResults
-
-      __NOTE__: An instance of this class is automatically created for an
-
-      instance of the RecoveryServicesBackupClient.
-
-      Initializes a new instance of the
-      ProtectionContainerRefreshOperationResults class.
+    summary: Class representing a ProtectionContainerRefreshOperationResults.
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionContainerRefreshOperationResults
     type: Class
@@ -35,7 +27,7 @@ items:
     name: ProtectionContainerRefreshOperationResults(client)
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionContainerRefreshOperationResults.ProtectionContainerRefreshOperationResults(client)
-    summary: ''
+    summary: Create a ProtectionContainerRefreshOperationResults.
     type: Constructor
     syntax:
       parameters:
@@ -76,21 +68,23 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the container.
+          description: Fabric name associated with the container.
         - id: operationId
           type:
             - string
-          description: The operation ID used for this GET operation.
+          description: |-
+            Operation ID associated with the operation whose
+            result needs to be fetched.
         - id: options
           type:
             - object
@@ -164,21 +158,23 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the container.
+          description: Fabric name associated with the container.
         - id: operationId
           type:
             - string
-          description: The operation ID used for this GET operation.
+          description: |-
+            Operation ID associated with the operation whose
+            result needs to be fetched.
         - id: options
           type:
             - object

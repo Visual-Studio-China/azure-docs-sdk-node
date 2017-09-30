@@ -542,13 +542,9 @@ items:
         - id: inboundNatRuleParameters.protocol
           type:
             - string
-          description: >-
-            The transport protocol
-
-            for the endpoint. Possible values are: 'Udp' or 'Tcp'. Possible
-            values
-
-            include: 'Udp', 'Tcp'
+          description: |-
+            Possible values include:
+            'Udp', 'Tcp', 'All'
           optional: true
         - id: inboundNatRuleParameters.frontendPort
           type:
@@ -556,7 +552,7 @@ items:
           description: >-
             The port for the
 
-            external endpoint. Port numbers for each Rule must be unique within
+            external endpoint. Port numbers for each rule must be unique within
             the Load
 
             Balancer. Acceptable values range from 1 to 65534.
@@ -731,13 +727,9 @@ items:
         - id: inboundNatRuleParameters.protocol
           type:
             - string
-          description: >-
-            The transport protocol
-
-            for the endpoint. Possible values are: 'Udp' or 'Tcp'. Possible
-            values
-
-            include: 'Udp', 'Tcp'
+          description: |-
+            Possible values include:
+            'Udp', 'Tcp', 'All'
           optional: true
         - id: inboundNatRuleParameters.frontendPort
           type:
@@ -745,7 +737,7 @@ items:
           description: >-
             The port for the
 
-            external endpoint. Port numbers for each Rule must be unique within
+            external endpoint. Port numbers for each rule must be unique within
             the Load
 
             Balancer. Acceptable values range from 1 to 65534.
@@ -1055,13 +1047,9 @@ items:
         - id: inboundNatRuleParameters.protocol
           type:
             - string
-          description: >-
-            The transport protocol
-
-            for the endpoint. Possible values are: 'Udp' or 'Tcp'. Possible
-            values
-
-            include: 'Udp', 'Tcp'
+          description: |-
+            Possible values include:
+            'Udp', 'Tcp', 'All'
           optional: true
         - id: inboundNatRuleParameters.frontendPort
           type:
@@ -1069,7 +1057,7 @@ items:
           description: >-
             The port for the
 
-            external endpoint. Port numbers for each Rule must be unique within
+            external endpoint. Port numbers for each rule must be unique within
             the Load
 
             Balancer. Acceptable values range from 1 to 65534.
@@ -1244,13 +1232,9 @@ items:
         - id: inboundNatRuleParameters.protocol
           type:
             - string
-          description: >-
-            The transport protocol
-
-            for the endpoint. Possible values are: 'Udp' or 'Tcp'. Possible
-            values
-
-            include: 'Udp', 'Tcp'
+          description: |-
+            Possible values include:
+            'Udp', 'Tcp', 'All'
           optional: true
         - id: inboundNatRuleParameters.frontendPort
           type:
@@ -1258,7 +1242,7 @@ items:
           description: >-
             The port for the
 
-            external endpoint. Port numbers for each Rule must be unique within
+            external endpoint. Port numbers for each rule must be unique within
             the Load
 
             Balancer. Acceptable values range from 1 to 65534.

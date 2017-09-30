@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs
     id: azure-arm-compute.VirtualMachineScaleSetVMs
     name: VirtualMachineScaleSetVMs
-    summary: |-
-      VirtualMachineScaleSetVMs
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ComputeManagementClient.
-      Initializes a new instance of the VirtualMachineScaleSetVMs class.
+    summary: Class representing a VirtualMachineScaleSetVMs.
     fullName: azure-arm-compute.VirtualMachineScaleSetVMs
     type: Class
     children:
@@ -73,7 +69,7 @@ items:
     name: VirtualMachineScaleSetVMs(client)
     fullName: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.VirtualMachineScaleSetVMs(client)
-    summary: ''
+    summary: Create a VirtualMachineScaleSetVMs.
     type: Constructor
     syntax:
       parameters:

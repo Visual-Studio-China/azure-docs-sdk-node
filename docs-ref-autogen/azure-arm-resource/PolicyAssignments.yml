@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-resource.PolicyAssignments
     id: azure-arm-resource.PolicyAssignments
     name: PolicyAssignments
-    summary: |-
-      PolicyAssignments
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the PolicyClient.
-      Initializes a new instance of the PolicyAssignments class.
+    summary: Class representing a PolicyAssignments.
     fullName: azure-arm-resource.PolicyAssignments
     type: Class
     children:
@@ -48,7 +44,7 @@ items:
     parent: azure-arm-resource.PolicyAssignments
     name: PolicyAssignments(client)
     fullName: azure-arm-resource.PolicyAssignments.PolicyAssignments(client)
-    summary: ''
+    summary: Create a PolicyAssignments.
     type: Constructor
     syntax:
       parameters:
@@ -267,6 +263,11 @@ items:
             - string
           description: The scope for the policy assignment.
           optional: true
+        - id: parameters.notScopes
+          type:
+            - array
+          description: The policy's excluded scopes.
+          optional: true
         - id: parameters.parameters
           type:
             - object
@@ -281,20 +282,28 @@ items:
             This message will be part of
             response in case of policy violation.
           optional: true
-        - id: parameters.id
+        - id: parameters.metadata
           type:
-            - string
-          description: The ID of the policy assignment.
+            - object
+          description: The policy assignment metadata.
           optional: true
-        - id: parameters.type
+        - id: parameters.sku
           type:
-            - string
-          description: The type of the policy assignment.
+            - object
+          description: The policy sku.
           optional: true
-        - id: parameters.name
+        - id: parameters.sku.name
           type:
             - string
-          description: The name of the policy assignment.
+          description: |-
+            The name of the policy sku. Possible
+            values are A0 and A1.
+        - id: parameters.sku.tier
+          type:
+            - string
+          description: |-
+            The policy sku tier. Possible values
+            are Free and Standard.
           optional: true
         - id: options
           type:
@@ -401,6 +410,11 @@ items:
             - string
           description: The scope for the policy assignment.
           optional: true
+        - id: parameters.notScopes
+          type:
+            - array
+          description: The policy's excluded scopes.
+          optional: true
         - id: parameters.parameters
           type:
             - object
@@ -415,20 +429,28 @@ items:
             This message will be part of
             response in case of policy violation.
           optional: true
-        - id: parameters.id
+        - id: parameters.metadata
           type:
-            - string
-          description: The ID of the policy assignment.
+            - object
+          description: The policy assignment metadata.
           optional: true
-        - id: parameters.type
+        - id: parameters.sku
           type:
-            - string
-          description: The type of the policy assignment.
+            - object
+          description: The policy sku.
           optional: true
-        - id: parameters.name
+        - id: parameters.sku.name
           type:
             - string
-          description: The name of the policy assignment.
+          description: |-
+            The name of the policy sku. Possible
+            values are A0 and A1.
+        - id: parameters.sku.tier
+          type:
+            - string
+          description: |-
+            The policy sku tier. Possible values
+            are Free and Standard.
           optional: true
         - id: options
           type:
@@ -1310,6 +1332,11 @@ items:
             - string
           description: The scope for the policy assignment.
           optional: true
+        - id: parameters.notScopes
+          type:
+            - array
+          description: The policy's excluded scopes.
+          optional: true
         - id: parameters.parameters
           type:
             - object
@@ -1324,20 +1351,28 @@ items:
             This message will be part of
             response in case of policy violation.
           optional: true
-        - id: parameters.id
+        - id: parameters.metadata
           type:
-            - string
-          description: The ID of the policy assignment.
+            - object
+          description: The policy assignment metadata.
           optional: true
-        - id: parameters.type
+        - id: parameters.sku
           type:
-            - string
-          description: The type of the policy assignment.
+            - object
+          description: The policy sku.
           optional: true
-        - id: parameters.name
+        - id: parameters.sku.name
           type:
             - string
-          description: The name of the policy assignment.
+          description: |-
+            The name of the policy sku. Possible
+            values are A0 and A1.
+        - id: parameters.sku.tier
+          type:
+            - string
+          description: |-
+            The policy sku tier. Possible values
+            are Free and Standard.
           optional: true
         - id: options
           type:
@@ -1456,6 +1491,11 @@ items:
             - string
           description: The scope for the policy assignment.
           optional: true
+        - id: parameters.notScopes
+          type:
+            - array
+          description: The policy's excluded scopes.
+          optional: true
         - id: parameters.parameters
           type:
             - object
@@ -1470,20 +1510,28 @@ items:
             This message will be part of
             response in case of policy violation.
           optional: true
-        - id: parameters.id
+        - id: parameters.metadata
           type:
-            - string
-          description: The ID of the policy assignment.
+            - object
+          description: The policy assignment metadata.
           optional: true
-        - id: parameters.type
+        - id: parameters.sku
           type:
-            - string
-          description: The type of the policy assignment.
+            - object
+          description: The policy sku.
           optional: true
-        - id: parameters.name
+        - id: parameters.sku.name
           type:
             - string
-          description: The name of the policy assignment.
+          description: |-
+            The name of the policy sku. Possible
+            values are A0 and A1.
+        - id: parameters.sku.tier
+          type:
+            - string
+          description: |-
+            The policy sku tier. Possible values
+            are Free and Standard.
           optional: true
         - id: options
           type:

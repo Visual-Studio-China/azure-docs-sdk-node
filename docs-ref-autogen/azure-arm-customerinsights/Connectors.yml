@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-customerinsights.Connectors
     id: azure-arm-customerinsights.Connectors
     name: Connectors
-    summary: |-
-      Connectors
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the CustomerInsightsManagementClient.
-      Initializes a new instance of the Connectors class.
+    summary: Class representing a Connectors.
     fullName: azure-arm-customerinsights.Connectors
     type: Class
     children:
@@ -38,7 +34,7 @@ items:
     parent: azure-arm-customerinsights.Connectors
     name: Connectors(client)
     fullName: azure-arm-customerinsights.Connectors.Connectors(client)
-    summary: ''
+    summary: Create a Connectors.
     type: Constructor
     syntax:
       parameters:
@@ -105,7 +101,8 @@ items:
             - string
           description: |-
             Type of connector. Possible values
-            include: 'CRM', 'AzureBlob', 'Salesforce'
+            include: 'None', 'CRM', 'AzureBlob', 'Salesforce', 'ExchangeOnline',
+            'Outbound'
         - id: parameters.displayName
           type:
             - string
@@ -120,6 +117,11 @@ items:
           type:
             - object
           description: The connector properties.
+        - id: parameters.isInternal
+          type:
+            - boolean
+          description: If this is an internal connector.
+          optional: true
         - id: options
           type:
             - object
@@ -217,7 +219,8 @@ items:
             - string
           description: |-
             Type of connector. Possible values
-            include: 'CRM', 'AzureBlob', 'Salesforce'
+            include: 'None', 'CRM', 'AzureBlob', 'Salesforce', 'ExchangeOnline',
+            'Outbound'
         - id: parameters.displayName
           type:
             - string
@@ -232,6 +235,11 @@ items:
           type:
             - object
           description: The connector properties.
+        - id: parameters.isInternal
+          type:
+            - boolean
+          description: If this is an internal connector.
+          optional: true
         - id: options
           type:
             - object
@@ -747,7 +755,8 @@ items:
             - string
           description: |-
             Type of connector. Possible values
-            include: 'CRM', 'AzureBlob', 'Salesforce'
+            include: 'None', 'CRM', 'AzureBlob', 'Salesforce', 'ExchangeOnline',
+            'Outbound'
         - id: parameters.displayName
           type:
             - string
@@ -762,6 +771,11 @@ items:
           type:
             - object
           description: The connector properties.
+        - id: parameters.isInternal
+          type:
+            - boolean
+          description: If this is an internal connector.
+          optional: true
         - id: options
           type:
             - object
@@ -859,7 +873,8 @@ items:
             - string
           description: |-
             Type of connector. Possible values
-            include: 'CRM', 'AzureBlob', 'Salesforce'
+            include: 'None', 'CRM', 'AzureBlob', 'Salesforce', 'ExchangeOnline',
+            'Outbound'
         - id: parameters.displayName
           type:
             - string
@@ -874,6 +889,11 @@ items:
           type:
             - object
           description: The connector properties.
+        - id: parameters.isInternal
+          type:
+            - boolean
+          description: If this is an internal connector.
+          optional: true
         - id: options
           type:
             - object

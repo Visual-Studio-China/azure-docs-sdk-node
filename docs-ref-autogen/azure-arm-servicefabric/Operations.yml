@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-servicefabric.Operations
     id: azure-arm-servicefabric.Operations
     name: Operations
-    summary: |-
-      Operations
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ServiceFabricClient.
-      Initializes a new instance of the Operations class.
+    summary: Class representing a Operations.
     fullName: azure-arm-servicefabric.Operations
     type: Class
     children:
@@ -23,13 +19,13 @@ items:
     parent: azure-arm-servicefabric.Operations
     name: Operations(client)
     fullName: azure-arm-servicefabric.Operations.Operations(client)
-    summary: ''
+    summary: Create a Operations.
     type: Constructor
     syntax:
       parameters:
         - id: client
           type:
-            - azure-arm-servicefabric.ServiceFabricClient
+            - azure-arm-servicefabric.ServiceFabricManagementClient
           description: Reference to the service client.
       content: new Operations(client)
     langs:
@@ -37,9 +33,13 @@ items:
   - uid: 'azure-arm-servicefabric.Operations#listWithHttpOperationResponse'
     id: 'azure-arm-servicefabric.Operations#listWithHttpOperationResponse'
     parent: azure-arm-servicefabric.Operations
-    name: listWithHttpOperationResponse(options)
-    summary: Lists all of the available ServiceFabric REST API operations.
-    fullName: azure-arm-servicefabric.Operations.listWithHttpOperationResponse(options)
+    name: 'listWithHttpOperationResponse(apiVersion, options)'
+    summary: |-
+      Lists all of the available ServiceFabric Resource Manager REST API
+      operations.
+    fullName: >-
+      azure-arm-servicefabric.Operations.listWithHttpOperationResponse(apiVersion,
+      options)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -56,6 +56,12 @@ items:
     type: Function
     syntax:
       parameters:
+        - id: apiVersion
+          type:
+            - string
+          description: |-
+            The version of the ServiceFabric resouce provider
+            api
         - id: options
           type:
             - object
@@ -72,15 +78,19 @@ items:
         type:
           - Promise
         description: A promise is returned
-      content: function listWithHttpOperationResponse(options)
+      content: 'function listWithHttpOperationResponse(apiVersion, options)'
     langs:
       - js
   - uid: 'azure-arm-servicefabric.Operations#list'
     id: 'azure-arm-servicefabric.Operations#list'
     parent: azure-arm-servicefabric.Operations
-    name: 'list(options, optionalCallback)'
-    summary: Lists all of the available ServiceFabric REST API operations.
-    fullName: 'azure-arm-servicefabric.Operations.list(options, optionalCallback)'
+    name: 'list(apiVersion, options, optionalCallback)'
+    summary: |-
+      Lists all of the available ServiceFabric Resource Manager REST API
+      operations.
+    fullName: >-
+      azure-arm-servicefabric.Operations.list(apiVersion, options,
+      optionalCallback)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -117,6 +127,12 @@ items:
     type: Function
     syntax:
       parameters:
+        - id: apiVersion
+          type:
+            - string
+          description: |-
+            The version of the ServiceFabric resouce provider
+            api
         - id: options
           type:
             - object
@@ -143,14 +159,16 @@ items:
           then it returns the callback else returns a Promise.
 
           {Promise} A promise is returned
-      content: 'function list(options, optionalCallback)'
+      content: 'function list(apiVersion, options, optionalCallback)'
     langs:
       - js
   - uid: 'azure-arm-servicefabric.Operations#listNextWithHttpOperationResponse'
     id: 'azure-arm-servicefabric.Operations#listNextWithHttpOperationResponse'
     parent: azure-arm-servicefabric.Operations
     name: 'listNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: Lists all of the available ServiceFabric REST API operations.
+    summary: |-
+      Lists all of the available ServiceFabric Resource Manager REST API
+      operations.
     fullName: >-
       azure-arm-servicefabric.Operations.listNextWithHttpOperationResponse(nextPageLink,
       options)
@@ -199,7 +217,9 @@ items:
     id: 'azure-arm-servicefabric.Operations#listNext'
     parent: azure-arm-servicefabric.Operations
     name: 'listNext(nextPageLink, options, optionalCallback)'
-    summary: Lists all of the available ServiceFabric REST API operations.
+    summary: |-
+      Lists all of the available ServiceFabric Resource Manager REST API
+      operations.
     fullName: >-
       azure-arm-servicefabric.Operations.listNext(nextPageLink, options,
       optionalCallback)
@@ -275,7 +295,7 @@ items:
     langs:
       - js
 references:
-  - uid: azure-arm-servicefabric.ServiceFabricClient
-    name: ServiceFabricClient
-    fullName: azure-arm-servicefabric.ServiceFabricClient
+  - uid: azure-arm-servicefabric.ServiceFabricManagementClient
+    name: ServiceFabricManagementClient
+    fullName: azure-arm-servicefabric.ServiceFabricManagementClient
     isExternal: false

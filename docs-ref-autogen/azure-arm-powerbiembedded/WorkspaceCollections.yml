@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-powerbiembedded.WorkspaceCollections
     id: azure-arm-powerbiembedded.WorkspaceCollections
     name: WorkspaceCollections
-    summary: |-
-      WorkspaceCollections
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the PowerBIEmbeddedManagementClient.
-      Initializes a new instance of the WorkspaceCollections class.
+    summary: Class representing a WorkspaceCollections.
     fullName: azure-arm-powerbiembedded.WorkspaceCollections
     type: Class
     children:
@@ -53,7 +49,7 @@ items:
     name: WorkspaceCollections(client)
     fullName: >-
       azure-arm-powerbiembedded.WorkspaceCollections.WorkspaceCollections(client)
-    summary: ''
+    summary: Create a WorkspaceCollections.
     type: Constructor
     syntax:
       parameters:

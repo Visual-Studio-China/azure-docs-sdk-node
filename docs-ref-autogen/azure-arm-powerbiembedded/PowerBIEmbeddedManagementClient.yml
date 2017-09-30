@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-powerbiembedded.PowerBIEmbeddedManagementClient
     id: azure-arm-powerbiembedded.PowerBIEmbeddedManagementClient
     name: PowerBIEmbeddedManagementClient
-    summary: Initializes a new instance of the PowerBIEmbeddedManagementClient class.
+    summary: Class representing a PowerBIEmbeddedManagementClient.
     fullName: azure-arm-powerbiembedded.PowerBIEmbeddedManagementClient
     type: Class
     children:
@@ -23,7 +23,7 @@ items:
     fullName: >-
       azure-arm-powerbiembedded.PowerBIEmbeddedManagementClient.PowerBIEmbeddedManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a PowerBIEmbeddedManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -66,11 +66,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Client Api Version.
           optional: true
         - id: options.acceptLanguage
           type:

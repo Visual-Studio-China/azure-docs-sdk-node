@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-servermanagement.Node
     id: azure-arm-servermanagement.Node
     name: Node
-    summary: |-
-      Node
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ServerManagement.
-      Initializes a new instance of the Node class.
+    summary: Class representing a Node.
     fullName: azure-arm-servermanagement.Node
     type: Class
     children:
@@ -41,7 +37,7 @@ items:
     parent: azure-arm-servermanagement.Node
     name: Node(client)
     fullName: azure-arm-servermanagement.Node.Node(client)
-    summary: ''
+    summary: Create a Node.
     type: Constructor
     syntax:
       parameters:

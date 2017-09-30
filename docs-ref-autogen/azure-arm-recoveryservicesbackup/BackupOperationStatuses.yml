@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-recoveryservicesbackup.BackupOperationStatuses
     id: azure-arm-recoveryservicesbackup.BackupOperationStatuses
     name: BackupOperationStatuses
-    summary: |-
-      BackupOperationStatuses
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the BackupOperationStatuses class.
+    summary: Class representing a BackupOperationStatuses.
     fullName: azure-arm-recoveryservicesbackup.BackupOperationStatuses
     type: Class
     children:
@@ -23,7 +19,7 @@ items:
     name: BackupOperationStatuses(client)
     fullName: >-
       azure-arm-recoveryservicesbackup.BackupOperationStatuses.BackupOperationStatuses(client)
-    summary: ''
+    summary: Create a BackupOperationStatuses.
     type: Constructor
     syntax:
       parameters:
@@ -43,10 +39,10 @@ items:
       getWithHttpOperationResponse(vaultName, resourceGroupName, operationId,
       options)
     summary: >-
-      Gets the status of an operation such as triggering a backup or restore.
+      Fetches the status of an operation such as triggering a backup, restore.
       The
 
-      status can be In progress, Completed or Failed. You can refer to the
+      status can be in progress, completed or failed. You can refer to the
 
       OperationStatus enum for all the possible states of an operation. Some
 
@@ -75,17 +71,17 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: operationId
           type:
             - string
-          description: The ID of the operation.
+          description: OperationID which represents the operation.
         - id: options
           type:
             - object
@@ -112,10 +108,10 @@ items:
     parent: azure-arm-recoveryservicesbackup.BackupOperationStatuses
     name: 'get(vaultName, resourceGroupName, operationId, options, optionalCallback)'
     summary: >-
-      Gets the status of an operation such as triggering a backup or restore.
+      Fetches the status of an operation such as triggering a backup, restore.
       The
 
-      status can be In progress, Completed or Failed. You can refer to the
+      status can be in progress, completed or failed. You can refer to the
 
       OperationStatus enum for all the possible states of an operation. Some
 
@@ -164,17 +160,17 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: operationId
           type:
             - string
-          description: The ID of the operation.
+          description: OperationID which represents the operation.
         - id: options
           type:
             - object

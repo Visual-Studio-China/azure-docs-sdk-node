@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-logic.WorkflowTriggers
     id: azure-arm-logic.WorkflowTriggers
     name: WorkflowTriggers
-    summary: |-
-      WorkflowTriggers
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the LogicManagementClient.
-      Initializes a new instance of the WorkflowTriggers class.
+    summary: Class representing a WorkflowTriggers.
     fullName: azure-arm-logic.WorkflowTriggers
     type: Class
     children:
@@ -30,7 +26,7 @@ items:
     parent: azure-arm-logic.WorkflowTriggers
     name: WorkflowTriggers(client)
     fullName: azure-arm-logic.WorkflowTriggers.WorkflowTriggers(client)
-    summary: ''
+    summary: Create a WorkflowTriggers.
     type: Constructor
     syntax:
       parameters:

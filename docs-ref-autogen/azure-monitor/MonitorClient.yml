@@ -3,7 +3,7 @@ items:
   - uid: azure-monitor.MonitorClient
     id: azure-monitor.MonitorClient
     name: MonitorClient
-    summary: Initializes a new instance of the MonitorClient class.
+    summary: Class representing a MonitorClient.
     fullName: azure-monitor.MonitorClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-monitor.MonitorClient.MonitorClient(credentials, subscriptionId,
       baseUri, options)
-    summary: ''
+    summary: Create a MonitorClient.
     type: Constructor
     syntax:
       parameters:

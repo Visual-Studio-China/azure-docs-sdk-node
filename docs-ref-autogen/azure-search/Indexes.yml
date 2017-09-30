@@ -3,11 +3,7 @@ items:
   - uid: azure-search.Indexes
     id: azure-search.Indexes
     name: Indexes
-    summary: |-
-      Indexes
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the SearchServiceClient.
-      Initializes a new instance of the Indexes class.
+    summary: Class representing a Indexes.
     fullName: azure-search.Indexes
     type: Class
     children:
@@ -33,7 +29,7 @@ items:
     parent: azure-search.Indexes
     name: Indexes(client)
     fullName: azure-search.Indexes.Indexes(client)
-    summary: ''
+    summary: Create a Indexes.
     type: Constructor
     syntax:
       parameters:

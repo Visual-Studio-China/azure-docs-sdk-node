@@ -3,9 +3,7 @@ items:
   - uid: azure-arm-machinelearning.AzureMLCommitmentPlansManagementClient
     id: azure-arm-machinelearning.AzureMLCommitmentPlansManagementClient
     name: AzureMLCommitmentPlansManagementClient
-    summary: >-
-      Initializes a new instance of the AzureMLCommitmentPlansManagementClient
-      class.
+    summary: Class representing a AzureMLCommitmentPlansManagementClient.
     fullName: azure-arm-machinelearning.AzureMLCommitmentPlansManagementClient
     type: Class
     children:
@@ -21,7 +19,7 @@ items:
     fullName: >-
       azure-arm-machinelearning.AzureMLCommitmentPlansManagementClient.AzureMLCommitmentPlansManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a AzureMLCommitmentPlansManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -61,13 +59,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: >-
-            The version of the Microsoft.MachineLearning resource provider API
-            to use.
           optional: true
         - id: options.acceptLanguage
           type:

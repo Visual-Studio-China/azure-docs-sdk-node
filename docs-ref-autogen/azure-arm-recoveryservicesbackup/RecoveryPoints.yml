@@ -3,21 +3,17 @@ items:
   - uid: azure-arm-recoveryservicesbackup.RecoveryPoints
     id: azure-arm-recoveryservicesbackup.RecoveryPoints
     name: RecoveryPoints
-    summary: |-
-      RecoveryPoints
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the RecoveryPoints class.
+    summary: Class representing a RecoveryPoints.
     fullName: azure-arm-recoveryservicesbackup.RecoveryPoints
     type: Class
     children:
       - 'azure-arm-recoveryservicesbackup.RecoveryPoints.#ctor'
       - >-
-        azure-arm-recoveryservicesbackup.RecoveryPoints#getWithHttpOperationResponse
-      - 'azure-arm-recoveryservicesbackup.RecoveryPoints#get'
-      - >-
         azure-arm-recoveryservicesbackup.RecoveryPoints#listWithHttpOperationResponse
       - 'azure-arm-recoveryservicesbackup.RecoveryPoints#list'
+      - >-
+        azure-arm-recoveryservicesbackup.RecoveryPoints#getWithHttpOperationResponse
+      - 'azure-arm-recoveryservicesbackup.RecoveryPoints#get'
       - >-
         azure-arm-recoveryservicesbackup.RecoveryPoints#listNextWithHttpOperationResponse
       - 'azure-arm-recoveryservicesbackup.RecoveryPoints#listNext'
@@ -28,7 +24,7 @@ items:
     parent: azure-arm-recoveryservicesbackup.RecoveryPoints
     name: RecoveryPoints(client)
     fullName: azure-arm-recoveryservicesbackup.RecoveryPoints.RecoveryPoints(client)
-    summary: ''
+    summary: Create a RecoveryPoints.
     type: Constructor
     syntax:
       parameters:
@@ -40,204 +36,6 @@ items:
     langs:
       - js
   - uid: >-
-      azure-arm-recoveryservicesbackup.RecoveryPoints#getWithHttpOperationResponse
-    id: >-
-      azure-arm-recoveryservicesbackup.RecoveryPoints#getWithHttpOperationResponse
-    parent: azure-arm-recoveryservicesbackup.RecoveryPoints
-    name: >-
-      getWithHttpOperationResponse(vaultName, resourceGroupName, fabricName,
-      containerName, protectedItemName, recoveryPointId, options)
-    summary: |-
-      Provides the backup data for the RecoveryPointID. This is an asynchronous
-      operation. To learn the status of the operation, call the
-      GetProtectedItemOperationResult API.
-    fullName: >-
-      azure-arm-recoveryservicesbackup.RecoveryPoints.getWithHttpOperationResponse(vaultName,
-      resourceGroupName, fabricName, containerName, protectedItemName,
-      recoveryPointId, options)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: >-
-          {HttpOperationResponse<RecoveryPointResource>} - The deserialized
-          result object.
-        value: >-
-          {HttpOperationResponse<RecoveryPointResource>} - The deserialized
-          result object.
-      - originalTitle: reject
-        title: reject
-        text: '{Error} - The error object.'
-        value: '{Error} - The error object.'
-    type: Function
-    syntax:
-      parameters:
-        - id: vaultName
-          type:
-            - string
-          description: The name of the Recovery Services vault.
-        - id: resourceGroupName
-          type:
-            - string
-          description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
-        - id: fabricName
-          type:
-            - string
-          description: The fabric name associated with backup item.
-        - id: containerName
-          type:
-            - string
-          description: |-
-            The container name associated with backup
-            item.
-        - id: protectedItemName
-          type:
-            - string
-          description: |-
-            The name of the backup item used in this
-            GET operation.
-        - id: recoveryPointId
-          type:
-            - string
-          description: |-
-            The RecoveryPointID associated with this GET
-            operation.
-        - id: options
-          type:
-            - object
-          description: Optional Parameters.
-          optional: true
-        - id: options.customHeaders
-          type:
-            - object
-          description: |-
-            Headers that will be added to the
-            request
-          optional: true
-      return:
-        type:
-          - Promise
-        description: A promise is returned
-      content: >-
-        function getWithHttpOperationResponse(vaultName, resourceGroupName,
-        fabricName, containerName, protectedItemName, recoveryPointId, options)
-    langs:
-      - js
-  - uid: 'azure-arm-recoveryservicesbackup.RecoveryPoints#get'
-    id: 'azure-arm-recoveryservicesbackup.RecoveryPoints#get'
-    parent: azure-arm-recoveryservicesbackup.RecoveryPoints
-    name: >-
-      get(vaultName, resourceGroupName, fabricName, containerName,
-      protectedItemName, recoveryPointId, options, optionalCallback)
-    summary: |-
-      Provides the backup data for the RecoveryPointID. This is an asynchronous
-      operation. To learn the status of the operation, call the
-      GetProtectedItemOperationResult API.
-    fullName: >-
-      azure-arm-recoveryservicesbackup.RecoveryPoints.get(vaultName,
-      resourceGroupName, fabricName, containerName, protectedItemName,
-      recoveryPointId, options, optionalCallback)
-    tags:
-      - originalTitle: resolve
-        title: resolve
-        text: '{RecoveryPointResource} - The deserialized result object.'
-        value: '{RecoveryPointResource} - The deserialized result object.'
-      - originalTitle: reject
-        title: reject
-        text: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RecoveryPointResource} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-        value: |-
-          {Error} - The error object.
-
-          {function} optionalCallback(err, result, request, response)
-
-                               {Error}  err        - The Error object if an error occurred, null otherwise.
-
-                               {object} [result]   - The deserialized result object if an error did not occur.
-                               See {@link RecoveryPointResource} for more information.
-
-                               {object} [request]  - The HTTP Request object if an error did not occur.
-
-                               {stream} [response] - The HTTP Response stream if an error did not occur.
-    type: Function
-    syntax:
-      parameters:
-        - id: vaultName
-          type:
-            - string
-          description: The name of the Recovery Services vault.
-        - id: resourceGroupName
-          type:
-            - string
-          description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
-        - id: fabricName
-          type:
-            - string
-          description: The fabric name associated with backup item.
-        - id: containerName
-          type:
-            - string
-          description: |-
-            The container name associated with backup
-            item.
-        - id: protectedItemName
-          type:
-            - string
-          description: |-
-            The name of the backup item used in this
-            GET operation.
-        - id: recoveryPointId
-          type:
-            - string
-          description: |-
-            The RecoveryPointID associated with this GET
-            operation.
-        - id: options
-          type:
-            - object
-          description: Optional Parameters.
-          optional: true
-        - id: options.customHeaders
-          type:
-            - object
-          description: |-
-            Headers that will be added to the
-            request
-          optional: true
-        - id: optionalCallback
-          type:
-            - function
-          description: The optional callback.
-          optional: true
-      return:
-        type:
-          - function
-          - Promise
-        description: |-
-          If a callback was passed as the last parameter
-          then it returns the callback else returns a Promise.
-
-          {Promise} A promise is returned
-      content: >-
-        function get(vaultName, resourceGroupName, fabricName, containerName,
-        protectedItemName, recoveryPointId, options, optionalCallback)
-    langs:
-      - js
-  - uid: >-
       azure-arm-recoveryservicesbackup.RecoveryPoints#listWithHttpOperationResponse
     id: >-
       azure-arm-recoveryservicesbackup.RecoveryPoints#listWithHttpOperationResponse
@@ -245,9 +43,7 @@ items:
     name: >-
       listWithHttpOperationResponse(vaultName, resourceGroupName, fabricName,
       containerName, protectedItemName, options)
-    summary: >-
-      Lists the recovery points, or backup copies, for the specified backup
-      item.
+    summary: Lists the backup copies for the backed up item.
     fullName: >-
       azure-arm-recoveryservicesbackup.RecoveryPoints.listWithHttpOperationResponse(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName, options)
@@ -270,29 +66,29 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backed up item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backed up
             item.
         - id: protectedItemName
           type:
             - string
           description: |-
-            The name of backup item used in this GET
-            operation.
+            Backed up item whose backup copies are to
+            be fetched.
         - id: options
           type:
             - object
@@ -301,9 +97,7 @@ items:
         - id: options.filter
           type:
             - string
-          description: |-
-            startDate eq {yyyy-mm-dd hh:mm:ss PM} and
-            endDate { yyyy-mm-dd hh:mm:ss PM}.
+          description: OData filter options.
           optional: true
         - id: options.customHeaders
           type:
@@ -327,9 +121,7 @@ items:
     name: >-
       list(vaultName, resourceGroupName, fabricName, containerName,
       protectedItemName, options, optionalCallback)
-    summary: >-
-      Lists the recovery points, or backup copies, for the specified backup
-      item.
+    summary: Lists the backup copies for the backed up item.
     fullName: >-
       azure-arm-recoveryservicesbackup.RecoveryPoints.list(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName, options,
@@ -375,29 +167,29 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backed up item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backed up
             item.
         - id: protectedItemName
           type:
             - string
           description: |-
-            The name of backup item used in this GET
-            operation.
+            Backed up item whose backup copies are to
+            be fetched.
         - id: options
           type:
             - object
@@ -406,9 +198,7 @@ items:
         - id: options.filter
           type:
             - string
-          description: |-
-            startDate eq {yyyy-mm-dd hh:mm:ss PM} and
-            endDate { yyyy-mm-dd hh:mm:ss PM}.
+          description: OData filter options.
           optional: true
         - id: options.customHeaders
           type:
@@ -437,14 +227,206 @@ items:
     langs:
       - js
   - uid: >-
+      azure-arm-recoveryservicesbackup.RecoveryPoints#getWithHttpOperationResponse
+    id: >-
+      azure-arm-recoveryservicesbackup.RecoveryPoints#getWithHttpOperationResponse
+    parent: azure-arm-recoveryservicesbackup.RecoveryPoints
+    name: >-
+      getWithHttpOperationResponse(vaultName, resourceGroupName, fabricName,
+      containerName, protectedItemName, recoveryPointId, options)
+    summary: |-
+      Provides the information of the backed up data identified using
+      RecoveryPointID. This is an asynchronous operation. To know the status of
+      the operation, call the GetProtectedItemOperationResult API.
+    fullName: >-
+      azure-arm-recoveryservicesbackup.RecoveryPoints.getWithHttpOperationResponse(vaultName,
+      resourceGroupName, fabricName, containerName, protectedItemName,
+      recoveryPointId, options)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<RecoveryPointResource>} - The deserialized
+          result object.
+        value: >-
+          {HttpOperationResponse<RecoveryPointResource>} - The deserialized
+          result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
+    type: Function
+    syntax:
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: The name of the recovery services vault.
+        - id: resourceGroupName
+          type:
+            - string
+          description: |-
+            The name of the resource group where the
+            recovery services vault is present.
+        - id: fabricName
+          type:
+            - string
+          description: Fabric name associated with backed up item.
+        - id: containerName
+          type:
+            - string
+          description: Container name associated with backed up item.
+        - id: protectedItemName
+          type:
+            - string
+          description: |-
+            Backed up item name whose backup data
+            needs to be fetched.
+        - id: recoveryPointId
+          type:
+            - string
+          description: |-
+            RecoveryPointID represents the backed up
+            data to be fetched.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+      return:
+        type:
+          - Promise
+        description: A promise is returned
+      content: >-
+        function getWithHttpOperationResponse(vaultName, resourceGroupName,
+        fabricName, containerName, protectedItemName, recoveryPointId, options)
+    langs:
+      - js
+  - uid: 'azure-arm-recoveryservicesbackup.RecoveryPoints#get'
+    id: 'azure-arm-recoveryservicesbackup.RecoveryPoints#get'
+    parent: azure-arm-recoveryservicesbackup.RecoveryPoints
+    name: >-
+      get(vaultName, resourceGroupName, fabricName, containerName,
+      protectedItemName, recoveryPointId, options, optionalCallback)
+    summary: |-
+      Provides the information of the backed up data identified using
+      RecoveryPointID. This is an asynchronous operation. To know the status of
+      the operation, call the GetProtectedItemOperationResult API.
+    fullName: >-
+      azure-arm-recoveryservicesbackup.RecoveryPoints.get(vaultName,
+      resourceGroupName, fabricName, containerName, protectedItemName,
+      recoveryPointId, options, optionalCallback)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{RecoveryPointResource} - The deserialized result object.'
+        value: '{RecoveryPointResource} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RecoveryPointResource} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RecoveryPointResource} for more information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    type: Function
+    syntax:
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: The name of the recovery services vault.
+        - id: resourceGroupName
+          type:
+            - string
+          description: |-
+            The name of the resource group where the
+            recovery services vault is present.
+        - id: fabricName
+          type:
+            - string
+          description: Fabric name associated with backed up item.
+        - id: containerName
+          type:
+            - string
+          description: Container name associated with backed up item.
+        - id: protectedItemName
+          type:
+            - string
+          description: |-
+            Backed up item name whose backup data
+            needs to be fetched.
+        - id: recoveryPointId
+          type:
+            - string
+          description: |-
+            RecoveryPointID represents the backed up
+            data to be fetched.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: optionalCallback
+          type:
+            - function
+          description: The optional callback.
+          optional: true
+      return:
+        type:
+          - function
+          - Promise
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
+      content: >-
+        function get(vaultName, resourceGroupName, fabricName, containerName,
+        protectedItemName, recoveryPointId, options, optionalCallback)
+    langs:
+      - js
+  - uid: >-
       azure-arm-recoveryservicesbackup.RecoveryPoints#listNextWithHttpOperationResponse
     id: >-
       azure-arm-recoveryservicesbackup.RecoveryPoints#listNextWithHttpOperationResponse
     parent: azure-arm-recoveryservicesbackup.RecoveryPoints
     name: 'listNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: >-
-      Lists the recovery points, or backup copies, for the specified backup
-      item.
+    summary: Lists the backup copies for the backed up item.
     fullName: >-
       azure-arm-recoveryservicesbackup.RecoveryPoints.listNextWithHttpOperationResponse(nextPageLink,
       options)
@@ -493,9 +475,7 @@ items:
     id: 'azure-arm-recoveryservicesbackup.RecoveryPoints#listNext'
     parent: azure-arm-recoveryservicesbackup.RecoveryPoints
     name: 'listNext(nextPageLink, options, optionalCallback)'
-    summary: >-
-      Lists the recovery points, or backup copies, for the specified backup
-      item.
+    summary: Lists the backup copies for the backed up item.
     fullName: >-
       azure-arm-recoveryservicesbackup.RecoveryPoints.listNext(nextPageLink,
       options, optionalCallback)

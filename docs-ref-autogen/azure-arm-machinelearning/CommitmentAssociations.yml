@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-machinelearning.CommitmentAssociations
     id: azure-arm-machinelearning.CommitmentAssociations
     name: CommitmentAssociations
-    summary: |-
-      CommitmentAssociations
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the AzureMLCommitmentPlansManagementClient.
-      Initializes a new instance of the CommitmentAssociations class.
+    summary: Class representing a CommitmentAssociations.
     fullName: azure-arm-machinelearning.CommitmentAssociations
     type: Class
     children:
@@ -32,7 +28,7 @@ items:
     name: CommitmentAssociations(client)
     fullName: >-
       azure-arm-machinelearning.CommitmentAssociations.CommitmentAssociations(client)
-    summary: ''
+    summary: Create a CommitmentAssociations.
     type: Constructor
     syntax:
       parameters:

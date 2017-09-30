@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-dns.RecordSets
     id: azure-arm-dns.RecordSets
     name: RecordSets
-    summary: |-
-      RecordSets
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the DnsManagementClient.
-      Initializes a new instance of the RecordSets class.
+    summary: Class representing a RecordSets.
     fullName: azure-arm-dns.RecordSets
     type: Class
     children:
@@ -35,7 +31,7 @@ items:
     parent: azure-arm-dns.RecordSets
     name: RecordSets(client)
     fullName: azure-arm-dns.RecordSets.RecordSets(client)
-    summary: ''
+    summary: Create a RecordSets.
     type: Constructor
     syntax:
       parameters:
@@ -1529,6 +1525,20 @@ items:
             The maximum number of record sets to return.
             If not specified, returns up to 100 record sets.
           optional: true
+        - id: options.recordsetnamesuffix
+          type:
+            - string
+          description: >-
+            The suffix label of the record
+
+            set name that has to be used to filter the record set enumerations.
+            If this
+
+            parameter is specified, Enumeration will return only records that
+            end with
+
+            .<recordSetNameSuffix>
+          optional: true
         - id: options.customHeaders
           type:
             - object
@@ -1621,6 +1631,20 @@ items:
             The maximum number of record sets to return.
             If not specified, returns up to 100 record sets.
           optional: true
+        - id: options.recordsetnamesuffix
+          type:
+            - string
+          description: >-
+            The suffix label of the record
+
+            set name that has to be used to filter the record set enumerations.
+            If this
+
+            parameter is specified, Enumeration will return only records that
+            end with
+
+            .<recordSetNameSuffix>
+          optional: true
         - id: options.customHeaders
           type:
             - object
@@ -1694,6 +1718,20 @@ items:
           description: |-
             The maximum number of record sets to return.
             If not specified, returns up to 100 record sets.
+          optional: true
+        - id: options.recordsetnamesuffix
+          type:
+            - string
+          description: >-
+            The suffix label of the record
+
+            set name that has to be used to filter the record set enumerations.
+            If this
+
+            parameter is specified, Enumeration will return only records that
+            end with
+
+            .<recordSetNameSuffix>
           optional: true
         - id: options.customHeaders
           type:
@@ -1776,6 +1814,20 @@ items:
           description: |-
             The maximum number of record sets to return.
             If not specified, returns up to 100 record sets.
+          optional: true
+        - id: options.recordsetnamesuffix
+          type:
+            - string
+          description: >-
+            The suffix label of the record
+
+            set name that has to be used to filter the record set enumerations.
+            If this
+
+            parameter is specified, Enumeration will return only records that
+            end with
+
+            .<recordSetNameSuffix>
           optional: true
         - id: options.customHeaders
           type:

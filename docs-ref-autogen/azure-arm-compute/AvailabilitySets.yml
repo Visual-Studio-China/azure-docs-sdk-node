@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-compute.AvailabilitySets
     id: azure-arm-compute.AvailabilitySets
     name: AvailabilitySets
-    summary: |-
-      AvailabilitySets
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ComputeManagementClient.
-      Initializes a new instance of the AvailabilitySets class.
+    summary: Class representing a AvailabilitySets.
     fullName: azure-arm-compute.AvailabilitySets
     type: Class
     children:
@@ -31,7 +27,7 @@ items:
     parent: azure-arm-compute.AvailabilitySets
     name: AvailabilitySets(client)
     fullName: azure-arm-compute.AvailabilitySets.AvailabilitySets(client)
-    summary: ''
+    summary: Create a AvailabilitySets.
     type: Constructor
     syntax:
       parameters:
@@ -112,12 +108,20 @@ items:
         - id: parameters.sku.tier
           type:
             - string
-          description: The sku tier.
+          description: >-
+            Specifies the tier of virtual machines
+
+            in a scale set.<br /><br /> Possible Values:<br /><br />
+            **Standard**<br
+
+            /><br /> **Basic**
           optional: true
         - id: parameters.sku.capacity
           type:
             - number
-          description: The sku capacity.
+          description: |-
+            Specifies the number of virtual
+            machines in the scale set.
           optional: true
         - id: parameters.location
           type:
@@ -239,12 +243,20 @@ items:
         - id: parameters.sku.tier
           type:
             - string
-          description: The sku tier.
+          description: >-
+            Specifies the tier of virtual machines
+
+            in a scale set.<br /><br /> Possible Values:<br /><br />
+            **Standard**<br
+
+            /><br /> **Basic**
           optional: true
         - id: parameters.sku.capacity
           type:
             - number
-          description: The sku capacity.
+          description: |-
+            Specifies the number of virtual
+            machines in the scale set.
           optional: true
         - id: parameters.location
           type:

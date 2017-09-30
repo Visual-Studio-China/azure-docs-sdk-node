@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-compute.ContainerServices
     id: azure-arm-compute.ContainerServices
     name: ContainerServices
-    summary: |-
-      ContainerServices
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ComputeManagementClient.
-      Initializes a new instance of the ContainerServices class.
+    summary: Class representing a ContainerServices.
     fullName: azure-arm-compute.ContainerServices
     type: Class
     children:
@@ -43,7 +39,7 @@ items:
     parent: azure-arm-compute.ContainerServices
     name: ContainerServices(client)
     fullName: azure-arm-compute.ContainerServices.ContainerServices(client)
-    summary: ''
+    summary: Create a ContainerServices.
     type: Constructor
     syntax:
       parameters:

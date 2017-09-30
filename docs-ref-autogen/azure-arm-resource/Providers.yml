@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-resource.Providers
     id: azure-arm-resource.Providers
     name: Providers
-    summary: |-
-      Providers
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ResourceManagementClient.
-      Initializes a new instance of the Providers class.
+    summary: Class representing a Providers.
     fullName: azure-arm-resource.Providers
     type: Class
     children:
@@ -29,7 +25,7 @@ items:
     parent: azure-arm-resource.Providers
     name: Providers(client)
     fullName: azure-arm-resource.Providers.Providers(client)
-    summary: ''
+    summary: Create a Providers.
     type: Constructor
     syntax:
       parameters:

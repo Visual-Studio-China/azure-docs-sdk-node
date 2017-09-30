@@ -3,7 +3,7 @@ items:
   - uid: azure-search.SearchServiceClient
     id: azure-search.SearchServiceClient
     name: SearchServiceClient
-    summary: Initializes a new instance of the SearchServiceClient class.
+    summary: Class representing a SearchServiceClient.
     fullName: azure-search.SearchServiceClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-search.SearchServiceClient.SearchServiceClient(credentials, baseUri,
       options)
-    summary: ''
+    summary: Create a SearchServiceClient.
     type: Constructor
     syntax:
       parameters:
@@ -53,11 +53,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Client Api Version.
           optional: true
         - id: options.acceptLanguage
           type:

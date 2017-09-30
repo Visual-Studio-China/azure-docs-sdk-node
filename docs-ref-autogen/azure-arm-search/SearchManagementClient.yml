@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-search.SearchManagementClient
     id: azure-arm-search.SearchManagementClient
     name: SearchManagementClient
-    summary: Initializes a new instance of the SearchManagementClient class.
+    summary: Class representing a SearchManagementClient.
     fullName: azure-arm-search.SearchManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-search.SearchManagementClient.SearchManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a SearchManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -59,13 +59,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: >-
-            The API version to use for each request. The current version is
-            2015-08-19.
           optional: true
         - id: options.acceptLanguage
           type:

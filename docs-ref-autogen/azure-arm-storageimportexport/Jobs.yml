@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-storageimportexport.Jobs
     id: azure-arm-storageimportexport.Jobs
     name: Jobs
-    summary: |-
-      Jobs
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the StorageImportExportManagementClient.
-      Initializes a new instance of the Jobs class.
+    summary: Class representing a Jobs.
     fullName: azure-arm-storageimportexport.Jobs
     type: Class
     children:
@@ -43,7 +39,7 @@ items:
     parent: azure-arm-storageimportexport.Jobs
     name: Jobs(client)
     fullName: azure-arm-storageimportexport.Jobs.Jobs(client)
-    summary: ''
+    summary: Create a Jobs.
     type: Constructor
     syntax:
       parameters:

@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-commerce.UsageManagementClient
     id: azure-arm-commerce.UsageManagementClient
     name: UsageManagementClient
-    summary: Initializes a new instance of the UsageManagementClient class.
+    summary: Class representing a UsageManagementClient.
     fullName: azure-arm-commerce.UsageManagementClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-commerce.UsageManagementClient.UsageManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a UsageManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -59,11 +59,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Client Api Version.
           optional: true
         - id: options.acceptLanguage
           type:

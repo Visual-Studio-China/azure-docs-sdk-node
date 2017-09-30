@@ -3,15 +3,7 @@ items:
   - uid: azure-arm-recoveryservicesbackup.ProtectionContainerOperationResults
     id: azure-arm-recoveryservicesbackup.ProtectionContainerOperationResults
     name: ProtectionContainerOperationResults
-    summary: >-
-      ProtectionContainerOperationResults
-
-      __NOTE__: An instance of this class is automatically created for an
-
-      instance of the RecoveryServicesBackupClient.
-
-      Initializes a new instance of the ProtectionContainerOperationResults
-      class.
+    summary: Class representing a ProtectionContainerOperationResults.
     fullName: azure-arm-recoveryservicesbackup.ProtectionContainerOperationResults
     type: Class
     children:
@@ -28,7 +20,7 @@ items:
     name: ProtectionContainerOperationResults(client)
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionContainerOperationResults.ProtectionContainerOperationResults(client)
-    summary: ''
+    summary: Create a ProtectionContainerOperationResults.
     type: Constructor
     syntax:
       parameters:
@@ -47,7 +39,7 @@ items:
     name: >-
       getWithHttpOperationResponse(vaultName, resourceGroupName, fabricName,
       containerName, operationId, options)
-    summary: Gets the result of any operation on the container.
+    summary: Fetches the result of any operation on the container.
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionContainerOperationResults.getWithHttpOperationResponse(vaultName,
       resourceGroupName, fabricName, containerName, operationId, options)
@@ -70,27 +62,29 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the container.
+          description: Fabric name associated with the container.
         - id: containerName
           type:
             - string
           description: |-
-            The container name used for this GET
-            operation.
+            Container name whose information should be
+            fetched.
         - id: operationId
           type:
             - string
-          description: The operation ID used for this GET operation.
+          description: |-
+            Operation ID which represents the operation
+            whose result needs to be fetched.
         - id: options
           type:
             - object
@@ -118,7 +112,7 @@ items:
     name: >-
       get(vaultName, resourceGroupName, fabricName, containerName, operationId,
       options, optionalCallback)
-    summary: Gets the result of any operation on the container.
+    summary: Fetches the result of any operation on the container.
     fullName: >-
       azure-arm-recoveryservicesbackup.ProtectionContainerOperationResults.get(vaultName,
       resourceGroupName, fabricName, containerName, operationId, options,
@@ -164,27 +158,29 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the container.
+          description: Fabric name associated with the container.
         - id: containerName
           type:
             - string
           description: |-
-            The container name used for this GET
-            operation.
+            Container name whose information should be
+            fetched.
         - id: operationId
           type:
             - string
-          description: The operation ID used for this GET operation.
+          description: |-
+            Operation ID which represents the operation
+            whose result needs to be fetched.
         - id: options
           type:
             - object

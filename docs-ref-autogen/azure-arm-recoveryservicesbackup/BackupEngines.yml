@@ -3,21 +3,20 @@ items:
   - uid: azure-arm-recoveryservicesbackup.BackupEngines
     id: azure-arm-recoveryservicesbackup.BackupEngines
     name: BackupEngines
-    summary: |-
-      BackupEngines
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the BackupEngines class.
+    summary: Class representing a BackupEngines.
     fullName: azure-arm-recoveryservicesbackup.BackupEngines
     type: Class
     children:
       - 'azure-arm-recoveryservicesbackup.BackupEngines.#ctor'
       - >-
+        azure-arm-recoveryservicesbackup.BackupEngines#listWithHttpOperationResponse
+      - 'azure-arm-recoveryservicesbackup.BackupEngines#list'
+      - >-
         azure-arm-recoveryservicesbackup.BackupEngines#getWithHttpOperationResponse
       - 'azure-arm-recoveryservicesbackup.BackupEngines#get'
       - >-
-        azure-arm-recoveryservicesbackup.BackupEngines#getNextWithHttpOperationResponse
-      - 'azure-arm-recoveryservicesbackup.BackupEngines#getNext'
+        azure-arm-recoveryservicesbackup.BackupEngines#listNextWithHttpOperationResponse
+      - 'azure-arm-recoveryservicesbackup.BackupEngines#listNext'
     langs:
       - js
   - id: 'azure-arm-recoveryservicesbackup.BackupEngines.#ctor'
@@ -25,7 +24,7 @@ items:
     parent: azure-arm-recoveryservicesbackup.BackupEngines
     name: BackupEngines(client)
     fullName: azure-arm-recoveryservicesbackup.BackupEngines.BackupEngines(client)
-    summary: ''
+    summary: Create a BackupEngines.
     type: Constructor
     syntax:
       parameters:
@@ -37,18 +36,16 @@ items:
     langs:
       - js
   - uid: >-
-      azure-arm-recoveryservicesbackup.BackupEngines#getWithHttpOperationResponse
+      azure-arm-recoveryservicesbackup.BackupEngines#listWithHttpOperationResponse
     id: >-
-      azure-arm-recoveryservicesbackup.BackupEngines#getWithHttpOperationResponse
+      azure-arm-recoveryservicesbackup.BackupEngines#listWithHttpOperationResponse
     parent: azure-arm-recoveryservicesbackup.BackupEngines
-    name: 'getWithHttpOperationResponse(vaultName, resourceGroupName, options)'
-    summary: >-
-      The backup management servers registered to a Recovery Services vault.
-      This
-
-      returns a pageable list of servers.
+    name: 'listWithHttpOperationResponse(vaultName, resourceGroupName, options)'
+    summary: |-
+      Backup management servers registered to Recovery Services Vault. Returns a
+      pageable list of servers.
     fullName: >-
-      azure-arm-recoveryservicesbackup.BackupEngines.getWithHttpOperationResponse(vaultName,
+      azure-arm-recoveryservicesbackup.BackupEngines.listWithHttpOperationResponse(vaultName,
       resourceGroupName, options)
     tags:
       - originalTitle: resolve
@@ -69,13 +66,13 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: options
           type:
             - object
@@ -84,18 +81,12 @@ items:
         - id: options.filter
           type:
             - string
-          description: >-
-            Use this filter to choose the specific
-
-            backup management server. backupManagementType { AzureIaasVM, MAB,
-            DPM,
-
-            AzureBackupServer, AzureSql }.
+          description: OData filter options.
           optional: true
         - id: options.skipToken
           type:
             - string
-          description: The Skip Token filter.
+          description: skipToken Filter.
           optional: true
         - id: options.customHeaders
           type:
@@ -109,21 +100,19 @@ items:
           - Promise
         description: A promise is returned
       content: >-
-        function getWithHttpOperationResponse(vaultName, resourceGroupName,
+        function listWithHttpOperationResponse(vaultName, resourceGroupName,
         options)
     langs:
       - js
-  - uid: 'azure-arm-recoveryservicesbackup.BackupEngines#get'
-    id: 'azure-arm-recoveryservicesbackup.BackupEngines#get'
+  - uid: 'azure-arm-recoveryservicesbackup.BackupEngines#list'
+    id: 'azure-arm-recoveryservicesbackup.BackupEngines#list'
     parent: azure-arm-recoveryservicesbackup.BackupEngines
-    name: 'get(vaultName, resourceGroupName, options, optionalCallback)'
-    summary: >-
-      The backup management servers registered to a Recovery Services vault.
-      This
-
-      returns a pageable list of servers.
+    name: 'list(vaultName, resourceGroupName, options, optionalCallback)'
+    summary: |-
+      Backup management servers registered to Recovery Services Vault. Returns a
+      pageable list of servers.
     fullName: >-
-      azure-arm-recoveryservicesbackup.BackupEngines.get(vaultName,
+      azure-arm-recoveryservicesbackup.BackupEngines.list(vaultName,
       resourceGroupName, options, optionalCallback)
     tags:
       - originalTitle: resolve
@@ -166,13 +155,13 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: options
           type:
             - object
@@ -181,18 +170,12 @@ items:
         - id: options.filter
           type:
             - string
-          description: >-
-            Use this filter to choose the specific
-
-            backup management server. backupManagementType { AzureIaasVM, MAB,
-            DPM,
-
-            AzureBackupServer, AzureSql }.
+          description: OData filter options.
           optional: true
         - id: options.skipToken
           type:
             - string
-          description: The Skip Token filter.
+          description: skipToken Filter.
           optional: true
         - id: options.customHeaders
           type:
@@ -215,22 +198,196 @@ items:
           then it returns the callback else returns a Promise.
 
           {Promise} A promise is returned
-      content: 'function get(vaultName, resourceGroupName, options, optionalCallback)'
+      content: 'function list(vaultName, resourceGroupName, options, optionalCallback)'
     langs:
       - js
   - uid: >-
-      azure-arm-recoveryservicesbackup.BackupEngines#getNextWithHttpOperationResponse
+      azure-arm-recoveryservicesbackup.BackupEngines#getWithHttpOperationResponse
     id: >-
-      azure-arm-recoveryservicesbackup.BackupEngines#getNextWithHttpOperationResponse
+      azure-arm-recoveryservicesbackup.BackupEngines#getWithHttpOperationResponse
     parent: azure-arm-recoveryservicesbackup.BackupEngines
-    name: 'getNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: >-
-      The backup management servers registered to a Recovery Services vault.
-      This
-
-      returns a pageable list of servers.
+    name: >-
+      getWithHttpOperationResponse(vaultName, resourceGroupName,
+      backupEngineName, options)
+    summary: Returns backup management server registered to Recovery Services Vault.
     fullName: >-
-      azure-arm-recoveryservicesbackup.BackupEngines.getNextWithHttpOperationResponse(nextPageLink,
+      azure-arm-recoveryservicesbackup.BackupEngines.getWithHttpOperationResponse(vaultName,
+      resourceGroupName, backupEngineName, options)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: >-
+          {HttpOperationResponse<BackupEngineBaseResource>} - The deserialized
+          result object.
+        value: >-
+          {HttpOperationResponse<BackupEngineBaseResource>} - The deserialized
+          result object.
+      - originalTitle: reject
+        title: reject
+        text: '{Error} - The error object.'
+        value: '{Error} - The error object.'
+    type: Function
+    syntax:
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: The name of the recovery services vault.
+        - id: resourceGroupName
+          type:
+            - string
+          description: |-
+            The name of the resource group where the
+            recovery services vault is present.
+        - id: backupEngineName
+          type:
+            - string
+          description: Name of the backup management server.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.filter
+          type:
+            - string
+          description: OData filter options.
+          optional: true
+        - id: options.skipToken
+          type:
+            - string
+          description: skipToken Filter.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+      return:
+        type:
+          - Promise
+        description: A promise is returned
+      content: >-
+        function getWithHttpOperationResponse(vaultName, resourceGroupName,
+        backupEngineName, options)
+    langs:
+      - js
+  - uid: 'azure-arm-recoveryservicesbackup.BackupEngines#get'
+    id: 'azure-arm-recoveryservicesbackup.BackupEngines#get'
+    parent: azure-arm-recoveryservicesbackup.BackupEngines
+    name: >-
+      get(vaultName, resourceGroupName, backupEngineName, options,
+      optionalCallback)
+    summary: Returns backup management server registered to Recovery Services Vault.
+    fullName: >-
+      azure-arm-recoveryservicesbackup.BackupEngines.get(vaultName,
+      resourceGroupName, backupEngineName, options, optionalCallback)
+    tags:
+      - originalTitle: resolve
+        title: resolve
+        text: '{BackupEngineBaseResource} - The deserialized result object.'
+        value: '{BackupEngineBaseResource} - The deserialized result object.'
+      - originalTitle: reject
+        title: reject
+        text: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BackupEngineBaseResource} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+        value: |-
+          {Error} - The error object.
+
+          {function} optionalCallback(err, result, request, response)
+
+                               {Error}  err        - The Error object if an error occurred, null otherwise.
+
+                               {object} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BackupEngineBaseResource} for more
+                               information.
+
+                               {object} [request]  - The HTTP Request object if an error did not occur.
+
+                               {stream} [response] - The HTTP Response stream if an error did not occur.
+    type: Function
+    syntax:
+      parameters:
+        - id: vaultName
+          type:
+            - string
+          description: The name of the recovery services vault.
+        - id: resourceGroupName
+          type:
+            - string
+          description: |-
+            The name of the resource group where the
+            recovery services vault is present.
+        - id: backupEngineName
+          type:
+            - string
+          description: Name of the backup management server.
+        - id: options
+          type:
+            - object
+          description: Optional Parameters.
+          optional: true
+        - id: options.filter
+          type:
+            - string
+          description: OData filter options.
+          optional: true
+        - id: options.skipToken
+          type:
+            - string
+          description: skipToken Filter.
+          optional: true
+        - id: options.customHeaders
+          type:
+            - object
+          description: |-
+            Headers that will be added to the
+            request
+          optional: true
+        - id: optionalCallback
+          type:
+            - function
+          description: The optional callback.
+          optional: true
+      return:
+        type:
+          - function
+          - Promise
+        description: |-
+          If a callback was passed as the last parameter
+          then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned
+      content: >-
+        function get(vaultName, resourceGroupName, backupEngineName, options,
+        optionalCallback)
+    langs:
+      - js
+  - uid: >-
+      azure-arm-recoveryservicesbackup.BackupEngines#listNextWithHttpOperationResponse
+    id: >-
+      azure-arm-recoveryservicesbackup.BackupEngines#listNextWithHttpOperationResponse
+    parent: azure-arm-recoveryservicesbackup.BackupEngines
+    name: 'listNextWithHttpOperationResponse(nextPageLink, options)'
+    summary: |-
+      Backup management servers registered to Recovery Services Vault. Returns a
+      pageable list of servers.
+    fullName: >-
+      azure-arm-recoveryservicesbackup.BackupEngines.listNextWithHttpOperationResponse(nextPageLink,
       options)
     tags:
       - originalTitle: resolve
@@ -270,20 +427,18 @@ items:
         type:
           - Promise
         description: A promise is returned
-      content: 'function getNextWithHttpOperationResponse(nextPageLink, options)'
+      content: 'function listNextWithHttpOperationResponse(nextPageLink, options)'
     langs:
       - js
-  - uid: 'azure-arm-recoveryservicesbackup.BackupEngines#getNext'
-    id: 'azure-arm-recoveryservicesbackup.BackupEngines#getNext'
+  - uid: 'azure-arm-recoveryservicesbackup.BackupEngines#listNext'
+    id: 'azure-arm-recoveryservicesbackup.BackupEngines#listNext'
     parent: azure-arm-recoveryservicesbackup.BackupEngines
-    name: 'getNext(nextPageLink, options, optionalCallback)'
-    summary: >-
-      The backup management servers registered to a Recovery Services vault.
-      This
-
-      returns a pageable list of servers.
+    name: 'listNext(nextPageLink, options, optionalCallback)'
+    summary: |-
+      Backup management servers registered to Recovery Services Vault. Returns a
+      pageable list of servers.
     fullName: >-
-      azure-arm-recoveryservicesbackup.BackupEngines.getNext(nextPageLink,
+      azure-arm-recoveryservicesbackup.BackupEngines.listNext(nextPageLink,
       options, optionalCallback)
     tags:
       - originalTitle: resolve
@@ -355,7 +510,7 @@ items:
           then it returns the callback else returns a Promise.
 
           {Promise} A promise is returned
-      content: 'function getNext(nextPageLink, options, optionalCallback)'
+      content: 'function listNext(nextPageLink, options, optionalCallback)'
     langs:
       - js
 references:

@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-customerinsights.Relationships
     id: azure-arm-customerinsights.Relationships
     name: Relationships
-    summary: |-
-      Relationships
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the CustomerInsightsManagementClient.
-      Initializes a new instance of the Relationships class.
+    summary: Class representing a Relationships.
     fullName: azure-arm-customerinsights.Relationships
     type: Class
     children:
@@ -39,7 +35,7 @@ items:
     parent: azure-arm-customerinsights.Relationships
     name: Relationships(client)
     fullName: azure-arm-customerinsights.Relationships.Relationships(client)
-    summary: ''
+    summary: Create a Relationships.
     type: Constructor
     syntax:
       parameters:

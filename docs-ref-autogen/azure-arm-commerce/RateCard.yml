@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-commerce.RateCard
     id: azure-arm-commerce.RateCard
     name: RateCard
-    summary: |-
-      RateCard
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the UsageManagementClient.
-      Initializes a new instance of the RateCard class.
+    summary: Class representing a RateCard.
     fullName: azure-arm-commerce.RateCard
     type: Class
     children:
@@ -21,7 +17,7 @@ items:
     parent: azure-arm-commerce.RateCard
     name: RateCard(client)
     fullName: azure-arm-commerce.RateCard.RateCard(client)
-    summary: ''
+    summary: Create a RateCard.
     type: Constructor
     syntax:
       parameters:

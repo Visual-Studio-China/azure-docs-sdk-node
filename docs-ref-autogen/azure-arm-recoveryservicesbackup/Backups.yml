@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-recoveryservicesbackup.Backups
     id: azure-arm-recoveryservicesbackup.Backups
     name: Backups
-    summary: |-
-      Backups
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the RecoveryServicesBackupClient.
-      Initializes a new instance of the Backups class.
+    summary: Class representing a Backups.
     fullName: azure-arm-recoveryservicesbackup.Backups
     type: Class
     children:
@@ -22,7 +18,7 @@ items:
     parent: azure-arm-recoveryservicesbackup.Backups
     name: Backups(client)
     fullName: azure-arm-recoveryservicesbackup.Backups.Backups(client)
-    summary: ''
+    summary: Create a Backups.
     type: Constructor
     syntax:
       parameters:
@@ -38,15 +34,15 @@ items:
     parent: azure-arm-recoveryservicesbackup.Backups
     name: >-
       triggerWithHttpOperationResponse(vaultName, resourceGroupName, fabricName,
-      containerName, protectedItemName, resourceBackupRequest, options)
+      containerName, protectedItemName, parameters, options)
     summary: |-
-      Triggers the backup job for the specified backup item. This is an
-      asynchronous operation. To know the status of the operation, call
+      Triggers backup for specified backed up item. This is an asynchronous
+      operation. To know the status of the operation, call
       GetProtectedItemOperationResult API.
     fullName: >-
       azure-arm-recoveryservicesbackup.Backups.triggerWithHttpOperationResponse(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName,
-      resourceBackupRequest, options)
+      parameters, options)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -62,76 +58,53 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backup item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backup
             item.
         - id: protectedItemName
           type:
             - string
           description: |-
-            The name of backup item used in this POST
-            operation.
-        - id: resourceBackupRequest
+            Backup item for which backup needs to be
+            triggered.
+        - id: parameters
           type:
             - object
-          description: The resource backup request.
-        - id: resourceBackupRequest.properties
+          description: resource backup request
+        - id: parameters.properties
           type:
             - object
-          description: ''
+          description: BackupRequestResource properties
           optional: true
-        - id: resourceBackupRequest.properties.objectType
+        - id: parameters.properties.objectType
           type:
             - string
-          description: |-
-            Polymorphic
-            Discriminator
-        - id: resourceBackupRequest.id
-          type:
-            - string
-          description: |-
-            Resource ID represents the
-            complete path to the resource.
-          optional: true
-        - id: resourceBackupRequest.name
-          type:
-            - string
-          description: |-
-            Resource name associated with
-            the resource.
-          optional: true
-        - id: resourceBackupRequest.type
-          type:
-            - string
-          description: |-
-            Resource type represents the
-            complete path of the form Namespace/ResourceType/ResourceType/...
-          optional: true
-        - id: resourceBackupRequest.location
+          description: Polymorphic Discriminator
+        - id: parameters.location
           type:
             - string
           description: Resource location.
           optional: true
-        - id: resourceBackupRequest.tags
+        - id: parameters.tags
           type:
             - object
           description: Resource tags.
           optional: true
-        - id: resourceBackupRequest.eTag
+        - id: parameters.eTag
           type:
             - string
           description: Optional ETag.
@@ -154,8 +127,7 @@ items:
         description: A promise is returned
       content: >-
         function triggerWithHttpOperationResponse(vaultName, resourceGroupName,
-        fabricName, containerName, protectedItemName, resourceBackupRequest,
-        options)
+        fabricName, containerName, protectedItemName, parameters, options)
     langs:
       - js
   - uid: 'azure-arm-recoveryservicesbackup.Backups#trigger'
@@ -163,15 +135,15 @@ items:
     parent: azure-arm-recoveryservicesbackup.Backups
     name: >-
       trigger(vaultName, resourceGroupName, fabricName, containerName,
-      protectedItemName, resourceBackupRequest, options, optionalCallback)
+      protectedItemName, parameters, options, optionalCallback)
     summary: |-
-      Triggers the backup job for the specified backup item. This is an
-      asynchronous operation. To know the status of the operation, call
+      Triggers backup for specified backed up item. This is an asynchronous
+      operation. To know the status of the operation, call
       GetProtectedItemOperationResult API.
     fullName: >-
       azure-arm-recoveryservicesbackup.Backups.trigger(vaultName,
       resourceGroupName, fabricName, containerName, protectedItemName,
-      resourceBackupRequest, options, optionalCallback)
+      parameters, options, optionalCallback)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -209,76 +181,53 @@ items:
         - id: vaultName
           type:
             - string
-          description: The name of the Recovery Services vault.
+          description: The name of the recovery services vault.
         - id: resourceGroupName
           type:
             - string
           description: |-
-            The name of the resource group associated
-            with the Recovery Services vault.
+            The name of the resource group where the
+            recovery services vault is present.
         - id: fabricName
           type:
             - string
-          description: The fabric name associated with the backup item.
+          description: Fabric name associated with the backup item.
         - id: containerName
           type:
             - string
           description: |-
-            The container name associated with the backup
+            Container name associated with the backup
             item.
         - id: protectedItemName
           type:
             - string
           description: |-
-            The name of backup item used in this POST
-            operation.
-        - id: resourceBackupRequest
+            Backup item for which backup needs to be
+            triggered.
+        - id: parameters
           type:
             - object
-          description: The resource backup request.
-        - id: resourceBackupRequest.properties
+          description: resource backup request
+        - id: parameters.properties
           type:
             - object
-          description: ''
+          description: BackupRequestResource properties
           optional: true
-        - id: resourceBackupRequest.properties.objectType
+        - id: parameters.properties.objectType
           type:
             - string
-          description: |-
-            Polymorphic
-            Discriminator
-        - id: resourceBackupRequest.id
-          type:
-            - string
-          description: |-
-            Resource ID represents the
-            complete path to the resource.
-          optional: true
-        - id: resourceBackupRequest.name
-          type:
-            - string
-          description: |-
-            Resource name associated with
-            the resource.
-          optional: true
-        - id: resourceBackupRequest.type
-          type:
-            - string
-          description: |-
-            Resource type represents the
-            complete path of the form Namespace/ResourceType/ResourceType/...
-          optional: true
-        - id: resourceBackupRequest.location
+          description: Polymorphic Discriminator
+        - id: parameters.location
           type:
             - string
           description: Resource location.
           optional: true
-        - id: resourceBackupRequest.tags
+        - id: parameters.tags
           type:
             - object
           description: Resource tags.
           optional: true
-        - id: resourceBackupRequest.eTag
+        - id: parameters.eTag
           type:
             - string
           description: Optional ETag.
@@ -311,8 +260,7 @@ items:
           {Promise} A promise is returned
       content: >-
         function trigger(vaultName, resourceGroupName, fabricName,
-        containerName, protectedItemName, resourceBackupRequest, options,
-        optionalCallback)
+        containerName, protectedItemName, parameters, options, optionalCallback)
     langs:
       - js
 references:

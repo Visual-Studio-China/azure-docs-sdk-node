@@ -34,7 +34,7 @@ items:
     id: 'azure-arm-network.Usages#listWithHttpOperationResponse'
     parent: azure-arm-network.Usages
     name: 'listWithHttpOperationResponse(location, options)'
-    summary: Lists compute usages for a subscription.
+    summary: List network usages for a subscription.
     fullName: 'azure-arm-network.Usages.listWithHttpOperationResponse(location, options)'
     tags:
       - originalTitle: resolve
@@ -79,7 +79,7 @@ items:
     id: 'azure-arm-network.Usages#list'
     parent: azure-arm-network.Usages
     name: 'list(location, options, optionalCallback)'
-    summary: Lists compute usages for a subscription.
+    summary: List network usages for a subscription.
     fullName: 'azure-arm-network.Usages.list(location, options, optionalCallback)'
     tags:
       - originalTitle: resolve
@@ -154,7 +154,7 @@ items:
     id: 'azure-arm-network.Usages#listNextWithHttpOperationResponse'
     parent: azure-arm-network.Usages
     name: 'listNextWithHttpOperationResponse(nextPageLink, options)'
-    summary: Lists compute usages for a subscription.
+    summary: List network usages for a subscription.
     fullName: >-
       azure-arm-network.Usages.listNextWithHttpOperationResponse(nextPageLink,
       options)
@@ -203,7 +203,7 @@ items:
     id: 'azure-arm-network.Usages#listNext'
     parent: azure-arm-network.Usages
     name: 'listNext(nextPageLink, options, optionalCallback)'
-    summary: Lists compute usages for a subscription.
+    summary: List network usages for a subscription.
     fullName: 'azure-arm-network.Usages.listNext(nextPageLink, options, optionalCallback)'
     tags:
       - originalTitle: resolve

@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-authorization.Permissions
     id: azure-arm-authorization.Permissions
     name: Permissions
-    summary: |-
-      Permissions
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the AuthorizationManagementClient.
-      Initializes a new instance of the Permissions class.
+    summary: Class representing a Permissions.
     fullName: azure-arm-authorization.Permissions
     type: Class
     children:
@@ -31,7 +27,7 @@ items:
     parent: azure-arm-authorization.Permissions
     name: Permissions(client)
     fullName: azure-arm-authorization.Permissions.Permissions(client)
-    summary: ''
+    summary: Create a Permissions.
     type: Constructor
     syntax:
       parameters:

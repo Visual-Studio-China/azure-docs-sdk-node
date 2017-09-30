@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-servicemap.MachineGroups
     id: azure-arm-servicemap.MachineGroups
     name: MachineGroups
-    summary: |-
-      MachineGroups
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the ServicemapManagementClient.
-      Initializes a new instance of the MachineGroups class.
+    summary: Class representing a MachineGroups.
     fullName: azure-arm-servicemap.MachineGroups
     type: Class
     children:
@@ -33,7 +29,7 @@ items:
     parent: azure-arm-servicemap.MachineGroups
     name: MachineGroups(client)
     fullName: azure-arm-servicemap.MachineGroups.MachineGroups(client)
-    summary: ''
+    summary: Create a MachineGroups.
     type: Constructor
     syntax:
       parameters:

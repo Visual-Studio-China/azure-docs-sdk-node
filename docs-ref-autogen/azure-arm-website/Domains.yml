@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-website.Domains
     id: azure-arm-website.Domains
     name: Domains
-    summary: |-
-      Domains
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the WebSiteManagementClient.
-      Initializes a new instance of the Domains class.
+    summary: Class representing a Domains.
     fullName: azure-arm-website.Domains
     type: Class
     children:
@@ -64,7 +60,7 @@ items:
     parent: azure-arm-website.Domains
     name: Domains(client)
     fullName: azure-arm-website.Domains.Domains(client)
-    summary: ''
+    summary: Create a Domains.
     type: Constructor
     syntax:
       parameters:
@@ -1018,11 +1014,6 @@ items:
           type:
             - string
           description: Phone number.
-        - id: domain.nameServers
-          type:
-            - array
-          description: Name servers.
-          optional: true
         - id: domain.privacy
           type:
             - boolean
@@ -1036,13 +1027,6 @@ items:
           description: |-
             <code>true</code> if the domain should
             be automatically renewed; otherwise, <code>false</code>.
-          optional: true
-        - id: domain.managedHostNames
-          type:
-            - array
-          description: |-
-            All hostnames derived from the
-            domain and assigned to Azure resources.
           optional: true
         - id: domain.consent
           type:
@@ -1072,17 +1056,26 @@ items:
             Timestamp when the agreements were
             accepted.
           optional: true
-        - id: domain.domainNotRenewableReasons
-          type:
-            - array
-          description: |-
-            Reasons why domain is not
-            renewable.
-          optional: true
-        - id: domain.name
+        - id: domain.dnsType
           type:
             - string
-          description: Resource Name.
+          description: |-
+            Current DNS type. Possible values include:
+            'AzureDns', 'DefaultDomainRegistrarDns'
+          optional: true
+        - id: domain.dnsZoneId
+          type:
+            - string
+          description: Azure DNS Zone to use
+          optional: true
+        - id: domain.targetDnsType
+          type:
+            - string
+          description: >-
+            Target DNS type (would be used for
+
+            migration). Possible values include: 'AzureDns',
+            'DefaultDomainRegistrarDns'
           optional: true
         - id: domain.kind
           type:
@@ -1093,11 +1086,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: domain.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: domain.tags
           type:
             - object
@@ -1273,11 +1261,6 @@ items:
           type:
             - string
           description: Phone number.
-        - id: domain.nameServers
-          type:
-            - array
-          description: Name servers.
-          optional: true
         - id: domain.privacy
           type:
             - boolean
@@ -1291,13 +1274,6 @@ items:
           description: |-
             <code>true</code> if the domain should
             be automatically renewed; otherwise, <code>false</code>.
-          optional: true
-        - id: domain.managedHostNames
-          type:
-            - array
-          description: |-
-            All hostnames derived from the
-            domain and assigned to Azure resources.
           optional: true
         - id: domain.consent
           type:
@@ -1327,17 +1303,26 @@ items:
             Timestamp when the agreements were
             accepted.
           optional: true
-        - id: domain.domainNotRenewableReasons
-          type:
-            - array
-          description: |-
-            Reasons why domain is not
-            renewable.
-          optional: true
-        - id: domain.name
+        - id: domain.dnsType
           type:
             - string
-          description: Resource Name.
+          description: |-
+            Current DNS type. Possible values include:
+            'AzureDns', 'DefaultDomainRegistrarDns'
+          optional: true
+        - id: domain.dnsZoneId
+          type:
+            - string
+          description: Azure DNS Zone to use
+          optional: true
+        - id: domain.targetDnsType
+          type:
+            - string
+          description: >-
+            Target DNS type (would be used for
+
+            migration). Possible values include: 'AzureDns',
+            'DefaultDomainRegistrarDns'
           optional: true
         - id: domain.kind
           type:
@@ -1348,11 +1333,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: domain.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: domain.tags
           type:
             - object
@@ -1931,11 +1911,6 @@ items:
             - string
           description: Ownership Id.
           optional: true
-        - id: domainOwnershipIdentifier.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: domainOwnershipIdentifier.kind
           type:
             - string
@@ -1945,11 +1920,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: domainOwnershipIdentifier.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: domainOwnershipIdentifier.tags
           type:
             - object
@@ -2055,11 +2025,6 @@ items:
             - string
           description: Ownership Id.
           optional: true
-        - id: domainOwnershipIdentifier.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: domainOwnershipIdentifier.kind
           type:
             - string
@@ -2069,11 +2034,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: domainOwnershipIdentifier.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: domainOwnershipIdentifier.tags
           type:
             - object
@@ -2323,11 +2283,6 @@ items:
             - string
           description: Ownership Id.
           optional: true
-        - id: domainOwnershipIdentifier.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: domainOwnershipIdentifier.kind
           type:
             - string
@@ -2337,11 +2292,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: domainOwnershipIdentifier.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: domainOwnershipIdentifier.tags
           type:
             - object
@@ -2447,11 +2397,6 @@ items:
             - string
           description: Ownership Id.
           optional: true
-        - id: domainOwnershipIdentifier.name
-          type:
-            - string
-          description: Resource Name.
-          optional: true
         - id: domainOwnershipIdentifier.kind
           type:
             - string
@@ -2461,11 +2406,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: domainOwnershipIdentifier.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: domainOwnershipIdentifier.tags
           type:
             - object
@@ -2627,11 +2567,6 @@ items:
           type:
             - string
           description: Phone number.
-        - id: domain.nameServers
-          type:
-            - array
-          description: Name servers.
-          optional: true
         - id: domain.privacy
           type:
             - boolean
@@ -2645,13 +2580,6 @@ items:
           description: |-
             <code>true</code> if the domain should
             be automatically renewed; otherwise, <code>false</code>.
-          optional: true
-        - id: domain.managedHostNames
-          type:
-            - array
-          description: |-
-            All hostnames derived from the
-            domain and assigned to Azure resources.
           optional: true
         - id: domain.consent
           type:
@@ -2681,17 +2609,26 @@ items:
             Timestamp when the agreements were
             accepted.
           optional: true
-        - id: domain.domainNotRenewableReasons
-          type:
-            - array
-          description: |-
-            Reasons why domain is not
-            renewable.
-          optional: true
-        - id: domain.name
+        - id: domain.dnsType
           type:
             - string
-          description: Resource Name.
+          description: |-
+            Current DNS type. Possible values include:
+            'AzureDns', 'DefaultDomainRegistrarDns'
+          optional: true
+        - id: domain.dnsZoneId
+          type:
+            - string
+          description: Azure DNS Zone to use
+          optional: true
+        - id: domain.targetDnsType
+          type:
+            - string
+          description: >-
+            Target DNS type (would be used for
+
+            migration). Possible values include: 'AzureDns',
+            'DefaultDomainRegistrarDns'
           optional: true
         - id: domain.kind
           type:
@@ -2702,11 +2639,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: domain.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: domain.tags
           type:
             - object
@@ -2882,11 +2814,6 @@ items:
           type:
             - string
           description: Phone number.
-        - id: domain.nameServers
-          type:
-            - array
-          description: Name servers.
-          optional: true
         - id: domain.privacy
           type:
             - boolean
@@ -2900,13 +2827,6 @@ items:
           description: |-
             <code>true</code> if the domain should
             be automatically renewed; otherwise, <code>false</code>.
-          optional: true
-        - id: domain.managedHostNames
-          type:
-            - array
-          description: |-
-            All hostnames derived from the
-            domain and assigned to Azure resources.
           optional: true
         - id: domain.consent
           type:
@@ -2936,17 +2856,26 @@ items:
             Timestamp when the agreements were
             accepted.
           optional: true
-        - id: domain.domainNotRenewableReasons
-          type:
-            - array
-          description: |-
-            Reasons why domain is not
-            renewable.
-          optional: true
-        - id: domain.name
+        - id: domain.dnsType
           type:
             - string
-          description: Resource Name.
+          description: |-
+            Current DNS type. Possible values include:
+            'AzureDns', 'DefaultDomainRegistrarDns'
+          optional: true
+        - id: domain.dnsZoneId
+          type:
+            - string
+          description: Azure DNS Zone to use
+          optional: true
+        - id: domain.targetDnsType
+          type:
+            - string
+          description: >-
+            Target DNS type (would be used for
+
+            migration). Possible values include: 'AzureDns',
+            'DefaultDomainRegistrarDns'
           optional: true
         - id: domain.kind
           type:
@@ -2957,11 +2886,6 @@ items:
           type:
             - string
           description: Resource Location.
-        - id: domain.type
-          type:
-            - string
-          description: Resource type.
-          optional: true
         - id: domain.tags
           type:
             - object

@@ -3,9 +3,7 @@ items:
   - uid: azure-arm-datalake-analytics.DataLakeAnalyticsCatalogManagementClient
     id: azure-arm-datalake-analytics.DataLakeAnalyticsCatalogManagementClient
     name: DataLakeAnalyticsCatalogManagementClient
-    summary: >-
-      Initializes a new instance of the DataLakeAnalyticsCatalogManagementClient
-      class.
+    summary: Class representing a DataLakeAnalyticsCatalogManagementClient.
     fullName: azure-arm-datalake-analytics.DataLakeAnalyticsCatalogManagementClient
     type: Class
     children:
@@ -22,7 +20,7 @@ items:
     fullName: >-
       azure-arm-datalake-analytics.DataLakeAnalyticsCatalogManagementClient.DataLakeAnalyticsCatalogManagementClient(credentials,
       options)
-    summary: ''
+    summary: Create a DataLakeAnalyticsCatalogManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -53,11 +51,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Client Api Version.
           optional: true
         - id: options.adlaCatalogDnsSuffix
           type:

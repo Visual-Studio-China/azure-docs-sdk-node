@@ -3,11 +3,7 @@ items:
   - uid: azure-search.DocumentsProxy
     id: azure-search.DocumentsProxy
     name: DocumentsProxy
-    summary: |-
-      DocumentsProxy
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the SearchIndexClient.
-      Initializes a new instance of the DocumentsProxy class.
+    summary: Class representing a DocumentsProxy.
     fullName: azure-search.DocumentsProxy
     type: Class
     children:
@@ -21,7 +17,7 @@ items:
     parent: azure-search.DocumentsProxy
     name: DocumentsProxy(client)
     fullName: azure-search.DocumentsProxy.DocumentsProxy(client)
-    summary: ''
+    summary: Create a DocumentsProxy.
     type: Constructor
     syntax:
       parameters:

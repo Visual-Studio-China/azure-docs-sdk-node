@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-sql.Capabilities
     id: azure-arm-sql.Capabilities
     name: Capabilities
-    summary: |-
-      Capabilities
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the SqlManagementClient.
-      Initializes a new instance of the Capabilities class.
+    summary: Class representing a Capabilities.
     fullName: azure-arm-sql.Capabilities
     type: Class
     children:
@@ -21,7 +17,7 @@ items:
     parent: azure-arm-sql.Capabilities
     name: Capabilities(client)
     fullName: azure-arm-sql.Capabilities.Capabilities(client)
-    summary: ''
+    summary: Create a Capabilities.
     type: Constructor
     syntax:
       parameters:

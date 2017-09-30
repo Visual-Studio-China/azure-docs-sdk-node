@@ -3,9 +3,7 @@ items:
   - uid: azure-arm-operationalinsights.OperationalInsightsManagementClient
     id: azure-arm-operationalinsights.OperationalInsightsManagementClient
     name: OperationalInsightsManagementClient
-    summary: >-
-      Initializes a new instance of the OperationalInsightsManagementClient
-      class.
+    summary: Class representing a OperationalInsightsManagementClient.
     fullName: azure-arm-operationalinsights.OperationalInsightsManagementClient
     type: Class
     children:
@@ -21,7 +19,7 @@ items:
     fullName: >-
       azure-arm-operationalinsights.OperationalInsightsManagementClient.OperationalInsightsManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: ''
+    summary: Create a OperationalInsightsManagementClient.
     type: Constructor
     syntax:
       parameters:

@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-customerinsights.Links
     id: azure-arm-customerinsights.Links
     name: Links
-    summary: |-
-      Links
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the CustomerInsightsManagementClient.
-      Initializes a new instance of the Links class.
+    summary: Class representing a Links.
     fullName: azure-arm-customerinsights.Links
     type: Class
     children:
@@ -32,7 +28,7 @@ items:
     parent: azure-arm-customerinsights.Links
     name: Links(client)
     fullName: azure-arm-customerinsights.Links.Links(client)
-    summary: ''
+    summary: Create a Links.
     type: Constructor
     syntax:
       parameters:
@@ -87,17 +83,29 @@ items:
           description: |-
             Parameters supplied to the CreateOrUpdate Link
             operation.
-        - id: parameters.sourceInteractionType
+        - id: parameters.sourceEntityType
           type:
             - string
           description: |-
-            Name of the source
-            Interaction Type.
-        - id: parameters.targetProfileType
+            Type of source entity. Possible
+            values include: 'None', 'Profile', 'Interaction', 'Relationship'
+        - id: parameters.targetEntityType
           type:
             - string
           description: |-
-            Name of the target Profile
+            Type of target entity. Possible
+            values include: 'None', 'Profile', 'Interaction', 'Relationship'
+        - id: parameters.sourceEntityTypeName
+          type:
+            - string
+          description: |-
+            Name of the source Entity
+            Type.
+        - id: parameters.targetEntityTypeName
+          type:
+            - string
+          description: |-
+            Name of the target Entity
             Type.
         - id: parameters.displayName
           type:
@@ -139,6 +147,17 @@ items:
             will
 
             not create or update profiles.
+          optional: true
+        - id: parameters.operationType
+          type:
+            - string
+          description: >-
+            Determines whether this link is
+
+            supposed to create or delete instances if Link is NOT Reference
+            Only.
+
+            Possible values include: 'Upsert', 'Delete'
           optional: true
         - id: options
           type:
@@ -225,17 +244,29 @@ items:
           description: |-
             Parameters supplied to the CreateOrUpdate Link
             operation.
-        - id: parameters.sourceInteractionType
+        - id: parameters.sourceEntityType
           type:
             - string
           description: |-
-            Name of the source
-            Interaction Type.
-        - id: parameters.targetProfileType
+            Type of source entity. Possible
+            values include: 'None', 'Profile', 'Interaction', 'Relationship'
+        - id: parameters.targetEntityType
           type:
             - string
           description: |-
-            Name of the target Profile
+            Type of target entity. Possible
+            values include: 'None', 'Profile', 'Interaction', 'Relationship'
+        - id: parameters.sourceEntityTypeName
+          type:
+            - string
+          description: |-
+            Name of the source Entity
+            Type.
+        - id: parameters.targetEntityTypeName
+          type:
+            - string
+          description: |-
+            Name of the target Entity
             Type.
         - id: parameters.displayName
           type:
@@ -277,6 +308,17 @@ items:
             will
 
             not create or update profiles.
+          optional: true
+        - id: parameters.operationType
+          type:
+            - string
+          description: >-
+            Determines whether this link is
+
+            supposed to create or delete instances if Link is NOT Reference
+            Only.
+
+            Possible values include: 'Upsert', 'Delete'
           optional: true
         - id: options
           type:
@@ -779,17 +821,29 @@ items:
           description: |-
             Parameters supplied to the CreateOrUpdate Link
             operation.
-        - id: parameters.sourceInteractionType
+        - id: parameters.sourceEntityType
           type:
             - string
           description: |-
-            Name of the source
-            Interaction Type.
-        - id: parameters.targetProfileType
+            Type of source entity. Possible
+            values include: 'None', 'Profile', 'Interaction', 'Relationship'
+        - id: parameters.targetEntityType
           type:
             - string
           description: |-
-            Name of the target Profile
+            Type of target entity. Possible
+            values include: 'None', 'Profile', 'Interaction', 'Relationship'
+        - id: parameters.sourceEntityTypeName
+          type:
+            - string
+          description: |-
+            Name of the source Entity
+            Type.
+        - id: parameters.targetEntityTypeName
+          type:
+            - string
+          description: |-
+            Name of the target Entity
             Type.
         - id: parameters.displayName
           type:
@@ -831,6 +885,17 @@ items:
             will
 
             not create or update profiles.
+          optional: true
+        - id: parameters.operationType
+          type:
+            - string
+          description: >-
+            Determines whether this link is
+
+            supposed to create or delete instances if Link is NOT Reference
+            Only.
+
+            Possible values include: 'Upsert', 'Delete'
           optional: true
         - id: options
           type:
@@ -917,17 +982,29 @@ items:
           description: |-
             Parameters supplied to the CreateOrUpdate Link
             operation.
-        - id: parameters.sourceInteractionType
+        - id: parameters.sourceEntityType
           type:
             - string
           description: |-
-            Name of the source
-            Interaction Type.
-        - id: parameters.targetProfileType
+            Type of source entity. Possible
+            values include: 'None', 'Profile', 'Interaction', 'Relationship'
+        - id: parameters.targetEntityType
           type:
             - string
           description: |-
-            Name of the target Profile
+            Type of target entity. Possible
+            values include: 'None', 'Profile', 'Interaction', 'Relationship'
+        - id: parameters.sourceEntityTypeName
+          type:
+            - string
+          description: |-
+            Name of the source Entity
+            Type.
+        - id: parameters.targetEntityTypeName
+          type:
+            - string
+          description: |-
+            Name of the target Entity
             Type.
         - id: parameters.displayName
           type:
@@ -969,6 +1046,17 @@ items:
             will
 
             not create or update profiles.
+          optional: true
+        - id: parameters.operationType
+          type:
+            - string
+          description: >-
+            Determines whether this link is
+
+            supposed to create or delete instances if Link is NOT Reference
+            Only.
+
+            Possible values include: 'Upsert', 'Delete'
           optional: true
         - id: options
           type:

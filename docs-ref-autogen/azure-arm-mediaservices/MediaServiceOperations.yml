@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-mediaservices.MediaServiceOperations
     id: azure-arm-mediaservices.MediaServiceOperations
     name: MediaServiceOperations
-    summary: |-
-      MediaServiceOperations
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the MediaServicesManagementClient.
-      Initializes a new instance of the MediaServiceOperations class.
+    summary: Class representing a MediaServiceOperations.
     fullName: azure-arm-mediaservices.MediaServiceOperations
     type: Class
     children:
@@ -47,7 +43,7 @@ items:
     name: MediaServiceOperations(client)
     fullName: >-
       azure-arm-mediaservices.MediaServiceOperations.MediaServiceOperations(client)
-    summary: ''
+    summary: Create a MediaServiceOperations.
     type: Constructor
     syntax:
       parameters:
@@ -63,14 +59,12 @@ items:
     id: >-
       azure-arm-mediaservices.MediaServiceOperations#checkNameAvailabilityWithHttpOperationResponse
     parent: azure-arm-mediaservices.MediaServiceOperations
-    name: >-
-      checkNameAvailabilityWithHttpOperationResponse(checkNameAvailabilityInput,
-      options)
+    name: 'checkNameAvailabilityWithHttpOperationResponse(parameters, options)'
     summary: |-
       Checks whether the Media Service resource name is available. The name must
       be globally unique.
     fullName: >-
-      azure-arm-mediaservices.MediaServiceOperations.checkNameAvailabilityWithHttpOperationResponse(checkNameAvailabilityInput,
+      azure-arm-mediaservices.MediaServiceOperations.checkNameAvailabilityWithHttpOperationResponse(parameters,
       options)
     tags:
       - originalTitle: resolve
@@ -88,18 +82,18 @@ items:
     type: Function
     syntax:
       parameters:
-        - id: checkNameAvailabilityInput
+        - id: parameters
           type:
             - object
           description: |-
-            Properties needed to check the
-            availability of a name.
-        - id: checkNameAvailabilityInput.name
+            Properties needed to check the availability of a
+            name.
+        - id: parameters.name
           type:
             - string
           description: |-
-            The name of the resource. A
-            name must be globally unique.
+            The name of the resource. A name must be
+            globally unique.
         - id: options
           type:
             - object
@@ -117,22 +111,19 @@ items:
           - Promise
         description: A promise is returned
       content: >-
-        function
-        checkNameAvailabilityWithHttpOperationResponse(checkNameAvailabilityInput,
+        function checkNameAvailabilityWithHttpOperationResponse(parameters,
         options)
     langs:
       - js
   - uid: 'azure-arm-mediaservices.MediaServiceOperations#checkNameAvailability'
     id: 'azure-arm-mediaservices.MediaServiceOperations#checkNameAvailability'
     parent: azure-arm-mediaservices.MediaServiceOperations
-    name: >-
-      checkNameAvailability(checkNameAvailabilityInput, options,
-      optionalCallback)
+    name: 'checkNameAvailability(parameters, options, optionalCallback)'
     summary: |-
       Checks whether the Media Service resource name is available. The name must
       be globally unique.
     fullName: >-
-      azure-arm-mediaservices.MediaServiceOperations.checkNameAvailability(checkNameAvailabilityInput,
+      azure-arm-mediaservices.MediaServiceOperations.checkNameAvailability(parameters,
       options, optionalCallback)
     tags:
       - originalTitle: resolve
@@ -172,18 +163,18 @@ items:
     type: Function
     syntax:
       parameters:
-        - id: checkNameAvailabilityInput
+        - id: parameters
           type:
             - object
           description: |-
-            Properties needed to check the
-            availability of a name.
-        - id: checkNameAvailabilityInput.name
+            Properties needed to check the availability of a
+            name.
+        - id: parameters.name
           type:
             - string
           description: |-
-            The name of the resource. A
-            name must be globally unique.
+            The name of the resource. A name must be
+            globally unique.
         - id: options
           type:
             - object
@@ -210,9 +201,7 @@ items:
           then it returns the callback else returns a Promise.
 
           {Promise} A promise is returned
-      content: >-
-        function checkNameAvailability(checkNameAvailabilityInput, options,
-        optionalCallback)
+      content: 'function checkNameAvailability(parameters, options, optionalCallback)'
     langs:
       - js
   - uid: >-
@@ -500,11 +489,11 @@ items:
     parent: azure-arm-mediaservices.MediaServiceOperations
     name: >-
       createWithHttpOperationResponse(resourceGroupName, mediaServiceName,
-      mediaService, options)
+      parameters, options)
     summary: Creates a Media Service.
     fullName: >-
       azure-arm-mediaservices.MediaServiceOperations.createWithHttpOperationResponse(resourceGroupName,
-      mediaServiceName, mediaService, options)
+      mediaServiceName, parameters, options)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -531,18 +520,18 @@ items:
           type:
             - string
           description: Name of the Media Service.
-        - id: mediaService
+        - id: parameters
           type:
             - object
           description: Media Service properties needed for creation.
-        - id: mediaService.storageAccounts
+        - id: parameters.storageAccounts
           type:
             - array
           description: |-
             The storage accounts for this
             resource.
           optional: true
-        - id: mediaService.location
+        - id: parameters.location
           type:
             - string
           description: >-
@@ -553,7 +542,7 @@ items:
 
             (for example, West US, East US, Southeast Asia, and so forth).
           optional: true
-        - id: mediaService.tags
+        - id: parameters.tags
           type:
             - object
           description: |-
@@ -578,19 +567,19 @@ items:
         description: A promise is returned
       content: >-
         function createWithHttpOperationResponse(resourceGroupName,
-        mediaServiceName, mediaService, options)
+        mediaServiceName, parameters, options)
     langs:
       - js
   - uid: 'azure-arm-mediaservices.MediaServiceOperations#create'
     id: 'azure-arm-mediaservices.MediaServiceOperations#create'
     parent: azure-arm-mediaservices.MediaServiceOperations
     name: >-
-      create(resourceGroupName, mediaServiceName, mediaService, options,
+      create(resourceGroupName, mediaServiceName, parameters, options,
       optionalCallback)
     summary: Creates a Media Service.
     fullName: >-
       azure-arm-mediaservices.MediaServiceOperations.create(resourceGroupName,
-      mediaServiceName, mediaService, options, optionalCallback)
+      mediaServiceName, parameters, options, optionalCallback)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -637,18 +626,18 @@ items:
           type:
             - string
           description: Name of the Media Service.
-        - id: mediaService
+        - id: parameters
           type:
             - object
           description: Media Service properties needed for creation.
-        - id: mediaService.storageAccounts
+        - id: parameters.storageAccounts
           type:
             - array
           description: |-
             The storage accounts for this
             resource.
           optional: true
-        - id: mediaService.location
+        - id: parameters.location
           type:
             - string
           description: >-
@@ -659,7 +648,7 @@ items:
 
             (for example, West US, East US, Southeast Asia, and so forth).
           optional: true
-        - id: mediaService.tags
+        - id: parameters.tags
           type:
             - object
           description: |-
@@ -693,7 +682,7 @@ items:
 
           {Promise} A promise is returned
       content: >-
-        function create(resourceGroupName, mediaServiceName, mediaService,
+        function create(resourceGroupName, mediaServiceName, parameters,
         options, optionalCallback)
     langs:
       - js
@@ -844,11 +833,11 @@ items:
     parent: azure-arm-mediaservices.MediaServiceOperations
     name: >-
       updateWithHttpOperationResponse(resourceGroupName, mediaServiceName,
-      mediaService, options)
+      parameters, options)
     summary: Updates a Media Service.
     fullName: >-
       azure-arm-mediaservices.MediaServiceOperations.updateWithHttpOperationResponse(resourceGroupName,
-      mediaServiceName, mediaService, options)
+      mediaServiceName, parameters, options)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -875,18 +864,18 @@ items:
           type:
             - string
           description: Name of the Media Service.
-        - id: mediaService
+        - id: parameters
           type:
             - object
           description: Media Service properties needed for update.
-        - id: mediaService.storageAccounts
+        - id: parameters.storageAccounts
           type:
             - array
           description: |-
             The storage accounts for this
             resource.
           optional: true
-        - id: mediaService.location
+        - id: parameters.location
           type:
             - string
           description: >-
@@ -897,7 +886,7 @@ items:
 
             (for example, West US, East US, Southeast Asia, and so forth).
           optional: true
-        - id: mediaService.tags
+        - id: parameters.tags
           type:
             - object
           description: |-
@@ -922,19 +911,19 @@ items:
         description: A promise is returned
       content: >-
         function updateWithHttpOperationResponse(resourceGroupName,
-        mediaServiceName, mediaService, options)
+        mediaServiceName, parameters, options)
     langs:
       - js
   - uid: 'azure-arm-mediaservices.MediaServiceOperations#update'
     id: 'azure-arm-mediaservices.MediaServiceOperations#update'
     parent: azure-arm-mediaservices.MediaServiceOperations
     name: >-
-      update(resourceGroupName, mediaServiceName, mediaService, options,
+      update(resourceGroupName, mediaServiceName, parameters, options,
       optionalCallback)
     summary: Updates a Media Service.
     fullName: >-
       azure-arm-mediaservices.MediaServiceOperations.update(resourceGroupName,
-      mediaServiceName, mediaService, options, optionalCallback)
+      mediaServiceName, parameters, options, optionalCallback)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -981,18 +970,18 @@ items:
           type:
             - string
           description: Name of the Media Service.
-        - id: mediaService
+        - id: parameters
           type:
             - object
           description: Media Service properties needed for update.
-        - id: mediaService.storageAccounts
+        - id: parameters.storageAccounts
           type:
             - array
           description: |-
             The storage accounts for this
             resource.
           optional: true
-        - id: mediaService.location
+        - id: parameters.location
           type:
             - string
           description: >-
@@ -1003,7 +992,7 @@ items:
 
             (for example, West US, East US, Southeast Asia, and so forth).
           optional: true
-        - id: mediaService.tags
+        - id: parameters.tags
           type:
             - object
           description: |-
@@ -1037,7 +1026,7 @@ items:
 
           {Promise} A promise is returned
       content: >-
-        function update(resourceGroupName, mediaServiceName, mediaService,
+        function update(resourceGroupName, mediaServiceName, parameters,
         options, optionalCallback)
     langs:
       - js
@@ -1048,11 +1037,11 @@ items:
     parent: azure-arm-mediaservices.MediaServiceOperations
     name: >-
       regenerateKeyWithHttpOperationResponse(resourceGroupName,
-      mediaServiceName, regenerateKeyInput, options)
+      mediaServiceName, parameters, options)
     summary: Regenerates a primary or secondary key for a Media Service.
     fullName: >-
       azure-arm-mediaservices.MediaServiceOperations.regenerateKeyWithHttpOperationResponse(resourceGroupName,
-      mediaServiceName, regenerateKeyInput, options)
+      mediaServiceName, parameters, options)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -1079,22 +1068,22 @@ items:
           type:
             - string
           description: Name of the Media Service.
-        - id: regenerateKeyInput
+        - id: parameters
           type:
             - object
           description: |-
-            Properties needed to regenerate the Media
-            Service key.
-        - id: regenerateKeyInput.keyType
+            Properties needed to regenerate the Media Service
+            key.
+        - id: parameters.keyType
           type:
             - string
           description: >-
-            The keyType indicating which key
+            The keyType indicating which key you want
 
-            you want to regenerate, Primary or Secondary. Possible values
-            include:
+            to regenerate, Primary or Secondary. Possible values include:
+            'Primary',
 
-            'Primary', 'Secondary'
+            'Secondary'
         - id: options
           type:
             - object
@@ -1113,19 +1102,19 @@ items:
         description: A promise is returned
       content: >-
         function regenerateKeyWithHttpOperationResponse(resourceGroupName,
-        mediaServiceName, regenerateKeyInput, options)
+        mediaServiceName, parameters, options)
     langs:
       - js
   - uid: 'azure-arm-mediaservices.MediaServiceOperations#regenerateKey'
     id: 'azure-arm-mediaservices.MediaServiceOperations#regenerateKey'
     parent: azure-arm-mediaservices.MediaServiceOperations
     name: >-
-      regenerateKey(resourceGroupName, mediaServiceName, regenerateKeyInput,
-      options, optionalCallback)
+      regenerateKey(resourceGroupName, mediaServiceName, parameters, options,
+      optionalCallback)
     summary: Regenerates a primary or secondary key for a Media Service.
     fullName: >-
       azure-arm-mediaservices.MediaServiceOperations.regenerateKey(resourceGroupName,
-      mediaServiceName, regenerateKeyInput, options, optionalCallback)
+      mediaServiceName, parameters, options, optionalCallback)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -1172,22 +1161,22 @@ items:
           type:
             - string
           description: Name of the Media Service.
-        - id: regenerateKeyInput
+        - id: parameters
           type:
             - object
           description: |-
-            Properties needed to regenerate the Media
-            Service key.
-        - id: regenerateKeyInput.keyType
+            Properties needed to regenerate the Media Service
+            key.
+        - id: parameters.keyType
           type:
             - string
           description: >-
-            The keyType indicating which key
+            The keyType indicating which key you want
 
-            you want to regenerate, Primary or Secondary. Possible values
-            include:
+            to regenerate, Primary or Secondary. Possible values include:
+            'Primary',
 
-            'Primary', 'Secondary'
+            'Secondary'
         - id: options
           type:
             - object
@@ -1215,8 +1204,8 @@ items:
 
           {Promise} A promise is returned
       content: >-
-        function regenerateKey(resourceGroupName, mediaServiceName,
-        regenerateKeyInput, options, optionalCallback)
+        function regenerateKey(resourceGroupName, mediaServiceName, parameters,
+        options, optionalCallback)
     langs:
       - js
   - uid: >-
@@ -1366,7 +1355,7 @@ items:
     parent: azure-arm-mediaservices.MediaServiceOperations
     name: >-
       syncStorageKeysWithHttpOperationResponse(resourceGroupName,
-      mediaServiceName, syncStorageKeysInput, options)
+      mediaServiceName, parameters, options)
     summary: >-
       Synchronizes storage account keys for a storage account associated with
       the
@@ -1374,7 +1363,7 @@ items:
       Media Service account.
     fullName: >-
       azure-arm-mediaservices.MediaServiceOperations.syncStorageKeysWithHttpOperationResponse(resourceGroupName,
-      mediaServiceName, syncStorageKeysInput, options)
+      mediaServiceName, parameters, options)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -1397,18 +1386,16 @@ items:
           type:
             - string
           description: Name of the Media Service.
-        - id: syncStorageKeysInput
+        - id: parameters
           type:
             - object
           description: |-
-            Properties needed to synchronize the
-            keys for a storage account to the Media Service.
-        - id: syncStorageKeysInput.id
+            Properties needed to synchronize the keys for a
+            storage account to the Media Service.
+        - id: parameters.id
           type:
             - string
-          description: |-
-            The id of the storage account
-            resource.
+          description: The id of the storage account resource.
         - id: options
           type:
             - object
@@ -1427,15 +1414,15 @@ items:
         description: A promise is returned
       content: >-
         function syncStorageKeysWithHttpOperationResponse(resourceGroupName,
-        mediaServiceName, syncStorageKeysInput, options)
+        mediaServiceName, parameters, options)
     langs:
       - js
   - uid: 'azure-arm-mediaservices.MediaServiceOperations#syncStorageKeys'
     id: 'azure-arm-mediaservices.MediaServiceOperations#syncStorageKeys'
     parent: azure-arm-mediaservices.MediaServiceOperations
     name: >-
-      syncStorageKeys(resourceGroupName, mediaServiceName, syncStorageKeysInput,
-      options, optionalCallback)
+      syncStorageKeys(resourceGroupName, mediaServiceName, parameters, options,
+      optionalCallback)
     summary: >-
       Synchronizes storage account keys for a storage account associated with
       the
@@ -1443,7 +1430,7 @@ items:
       Media Service account.
     fullName: >-
       azure-arm-mediaservices.MediaServiceOperations.syncStorageKeys(resourceGroupName,
-      mediaServiceName, syncStorageKeysInput, options, optionalCallback)
+      mediaServiceName, parameters, options, optionalCallback)
     tags:
       - originalTitle: resolve
         title: resolve
@@ -1488,18 +1475,16 @@ items:
           type:
             - string
           description: Name of the Media Service.
-        - id: syncStorageKeysInput
+        - id: parameters
           type:
             - object
           description: |-
-            Properties needed to synchronize the
-            keys for a storage account to the Media Service.
-        - id: syncStorageKeysInput.id
+            Properties needed to synchronize the keys for a
+            storage account to the Media Service.
+        - id: parameters.id
           type:
             - string
-          description: |-
-            The id of the storage account
-            resource.
+          description: The id of the storage account resource.
         - id: options
           type:
             - object
@@ -1528,7 +1513,7 @@ items:
           {Promise} A promise is returned
       content: >-
         function syncStorageKeys(resourceGroupName, mediaServiceName,
-        syncStorageKeysInput, options, optionalCallback)
+        parameters, options, optionalCallback)
     langs:
       - js
 references:

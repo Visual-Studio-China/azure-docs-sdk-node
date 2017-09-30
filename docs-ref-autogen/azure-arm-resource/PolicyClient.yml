@@ -3,7 +3,7 @@ items:
   - uid: azure-arm-resource.PolicyClient
     id: azure-arm-resource.PolicyClient
     name: PolicyClient
-    summary: Initializes a new instance of the PolicyClient class.
+    summary: Class representing a PolicyClient.
     fullName: azure-arm-resource.PolicyClient
     type: Class
     children:
@@ -17,7 +17,7 @@ items:
     fullName: >-
       azure-arm-resource.PolicyClient.PolicyClient(credentials, subscriptionId,
       baseUri, options)
-    summary: ''
+    summary: Create a PolicyClient.
     type: Constructor
     syntax:
       parameters:
@@ -57,11 +57,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: The API version to use for the operation.
           optional: true
         - id: options.acceptLanguage
           type:

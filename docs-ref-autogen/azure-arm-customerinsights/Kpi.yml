@@ -3,11 +3,7 @@ items:
   - uid: azure-arm-customerinsights.Kpi
     id: azure-arm-customerinsights.Kpi
     name: Kpi
-    summary: |-
-      Kpi
-      __NOTE__: An instance of this class is automatically created for an
-      instance of the CustomerInsightsManagementClient.
-      Initializes a new instance of the Kpi class.
+    summary: Class representing a Kpi.
     fullName: azure-arm-customerinsights.Kpi
     type: Class
     children:
@@ -37,7 +33,7 @@ items:
     parent: azure-arm-customerinsights.Kpi
     name: Kpi(client)
     fullName: azure-arm-customerinsights.Kpi.Kpi(client)
-    summary: ''
+    summary: Create a Kpi.
     type: Constructor
     syntax:
       parameters:
@@ -117,7 +113,14 @@ items:
             - string
           description: |-
             The calculation window.
-            Possible values include: 'Hour', 'Day', 'Week', 'Month'
+            Possible values include: 'Lifetime', 'Hour', 'Day', 'Week', 'Month'
+        - id: parameters.calculationWindowFieldName
+          type:
+            - string
+          description: |-
+            Name of calculation
+            window field.
+          optional: true
         - id: parameters.functionProperty
           type:
             - string
@@ -127,7 +130,7 @@ items:
             KPI. Possible values include: 'Sum', 'Avg', 'Min', 'Max', 'Last',
             'Count',
 
-            'None'
+            'None', 'CountDistinct'
         - id: parameters.expression
           type:
             - string
@@ -288,7 +291,14 @@ items:
             - string
           description: |-
             The calculation window.
-            Possible values include: 'Hour', 'Day', 'Week', 'Month'
+            Possible values include: 'Lifetime', 'Hour', 'Day', 'Week', 'Month'
+        - id: parameters.calculationWindowFieldName
+          type:
+            - string
+          description: |-
+            Name of calculation
+            window field.
+          optional: true
         - id: parameters.functionProperty
           type:
             - string
@@ -298,7 +308,7 @@ items:
             KPI. Possible values include: 'Sum', 'Avg', 'Min', 'Max', 'Last',
             'Count',
 
-            'None'
+            'None', 'CountDistinct'
         - id: parameters.expression
           type:
             - string
@@ -1013,7 +1023,14 @@ items:
             - string
           description: |-
             The calculation window.
-            Possible values include: 'Hour', 'Day', 'Week', 'Month'
+            Possible values include: 'Lifetime', 'Hour', 'Day', 'Week', 'Month'
+        - id: parameters.calculationWindowFieldName
+          type:
+            - string
+          description: |-
+            Name of calculation
+            window field.
+          optional: true
         - id: parameters.functionProperty
           type:
             - string
@@ -1023,7 +1040,7 @@ items:
             KPI. Possible values include: 'Sum', 'Avg', 'Min', 'Max', 'Last',
             'Count',
 
-            'None'
+            'None', 'CountDistinct'
         - id: parameters.expression
           type:
             - string
@@ -1184,7 +1201,14 @@ items:
             - string
           description: |-
             The calculation window.
-            Possible values include: 'Hour', 'Day', 'Week', 'Month'
+            Possible values include: 'Lifetime', 'Hour', 'Day', 'Week', 'Month'
+        - id: parameters.calculationWindowFieldName
+          type:
+            - string
+          description: |-
+            Name of calculation
+            window field.
+          optional: true
         - id: parameters.functionProperty
           type:
             - string
@@ -1194,7 +1218,7 @@ items:
             KPI. Possible values include: 'Sum', 'Avg', 'Min', 'Max', 'Last',
             'Count',
 
-            'None'
+            'None', 'CountDistinct'
         - id: parameters.expression
           type:
             - string

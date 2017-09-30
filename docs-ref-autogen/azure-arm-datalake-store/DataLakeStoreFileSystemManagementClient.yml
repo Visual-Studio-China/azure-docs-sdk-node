@@ -3,9 +3,7 @@ items:
   - uid: azure-arm-datalake-store.DataLakeStoreFileSystemManagementClient
     id: azure-arm-datalake-store.DataLakeStoreFileSystemManagementClient
     name: DataLakeStoreFileSystemManagementClient
-    summary: >-
-      Initializes a new instance of the DataLakeStoreFileSystemManagementClient
-      class.
+    summary: Class representing a DataLakeStoreFileSystemManagementClient.
     fullName: azure-arm-datalake-store.DataLakeStoreFileSystemManagementClient
     type: Class
     children:
@@ -19,7 +17,7 @@ items:
     fullName: >-
       azure-arm-datalake-store.DataLakeStoreFileSystemManagementClient.DataLakeStoreFileSystemManagementClient(credentials,
       options)
-    summary: ''
+    summary: Create a DataLakeStoreFileSystemManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -50,11 +48,6 @@ items:
           type:
             - boolean
           description: 'If set to true, turn off default retry policy'
-          optional: true
-        - id: options.apiVersion
-          type:
-            - string
-          description: Client Api Version.
           optional: true
         - id: options.adlsFileSystemDnsSuffix
           type:
