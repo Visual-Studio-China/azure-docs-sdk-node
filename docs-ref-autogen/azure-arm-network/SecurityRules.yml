@@ -445,6 +445,7 @@ items:
             network
 
             traffic originates from.
+          optional: true
         - id: securityRuleParameters.sourceAddressPrefixes
           type:
             - array
@@ -472,6 +473,7 @@ items:
             'VirtualNetwork',
 
             'AzureLoadBalancer' and 'Internet' can also be used.
+          optional: true
         - id: securityRuleParameters.destinationAddressPrefixes
           type:
             - array
@@ -712,6 +714,7 @@ items:
             network
 
             traffic originates from.
+          optional: true
         - id: securityRuleParameters.sourceAddressPrefixes
           type:
             - array
@@ -739,6 +742,7 @@ items:
             'VirtualNetwork',
 
             'AzureLoadBalancer' and 'Internet' can also be used.
+          optional: true
         - id: securityRuleParameters.destinationAddressPrefixes
           type:
             - array
@@ -1263,6 +1267,7 @@ items:
             network
 
             traffic originates from.
+          optional: true
         - id: securityRuleParameters.sourceAddressPrefixes
           type:
             - array
@@ -1290,6 +1295,7 @@ items:
             'VirtualNetwork',
 
             'AzureLoadBalancer' and 'Internet' can also be used.
+          optional: true
         - id: securityRuleParameters.destinationAddressPrefixes
           type:
             - array
@@ -1530,6 +1536,7 @@ items:
             network
 
             traffic originates from.
+          optional: true
         - id: securityRuleParameters.sourceAddressPrefixes
           type:
             - array
@@ -1557,6 +1564,7 @@ items:
             'VirtualNetwork',
 
             'AzureLoadBalancer' and 'Internet' can also be used.
+          optional: true
         - id: securityRuleParameters.destinationAddressPrefixes
           type:
             - array
