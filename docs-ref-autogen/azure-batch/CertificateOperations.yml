@@ -370,9 +370,12 @@ items:
         - id: options.certificateListOptions.filter
           type:
             - string
-          description: |-
+          description: >-
             An OData $filter
-            clause.
+
+            clause. For more information on constructing this filter, see
+
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-certificates.
           optional: true
         - id: options.certificateListOptions.select
           type:
@@ -505,9 +508,12 @@ items:
         - id: options.certificateListOptions.filter
           type:
             - string
-          description: |-
+          description: >-
             An OData $filter
-            clause.
+
+            clause. For more information on constructing this filter, see
+
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-certificates.
           optional: true
         - id: options.certificateListOptions.select
           type:

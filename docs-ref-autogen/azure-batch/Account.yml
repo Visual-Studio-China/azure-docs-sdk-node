@@ -67,9 +67,13 @@ items:
         - id: options.accountListNodeAgentSkusOptions.filter
           type:
             - string
-          description: |-
+          description: >-
             An OData
-            $filter clause.
+
+            $filter clause. For more information on constructing this filter,
+            see
+
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-node-agent-skus.
           optional: true
         - id: options.accountListNodeAgentSkusOptions.maxResults
           type:
@@ -197,9 +201,13 @@ items:
         - id: options.accountListNodeAgentSkusOptions.filter
           type:
             - string
-          description: |-
+          description: >-
             An OData
-            $filter clause.
+
+            $filter clause. For more information on constructing this filter,
+            see
+
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-node-agent-skus.
           optional: true
         - id: options.accountListNodeAgentSkusOptions.maxResults
           type:

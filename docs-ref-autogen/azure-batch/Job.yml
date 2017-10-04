@@ -12113,7 +12113,12 @@ items:
         - id: options.jobListOptions.filter
           type:
             - string
-          description: An OData $filter clause.
+          description: >-
+            An OData $filter clause. For
+
+            more information on constructing this filter, see
+
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-jobs.
           optional: true
         - id: options.jobListOptions.select
           type:
@@ -12245,7 +12250,12 @@ items:
         - id: options.jobListOptions.filter
           type:
             - string
-          description: An OData $filter clause.
+          description: >-
+            An OData $filter clause. For
+
+            more information on constructing this filter, see
+
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-jobs.
           optional: true
         - id: options.jobListOptions.select
           type:
@@ -12377,9 +12387,13 @@ items:
         - id: options.jobListFromJobScheduleOptions.filter
           type:
             - string
-          description: |-
+          description: >-
             An OData
-            $filter clause.
+
+            $filter clause. For more information on constructing this filter,
+            see
+
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-jobs-in-a-job-schedule.
           optional: true
         - id: options.jobListFromJobScheduleOptions.select
           type:
@@ -12531,9 +12545,13 @@ items:
         - id: options.jobListFromJobScheduleOptions.filter
           type:
             - string
-          description: |-
+          description: >-
             An OData
-            $filter clause.
+
+            $filter clause. For more information on constructing this filter,
+            see
+
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-jobs-in-a-job-schedule.
           optional: true
         - id: options.jobListFromJobScheduleOptions.select
           type:
@@ -12691,11 +12709,10 @@ items:
           description: >-
             An OData
 
-            $filter clause. To get the status of the Job Preparation and Job
-            Release
+            $filter clause. For more information on constructing this filter,
+            see
 
-            tasks on a specific compute node, use "nodeId eq
-            '{desired-node-id}'"
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-job-preparation-and-release-status.
           optional: true
         - id: options.jobListPreparationAndReleaseTaskStatusOptions.select
           type:
@@ -12865,11 +12882,10 @@ items:
           description: >-
             An OData
 
-            $filter clause. To get the status of the Job Preparation and Job
-            Release
+            $filter clause. For more information on constructing this filter,
+            see
 
-            tasks on a specific compute node, use "nodeId eq
-            '{desired-node-id}'"
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-job-preparation-and-release-status.
           optional: true
         - id: options.jobListPreparationAndReleaseTaskStatusOptions.select
           type:

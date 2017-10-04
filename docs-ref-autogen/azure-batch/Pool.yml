@@ -147,13 +147,10 @@ items:
           description: >-
             An OData
 
-            $filter clause. If this is not specified the response includes all
-            pools
+            $filter clause. For more information on constructing this filter,
+            see
 
-            that existed in the account in the time range of the returned
-            aggregation
-
-            intervals.
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-account-usage-metrics.
           optional: true
         - id: options.poolListUsageMetricsOptions.maxResults
           type:
@@ -329,13 +326,10 @@ items:
           description: >-
             An OData
 
-            $filter clause. If this is not specified the response includes all
-            pools
+            $filter clause. For more information on constructing this filter,
+            see
 
-            that existed in the account in the time range of the returned
-            aggregation
-
-            intervals.
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-account-usage-metrics.
           optional: true
         - id: options.poolListUsageMetricsOptions.maxResults
           type:
@@ -2826,7 +2820,12 @@ items:
         - id: options.poolListOptions.filter
           type:
             - string
-          description: An OData $filter clause.
+          description: >-
+            An OData $filter clause.
+
+            For more information on constructing this filter, see
+
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-pools.
           optional: true
         - id: options.poolListOptions.select
           type:
@@ -2958,7 +2957,12 @@ items:
         - id: options.poolListOptions.filter
           type:
             - string
-          description: An OData $filter clause.
+          description: >-
+            An OData $filter clause.
+
+            For more information on constructing this filter, see
+
+            https://docs.microsoft.com/en-us/rest/api/batchservice/odata-filters-in-batch#list-pools.
           optional: true
         - id: options.poolListOptions.select
           type:
