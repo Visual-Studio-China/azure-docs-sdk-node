@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.NodeSetup
+    id: azure-batchai.NodeSetup
+    name: NodeSetup
+    summary: >-
+      Use this to prepare the VM. NOTE: The volumes specified in mountVolumes
+      are
+
+      mounted first and then the setupTask is run. Therefore the setup task can
+
+      use local mountPaths in its execution.
+    fullName: azure-batchai.NodeSetup
+    type: Class
+    children:
+      - 'azure-batchai.NodeSetup.#ctor'
+      - 'azure-batchai.NodeSetup#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.NodeSetup.#ctor'
+    uid: 'azure-batchai.NodeSetup.#ctor'
+    parent: azure-batchai.NodeSetup
+    name: NodeSetup()
+    fullName: azure-batchai.NodeSetup.NodeSetup()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new NodeSetup()
+    langs:
+      - js
+  - uid: 'azure-batchai.NodeSetup#mapper'
+    id: 'azure-batchai.NodeSetup#mapper'
+    parent: azure-batchai.NodeSetup
+    name: mapper()
+    summary: Defines the metadata of NodeSetup
+    fullName: azure-batchai.NodeSetup.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of NodeSetup
+      content: function mapper()
+    langs:
+      - js

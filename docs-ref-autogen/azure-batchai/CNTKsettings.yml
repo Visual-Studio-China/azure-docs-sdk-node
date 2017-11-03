@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.CNTKsettings
+    id: azure-batchai.CNTKsettings
+    name: CNTKsettings
+    summary: Specifies the settings for CNTK (aka Microsoft Cognitive Toolkit) job.
+    fullName: azure-batchai.CNTKsettings
+    type: Class
+    children:
+      - 'azure-batchai.CNTKsettings.#ctor'
+      - 'azure-batchai.CNTKsettings#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.CNTKsettings.#ctor'
+    uid: 'azure-batchai.CNTKsettings.#ctor'
+    parent: azure-batchai.CNTKsettings
+    name: CNTKsettings()
+    fullName: azure-batchai.CNTKsettings.CNTKsettings()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new CNTKsettings()
+    langs:
+      - js
+  - uid: 'azure-batchai.CNTKsettings#mapper'
+    id: 'azure-batchai.CNTKsettings#mapper'
+    parent: azure-batchai.CNTKsettings
+    name: mapper()
+    summary: Defines the metadata of CNTKsettings
+    fullName: azure-batchai.CNTKsettings.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of CNTKsettings
+      content: function mapper()
+    langs:
+      - js

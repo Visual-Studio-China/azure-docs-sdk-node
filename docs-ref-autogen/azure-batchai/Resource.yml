@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.Resource
+    id: azure-batchai.Resource
+    name: Resource
+    summary: A definition of an Azure resource.
+    fullName: azure-batchai.Resource
+    type: Class
+    children:
+      - 'azure-batchai.Resource.#ctor'
+      - 'azure-batchai.Resource#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.Resource.#ctor'
+    uid: 'azure-batchai.Resource.#ctor'
+    parent: azure-batchai.Resource
+    name: Resource()
+    fullName: azure-batchai.Resource.Resource()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new Resource()
+    langs:
+      - js
+  - uid: 'azure-batchai.Resource#mapper'
+    id: 'azure-batchai.Resource#mapper'
+    parent: azure-batchai.Resource
+    name: mapper()
+    summary: Defines the metadata of Resource
+    fullName: azure-batchai.Resource.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of Resource
+      content: function mapper()
+    langs:
+      - js

@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.ResourceId
+    id: azure-batchai.ResourceId
+    name: ResourceId
+    summary: >-
+      Represents a resource ID. For example, for a subnet, it is the resource
+      URL
+
+      for the subnet.
+    fullName: azure-batchai.ResourceId
+    type: Class
+    children:
+      - 'azure-batchai.ResourceId.#ctor'
+      - 'azure-batchai.ResourceId#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.ResourceId.#ctor'
+    uid: 'azure-batchai.ResourceId.#ctor'
+    parent: azure-batchai.ResourceId
+    name: ResourceId()
+    fullName: azure-batchai.ResourceId.ResourceId()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new ResourceId()
+    langs:
+      - js
+  - uid: 'azure-batchai.ResourceId#mapper'
+    id: 'azure-batchai.ResourceId#mapper'
+    parent: azure-batchai.ResourceId
+    name: mapper()
+    summary: Defines the metadata of ResourceId
+    fullName: azure-batchai.ResourceId.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of ResourceId
+      content: function mapper()
+    langs:
+      - js

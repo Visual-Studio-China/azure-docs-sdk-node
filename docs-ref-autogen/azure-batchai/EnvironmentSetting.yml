@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.EnvironmentSetting
+    id: azure-batchai.EnvironmentSetting
+    name: EnvironmentSetting
+    summary: A collection of environment variables to set.
+    fullName: azure-batchai.EnvironmentSetting
+    type: Class
+    children:
+      - 'azure-batchai.EnvironmentSetting.#ctor'
+      - 'azure-batchai.EnvironmentSetting#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.EnvironmentSetting.#ctor'
+    uid: 'azure-batchai.EnvironmentSetting.#ctor'
+    parent: azure-batchai.EnvironmentSetting
+    name: EnvironmentSetting()
+    fullName: azure-batchai.EnvironmentSetting.EnvironmentSetting()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new EnvironmentSetting()
+    langs:
+      - js
+  - uid: 'azure-batchai.EnvironmentSetting#mapper'
+    id: 'azure-batchai.EnvironmentSetting#mapper'
+    parent: azure-batchai.EnvironmentSetting
+    name: mapper()
+    summary: Defines the metadata of EnvironmentSetting
+    fullName: azure-batchai.EnvironmentSetting.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of EnvironmentSetting
+      content: function mapper()
+    langs:
+      - js

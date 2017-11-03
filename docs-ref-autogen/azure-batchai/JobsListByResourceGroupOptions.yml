@@ -1,0 +1,40 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.JobsListByResourceGroupOptions
+    id: azure-batchai.JobsListByResourceGroupOptions
+    name: JobsListByResourceGroupOptions
+    summary: Additional parameters for listByResourceGroup operation.
+    fullName: azure-batchai.JobsListByResourceGroupOptions
+    type: Class
+    children:
+      - 'azure-batchai.JobsListByResourceGroupOptions.#ctor'
+      - 'azure-batchai.JobsListByResourceGroupOptions#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.JobsListByResourceGroupOptions.#ctor'
+    uid: 'azure-batchai.JobsListByResourceGroupOptions.#ctor'
+    parent: azure-batchai.JobsListByResourceGroupOptions
+    name: JobsListByResourceGroupOptions()
+    fullName: >-
+      azure-batchai.JobsListByResourceGroupOptions.JobsListByResourceGroupOptions()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new JobsListByResourceGroupOptions()
+    langs:
+      - js
+  - uid: 'azure-batchai.JobsListByResourceGroupOptions#mapper'
+    id: 'azure-batchai.JobsListByResourceGroupOptions#mapper'
+    parent: azure-batchai.JobsListByResourceGroupOptions
+    name: mapper()
+    summary: Defines the metadata of JobsListByResourceGroupOptions
+    fullName: azure-batchai.JobsListByResourceGroupOptions.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of JobsListByResourceGroupOptions
+      content: function mapper()
+    langs:
+      - js

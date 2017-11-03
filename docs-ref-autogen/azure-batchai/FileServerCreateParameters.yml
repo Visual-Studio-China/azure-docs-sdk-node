@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.FileServerCreateParameters
+    id: azure-batchai.FileServerCreateParameters
+    name: FileServerCreateParameters
+    summary: Parameters supplied to the Create operation.
+    fullName: azure-batchai.FileServerCreateParameters
+    type: Class
+    children:
+      - 'azure-batchai.FileServerCreateParameters.#ctor'
+      - 'azure-batchai.FileServerCreateParameters#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.FileServerCreateParameters.#ctor'
+    uid: 'azure-batchai.FileServerCreateParameters.#ctor'
+    parent: azure-batchai.FileServerCreateParameters
+    name: FileServerCreateParameters()
+    fullName: azure-batchai.FileServerCreateParameters.FileServerCreateParameters()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new FileServerCreateParameters()
+    langs:
+      - js
+  - uid: 'azure-batchai.FileServerCreateParameters#mapper'
+    id: 'azure-batchai.FileServerCreateParameters#mapper'
+    parent: azure-batchai.FileServerCreateParameters
+    name: mapper()
+    summary: Defines the metadata of FileServerCreateParameters
+    fullName: azure-batchai.FileServerCreateParameters.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of FileServerCreateParameters
+      content: function mapper()
+    langs:
+      - js

@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.TensorFlowSettings
+    id: azure-batchai.TensorFlowSettings
+    name: TensorFlowSettings
+    summary: Specifies the settings for TensorFlow job.
+    fullName: azure-batchai.TensorFlowSettings
+    type: Class
+    children:
+      - 'azure-batchai.TensorFlowSettings.#ctor'
+      - 'azure-batchai.TensorFlowSettings#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.TensorFlowSettings.#ctor'
+    uid: 'azure-batchai.TensorFlowSettings.#ctor'
+    parent: azure-batchai.TensorFlowSettings
+    name: TensorFlowSettings()
+    fullName: azure-batchai.TensorFlowSettings.TensorFlowSettings()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new TensorFlowSettings()
+    langs:
+      - js
+  - uid: 'azure-batchai.TensorFlowSettings#mapper'
+    id: 'azure-batchai.TensorFlowSettings#mapper'
+    parent: azure-batchai.TensorFlowSettings
+    name: mapper()
+    summary: Defines the metadata of TensorFlowSettings
+    fullName: azure-batchai.TensorFlowSettings.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of TensorFlowSettings
+      content: function mapper()
+    langs:
+      - js

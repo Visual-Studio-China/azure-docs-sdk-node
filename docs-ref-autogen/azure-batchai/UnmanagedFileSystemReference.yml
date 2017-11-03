@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.UnmanagedFileSystemReference
+    id: azure-batchai.UnmanagedFileSystemReference
+    name: UnmanagedFileSystemReference
+    summary: Details of the file system to mount on the compute cluster nodes.
+    fullName: azure-batchai.UnmanagedFileSystemReference
+    type: Class
+    children:
+      - 'azure-batchai.UnmanagedFileSystemReference.#ctor'
+      - 'azure-batchai.UnmanagedFileSystemReference#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.UnmanagedFileSystemReference.#ctor'
+    uid: 'azure-batchai.UnmanagedFileSystemReference.#ctor'
+    parent: azure-batchai.UnmanagedFileSystemReference
+    name: UnmanagedFileSystemReference()
+    fullName: azure-batchai.UnmanagedFileSystemReference.UnmanagedFileSystemReference()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new UnmanagedFileSystemReference()
+    langs:
+      - js
+  - uid: 'azure-batchai.UnmanagedFileSystemReference#mapper'
+    id: 'azure-batchai.UnmanagedFileSystemReference#mapper'
+    parent: azure-batchai.UnmanagedFileSystemReference
+    name: mapper()
+    summary: Defines the metadata of UnmanagedFileSystemReference
+    fullName: azure-batchai.UnmanagedFileSystemReference.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of UnmanagedFileSystemReference
+      content: function mapper()
+    langs:
+      - js

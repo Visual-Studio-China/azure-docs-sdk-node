@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.FileServer
+    id: azure-batchai.FileServer
+    name: FileServer
+    summary: Contains information about the File Server.
+    fullName: azure-batchai.FileServer
+    type: Class
+    children:
+      - 'azure-batchai.FileServer.#ctor'
+      - 'azure-batchai.FileServer#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.FileServer.#ctor'
+    uid: 'azure-batchai.FileServer.#ctor'
+    parent: azure-batchai.FileServer
+    name: FileServer()
+    fullName: azure-batchai.FileServer.FileServer()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new FileServer()
+    langs:
+      - js
+  - uid: 'azure-batchai.FileServer#mapper'
+    id: 'azure-batchai.FileServer#mapper'
+    parent: azure-batchai.FileServer
+    name: mapper()
+    summary: Defines the metadata of FileServer
+    fullName: azure-batchai.FileServer.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of FileServer
+      content: function mapper()
+    langs:
+      - js

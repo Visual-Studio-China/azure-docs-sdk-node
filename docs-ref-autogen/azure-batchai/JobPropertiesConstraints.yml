@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.JobPropertiesConstraints
+    id: azure-batchai.JobPropertiesConstraints
+    name: JobPropertiesConstraints
+    summary: Constraints associated with the Job.
+    fullName: azure-batchai.JobPropertiesConstraints
+    type: Class
+    children:
+      - 'azure-batchai.JobPropertiesConstraints.#ctor'
+      - 'azure-batchai.JobPropertiesConstraints#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.JobPropertiesConstraints.#ctor'
+    uid: 'azure-batchai.JobPropertiesConstraints.#ctor'
+    parent: azure-batchai.JobPropertiesConstraints
+    name: JobPropertiesConstraints()
+    fullName: azure-batchai.JobPropertiesConstraints.JobPropertiesConstraints()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new JobPropertiesConstraints()
+    langs:
+      - js
+  - uid: 'azure-batchai.JobPropertiesConstraints#mapper'
+    id: 'azure-batchai.JobPropertiesConstraints#mapper'
+    parent: azure-batchai.JobPropertiesConstraints
+    name: mapper()
+    summary: Defines the metadata of JobPropertiesConstraints
+    fullName: azure-batchai.JobPropertiesConstraints.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of JobPropertiesConstraints
+      content: function mapper()
+    langs:
+      - js

@@ -1,0 +1,40 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.FileServersListByResourceGroupOptions
+    id: azure-batchai.FileServersListByResourceGroupOptions
+    name: FileServersListByResourceGroupOptions
+    summary: Additional parameters for listByResourceGroup operation.
+    fullName: azure-batchai.FileServersListByResourceGroupOptions
+    type: Class
+    children:
+      - 'azure-batchai.FileServersListByResourceGroupOptions.#ctor'
+      - 'azure-batchai.FileServersListByResourceGroupOptions#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.FileServersListByResourceGroupOptions.#ctor'
+    uid: 'azure-batchai.FileServersListByResourceGroupOptions.#ctor'
+    parent: azure-batchai.FileServersListByResourceGroupOptions
+    name: FileServersListByResourceGroupOptions()
+    fullName: >-
+      azure-batchai.FileServersListByResourceGroupOptions.FileServersListByResourceGroupOptions()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new FileServersListByResourceGroupOptions()
+    langs:
+      - js
+  - uid: 'azure-batchai.FileServersListByResourceGroupOptions#mapper'
+    id: 'azure-batchai.FileServersListByResourceGroupOptions#mapper'
+    parent: azure-batchai.FileServersListByResourceGroupOptions
+    name: mapper()
+    summary: Defines the metadata of FileServersListByResourceGroupOptions
+    fullName: azure-batchai.FileServersListByResourceGroupOptions.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of FileServersListByResourceGroupOptions
+      content: function mapper()
+    langs:
+      - js

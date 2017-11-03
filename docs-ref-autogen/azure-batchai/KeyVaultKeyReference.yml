@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.KeyVaultKeyReference
+    id: azure-batchai.KeyVaultKeyReference
+    name: KeyVaultKeyReference
+    summary: Describes a reference to Key Vault Key.
+    fullName: azure-batchai.KeyVaultKeyReference
+    type: Class
+    children:
+      - 'azure-batchai.KeyVaultKeyReference.#ctor'
+      - 'azure-batchai.KeyVaultKeyReference#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.KeyVaultKeyReference.#ctor'
+    uid: 'azure-batchai.KeyVaultKeyReference.#ctor'
+    parent: azure-batchai.KeyVaultKeyReference
+    name: KeyVaultKeyReference()
+    fullName: azure-batchai.KeyVaultKeyReference.KeyVaultKeyReference()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new KeyVaultKeyReference()
+    langs:
+      - js
+  - uid: 'azure-batchai.KeyVaultKeyReference#mapper'
+    id: 'azure-batchai.KeyVaultKeyReference#mapper'
+    parent: azure-batchai.KeyVaultKeyReference
+    name: mapper()
+    summary: Defines the metadata of KeyVaultKeyReference
+    fullName: azure-batchai.KeyVaultKeyReference.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of KeyVaultKeyReference
+      content: function mapper()
+    langs:
+      - js

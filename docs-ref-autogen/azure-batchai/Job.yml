@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.Job
+    id: azure-batchai.Job
+    name: Job
+    summary: Contains information about the job.
+    fullName: azure-batchai.Job
+    type: Class
+    children:
+      - 'azure-batchai.Job.#ctor'
+      - 'azure-batchai.Job#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.Job.#ctor'
+    uid: 'azure-batchai.Job.#ctor'
+    parent: azure-batchai.Job
+    name: Job()
+    fullName: azure-batchai.Job.Job()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new Job()
+    langs:
+      - js
+  - uid: 'azure-batchai.Job#mapper'
+    id: 'azure-batchai.Job#mapper'
+    parent: azure-batchai.Job
+    name: mapper()
+    summary: Defines the metadata of Job
+    fullName: azure-batchai.Job.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of Job
+      content: function mapper()
+    langs:
+      - js

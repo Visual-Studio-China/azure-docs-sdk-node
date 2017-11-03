@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.LocalDataVolume
+    id: azure-batchai.LocalDataVolume
+    name: LocalDataVolume
+    summary: Represents mapping of host directories to directories in the container.
+    fullName: azure-batchai.LocalDataVolume
+    type: Class
+    children:
+      - 'azure-batchai.LocalDataVolume.#ctor'
+      - 'azure-batchai.LocalDataVolume#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.LocalDataVolume.#ctor'
+    uid: 'azure-batchai.LocalDataVolume.#ctor'
+    parent: azure-batchai.LocalDataVolume
+    name: LocalDataVolume()
+    fullName: azure-batchai.LocalDataVolume.LocalDataVolume()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new LocalDataVolume()
+    langs:
+      - js
+  - uid: 'azure-batchai.LocalDataVolume#mapper'
+    id: 'azure-batchai.LocalDataVolume#mapper'
+    parent: azure-batchai.LocalDataVolume
+    name: mapper()
+    summary: Defines the metadata of LocalDataVolume
+    fullName: azure-batchai.LocalDataVolume.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of LocalDataVolume
+      content: function mapper()
+    langs:
+      - js

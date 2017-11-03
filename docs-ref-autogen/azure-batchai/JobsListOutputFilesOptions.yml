@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.JobsListOutputFilesOptions
+    id: azure-batchai.JobsListOutputFilesOptions
+    name: JobsListOutputFilesOptions
+    summary: Additional parameters for listOutputFiles operation.
+    fullName: azure-batchai.JobsListOutputFilesOptions
+    type: Class
+    children:
+      - 'azure-batchai.JobsListOutputFilesOptions.#ctor'
+      - 'azure-batchai.JobsListOutputFilesOptions#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.JobsListOutputFilesOptions.#ctor'
+    uid: 'azure-batchai.JobsListOutputFilesOptions.#ctor'
+    parent: azure-batchai.JobsListOutputFilesOptions
+    name: JobsListOutputFilesOptions()
+    fullName: azure-batchai.JobsListOutputFilesOptions.JobsListOutputFilesOptions()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new JobsListOutputFilesOptions()
+    langs:
+      - js
+  - uid: 'azure-batchai.JobsListOutputFilesOptions#mapper'
+    id: 'azure-batchai.JobsListOutputFilesOptions#mapper'
+    parent: azure-batchai.JobsListOutputFilesOptions
+    name: mapper()
+    summary: Defines the metadata of JobsListOutputFilesOptions
+    fullName: azure-batchai.JobsListOutputFilesOptions.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of JobsListOutputFilesOptions
+      content: function mapper()
+    langs:
+      - js

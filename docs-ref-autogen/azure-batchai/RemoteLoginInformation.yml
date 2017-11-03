@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.RemoteLoginInformation
+    id: azure-batchai.RemoteLoginInformation
+    name: RemoteLoginInformation
+    summary: Contains remote login details to SSH/RDP to a compute node in cluster.
+    fullName: azure-batchai.RemoteLoginInformation
+    type: Class
+    children:
+      - 'azure-batchai.RemoteLoginInformation.#ctor'
+      - 'azure-batchai.RemoteLoginInformation#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.RemoteLoginInformation.#ctor'
+    uid: 'azure-batchai.RemoteLoginInformation.#ctor'
+    parent: azure-batchai.RemoteLoginInformation
+    name: RemoteLoginInformation()
+    fullName: azure-batchai.RemoteLoginInformation.RemoteLoginInformation()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new RemoteLoginInformation()
+    langs:
+      - js
+  - uid: 'azure-batchai.RemoteLoginInformation#mapper'
+    id: 'azure-batchai.RemoteLoginInformation#mapper'
+    parent: azure-batchai.RemoteLoginInformation
+    name: mapper()
+    summary: Defines the metadata of RemoteLoginInformation
+    fullName: azure-batchai.RemoteLoginInformation.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of RemoteLoginInformation
+      content: function mapper()
+    langs:
+      - js

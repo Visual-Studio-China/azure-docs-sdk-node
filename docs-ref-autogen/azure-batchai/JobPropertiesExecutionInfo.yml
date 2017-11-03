@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.JobPropertiesExecutionInfo
+    id: azure-batchai.JobPropertiesExecutionInfo
+    name: JobPropertiesExecutionInfo
+    summary: |-
+      Contains information about the execution of a job in the Azure Batch
+      service.
+    fullName: azure-batchai.JobPropertiesExecutionInfo
+    type: Class
+    children:
+      - 'azure-batchai.JobPropertiesExecutionInfo.#ctor'
+      - 'azure-batchai.JobPropertiesExecutionInfo#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.JobPropertiesExecutionInfo.#ctor'
+    uid: 'azure-batchai.JobPropertiesExecutionInfo.#ctor'
+    parent: azure-batchai.JobPropertiesExecutionInfo
+    name: JobPropertiesExecutionInfo()
+    fullName: azure-batchai.JobPropertiesExecutionInfo.JobPropertiesExecutionInfo()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new JobPropertiesExecutionInfo()
+    langs:
+      - js
+  - uid: 'azure-batchai.JobPropertiesExecutionInfo#mapper'
+    id: 'azure-batchai.JobPropertiesExecutionInfo#mapper'
+    parent: azure-batchai.JobPropertiesExecutionInfo
+    name: mapper()
+    summary: Defines the metadata of JobPropertiesExecutionInfo
+    fullName: azure-batchai.JobPropertiesExecutionInfo.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of JobPropertiesExecutionInfo
+      content: function mapper()
+    langs:
+      - js

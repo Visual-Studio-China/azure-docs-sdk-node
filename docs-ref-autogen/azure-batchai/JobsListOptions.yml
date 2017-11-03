@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.JobsListOptions
+    id: azure-batchai.JobsListOptions
+    name: JobsListOptions
+    summary: Additional parameters for list operation.
+    fullName: azure-batchai.JobsListOptions
+    type: Class
+    children:
+      - 'azure-batchai.JobsListOptions.#ctor'
+      - 'azure-batchai.JobsListOptions#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.JobsListOptions.#ctor'
+    uid: 'azure-batchai.JobsListOptions.#ctor'
+    parent: azure-batchai.JobsListOptions
+    name: JobsListOptions()
+    fullName: azure-batchai.JobsListOptions.JobsListOptions()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new JobsListOptions()
+    langs:
+      - js
+  - uid: 'azure-batchai.JobsListOptions#mapper'
+    id: 'azure-batchai.JobsListOptions#mapper'
+    parent: azure-batchai.JobsListOptions
+    name: mapper()
+    summary: Defines the metadata of JobsListOptions
+    fullName: azure-batchai.JobsListOptions.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of JobsListOptions
+      content: function mapper()
+    langs:
+      - js

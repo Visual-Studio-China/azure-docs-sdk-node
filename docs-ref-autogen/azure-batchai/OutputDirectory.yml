@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-batchai.OutputDirectory
+    id: azure-batchai.OutputDirectory
+    name: OutputDirectory
+    summary: Output directory for the job.
+    fullName: azure-batchai.OutputDirectory
+    type: Class
+    children:
+      - 'azure-batchai.OutputDirectory.#ctor'
+      - 'azure-batchai.OutputDirectory#mapper'
+    langs:
+      - js
+  - id: 'azure-batchai.OutputDirectory.#ctor'
+    uid: 'azure-batchai.OutputDirectory.#ctor'
+    parent: azure-batchai.OutputDirectory
+    name: OutputDirectory()
+    fullName: azure-batchai.OutputDirectory.OutputDirectory()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new OutputDirectory()
+    langs:
+      - js
+  - uid: 'azure-batchai.OutputDirectory#mapper'
+    id: 'azure-batchai.OutputDirectory#mapper'
+    parent: azure-batchai.OutputDirectory
+    name: mapper()
+    summary: Defines the metadata of OutputDirectory
+    fullName: azure-batchai.OutputDirectory.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of OutputDirectory
+      content: function mapper()
+    langs:
+      - js
