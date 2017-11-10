@@ -1,0 +1,40 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-cognitiveservices-search.ContractualRulesLicenseAttribution
+    id: azure-cognitiveservices-search.ContractualRulesLicenseAttribution
+    name: ContractualRulesLicenseAttribution
+    summary: Defines a contractual rule for license attribution.
+    fullName: azure-cognitiveservices-search.ContractualRulesLicenseAttribution
+    type: Class
+    children:
+      - 'azure-cognitiveservices-search.ContractualRulesLicenseAttribution.#ctor'
+      - 'azure-cognitiveservices-search.ContractualRulesLicenseAttribution#mapper'
+    langs:
+      - js
+  - id: 'azure-cognitiveservices-search.ContractualRulesLicenseAttribution.#ctor'
+    uid: 'azure-cognitiveservices-search.ContractualRulesLicenseAttribution.#ctor'
+    parent: azure-cognitiveservices-search.ContractualRulesLicenseAttribution
+    name: ContractualRulesLicenseAttribution()
+    fullName: >-
+      azure-cognitiveservices-search.ContractualRulesLicenseAttribution.ContractualRulesLicenseAttribution()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new ContractualRulesLicenseAttribution()
+    langs:
+      - js
+  - uid: 'azure-cognitiveservices-search.ContractualRulesLicenseAttribution#mapper'
+    id: 'azure-cognitiveservices-search.ContractualRulesLicenseAttribution#mapper'
+    parent: azure-cognitiveservices-search.ContractualRulesLicenseAttribution
+    name: mapper()
+    summary: Defines the metadata of ContractualRulesLicenseAttribution
+    fullName: azure-cognitiveservices-search.ContractualRulesLicenseAttribution.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of ContractualRulesLicenseAttribution
+      content: function mapper()
+    langs:
+      - js

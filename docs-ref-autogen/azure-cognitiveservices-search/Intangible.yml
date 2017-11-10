@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-cognitiveservices-search.Intangible
+    id: azure-cognitiveservices-search.Intangible
+    name: Intangible
+    summary: Class representing a Intangible.
+    fullName: azure-cognitiveservices-search.Intangible
+    type: Class
+    children:
+      - 'azure-cognitiveservices-search.Intangible.#ctor'
+      - 'azure-cognitiveservices-search.Intangible#mapper'
+    langs:
+      - js
+  - id: 'azure-cognitiveservices-search.Intangible.#ctor'
+    uid: 'azure-cognitiveservices-search.Intangible.#ctor'
+    parent: azure-cognitiveservices-search.Intangible
+    name: Intangible()
+    fullName: azure-cognitiveservices-search.Intangible.Intangible()
+    summary: Create a Intangible.
+    type: Constructor
+    syntax:
+      content: new Intangible()
+    langs:
+      - js
+  - uid: 'azure-cognitiveservices-search.Intangible#mapper'
+    id: 'azure-cognitiveservices-search.Intangible#mapper'
+    parent: azure-cognitiveservices-search.Intangible
+    name: mapper()
+    summary: Defines the metadata of Intangible
+    fullName: azure-cognitiveservices-search.Intangible.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of Intangible
+      content: function mapper()
+    langs:
+      - js

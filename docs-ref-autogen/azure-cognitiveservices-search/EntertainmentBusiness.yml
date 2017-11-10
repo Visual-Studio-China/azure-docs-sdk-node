@@ -1,0 +1,40 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-cognitiveservices-search.EntertainmentBusiness
+    id: azure-cognitiveservices-search.EntertainmentBusiness
+    name: EntertainmentBusiness
+    summary: Class representing a EntertainmentBusiness.
+    fullName: azure-cognitiveservices-search.EntertainmentBusiness
+    type: Class
+    children:
+      - 'azure-cognitiveservices-search.EntertainmentBusiness.#ctor'
+      - 'azure-cognitiveservices-search.EntertainmentBusiness#mapper'
+    langs:
+      - js
+  - id: 'azure-cognitiveservices-search.EntertainmentBusiness.#ctor'
+    uid: 'azure-cognitiveservices-search.EntertainmentBusiness.#ctor'
+    parent: azure-cognitiveservices-search.EntertainmentBusiness
+    name: EntertainmentBusiness()
+    fullName: >-
+      azure-cognitiveservices-search.EntertainmentBusiness.EntertainmentBusiness()
+    summary: Create a EntertainmentBusiness.
+    type: Constructor
+    syntax:
+      content: new EntertainmentBusiness()
+    langs:
+      - js
+  - uid: 'azure-cognitiveservices-search.EntertainmentBusiness#mapper'
+    id: 'azure-cognitiveservices-search.EntertainmentBusiness#mapper'
+    parent: azure-cognitiveservices-search.EntertainmentBusiness
+    name: mapper()
+    summary: Defines the metadata of EntertainmentBusiness
+    fullName: azure-cognitiveservices-search.EntertainmentBusiness.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of EntertainmentBusiness
+      content: function mapper()
+    langs:
+      - js

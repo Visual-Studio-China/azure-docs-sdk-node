@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-cognitiveservices-search.License
+    id: azure-cognitiveservices-search.License
+    name: License
+    summary: Defines the license under which the text or photo may be used.
+    fullName: azure-cognitiveservices-search.License
+    type: Class
+    children:
+      - 'azure-cognitiveservices-search.License.#ctor'
+      - 'azure-cognitiveservices-search.License#mapper'
+    langs:
+      - js
+  - id: 'azure-cognitiveservices-search.License.#ctor'
+    uid: 'azure-cognitiveservices-search.License.#ctor'
+    parent: azure-cognitiveservices-search.License
+    name: License()
+    fullName: azure-cognitiveservices-search.License.License()
+    summary: Create a License.
+    type: Constructor
+    syntax:
+      content: new License()
+    langs:
+      - js
+  - uid: 'azure-cognitiveservices-search.License#mapper'
+    id: 'azure-cognitiveservices-search.License#mapper'
+    parent: azure-cognitiveservices-search.License
+    name: mapper()
+    summary: Defines the metadata of License
+    fullName: azure-cognitiveservices-search.License.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of License
+      content: function mapper()
+    langs:
+      - js

@@ -1,0 +1,40 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-cognitiveservices-search.ContractualRulesMediaAttribution
+    id: azure-cognitiveservices-search.ContractualRulesMediaAttribution
+    name: ContractualRulesMediaAttribution
+    summary: Defines a contractual rule for media attribution.
+    fullName: azure-cognitiveservices-search.ContractualRulesMediaAttribution
+    type: Class
+    children:
+      - 'azure-cognitiveservices-search.ContractualRulesMediaAttribution.#ctor'
+      - 'azure-cognitiveservices-search.ContractualRulesMediaAttribution#mapper'
+    langs:
+      - js
+  - id: 'azure-cognitiveservices-search.ContractualRulesMediaAttribution.#ctor'
+    uid: 'azure-cognitiveservices-search.ContractualRulesMediaAttribution.#ctor'
+    parent: azure-cognitiveservices-search.ContractualRulesMediaAttribution
+    name: ContractualRulesMediaAttribution()
+    fullName: >-
+      azure-cognitiveservices-search.ContractualRulesMediaAttribution.ContractualRulesMediaAttribution()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new ContractualRulesMediaAttribution()
+    langs:
+      - js
+  - uid: 'azure-cognitiveservices-search.ContractualRulesMediaAttribution#mapper'
+    id: 'azure-cognitiveservices-search.ContractualRulesMediaAttribution#mapper'
+    parent: azure-cognitiveservices-search.ContractualRulesMediaAttribution
+    name: mapper()
+    summary: Defines the metadata of ContractualRulesMediaAttribution
+    fullName: azure-cognitiveservices-search.ContractualRulesMediaAttribution.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of ContractualRulesMediaAttribution
+      content: function mapper()
+    langs:
+      - js

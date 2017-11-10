@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-cognitiveservices-search.Hotel
+    id: azure-cognitiveservices-search.Hotel
+    name: Hotel
+    summary: Class representing a Hotel.
+    fullName: azure-cognitiveservices-search.Hotel
+    type: Class
+    children:
+      - 'azure-cognitiveservices-search.Hotel.#ctor'
+      - 'azure-cognitiveservices-search.Hotel#mapper'
+    langs:
+      - js
+  - id: 'azure-cognitiveservices-search.Hotel.#ctor'
+    uid: 'azure-cognitiveservices-search.Hotel.#ctor'
+    parent: azure-cognitiveservices-search.Hotel
+    name: Hotel()
+    fullName: azure-cognitiveservices-search.Hotel.Hotel()
+    summary: ''
+    type: Constructor
+    syntax:
+      content: new Hotel()
+    langs:
+      - js
+  - uid: 'azure-cognitiveservices-search.Hotel#mapper'
+    id: 'azure-cognitiveservices-search.Hotel#mapper'
+    parent: azure-cognitiveservices-search.Hotel
+    name: mapper()
+    summary: Defines the metadata of Hotel
+    fullName: azure-cognitiveservices-search.Hotel.mapper()
+    type: Function
+    syntax:
+      return:
+        type:
+          - object
+        description: metadata of Hotel
+      content: function mapper()
+    langs:
+      - js
