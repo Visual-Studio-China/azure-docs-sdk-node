@@ -1,23 +1,25 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-arm-appinsights.AppInsightsManagementClient
-    id: azure-arm-appinsights.AppInsightsManagementClient
-    name: AppInsightsManagementClient
-    summary: Class representing a AppInsightsManagementClient.
-    fullName: azure-arm-appinsights.AppInsightsManagementClient
+  - uid: azure-arm-appinsights.ApplicationInsightsManagementClient
+    id: azure-arm-appinsights.ApplicationInsightsManagementClient
+    name: ApplicationInsightsManagementClient
+    summary: Class representing a ApplicationInsightsManagementClient.
+    fullName: azure-arm-appinsights.ApplicationInsightsManagementClient
     type: Class
     children:
-      - 'azure-arm-appinsights.AppInsightsManagementClient.#ctor'
+      - 'azure-arm-appinsights.ApplicationInsightsManagementClient.#ctor'
     langs:
       - js
-  - id: 'azure-arm-appinsights.AppInsightsManagementClient.#ctor'
-    uid: 'azure-arm-appinsights.AppInsightsManagementClient.#ctor'
-    parent: azure-arm-appinsights.AppInsightsManagementClient
-    name: 'AppInsightsManagementClient(credentials, subscriptionId, baseUri, options)'
+  - id: 'azure-arm-appinsights.ApplicationInsightsManagementClient.#ctor'
+    uid: 'azure-arm-appinsights.ApplicationInsightsManagementClient.#ctor'
+    parent: azure-arm-appinsights.ApplicationInsightsManagementClient
+    name: >-
+      ApplicationInsightsManagementClient(credentials, subscriptionId, baseUri,
+      options)
     fullName: >-
-      azure-arm-appinsights.AppInsightsManagementClient.AppInsightsManagementClient(credentials,
+      azure-arm-appinsights.ApplicationInsightsManagementClient.ApplicationInsightsManagementClient(credentials,
       subscriptionId, baseUri, options)
-    summary: Create a AppInsightsManagementClient.
+    summary: Create a ApplicationInsightsManagementClient.
     type: Constructor
     syntax:
       parameters:
@@ -28,7 +30,7 @@ items:
         - id: subscriptionId
           type:
             - string
-          description: The Azure subscription Id.
+          description: The Azure subscription ID.
         - id: baseUri
           type:
             - string
@@ -78,7 +80,7 @@ items:
             and included in each request. Default is true.
           optional: true
       content: >-
-        new AppInsightsManagementClient(credentials, subscriptionId, baseUri,
-        options)
+        new ApplicationInsightsManagementClient(credentials, subscriptionId,
+        baseUri, options)
     langs:
       - js

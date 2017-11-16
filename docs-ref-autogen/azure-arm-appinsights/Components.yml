@@ -39,7 +39,7 @@ items:
       parameters:
         - id: client
           type:
-            - azure-arm-appinsights.AppInsightsManagementClient
+            - azure-arm-appinsights.ApplicationInsightsManagementClient
           description: Reference to the service client.
       content: new Components(client)
     langs:
@@ -1329,7 +1329,7 @@ items:
     langs:
       - js
 references:
-  - uid: azure-arm-appinsights.AppInsightsManagementClient
-    name: AppInsightsManagementClient
-    fullName: azure-arm-appinsights.AppInsightsManagementClient
+  - uid: azure-arm-appinsights.ApplicationInsightsManagementClient
+    name: ApplicationInsightsManagementClient
+    fullName: azure-arm-appinsights.ApplicationInsightsManagementClient
     isExternal: false
