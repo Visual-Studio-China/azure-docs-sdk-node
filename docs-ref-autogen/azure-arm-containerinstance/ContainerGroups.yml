@@ -227,9 +227,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group that
-            contains the container group.
+          description: The name of the resource group.
         - id: options
           type:
             - object
@@ -313,9 +311,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group that
-            contains the container group.
+          description: The name of the resource group.
         - id: options
           type:
             - object
@@ -382,9 +378,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group that
-            contains the container group.
+          description: The name of the resource group.
         - id: containerGroupName
           type:
             - string
@@ -463,9 +457,7 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group that
-            contains the container group.
+          description: The name of the resource group.
         - id: containerGroupName
           type:
             - string
@@ -535,15 +527,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to contain
-            the container group to be created or updated.
+          description: The name of the resource group.
         - id: containerGroupName
           type:
             - string
-          description: |-
-            The name of the container group to be
-            created or updated.
+          description: The name of the container group.
         - id: containerGroup
           type:
             - object
@@ -567,13 +555,13 @@ items:
         - id: containerGroup.restartPolicy
           type:
             - string
-          description: >-
+          description: |-
             Restart policy for all
-
-            containers within the container group. Currently the only available
-            option
-
-            is `always`. Possible values include: 'always'
+            containers within the container group.
+            - `Always` Always restart
+            - `OnFailure` Restart on failure
+            - `Never` Never restart
+            . Possible values include: 'Always', 'OnFailure', 'Never'
           optional: true
         - id: containerGroup.ipAddress
           type:
@@ -692,15 +680,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group to contain
-            the container group to be created or updated.
+          description: The name of the resource group.
         - id: containerGroupName
           type:
             - string
-          description: |-
-            The name of the container group to be
-            created or updated.
+          description: The name of the container group.
         - id: containerGroup
           type:
             - object
@@ -724,13 +708,13 @@ items:
         - id: containerGroup.restartPolicy
           type:
             - string
-          description: >-
+          description: |-
             Restart policy for all
-
-            containers within the container group. Currently the only available
-            option
-
-            is `always`. Possible values include: 'always'
+            containers within the container group.
+            - `Always` Always restart
+            - `OnFailure` Restart on failure
+            - `Never` Never restart
+            . Possible values include: 'Always', 'OnFailure', 'Never'
           optional: true
         - id: containerGroup.ipAddress
           type:
@@ -843,15 +827,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group that
-            contains the container group.
+          description: The name of the resource group.
         - id: containerGroupName
           type:
             - string
-          description: |-
-            The name of the container group to be
-            deleted.
+          description: The name of the container group.
         - id: options
           type:
             - object
@@ -927,15 +907,11 @@ items:
         - id: resourceGroupName
           type:
             - string
-          description: |-
-            The name of the resource group that
-            contains the container group.
+          description: The name of the resource group.
         - id: containerGroupName
           type:
             - string
-          description: |-
-            The name of the container group to be
-            deleted.
+          description: The name of the container group.
         - id: options
           type:
             - object

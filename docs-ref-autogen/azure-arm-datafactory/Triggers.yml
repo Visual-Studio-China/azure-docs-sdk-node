@@ -238,13 +238,6 @@ items:
             - string
           description: Trigger description.
           optional: true
-        - id: trigger.properties.pipelines
-          type:
-            - array
-          description: |-
-            Pipelines that need to be
-            started.
-          optional: true
         - id: trigger.properties.type
           type:
             - string
@@ -351,13 +344,6 @@ items:
           type:
             - string
           description: Trigger description.
-          optional: true
-        - id: trigger.properties.pipelines
-          type:
-            - array
-          description: |-
-            Pipelines that need to be
-            started.
           optional: true
         - id: trigger.properties.type
           type:
