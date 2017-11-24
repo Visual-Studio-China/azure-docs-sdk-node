@@ -3,7 +3,7 @@ items:
   - uid: azure-common.StorageServiceClient
     id: azure-common.StorageServiceClient
     name: StorageServiceClient
-    summary: ''
+    summary: Creates a new ServiceClient object.
     fullName: azure-common.StorageServiceClient
     type: Class
     children:

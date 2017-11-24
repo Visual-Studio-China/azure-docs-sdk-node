@@ -8,20 +8,6 @@ items:
     type: Class
     children:
       - 'azure-search.Indexes.#ctor'
-      - 'azure-search.Indexes#createWithHttpOperationResponse'
-      - 'azure-search.Indexes#create'
-      - 'azure-search.Indexes#listWithHttpOperationResponse'
-      - 'azure-search.Indexes#list'
-      - 'azure-search.Indexes#createOrUpdateWithHttpOperationResponse'
-      - 'azure-search.Indexes#createOrUpdate'
-      - 'azure-search.Indexes#deleteMethodWithHttpOperationResponse'
-      - 'azure-search.Indexes#deleteMethod'
-      - 'azure-search.Indexes#getWithHttpOperationResponse'
-      - 'azure-search.Indexes#get'
-      - 'azure-search.Indexes#getStatisticsWithHttpOperationResponse'
-      - 'azure-search.Indexes#getStatistics'
-      - 'azure-search.Indexes#analyzeWithHttpOperationResponse'
-      - 'azure-search.Indexes#analyze'
     langs:
       - js
   - id: 'azure-search.Indexes.#ctor'

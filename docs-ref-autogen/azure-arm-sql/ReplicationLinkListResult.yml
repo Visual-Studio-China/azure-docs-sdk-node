@@ -8,7 +8,6 @@ items:
     type: Class
     children:
       - 'azure-arm-sql.ReplicationLinkListResult.#ctor'
-      - 'azure-arm-sql.ReplicationLinkListResult#mapper'
     langs:
       - js
   - id: 'azure-arm-sql.ReplicationLinkListResult.#ctor'

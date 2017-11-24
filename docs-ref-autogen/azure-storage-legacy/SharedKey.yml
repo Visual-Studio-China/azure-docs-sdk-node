@@ -3,7 +3,7 @@ items:
   - uid: azure-storage-legacy.SharedKey
     id: azure-storage-legacy.SharedKey
     name: SharedKey
-    summary: ''
+    summary: Creates a new SharedKey object.
     fullName: azure-storage-legacy.SharedKey
     type: Class
     children:

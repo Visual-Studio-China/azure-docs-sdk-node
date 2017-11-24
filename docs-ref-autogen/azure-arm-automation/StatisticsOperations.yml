@@ -8,9 +8,6 @@ items:
     type: Class
     children:
       - 'azure-arm-automation.StatisticsOperations.#ctor'
-      - >-
-        azure-arm-automation.StatisticsOperations#listByAutomationAccountWithHttpOperationResponse
-      - 'azure-arm-automation.StatisticsOperations#listByAutomationAccount'
     langs:
       - js
   - id: 'azure-arm-automation.StatisticsOperations.#ctor'

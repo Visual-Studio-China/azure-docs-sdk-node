@@ -3,7 +3,7 @@ items:
   - uid: azure-common.ServiceClient
     id: azure-common.ServiceClient
     name: ServiceClient
-    summary: ''
+    summary: Creates a new ServiceClient object.
     fullName: azure-common.ServiceClient
     type: Class
     children:

@@ -3,7 +3,7 @@ items:
   - uid: azure-storage-legacy.SharedAccessSignature
     id: azure-storage-legacy.SharedAccessSignature
     name: SharedAccessSignature
-    summary: ''
+    summary: Creates a new SharedAccessSignature object.
     fullName: azure-storage-legacy.SharedAccessSignature
     type: Class
     children:

@@ -8,7 +8,6 @@ items:
     type: Class
     children:
       - 'azure-arm-datafactory.HBaseObjectDataset.#ctor'
-      - 'azure-arm-datafactory.HBaseObjectDataset#mapper'
     langs:
       - js
   - id: 'azure-arm-datafactory.HBaseObjectDataset.#ctor'

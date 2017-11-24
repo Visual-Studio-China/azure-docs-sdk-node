@@ -3,7 +3,7 @@ items:
   - uid: azure-common.LinearRetryPolicyFilter
     id: azure-common.LinearRetryPolicyFilter
     name: LinearRetryPolicyFilter
-    summary: ''
+    summary: Creates a new LinearRetryPolicyFilter instance.
     fullName: azure-common.LinearRetryPolicyFilter
     type: Class
     children:

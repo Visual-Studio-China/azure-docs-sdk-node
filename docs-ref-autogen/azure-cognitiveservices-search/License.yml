@@ -8,7 +8,6 @@ items:
     type: Class
     children:
       - 'azure-cognitiveservices-search.License.#ctor'
-      - 'azure-cognitiveservices-search.License#mapper'
     langs:
       - js
   - id: 'azure-cognitiveservices-search.License.#ctor'

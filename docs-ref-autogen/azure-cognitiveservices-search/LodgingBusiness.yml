@@ -8,7 +8,6 @@ items:
     type: Class
     children:
       - 'azure-cognitiveservices-search.LodgingBusiness.#ctor'
-      - 'azure-cognitiveservices-search.LodgingBusiness#mapper'
     langs:
       - js
   - id: 'azure-cognitiveservices-search.LodgingBusiness.#ctor'

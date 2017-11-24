@@ -8,7 +8,6 @@ items:
     type: Class
     children:
       - 'azure-arm-postgresql.ServerListResult.#ctor'
-      - 'azure-arm-postgresql.ServerListResult#mapper'
     langs:
       - js
   - id: 'azure-arm-postgresql.ServerListResult.#ctor'

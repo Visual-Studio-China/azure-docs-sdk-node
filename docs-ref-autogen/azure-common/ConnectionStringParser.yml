@@ -3,7 +3,7 @@ items:
   - uid: azure-common.ConnectionStringParser
     id: azure-common.ConnectionStringParser
     name: ConnectionStringParser
-    summary: ''
+    summary: Creates a new 'ConnectionString' instance.
     fullName: azure-common.ConnectionStringParser
     type: Class
     children:

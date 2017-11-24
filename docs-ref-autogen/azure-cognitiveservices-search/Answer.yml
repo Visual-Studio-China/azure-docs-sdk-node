@@ -8,7 +8,6 @@ items:
     type: Class
     children:
       - 'azure-cognitiveservices-search.Answer.#ctor'
-      - 'azure-cognitiveservices-search.Answer#mapper'
     langs:
       - js
   - id: 'azure-cognitiveservices-search.Answer.#ctor'

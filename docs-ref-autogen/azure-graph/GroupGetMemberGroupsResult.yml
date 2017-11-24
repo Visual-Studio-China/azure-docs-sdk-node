@@ -8,7 +8,6 @@ items:
     type: Class
     children:
       - 'azure-graph.GroupGetMemberGroupsResult.#ctor'
-      - 'azure-graph.GroupGetMemberGroupsResult#mapper'
     langs:
       - js
   - id: 'azure-graph.GroupGetMemberGroupsResult.#ctor'

@@ -3,7 +3,7 @@ items:
   - uid: azure-storage-legacy.TableQuery
     id: azure-storage-legacy.TableQuery
     name: TableQuery
-    summary: ''
+    summary: Creates a new TableQuery object.
     fullName: azure-storage-legacy.TableQuery
     type: Class
     children:

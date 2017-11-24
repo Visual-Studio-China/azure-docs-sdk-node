@@ -8,7 +8,6 @@ items:
     type: Class
     children:
       - 'azure-arm-datafactory.GreenplumTableDataset.#ctor'
-      - 'azure-arm-datafactory.GreenplumTableDataset#mapper'
     langs:
       - js
   - id: 'azure-arm-datafactory.GreenplumTableDataset.#ctor'

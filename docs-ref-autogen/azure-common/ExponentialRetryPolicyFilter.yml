@@ -3,7 +3,7 @@ items:
   - uid: azure-common.ExponentialRetryPolicyFilter
     id: azure-common.ExponentialRetryPolicyFilter
     name: ExponentialRetryPolicyFilter
-    summary: ''
+    summary: Creates a new 'ExponentialRetryPolicyFilter' instance.
     fullName: azure-common.ExponentialRetryPolicyFilter
     type: Class
     children:

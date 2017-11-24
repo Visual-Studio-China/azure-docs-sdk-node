@@ -17,7 +17,6 @@ items:
     type: Class
     children:
       - 'azure-servicefabric.WaitForInbuildReplicaSafetyCheck.#ctor'
-      - 'azure-servicefabric.WaitForInbuildReplicaSafetyCheck#mapper'
     langs:
       - js
   - id: 'azure-servicefabric.WaitForInbuildReplicaSafetyCheck.#ctor'

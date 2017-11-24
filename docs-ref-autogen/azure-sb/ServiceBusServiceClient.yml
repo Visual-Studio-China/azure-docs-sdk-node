@@ -3,7 +3,7 @@ items:
   - uid: azure-sb.ServiceBusServiceClient
     id: azure-sb.ServiceBusServiceClient
     name: ServiceBusServiceClient
-    summary: ''
+    summary: Creates a new ServiceBusServiceClient object.
     fullName: azure-sb.ServiceBusServiceClient
     type: Class
     children:

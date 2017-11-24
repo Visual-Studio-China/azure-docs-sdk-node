@@ -8,22 +8,6 @@ items:
     type: Class
     children:
       - 'azure-search.Indexers.#ctor'
-      - 'azure-search.Indexers#resetWithHttpOperationResponse'
-      - 'azure-search.Indexers#reset'
-      - 'azure-search.Indexers#runWithHttpOperationResponse'
-      - 'azure-search.Indexers#run'
-      - 'azure-search.Indexers#createOrUpdateWithHttpOperationResponse'
-      - 'azure-search.Indexers#createOrUpdate'
-      - 'azure-search.Indexers#deleteMethodWithHttpOperationResponse'
-      - 'azure-search.Indexers#deleteMethod'
-      - 'azure-search.Indexers#getWithHttpOperationResponse'
-      - 'azure-search.Indexers#get'
-      - 'azure-search.Indexers#listWithHttpOperationResponse'
-      - 'azure-search.Indexers#list'
-      - 'azure-search.Indexers#createWithHttpOperationResponse'
-      - 'azure-search.Indexers#create'
-      - 'azure-search.Indexers#getStatusWithHttpOperationResponse'
-      - 'azure-search.Indexers#getStatus'
     langs:
       - js
   - id: 'azure-search.Indexers.#ctor'

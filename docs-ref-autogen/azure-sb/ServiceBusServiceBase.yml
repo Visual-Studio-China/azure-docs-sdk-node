@@ -3,7 +3,7 @@ items:
   - uid: azure-sb.ServiceBusServiceBase
     id: azure-sb.ServiceBusServiceBase
     name: ServiceBusServiceBase
-    summary: ''
+    summary: Creates a new ServiceBusServiceBase object.
     fullName: azure-sb.ServiceBusServiceBase
     type: Class
     children:

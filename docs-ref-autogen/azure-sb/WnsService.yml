@@ -3,7 +3,7 @@ items:
   - uid: azure-sb.WnsService
     id: azure-sb.WnsService
     name: WnsService
-    summary: ''
+    summary: Creates a new WnsService object.
     fullName: azure-sb.WnsService
     type: Class
     children:

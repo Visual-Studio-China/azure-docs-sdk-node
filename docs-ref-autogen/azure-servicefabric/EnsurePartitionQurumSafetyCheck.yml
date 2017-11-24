@@ -10,7 +10,6 @@ items:
     type: Class
     children:
       - 'azure-servicefabric.EnsurePartitionQurumSafetyCheck.#ctor'
-      - 'azure-servicefabric.EnsurePartitionQurumSafetyCheck#mapper'
     langs:
       - js
   - id: 'azure-servicefabric.EnsurePartitionQurumSafetyCheck.#ctor'

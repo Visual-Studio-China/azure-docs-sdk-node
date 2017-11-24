@@ -3,7 +3,15 @@ items:
   - uid: azure-storage-legacy.BatchServiceClient
     id: azure-storage-legacy.BatchServiceClient
     name: BatchServiceClient
-    summary: ''
+    summary: >-
+      Creates a new BatchServiceClient.
+
+
+      Implements a batch service client able to produce OData batch requests
+      from an array of operations.
+
+      For more information about OData batch processing refer to
+      http://www.odata.org/developers/protocols/batch.
     fullName: azure-storage-legacy.BatchServiceClient
     type: Class
     children:

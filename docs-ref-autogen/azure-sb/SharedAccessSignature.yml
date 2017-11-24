@@ -3,7 +3,7 @@ items:
   - uid: azure-sb.SharedAccessSignature
     id: azure-sb.SharedAccessSignature
     name: SharedAccessSignature
-    summary: ''
+    summary: Creates a new SharedAccessSignature object.
     fullName: azure-sb.SharedAccessSignature
     type: Class
     children:

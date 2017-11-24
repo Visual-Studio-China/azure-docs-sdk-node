@@ -3,7 +3,7 @@ items:
   - uid: azure-common.ServiceManagementClient
     id: azure-common.ServiceManagementClient
     name: ServiceManagementClient
-    summary: ''
+    summary: Creates a new ServiceManagementClient object.
     fullName: azure-common.ServiceManagementClient
     type: Class
     children:

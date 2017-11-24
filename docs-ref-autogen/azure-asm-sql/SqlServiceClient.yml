@@ -3,7 +3,7 @@ items:
   - uid: azure-asm-sql.SqlServiceClient
     id: azure-asm-sql.SqlServiceClient
     name: SqlServiceClient
-    summary: ''
+    summary: Creates a new SqlServiceClient object.
     fullName: azure-asm-sql.SqlServiceClient
     type: Class
     children:

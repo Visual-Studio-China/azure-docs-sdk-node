@@ -8,16 +8,6 @@ items:
     type: Class
     children:
       - 'azure-search.DataSources.#ctor'
-      - 'azure-search.DataSources#createOrUpdateWithHttpOperationResponse'
-      - 'azure-search.DataSources#createOrUpdate'
-      - 'azure-search.DataSources#deleteMethodWithHttpOperationResponse'
-      - 'azure-search.DataSources#deleteMethod'
-      - 'azure-search.DataSources#getWithHttpOperationResponse'
-      - 'azure-search.DataSources#get'
-      - 'azure-search.DataSources#listWithHttpOperationResponse'
-      - 'azure-search.DataSources#list'
-      - 'azure-search.DataSources#createWithHttpOperationResponse'
-      - 'azure-search.DataSources#create'
     langs:
       - js
   - id: 'azure-search.DataSources.#ctor'

@@ -3,7 +3,7 @@ items:
   - uid: azure-storage-legacy.SharedKeyTable
     id: azure-storage-legacy.SharedKeyTable
     name: SharedKeyTable
-    summary: ''
+    summary: Creates a new SharedKeyTable object.
     fullName: azure-storage-legacy.SharedKeyTable
     type: Class
     children:

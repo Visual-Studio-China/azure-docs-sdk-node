@@ -3,7 +3,7 @@ items:
   - uid: azure-storage-legacy.SharedKeyLite
     id: azure-storage-legacy.SharedKeyLite
     name: SharedKeyLite
-    summary: ''
+    summary: Creates a new SharedKey object.
     fullName: azure-storage-legacy.SharedKeyLite
     type: Class
     children:
