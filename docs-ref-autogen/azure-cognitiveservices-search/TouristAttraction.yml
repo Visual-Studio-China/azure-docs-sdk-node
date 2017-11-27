@@ -8,6 +8,7 @@ items:
     type: Class
     children:
       - 'azure-cognitiveservices-search.TouristAttraction.#ctor'
+      - 'azure-cognitiveservices-search.TouristAttraction#mapper'
     langs:
       - js
   - id: 'azure-cognitiveservices-search.TouristAttraction.#ctor'

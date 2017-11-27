@@ -9,6 +9,7 @@ items:
     children:
       - 'azure-search.SearchRequestOptions.#ctor'
       - 'azure-search.SearchRequestOptions#mapper'
+      - 'azure-search.SearchRequestOptions#mapper'
     langs:
       - js
   - id: 'azure-search.SearchRequestOptions.#ctor'
@@ -20,21 +21,6 @@ items:
     type: Constructor
     syntax:
       content: new SearchRequestOptions()
-    langs:
-      - js
-  - uid: 'azure-search.SearchRequestOptions#mapper'
-    id: 'azure-search.SearchRequestOptions#mapper'
-    parent: azure-search.SearchRequestOptions
-    name: mapper()
-    summary: Defines the metadata of SearchRequestOptions
-    fullName: azure-search.SearchRequestOptions.mapper()
-    type: Function
-    syntax:
-      return:
-        type:
-          - object
-        description: metadata of SearchRequestOptions
-      content: function mapper()
     langs:
       - js
   - uid: 'azure-search.SearchRequestOptions#mapper'

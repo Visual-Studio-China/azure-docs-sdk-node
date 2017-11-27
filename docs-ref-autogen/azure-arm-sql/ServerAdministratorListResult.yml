@@ -8,6 +8,7 @@ items:
     type: Class
     children:
       - 'azure-arm-sql.ServerAdministratorListResult.#ctor'
+      - 'azure-arm-sql.ServerAdministratorListResult#mapper'
     langs:
       - js
   - id: 'azure-arm-sql.ServerAdministratorListResult.#ctor'

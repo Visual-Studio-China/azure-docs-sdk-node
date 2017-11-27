@@ -8,6 +8,7 @@ items:
     type: Class
     children:
       - 'azure-cognitiveservices-search.Intangible.#ctor'
+      - 'azure-cognitiveservices-search.Intangible#mapper'
     langs:
       - js
   - id: 'azure-cognitiveservices-search.Intangible.#ctor'

@@ -8,6 +8,9 @@ items:
     type: Class
     children:
       - 'azure-arm-recoveryservicesbackup.BackupOperationStatuses.#ctor'
+      - >-
+        azure-arm-recoveryservicesbackup.BackupOperationStatuses#getWithHttpOperationResponse
+      - 'azure-arm-recoveryservicesbackup.BackupOperationStatuses#get'
     langs:
       - js
   - id: 'azure-arm-recoveryservicesbackup.BackupOperationStatuses.#ctor'

@@ -8,6 +8,7 @@ items:
     type: Class
     children:
       - 'azure-cognitiveservices-search.StructuredValue.#ctor'
+      - 'azure-cognitiveservices-search.StructuredValue#mapper'
     langs:
       - js
   - id: 'azure-cognitiveservices-search.StructuredValue.#ctor'

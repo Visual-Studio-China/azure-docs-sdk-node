@@ -8,6 +8,7 @@ items:
     type: Class
     children:
       - 'azure-arm-datafactory.AmazonMWSObjectDataset.#ctor'
+      - 'azure-arm-datafactory.AmazonMWSObjectDataset#mapper'
     langs:
       - js
   - id: 'azure-arm-datafactory.AmazonMWSObjectDataset.#ctor'

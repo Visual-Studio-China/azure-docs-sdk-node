@@ -8,6 +8,7 @@ items:
     type: Class
     children:
       - 'azure-cognitiveservices-search.FoodEstablishment.#ctor'
+      - 'azure-cognitiveservices-search.FoodEstablishment#mapper'
     langs:
       - js
   - id: 'azure-cognitiveservices-search.FoodEstablishment.#ctor'

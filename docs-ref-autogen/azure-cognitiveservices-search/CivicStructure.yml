@@ -8,6 +8,7 @@ items:
     type: Class
     children:
       - 'azure-cognitiveservices-search.CivicStructure.#ctor'
+      - 'azure-cognitiveservices-search.CivicStructure#mapper'
     langs:
       - js
   - id: 'azure-cognitiveservices-search.CivicStructure.#ctor'

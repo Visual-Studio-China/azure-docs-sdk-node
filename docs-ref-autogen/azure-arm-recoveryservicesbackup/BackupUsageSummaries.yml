@@ -8,6 +8,9 @@ items:
     type: Class
     children:
       - 'azure-arm-recoveryservicesbackup.BackupUsageSummaries.#ctor'
+      - >-
+        azure-arm-recoveryservicesbackup.BackupUsageSummaries#listWithHttpOperationResponse
+      - 'azure-arm-recoveryservicesbackup.BackupUsageSummaries#list'
     langs:
       - js
   - id: 'azure-arm-recoveryservicesbackup.BackupUsageSummaries.#ctor'

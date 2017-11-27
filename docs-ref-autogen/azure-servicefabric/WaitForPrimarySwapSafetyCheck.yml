@@ -15,6 +15,7 @@ items:
     type: Class
     children:
       - 'azure-servicefabric.WaitForPrimarySwapSafetyCheck.#ctor'
+      - 'azure-servicefabric.WaitForPrimarySwapSafetyCheck#mapper'
     langs:
       - js
   - id: 'azure-servicefabric.WaitForPrimarySwapSafetyCheck.#ctor'

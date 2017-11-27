@@ -10,9 +10,7 @@ items:
     children:
       - azure-common._global.parse
       - azure-common._global.create
-      - azure-common._global.create
       - azure-common._global.setAgent
-      - azure-common._global.create
       - azure-common._global.DEFAULT_PROTOCOL
       - azure-common._global.noMatchConnectionString
       - azure-common._global.noMatchSettings
@@ -29,9 +27,6 @@ items:
       - azure-common._global.unserializeValue
       - azure-common._global.serializeQueryValue
       - azure-common._global.format
-      - azure-common._global.parse
-      - azure-common._global.format
-      - azure-common._global.parse
       - azure-common._global.encodeUri
       - azure-common._global.objectKeysLength
       - azure-common._global.objectFirstKey
@@ -100,21 +95,6 @@ items:
       content: function create()
     langs:
       - js
-  - uid: azure-common._global.create
-    id: azure-common._global.create
-    name: create(proxy)
-    summary: Creates a filter to set proxy options;
-    fullName: azure-common.create(proxy)
-    type: Function
-    syntax:
-      parameters:
-        - id: proxy
-          type:
-            - object
-          description: 'The proxy url (with host, port and protocol properties).'
-      content: function create(proxy)
-    langs:
-      - js
   - uid: azure-common._global.setAgent
     id: azure-common._global.setAgent
     name: 'setAgent(resouce, proxy)'
@@ -134,21 +114,6 @@ items:
             - object
           description: parsed url for the proxy.
       content: 'function setAgent(resouce, proxy)'
-    langs:
-      - js
-  - uid: azure-common._global.create
-    id: azure-common._global.create
-    name: create(userAgent)
-    summary: Creates a filter to add the user agent header in a request.
-    fullName: azure-common.create(userAgent)
-    type: Function
-    syntax:
-      parameters:
-        - id: userAgent
-          type:
-            - string
-          description: The user agent string to use.
-      content: function create(userAgent)
     langs:
       - js
   - uid: azure-common._global.DEFAULT_PROTOCOL
@@ -471,63 +436,6 @@ items:
           - string
         description: The date formated in the ISO 8061 date format.
       content: 'function format(date, skipMilliseconds, millisecondsPading)'
-    langs:
-      - js
-  - uid: azure-common._global.parse
-    id: azure-common._global.parse
-    name: parse(stringDateTime)
-    summary: Parses an ISO 8061 date string into a date object.
-    fullName: azure-common.parse(stringDateTime)
-    type: Function
-    syntax:
-      parameters:
-        - id: stringDateTime
-          type:
-            - string
-          description: The string with the date to parse in the ISO 8061 format.
-      return:
-        type:
-          - date
-        description: The parsed date.
-      content: function parse(stringDateTime)
-    langs:
-      - js
-  - uid: azure-common._global.format
-    id: azure-common._global.format
-    name: format(date)
-    summary: Formats a date into a RFC 1123 string.
-    fullName: azure-common.format(date)
-    type: Function
-    syntax:
-      parameters:
-        - id: date
-          type:
-            - date
-          description: The date to format.
-      return:
-        type:
-          - string
-        description: The date formated in the RFC 1123 date format.
-      content: function format(date)
-    langs:
-      - js
-  - uid: azure-common._global.parse
-    id: azure-common._global.parse
-    name: parse(stringDateTime)
-    summary: Parses an RFC 1123 date string into a date object.
-    fullName: azure-common.parse(stringDateTime)
-    type: Function
-    syntax:
-      parameters:
-        - id: stringDateTime
-          type:
-            - string
-          description: The string with the date to parse in the RFC 1123 format.
-      return:
-        type:
-          - date
-        description: The parsed date.
-      content: function parse(stringDateTime)
     langs:
       - js
   - uid: azure-common._global.encodeUri

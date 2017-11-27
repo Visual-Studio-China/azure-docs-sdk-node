@@ -8,6 +8,7 @@ items:
     type: Class
     children:
       - 'azure-arm-datafactory.XeroObjectDataset.#ctor'
+      - 'azure-arm-datafactory.XeroObjectDataset#mapper'
     langs:
       - js
   - id: 'azure-arm-datafactory.XeroObjectDataset.#ctor'

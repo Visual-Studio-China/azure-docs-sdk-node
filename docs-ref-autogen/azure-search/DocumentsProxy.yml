@@ -8,6 +8,8 @@ items:
     type: Class
     children:
       - 'azure-search.DocumentsProxy.#ctor'
+      - 'azure-search.DocumentsProxy#countWithHttpOperationResponse'
+      - 'azure-search.DocumentsProxy#count'
     langs:
       - js
   - id: 'azure-search.DocumentsProxy.#ctor'
